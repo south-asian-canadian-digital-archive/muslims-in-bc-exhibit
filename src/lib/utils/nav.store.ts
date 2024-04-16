@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 
 export const navItems = [
-	{ name: "Home", path: "home" },
+	{ name: "Home", path: "." },
 	{ name: "About", path: "about" },
 	{
 		name: "History",

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { clickOutside } from "$lib/clickOutside.util";
+  import { clickOutside } from "$lib/utils/clickOutside.util";
   import { createEventDispatcher } from "svelte";
   import { slide } from "svelte/transition";
 

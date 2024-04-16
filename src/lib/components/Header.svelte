@@ -1,8 +1,9 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
+  import { page } from "$app/stores";
   import { scale, slide } from "svelte/transition";
-  import { navItems, curTab } from "./nav.store";
-  import Dropdown from "./components/Dropdown.svelte";
+  import { navItems, curTab } from "$lib/utils/nav.store";
+  import Dropdown from "$lib/components/Dropdown.svelte";
 
   let mobileNavButtonWidth: number;
 
@@ -46,10 +47,10 @@
               });
             }}
           >
-          {item.name}
-        </Dropdown>
+            {item.name}
+          </Dropdown>
         {:else}
-          <button class="nav-item" on:click={() => goto(item.path || ".")}>
+          <button class="selected" on:click={() => goto(item.path || ".")}>
             {item.name}
           </button>
         {/if}
@@ -57,3 +58,10 @@
     </div>
   {/if}
 </nav>
+
+<style type="postcss">
+  .selected {
+    @apply border-b border-x;
+    border-image: linear-gradient(to top, #000 50%, transparent 50%) 100% 1;
+  }
+</style>
