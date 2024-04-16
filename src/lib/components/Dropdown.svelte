@@ -29,22 +29,21 @@
   }}
   on:keydown
 >
-  <slot />
   <button
     class="cursor-pointer ease-in-out duration-200 transform select-none"
-    class:-rotate-180={dropdownOpen}
     on:click|stopPropagation={() => {
       dropdownOpen = !dropdownOpen;
       inputFocused = dropdownOpen;
     }}
     on:keydown
   >
-    <span class="fa fa-angle-down"></span>
+    <slot />
+    <span class="fa fa-angle-down ease-in-out duration-200 transform select-none" class:-rotate-180={dropdownOpen}></span>
   </button>
 
   {#if dropdownOpen}
     <button
-      class="absolute z-50 bg-white w-fit rounded-lg text-sm font-medium flex flex-col shadow-lg"
+      class="absolute z-[999] bg-white w-fit rounded-lg text-sm font-medium flex flex-col shadow-lg"
       on:keydown
       on:click={() => {
         dropdownClicked = true;
@@ -61,6 +60,7 @@
           on:click|stopPropagation={() => {
             dropdownOpen = false;
             inputFocused = false;
+            value = option;
             dispatch("change", { value });
           }}
           transition:slide|global={{ duration: 100 }}
@@ -71,4 +71,3 @@
     </button>
   {/if}
 </button>
-

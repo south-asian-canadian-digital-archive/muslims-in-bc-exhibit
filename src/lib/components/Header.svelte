@@ -1,7 +1,7 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
   import { page } from "$app/stores";
-  import { scale, slide } from "svelte/transition";
+  import { fade, scale, slide } from "svelte/transition";
   import { navItems, curTab } from "$lib/utils/nav.store";
   import Dropdown from "$lib/components/Dropdown.svelte";
 
@@ -12,6 +12,8 @@
   $: {
     mobileNavButtonWidth;
   }
+
+  $: console.log($page.url.pathname);
 </script>
 
 <nav
@@ -47,21 +49,35 @@
               });
             }}
           >
-            {item.name}
+            <span
+              class="inline-flex flex-col gap-0 items-center hover:-translate-y-1 transition-all ease-in-out duration-300"
+            >
+              {item.name}
+              {#if $page.url.pathname.startsWith("/history")}
+                <span
+                  class="h-2 w-[120%] -mt-2 border-x-2 border-b-2 border-secondary-yellow"
+                  >&nbsp;</span
+                >
+              {/if}
+            </span>
           </Dropdown>
         {:else}
-          <button class="selected" on:click={() => goto(item.path || ".")}>
+          <button
+            class="flex flex-col gap-0 items-center hover:-translate-y-1 transition-all ease-in-out duration-300"
+            class:font-extrabold={$curTab === item.name}
+            on:click={() => goto(item.path || ".")}
+          >
             {item.name}
+            {#if $page.url.pathname === item.path}
+              <span
+                transition:slide
+                class="h-2 w-[120%] -mt-2 border-x-2 border-b-2 border-secondary-yellow"
+                >&nbsp;</span
+              >
+            {/if}
           </button>
         {/if}
       {/each}
     </div>
   {/if}
 </nav>
-
-<style type="postcss">
-  .selected {
-    @apply border-b border-x;
-    border-image: linear-gradient(to top, #000 50%, transparent 50%) 100% 1;
-  }
-</style>
