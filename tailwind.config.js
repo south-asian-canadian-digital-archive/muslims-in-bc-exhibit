@@ -14,6 +14,16 @@ export default {
         "tertiary-green": "#00A896",
         "primary-black": "#222222"
       },
+      fontSize: {
+        "h1": "5.61rem",
+        "h2": "4.209rem",
+        "h3": "3.157rem",
+        "h4": "2.369rem",
+        "h5": "1.777rem",
+        "h6": "1.333rem",
+        "p": "1rem",
+        'small': '.75rem',
+      },
     },
   },
   plugins: [],
