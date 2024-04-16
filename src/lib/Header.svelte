@@ -1,10 +1,9 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
   import { scale, slide } from "svelte/transition";
+  import { navItems, curTab } from "./nav.store";
+  import Dropdown from "./components/Dropdown.svelte";
 
-  function searchButton() {}
-
-  let search = "";
   let mobileNavButtonWidth: number;
 
   $: mobileNavOpen = false;
@@ -15,10 +14,9 @@
 </script>
 
 <nav
-  class="lg:h-24 md:h-24 px-10 flex lg:flex-row md:flex-row flex-col items-center justify-between text-primary-black font-semibold font-martel border-b-2 border-b-[#E3E7AF]"
+  class="sticky top-0 lg:h-24 md:h-24 px-32 flex lg:flex-row md:flex-row flex-col items-center justify-between text-primary-black font-bold font-martel border-b-2 border-b-[#E3E7AF] bg-white"
 >
   <div class="w-full lg:w-fit md:w-fit">
-
     <div></div>
 
     <button
@@ -35,12 +33,27 @@
   </div>
 
   {#if mobileNavButtonWidth == 0 || mobileNavOpen}
-    <ul class="flex lg:flex-row md:flex-row flex-col gap-16 items-center">
-      <li class="nav-item">
-        <a class="nav-link" href="https://sacda.ca/index.php/Browse/objects"
-          >BROWSE
-        </a>
-      </li>
-    </ul>
+    <div class="flex lg:flex-row md:flex-row flex-col gap-16 items-center">
+      {#each navItems as item}
+        {#if item.pages}
+          <Dropdown
+            options={item.pages.map((i) => i.name)}
+            on:change={(e) => {
+              item.pages?.forEach((element) => {
+                if (element.name === e.detail.value) {
+                  goto(element.path || ".");
+                }
+              });
+            }}
+          >
+          {item.name}
+        </Dropdown>
+        {:else}
+          <button class="nav-item" on:click={() => goto(item.path || ".")}>
+            {item.name}
+          </button>
+        {/if}
+      {/each}
+    </div>
   {/if}
 </nav>
