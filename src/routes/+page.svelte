@@ -77,7 +77,7 @@
     <div class="flex flex-col">
       {#each historyPages as item, i}
         <div
-          class="flex text-left items-center justify-between p-14 first:border-t-2 border-b-2 border-secondary-yellow"
+          class="flex text-left items-center justify-between p-14 first:border-t-2 border-b-2 border-secondary-yellow hover:bg-secondary-yellow transition-all ease-in-out duration-300"
         >
           <span class="text-h6 font-bold w-[30%]"
             >{`0${i + 1}. `}{item.name}</span
