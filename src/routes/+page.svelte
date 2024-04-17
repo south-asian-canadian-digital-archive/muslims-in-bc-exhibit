@@ -37,7 +37,7 @@
       <div class="flex gap-4 pr-32">
         {#each { length: 2 } as _, i}
           <button
-            class="bg-secondar-teal rounded-xl p-2 h-[60vh] w-[30%] transition-all ease-in-out duration-300 dome"
+            class="bg-secondar-teal rounded-xl p-2 h-[60vh] w-[30%] transition-all ease-in-out duration-500 dome"
             class:w-[70%]={curHoveredDome === i}
             on:mouseover={() => (curHoveredDome = i)}
             on:mouseleave={() => (curHoveredDome = 0)}
@@ -96,14 +96,3 @@
     </div>
   </section>
 </main>
-
-<style>
-
-  .dome {
-    mask-image: url('/Vector.svg');
-    -webkit-mask-image: url('/Vector.svg');
-    mask-size: 100% 100%;
-  }
-
-
-</style>

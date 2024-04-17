@@ -6,3 +6,9 @@
 body {
 	@apply font-martel text-primary-black;
 }
+
+.dome {
+    mask-image: url("/Vector.svg");
+    -webkit-mask-image: url("/Vector.svg");
+    mask-size: 100% 100%;
+}
