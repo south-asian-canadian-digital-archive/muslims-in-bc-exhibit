@@ -12,3 +12,7 @@ body {
     -webkit-mask-image: url("/Vector.svg");
     mask-size: 100% 100%;
 }
+
+a {
+    @apply text-primary-blue hover:underline;
+}

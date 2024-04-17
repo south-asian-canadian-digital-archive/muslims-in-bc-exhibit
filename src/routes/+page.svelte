@@ -28,7 +28,7 @@
             appreciation and understanding.
           </p>
           <button
-            class="bg-secondar-teal py-4 px-12 rounded-full text-white w-fit"
+            class="bg-primary-blue py-4 px-12 rounded-full text-white w-fit"
             >Explore</button
           >
         </div>
