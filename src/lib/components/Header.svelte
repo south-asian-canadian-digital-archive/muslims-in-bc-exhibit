@@ -17,7 +17,7 @@
 </script>
 
 <nav
-  class="sticky top-0 lg:h-24 md:h-24 px-32 flex lg:flex-row md:flex-row flex-col items-center justify-between text-primary-black font-bold font-martel border-b-2 border-b-[#E3E7AF] bg-white"
+  class="sticky top-0 z-[9999] lg:h-24 md:h-24 px-32 flex lg:flex-row md:flex-row flex-col items-center justify-between text-primary-black font-bold font-martel border-b-2 border-b-[#E3E7AF] bg-white"
 >
   <div class="w-full lg:w-fit md:w-fit">
     <div></div>
@@ -64,7 +64,7 @@
         {:else}
           <button
             class="flex flex-col gap-0 items-center hover:-translate-y-1 transition-all ease-in-out duration-300"
-            class:font-extrabold={$curTab === item.name}
+            class:font-extrabold={$page.url.pathname === item.path}
             on:click={() => goto(item.path || ".")}
           >
             {item.name}
