@@ -53,12 +53,12 @@
               class="inline-flex flex-col gap-0 items-center hover:-translate-y-1 transition-all ease-in-out duration-300"
             >
               {item.name}
-              {#if $page.url.pathname.startsWith("/history")}
-                <span
-                  class="h-2 w-[120%] -mt-2 border-x-2 border-b-2 border-secondary-yellow"
-                  >&nbsp;</span
-                >
-              {/if}
+              <span
+                class="h-2 w-[120%] -mt-2 border-x-2 border-b-2"
+                class:border-white={$page.url.pathname !== item.path}
+                class:border-secondary-yellow={$page.url.pathname === item.path}
+                >&nbsp;</span
+              >
             </span>
           </Dropdown>
         {:else}
@@ -68,13 +68,13 @@
             on:click={() => goto(item.path || ".")}
           >
             {item.name}
-            {#if $page.url.pathname === item.path}
-              <span
-                transition:slide
-                class="h-2 w-[120%] -mt-2 border-x-2 border-b-2 border-secondary-yellow"
-                >&nbsp;</span
-              >
-            {/if}
+            <span
+              transition:slide
+              class="h-2 w-[120%] -mt-2 border-x-2 border-b-2"
+              class:border-white={$page.url.pathname !== item.path}
+              class:border-secondary-yellow={$page.url.pathname === item.path}
+              >&nbsp;</span
+            >
           </button>
         {/if}
       {/each}
