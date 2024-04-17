@@ -6,13 +6,6 @@
 
   let historyPages = navItems[2].pages?.slice(1) || [];
   let hoveredTag = -1;
-  const computeHover = (i: number, path: string, hoveredTag) =>
-    hoveredTag !== -1 && hoveredTag !== i
-      ? true
-      : hoveredTag === i
-        ? false
-        : $page.url.pathname !== "/history/introduction" &&
-          path !== $page.url.pathname;
 </script>
 
 <slot />
@@ -26,8 +19,13 @@
 
   {#each historyPages as item, i}
     <div
-      class="flex flex-col items-center h-full transition-all duration-200 ease-in-out"
-      class:opacity-50={computeHover(i, item.path, hoveredTag)}
+      class="flex flex-col items-center h-full transition-all duration-500 ease-in-out"
+      class:opacity-50={hoveredTag !== -1 && hoveredTag !== i
+        ? true
+        : hoveredTag === i
+          ? false
+          : $page.url.pathname !== "/history/introduction" &&
+            item.path !== $page.url.pathname}
     >
       <div class="rounded-full bg-primary-blue w-12 aspect-square z-10" />
 
@@ -40,8 +38,12 @@
         on:click={() => goto(item.path)}
         on:mouseenter={() => (hoveredTag = i)}
         on:mouseleave={() => (hoveredTag = -1)}
-        class:pt-16={computeHover(i, item.path, hoveredTag)}
-        class="scale-[70%] transition-all duration-200 ease-in-out"
+        class:pt-16={hoveredTag !== -1 && hoveredTag !== i
+          ? true
+          : hoveredTag === i
+            ? false
+            : item.path !== $page.url.pathname}
+        class="scale-[70%] transition-all duration-500 ease-in-out"
       >
         <DomeThing />
       </button>
