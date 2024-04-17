@@ -100,8 +100,8 @@
 <style>
 
   .test {
-    mask-image: url('Vector.svg');
-    -webkit-mask-image: url('Vector.svg');
+    mask-image: url('/Vector.svg');
+    -webkit-mask-image: url('/Vector.svg');
     mask-size: 100% 100%;
   }
 
