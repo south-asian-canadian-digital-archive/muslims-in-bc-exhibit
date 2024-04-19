@@ -3,7 +3,7 @@
 </script>
 
 <main class="p-32 w-screen flex flex-col gap-10">
-  <p class="text-h2 font-bold text-primary-blue font-source-serif-4">Early Migration (pre 1962)</p>
+  <p class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]">Early Migration (pre 1962)</p>
 
   <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     <section>
