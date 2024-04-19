@@ -1,5 +1,5 @@
 <main class="p-32 w-screen flex flex-col gap-10">
-  <p class="text-h2 font-bold text-primary-blue">
+  <p class="text-h2 font-bold text-primary-blue font-source-serif-4">
     Muslim Experiences in Canada / Recent Migration to Canada (Post 9/11)
   </p>
 
