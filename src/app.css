@@ -26,7 +26,7 @@ a {
 }
 
 .history > section > div {
-  @apply col-span-9 pl-4;
+  @apply col-span-9 pl-14;
 }
 
 ol {

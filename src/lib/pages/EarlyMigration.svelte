@@ -44,7 +44,7 @@
         in 1910. Five months after his arrival, the immigration department started
         the procedure for deportation against him. However, Rahim fought the case
         and won it in court thereby, remaining in Vancouver.
-        <div class="flex gap-4">
+        <div class="flex gap-4 py-8 *:w-1/2">
           <Image src="/content/2021_08_01_041.jpg" alt="Husain Rahim Mugshot">
             Mugshot of Husain Rahim, South Asian Canadian Digital Archive, <a
               href="https://sacda.ca/Detail/objects/11178"
@@ -62,7 +62,6 @@
             >
           </Image>
         </div>
-        <br /><br />
         In 1911, Rahim established the United India League, an organization focused
         on employing constitutional methods to stimulate social and political renewal
         within the Hindustanee populace.
