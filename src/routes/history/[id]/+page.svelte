@@ -15,9 +15,9 @@
   <Introduction />
 {:else if $page.params.id === "early-migration"}
   <EarlyMigration />
-{:else if $page.params.id === "mid-20th-century-migration"}
+{:else if $page.params.id === "mid-20th-centuary-migration"}
   <Mid20thCentuaryMigration />
-{:else if $page.params.id === "recent-migration"}
+{:else if $page.params.id === "recent-migration-to-canada"}
   <RecentMigration />
 {:else}
   <div class="h-screen w-screen flex items-center justify-center text-h1">
