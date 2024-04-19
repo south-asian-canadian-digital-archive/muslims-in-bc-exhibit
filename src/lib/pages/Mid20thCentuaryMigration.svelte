@@ -404,11 +404,10 @@
     </section>
 
     <section>
-      <h2 class="w-full flex justify-end pr-8">
-        <span class="text-p"> Bibliography</span>
+      <h2>Bibliography
       </h2>
 
-      <div class="flex flex-col gap-4 border-t-2 border-secondary-yellow">
+      <div class="flex flex-col gap-4 pt-8 border-t-2 border-secondary-yellow">
         <div>
           <p class="c9">
             <a href="#ftnt_ref10" id="ftnt10">[10]</a><span class="c11"
