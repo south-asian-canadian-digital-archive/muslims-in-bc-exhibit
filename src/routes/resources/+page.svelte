@@ -38,9 +38,9 @@
 </script>
 
 <main class="p-32 w-screen flex flex-col gap-10">
-  <p class="text-h2 font-bold text-primary-blue">Resources</p>
+  <p class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.5]">Resources</p>
 
-  <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12">
+  <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     {#each links as linkItem}
       <section>
         <h2>{linkItem.title}</h2>
@@ -72,13 +72,6 @@
 <HistoryTimeline />
 
 <style type="postcss">
-  section > h2 {
-    @apply text-h4 col-span-3;
-  }
-  section > div {
-    @apply col-span-9 pt-5 pl-8;
-  }
-
   .link {
     @apply flex text-left items-center justify-between gap-10 p-8 border-b-2 border-secondary-yellow hover:bg-secondary-yellow transition-all ease-in-out duration-300;
   }

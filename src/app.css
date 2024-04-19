@@ -22,7 +22,7 @@ a {
 }
 
 .history > section > h2 {
-  @apply text-h5 col-span-3 font-bold;
+  @apply text-h4 col-span-3 font-bold font-source-serif-4 leading-[1.15];
 }
 
 .history > section > div {

@@ -3,7 +3,7 @@
     <div class="h-min flex gap-14 px-0 w-screen">
       <div class="flex flex-col gap-12 pl-32 w-[80vw]">
 
-        <h1 class="font-source-serif-4 font-bold text-h2 leading-[1.15]">
+        <h1 class="font-source-serif-4 font-bold text-h2 leading-[1.15] text-primary-blue">
           South Asian Muslims in British Columbia: Introduction
         </h1>
 
