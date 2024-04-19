@@ -11,7 +11,7 @@
   <section class="h-screen pt-20">
     <div class="h-min flex gap-5 px-0 w-screen *:w-[50vw]">
       <div class="flex flex-col gap-12 pl-32">
-        <h1 class="font-source-serif-4 font-bold text-h2">
+        <h1 class="font-source-serif-4 font-bold text-h2 text-primary-blue">
           South Asian Muslims in British Columbia
         </h1>
 
