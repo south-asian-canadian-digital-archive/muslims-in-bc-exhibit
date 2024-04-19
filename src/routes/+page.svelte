@@ -9,8 +9,10 @@
 
 <main class="">
   <section class="h-screen pt-20">
-    <div class="h-min flex gap-5 px-0 w-screen *:w-[50vw]">
-      <div class="flex flex-col gap-12 pl-32">
+
+    <div class="h-min flex lg:flex-row md:flex-row flex-col gap-5 px-0 w-screen *:lg:w-[50vw] *:md:w-[50vw]">
+
+      <div class="flex flex-col gap-12 lg:pl-32 md:pl-32 pl-4">
         <h1 class="font-source-serif-4 font-bold text-h2 text-primary-blue">
           South Asian Muslims in British Columbia
         </h1>
@@ -47,7 +49,9 @@
           </button>
         {/each}
       </div>
+
     </div>
+
   </section>
 
   <section class="bg-secondary-yellow pl-32 flex justify-between">
@@ -72,7 +76,7 @@
   </section>
 
   <section class="flex flex-col py-40 px-32 gap-10">
-    <h2 class="text-h2 font-bold">About the Project</h2>
+    <h2 class="text-h2 font-bold">Historical Timeline</h2>
 
     <div class="flex flex-col">
       {#each historyPages as item, i}

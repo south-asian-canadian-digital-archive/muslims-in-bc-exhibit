@@ -56,13 +56,13 @@
 </script>
 
 <footer
-  class="bg-primary-black lg:py-24 md:py-24 pb-24 pt-10 px-6 flex flex-col-reverse gap-4 lg:flex-row md:flex-row justify-between items-end relative"
+  class="bg-[#414042] lg:py-24 md:py-24 pb-24 pt-10 px-6 flex flex-col-reverse gap-4 lg:flex-row md:flex-row justify-between items-end relative"
 >
   <div class="flex flex-row gap-5 items-center pb-3">
     {#each sponsors as sponsor}
       <div class="w-auto">
         <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
-          <img src={sponsor.image} alt={sponsor.name} class="h-14" />
+          <img src={sponsor.image} alt={sponsor.name} class="h-16" />
         </a>
       </div>
     {/each}

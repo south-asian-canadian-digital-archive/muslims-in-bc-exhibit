@@ -55,7 +55,7 @@
     >
       {#each options as option}
         <button
-          class="flex flex-row items-center px-4 py-3 cursor-pointer text-garden-grey-700 border-y border-secondary-yellow first:border-t-0 last:border-b-0 whitespace-nowrap"
+          class="flex flex-row items-center px-4 py-3 cursor-pointer w-full text-garden-grey-700 border-y border-secondary-yellow first:border-t-0 last:border-b-0 whitespace-nowrap"
           on:keydown
           on:click|stopPropagation={() => {
             dropdownOpen = false;
