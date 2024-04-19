@@ -50,13 +50,13 @@
             }}
           >
             <span
-              class="inline-flex flex-col gap-0 items-center hover:-translate-y-1 transition-all ease-in-out duration-300"
+              class="inline-flex flex-col gap-0 hover:-translate-y-1 transition-all ease-in-out duration-300"
             >
               {item.name}
               <span
-                class="h-2 w-[120%] -mt-2 border-x-2 border-b-2"
-                class:border-white={$page.url.pathname !== item.path}
-                class:border-secondary-yellow={$page.url.pathname === item.path}
+                class="h-2 w-[150%] -mt-2 border-x-2 border-b-2 -ml-2"
+                class:border-white={!$page.url.pathname.startsWith("/history/")}
+                class:border-secondary-yellow={$page.url.pathname.startsWith("/history/")}
                 >&nbsp;</span
               >
             </span>
