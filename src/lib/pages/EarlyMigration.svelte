@@ -5,7 +5,7 @@
 <main class="p-32 w-screen flex flex-col gap-10">
   <p class="text-h2 font-bold text-primary-blue font-source-serif-4">Early Migration (pre 1962)</p>
 
-  <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12">
+  <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     <section>
       <h2 class="">Early migration to BC</h2>
       <div class="">
@@ -390,7 +390,7 @@
     <section>
       <h2>Bibliography</h2>
 
-      <div class="flex flex-col gap-4 pt-8 border-t-2 border-secondary-yellow">
+      <div class="flex flex-col gap-4">
         <div>
           <p class="c9">
             <a href="#ftnt_ref1" id="ftnt1">[1]</a><span class="c11 c18"
@@ -522,29 +522,3 @@
     </section>
   </div>
 </main>
-
-<!-- <section>
-      <div class="text-h4 col-span-3"></div>
-      <div class="col-span-9 pt-5"></div>
-    </section>
-        <span class="flex">
-          <Image src="/images/Husain_Rahim.jpg" alt="Husain Rahim" class="" />
-        </span>
- -->
-
-<style type="postcss">
-  section > h2 {
-    @apply text-h5 col-span-3 font-bold;
-  }
-  section > div {
-    @apply col-span-9 pl-4;
-  }
-
-  ol {
-    @apply pl-8;
-  }
-
-  ol > li {
-    @apply list-decimal;
-  }
-</style>

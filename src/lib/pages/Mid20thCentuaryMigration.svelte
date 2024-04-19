@@ -6,7 +6,7 @@
     Mid 20th century migration (1962-2001)
   </p>
 
-  <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12">
+  <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     <section>
       <h2>Introduction</h2>
       <div>
@@ -407,7 +407,7 @@
       <h2>Bibliography
       </h2>
 
-      <div class="flex flex-col gap-4 pt-8 border-t-2 border-secondary-yellow">
+      <div class="flex flex-col gap-4">
         <div>
           <p class="c9">
             <a href="#ftnt_ref10" id="ftnt10">[10]</a><span class="c11"
@@ -695,19 +695,3 @@
   </div>
 </main>
 
-<style type="postcss">
-  section > h2 {
-    @apply text-h5 col-span-3 font-bold;
-  }
-  section > div {
-    @apply col-span-9 pl-4;
-  }
-
-  ol {
-    @apply pl-8;
-  }
-
-  ol > li {
-    @apply list-decimal;
-  }
-</style>

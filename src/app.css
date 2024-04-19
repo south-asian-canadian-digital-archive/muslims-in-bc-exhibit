@@ -16,3 +16,23 @@ body {
 a {
     @apply text-primary-blue hover:underline;
 }
+
+.history > section {
+  @apply border-b-2 border-secondar-teal pb-16 first:border-t-2 first:pt-16;
+}
+
+.history > section > h2 {
+  @apply text-h5 col-span-3 font-bold;
+}
+
+.history > section > div {
+  @apply col-span-9 pl-4;
+}
+
+ol {
+  @apply pl-8;
+}
+
+ol > li {
+  @apply list-decimal;
+}
