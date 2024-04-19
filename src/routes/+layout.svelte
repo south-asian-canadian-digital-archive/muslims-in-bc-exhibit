@@ -37,7 +37,7 @@
 
   </div>
   {/key}
- <!-- <Footer /> -->
+ <Footer />
 
 {#if scrollY !== 0}
   <button

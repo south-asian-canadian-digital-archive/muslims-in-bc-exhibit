@@ -1,4 +1,5 @@
 <script>
+
   const sponsors = [
     {
       name: "SACDA",
@@ -17,25 +18,12 @@
       link: "http://www.ufv.ca/",
       image:
         "https://sacda.ca//themes/sacda/assets/pawtucket/graphics/footer/ufv.svg",
-    },
+    }, 
     {
-      name: "South Asian Canadian Legacy Project",
-      link: "https://saclp.southasiancanadianheritage.ca/",
-      image:
-        "https://sacda.ca//themes/sacda/assets/pawtucket/graphics/footer/bc.svg",
-    },
-    {
-      name: "Canada",
-      link: "https://www.canada.ca/en.html",
-      image:
-        "https://sacda.ca//themes/sacda/assets/pawtucket/graphics/footer/canada_logo.svg",
-    },
-    {
-      name: "UBC Irving K. Barber Learning Centre",
-      link: "https://ikblc.ubc.ca/",
-      image:
-        "https://sacda.ca//themes/sacda/assets/pawtucket/graphics/footer/BCHDP_logo_white.png",
-    },
+      name: "UFV Research and Graduate Studies",
+      link: "https://www.ufv.ca/research/",
+      image: "/ResearchGraduateStudies.png"
+    }
   ];
 
   const socials = [
@@ -68,13 +56,13 @@
 </script>
 
 <footer
-  class="bg-[#414042] lg:py-24 md:py-24 pb-24 pt-10 px-6 flex flex-col-reverse gap-4 lg:flex-row md:flex-row justify-between items-end relative"
+  class="bg-primary-black lg:py-24 md:py-24 pb-24 pt-10 px-6 flex flex-col-reverse gap-4 lg:flex-row md:flex-row justify-between items-end relative"
 >
   <div class="flex flex-row gap-5 items-center pb-3">
     {#each sponsors as sponsor}
       <div class="w-auto">
         <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
-          <img src={sponsor.image} alt={sponsor.name} class="h-10" />
+          <img src={sponsor.image} alt={sponsor.name} class="h-14" />
         </a>
       </div>
     {/each}
@@ -82,7 +70,7 @@
 
   <div class="flex flex-col gap-4 items-center lg:w-fit md:w-fit w-full">
     <p
-      class="uppercase lg:self-end md:self-end border-b border-b-[#ffce34] font-bold text-white text-lg w-fit pb-1"
+      class="uppercase lg:self-end md:self-end border-b border-b-secondary-yellow font-bold text-white text-lg w-fit pb-1"
     >
       GET IN TOUCH
     </p>
@@ -93,7 +81,7 @@
           href={social.link}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-white text-lg rounded-full border border-[#ffce34] w-12 h-12 flex items-center justify-center"
+          class="text-white text-lg hover:no-underline rounded-full border border-secondary-yellow w-12 h-12 flex items-center justify-center"
         >
           {@html social.element}
         </a>
