@@ -2,8 +2,9 @@
   <section class="py-20">
     <div class="h-min flex gap-14 px-0 w-screen">
       <div class="flex flex-col gap-12 pl-32 w-[80vw]">
-
-        <h1 class="font-source-serif-4 font-bold text-h2 leading-[1.15] text-primary-blue">
+        <h1
+          class="font-source-serif-4 font-bold text-h2 leading-[1.15] text-primary-blue"
+        >
           South Asian Muslims in British Columbia: Introduction
         </h1>
 
@@ -56,5 +57,10 @@
     </div>
   </section>
 
-  <div class="flex w-full justify-end p-8 pr-20">*as per 2021 census</div>
+  <div class="flex w-full justify-end p-8 pr-20">
+    <a
+      href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=British%20Columbia&DGUIDlist=2021A000259&GENDERlist=1,2,3&STATISTIClist=1&HEADERlist=0"
+      >*as per 2021 Canadian census</a
+    >
+  </div>
 </main>
