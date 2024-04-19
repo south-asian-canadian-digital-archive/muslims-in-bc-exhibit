@@ -4,6 +4,7 @@
   import EarlyMigration from "$lib/pages/EarlyMigration.svelte";
   import Mid20thCentuaryMigration from "$lib/pages/Mid20thCentuaryMigration.svelte";
   import RecentMigration from "$lib/pages/RecentMigration.svelte";
+  import HistoryTimeline from "$lib/components/HistoryTimeline.svelte";
 
   const pageMap = {
     introduction: Introduction,
@@ -19,8 +20,6 @@
   <Mid20thCentuaryMigration />
 {:else if $page.params.id === "recent-migration-to-canada"}
   <RecentMigration />
-{:else}
-  <div class="h-screen w-screen flex items-center justify-center text-h1">
-    Page not found
-  </div>
 {/if}
+
+<HistoryTimeline />
