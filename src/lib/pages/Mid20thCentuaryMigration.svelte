@@ -698,10 +698,10 @@
 
 <style type="postcss">
   section > h2 {
-    @apply text-h4 col-span-3;
+    @apply text-h5 col-span-3 font-bold;
   }
   section > div {
-    @apply col-span-9 pt-5 pl-4;
+    @apply col-span-9 pl-4;
   }
 
   ol {
