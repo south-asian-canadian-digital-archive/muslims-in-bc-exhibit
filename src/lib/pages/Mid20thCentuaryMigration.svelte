@@ -402,6 +402,7 @@
         </ol>
       </div>
     </section>
+
     <section>
       <h2 class="w-full flex justify-end pr-8">
         <span class="text-p"> Bibliography</span>
