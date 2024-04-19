@@ -514,8 +514,6 @@
         <span class="flex">
           <Image src="/images/Husain_Rahim.jpg" alt="Husain Rahim" class="" />
         </span>
-
-
  -->
 
 <style type="postcss">

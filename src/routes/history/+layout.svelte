@@ -27,7 +27,7 @@
           : $page.url.pathname !== "/history/introduction" &&
             item.path !== $page.url.pathname}
     >
-      <div class="rounded-full bg-primary-blue w-12 aspect-square z-10" />
+      <div class="rounded-full bg-primary-blue w-12 min-h-12 aspect-square z-10" />
 
       <div class="flex flex-col font-bold text-h6 text-center h-10 pt-4">
         <p>{item.name}</p>

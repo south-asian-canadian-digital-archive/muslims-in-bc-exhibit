@@ -1,5 +1,5 @@
-<main class="pb-20">
-  <section class="h-screen pt-20">
+<main class="pb-10 flex flex-col">
+  <section class="py-20">
     <div class="h-min flex gap-14 px-0 w-screen">
       <div class="flex flex-col gap-12 pl-32 w-[80vw]">
         <h1 class="font-source-serif-4 font-bold text-h2">
@@ -56,6 +56,4 @@
   </section>
 
   <div class="flex w-full justify-end p-8 pr-20">*as per 2021 census</div>
-
-
 </main>
