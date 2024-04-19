@@ -12,8 +12,6 @@
   $: {
     mobileNavButtonWidth;
   }
-
-  $: console.log($page.url.pathname);
 </script>
 
 <nav
@@ -56,8 +54,9 @@
               <span
                 class="h-2 w-[150%] -mt-2 border-x-2 border-b-2 -ml-2"
                 class:border-white={!$page.url.pathname.startsWith("/history/")}
-                class:border-secondary-yellow={$page.url.pathname.startsWith("/history/")}
-                >&nbsp;</span
+                class:border-secondary-yellow={$page.url.pathname.startsWith(
+                  "/history/"
+                )}>&nbsp;</span
               >
             </span>
           </Dropdown>
@@ -65,7 +64,10 @@
           <button
             class="flex flex-col gap-0 items-center hover:-translate-y-1 transition-all ease-in-out duration-300"
             class:font-extrabold={$page.url.pathname === item.path}
-            on:click={() => goto(item.path || ".")}
+            on:click={() =>
+              item.name === "Contact"
+                ? item.path && window.open(item.path, "_blank")
+                : goto(item.path || ".")}
           >
             {item.name}
             <span
