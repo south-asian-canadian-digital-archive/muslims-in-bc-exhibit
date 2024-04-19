@@ -23,6 +23,7 @@
         : hoveredTag === i
           ? false
           : $page.url.pathname !== "/history/introduction" &&
+            $page.url.pathname !== "/resources" &&
             item.path !== $page.url.pathname}
     >
       <div
