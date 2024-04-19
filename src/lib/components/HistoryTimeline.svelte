@@ -9,7 +9,7 @@
 </script>
 
 <div
-  class="bg-secondary-yellow px-32 pt-14 pb-4 h-[70vh] flex justify-evenly relative"
+  class="bg-secondary-yellow px-32 mb-10 pt-14 pb-4 h-[70vh] flex justify-evenly relative overflow-hidden"
 >
   <div
     class="absolute bg-tertiary-green rounded-lg h-1 w-[80%] top-[5rem]"
