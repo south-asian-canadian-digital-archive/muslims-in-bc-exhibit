@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { navItems } from "$lib/utils/nav.store";
+  import { navItems } from "$lib/utils/nav.store.svelte";
   import DomeThing from "$lib/components/DomeThing.svelte";
   import { page } from "$app/stores";
   import { goto } from "$app/navigation";

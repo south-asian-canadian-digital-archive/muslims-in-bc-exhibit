@@ -2,7 +2,7 @@
   import { goto } from "$app/navigation";
   import { page } from "$app/stores";
   import { fade, scale, slide } from "svelte/transition";
-  import { navItems, curTab } from "$lib/utils/nav.store";
+  import { navItems, curTab } from "$lib/utils/nav.store.svelte";
   import Dropdown from "$lib/components/Dropdown.svelte";
 
   let mobileNavButtonWidth: number = $state(0);

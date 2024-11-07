@@ -1,6 +1,6 @@
 <script lang="ts">
   import DomeThing from "$lib/components/DomeThing.svelte";
-  import { navItems } from "$lib/utils/nav.store";
+  import { navItems } from "$lib/utils/nav.store.svelte";
   import Arrow from "$lib/components/Arrow.svelte";
 
   let curHoveredDome = $state(0);
