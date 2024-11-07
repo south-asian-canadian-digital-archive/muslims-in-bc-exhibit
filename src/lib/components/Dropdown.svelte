@@ -18,7 +18,9 @@
   }
 </script>
 
-<button
+
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<div
   class="relative {$$props.class}"
   use:clickOutside
   on:click_outside={() => {
@@ -39,11 +41,14 @@
     on:keydown
   >
     <slot />
-    <span class="fa fa-angle-down ease-in-out duration-200 transform select-none" class:-rotate-180={dropdownOpen}></span>
+    <span
+      class="fa fa-angle-down ease-in-out duration-200 transform select-none"
+      class:-rotate-180={dropdownOpen}
+    ></span>
   </button>
 
   {#if dropdownOpen}
-    <button
+    <div
       class="absolute z-[999] bg-white w-fit rounded-lg text-sm font-medium flex flex-col shadow-lg"
       on:keydown
       on:click={() => {
@@ -69,6 +74,6 @@
           {option}
         </button>
       {/each}
-    </button>
+    </div>
   {/if}
-</button>
+</div>

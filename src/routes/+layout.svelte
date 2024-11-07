@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { run } from 'svelte/legacy';
 
   import "../app.css";
@@ -15,21 +15,14 @@
   let { children }: Props = $props();
 
   let scrollY = $state(0);
-  let load = $state(false);
   let firstLoad = $state(true);
-
-  run(() => {
-    if ($navigating) {
-      load = false;
-    } else {
-      if (!firstLoad) load = true;
-    }
-  });
+  let load = $derived(firstLoad || !$navigating);
 
   onMount(() => {
     firstLoad = false;
-    load = true;
+    // load = true;
   });
+
 </script>
 
 <svelte:head>
@@ -45,13 +38,14 @@
     {@render children?.()}
 
   </div>
-  {/key}
+{/key}
  <Footer />
 
 {#if scrollY !== 0}
   <button
     transition:fade
     class="fixed right-6 bottom-6 z-[999] rounded-full object-cover bg-secondary-yellow py-0.5 group hover:-translate-y-1 transition-all duration-500"
+    aria-label="yuh"
     onclick={() => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }}

@@ -1,20 +1,18 @@
 <script lang="ts">
-  import { run } from 'svelte/legacy';
-
   import { goto } from "$app/navigation";
   import { page } from "$app/stores";
   import { fade, scale, slide } from "svelte/transition";
   import { navItems, curTab } from "$lib/utils/nav.store";
   import Dropdown from "$lib/components/Dropdown.svelte";
 
-  let mobileNavButtonWidth: number = $state();
+  let mobileNavButtonWidth: number = $state(0);
 
   let mobileNavOpen = $state(false);
   
 
-  run(() => {
-    mobileNavButtonWidth;
-  });
+  // run(() => {
+  //   mobileNavButtonWidth;
+  // });
 </script>
 
 <nav

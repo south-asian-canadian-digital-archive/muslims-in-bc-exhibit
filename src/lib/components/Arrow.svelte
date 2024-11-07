@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   interface Props {
     size?: number;
   }

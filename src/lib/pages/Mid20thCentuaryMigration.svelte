@@ -2,7 +2,9 @@
 </script>
 
 <main class="p-32 w-screen flex flex-col gap-10">
-  <p class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]">
+  <p
+    class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]"
+  >
     Mid 20th century migration (1962-2001)
   </p>
 
@@ -404,8 +406,7 @@
     </section>
 
     <section>
-      <h2>Bibliography
-      </h2>
+      <h2>Bibliography</h2>
 
       <div class="flex flex-col gap-4">
         <div>
@@ -656,8 +657,9 @@
         </div>
         <div>
           <p class="c9">
-            <a href="#ftnt_ref28" id="ftnt28">[28]</a><span class="c11 c42"
-              ><a
+            <a href="#ftnt_ref28" id="ftnt28">[28]</a><span class="c11 c42">
+              <a
+                aria-label="link"
                 class="c3"
                 href="https://www.google.com/url?q=https://atom.archives.sfu.ca/f-251-3-5&amp;sa=D&amp;source=editors&amp;ust=1713397380183192&amp;usg=AOvVaw3qXdju0OOScvUFre0aZIcf"
                 >&nbsp;</a
@@ -694,4 +696,3 @@
     </section>
   </div>
 </main>
-

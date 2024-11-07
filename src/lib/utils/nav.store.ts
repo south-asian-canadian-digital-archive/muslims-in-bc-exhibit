@@ -18,4 +18,4 @@ export const navItems = [
 
 type NavItem = "Home" | "About" | "History" | "Resources" | "Contact";
 
-export const curTab = writable<NavItem>("Home");
+export let curTab = $state<NavItem>("Home");

@@ -1,11 +1,17 @@
-<!-- @migration-task Error while migrating Svelte code: `<caption>` is invalid inside `<span>` -->
-<script>
-  export let src = "";
-  export let alt = "";
+<script lang="ts">
+  import type { HTMLAttributes } from 'svelte/elements';
+
+  interface Props extends HTMLAttributes<HTMLSpanElement> {
+    src?: string;
+    alt?: string;
+    children?: import('svelte').Snippet;   
+  }
+
+  let { src = "", alt = "", children, ...args }: Props = $props();
 </script>
 
-<span class="flex flex-col gap-4 {$$props.class}">
+<span class="flex flex-col gap-4 {args?.class}">
   <img {src} {alt} class="border-b-[8px] border-primary-blue h-80 object-cover" />
 
-  <caption class="text-small"><slot /></caption>
+  <span class="text-small">{@render children?.()}</span>
 </span>
