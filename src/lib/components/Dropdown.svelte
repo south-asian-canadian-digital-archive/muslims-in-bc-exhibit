@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: `<button>` is invalid inside `<button>` -->
 <script lang="ts">
   import { clickOutside } from "$lib/utils/clickOutside.util";
   import { createEventDispatcher } from "svelte";

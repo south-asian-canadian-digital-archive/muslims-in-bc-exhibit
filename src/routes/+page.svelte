@@ -1,9 +1,12 @@
 <script lang="ts">
+  import { createBubbler } from 'svelte/legacy';
+
+  const bubble = createBubbler();
   import DomeThing from "$lib/components/DomeThing.svelte";
   import { navItems } from "$lib/utils/nav.store";
   import Arrow from "$lib/components/Arrow.svelte";
 
-  let curHoveredDome = 0;
+  let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
 </script>
 
@@ -41,9 +44,9 @@
           <button
             class="bg-secondar-teal rounded-xl p-2 min-h-[60vh] w-[30%] transition-all ease-in-out duration-500 dome"
             class:w-[70%]={curHoveredDome === i}
-            on:mouseover={() => (curHoveredDome = i)}
-            on:mouseleave={() => (curHoveredDome = 0)}
-            on:focus
+            onmouseover={() => (curHoveredDome = i)}
+            onmouseleave={() => (curHoveredDome = 0)}
+            onfocus={bubble('focus')}
           >
             <div class="bg-[url('/pattern.svg')] bg-repeat h-full"></div>
           </button>

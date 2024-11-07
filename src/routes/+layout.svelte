@@ -1,4 +1,6 @@
 <script>
+  import { run } from 'svelte/legacy';
+
   import "../app.css";
   import Header from "$lib/components/Header.svelte";
   import Footer from "$lib/components/Footer.svelte";
@@ -6,16 +8,23 @@
   import { fade, fly } from "svelte/transition";
   import { onMount } from "svelte";
   import { page, navigating } from "$app/stores";
-
-  let scrollY = 0;
-  let load = false;
-  let firstLoad = true;
-
-  $: if ($navigating) {
-    load = false;
-  } else {
-    if (!firstLoad) load = true;
+  interface Props {
+    children?: import('svelte').Snippet;
   }
+
+  let { children }: Props = $props();
+
+  let scrollY = $state(0);
+  let load = $state(false);
+  let firstLoad = $state(true);
+
+  run(() => {
+    if ($navigating) {
+      load = false;
+    } else {
+      if (!firstLoad) load = true;
+    }
+  });
 
   onMount(() => {
     firstLoad = false;
@@ -33,7 +42,7 @@
 
 {#key load}
   <div in:fly={{ y: 600, duration: 800 }}>
-    <slot />
+    {@render children?.()}
 
   </div>
   {/key}
@@ -43,7 +52,7 @@
   <button
     transition:fade
     class="fixed right-6 bottom-6 z-[999] rounded-full object-cover bg-secondary-yellow py-0.5 group hover:-translate-y-1 transition-all duration-500"
-    on:click={() => {
+    onclick={() => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }}
   >

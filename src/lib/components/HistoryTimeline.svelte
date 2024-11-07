@@ -5,7 +5,7 @@
   import { goto } from "$app/navigation";
 
   let historyPages = navItems[2].pages?.slice(1) || [];
-  let hoveredTag = -1;
+  let hoveredTag = $state(-1);
 </script>
 
 <div
@@ -28,7 +28,7 @@
     >
       <div
         class="rounded-full bg-primary-blue w-12 min-h-12 aspect-square z-10"
-      />
+></div>
 
       <div class="flex flex-col font-bold text-h6 text-center h-10 pt-4">
         <p>{item.name}</p>
@@ -36,9 +36,9 @@
       </div>
 
       <button
-        on:click={() => goto(item.path)}
-        on:mouseenter={() => (hoveredTag = i)}
-        on:mouseleave={() => (hoveredTag = -1)}
+        onclick={() => goto(item.path)}
+        onmouseenter={() => (hoveredTag = i)}
+        onmouseleave={() => (hoveredTag = -1)}
         class:pt-16={hoveredTag !== -1 && hoveredTag !== i
           ? true
           : hoveredTag === i

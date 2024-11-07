@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: `<caption>` is invalid inside `<span>` -->
 <script>
   export let src = "";
   export let alt = "";

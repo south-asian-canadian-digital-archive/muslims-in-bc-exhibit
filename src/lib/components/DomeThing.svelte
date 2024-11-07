@@ -3,7 +3,11 @@
   // export let height = 599;
   let width = "100%";
   let height = "100%";
-  export let color = "#028090";
+  interface Props {
+    color?: string;
+  }
+
+  let { color = "#028090" }: Props = $props();
 </script>
 
 <svg
