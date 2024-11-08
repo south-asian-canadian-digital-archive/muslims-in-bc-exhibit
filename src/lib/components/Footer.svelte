@@ -1,5 +1,4 @@
-<script>
-
+<script lang="ts">
   const sponsors = [
     {
       name: "SACDA",
@@ -18,12 +17,12 @@
       link: "http://www.ufv.ca/",
       image:
         "https://sacda.ca//themes/sacda/assets/pawtucket/graphics/footer/ufv.svg",
-    }, 
+    },
     {
       name: "UFV Research and Graduate Studies",
       link: "https://www.ufv.ca/research/",
-      image: "/ResearchGraduateStudies.png"
-    }
+      image: "/ResearchGraduateStudies.png",
+    },
   ];
 
   const socials = [
@@ -56,32 +55,26 @@
 </script>
 
 <footer
-  class="bg-[#414042] lg:py-24 md:py-24 pb-24 pt-10 px-6 flex flex-col-reverse gap-4 lg:flex-row md:flex-row justify-between items-end relative"
+  class="bg-secondar-teal lg:pb-24 lg:pt-16 md:pb-24 pb-24 pt-10 px-12 flex flex-col-reverse gap-4 lg:flex-row md:flex-row justify-between items-end relative"
 >
-  <div class="flex flex-row gap-5 items-center pb-3">
-    {#each sponsors as sponsor}
-      <div class="w-auto">
-        <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
-          <img src={sponsor.image} alt={sponsor.name} class="h-16" />
-        </a>
-      </div>
-    {/each}
-  </div>
+  <div
+    class="flex flex-col-reverse lg:self-start gap-6 items-center lg:w-fit md:w-fit w-full"
+  >
 
-  <div class="flex flex-col gap-4 items-center lg:w-fit md:w-fit w-full">
+    <div class="rounded-xl bg-white py-4 px-20 self-start">input here</div>
     <p
-      class="uppercase lg:self-end md:self-end border-b border-b-secondary-yellow font-bold text-white text-lg w-fit pb-1"
+      class="uppercase lg:self-start md:self-start border-b border-b-secondary-yellow font-bold text-white text-p w-fit pb-1"
     >
       GET IN TOUCH
     </p>
 
-    <div class="flex flex-row gap-3">
+    <div class="flex flex-row gap-4">
       {#each socials as social}
         <a
           href={social.link}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-white text-lg hover:no-underline rounded-full border border-secondary-yellow w-12 h-12 flex items-center justify-center"
+          class="text-white text-2xl hover:no-underline rounded-full border border-secondary-yellow w-16 h-16 aspect-square flex items-center justify-center"
         >
           {@html social.element}
         </a>
@@ -89,16 +82,33 @@
     </div>
   </div>
 
-  <div class="absolute bottom-6 text-white text-sm text-center self-center lg:self-start md:self-start w-full lg:w-fit md:w-fit">
+  <div class="flex flex-col justify-center items-center gap-2">
+
+    <img src="/UFV_SASI_logo.png" class="h-32" alt="" />
+    <p class="text-xs text-white text-center w-[18vw]">
+      South Asian Studies Institute Univeristy of the Fraser Valley
+      Building K 33780 King Rd, Abbotsford V2S7P2
+    </p>
+  </div>
+
+  <div
+    class="absolute bottom-6 text-white text-sm text-center self-center lg:self-start md:self-start w-full lg:w-fit md:w-fit"
+  >
+    <!-- mobile -->
     <div class="lg:hidden md:hidden w-full flex items-center justify-center">
       <p
-        class="border-t border-t-[#ffce34] font-bold text-transparent text-lg w-fit pb-1"
+        class="border-t border-t-secondary-yellow font-bold text-transparent text-lg w-fit pb-1"
       >
         GET IN TOUCH
       </p>
     </div>
 
-    Statement of Use and Takedown Policy | Media | © 2024 South Asian Canadian
-    Digital Archive
+    <a class="text-white" rel="_blank" href="https://sacda.ca/policy/takedown"
+      >Statement of Use and Takedown Policy</a
+    >
+    |
+    <a class="text-white" rel="_blank" href="https://sacda.ca/About/media">
+      Media
+    </a>| © 2024 South Asian Canadian Digital Archive
   </div>
 </footer>
