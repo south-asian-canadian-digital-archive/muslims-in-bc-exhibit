@@ -24,10 +24,10 @@
 
   onMount(() => {
 
-    gsap.utils.toArray<any>('.floating-square > div.z-50').forEach(square => {
+    gsap.utils.toArray<any>('.floating-square > div.left-0').forEach(square => {
         floatingSquareTweens.push(gsap.to(square, {
-            translateX: "-=random(3, 10)",
-            translateY: "-=random(3, 10)",
+            translateX: "-=random(2, 7)",
+            translateY: "-=random(2, 7)",
             ease: "sine.inOut",
             duration: 5,
             delay: "random(0.2, 1)",
@@ -51,9 +51,9 @@
             floatingSquareTweens[idx].resume()
         }}
        style:margin-top={marginTop} class="floating-square relative *:absolute *:rounded-2xl h-[20vw] w-[20vw] *:h-full *:aspect-square">
-        <div class="z-50 -top-4 -left-4 bg-secondary-yellow p-[10%] overflow-auto will-change-transform">
-            <h6 class="text-h6 font-bold text-primary-black pb-[6%]">{title}</h6>
-            <p>{desc}</p>
+        <div class="z-50 -top-4 -left-4 bg-secondary-yellow p-[10%] overflow-auto *:will-change-transform will-change-transform">
+            <h6 class="text-h6 font-bold text-primary-black pb-[4%]">{title}</h6>
+            <p class="text-p">{desc}</p>
         </div>
         <div class="bg-[#CED299] bg-secondary-yellowtop-0 left-0">&nbsp;</div>
       </div>
