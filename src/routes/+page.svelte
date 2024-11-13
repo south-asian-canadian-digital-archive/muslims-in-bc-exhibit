@@ -2,18 +2,45 @@
   import DomeThing from "$lib/components/DomeThing.svelte";
   import { navItems } from "$lib/utils/nav.store.svelte";
   import Arrow from "$lib/components/Arrow.svelte";
+  import { gsap } from "gsap";
+  import { onMount } from "svelte";
+  import { page } from "$app/stores";
+  import { goto } from "$app/navigation";
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
+  let hoveredTag = $state(-1);
+
+  onMount(() => {
+    let domeAnimationTimeline = gsap.timeline({
+      repeat: -1,
+      onRepeat: () => {
+        domeAnimationTimeline.invalidate();
+      },
+    });
+    domeAnimationTimeline.add(
+      gsap.to(".dome-bg", {
+        backgroundPositionX: "-=10",
+        // backgroundPositionY: "+=random(-5, 5)",
+        // translateX: "+=10",
+        // translateY: "+=random(-5, 5)",
+        duration: 5,
+        ease: "none",
+      })
+    );
+    domeAnimationTimeline.play();
+  });
 </script>
 
 <main class="">
-  <section class="h-screen pt-20">
-
-    <div class="h-min flex lg:flex-row md:flex-row flex-col gap-5 px-0 w-screen *:lg:w-[50vw] *:md:w-[50vw]">
-
+  <section class="py-32">
+    <div
+      class="h-min flex lg:flex-row md:flex-row flex-col gap-5 px-0 w-screen *:lg:w-[50vw] *:md:w-[50vw]"
+    >
       <div class="flex flex-col gap-12 lg:pl-32 md:pl-32 pl-4">
-        <h1 class="font-source-serif-4 font-bold text-h2 text-primary-blue leading-[115%]">
+        <h1
+          class="font-source-serif-4 font-bold text-h2 text-primary-blue leading-[115%]"
+        >
           South Asian Muslims in British Columbia
         </h1>
 
@@ -46,34 +73,48 @@
             onmouseleave={() => (curHoveredDome = 0)}
             onfocus={() => {}}
           >
-            <div class="bg-[url('/pattern.svg')] bg-repeat h-full"></div>
+            <div
+              class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen dome-bg will-change-auto"
+            ></div>
           </button>
         {/each}
       </div>
-
     </div>
-
   </section>
 
-  <section class="bg-secondary-yellow pl-32 flex justify-between">
-    <div class="w-1/2 py-40 flex flex-col gap-5">
-      <h2 class="text-h2 font-bold">About the Project</h2>
-      <p>
-        The historical and contemporary presence of Muslim communities in
-        Canada, particularly South Asian Muslims in B.C., has often been
-        obscured. Our research project focuses on their contributions and covers
-        three major timelines: early migration to BC, mid-20th-century
-        migration, and recent migration to Canada. Exploring the diverse sects
-        and cultural integration of Islam, including Sunni sub-sects like
-        Wahabi, Salafi, Barelvi, and Deobandi, as well as Shia sub-sects like
-        Twelver Shi'ism and Ismailism, along with Sufism, we aim to promote
-        understanding and welcome feedback for future enhancements.
+  <section class="">
+    <div class="flex flex-col items-center">
+      <h2 class="text-h2 font-bold text-secondar-teal translate-y-1/3">
+        Historical Timeline
+      </h2>
 
-        <br /> <br />To learn more, please refer to the timeline provided below.
-      </p>
+      <div class="flex flex-row justify-evenly w-full translate-y-1/3">
+        {#each historyPages.slice(1) as item, i}
+          <button
+            class="aspect-square rounded-full w-[20vw] flex items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
+            onclick={() => goto(item.path)}
+            onmouseenter={() => (hoveredTag = i)}
+            onmouseleave={() => (hoveredTag = -1)}
+            class:translate-y-[10%]={hoveredTag !== -1 && hoveredTag !== i
+              ? true
+              : hoveredTag === i
+                ? false
+                : item.path !== $page.url.pathname}
+          >
+            <h6 class="text-p font-bold text-center">
+              {item.name} <br />
+              {item.years}
+            </h6>
+          </button>
+        {/each}
+      </div>
     </div>
 
-    <div class="bg-[url('/pattern.svg')] w-[30vw] bg-repeat-y">&nbsp;</div>
+    <div class="bg-secondary-yellow flex flex-col pt-[25vh]">
+      <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
+        &nbsp;
+      </div>
+    </div>
   </section>
 
   <section class="flex flex-col py-40 px-32 gap-10">

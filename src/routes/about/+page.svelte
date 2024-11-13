@@ -2,30 +2,68 @@
   import { gsap } from "gsap";
   import { onMount } from "svelte";
 
-  let floatingSquareTweens: gsap.core.Tween[] = []
-  const floatingSquareInfo: { title: string, desc: string }[] = [
+  let floatingSquareTweens: gsap.core.Tween[] = [];
+  const floatingSquareInfo: { title: string; desc: string }[] = [
     {
-        title: "Consultation",
-        desc: "SASI spent a year and half (2023-2024) consulting with organizations, associations and individuals who have lived experiences as South Asian Canadian Muslims in BC and beyond. The goal of the consultations",
+      title: "Consultation",
+      desc: "SASI spent a year and half (2023-2024) consulting with organizations, associations and individuals who have lived experiences as South Asian Canadian Muslims in BC and beyond. The goal of the consultations",
     },
     {
-        title: "Building Relationships",
-        desc: "We form strong partnerships with community members and organizations to access personal stories and archives. These relationships help ensure our research is inclusive and representative of the diverse South Asian Muslim experiences in B.C."
+      title: "Building Relationships",
+      desc: "We form strong partnerships with community members and organizations to access personal stories and archives. These relationships help ensure our research is inclusive and representative of the diverse South Asian Muslim experiences in B.C.",
     },
     {
-        title: "Education & Outreach", 
-        desc: "Through exhibitions, workshops, and online resources, we educate the public on the contributions of South Asian Muslims in B.C. Our outreach fosters cultural understanding and celebrates these untold histories."
+      title: "Education & Outreach",
+      desc: "Through exhibitions, workshops, and online resources, we educate the public on the contributions of South Asian Muslims in B.C. Our outreach fosters cultural understanding and celebrates these untold histories.",
     },
     {
-        title: "Grants & Funding",
-        desc: "Our research and events are made possible through generous grants and funding. We use these resources to conduct in-depth research, create public exhibitions, and develop educational programs that preserve and share this heritage."
-    }
-  ]
+      title: "Grants & Funding",
+      desc: "Our research and events are made possible through generous grants and funding. We use these resources to conduct in-depth research, create public exhibitions, and develop educational programs that preserve and share this heritage.",
+    },
+  ];
+
+  const team = [
+    { name: "Dr. Satwinder Bains" },
+    { name: "Thamilini Jothilingam" },
+    { name: "Antoinetta Holierhoek" },
+    { name: "Anushay Mallik" },
+    { name: "Kiara Dabreo" },
+    { name: "Samarah Saddique" },
+    { name: "Habiba Khan" },
+    { name: "Rashneet" },
+    { name: "Saumyaa Gelani" },
+    { name: "Arnav Mehta" },
+  ];
+
+  const committee: {
+    name: string;
+    position: string;
+    desc: string;
+  }[] = [
+    {
+      name: "Dr. Satwinder Bains",
+      position: "PhD, Director,<br> South Asian Studies Institute",
+      desc: "Satwinder Bains, PhD is Director of the South Asian Studies Institute at the University of the Fraser Valley and an Associate Professor in the School of Culture, Media and Society, College of Arts. Dr Bains’ research interests include the study of the impact of language, culture and identity on South Asian Canadian migration, settlement, and integration. She teaches anti-racist curriculum implementation; identity politics; migration and politics in the South Asian Canadian Diaspora and Punjabi Canadian cultural historiography. Dr Bains is the Chair of the Knowledge Network, Director of the Abbotsford Community Foundation and has served as a Commissioner on the Agricultural Land Commission, as a Director of the Fraser Basin Council, as a Bencher on the Law Society of British Columbia and as a member of the Farm Industry Review Board for British Columbia.",
+    },
+    {
+      name: "Awneet Sivia",
+      position: "PhD, Associate Vice President Teaching and Learning",
+      desc: "",
+    },
+    {
+      name: "Jas Uppal",
+      position: "PhD, Assistant Professor, Teacher Education Program",
+      desc: "",
+    },
+    { name: "", position: "", desc: "" },
+  ];
 
   onMount(() => {
-
-    gsap.utils.toArray<any>('.floating-square > div.left-0').forEach(square => {
-        floatingSquareTweens.push(gsap.to(square, {
+    gsap.utils
+      .toArray<any>(".floating-square > div.left-0")
+      .forEach((square) => {
+        floatingSquareTweens.push(
+          gsap.to(square, {
             translateX: "-=random(2, 7)",
             translateY: "-=random(2, 7)",
             ease: "sine.inOut",
@@ -33,30 +71,38 @@
             delay: "random(0.2, 1)",
             repeat: -1,
             yoyo: true,
-        }))
-    })
-
-  })
-
+          })
+        );
+      });
+  });
 </script>
 
-{#snippet FloatingSquare(title: string, desc: string, marginTop: string = "0px", idx: number)}  
-      <div
-        role="dialog"
-        onfocus={()=>{}}
-        onmouseover={() => {
-            floatingSquareTweens[idx].pause()
-        }}
-        onmouseleave={() => {
-            floatingSquareTweens[idx].resume()
-        }}
-       style:margin-top={marginTop} class="floating-square relative *:absolute *:rounded-2xl h-[20vw] w-[20vw] *:h-full *:aspect-square">
-        <div class="z-50 -top-4 -left-4 bg-secondary-yellow p-[10%] overflow-auto *:will-change-transform will-change-transform">
-            <h6 class="text-h6 font-bold text-primary-black pb-[4%]">{title}</h6>
-            <p class="text-p">{desc}</p>
-        </div>
-        <div class="bg-[#CED299] bg-secondary-yellowtop-0 left-0">&nbsp;</div>
-      </div>
+{#snippet FloatingSquare(
+  title: string,
+  desc: string,
+  marginTop: string = "0px",
+  idx: number
+)}
+  <div
+    role="dialog"
+    onfocus={() => {}}
+    onmouseover={() => {
+      floatingSquareTweens[idx].pause();
+    }}
+    onmouseleave={() => {
+      floatingSquareTweens[idx].resume();
+    }}
+    style:margin-top={marginTop}
+    class="floating-square relative *:absolute *:rounded-2xl h-[20vw] w-[20vw] *:h-full *:aspect-square"
+  >
+    <div
+      class="z-50 -top-4 -left-4 bg-secondary-yellow p-[10%] overflow-auto *:will-change-transform will-change-transform"
+    >
+      <h6 class="text-h6 font-bold text-primary-black pb-[4%]">{title}</h6>
+      <p class="text-p">{desc}</p>
+    </div>
+    <div class="bg-[#CED299] bg-secondary-yellowtop-0 left-0">&nbsp;</div>
+  </div>
 {/snippet}
 
 <main class="py-20 flex flex-col gap-16">
@@ -86,6 +132,15 @@
           academia, members of the community, government, organizations and
           agencies as well as global scholars and interested persons.
         </p>
+        <div class="flex flex-wrap gap-4">
+          {#each [["Meet Our Team", "#team"], ["Meet Our Partners", "#partners"], ["Advisory Committee", "#committee"]] as link, idx}
+            <a
+              href={link[1]}
+              class="bg-primary-blue rounded-lg whitespace-nowrap text-white px-6 py-3"
+              >{link[0]}</a
+            >
+          {/each}
+        </div>
       </div>
       <div class="min-w-[35vw] h-auto bg-gray-300"></div>
     </div>
@@ -96,19 +151,36 @@
   </section>
 
   <section class="p-32 pt-36 flex flex-row gap-16">
-
     <div class="grid grid-rows-2 grid-cols-2 gap-20">
-
       {#each floatingSquareInfo as info, idx}
-
-        {@render FloatingSquare(info.title, info.desc, [2,0].includes(idx) ? "-5vh" : "0", idx)}
-        
+        {@render FloatingSquare(
+          info.title,
+          info.desc,
+          [2, 0].includes(idx) ? "-5vh" : "0",
+          idx
+        )}
       {/each}
-
     </div>
 
-    <div>
-      <h3 class="text-h3 font-bold font-source-serif-4">Project History</h3>
+    <div class="h-full w-[30vw] flex flex-col gap-4 text-right">
+      <h3 class="text-h3 font-bold font-source-serif-4 text-primary-blue">
+        Project History
+      </h3>
+      <p
+        class="border-r-[4px] border-r-secondary-yellow h-max pr-4 font-martel"
+      >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
+        voluptatum necessitatibus! Vel expedita officia aperiam amet at,
+        aspernatur quos quisquam? Velit cum ullam voluptatem eius nostrum fugiat
+        nihil dicta recusandae. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Labore totam architecto aut tenetur quo maiores fugiat
+        deleniti voluptate nihil. Consectetur consequuntur incidunt assumenda
+        dolorum quisquam doloribus necessitatibus, iusto quod voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos rem id
+        aperiam molestiae recusandae, soluta animi est quas alias illum
+        voluptates? Omnis placeat voluptatum rerum amet itaque, ipsum inventore
+        dicta.
+      </p>
     </div>
   </section>
 
@@ -127,6 +199,79 @@
 
     <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
       &nbsp;
+    </div>
+  </section>
+
+  <section class="p-32" id="team">
+    <h1
+      class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
+    >
+      Our Team
+    </h1>
+
+    <div class="flex flex-col gap-6 items-center">
+      {#each [team.slice(0, 3), team.slice(3, 7), team.slice(7)] as col, idy}
+        <div class="flex flex-row justify-center text-center gap-6 w-full">
+          {#each col as person, idx}
+            <div
+              class="w-[20vw] rounded-lg aspect-square bg-secondary-yellow relative"
+            >
+              <span
+                class="bottom-0 left-0 p-2 bg-secondar-teal rounded-b-lg text-white font-martel absolute w-full"
+                >{person.name}</span
+              >
+            </div>
+          {/each}
+        </div>
+      {/each}
+    </div>
+  </section>
+
+  <section class="bg-secondary-yellow flex flex-col pt-24" id="partners">
+    <div class="flex flex-col px-32">
+      <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
+        Our Partners
+      </h2>
+      <div class="flex py-24 justify-between">
+        <img src="/BlackResearchGraduateStudies.png" class="h-24" alt="" />
+        <img src="/UFV_SASI_logo.png" alt="" class="h-24" />
+        <img src="/Sacda-logo.svg" alt="" class="h-18" />
+      </div>
+    </div>
+
+    <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
+      &nbsp;
+    </div>
+  </section>
+
+  <section class="p-32" id="committee">
+    <h1
+      class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
+    >
+      Advisory Committee
+    </h1>
+
+    <div class="flex flex-col gap-6">
+      {#each committee as person, idx}
+        {@const EvenItem = !((idx + 1) % 2)}
+        <div
+          class="w-[90%] h-min rounded-lg p-6 bg-secondary-yellow flex gap-6"
+          class:self-end={EvenItem}
+          class:flex-row-reverse={EvenItem}
+          class:text-right={EvenItem}
+        >
+          <div class="aspect-square h-[20vw] bg-gray-100 relative rounded-lg">
+            <span
+              class="bottom-0 left-0 p-2 bg-secondar-teal rounded-b-lg text-white font-martel absolute w-full text-center"
+              >{person.name} <br />
+              <span class="text-xs">{@html person.position}</span></span
+            >
+          </div>
+          <div>
+            {@html person.desc}
+          </div>
+        </div>
+      {/each}
     </div>
   </section>
 </main>
