@@ -19,7 +19,10 @@
   class="sticky top-0 z-[9999] lg:h-24 md:h-24 px-32 flex lg:flex-row md:flex-row flex-col items-center justify-between text-primary-black font-bold font-martel border-b-2 border-b-[#E3E7AF] bg-white"
 >
   <div class="w-full lg:w-fit md:w-fit">
-    <div></div>
+    <div class="h-20 flex gap-4 items-center">
+      <img src="/UFV_SASI_logo.png" class="h-full" alt="">
+      <img src="/ufv-logo.png" class="h-full" alt="">
+    </div>
 
     <button
       class="lg:hidden md:hidden bg-[#F99D2A] py-10 px-8 absolute right-10 top-0"
