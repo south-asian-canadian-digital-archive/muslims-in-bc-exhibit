@@ -55,17 +55,23 @@
           class="border-l-[6px] border-l-secondary-yellow flex flex-col pl-8 gap-6"
         >
           <p>
-            The South Asian Muslims in British Columbia digital exhibit sheds
-            light on the often obscured and misrepresented historical and
-            contemporary presence of Muslim communities in Canada, focusing on
-            South Asian Muslim communities of B.C. Through archival records,
-            academic works, and personal interviews, we aim to highlight their
-            profound contributions to Canadian society and promote deeper
-            appreciation and understanding.
+            The South Asian Muslims in British Columbia research project sheds
+            light on the historical and contemporary presence of Muslim
+            communities in Canada, focusing on South Asian Muslim communities of
+            B.C. Through research, archival records, academic and scholarly
+            work, and oral interviews, we aim to highlight profound
+            contributions of Canadian South Asian Muslims to Canadian society
+            with a gaol to record the history, promote deeper appreciation and
+            understanding and to contribute to the Canadian record. This is a
+            work in progress and so far this represents the first stage of
+            research supported by scholars, community researchers, and student
+            researchers.
           </p>
           <button
             class="bg-primary-blue py-4 px-12 rounded-full text-white w-fit"
-            >Explore</button
+            onclick={() => {
+              goto("/history/introduction");
+            }}>Explore</button
           >
         </div>
       </div>

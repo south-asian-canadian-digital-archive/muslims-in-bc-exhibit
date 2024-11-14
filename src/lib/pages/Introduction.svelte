@@ -1,14 +1,45 @@
+<script lang="ts">
+  import { goto } from "$app/navigation";
+  import { navItems } from "$lib/utils/nav.store.svelte";
+  import { gsap } from "gsap";
+  import { onMount } from "svelte";
+
+  let historyPages = navItems[2].pages || [];
+  let navTweens: gsap.core.Tween[] = $state([]);
+  let prefix = "history-page-nav";
+
+  onMount(() => {
+    historyPages.slice(1).forEach((e, i) => {
+      navTweens.push(
+        gsap.to(`button#${prefix}-${i}`, {
+          zIndex: 999,
+          color: "white",
+          scale: 50,
+          duration: 0.5,
+          ease: "power4.in",
+          paused: true,
+          onComplete: () => {
+            setTimeout(() => {
+              goto(e.path);
+            }, 400);
+          },
+        })
+      );
+    });
+  });
+</script>
+
 <main class="pb-10 flex flex-col">
   <section class="py-20">
     <div class="h-min flex gap-14 px-0 w-screen">
       <div class="flex flex-col gap-12 pl-32 w-[80vw]">
         <h1
-          class="font-source-serif-4 font-bold text-h2 leading-[1.15] text-primary-blue"
+          class="font-source-serif-4 font-bold lg:text-h2 leading-[1.15] text-primary-blue"
         >
           South Asian Muslims in British Columbia: Introduction
         </h1>
 
-        <p>
+        <p class="border-l-[5px] border-l-secondary-yellow pl-6">
           The historical and contemporary presence of Muslim communities in
           Canada has often remained obscured, unacknowledged, and
           misrepresented. Their profound contributions to Canadian society
@@ -34,7 +65,7 @@
         </p>
       </div>
 
-      <div class="flex gap-4 pr-32 w-[50vw]">
+      <div class="hidden lg:flex gap-4 pr-32 w-[50vw]">
         <div
           class="bg-secondar-teal rounded-xl p-2 max-h-[70vh] w-full transition-all ease-in-out duration-300 dome"
         >
@@ -44,23 +75,45 @@
     </div>
   </section>
 
-  <section
-    class="w-screen *:w-[50vw] border-y-2 border-secondar-teal flex *:flex *:flex-col *:items-center *:justify-around *:py-28"
-  >
-    <div class="border-r-2 border-secondar-teal">
-      <p>Muslim population in BC*</p>
-      <p class="text-h3">125,915</p>
-    </div>
-    <div>
-      <p>Muslim population in BC*</p>
-      <p class="text-h3">2.56%</p>
+  <section class="py-20">
+    <h1
+      class="text-h3 font-bold text-primary-blue text-center font-source-serif-4 pb-[10vw]"
+    >
+      Historical Timeline
+    </h1>
+
+    <div class="flex flex-col gap-[10vw]">
+      {#snippet desc(text: string, align = "left")}
+        <div class:text-right={align === "right"}>
+          {@html text}
+        </div>
+      {/snippet}
+
+      {#each historyPages.slice(1) as item, idx}
+        <div
+          class="relative px-32 bg-secondary-yellow h-[10vw] overflow-visible flex flex-row items-center gap-12"
+        >
+          {#if idx === 1}
+            {@render desc(item.desc, "right")}
+          {/if}
+          <button
+            id="{prefix}-{idx}"
+            class="aspect-square rounded-full min-w-[20vw] flex items-center justify-center border-[8px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
+            onclick={(e) => {
+              e.currentTarget.style.color = "white";
+              navTweens[idx].resume();
+            }}
+          >
+            <h6 class="text-p font-bold text-center">
+              {item.name} <br />
+              {item.years}
+            </h6>
+          </button>
+          {#if idx !== 1}
+            {@render desc(item.desc)}
+          {/if}
+        </div>
+      {/each}
     </div>
   </section>
-
-  <div class="flex w-full justify-end p-8 pr-20">
-    <a
-      href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&SearchText=British%20Columbia&DGUIDlist=2021A000259&GENDERlist=1,2,3&STATISTIClist=1&HEADERlist=0"
-      >*as per 2021 Canadian census</a
-    >
-  </div>
 </main>
