@@ -10,6 +10,9 @@
   let hoveredTag = $state(-1);
   // const scrollImagesContent = [];
   let loop: gsap.core.Timeline;
+  let navTweens: gsap.core.Tween[] = $state([]);
+  let prefix = "history-page-nav";
+
 
   onMount(() => {
     let domeAnimationTimeline = gsap.timeline({
@@ -35,6 +38,24 @@
       center: true,
       repeat: -1,
       speed: 0.5,
+    });
+
+    historyPages.slice(1).forEach((e, i) => {
+      navTweens.push(
+        gsap.to(`button#${prefix}-${i}`, {
+          zIndex: 999,
+          color: "white",
+          scale: 50,
+          duration: 0.5,
+          ease: "power4.in",
+          paused: true,
+          onComplete: () => {
+            setTimeout(() => {
+              goto(e.path);
+            }, 400);
+          },
+        })
+      );
     });
   });
 </script>
@@ -105,7 +126,11 @@
         {#each historyPages.slice(1) as item, i}
           <button
             class="aspect-square rounded-full w-[20vw] flex items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
-            onclick={() => goto(item.path)}
+            id="{prefix}-{i}"
+            onclick={(e) => {
+              e.currentTarget.style.color = "white";
+              navTweens[i].resume();
+            }}
             onmouseenter={() => (hoveredTag = i)}
             onmouseleave={() => (hoveredTag = -1)}
             class:translate-y-[40%]={hoveredTag !== -1 && hoveredTag !== i
