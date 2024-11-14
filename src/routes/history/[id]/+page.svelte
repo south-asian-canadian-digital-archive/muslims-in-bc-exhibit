@@ -6,10 +6,7 @@
   import RecentMigration from "$lib/pages/RecentMigration.svelte";
   import HistoryTimeline from "$lib/components/HistoryTimeline.svelte";
 
-  const pageMap = {
-    introduction: Introduction,
-    "early-migration": EarlyMigration,
-  };
+
 </script>
 
 {#if $page.params.id === "introduction"}
@@ -22,4 +19,4 @@
   <RecentMigration />
 {/if}
 
-<HistoryTimeline />
+<!-- <HistoryTimeline /> -->

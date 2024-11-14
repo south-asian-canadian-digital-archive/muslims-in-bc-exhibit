@@ -121,34 +121,10 @@
     <div class="bg-secondary-yellow flex flex-col pt-[25vh]">
       <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
         &nbsp;
+        <!-- TODO: insert images -->
       </div>
     </div>
   </section>
-
-  <!-- <section class="flex flex-col py-40 px-32 gap-10">
-    <h2 class="text-h2 font-bold">Historical Timeline</h2>
-
-    <div class="flex flex-col">
-      {#each historyPages as item, i}
-        <div
-          class="flex text-left items-center justify-between p-14 first:border-t-2 border-b-2 border-secondary-yellow hover:bg-secondary-yellow transition-all ease-in-out duration-300"
-        >
-          <span class="text-h6 font-bold w-[30%]"
-            >{`0${i + 1}. `}{item.name}</span
-          >
-
-          <span class="text-body w-[50%]">{item.desc}&nbsp;</span>
-
-          <a
-            href={item.path}
-            class="hover:scale-110 transition-all ease-in-out duration-200"
-          >
-            <Arrow></Arrow>
-          </a>
-        </div>
-      {/each}
-    </div>
-  </section> -->
 
   <section
     role="marquee"
