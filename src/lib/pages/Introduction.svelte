@@ -98,7 +98,7 @@
           {/if}
           <button
             id="{prefix}-{idx}"
-            class="aspect-square rounded-full min-w-[20vw] flex items-center justify-center border-[8px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
+            class="aspect-square rounded-full min-w-[20vw] flex items-center justify-center border-[8px] hover:border-[16px] border-secondary-yellow bg-white transition-all duration-200 ease-in-out"
             onclick={(e) => {
               e.currentTarget.style.color = "white";
               navTweens[idx].resume();
