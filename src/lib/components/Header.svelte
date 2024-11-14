@@ -16,12 +16,12 @@
 </script>
 
 <nav
-  class="sticky top-0 z-[9999] lg:h-24 md:h-24 px-32 flex lg:flex-row md:flex-row flex-col items-center justify-between text-primary-black font-bold font-martel border-b-2 border-b-[#E3E7AF] bg-white"
+  class="sticky top-0 z-[9999] lg:h-24 md:h-24 lg:px-32 p-4 flex lg:flex-row md:flex-row flex-col items-center justify-between text-primary-black font-bold font-martel border-b-2 border-b-[#E3E7AF] bg-white"
 >
   <div class="w-full lg:w-fit md:w-fit">
-    <div class="h-20 flex gap-4 items-center">
-      <img src="/UFV_SASI_logo.png" class="h-full" alt="">
-      <img src="/ufv-logo.png" class="h-full" alt="">
+    <div class="lg:h-20 md:h-20 lg:w-fit md:w-fit w-[80vw] aspect-auto flex gap-4 items-center">
+      <img src="/UFV_SASI_logo.png" class="h-full lg:w-auto w-1/2" alt="">
+      <img src="/ufv-logo.png" class="h-full lg:w-auto w-1/2" alt="">
     </div>
 
     <button

@@ -48,14 +48,26 @@
     {
       name: "Awneet Sivia",
       position: "PhD, Associate Vice President Teaching and Learning",
-      desc: "",
+      desc: "Awneet Sivia is currently the Associate Vice President of Teaching and Learning, and has been an Associate Professor, Director, and Chair of programs in the School of Education at UFV. She is a passionate educator and researcher in social justice/antiracist pedagogy, science education, teacher identity, faculty development, and educational leadership. Awneet’s academic publications can be found in Studying Teacher Education, In Education, Canadian Journal of Scholarship of Teaching and Learning, Journal of Education, and in books published by Brill, Sense, and Lexington. Her current research interests include decolonizing methodologies, rehumanizing science education, narratives of racism/antiracism in teacher education, leadership in online education, and early career faculty experiences. Awneet leads numerous institutional initiatives, including the Institutional Learning Outcomes, the AI Task Force, the Learning Management System Project, Changemaker Education, Indigenizing new faculty development, and policy revisions. She has been a speaker at TEDx Abbotsford and has been honoured with several provincial and national teaching awards, including the 3M National Teaching Fellowship.",
     },
     {
       name: "Jas Uppal",
       position: "PhD, Assistant Professor, Teacher Education Program",
-      desc: "",
+      desc: "Jas Uppal’s teaching experiences are vast and span not only grades and subjects, but also countries and curriculums. Her experience mirrors the lifecycle of the teacher: K-12 teaching of science and math, mentoring pre-service teachers at the school level, teaching and mentoring re-certifying teachers and pre-service teachers in international teacher education. She has also trained and built teacher capacity through programs in the U.K, through a study abroad program in India and a district mentoring program for 300+ teachers, as well as themed graduate diploma programs for practicing teachers. Her master’s degree focused on educational change, including assessment for learning, and teacher identity. During her doctoral studies, she researched pedagogical dynamics in encounters with difference through centering inequitable power relations. Jas’ research reflects her passion and commitment to take continuous risks to learn and unlearn who she is as an educator.",
     },
-    { name: "", position: "", desc: "" },
+    {
+      name: "Hassan Javid",
+      position:
+        "PhD, Associate Professor, School of Society, Culture and Society",
+      desc: "Hassan Javid is an Associate Professor of Sociology in the School of Culture and Media Studies at UFV.Prior to joining UFV, Hassan held academic positions at the Lahore University of Management Sciences and at the London School of Economics. His work focuses on the legacies of colonialism in South Asia, focusing on processes of democratization and the mechanisms through which elite power is reproduced.",
+    },
+    {
+      name: "Shazad Nazir",
+      position: "PhD, Assistant Professor, Teacher Education Program",
+      desc: "Shahzad Nazir Khan is a Professional Agrologist with an M. Sc (Hons) Agriculture and an MBA . He is a well-known peace and social justice activist of South Asian community who immigrated to Canada from Pakistan back in 2006. For last many years, him and his group of Progressive Pakistani Canadians took many initiatives to raise awareness about the peace and issues related to South Asian diaspora. He celebrates ‘unity in diversity’.",
+    },
+    // { name: "", position: "", desc: "" },
+    // { name: "", position: "", desc: "" },
   ];
 
   onMount(() => {
@@ -134,11 +146,16 @@
         </p>
         <div class="flex flex-wrap gap-4">
           {#each [["Meet Our Team", "#team"], ["Meet Our Partners", "#partners"], ["Advisory Committee", "#committee"]] as link, idx}
-            <a
-              href={link[1]}
+            <button
               class="bg-primary-blue rounded-lg whitespace-nowrap text-white px-6 py-3"
-              >{link[0]}</a
+              onclick={() => {
+                document
+                  .querySelector(link[1])
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
+              {link[0]}
+            </button>
           {/each}
         </div>
       </div>
