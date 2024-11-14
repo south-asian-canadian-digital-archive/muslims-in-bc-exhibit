@@ -1,15 +1,15 @@
 <script lang="ts">
-  import DomeThing from "$lib/components/DomeThing.svelte";
   import { navItems } from "$lib/utils/nav.store.svelte";
-  import Arrow from "$lib/components/Arrow.svelte";
   import { gsap } from "gsap";
   import { onMount } from "svelte";
-  import { page } from "$app/stores";
   import { goto } from "$app/navigation";
+  import { horizontalLoop } from "$lib/utils/seemlessLoop.util";
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
   let hoveredTag = $state(-1);
+  // const scrollImagesContent = [];
+  let loop: gsap.core.Timeline;
 
   onMount(() => {
     let domeAnimationTimeline = gsap.timeline({
@@ -29,6 +29,13 @@
       })
     );
     domeAnimationTimeline.play();
+
+    let scrollingImageDivs = gsap.utils.toArray("#carousel > div");
+    loop = horizontalLoop(scrollingImageDivs, {
+      center: true,
+      repeat: -1,
+      speed: 0.5,
+    });
   });
 </script>
 
@@ -63,7 +70,7 @@
         </div>
       </div>
 
-      <div class="flex gap-4 pr-32">
+      <div class="flex gap-4 pr-32 overflow-clip">
         {#each { length: 2 } as _, i}
           <button
             class="bg-secondar-teal rounded-xl p-2 min-h-[60vh] w-[30%] transition-all ease-in-out duration-500 dome"
@@ -88,18 +95,19 @@
         Historical Timeline
       </h2>
 
-      <div class="flex flex-row justify-evenly w-full translate-y-1/3">
+      <div class="flex flex-row justify-evenly w-full translate-y-[40%]">
         {#each historyPages.slice(1) as item, i}
           <button
             class="aspect-square rounded-full w-[20vw] flex items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
             onclick={() => goto(item.path)}
             onmouseenter={() => (hoveredTag = i)}
             onmouseleave={() => (hoveredTag = -1)}
-            class:translate-y-[10%]={hoveredTag !== -1 && hoveredTag !== i
+            class:translate-y-[40%]={hoveredTag !== -1 && hoveredTag !== i
               ? true
               : hoveredTag === i
                 ? false
-                : item.path !== $page.url.pathname}
+                : i === 1}
+            class:opacity-50={hoveredTag !== -1 && hoveredTag !== i}
           >
             <h6 class="text-p font-bold text-center">
               {item.name} <br />
@@ -117,7 +125,7 @@
     </div>
   </section>
 
-  <section class="flex flex-col py-40 px-32 gap-10">
+  <!-- <section class="flex flex-col py-40 px-32 gap-10">
     <h2 class="text-h2 font-bold">Historical Timeline</h2>
 
     <div class="flex flex-col">
@@ -140,5 +148,29 @@
         </div>
       {/each}
     </div>
+  </section> -->
+
+  <section
+    role="marquee"
+    onmouseover={() => {
+      loop.pause();
+    }}
+    onmouseleave={() => {
+      loop.resume();
+    }}
+    onfocus={() => {}}
+    id="carousel"
+    class="my-32 mx-32 flex overflow-hidden items-center relative"
+  >
+    {#each Array(8) as _, idx}
+      <div class="aspect-square min-w-[20vw] p-1 cursor-grab relative shrink-0">
+        <div
+          class="bg-gray-100 border-2 border-secondar-teal rounded h-full w-full select-none"
+        >
+          &nbsp;
+        </div>
+        <!-- image placeholder -->
+      </div>
+    {/each}
   </section>
 </main>
