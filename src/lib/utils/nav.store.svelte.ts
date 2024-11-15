@@ -13,7 +13,7 @@ export const navItems = [
 		]
 	},
 	{ name: "Resources", path: "/resources"},
-	{ name: "Contact", path: "https://sacda.ca/Contact/Form" },
+	{ name: "Contact", path: "https://www.ufv.ca/sasi/contact-us/" },
 ]
 
 type NavItem = "Home" | "About" | "History" | "Resources" | "Contact";

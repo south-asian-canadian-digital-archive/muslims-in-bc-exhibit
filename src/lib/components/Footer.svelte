@@ -51,6 +51,7 @@
       link: "https://www.flickr.com/photos/ufvcics/albums",
       element: "<i class='fa fa-flickr'></i>",
     },
+    { name: "Email", link: "mailto:sasi@ufv.ca", element: "<i class='fa fa-envelope'></i>" },
   ];
 </script>
 
@@ -157,7 +158,7 @@
     <p
       class="uppercase lg:self-start md:self-start border-b border-b-secondary-yellow font-bold text-white text-p w-fit pb-1"
     >
-      GET IN TOUCH
+      SIGNUP FOR OUR NEWSLETTER
     </p>
 
     <div class="flex flex-row gap-4">
