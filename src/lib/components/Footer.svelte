@@ -60,8 +60,100 @@
   <div
     class="flex flex-col-reverse lg:self-start gap-6 items-center lg:w-fit md:w-fit w-full"
   >
+    <div class="rounded-xl bg-white self-start relative">
+      <div id="mc_embed_shell">
+        <!-- <link
+          href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+          rel="stylesheet"
+          type="text/css"
+        /> -->
 
-    <div class="rounded-xl bg-white py-4 px-20 self-start">input here</div>
+        <div id="mc_embed_signup">
+          <form
+            action="https://ufv.us4.list-manage.com/subscribe/post?u=3c616907ab5cf63924a62f942&amp;id=b3dc827f85&amp;f_id=000356e2f0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+          >
+            <div id="mc_embed_signup_scroll" class="flex flex-row rounded-lg">
+              <!-- <div class="indicates-required">
+                <span class="asterisk">*</span> indicates required
+              </div> -->
+              <div class="mc-field-group">
+                <!-- <label for="mce-EMAIL"
+                  >Email Address <span class="asterisk">*</span></label
+                > -->
+                <input
+                  type="email"
+                  name="EMAIL"
+                  class="required email rounded-l-lg py-4 pl-4 font-martel text-xs outline-none"
+                  id="mce-EMAIL"
+                  required
+                  value=""
+                  placeholder="email for signup"
+                />
+              </div>
+              <div
+                id="mce-responses"
+                class="clear absolute text-sm top-[110%] text-white font-martel text-p min-w-[50vw] max-h-10 overflow-scroll text-left"
+              >
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none;"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none;"
+                ></div>
+              </div>
+              <div
+                aria-hidden="true"
+                style="position: absolute; left: -5000px;"
+              >
+                <input
+                  type="text"
+                  name="b_3c616907ab5cf63924a62f942_b3dc827f85"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div
+                class="clear text-white bg-black rounded-r-lg w-1/3 flex items-center justify-center px-3 cursor-pointer"
+              >
+                <input
+                  type="submit"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button font-martel text-xs cursor-pointer"
+                  value="Subscribe"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <script
+          type="text/javascript"
+          src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+        ></script><script type="text/javascript">
+          (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = "EMAIL";
+            ftypes[0] = "email";
+            fnames[1] = "FNAME";
+            ftypes[1] = "text";
+            fnames[2] = "LNAME";
+            ftypes[2] = "text";
+          })(jQuery);
+          var $mcj = jQuery.noConflict(true);
+        </script>
+      </div>
+    </div>
+
     <p
       class="uppercase lg:self-start md:self-start border-b border-b-secondary-yellow font-bold text-white text-p w-fit pb-1"
     >
@@ -83,11 +175,10 @@
   </div>
 
   <div class="flex flex-col justify-center items-center gap-2">
-
     <img src="/UFV_SASI_logo.png" class="h-32" alt="" />
     <p class="text-xs text-white text-center w-[18vw]">
-      South Asian Studies Institute Univeristy of the Fraser Valley
-      Building K 33780 King Rd, Abbotsford V2S7P2
+      South Asian Studies Institute Univeristy of the Fraser Valley Building K
+      33780 King Rd, Abbotsford V2S7P2
     </p>
   </div>
 
@@ -112,3 +203,10 @@
     </a>| © 2024 South Asian Canadian Digital Archive
   </div>
 </footer>
+
+<style type="postcss">
+  .mce_inline_error {
+    position: absolute;
+    bottom: -1rem;
+  }
+</style>
