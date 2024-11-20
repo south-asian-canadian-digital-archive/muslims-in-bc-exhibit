@@ -13,7 +13,7 @@
   <Introduction />
 {:else if $page.params.id === "early-migration"}
   <EarlyMigration />
-{:else if $page.params.id === "mid-20th-centuary-migration"}
+{:else if $page.params.id === "mid-20th-century-migration"}
   <Mid20thCentuaryMigration />
 {:else if $page.params.id === "recent-migration-to-canada"}
   <RecentMigration />
