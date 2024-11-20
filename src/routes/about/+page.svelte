@@ -89,6 +89,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>About | South Asian Muslims in BC</title>
+</svelte:head>
+
 {#snippet FloatingSquare(
   title: string,
   desc: string,

@@ -60,6 +60,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>South Asian Muslims in BC</title>
+</svelte:head>
+
 <main class="">
   <section class="py-32">
     <div

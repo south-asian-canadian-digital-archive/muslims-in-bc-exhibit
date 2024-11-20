@@ -5,9 +5,16 @@
   import Mid20thCentuaryMigration from "$lib/pages/Mid20thCentuaryMigration.svelte";
   import RecentMigration from "$lib/pages/RecentMigration.svelte";
   import HistoryTimeline from "$lib/components/HistoryTimeline.svelte";
-
-
 </script>
+
+<svelte:head>
+  <title
+    >{$page.params.id
+      .split("-")
+      .map((x) => `${x[0].toUpperCase()}${x.slice(1)}`)
+      .join(" ")} | South Asian Muslims in BC</title
+  >
+</svelte:head>
 
 {#if $page.params.id === "introduction"}
   <Introduction />

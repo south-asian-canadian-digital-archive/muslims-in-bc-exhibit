@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { run } from 'svelte/legacy';
+  import { run } from "svelte/legacy";
 
   import "../app.css";
   import Header from "$lib/components/Header.svelte";
@@ -9,7 +9,7 @@
   import { onMount } from "svelte";
   import { page, navigating } from "$app/stores";
   interface Props {
-    children?: import('svelte').Snippet;
+    children?: import("svelte").Snippet;
   }
 
   let { children }: Props = $props();
@@ -23,10 +23,34 @@
     // load = true;
   });
 
+  let mainuImageUrl = "/content/2021_08_01_040.jpg";
 </script>
 
 <svelte:head>
-  <title>South Asian Muslims in BC</title>
+
+  <meta
+    name="description"
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."
+  />
+  <meta
+    name="keywords"
+    content="South Asian Muslims, British Columbia, History, Cultural Heritage, Contributions, Exhibit, Journey, Challenges, Achievements"
+  />
+  <meta name="author" content="South Asian Studies Institute" />
+  <meta property="og:title" content="South Asian Muslims in BC" />
+  <meta
+    property="og:description"
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."
+  />
+  <meta property="og:image" content={mainuImageUrl} />
+  <meta property="og:url" content="URL_to_page" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="South Asian Muslims in BC" />
+  <meta
+    name="twitter:description"
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."
+  />
+  <meta name="twitter:image" content={mainuImageUrl} />
 </svelte:head>
 
 <svelte:window bind:scrollY />
@@ -36,10 +60,9 @@
 {#key load}
   <div in:fly={{ y: 600, duration: 800 }}>
     {@render children?.()}
-
   </div>
 {/key}
- <Footer />
+<Footer />
 
 {#if scrollY !== 0}
   <button
