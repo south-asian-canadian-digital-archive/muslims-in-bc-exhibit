@@ -17,22 +17,10 @@ a {
     @apply text-primary-blue hover:underline;
 }
 
-.history > section {
-  @apply border-b-2 border-secondar-teal pb-16 first:border-t-2 first:pt-16;
-}
+  ol {
+    @apply pl-8;
+  }
 
-.history > section > h2 {
-  @apply text-h4 col-span-3 font-bold font-source-serif-4 leading-[1.15];
-}
-
-.history > section > div {
-  @apply col-span-9 pl-14;
-}
-
-ol {
-  @apply pl-8;
-}
-
-ol > li {
-  @apply list-decimal;
-}
+  ol > li {
+    @apply list-decimal;
+  }

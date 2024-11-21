@@ -33,7 +33,7 @@
   on:keydown
 >
   <button
-    class="cursor-pointer ease-in-out duration-200 transform select-none"
+    class="cursor-pointer ease-in-out duration-200 transform select-none flex gap-1 items-center"
     on:click|stopPropagation={() => {
       dropdownOpen = !dropdownOpen;
       inputFocused = dropdownOpen;
