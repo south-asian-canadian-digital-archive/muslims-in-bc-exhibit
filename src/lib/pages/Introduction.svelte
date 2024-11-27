@@ -9,6 +9,24 @@
   let prefix = "history-page-nav";
 
   onMount(() => {
+    let domeAnimationTimeline = gsap.timeline({
+      repeat: -1,
+      onRepeat: () => {
+        domeAnimationTimeline.invalidate();
+      },
+    });
+    domeAnimationTimeline.add(
+      gsap.to(".dome-bg", {
+        backgroundPositionX: "-=10",
+        // backgroundPositionY: "+=random(-5, 5)",
+        // translateX: "+=10",
+        // translateY: "+=random(-5, 5)",
+        duration: 5,
+        ease: "none",
+      })
+    );
+    domeAnimationTimeline.play();
+
     historyPages.slice(1).forEach((e, i) => {
       navTweens.push(
         gsap.to(`button#${prefix}-${i}`, {
@@ -29,7 +47,7 @@
   });
 </script>
 
-<main class="pb-10 flex flex-col">
+<main class="pb-40 flex flex-col">
   <section class="py-20">
     <div class="h-min flex gap-14 px-0 w-screen">
       <div class="flex flex-col gap-12 pl-32 w-[80vw]">
@@ -65,11 +83,11 @@
         </p>
       </div>
 
-      <div class="hidden lg:flex gap-4 pr-32 w-[50vw]">
+      <div class="hidden lg:flex gap-4 pr-32 w-[40vw]">
         <div
           class="bg-secondar-teal rounded-xl p-2 max-h-[70vh] w-full transition-all ease-in-out duration-300 dome"
         >
-          <div class="bg-[url('/pattern.svg')] bg-repeat h-full"></div>
+          <div class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen dome-bg will-change-auto"></div>
         </div>
       </div>
     </div>
@@ -119,4 +137,5 @@
       {/each}
     </div>
   </section>
+
 </main>
