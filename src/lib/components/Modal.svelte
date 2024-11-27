@@ -111,7 +111,9 @@
         {@html personData?.desc}
       </p>
     </div>
-    <span class="absolute bottom-1 right-2 text-sm italic font-light">click to read more...</span>
+    <span class="absolute bottom-1 right-2 text-sm italic font-light">
+	{modalOpen ? "click to minimize": "click to read more..."}
+    </span>
   </button>
 </div>
 
