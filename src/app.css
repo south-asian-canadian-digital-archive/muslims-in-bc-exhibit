@@ -4,23 +4,36 @@
 
 
 body {
-	@apply font-martel text-primary-black;
+  @apply font-martel text-primary-black;
 }
 
 .dome {
-    mask-image: url("/Vector.svg");
-    -webkit-mask-image: url("/Vector.svg");
-    mask-size: 100% 100%;
+  mask-image: url("/Vector.svg");
+  -webkit-mask-image: url("/Vector.svg");
+  mask-size: 100% 100%;
 }
 
 a {
-    @apply text-primary-blue hover:underline;
+  @apply text-primary-blue hover:underline;
 }
 
-  ol {
-    @apply pl-8;
-  }
+.history>section {
+  @apply pb-16 first:pt-16 flex flex-col gap-12;
+}
 
-  ol > li {
-    @apply list-decimal;
-  }
+.history>section>h2 {
+  @apply text-h3 font-bold font-source-serif-4 text-center bg-secondary-yellow leading-[1.15] py-8;
+}
+
+.history>section>div,
+.desc-text {
+  @apply mx-32 px-12 py-4 border-l-[4px] border-secondary-yellow;
+}
+
+ol {
+  @apply pl-8;
+}
+
+ol>li {
+  @apply list-decimal;
+}

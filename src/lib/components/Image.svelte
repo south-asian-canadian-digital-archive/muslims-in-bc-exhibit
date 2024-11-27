@@ -1,17 +1,27 @@
 <script lang="ts">
-  import type { HTMLAttributes } from 'svelte/elements';
+  import type { HTMLAttributes } from "svelte/elements";
 
   interface Props extends HTMLAttributes<HTMLSpanElement> {
     src?: string;
     alt?: string;
-    children?: import('svelte').Snippet;   
+    float?: "left" | "right";
+    children?: import("svelte").Snippet;
   }
 
-  let { src = "", alt = "", children, ...args }: Props = $props();
+  let {
+    src = "",
+    alt = "",
+    float = "right",
+    children,
+    ...args
+  }: Props = $props();
 </script>
 
-<span class="flex flex-col gap-4 {args?.class}">
-  <img {src} {alt} class="border-b-[8px] border-primary-blue h-80 object-cover" />
-
-  <span class="text-small">{@render children?.()}</span>
-</span>
+<figure
+  class="m-6 {args?.class}"
+  class:float-right={float === "right"}
+  class:float-left={float === "left"}
+>
+  <img {src} {alt} />
+  <figcaption class="text-center mt-2">{@render children?.()}</figcaption>
+</figure>

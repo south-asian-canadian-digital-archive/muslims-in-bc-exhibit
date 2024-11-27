@@ -6,65 +6,95 @@
   const floatingSquareInfo: { title: string; desc: string }[] = [
     {
       title: "Consultation",
-      desc: "SASI spent a year and half (2023-2024) consulting with organizations, associations and individuals who have lived experiences as South Asian Canadian Muslims in BC and beyond. The goal of the consultations",
+      desc: "SASI has spent time consulting with organizations, associations and individuals who have lived experiences as South Asian Canadian Muslims in BC and beyond. The goal is to record first-hand or oral histories of past and present.",
     },
     {
       title: "Building Relationships",
-      desc: "We form strong partnerships with community members and organizations to access personal stories and archives. These relationships help ensure our research is inclusive and representative of the diverse South Asian Muslim experiences in B.C.",
+      desc: "We have formed strong partnerships with community and organizations to access personal stories and important archives. These relationships ensure that the research is inclusive and representative of the diverse South Asian Muslim experiences in B.C.",
     },
     {
       title: "Education & Outreach",
-      desc: "Through exhibitions, workshops, and online resources, we educate the public on the contributions of South Asian Muslims in B.C. Our outreach fosters cultural understanding and celebrates these untold histories.",
+      desc: "Educating the public on the contributions of South Asian Muslims in B.C, through exhibits, workshops, and online resources, outreach has fostered cultural understanding that celebrates untold histories, heritage and culture.",
     },
     {
       title: "Grants & Funding",
-      desc: "Our research and events are made possible through generous grants and funding. We use these resources to conduct in-depth research, create public exhibitions, and develop educational programs that preserve and share this heritage.",
+      desc: "Generous grants and funding have made it possible for resources, to conduct in-depth research, create public exhibits, and develop educational programs that preserve and share this heritage.",
     },
   ];
 
   const team = [
-    { name: "Dr. Satwinder Bains" },
-    { name: "Thamilini Jothilingam" },
-    { name: "Antoinetta Holierhoek" },
-    { name: "Anushay Mallik" },
-    { name: "Kiara Dabreo" },
-    { name: "Samarah Saddique" },
-    { name: "Habiba Khan" },
-    { name: "Rashneet" },
-    { name: "Saumyaa Gelani" },
-    { name: "Arnav Mehta" },
+    {
+      name: "Dr. Satwinder Bains",
+      desc: "Satwinder provides overall direction, management and support for research. She leads the outreach component and community engagement with a goal to create educational and participatory materials.",
+    },
+    {
+      name: "Thamilini Jothilingam",
+      desc: "Thamilini leads the archival recording, manages content development, supports the oral history interviews, transcription and narratives. She supports student researchers, community historians and community leaders.",
+    },
+    {
+      name: "Antoinetta Holierhoek",
+      desc: "Annet oversees the website's development and design, ensuring alignment with project goals. She collaborates with researchers and designers to maintain accuracy and accessibility, integrating feedback and media seamlessly.",
+    },
+    {
+      name: "Anushay Mallik",
+      desc: "Aushay Malik, PhD, Senior Lecturer at SFU is the contracted consultant who leads the research on the project. She brings a wealth of knowledge, lived experience and research expertise as a young Muslim Canadian scholar.",
+    },
+    { name: "Kiara Dabreo", desc: "" },
+    {
+      name: "Samarah Saddique",
+      desc: "Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC, digitally archives their narratives.",
+    },
+    {
+      name: "Habiba Khan",
+      desc: "As a Research Assistant, Habiba contributes to the research, oral history interviews, and writing narratives. She works with other research assistants to create an accurate archive of the contributions of South Asian Muslims in British Columbia.",
+    },
+    { name: "Saumyaa Gelani", desc: "" },
+    {
+      name: "Rashneet",
+      desc: "Rashneet contributed to the South Asian Muslims in BC Project as a graphic designer and research assistant. She developed the project’s design identity and created the foundational website design.",
+    },
+    {
+      name: "Arnav Mehta",
+      desc: "Arnav Mehta contributed to the project by developing and hosting the website. He implemented animations, ensured smooth functionality, and optimized the platform to align with the project’s goals.",
+    },
   ];
 
   const committee: {
     name: string;
     position: string;
     desc: string;
+    img: string;
   }[] = [
     {
       name: "Dr. Satwinder Bains",
       position: "PhD, Director,<br> South Asian Studies Institute",
       desc: "Satwinder Bains, PhD is Director of the South Asian Studies Institute at the University of the Fraser Valley and an Associate Professor in the School of Culture, Media and Society, College of Arts. Dr Bains’ research interests include the study of the impact of language, culture and identity on South Asian Canadian migration, settlement, and integration. She teaches anti-racist curriculum implementation; identity politics; migration and politics in the South Asian Canadian Diaspora and Punjabi Canadian cultural historiography. Dr Bains is the Chair of the Knowledge Network, Director of the Abbotsford Community Foundation and has served as a Commissioner on the Agricultural Land Commission, as a Director of the Fraser Basin Council, as a Bencher on the Law Society of British Columbia and as a member of the Farm Industry Review Board for British Columbia.",
+      img: "/content/advisory_committee/Satwinder-Bains-2021.jpg",
     },
     {
       name: "Awneet Sivia",
       position: "PhD, Associate Vice President Teaching and Learning",
       desc: "Awneet Sivia is currently the Associate Vice President of Teaching and Learning, and has been an Associate Professor, Director, and Chair of programs in the School of Education at UFV. She is a passionate educator and researcher in social justice/antiracist pedagogy, science education, teacher identity, faculty development, and educational leadership. Awneet’s academic publications can be found in Studying Teacher Education, In Education, Canadian Journal of Scholarship of Teaching and Learning, Journal of Education, and in books published by Brill, Sense, and Lexington. Her current research interests include decolonizing methodologies, rehumanizing science education, narratives of racism/antiracism in teacher education, leadership in online education, and early career faculty experiences. Awneet leads numerous institutional initiatives, including the Institutional Learning Outcomes, the AI Task Force, the Learning Management System Project, Changemaker Education, Indigenizing new faculty development, and policy revisions. She has been a speaker at TEDx Abbotsford and has been honoured with several provincial and national teaching awards, including the 3M National Teaching Fellowship.",
+      img: "/content/advisory_committee/Awneet Sivia.jpg",
     },
     {
       name: "Jas Uppal",
       position: "PhD, Assistant Professor, Teacher Education Program",
       desc: "Jas Uppal’s teaching experiences are vast and span not only grades and subjects, but also countries and curriculums. Her experience mirrors the lifecycle of the teacher: K-12 teaching of science and math, mentoring pre-service teachers at the school level, teaching and mentoring re-certifying teachers and pre-service teachers in international teacher education. She has also trained and built teacher capacity through programs in the U.K, through a study abroad program in India and a district mentoring program for 300+ teachers, as well as themed graduate diploma programs for practicing teachers. Her master’s degree focused on educational change, including assessment for learning, and teacher identity. During her doctoral studies, she researched pedagogical dynamics in encounters with difference through centering inequitable power relations. Jas’ research reflects her passion and commitment to take continuous risks to learn and unlearn who she is as an educator.",
+      img: "/content/advisory_committee/juhershorn.img.2140374917.jpg",
     },
     {
       name: "Hassan Javid",
       position:
         "PhD, Associate Professor, School of Society, Culture and Society",
       desc: "Hassan Javid is an Associate Professor of Sociology in the School of Culture and Media Studies at UFV.Prior to joining UFV, Hassan held academic positions at the Lahore University of Management Sciences and at the London School of Economics. His work focuses on the legacies of colonialism in South Asia, focusing on processes of democratization and the mechanisms through which elite power is reproduced.",
+      img: "/content/advisory_committee/2024-Hassan-Javid.jpg",
     },
     {
       name: "Shazad Nazir",
       position: "PhD, Assistant Professor, Teacher Education Program",
-      desc: "Shahzad Nazir Khan is a Professional Agrologist with an M. Sc (Hons) Agriculture and an MBA . He is a well-known peace and social justice activist of South Asian community who immigrated to Canada from Pakistan back in 2006. For last many years, him and his group of Progressive Pakistani Canadians took many initiatives to raise awareness about the peace and issues related to South Asian diaspora. He celebrates ‘unity in diversity’.",
+      desc: "Shahzad Nazir Khan is a Professional Agrologist with an M. Sc (Hons) Agriculture and an MBA . He is a well-known peace and social justice activist of South Asian community who immigrated to Canada from Pakistan back in 2006. For last many years, him and his group of Progressive Pakistani Canadians took many initiatives to raise awareness about the peace and issues related to South Asian diaspora. He celebrates ‘unity in diversity’.",
+      img: "/content/advisory_committee/Shahzad-Nazir-Khan-2.png",
     },
     // { name: "", position: "", desc: "" },
     // { name: "", position: "", desc: "" },
@@ -238,9 +268,12 @@
               class="w-[20vw] rounded-lg aspect-square bg-secondary-yellow relative"
             >
               <span
-                class="bottom-0 left-0 p-2 bg-secondar-teal rounded-b-lg text-white font-martel absolute w-full"
+                class="top-0 left-0 p-2 bg-secondar-teal rounded-t-lg text-white font-martel absolute w-full"
                 >{person.name}</span
               >
+              <span class="p-4 pt-10 absolute top-4 left-0">
+                {person.desc}
+              </span>
             </div>
           {/each}
         </div>
@@ -281,7 +314,10 @@
           class:flex-row-reverse={EvenItem}
           class:text-right={EvenItem}
         >
-          <div class="aspect-square h-[20vw] bg-gray-100 relative rounded-lg">
+          <div
+            class="aspect-square h-[20vw] bg-gray-100 relative flex rounded-lg overflow-clip"
+          >
+            <img src={person.img} alt="" class="object-contain" />
             <span
               class="bottom-0 left-0 p-2 bg-secondar-teal rounded-b-lg text-white font-martel absolute w-full text-center"
               >{person.name} <br />

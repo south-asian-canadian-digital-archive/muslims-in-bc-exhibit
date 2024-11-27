@@ -167,6 +167,7 @@
           href={social.link}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="contact us throught {social.name}"
           class="text-white text-2xl hover:no-underline rounded-full border border-secondary-yellow w-16 h-16 aspect-square flex items-center justify-center"
         >
           {@html social.element}

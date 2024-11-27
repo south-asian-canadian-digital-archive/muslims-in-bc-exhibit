@@ -43,7 +43,7 @@
     content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."
   />
   <meta property="og:image" content={mainuImageUrl} />
-  <meta property="og:url" content="URL_to_page" />
+  <!--TODO: <meta property="og:url" content="" /> -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="South Asian Muslims in BC" />
   <meta

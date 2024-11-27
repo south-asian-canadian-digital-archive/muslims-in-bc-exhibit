@@ -85,10 +85,10 @@
     <div class="flex flex-col gap-[10vw]">
       {#snippet desc(text: string, align = "left")}
         <div class:text-right={align === "right"}>
-          <!-- {@html text} -->
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos perferendis
+          {@html text}
+          <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos perferendis
           neque veritatis id eaque nulla atque ad ea veniam similique quis recusandae
-          rerum, in dolorem eligendi. Voluptas, numquam iste. Saepe!
+          rerum, in dolorem eligendi. Voluptas, numquam iste. Saepe! -->
         </div>
       {/snippet}
 

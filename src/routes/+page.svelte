@@ -13,7 +13,6 @@
   let navTweens: gsap.core.Tween[] = $state([]);
   let prefix = "history-page-nav";
 
-
   onMount(() => {
     let domeAnimationTimeline = gsap.timeline({
       repeat: -1,
@@ -80,13 +79,13 @@
           class="border-l-[6px] border-l-secondary-yellow flex flex-col pl-8 gap-6"
         >
           <p>
-            The South Asian Muslims in British Columbia research project sheds
-            light on the historical and contemporary presence of Muslim
-            communities in Canada, focusing on South Asian Muslim communities of
-            B.C. Through research, archival records, academic and scholarly
-            work, and oral interviews, we aim to highlight profound
+            The South Asian Muslims in British Columbia research project (2023 -
+            present) sheds light on the historical and contemporary presence of
+            Muslim communities in Canada, focusing on South Asian Muslim
+            communities of B.C. Through research, archival records, academic and
+            scholarly work, and oral interviews, we aim to highlight profound
             contributions of Canadian South Asian Muslims to Canadian society
-            with a gaol to record the history, promote deeper appreciation and
+            with a goal to record the history, promote deeper appreciation and
             understanding and to contribute to the Canadian record. This is a
             work in progress and so far this represents the first stage of
             research supported by scholars, community researchers, and student
@@ -126,11 +125,12 @@
         Historical Timeline
       </h2>
 
-      <div class="flex flex-row justify-evenly w-full translate-y-[40%]">
+      <div class="flex flex-row justify-evenly w-full translate-y-[20%]">
         {#each historyPages.slice(1) as item, i}
           <button
-            class="aspect-square rounded-full w-[20vw] flex items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
+            class="aspect-square rounded-full w-[20vw] flex flex-col gap-2 items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
             id="{prefix}-{i}"
+            aria-label="link to page talking about {item.name}"
             onclick={(e) => {
               e.currentTarget.style.color = "white";
               navTweens[i].resume();
@@ -148,6 +148,7 @@
               {item.name} <br />
               {item.years}
             </h6>
+            <!-- <span class="text-center text-xs">{item.desc}</span> -->
           </button>
         {/each}
       </div>
@@ -156,7 +157,6 @@
     <div class="bg-secondary-yellow flex flex-col pt-[25vh]">
       <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
         &nbsp;
-        <!-- TODO: insert images -->
       </div>
     </div>
   </section>
@@ -180,7 +180,7 @@
         >
           &nbsp;
         </div>
-        <!-- image placeholder -->
+        <!-- TODO: insert images -->
       </div>
     {/each}
   </section>
