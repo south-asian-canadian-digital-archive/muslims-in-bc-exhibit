@@ -315,16 +315,16 @@
           class:text-right={EvenItem}
         >
           <div
-            class="aspect-square h-[20vw] bg-gray-100 relative flex rounded-lg overflow-clip"
+            class="aspect-square h-[20vw] bg-gray-100 relative flex rounded-lg overflow-clip object-cover"
           >
-            <img src={person.img} alt="" class="object-contain" />
+            <img src={person.img} alt="" class="object-cover w-full" />
             <span
               class="bottom-0 left-0 p-2 bg-secondar-teal rounded-b-lg text-white font-martel absolute w-full text-center"
               >{person.name} <br />
               <span class="text-xs">{@html person.position}</span></span
             >
           </div>
-          <div>
+          <div class="p-4 flex items-center">
             {@html person.desc}
           </div>
         </div>

@@ -28,7 +28,6 @@
 
   const switchContainers = () => {
     finalContainer.classList.toggle("hidden");
-    //     mainBox.style.setProperty("flex-direction", "row");
     (mainBox.parentNode === initContainer
       ? finalContainer
       : initContainer
