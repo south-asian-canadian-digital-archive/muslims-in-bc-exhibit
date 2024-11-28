@@ -61,7 +61,8 @@
   <div
     class="flex flex-col-reverse lg:self-start gap-6 items-center lg:w-fit md:w-fit w-full"
   >
-    <div class="rounded-xl bg-white self-start relative">
+
+    <div class="rounded-xl bg-white lg:self-start relative">
       <div id="mc_embed_shell">
         <!-- <link
           href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
@@ -161,14 +162,14 @@
       SIGNUP FOR OUR NEWSLETTER
     </p>
 
-    <div class="flex flex-row gap-4">
+    <div class="flex flex-row lg:gap-4 md:gap-4 gap-3">
       {#each socials as social}
         <a
           href={social.link}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="contact us throught {social.name}"
-          class="text-white text-2xl hover:no-underline rounded-full border border-secondary-yellow w-16 h-16 aspect-square flex items-center justify-center"
+          class="text-white lg:text-2xl md:text-2xl hover:no-underline rounded-full border border-secondary-yellow w-10 h-10 lg:w-16 lg:h-16 aspect-square flex items-center justify-center"
         >
           {@html social.element}
         </a>
@@ -177,24 +178,24 @@
   </div>
 
   <div class="flex flex-col justify-center items-center gap-2">
-    <img src="/UFV_SASI_logo.png" class="h-32" alt="" />
-    <p class="text-xs text-white text-center w-[18vw]">
+    <img src="/UFV_SASI_logo.png" class="lg:h-32 h-24" alt="" />
+    <p class="text-xs text-white text-center lg:w-[18vw] md:w-[18vw]">
       South Asian Studies Institute Univeristy of the Fraser Valley Building K
       33780 King Rd, Abbotsford V2S7P2
     </p>
   </div>
 
   <div
-    class="absolute bottom-6 text-white text-sm text-center self-center lg:self-start md:self-start w-full lg:w-fit md:w-fit"
+    class="absolute bottom-6 text-white lg:text-sm md:text-sm text-xs text-center self-center lg:self-start md:self-start w-full lg:w-fit md:w-fit"
   >
     <!-- mobile -->
-    <div class="lg:hidden md:hidden w-full flex items-center justify-center">
+    <!-- <div class="lg:hidden md:hidden w-full flex items-center justify-center">
       <p
         class="border-t border-t-secondary-yellow font-bold text-transparent text-lg w-fit pb-1"
       >
         GET IN TOUCH
       </p>
-    </div>
+    </div> -->
 
     <a class="text-white" rel="_blank" href="https://sacda.ca/policy/takedown"
       >Statement of Use and Takedown Policy</a

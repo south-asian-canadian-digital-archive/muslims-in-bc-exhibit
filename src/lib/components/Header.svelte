@@ -8,7 +8,6 @@
   let mobileNavButtonWidth: number = $state(0);
 
   let mobileNavOpen = $state(false);
-  
 
   // run(() => {
   //   mobileNavButtonWidth;
@@ -19,13 +18,15 @@
   class="sticky top-0 z-[9999] lg:h-24 md:h-24 lg:px-32 p-4 flex lg:flex-row md:flex-row flex-col items-center justify-between text-primary-black font-bold font-martel border-b-2 border-b-[#E3E7AF] bg-white"
 >
   <div class="w-full lg:w-fit md:w-fit">
-    <div class="lg:h-20 md:h-20 lg:w-fit md:w-fit w-[80vw] aspect-auto flex gap-4 items-center">
-      <img src="/UFV_SASI_logo.png" class="h-full lg:w-auto w-1/2" alt="">
-      <img src="/ufv-logo.png" class="h-full lg:w-auto w-1/2" alt="">
+    <div
+      class="lg:h-20 md:h-20 lg:w-fit md:w-fit w-[80vw] aspect-auto flex gap-4 pr-14 flex-row items-center"
+    >
+      <img src="/UFV_SASI_logo.png" class="h-full lg:w-auto w-1/2" alt="" />
+      <img src="/ufv-logo.png" class="h-full lg:w-auto w-1/2" alt="" />
     </div>
 
     <button
-      class="lg:hidden md:hidden bg-[#F99D2A] py-10 px-8 absolute right-10 top-0"
+      class="lg:hidden md:hidden bg-[#F99D2A] py-10 px-8 absolute right-4 top-0"
       bind:clientWidth={mobileNavButtonWidth}
       onclick={() => (mobileNavOpen = !mobileNavOpen)}
     >
@@ -38,7 +39,10 @@
   </div>
 
   {#if mobileNavButtonWidth == 0 || mobileNavOpen}
-    <div class="flex lg:flex-row md:flex-row flex-col gap-16 items-center">
+    <div
+      transition:slide
+      class="flex lg:flex-row md:flex-row flex-col gap-16 items-center lg:w-auto w-full lg:pt-0 pt-6 lg:mt-0 mt-4 lg:border-0 border-t-2 border-t-[#E3E7AF]"
+    >
       {#each navItems as item}
         {#if item.pages}
           <Dropdown
