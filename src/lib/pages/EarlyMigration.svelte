@@ -48,14 +48,14 @@
         <ol><li><span>Here is a link to an exhibit done by SACDA on the Komagata Maru,
               where Husain Rahim is discussed more intensively:
 
-              <a href="https://sacda.ca/exhibits/km/english/bio/bio99.php">https://sacda.ca/exhibits/km/english/bio/bio99.php</a>
+              <a href="https://sacda.ca/exhibits/km/english/bio/bio99.php" aria-label="SACDA exhibit on Komagata Maru featuring Husain Rahim">https://sacda.ca/exhibits/km/english/bio/bio99.php</a>
               The following links are what SACDA has in store about Husain Rahim:
-              <ol><li><a href="https://sacda.ca/Detail/objects/11178">https://sacda.ca/Detail/objects/11178</a></li> <li><a href="https://sacda.ca/Detail/objects/11177">https://sacda.ca/Detail/objects/11177</a></li> <li><a href="https://sacda.ca/Detail/objects/9518">https://sacda.ca/Detail/objects/9518</a></li> <li><a href="https://sacda.ca/Detail/objects/9433">https://sacda.ca/Detail/objects/9433</a></li></ol></span></li> <li><a href="https://policyalternatives.ca/sites/default/files/uploads/publications/BC%20Office/2021/02/ccpa-bc_Challenging-Racist-BC.pdf">https://policyalternatives.ca/sites/default/files/uploads/publications/BC%20Office/2021/02/ccpa-bc_Challenging-Racist-BC.pdf</a></li> <li>Lal, Brij. “East Indians in British Columbia, 1904-1914: An
+              <ol><li><a href="https://sacda.ca/Detail/objects/11178" aria-label="SACDA object 11178 related to Husain Rahim">https://sacda.ca/Detail/objects/11178</a></li> <li><a href="https://sacda.ca/Detail/objects/11177" aria-label="SACDA object 11177 related to Husain Rahim">https://sacda.ca/Detail/objects/11177</a></li> <li><a href="https://sacda.ca/Detail/objects/9518" aria-label="SACDA object 9518 related to Husain Rahim">https://sacda.ca/Detail/objects/9518</a></li> <li><a href="https://sacda.ca/Detail/objects/9433" aria-label="SACDA object 9433 related to Husain Rahim">https://sacda.ca/Detail/objects/9433</a></li></ol></span></li> <li><a href="https://policyalternatives.ca/sites/default/files/uploads/publications/BC%20Office/2021/02/ccpa-bc_Challenging-Racist-BC.pdf" aria-label="Challenging Racist BC PDF document">https://policyalternatives.ca/sites/default/files/uploads/publications/BC%20Office/2021/02/ccpa-bc_Challenging-Racist-BC.pdf</a></li> <li>Lal, Brij. “East Indians in British Columbia, 1904-1914: An
             historical study in growth and integration.” Thesis, UBC, The
             Faculty of Graduate Studies; Department of History. 1976.
-            <a href="https://open.library.ubc.ca/media/stream/pdf/831/1.0093725/1">https://open.library.ubc.ca/media/stream/pdf/831/1.0093725/1</a> (Page 64-83 about Husain Rahim)</li> <li>Mayo, Joan. “Paldi Remembered: 50 Years in the Life of a Vancouver
+            <a href="https://open.library.ubc.ca/media/stream/pdf/831/1.0093725/1" aria-label="UBC Thesis PDF on East Indians in British Columbia">https://open.library.ubc.ca/media/stream/pdf/831/1.0093725/1</a> (Page 64-83 about Husain Rahim)</li> <li>Mayo, Joan. “Paldi Remembered: 50 Years in the Life of a Vancouver
             Island Logging Town.”Duncan: Priority Printing, 1997
-            <a href="https://archive.org/details/paldiremembered50000mayo">https://archive.org/details/paldiremembered50000mayo</a> - Husain Rahim little info Chapter 2, page 4</li></ol>
+            <a href="https://archive.org/details/paldiremembered50000mayo" aria-label="Paldi Remembered PDF document">https://archive.org/details/paldiremembered50000mayo</a> - Husain Rahim little info Chapter 2, page 4</li></ol>
       `,
     },
     {
@@ -71,7 +71,7 @@
         1979 before settling in Canada.
         <br><br>
         Resources: 
-        <ol><li><a href="https://digital.lib.sfu.ca/icohc-5/imanat-ali-khan">https://digital.lib.sfu.ca/icohc-5/imanat-ali-khan</a></li></ol>
+        <ol><li><a href="https://digital.lib.sfu.ca/icohc-5/imanat-ali-khan" aria-label="SFU Digital Library entry on Imanat Ali Khan">https://digital.lib.sfu.ca/icohc-5/imanat-ali-khan</a></li></ol>
         `,
     },
     {
@@ -97,8 +97,8 @@
         <br><br>
         Resources: 
         <ol><li>Husain, Iqbal. “BARKATULLAH — A HALF-FORGOTTEN REVOLUTIONARY.”
-            Proceedings of the Indian History Congress 66 (2005): 1061-72. <a href="http://www.jstor.org/stable/44145919">http://www.jstor.org/stable/44145919.</a></li> <li>A portrait of Barkatullah Source:
-            <a href="https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914">https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914</a></li></ol>
+            Proceedings of the Indian History Congress 66 (2005): 1061-72. <a href="http://www.jstor.org/stable/44145919" aria-label="JSTOR article on Barkatullah">http://www.jstor.org/stable/44145919.</a></li> <li>A portrait of Barkatullah Source:
+            <a href="https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914" aria-label="The Muslim Vibe article on Muslims challenging Canada's immigration ban in 1914">https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914</a></li></ol>
     `,
     },
     {
@@ -115,7 +115,7 @@
         
         <br><br>
         Resources:
-        <ol><li><a href="https://sacda.ca/Detail/objects/606">https://sacda.ca/Detail/objects/606</a></li></ol>
+        <ol><li><a href="https://sacda.ca/Detail/objects/606" aria-label="SACDA object 606 related to Muhammad Akbar">https://sacda.ca/Detail/objects/606</a></li></ol>
       `,
     },
     {
@@ -143,7 +143,7 @@
         Vancouver/Victoria to Hong Kong. 
         <br><br>
         Resources:
-        <ol><li><a href="https://www.proquest.com/historical-newspapers/april-23-1914-page-9-12/docview/2239629663/se-2?accountid=5705">https://www.proquest.com/historical-newspapers/april-23-1914-page-9-12/docview/2239629663/se-2?accountid=5705</a></li></ol>
+        <ol><li><a href="https://www.proquest.com/historical-newspapers/april-23-1914-page-9-12/docview/2239629663/se-2?accountid=5705" aria-label="ProQuest newspaper clipping from April 23, 1914 about Roum Shah">https://www.proquest.com/historical-newspapers/april-23-1914-page-9-12/docview/2239629663/se-2?accountid=5705</a></li></ol>
       `,
     },
   ];
@@ -353,14 +353,12 @@
             <ol>
               <li>
                 NewspaperAnnouncement: <a
-                  href="https://www.proquest.com/historical-newspapers/december-8-1906-page-16/docview/2257245860/se-2?accountid=5705"
-                  >https://www.proquest.com/historical-newspapers/december-8-1906-page-16/docview/2257245860/se-2?accountid=5705</a
+                  href="https://www.proquest.com/historical-newspapers/december-8-1906-page-16/docview/2257245860/se-2?accountid=5705" aria-label="Newspaper announcement for The Persian Roseleaf">https://www.proquest.com/historical-newspapers/december-8-1906-page-16/docview/2257245860/se-2?accountid=5705</a
                 >
               </li>
               <li>
                 FirstEpisode: <a
-                  href="https://www.proquest.com/historical-newspapers/december-8-1906-page-14-16/docview/2257244932/se-2?accountid=5705"
-                  >https://www.proquest.com/historical-newspapers/december-8-1906-page-14-16/docview/2257244932/se-2?accountid=5705</a
+                  href="https://www.proquest.com/historical-newspapers/december-8-1906-page-14-16/docview/2257244932/se-2?accountid=5705" aria-label="First episode of The Persian Roseleaf">https://www.proquest.com/historical-newspapers/december-8-1906-page-14-16/docview/2257244932/se-2?accountid=5705</a
                 >
               </li>
             </ol>
@@ -371,14 +369,12 @@
             <ol>
               <li>
                 Advertisement: <a
-                  href="https://www.proquest.com/historical-newspapers/october-28-1911-page-13-24/docview/2257246097/se-2?accountid=5705"
-                  >https://www.proquest.com/historical-newspapers/october-28-1911-page-13-24/docview/2257246097/se-2?accountid=5705</a
+                  href="https://www.proquest.com/historical-newspapers/october-28-1911-page-13-24/docview/2257246097/se-2?accountid=5705" aria-label="Advertisement for Paradise of Mahoment play">https://www.proquest.com/historical-newspapers/october-28-1911-page-13-24/docview/2257246097/se-2?accountid=5705</a
                 >
               </li>
               <li>
                 Reviews: <a
-                  href="https://www.proquest.com/historical-newspapers/october-28-1911-page-19-24/docview/2257246218/se-2?accountid=5705"
-                  >https://www.proquest.com/historical-newspapers/october-28-1911-page-19-24/docview/2257246218/se-2?accountid=5705</a
+                  href="https://www.proquest.com/historical-newspapers/october-28-1911-page-19-24/docview/2257246218/se-2?accountid=5705" aria-label="Reviews for Paradise of Mahoment play">https://www.proquest.com/historical-newspapers/october-28-1911-page-19-24/docview/2257246218/se-2?accountid=5705</a
                 >
               </li>
             </ol>
@@ -393,8 +389,7 @@
         [1]Brij Lal. 1976. “East Indians in British Columbia 1904-1914 : An
         Historical Study in Growth and Integration.” Retrospective Theses and
         Dissertations, 1919-2007. T, University of British Columbia, doi: <a
-          href="http://dx.doi.org/10.14288/1.0093725"
-          >http://dx.doi.org/10.14288/1.0093725</a
+          href="http://dx.doi.org/10.14288/1.0093725" aria-label="UBC Thesis on East Indians in British Columbia">http://dx.doi.org/10.14288/1.0093725</a
         >, Page 92.
         <br /><br />
         [2] Mayo, Joan. 1997. Paldi Remembered: 50 Years in the Life of a Vancouver
@@ -402,8 +397,7 @@
         <br /><br />
         [3] Iqbal Hussain. “BARKATULLAH — A HALF-FORGOTTEN REVOLUTIONARY.” Proceedings
         of the Indian History Congress 66 (2005): 1061–72.
-        <a href="http://www.jstor.org/stable/44145919"
-          >http://www.jstor.org/stable/44145919</a
+        <a href="http://www.jstor.org/stable/44145919" aria-label="JSTOR article on Barkatullah">http://www.jstor.org/stable/44145919</a
         >, Page 1061.
         <br /><br />
         [4] SACDA, Komagata Maru; Biographies: Shore Committee. Accessed December
@@ -411,14 +405,12 @@
         <br /><br />
         [5]Sohi, Seema. “The Ghadar Party,” South Asian American Digital Archive
         (SAADA), 2018. Accessed March 20, 2024.
-        <a href="https://www.saada.org/tides/article/the-ghadar-party"
-          >https://www.saada.org/tides/article/the-ghadar-party</a
+        <a href="https://www.saada.org/tides/article/the-ghadar-party" aria-label="SAADA article on the Ghadar Party">https://www.saada.org/tides/article/the-ghadar-party</a
         >
         <br /><br />
         [6] “The Ghadar Party: Freedom for India,” The Pluralism Project, Harvard
         University. Accessed March 20, 2024.
-        <a href="https://pluralism.org/the-ghadar-party-freedom-for-india"
-          >https://pluralism.org/the-ghadar-party-freedom-for-india</a
+        <a href="https://pluralism.org/the-ghadar-party-freedom-for-india" aria-label="Pluralism Project article on the Ghadar Party">https://pluralism.org/the-ghadar-party-freedom-for-india</a
         >
         <br /><br />
         [7] Mohammed Ayub Khan. “His Master’s Voice?: Ubayd Allah Sindhi’s Re-interpretation
@@ -426,8 +418,7 @@
         Conference Proceedings, Centre for Indo-Canadian Studies, University of the
         Fraser Valley, 2013, 99.
         <a
-          href="https://ufv.ca/media/assets/cics/resources/68861-UFV-Booklet-May-2015.pdf"
-          >https://ufv.ca/media/assets/cics/resources/68861-UFV-Booklet-May-2015.pdf</a
+          href="https://ufv.ca/media/assets/cics/resources/68861-UFV-Booklet-May-2015.pdf" aria-label="UFV Booklet on Ubayd Allah Sindhi">https://ufv.ca/media/assets/cics/resources/68861-UFV-Booklet-May-2015.pdf</a
         >
         <br /><br />
         [8] Khan, His Master's Voice?, 99 -114.

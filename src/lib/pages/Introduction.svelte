@@ -87,7 +87,9 @@
         <div
           class="bg-secondar-teal rounded-xl p-2 max-h-[70vh] w-full transition-all ease-in-out duration-300 dome"
         >
-          <div class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen dome-bg will-change-auto"></div>
+          <div
+            class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen dome-bg will-change-auto"
+          ></div>
         </div>
       </div>
     </div>
@@ -118,6 +120,7 @@
             {@render desc(item.desc, "right")}
           {/if}
           <button
+            aria-label="links to chapter {idx+1}: {item.name}"
             id="{prefix}-{idx}"
             class="aspect-square rounded-full min-w-[20vw] flex items-center justify-center border-[8px] hover:border-[16px] border-secondary-yellow bg-white transition-all duration-200 ease-in-out"
             onclick={(e) => {
@@ -137,5 +140,4 @@
       {/each}
     </div>
   </section>
-
 </main>

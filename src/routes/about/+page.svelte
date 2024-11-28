@@ -182,6 +182,7 @@
           {#each [["Meet Our Team", "#team"], ["Meet Our Partners", "#partners"], ["Advisory Committee", "#committee"]] as link, idx}
             <button
               class="bg-primary-blue rounded-lg whitespace-nowrap text-white px-6 py-3"
+              aria-label="scrolls to {link[0]} section of the page"
               onclick={() => {
                 document
                   .querySelector(link[1])
