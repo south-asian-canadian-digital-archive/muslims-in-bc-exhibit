@@ -76,7 +76,7 @@
         </h1>
 
         <div
-          class="border-l-[6px] border-l-secondary-yellow flex flex-col pl-8 gap-6"
+          class="border-l-[6px] border-l-secondary-yellow flex flex-col px-8 lg:pl-8 lg:pr-0 gap-6"
         >
           <p>
             The South Asian Muslims in British Columbia research project (2023 -
@@ -100,7 +100,7 @@
         </div>
       </div>
 
-      <div class="flex gap-4 pr-32 overflow-clip">
+      <div class="lg:flex gap-4 pr-32 overflow-clip hidden">
         {#each { length: 2 } as _, i}
           <button
             class="bg-secondar-teal rounded-xl p-2 min-h-[60vh] w-[30%] transition-all ease-in-out duration-500 dome"
@@ -120,15 +120,16 @@
   </section>
 
   <section class="">
+    <!-- TODO: fix design for this section -->
     <div class="flex flex-col items-center">
-      <h2 class="text-h2 font-bold text-secondar-teal translate-y-1/3">
+      <h2 class="text-h3 lg:text-h2 text-center font-bold text-secondar-teal lg:translate-y-1/3">
         Historical Timeline
       </h2>
 
-      <div class="flex flex-row justify-evenly w-full translate-y-[20%]">
+      <div class="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-evenly w-full lg:translate-y-[20%] lg:pt-0 pt-10 bg-secondary-yellow lg:bg-transparent">
         {#each historyPages.slice(1) as item, i}
           <button
-            class="aspect-square rounded-full w-[20vw] flex flex-col gap-2 items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
+            class="lg:aspect-square rounded-full lg:w-[20vw] flex flex-col gap-2 items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
             id="{prefix}-{i}"
             aria-label="link to page talking about {item.name}"
             onclick={(e) => {
@@ -137,7 +138,7 @@
             }}
             onmouseenter={() => (hoveredTag = i)}
             onmouseleave={() => (hoveredTag = -1)}
-            class:translate-y-[40%]={hoveredTag !== -1 && hoveredTag !== i
+            class:lg:translate-y-[40%]={hoveredTag !== -1 && hoveredTag !== i
               ? true
               : hoveredTag === i
                 ? false
@@ -154,7 +155,7 @@
       </div>
     </div>
 
-    <div class="bg-secondary-yellow flex flex-col pt-[25vh]">
+    <div class="bg-secondary-yellow flex flex-col lg:pt-[25vh] pt-10">
       <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
         &nbsp;
       </div>
@@ -171,10 +172,10 @@
     }}
     onfocus={() => {}}
     id="carousel"
-    class="my-32 mx-32 flex overflow-hidden items-center relative"
+    class="lg:m-32 my-12 flex overflow-hidden items-center relative"
   >
     {#each Array(8) as _, idx}
-      <div class="aspect-square min-w-[20vw] p-1 cursor-grab relative shrink-0">
+      <div class="aspect-square lg:min-w-[20vw] min-w-[50vw] p-1 cursor-grab relative shrink-0">
         <div
           class="bg-gray-100 border-2 border-secondar-teal rounded h-full w-full select-none"
         >
