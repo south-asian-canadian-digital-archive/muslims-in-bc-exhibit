@@ -197,7 +197,7 @@
       <div class="min-w-[35vw] h-auto bg-gray-300"></div>
     </div>
 
-    <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
+    <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x overflow-hidden">
       &nbsp;
     </div>
   </section>

@@ -85,10 +85,10 @@
 
       <div class="hidden lg:flex gap-4 pr-32 w-[40vw]">
         <div
-          class="bg-secondar-teal rounded-xl p-2 max-h-[70vh] w-full transition-all ease-in-out duration-300 dome"
+          class="bg-secondar-teal rounded-xl p-2 max-h-[70vh] w-full transition-all ease-in-out duration-300 dome overflow-hidden"
         >
           <div
-            class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen dome-bg will-change-auto"
+            class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen dome-bg will-change-auto overflow-clip"
           ></div>
         </div>
       </div>

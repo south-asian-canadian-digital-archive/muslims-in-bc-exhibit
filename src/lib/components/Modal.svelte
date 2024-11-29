@@ -8,18 +8,23 @@
       img: string;
       name: string;
       years: string;
-      desc: string;
+      desc?: string;
     };
     key: number;
     orientation?: "h" | "v";
     extraCss?: string;
+    children?: import("svelte").Snippet;
   }
 
-  let { personData, key, orientation = "v", extraCss = "" }: Props = $props();
-  let initOrientation = orientation;
+  let {
+    personData,
+    key,
+    orientation = "v",
+    extraCss = "",
+    children,
+  }: Props = $props();
 
   let modalID = `person-modal-${key}`;
-  let tween: gsap.core.Tween;
   let modalOpen = $state(false);
 
   let mainBox: HTMLButtonElement;
@@ -79,7 +84,7 @@
     onclick={animate}
   >
     <div
-      class="object-cover rounded-full overflow-hidden aspect-square min-h-[10vw] min-w-[10vw] max-h-[40vh] self-center"
+      class="object-cover rounded-full overflow-hidden aspect-square min-h-[8vw] min-w-[8vw] max-h-[40vh] self-center"
       class:h-[50%]={modalOpen ? false : orientation === "v"}
     >
       {#if personData?.img !== ""}
@@ -101,17 +106,20 @@
       <h6 class="border-b border-b-black text-center">
         <b>{personData?.name}</b><br />{personData?.years}
       </h6>
-      <p
+      <div
         class="pt-2 {modalOpen
           ? 'overflow-scroll h-[40vh] whitespace-break-spaces'
-          : 'whitespace-nowrap'}"
-        class:whitespace-nowrap={!modalOpen}
+          : ''}"
       >
-        {@html personData?.desc}
-      </p>
+        {#if modalOpen}
+          {@html personData.desc}
+        {:else}
+          {personData.desc?.slice(0, 100)}
+        {/if}
+      </div>
     </div>
     <span class="absolute bottom-1 right-2 text-sm italic font-light">
-	{modalOpen ? "click to minimize": "click to read more..."}
+      {modalOpen ? "click to minimize" : "click to read more..."}
     </span>
   </button>
 </div>
