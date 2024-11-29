@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  @apply text-primary-blue hover:underline;
+  @apply text-primary-blue hover:underline break-all;
 }
 
 .history>section {
@@ -22,12 +22,12 @@ a {
 }
 
 .history>section>h2 {
-  @apply text-h3 font-bold font-source-serif-4 text-center bg-secondary-yellow leading-[1.15] py-8;
+  @apply text-h4 font-bold font-source-serif-4 text-center bg-secondary-yellow leading-[1.15] py-8;
 }
 
 .history>section>div,
 .desc-text {
-  @apply mx-32 px-12 py-4 border-l-[4px] border-secondary-yellow;
+  @apply lg:mx-32 mx-4 px-4 lg:px-12 py-4 border-l-[4px] border-secondary-yellow;
 }
 
 ol {

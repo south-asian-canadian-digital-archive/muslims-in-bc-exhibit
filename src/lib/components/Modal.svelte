@@ -72,30 +72,30 @@
   bind:this={initContainer}
   id="{modalID}-init"
   class="h-full {orientation === 'v'
-    ? 'row-span-3 col-span-1'
-    : 'col-span-2 row-span-2 w-9/12'} {extraCss}"
+    ? 'lg:row-span-3 lg:col-span-1'
+    : 'lg:col-span-2 lg:row-span-2 lg:w-9/12'} {extraCss}"
 >
   <button
     id={modalID}
     bind:this={mainBox}
     aria-label="opens modal with more info"
-    class="flex p-6 gap-4 w-full h-full bg-slate-50 rounded-lg shadow-lg relative"
-    class:flex-col={modalOpen ? false : orientation === "v"}
+    class="flex p-6 gap-4 w-full h-full bg-slate-50 rounded-lg shadow-lg relative items-center lg:flex-row flex-col"
+    class:lg:flex-col={modalOpen ? false : orientation === "v"}
     onclick={animate}
   >
     <div
-      class="object-cover rounded-full overflow-hidden aspect-square min-h-[8vw] min-w-[8vw] max-h-[40vh] self-center"
-      class:h-[50%]={modalOpen ? false : orientation === "v"}
+      class="object-cover rounded-full overflow-hidden aspect-square min-h-[8vw] min-w-[8vw] *:max-h-[40vh] h-[30vw]"
+      class:lg:h-[10vw]={!modalOpen}
     >
       {#if personData?.img !== ""}
         <img
           src={personData?.img || ""}
           alt=""
-          class="aspect-square object-cover object-right rounded-full self-center"
+          class="aspect-square object-cover object-right rounded-full h-full"
         />
       {:else}
         <div
-          class="aspect-square object-cover object-right rounded-full bg-black self-center"
+          class="aspect-square object-cover object-right rounded-full bg-black"
           class:h-[60vh]={modalOpen}
         >
           &nbsp;
@@ -103,7 +103,7 @@
       {/if}
     </div>
     <div class="w-full overflow-hidden">
-      <h6 class="border-b border-b-black text-center">
+      <h6 class="lg:border-b border-b-black text-center">
         <b>{personData?.name}</b><br />{personData?.years}
       </h6>
       <div

@@ -223,7 +223,7 @@
 
 <main class="py-32 w-screen flex flex-col gap-10">
   <h1
-    class="px-32 text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]"
+    class="lg:px-32 px-4 text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]"
   >
     Early Migration (pre 1962)
   </h1>
@@ -303,11 +303,11 @@
       <figure
         class="h-screen w-screen relative overflow-hidden object-cover object-center"
       >
-        <img src="/map.jfif" alt="" class="absolute top-0 left-0 opacity-45" />
+        <img src="/map.jfif" alt="" class="lg:absolute top-0 left-0 opacity-45 h-screen object-cover" />
         <div class="bg-[#C2755466] h-full w-full absolute top-0 left-0"></div>
 
         <div
-          class="absolute h-full w-full top-0 left-0 grid p-32 grid-cols-4 grid-rows-5 gap-10 *:rounded-lg"
+          class="absolute h-full w-full top-0 left-0 grid p-10 lg:p-32 grid-flow-row lg:grid-cols-4 lg:grid-rows-5 gap-10 *:rounded-lg overflow-auto"
         >
           {#each Array(4) as _, idx}
             <Modal personData={figures[idx]} key={idx} />
@@ -317,7 +317,7 @@
             personData={figures[4]}
             key={4}
             orientation="h"
-            extraCss="ml-auto"
+            extraCss="lg:ml-auto"
           />
           <Modal personData={figures[5]} key={5} orientation="h">
             There is not a lot of information available about Roum Shah. A
