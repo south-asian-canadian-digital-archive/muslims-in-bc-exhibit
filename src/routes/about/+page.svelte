@@ -266,13 +266,13 @@
         <div class="flex flex-row justify-center text-center gap-6 w-full">
           {#each col as person, idx}
             <div
-              class="w-[20vw] rounded-lg aspect-square bg-secondary-yellow relative"
+              class="w-[20vw] h-[20vw] rounded-lg aspect-square bg-secondary-yellow relative "
             >
               <span
-                class="top-0 left-0 p-2 bg-secondar-teal rounded-t-lg text-white font-martel absolute w-full"
+                class="top-0 left-0 p-2 bg-secondar-teal rounded-t-lg text-white font-martel absolute w-full z-20"
                 >{person.name}</span
               >
-              <span class="p-4 pt-10 absolute top-4 left-0">
+              <span class="p-4 pt-10 absolute top-4 left-0 h-[18vw] overflow-auto">
                 {person.desc}
               </span>
             </div>

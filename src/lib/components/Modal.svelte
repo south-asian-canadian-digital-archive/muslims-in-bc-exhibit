@@ -79,7 +79,7 @@
     id={modalID}
     bind:this={mainBox}
     aria-label="opens modal with more info"
-    class="flex p-10 gap-4 w-full h-full bg-slate-50 rounded-lg shadow-lg relative"
+    class="flex p-6 gap-4 w-full h-full bg-slate-50 rounded-lg shadow-lg relative"
     class:flex-col={modalOpen ? false : orientation === "v"}
     onclick={animate}
   >
@@ -108,8 +108,8 @@
       </h6>
       <div
         class="pt-2 {modalOpen
-          ? 'overflow-scroll h-[40vh] whitespace-break-spaces'
-          : ''}"
+          ? 'overflow-scroll h-[48vh] whitespace-break-spaces'
+          : orientation === "h" && "h-[10vh]"}"
       >
         {#if modalOpen}
           {@html personData.desc}
