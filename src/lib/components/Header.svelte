@@ -50,6 +50,7 @@
             on:change={(e) => {
               item.pages?.forEach((element) => {
                 if (element.name === e.detail.value) {
+                  mobileNavOpen = false;
                   goto(element.path || ".");
                 }
               });
@@ -72,10 +73,12 @@
           <button
             class="flex flex-col gap-0 items-center hover:-translate-y-1 transition-all ease-in-out duration-300"
             class:font-extrabold={$page.url.pathname === item.path}
-            onclick={() =>
+            onclick={() => {
+              mobileNavOpen = false;
               item.name === "Contact"
                 ? item.path && window.open(item.path, "_blank")
-                : goto(item.path || ".")}
+                : goto(item.path || ".");
+            }}
           >
             {item.name}
             <span
