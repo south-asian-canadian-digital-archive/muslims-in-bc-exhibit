@@ -1,6 +1,7 @@
 <script lang="ts">
   import { gsap } from "gsap";
   import { onMount } from "svelte";
+  import { SvelteSet } from "svelte/reactivity";
 
   let floatingSquareTweens: gsap.core.Tween[] = [];
   const floatingSquareInfo: { title: string; desc: string }[] = [
@@ -100,6 +101,8 @@
     // { name: "", position: "", desc: "" },
   ];
 
+  let commitment_expanded: SvelteSet<number> = $state(new SvelteSet());
+
   onMount(() => {
     gsap.utils
       .toArray<any>(".floating-square > div.left-0")
@@ -139,7 +142,7 @@
       floatingSquareTweens[idx].resume();
     }}
     style:margin-top={marginTop}
-    class="floating-square relative *:absolute *:rounded-2xl h-[20vw] w-[20vw] *:h-full *:aspect-square"
+    class="floating-square relative *:absolute *:rounded-2xl lg:h-[20vw] h-[40vw] lg:w-[20vw] w-[40vw] *:h-full *:aspect-square"
   >
     <div
       class="z-50 -top-4 -left-4 bg-secondary-yellow p-[10%] overflow-auto *:will-change-transform will-change-transform"
@@ -151,9 +154,9 @@
   </div>
 {/snippet}
 
-<main class="py-20 flex flex-col gap-16">
-  <section class="bg-secondary-yellow flex flex-col pt-24">
-    <div class="flex flex-row gap-16 px-32 pb-24">
+<main class="lg:py-20 flex flex-col gap-16">
+  <section class="bg-secondary-yellow flex flex-col lg:pt-24">
+    <div class="flex lg:flex-row flex-col-reverse gap-16 lg:px-32 px-12 pb-24">
       <div class="flex flex-col gap-8">
         <h1
           class="text-primary-blue text-h2 font-source-serif-4 font-bold leading-[1.5]"
@@ -194,15 +197,19 @@
           {/each}
         </div>
       </div>
-      <div class="min-w-[35vw] h-auto bg-gray-300"></div>
+      <div class="min-w-[35vw] min-h-[50vh] mt-16 h-auto bg-gray-300">
+        <!-- TODO: image here -->
+      </div>
     </div>
 
-    <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x overflow-hidden">
+    <div
+      class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x overflow-hidden"
+    >
       &nbsp;
     </div>
   </section>
 
-  <section class="p-32 pt-36 flex flex-row gap-16">
+  <section class="lg:p-32 p-10 pt-36 flex lg:flex-row flex-col gap-16">
     <div class="grid grid-rows-2 grid-cols-2 gap-20">
       {#each floatingSquareInfo as info, idx}
         {@render FloatingSquare(
@@ -214,7 +221,7 @@
       {/each}
     </div>
 
-    <div class="h-full w-[30vw] flex flex-col gap-4 text-right">
+    <div class="h-full lg:w-[30vw] flex flex-col gap-4 text-right">
       <h3 class="text-h3 font-bold font-source-serif-4 text-primary-blue">
         Project History
       </h3>
@@ -238,14 +245,16 @@
 
   <!-- sponsors -->
   <section class="bg-secondary-yellow flex flex-col pt-24">
-    <div class="flex flex-col px-32">
+    <div class="flex flex-col lg:px-32 px-12">
       <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
         We thank our Financial Supporters
       </h2>
-      <div class="flex py-24 justify-between">
-        <img src="/BlackResearchGraduateStudies.png" class="h-24" alt="" />
-        <img src="/UFV_SASI_logo.png" alt="" class="h-24" />
-        <img src="/Sacda-logo.svg" alt="" class="h-18" />
+      <div
+        class="flex flex-wrap py-16 justify-evenly items-center *:w-[30vh] *:aspect-auto"
+      >
+        {#each ["/UFV_SASI_logo.png", "/content/Hari Sharma logo.png"] as src}
+          <img {src} alt="" />
+        {/each}
       </div>
     </div>
 
@@ -254,7 +263,7 @@
     </div>
   </section>
 
-  <section class="p-32" id="team">
+  <section class="lg:p-32 p-12" id="team">
     <h1
       class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
     >
@@ -263,16 +272,20 @@
 
     <div class="flex flex-col gap-6 items-center">
       {#each [team.slice(0, 3), team.slice(3, 7), team.slice(7)] as col, idy}
-        <div class="flex flex-row justify-center text-center gap-6 w-full">
+        <div
+          class="flex flex-col lg:flex-row justify-center text-center gap-6 w-full"
+        >
           {#each col as person, idx}
             <div
-              class="w-[20vw] h-[20vw] rounded-lg aspect-square bg-secondary-yellow relative "
+              class="lg:w-[20vw] lg:h-[20vw] rounded-lg aspect-square bg-secondary-yellow relative"
             >
               <span
                 class="top-0 left-0 p-2 bg-secondar-teal rounded-t-lg text-white font-martel absolute w-full z-20"
                 >{person.name}</span
               >
-              <span class="p-4 pt-10 absolute top-4 left-0 h-[18vw] overflow-auto">
+              <span
+                class="p-4 pt-10 absolute top-4 left-0 lg:h-[18vw] overflow-auto"
+              >
                 {person.desc}
               </span>
             </div>
@@ -283,14 +296,15 @@
   </section>
 
   <section class="bg-secondary-yellow flex flex-col pt-24" id="partners">
-    <div class="flex flex-col px-32">
+    <div class="flex flex-col lg:px-32 px-12">
       <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
         Our Partners
       </h2>
-      <div class="flex py-24 justify-between">
-        <img src="/BlackResearchGraduateStudies.png" class="h-24" alt="" />
-        <img src="/UFV_SASI_logo.png" alt="" class="h-24" />
-        <img src="/Sacda-logo.svg" alt="" class="h-18" />
+      <!-- partners -->
+      <div class="flex flex-wrap py-16 justify-evenly *:w-[30vh]">
+        {#each ["/Sacda-logo.svg", "/content/cece logo.png", "/content/reserach and grad stud logo.png", "/content/heritage logo in the middle.png", "/content/abb muslim CC logo.png", "/content/south asian fellowship logo.png"] as src}
+          <img {src} alt="" />
+        {/each}
       </div>
     </div>
 
@@ -299,7 +313,7 @@
     </div>
   </section>
 
-  <section class="p-32" id="committee">
+  <section class="lg:p-32 p-12" id="committee">
     <h1
       class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
     >
@@ -310,13 +324,13 @@
       {#each committee as person, idx}
         {@const EvenItem = !((idx + 1) % 2)}
         <div
-          class="w-[90%] h-min rounded-lg p-6 bg-secondary-yellow flex gap-6"
+          class="lg:w-[90%] h-min rounded-lg p-6 bg-secondary-yellow flex flex-col lg:flex-row gap-6"
           class:self-end={EvenItem}
           class:flex-row-reverse={EvenItem}
-          class:text-right={EvenItem}
+          class:lg:text-right={EvenItem}
         >
           <div
-            class="aspect-square h-[20vw] bg-gray-100 relative flex rounded-lg overflow-clip object-cover"
+            class="aspect-square h-[30vh] lg:h-[20vw] bg-gray-100 relative flex rounded-lg overflow-clip object-cover"
           >
             <img src={person.img} alt="" class="object-cover w-full" />
             <span
@@ -325,9 +339,18 @@
               <span class="text-xs">{@html person.position}</span></span
             >
           </div>
-          <div class="p-4 flex items-center">
-            {@html person.desc}
-          </div>
+          <button
+            class="p-4 flex items-center"
+            onclick={() => {
+              commitment_expanded.has(idx)
+                ? commitment_expanded.delete(idx)
+                : commitment_expanded.add(idx);
+            }}
+          >
+            {@html commitment_expanded.has(idx)
+              ? person.desc
+              : `${person.desc.slice(0, 100)} <br> read more...`}
+          </button>
         </div>
       {/each}
     </div>
