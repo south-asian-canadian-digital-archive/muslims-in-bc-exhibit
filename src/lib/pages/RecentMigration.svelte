@@ -1,33 +1,30 @@
-<main class="p-32 w-screen flex flex-col gap-10">
-  <p class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]">
+<main class="py-32 w-screen flex flex-col gap-10">
+  <h1
+    class="lg:px-32 px-4 text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]"
+  >
     Muslim Experiences in Canada / Recent Migration to Canada (Post 9/11)
-  </p>
-
+  </h1>
+  <div class="desc-text">
+    After a century-long history of migration, the South Asian muslim
+    communities constitute a visible and diverse presence in B.C today.
+    <br /><br />
+    In particular, the emergence of diverse, often dissenting voices from within
+    the community has complicated and enriched our understanding of South Asian Canadian
+    muslims. On the one hand, minorities within minorities, double diaspora, second
+    and third generation muslims, and queer muslims, among others, have challenged
+    any one, uniform culture, history, and understanding of the community. Alongside,
+    the enigma of reconciling one's Islamic upbringing with the seemingly “secular”
+    and “liberal” values of Canadian society has also elicited different responses
+    from different members of the community.
+    <br /><br />
+    The emergence of particular narratives about Muslims in the aftermath of 9/11
+    has also affected the community's sense of itself.
+    <br /><br />
+    Lastly, a number of recent ethnographic works also highlight the difficulties
+    South Asian muslim migrants face in finding employment due to the lack of Canadian
+    education and work experience.
+  </div>
   <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
-    <section>
-      <h2>Introduction</h2>
-      <div>
-        After a century-long history of migration, the South Asian muslim
-        communities constitute a visible and diverse presence in B.C today.
-        <br /><br />
-        In particular, the emergence of diverse, often dissenting voices from within
-        the community has complicated and enriched our understanding of South Asian
-        Canadian muslims. On the one hand, minorities within minorities, double diaspora,
-        second and third generation muslims, and queer muslims, among others, have
-        challenged any one, uniform culture, history, and understanding of the community.
-        Alongside, the enigma of reconciling one's Islamic upbringing with the seemingly
-        “secular” and “liberal” values of Canadian society has also elicited different
-        responses from different members of the community.
-        <br /><br />
-        The emergence of particular narratives about Muslims in the aftermath of
-        9/11 has also affected the community's sense of itself.
-        <br /><br />
-        Lastly, a number of recent ethnographic works also highlight the difficulties
-        South Asian muslim migrants face in finding employment due to the lack of
-        Canadian education and work experience.
-      </div>
-    </section>
-
     <section>
       <h2>Post 9/11</h2>
       <div>

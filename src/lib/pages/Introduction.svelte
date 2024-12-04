@@ -50,9 +50,9 @@
 <main class="pb-40 flex flex-col">
   <section class="py-20">
     <div class="h-min flex gap-14 px-0 w-screen">
-      <div class="flex flex-col gap-12 pl-32 w-[80vw]">
+      <div class="flex flex-col gap-12 pl-8 pr-8 lg:pl-32 lg:pr-0 lg:w-[80vw]">
         <h1
-          class="font-source-serif-4 font-bold lg:text-h2 leading-[1.15] text-primary-blue"
+          class="font-source-serif-4 font-bold text-h2 leading-[1.15] text-primary-blue"
         >
           South Asian Muslims in British Columbia: Introduction
         </h1>
@@ -97,12 +97,12 @@
 
   <section class="py-20">
     <h1
-      class="text-h3 font-bold text-primary-blue text-center font-source-serif-4 pb-[10vw]"
+      class="text-h3 font-bold text-primary-blue text-center font-source-serif-4 px-4 lg:pb-[10vw] pb-[10vh]"
     >
       Historical Timeline
     </h1>
 
-    <div class="flex flex-col gap-[10vw]">
+    <div class="flex flex-col lg:gap-[10vw] gap-4">
       {#snippet desc(text: string, align = "left")}
         <div class:text-right={align === "right"}>
           {@html text}
@@ -112,19 +112,22 @@
         </div>
       {/snippet}
 
+      <!-- TODO: Mobile design -->
       {#each historyPages.slice(1) as item, idx}
         <div
-          class="relative px-32 bg-secondary-yellow h-[10vw] overflow-visible flex flex-row items-center gap-12"
+          class="relative lg:px-32 bg-secondary-yellow lg:h-[10vw] lg:overflow-visible flex flex-row items-center lg:gap-12 overflow-hidden"
         >
           {#if idx === 1}
             {@render desc(item.desc, "right")}
           {/if}
           <button
-            aria-label="links to chapter {idx+1}: {item.name}"
+            aria-label="links to chapter {idx + 1}: {item.name}"
             id="{prefix}-{idx}"
-            class="aspect-square rounded-full min-w-[20vw] flex items-center justify-center border-[8px] hover:border-[16px] border-secondary-yellow bg-white transition-all duration-200 ease-in-out"
+            class="aspect-square rounded-full lg:min-w-[20vw] lg:h-auto h-[30vh] flex items-center justify-center border-[8px] hover:border-[16px] border-secondary-yellow bg-white transition-all duration-200 ease-in-out"
             onclick={(e) => {
               e.currentTarget.style.color = "white";
+              if (e.currentTarget.parentElement)
+                e.currentTarget.parentElement.style.overflow = "visible";
               navTweens[idx].resume();
             }}
           >
