@@ -175,11 +175,11 @@
           collaboration with faculty, students and community. The Institute
           takes direction from UFV's strategic goals to be a leader of social,
           cultural, economic and environmentally responsible development in the
-          Fraser Valley The Institute is a repository of the pioneering history
-          of immigrant settlers who make up the Canadian South Asian Diaspora.
-          We also undertake much needed contemporary research that benefits
-          academia, members of the community, government, organizations and
-          agencies as well as global scholars and interested persons.
+          Fraser Valley. <br /> The Institute is a repository of the pioneering history
+          of immigrant settlers who make up the Canadian South Asian Diaspora. We
+          also undertake much needed contemporary research that benefits academia,
+          members of the community, government, organizations and agencies as well
+          as global scholars and interested persons.
         </p>
         <div class="flex flex-wrap gap-4">
           {#each [["Meet Our Team", "#team"], ["Meet Our Partners", "#partners"], ["Advisory Committee", "#committee"]] as link, idx}

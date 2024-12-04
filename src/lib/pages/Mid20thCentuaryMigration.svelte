@@ -1,62 +1,62 @@
 <script>
+  import Image from "$lib/components/Image.svelte";
 </script>
 
-<main class="p-32 w-screen flex flex-col gap-10">
-  <p
-    class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]"
+<main class="py-32 w-screen flex flex-col gap-10">
+  <h1
+    class="lg:px-32 px-4 text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]"
   >
     Mid 20th century migration (1962-2001)
+  </h1>
+  <p class="desc-text">
+    Throughout the first half of the twentieth century, the discriminatory
+    Canadian immigration policies kept South Asian muslims from migrating to
+    Canada. But the shift of policy from “national, ethnic, or racial
+    background” to “education and skill level” in 1962 and the “point system” in
+    1967 marked a new moment in the history of South Asian muslims immigration
+    to Canada.<sup class="c6"><a href="#ftnt10" id="ftnt_ref10">[10]</a></sup>
+    Most of the South Asian muslims migrating under this new system belonged to a
+    professional and highly educated class.
+    <br /><br />
+    The growth of the South Asian muslims in the Lower Mainland led to the formation
+    of community organizations like Pakistan Canada Association in 1963, and British
+    Columbia Muslim Association in 1966. Alongside, more culture focused organizations
+    like Lower Mainland Bengali Cultural Society established in 1979 also involved
+    muslim community members. During the 1980s and 1990s, different muslim sects
+    also started building their own mosques, and educational centers in B.C. There
+    are 61 mosques spread across BC of these different sects.<sup class="c6"
+      ><a href="#ftnt11" id="ftnt_ref11">[11]</a></sup
+    >
+    <br /><br />
+    South Asian muslim migration to B.C during this time period was also influenced
+    by events like the exodus of Ismaili communities from East Africa, the formation
+    of Bangladesh, the declaration of the Ahmaddiya community as non-muslims in Pakistan,
+    the independence of Caribbean states, and a series of coups d'état in Fiji. As
+    a result of these events, South Asian muslims from diverse sects, geographies,
+    and cultures started migrating to Canada and B.C.
+    <br /><br />
+    Similarly, during this time period, despite the state's promotion of multicultural
+    policies, racism, Islamophobia, and labor exploitation were still rampant in
+    the Canadian societies. In order to fight back, Muslim community members would
+    often join different organizations.
   </p>
 
   <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     <section>
-      <h2>Introduction</h2>
-      <div>
-        Throughout the first half of the twentieth century, the discriminatory
-        Canadian immigration policies kept South Asian muslims from migrating to
-        Canada. But the shift of policy from “national, ethnic, or racial
-        background” to “education and skill level” in 1962 and the “point
-        system” in 1967 marked a new moment in the history of South Asian
-        muslims immigration to Canada.<sup class="c6"
-          ><a href="#ftnt10" id="ftnt_ref10">[10]</a></sup
-        >
-        Most of the South Asian muslims migrating under this new system belonged
-        to a professional and highly educated class.
-        <br /><br />
-        The growth of the South Asian muslims in the Lower Mainland led to the formation
-        of community organizations like Pakistan Canada Association in 1963, and
-        British Columbia Muslim Association in 1966. Alongside, more culture focused
-        organizations like Lower Mainland Bengali Cultural Society established in
-        1979 also involved muslim community members. During the 1980s and 1990s,
-        different muslim sects also started building their own mosques, and educational
-        centers in B.C. There are 61 mosques spread across BC of these different
-        sects.<sup class="c6"><a href="#ftnt11" id="ftnt_ref11">[11]</a></sup>
-        <br /><br />
-        South Asian muslim migration to B.C during this time period was also influenced
-        by events like the exodus of Ismaili communities from East Africa, the formation
-        of Bangladesh, the declaration of the Ahmaddiya community as non-muslims
-        in Pakistan, the independence of Caribbean states, and a series of coups
-        d'état in Fiji. As a result of these events, South Asian muslims from diverse
-        sects, geographies, and cultures started migrating to Canada and B.C.
-        <br /><br />
-        Similarly, during this time period, despite the state's promotion of multicultural
-        policies, racism, Islamophobia, and labor exploitation were still rampant
-        in the Canadian societies. In order to fight back, Muslim community members
-        would often join different organizations.
-      </div>
-    </section>
-
-    <section>
       <h2>Pakistani</h2>
-      <div>
-        The Pakistan Canada Association was one of the first South Asian muslim
-        organizations in B.C formed in 1963. Muslims from Pakistani Punjab who
-        migrated to Canada also shared common cultures, and languages with the
-        Punjab Sikh communities of B.C. According to oral history sources, Sikh
-        community members also made valuable contributions to the building of
-        the first Islamic Centre in Vancouver. During the 1970s, some Pakistani
-        community members in Toronto also started publishing their own
-        newspapers and magazines in Urdu and English.
+      <div class="">
+        <Image src="/content/pakistan_map.png" float="left"
+          >Country Map Outline</Image
+        >
+
+        <!-- <div> -->
+        The Pakistan Canada Association was one of the first South Asian muslim organizations
+        in B.C formed in 1963. Muslims from Pakistani Punjab who migrated to Canada
+        also shared common cultures, and languages with the Punjab Sikh communities
+        of B.C. According to oral history sources, Sikh community members also made
+        valuable contributions to the building of the first Islamic Centre in Vancouver.
+        During the 1970s, some Pakistani community members in Toronto also started
+        publishing their own newspapers and magazines in Urdu and English.
         <br /><br />
         Some of the prominent members of this early Pakistani community in B.C included
         Riasat Ali Khan (1934- 2003), HJ Malik, Dr. Aftab Mufti, Nuzhat Amin, Saleem
@@ -143,6 +143,7 @@
             >
           </li>
         </ol>
+        <!-- </div> -->
       </div>
     </section>
 
@@ -202,6 +203,10 @@
         these Indo-Caribbean community members including muslims started migrating
         to Canada and B.C.
       </div>
+
+      <figure class="lg:mx-32 mx-4">
+        <img src="/content/Caribbean-political-map.jpg" alt="" />
+      </figure>
     </section>
 
     <section>
@@ -240,6 +245,8 @@
     <section>
       <h2>East Africa / Ismaili Muslims</h2>
       <div>
+        <Image src="/content/east_africa.png" float="left"></Image>
+
         A majority of Ismaili community migrated from the East African countries
         of Uganda, Kenya, and Tanzania to Canada. Most of the community members
         trace their origins back to India/Gujarat. Their traditional practices
