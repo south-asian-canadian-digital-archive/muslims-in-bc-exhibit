@@ -75,9 +75,10 @@
             class:font-extrabold={$page.url.pathname === item.path}
             onclick={() => {
               mobileNavOpen = false;
-              item.name === "Contact"
-                ? item.path && window.open(item.path, "_blank")
-                : goto(item.path || ".");
+              // item.name === "Contact"
+              //   ? item.path && window.open(item.path, "_blank")
+              //   : goto(item.path || ".");
+              goto(item.path || ".");
             }}
           >
             {item.name}

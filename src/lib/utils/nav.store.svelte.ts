@@ -25,7 +25,7 @@ export const navItems = [
 		]
 	},
 	// { name: "Resources", path: "/resources" },
-	{ name: "Contact", path: "https://www.ufv.ca/sasi/contact-us/" },
+	{ name: "Contact", path: "/contact" },
 ]
 
 type NavItem = "Home" | "About" | "History" | "Resources" | "Contact";
