@@ -1,11 +1,17 @@
 <script lang="ts">
+  import { page } from "$app/stores";
+
   //   import type { ActionData } from "./$types";
   import { PUBLIC_FORM_ACCESS_KEY } from "$env/static/public";
+  import { preventDefault } from "svelte/legacy";
+
+  //   $page.url.searchParams
 
   //   let { form }: { form: ActionData } = $props();
 
-  //   let subject: string = $state("");
-  //   let message: string = $state("");
+  let subject: string = $state("");
+  let message: string = $state("");
+  let honeypot: string | undefined = $state();
 </script>
 
 <svelte:head>
@@ -55,8 +61,34 @@
     </section>
     <form
       method="POST"
-      action="https://api.staticforms.xyz/submit"
       class="flex flex-col gap-4 lg:w-[40vw] bg-primary-blue p-10 rounded-lg"
+      onsubmit={(e: SubmitEvent) => {
+        e.preventDefault();
+        const data = {
+          subject: subject,
+          honeypot: honeypot,
+          message: message,
+          replyTo: "@",
+          accessKey: PUBLIC_FORM_ACCESS_KEY,
+        };
+
+        fetch("https://api.staticforms.xyz/submit", {
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: { "Content-Type": "application/json" },
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            if (res.success) {
+              alert("Message sent successfully!");
+            } else {
+              alert("Message failed to send.");
+            }
+          })
+          .catch((error) => {
+            alert(error);
+          });
+      }}
     >
       <div>
         <label for="subject">Subject:</label>
@@ -65,11 +97,15 @@
           id="subject"
           name="subject"
           placeholder="subject..."
+          bind:value={subject}
         />
       </div>
-      <input type="text" name="honeypot" style="display:none" />
-      <input type="hidden" name="accessKey" value={PUBLIC_FORM_ACCESS_KEY} />
-      <input type="hidden" name="replyTo" value="@" />
+      <input
+        bind:value={honeypot}
+        type="text"
+        name="honeypot"
+        style="display:none"
+      />
       <div>
         <label for="message">Message:</label>
         <textarea
@@ -77,6 +113,7 @@
           name="message"
           placeholder="message..."
           class="h-[30vh]"
+          bind:value={message}
         ></textarea>
       </div>
 
