@@ -43,7 +43,7 @@
         <br />
         Email: <a href="mailto:sasi@ufv.ca">sasi@ufv.ca</a>
         <br />
-        Phone: <a href="+16048544547">(604) 854-4547</a>
+        Phone: <a href="tel:+16048544547">(604) 854-4547</a>
         <br />
         Address:
         <a href="https://maps.app.goo.gl/bHXFioLNt51ueBsPA">
