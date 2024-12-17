@@ -79,17 +79,34 @@
           class="border-l-[6px] border-l-secondary-yellow flex flex-col px-8 lg:pl-8 lg:pr-0 gap-6"
         >
           <p>
-            The South Asian Muslims in British Columbia research project (2023 -
-            present) sheds light on the historical and contemporary presence of
-            Muslim communities in Canada, focusing on South Asian Muslim
-            communities of B.C. Through research, archival records, academic and
-            scholarly work, and oral interviews, we aim to highlight profound
-            contributions of Canadian South Asian Muslims to Canadian society
-            with a goal to record the history, promote deeper appreciation and
-            understanding and to contribute to the Canadian record. This is a
-            work in progress and so far this represents the first stage of
-            research supported by scholars, community researchers, and student
-            researchers.
+            The historical and contemporary presence of Muslim communities in Canada
+            is regionally diverse and long, replete with stories of successes as
+            they have advocated for spaces to practice their religion and gain their
+            rights, but it also has stories of the challenges they have faced along
+            the way. Recording and preserving these stories is an important step
+            toward building greater appreciation and understanding of what constitutes
+            the Canadian Muslim experience and how they have contributed to the betterment
+            of Canadian society. Our research project aims to contribute to this
+            cause by focusing on South Asian Canadian Muslim communities of B.C.
+            We use existing academic and community research, archival records, and
+            oral interviews to highlight these, often untold, stories of South Asian
+            Muslim communities in B.C.
+            <br /><br />
+            Our project understands Islam as a mosaic both in terms of how the religion
+            is practiced across time and geography. It hopes to honor these diverse
+            ways of being Muslim by focusing not on the textual traditions in and
+            of themselves, but on what they mean to the community in BC. Taking a
+            community centered approach, our project aims to highlight how religion
+            and religious identity is lived within British Columbia. We acknowledge
+            that this project is a first step toward preserving these community histories.
+            We aim to honour these stories by presenting them as they are and being
+            very careful to not oversimplify a religious and community experience
+            that has so much difference within it. This project, therefore, will
+            form a foundation for future researchers, artists and community members
+            to engage with so that we may continue to develop the history of South
+            Asian Muslims in BC. 
+            <br>We welcome any feedback that can help us improve
+            this project by writing to us at sasi@ufv.ca or contacting us at 604-854-4547.
           </p>
           <button
             class="bg-primary-blue py-4 px-12 rounded-full text-white w-fit"
@@ -100,7 +117,7 @@
         </div>
       </div>
 
-      <div class="lg:flex gap-4 pr-32 overflow-clip hidden">
+      <div class="lg:flex gap-4 pr-32 overflow-clip hidden max-h-[80vh]">
         {#each { length: 2 } as _, i}
           <button
             class="bg-secondar-teal rounded-xl p-2 min-h-[60vh] w-[30%] transition-all ease-in-out duration-500 dome"

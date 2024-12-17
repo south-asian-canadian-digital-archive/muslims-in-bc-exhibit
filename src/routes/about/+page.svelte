@@ -33,14 +33,17 @@
       desc: "Thamilini leads the archival recording, manages content development, supports the oral history interviews, transcription and narratives. She supports student researchers, community historians and community leaders.",
     },
     {
-      name: "Antoinetta Holierhoek",
+      name: "Annet Holierhoek",
       desc: "Annet oversees the website's development and design, ensuring alignment with project goals. She collaborates with researchers and designers to maintain accuracy and accessibility, integrating feedback and media seamlessly.",
     },
     {
       name: "Anushay Mallik",
       desc: "Aushay Malik, PhD, Senior Lecturer at SFU is the contracted consultant who leads the research on the project. She brings a wealth of knowledge, lived experience and research expertise as a young Muslim Canadian scholar.",
     },
-    { name: "Kiara Dabreo", desc: "" },
+    {
+      name: "Kiara Dabreo",
+      desc: "Kiara conducted historical and archival research on early South Asian Muslim immigrants in BC, creating an archival collection, preserving records, and cataloging key individuals, organizations, and settlement locations.",
+    },
     {
       name: "Samarah Saddique",
       desc: "Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC, digitally archives their narratives.",
@@ -49,7 +52,10 @@
       name: "Habiba Khan",
       desc: "As a Research Assistant, Habiba contributes to the research, oral history interviews, and writing narratives. She works with other research assistants to create an accurate archive of the contributions of South Asian Muslims in British Columbia.",
     },
-    { name: "Saumyaa Gelani", desc: "" },
+    {
+      name: "Saumyaa Gelani",
+      desc: "As a Research Assistant, Habiba contributes to the research, oral history interviews, and writing narratives. She works with other research assistants to create an accurate archive of the contributions of South Asian Muslims in British Columbia.",
+    },
     {
       name: "Rashneet",
       desc: "Rashneet contributed to the South Asian Muslims in BC Project as a graphic designer and research assistant. She developed the project’s design identity and created the foundational website design.",
@@ -155,6 +161,7 @@
 {/snippet}
 
 <main class="lg:py-20 flex flex-col gap-16">
+  <!-- heading -->
   <section class="bg-secondary-yellow flex flex-col lg:pt-24">
     <div class="flex lg:flex-row flex-col-reverse gap-16 lg:px-32 px-12 pb-24">
       <div class="flex flex-col gap-8">
@@ -164,10 +171,10 @@
           About SASI
         </h1>
         <p class="text-p text-primary-black">
-          The South Asian Studies Institute (the Institute) at the University of
-          the Fraser Valley brings together South Asia scholars and students
-          from diverse backgrounds and disciplines to create a nexus point for
-          programs and activities that support our vision. The Institute fosters
+          The South Asian Studies Institute at the University of the Fraser
+          Valley brings together South Asia scholars and students from diverse
+          backgrounds and disciplines to create a nexus point for programs and
+          activities that support our vision. The Institute fosters
           inter-disciplinary scholarly research, community and public engagement
           on issues related to South Asia and the Canadian South Asian Diaspora.
           The Institute initiates, directs and implements the development,
@@ -182,7 +189,7 @@
           as global scholars and interested persons.
         </p>
         <div class="flex flex-wrap gap-4">
-          {#each [["Meet Our Team", "#team"], ["Meet Our Partners", "#partners"], ["Advisory Committee", "#committee"]] as link, idx}
+          {#each [["Meet Our Team", "#team"], ["Advisory Committee", "#committee"], ["Meet Our Partners", "#partners"]] as link, idx}
             <button
               class="bg-primary-blue rounded-lg whitespace-nowrap text-white px-6 py-3"
               aria-label="scrolls to {link[0]} section of the page"
@@ -209,6 +216,7 @@
     </div>
   </section>
 
+  <!-- project history -->
   <section class="lg:p-32 p-10 pt-36 flex lg:flex-row flex-col gap-16">
     <div class="grid grid-rows-2 grid-cols-2 gap-20">
       {#each floatingSquareInfo as info, idx}
@@ -228,91 +236,58 @@
       <p
         class="border-r-[4px] border-r-secondary-yellow h-max pr-4 font-martel"
       >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
-        voluptatum necessitatibus! Vel expedita officia aperiam amet at,
-        aspernatur quos quisquam? Velit cum ullam voluptatem eius nostrum fugiat
-        nihil dicta recusandae. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Labore totam architecto aut tenetur quo maiores fugiat
-        deleniti voluptate nihil. Consectetur consequuntur incidunt assumenda
-        dolorum quisquam doloribus necessitatibus, iusto quod voluptatibus.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos rem id
-        aperiam molestiae recusandae, soluta animi est quas alias illum
-        voluptates? Omnis placeat voluptatum rerum amet itaque, ipsum inventore
-        dicta.
+        The historical and contemporary presence of Muslim communities in
+        Canada, particularly South Asian Muslims in B.C., has often been
+        obscured. Our research project focuses on their contributions and covers
+        three major timelines: early migration to BC, mid-20th-century
+        migration, and recent migration to Canada. Exploring the diverse sects
+        and cultural integration of Islam, including Sunni sub-sects like
+        Wahabi, Salafi, Barelvi, and Deobandi, as well as Shia sub-sects like
+        Twelver Shi'ism and Ismailism, along with Sufism, we aim to promote
+        understanding and welcome feedback for future enhancements.
       </p>
     </div>
   </section>
 
-  <!-- sponsors -->
-  <section class="bg-secondary-yellow flex flex-col pt-24">
-    <div class="flex flex-col lg:px-32 px-12">
-      <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
-        We thank our Financial Supporters
-      </h2>
-      <div
-        class="flex flex-wrap py-16 justify-evenly items-center *:w-[30vh] *:aspect-auto"
+  <!-- team -->
+  <section class=" bg-secondary-yellow flex flex-col" id="team">
+    <div class="lg:p-32 p-12">
+      <h1
+        class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
       >
-        {#each ["/UFV_SASI_logo.png", "/content/Hari Sharma logo.png"] as src}
-          <img {src} alt="" />
+        Our Team
+      </h1>
+
+      <div class="flex flex-col gap-6 items-center">
+        {#each [team.slice(0, 3), team.slice(3, 7), team.slice(7)] as col, idy}
+          <div
+            class="flex flex-col lg:flex-row justify-center text-center gap-6 w-full"
+          >
+            {#each col as person, idx}
+              <div
+                class="lg:w-[20vw] lg:h-[20vw] rounded-lg aspect-square bg-white relative"
+              >
+                <span
+                  class="top-0 left-0 p-2 bg-secondar-teal rounded-t-lg text-white font-martel absolute w-full z-20"
+                  >{person.name}</span
+                >
+                <span
+                  class="p-4 pt-10 absolute top-4 left-0 lg:h-[18vw] overflow-auto"
+                >
+                  {person.desc}
+                </span>
+              </div>
+            {/each}
+          </div>
         {/each}
       </div>
     </div>
-
     <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
       &nbsp;
     </div>
   </section>
 
-  <section class="lg:p-32 p-12" id="team">
-    <h1
-      class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
-    >
-      Our Team
-    </h1>
-
-    <div class="flex flex-col gap-6 items-center">
-      {#each [team.slice(0, 3), team.slice(3, 7), team.slice(7)] as col, idy}
-        <div
-          class="flex flex-col lg:flex-row justify-center text-center gap-6 w-full"
-        >
-          {#each col as person, idx}
-            <div
-              class="lg:w-[20vw] lg:h-[20vw] rounded-lg aspect-square bg-secondary-yellow relative"
-            >
-              <span
-                class="top-0 left-0 p-2 bg-secondar-teal rounded-t-lg text-white font-martel absolute w-full z-20"
-                >{person.name}</span
-              >
-              <span
-                class="p-4 pt-10 absolute top-4 left-0 lg:h-[18vw] overflow-auto"
-              >
-                {person.desc}
-              </span>
-            </div>
-          {/each}
-        </div>
-      {/each}
-    </div>
-  </section>
-
-  <section class="bg-secondary-yellow flex flex-col pt-24" id="partners">
-    <div class="flex flex-col lg:px-32 px-12">
-      <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
-        Our Partners
-      </h2>
-      <!-- partners -->
-      <div class="flex flex-wrap py-16 justify-evenly *:w-[30vh]">
-        {#each ["/Sacda-logo.svg", "/content/cece logo.png", "/content/reserach and grad stud logo.png", "/content/heritage logo in the middle.png", "/content/abb muslim CC logo.png", "/content/south asian fellowship logo.png"] as src}
-          <img {src} alt="" />
-        {/each}
-      </div>
-    </div>
-
-    <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
-      &nbsp;
-    </div>
-  </section>
-
+  <!-- committee -->
   <section class="lg:p-32 p-12" id="committee">
     <h1
       class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
@@ -353,6 +328,40 @@
           </button>
         </div>
       {/each}
+    </div>
+  </section>
+
+  <!-- partners -->
+  <section class="bg-secondary-yellow flex flex-col pt-24" id="partners">
+    <div class="flex flex-col lg:px-32 px-12">
+      <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
+        Our Partners
+      </h2>
+      <!-- partners -->
+      <div class="flex flex-wrap py-16 justify-evenly *:w-[30vh]">
+        {#each ["/Sacda-logo.svg", "/content/heritage logo in the middle.png", "/content/abb muslim CC logo.png", "/content/cece logo.png", "/content/reserach and grad stud logo.png", "/content/south asian fellowship logo.png"] as src}
+          <img {src} alt="" />
+        {/each}
+      </div>
+    </div>
+    <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
+      &nbsp;
+    </div>
+  </section>
+
+  <!-- sponsors -->
+  <section class=" flex flex-col pt-24">
+    <div class="flex flex-col lg:px-32 px-12">
+      <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
+        We thank our Financial Supporters
+      </h2>
+      <div
+        class="flex flex-wrap py-16 justify-evenly items-center *:w-[30vh] *:aspect-auto"
+      >
+        {#each ["/UFV_SASI_logo.png", "/content/Hari Sharma logo.png"] as src}
+          <img {src} alt="" />
+        {/each}
+      </div>
     </div>
   </section>
 </main>
