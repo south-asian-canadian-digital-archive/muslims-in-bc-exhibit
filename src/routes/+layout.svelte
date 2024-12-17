@@ -67,7 +67,7 @@
 {#if scrollY !== 0}
   <button
     transition:fade
-    class="fixed right-6 bottom-6 z-[999] rounded-full object-cover bg-secondary-yellow py-0.5 group hover:-translate-y-1 transition-all duration-500"
+    class="fixed right-6 bottom-6 z-[999] rounded-full shadow-lg object-cover bg-secondary-yellow py-0.5 group hover:-translate-y-1 transition-all duration-500"
     aria-label="yuh"
     onclick={() => {
       window.scrollTo({ top: 0, behavior: "smooth" });

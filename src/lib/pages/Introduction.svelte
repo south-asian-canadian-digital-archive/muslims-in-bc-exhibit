@@ -99,7 +99,7 @@
   <!-- history timeline -->
   <section class="lg:py-20">
     <h1
-      class="lg:text-h3 text-h4 font-bold text-primary-blue text-center font-source-serif-4 px-4 lg:pb-[10vw] "
+      class="lg:text-h3 text-h4 font-bold text-primary-blue text-center font-source-serif-4 px-4 lg:pb-[10vw]"
     >
       Historical Timeline
     </h1>
