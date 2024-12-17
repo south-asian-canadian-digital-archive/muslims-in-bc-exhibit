@@ -1,53 +1,31 @@
 <script lang="ts">
   import { navItems } from "$lib/utils/nav.store.svelte";
-  import DomeThing from "$lib/components/DomeThing.svelte";
-  import { page } from "$app/stores";
   import { goto } from "$app/navigation";
 
   let historyPages = navItems[2].pages?.slice(1) || [];
-  let hoveredTag = $state(-1);
 </script>
 
-<div
-  class="bg-secondary-yellow px-32 mb-10 pt-14 pb-4 h-[70vh] flex justify-evenly relative overflow-hidden"
->
-  <div
-    class="absolute bg-tertiary-green rounded-lg h-1 w-[80%] top-[5rem]"
-  ></div>
+<div class="px-4 mb-10 pt-14 pb-4 h-[70vh] flex relative overflow-hidden">
+  <div class="absolute bg-secondar-teal rounded-lg w-3 h-[80%] left-4"></div>
 
-  {#each historyPages as item, i}
-    <div
-      class="flex flex-col items-center h-full transition-all duration-500 ease-in-out"
-      class:opacity-50={hoveredTag !== -1 && hoveredTag !== i
-        ? true
-        : hoveredTag === i
-          ? false
-          : $page.url.pathname !== "/history/introduction" &&
-            $page.url.pathname !== "/resources" &&
-            item.path !== $page.url.pathname}
-    >
-      <div
-        class="rounded-full bg-primary-blue w-12 min-h-12 aspect-square z-10"
-></div>
+  <div class="flex flex-col gap-4 w-full justify-around">
+    {#each historyPages as item, i}
+      <div>
+        <div class="rounded-lg mx-8 flex flex-col justify-center text-center">
+          <div class="absolute w-[90vw] bg-secondar-teal left-4 h-1 rounded-lg">
+            &nbsp;
+          </div>
 
-      <div class="flex flex-col font-bold text-h6 text-center h-10 pt-4">
-        <p>{item.name}</p>
-        <p>{item.years}</p>
+          <button
+            class="bg-secondary-yellow rounded-lg w-full py-2 font-bold flex flex-col z-10"
+            onclick={() => goto(item.path)}
+          >
+            {item.name}
+            <span class="text-tertiary-green">{item.years}</span>
+          </button>
+        </div>
+        <p class="pt-2 text-xs mx-8 text-center">{item.desc}</p>
       </div>
-
-      <button
-        onclick={() => goto(item.path)}
-        onmouseenter={() => (hoveredTag = i)}
-        onmouseleave={() => (hoveredTag = -1)}
-        class:pt-16={hoveredTag !== -1 && hoveredTag !== i
-          ? true
-          : hoveredTag === i
-            ? false
-            : item.path !== $page.url.pathname}
-        class="scale-[70%] transition-all duration-500 ease-in-out"
-      >
-        <DomeThing />
-      </button>
-    </div>
-  {/each}
+    {/each}
+  </div>
 </div>

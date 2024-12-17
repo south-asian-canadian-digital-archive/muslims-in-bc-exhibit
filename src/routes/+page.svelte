@@ -4,6 +4,7 @@
   import { onMount } from "svelte";
   import { goto } from "$app/navigation";
   import { horizontalLoop } from "$lib/utils/seemlessLoop.util";
+  import HistoryTimeline from "$lib/components/HistoryTimeline.svelte";
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
@@ -64,6 +65,7 @@
 </svelte:head>
 
 <main class="">
+  <!-- intro -->
   <section class="py-32">
     <div
       class="h-min flex lg:flex-row md:flex-row flex-col gap-5 px-0 w-screen *:lg:w-[50vw] *:md:w-[50vw]"
@@ -79,18 +81,19 @@
           class="border-l-[6px] border-l-secondary-yellow flex flex-col px-8 lg:pl-8 lg:pr-0 gap-6"
         >
           <p>
-            The historical and contemporary presence of Muslim communities in Canada
-            is regionally diverse and long, replete with stories of successes as
-            they have advocated for spaces to practice their religion and gain their
-            rights, but it also has stories of the challenges they have faced along
-            the way. Recording and preserving these stories is an important step
-            toward building greater appreciation and understanding of what constitutes
-            the Canadian Muslim experience and how they have contributed to the betterment
-            of Canadian society. Our research project aims to contribute to this
+            The historical and contemporary presence of Muslim communities in
+            Canada is regionally diverse and long, replete with stories of
+            successes as they have advocated for spaces to practice their
+            religion and gain their rights, but it also has stories of the
+            challenges they have faced along the way. Recording and preserving
+            these stories is an important step toward building greater
+            appreciation and understanding of what constitutes the Canadian
+            Muslim experience and how they have contributed to the betterment of
+            Canadian society. Our research project aims to contribute to this
             cause by focusing on South Asian Canadian Muslim communities of B.C.
-            We use existing academic and community research, archival records, and
-            oral interviews to highlight these, often untold, stories of South Asian
-            Muslim communities in B.C.
+            We use existing academic and community research, archival records,
+            and oral interviews to highlight these, often untold, stories of
+            South Asian Muslim communities in B.C.
             <br /><br />
             Our project understands Islam as a mosaic both in terms of how the religion
             is practiced across time and geography. It hopes to honor these diverse
@@ -104,9 +107,9 @@
             that has so much difference within it. This project, therefore, will
             form a foundation for future researchers, artists and community members
             to engage with so that we may continue to develop the history of South
-            Asian Muslims in BC. 
-            <br>We welcome any feedback that can help us improve
-            this project by writing to us at sasi@ufv.ca or contacting us at 604-854-4547.
+            Asian Muslims in BC.
+            <br />We welcome any feedback that can help us improve this project
+            by writing to us at sasi@ufv.ca or contacting us at 604-854-4547.
           </p>
           <button
             class="bg-primary-blue py-4 px-12 rounded-full text-white w-fit"
@@ -136,17 +139,18 @@
     </div>
   </section>
 
+  <!-- historical timeilne -->
   <section class="">
     <!-- TODO: fix design for this section -->
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col lg:items-center">
       <h2
-        class="text-h3 lg:text-h2 text-center font-bold text-secondar-teal lg:translate-y-1/3"
+        class="text-h4 lg:text-h2 text-center font-bold text-secondar-teal lg:translate-y-1/3"
       >
         Historical Timeline
       </h2>
 
       <div
-        class="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-evenly w-full lg:translate-y-[20%] lg:pt-0 pt-10 bg-secondary-yellow lg:bg-transparent"
+        class="hidden lg:flex flex-col lg:flex-row gap-10 lg:gap-0 justify-evenly w-full lg:translate-y-[20%] lg:pt-0 pt-10 bg-secondary-yellow lg:bg-transparent"
       >
         {#each historyPages.slice(1) as item, i}
           <button
@@ -174,6 +178,9 @@
           </button>
         {/each}
       </div>
+      <div class="lg:hidden">
+        <HistoryTimeline />
+      </div>
     </div>
 
     <div class="bg-secondary-yellow flex flex-col lg:pt-[25vh] pt-10">
@@ -183,6 +190,7 @@
     </div>
   </section>
 
+  <!-- marquee -->
   <section
     role="marquee"
     onmouseover={() => {

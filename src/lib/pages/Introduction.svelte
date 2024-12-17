@@ -1,5 +1,6 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
+  import HistoryTimeline from "$lib/components/HistoryTimeline.svelte";
   import { navItems } from "$lib/utils/nav.store.svelte";
   import { gsap } from "gsap";
   import { onMount } from "svelte";
@@ -95,24 +96,21 @@
     </div>
   </section>
 
-  <section class="py-20">
+  <!-- history timeline -->
+  <section class="lg:py-20">
     <h1
-      class="text-h3 font-bold text-primary-blue text-center font-source-serif-4 px-4 lg:pb-[10vw] pb-[10vh]"
+      class="lg:text-h3 text-h4 font-bold text-primary-blue text-center font-source-serif-4 px-4 lg:pb-[10vw] "
     >
       Historical Timeline
     </h1>
 
-    <div class="flex flex-col lg:gap-[10vw] gap-4">
+    <div class="hidden lg:flex flex-col lg:gap-[10vw] gap-4">
       {#snippet desc(text: string, align = "left")}
         <div class:text-right={align === "right"}>
           {@html text}
-          <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos perferendis
-          neque veritatis id eaque nulla atque ad ea veniam similique quis recusandae
-          rerum, in dolorem eligendi. Voluptas, numquam iste. Saepe! -->
         </div>
       {/snippet}
 
-      <!-- TODO: Mobile design -->
       {#each historyPages.slice(1) as item, idx}
         <div
           class="relative lg:px-32 bg-secondary-yellow lg:h-[10vw] lg:overflow-visible flex flex-row items-center lg:gap-12 overflow-hidden"
@@ -141,6 +139,9 @@
           {/if}
         </div>
       {/each}
+    </div>
+    <div class="lg:hidden block">
+      <HistoryTimeline />
     </div>
   </section>
 </main>
