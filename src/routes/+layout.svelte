@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { run } from "svelte/legacy";
+  import { base } from "$app/paths";
 
   import "../app.css";
   import Header from "$lib/components/Header.svelte";
@@ -23,11 +23,10 @@
     // load = true;
   });
 
-  let mainuImageUrl = "/content/2021_08_01_040.jpg";
+  let mainuImageUrl = `${base}/content/2021_08_01_040.jpg`;
 </script>
 
 <svelte:head>
-
   <meta
     name="description"
     content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."

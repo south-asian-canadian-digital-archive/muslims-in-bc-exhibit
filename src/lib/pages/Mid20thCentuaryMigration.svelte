@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import Image from "$lib/components/Image.svelte";
 </script>
 
@@ -45,7 +46,7 @@
     <section>
       <h2>Pakistani</h2>
       <div class="">
-        <Image src="/content/pakistan_map.png" float="left"
+        <Image src={`${base}/content/pakistan_map.png`} float="left"
           >Country Map Outline</Image
         >
 
@@ -205,7 +206,7 @@
       </div>
 
       <figure class="lg:mx-32 mx-4">
-        <img src="/content/Caribbean-political-map.jpg" alt="" />
+        <img src={`${base}/content/Caribbean-political-map.jpg`} alt="" />
       </figure>
     </section>
 
@@ -245,7 +246,7 @@
     <section>
       <h2>East Africa / Ismaili Muslims</h2>
       <div>
-        <Image src="/content/east_africa.png" float="left"></Image>
+        <Image src={`${base}/content/east_africa.png`} float="left"></Image>
 
         A majority of Ismaili community migrated from the East African countries
         of Uganda, Kenya, and Tanzania to Canada. Most of the community members

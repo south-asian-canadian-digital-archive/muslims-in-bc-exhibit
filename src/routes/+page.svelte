@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import { navItems } from "$lib/utils/nav.store.svelte";
   import { gsap } from "gsap";
   import { onMount } from "svelte";
@@ -114,7 +115,7 @@
           <button
             class="bg-primary-blue py-4 px-12 rounded-full text-white w-fit"
             onclick={() => {
-              goto("/history/introduction");
+              goto(`${base}/history/introduction`);
             }}>Explore</button
           >
         </div>
@@ -203,15 +204,14 @@
     id="carousel"
     class="lg:m-32 my-12 flex overflow-hidden items-center relative"
   >
-    {#each ["https://sacda.ca", "/history/early-migration", "/history/mid-20th-century-migration", "/history/recent-migration-to-canada", "/contact", "/about"] as link, idx}
+    {#each ["https://sacda.ca", `${base}/history/early-migration`, `${base}/history/mid-20th-century-migration`, `${base}/history/recent-migration-to-canada`, `${base}/contact`, `${base}/about`] as link, idx}
       <div class="aspect-square lg:w-[20vw] w-[50vw] p-1 relative shrink-0">
         <a
           class="bg-gray-100 border-2 border-secondar-teal rounded h-full w-full select-none object-cover overflow-hidden flex items-center justify-center"
           href={link}
         >
-          &nbsp;
           <img
-            src="/content/marquee/{idx + 1}.png"
+            src={`${base}/content/marquee/${idx + 1}.png`}
             class="aspect-square hover:scale-105 transition-all duration-300 ease-in-out"
             alt=""
           />

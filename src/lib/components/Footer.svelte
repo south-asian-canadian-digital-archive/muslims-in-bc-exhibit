@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { base } from "$app/paths";
+
   const sponsors = [
     {
       name: "SACDA",
@@ -181,7 +183,7 @@
   </div>
 
   <div class="flex flex-col justify-center items-center gap-2">
-    <img src="/UFV_SASI_logo.png" class="lg:h-32 h-24" alt="" />
+    <img src="{base}/UFV_SASI_logo.png" class="lg:h-32 h-24" alt="" />
     <p class="text-xs text-white text-center lg:w-[18vw] md:w-[18vw]">
       South Asian Studies Institute, University of the Fraser Valley <br />
       <b>Visiting Address:</b> Building K, 33780 King Rd, Abbotsford, BC V2S7P2

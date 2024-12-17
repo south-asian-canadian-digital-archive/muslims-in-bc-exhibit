@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import Image from "$lib/components/Image.svelte";
   import Modal from "$lib/components/Modal.svelte";
 
@@ -9,7 +10,7 @@
     desc: string;
   }[] = [
     {
-      img: "/content/2021_08_01_041.jpg",
+      img: `${base}/content/2021_08_01_041.jpg`,
       name: "Husain Rahim",
       years: "(1865-1937)",
       desc: ` 
@@ -303,7 +304,11 @@
       <figure
         class="h-screen w-screen relative overflow-hidden object-cover object-center"
       >
-        <img src="/map.jfif" alt="" class="lg:absolute top-0 left-0 opacity-45 h-screen object-cover" />
+        <img
+          src="{base}/map.jfif"
+          alt=""
+          class="lg:absolute top-0 left-0 opacity-45 h-screen object-cover"
+        />
         <div class="bg-[#C2755466] h-full w-full absolute top-0 left-0"></div>
 
         <div
@@ -346,7 +351,7 @@
       <h2 class="">Ghadar Party</h2>
       <div class="">
         <Image
-          src="/content/ghadar_movement_flag.png"
+          src={`${base}/content/ghadar_movement_flag.png`}
           alt="Ghadar Movement Flag">Ghadar Movement Flag</Image
         >
 
@@ -388,7 +393,7 @@
       <h2 class="">Komagata Maru</h2>
       <div class="">
         <Image
-          src="/content/komagatamaru.png"
+          src={`${base}/content/komagatamaru.png`}
           alt="Komagata Maru incident"
           class="w-2/3 ml-12">Komagata Maru incident</Image
         >

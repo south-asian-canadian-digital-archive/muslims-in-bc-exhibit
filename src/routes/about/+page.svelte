@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import { gsap } from "gsap";
   import { onMount } from "svelte";
   import { SvelteSet } from "svelte/reactivity";
@@ -76,32 +77,32 @@
       name: "Dr. Satwinder Bains",
       position: "PhD, Director,<br> South Asian Studies Institute",
       desc: "Satwinder Bains, PhD is Director of the South Asian Studies Institute at the University of the Fraser Valley and an Associate Professor in the School of Culture, Media and Society, College of Arts. Dr Bains’ research interests include the study of the impact of language, culture and identity on South Asian Canadian migration, settlement, and integration. She teaches anti-racist curriculum implementation; identity politics; migration and politics in the South Asian Canadian Diaspora and Punjabi Canadian cultural historiography. Dr Bains is the Chair of the Knowledge Network, Director of the Abbotsford Community Foundation and has served as a Commissioner on the Agricultural Land Commission, as a Director of the Fraser Basin Council, as a Bencher on the Law Society of British Columbia and as a member of the Farm Industry Review Board for British Columbia.",
-      img: "/content/advisory_committee/Satwinder-Bains-2021.jpg",
+      img: `${base}/content/advisory_committee/Satwinder-Bains-2021.jpg`,
     },
     {
       name: "Awneet Sivia",
       position: "PhD, Associate Vice President Teaching and Learning",
       desc: "Awneet Sivia is currently the Associate Vice President of Teaching and Learning, and has been an Associate Professor, Director, and Chair of programs in the School of Education at UFV. She is a passionate educator and researcher in social justice/antiracist pedagogy, science education, teacher identity, faculty development, and educational leadership. Awneet’s academic publications can be found in Studying Teacher Education, In Education, Canadian Journal of Scholarship of Teaching and Learning, Journal of Education, and in books published by Brill, Sense, and Lexington. Her current research interests include decolonizing methodologies, rehumanizing science education, narratives of racism/antiracism in teacher education, leadership in online education, and early career faculty experiences. Awneet leads numerous institutional initiatives, including the Institutional Learning Outcomes, the AI Task Force, the Learning Management System Project, Changemaker Education, Indigenizing new faculty development, and policy revisions. She has been a speaker at TEDx Abbotsford and has been honoured with several provincial and national teaching awards, including the 3M National Teaching Fellowship.",
-      img: "/content/advisory_committee/Awneet Sivia.jpg",
+      img: `${base}/content/advisory_committee/Awneet Sivia.jpg`,
     },
     {
       name: "Jas Uppal",
       position: "PhD, Assistant Professor, Teacher Education Program",
       desc: "Jas Uppal’s teaching experiences are vast and span not only grades and subjects, but also countries and curriculums. Her experience mirrors the lifecycle of the teacher: K-12 teaching of science and math, mentoring pre-service teachers at the school level, teaching and mentoring re-certifying teachers and pre-service teachers in international teacher education. She has also trained and built teacher capacity through programs in the U.K, through a study abroad program in India and a district mentoring program for 300+ teachers, as well as themed graduate diploma programs for practicing teachers. Her master’s degree focused on educational change, including assessment for learning, and teacher identity. During her doctoral studies, she researched pedagogical dynamics in encounters with difference through centering inequitable power relations. Jas’ research reflects her passion and commitment to take continuous risks to learn and unlearn who she is as an educator.",
-      img: "/content/advisory_committee/juhershorn.img.2140374917.jpg",
+      img: `${base}/content/advisory_committee/juhershorn.img.2140374917.jpg`,
     },
     {
       name: "Hassan Javid",
       position:
         "PhD, Associate Professor, School of Society, Culture and Society",
       desc: "Hassan Javid is an Associate Professor of Sociology in the School of Culture and Media Studies at UFV.Prior to joining UFV, Hassan held academic positions at the Lahore University of Management Sciences and at the London School of Economics. His work focuses on the legacies of colonialism in South Asia, focusing on processes of democratization and the mechanisms through which elite power is reproduced.",
-      img: "/content/advisory_committee/2024-Hassan-Javid.jpg",
+      img: `${base}/content/advisory_committee/2024-Hassan-Javid.jpg`,
     },
     {
       name: "Shazad Nazir",
       position: "PhD, Assistant Professor, Teacher Education Program",
       desc: "Shahzad Nazir Khan is a Professional Agrologist with an M. Sc (Hons) Agriculture and an MBA . He is a well-known peace and social justice activist of South Asian community who immigrated to Canada from Pakistan back in 2006. For last many years, him and his group of Progressive Pakistani Canadians took many initiatives to raise awareness about the peace and issues related to South Asian diaspora. He celebrates ‘unity in diversity’.",
-      img: "/content/advisory_committee/Shahzad-Nazir-Khan-2.png",
+      img: `${base}/content/advisory_committee/Shahzad-Nazir-Khan-2.png`,
     },
     // { name: "", position: "", desc: "" },
     // { name: "", position: "", desc: "" },
@@ -345,7 +346,7 @@
       </h2>
       <!-- partners -->
       <div class="flex flex-wrap py-16 justify-evenly *:w-[30vh]">
-        {#each ["/Sacda-logo.svg", "/content/heritage logo in the middle.png", "/content/abb muslim CC logo.png", "/content/cece logo.png", "/content/reserach and grad stud logo.png", "/content/south asian fellowship logo.png"] as src}
+        {#each [`${base}/Sacda-logo.svg`, `${base}/content/heritage logo in the middle.png`, `${base}/content/abb muslim CC logo.png`, `${base}/content/cece logo.png`, `${base}/content/reserach and grad stud logo.png`, `${base}/content/south asian fellowship logo.png`] as src}
           <img {src} alt="" />
         {/each}
       </div>
@@ -364,7 +365,7 @@
       <div
         class="flex flex-wrap py-16 justify-evenly items-center *:w-[30vh] *:aspect-auto"
       >
-        {#each ["/UFV_SASI_logo.png", "/content/Hari Sharma logo.png"] as src}
+        {#each [`${base}/UFV_SASI_logo.png`, `${base}/content/Hari Sharma logo.png`] as src}
           <img {src} alt="" />
         {/each}
       </div>
