@@ -38,11 +38,11 @@
       link: "https://www.instagram.com/sacda.sasi/",
       element: "<i class='fa fa-instagram'></i>",
     },
-    {
-      name: "Twitter",
-      link: "https://twitter.com/ufvsasi",
-      element: "<i class='fa fa-twitter'></i>",
-    },
+    // {
+    //   name: "Twitter",
+    //   link: "https://twitter.com/ufvsasi",
+    //   element: "<i class='fa fa-twitter'></i>",
+    // },
     {
       name: "Youtube",
       link: "https://www.youtube.com/channel/UCN5tvG-Q8ly9z0YOyWsoaNA",
@@ -65,9 +65,9 @@
   class="bg-secondar-teal lg:pb-24 lg:pt-16 md:pb-24 pb-24 pt-10 px-12 flex flex-col-reverse gap-4 lg:flex-row md:flex-row justify-between items-end relative"
 >
   <div
-    class="flex flex-col-reverse lg:self-start gap-6 items-center lg:w-fit md:w-fit w-full"
+    class="flex flex-col-reverse lg:self-start gap-6 items-center lg:w-fit md:w-fit w-full overflow-hidden"
   >
-    <div class="rounded-xl bg-white lg:self-start relative">
+    <div class="rounded-xl bg-white lg:self-start relative overflow-hidden">
       <div id="mc_embed_shell">
         <!-- <link
           href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
@@ -185,7 +185,8 @@
   <div class="flex flex-col justify-center items-center gap-2">
     <img src="{base}/UFV_SASI_logo.png" class="lg:h-32 h-24" alt="" />
     <p class="text-xs text-white text-center lg:w-[18vw] md:w-[18vw]">
-      South Asian Studies Institute, University of the Fraser Valley <br />
+      South Asian Studies Institute,<br /> University of the Fraser Valley
+      <br />
       <b>Visiting Address:</b> Building K, 33780 King Rd, Abbotsford, BC V2S7P2
       <br /><b>Mailing Address:</b> 33844 King Rd, Abbotsford, BC V2S7M8
     </p>

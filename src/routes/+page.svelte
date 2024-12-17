@@ -47,7 +47,7 @@
           zIndex: 999,
           color: "white",
           scale: 50,
-          duration: 0.5,
+          duration: 0.2,
           ease: "power4.in",
           paused: true,
           onComplete: () => {

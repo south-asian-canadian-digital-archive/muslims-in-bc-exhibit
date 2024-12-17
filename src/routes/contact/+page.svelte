@@ -1,5 +1,7 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import { PUBLIC_FORM_ACCESS_KEY } from "$env/static/public";
+  import { onMount } from "svelte";
 
   //   let { form }: { form: ActionData } = $props();
 
@@ -7,6 +9,10 @@
   let subject: string = $state("");
   let message: string = $state("");
   let honeypot: string | undefined = $state();
+
+  onMount(() => {
+    console.log($page.url.href);
+  });
 </script>
 
 <svelte:head>
@@ -57,7 +63,8 @@
     <form
       method="POST"
       class="flex flex-col gap-4 lg:w-[40vw] bg-primary-blue p-10 rounded-lg"
-      onsubmit={(e: SubmitEvent) => {
+      action="https://api.staticforms.xyz/submit"
+      onsubmit={async (e: SubmitEvent) => {
         e.preventDefault();
         const data = {
           email: email,
@@ -86,7 +93,6 @@
           });
       }}
     >
-
       <div>
         <label for="subject">Email:</label>
         <input
@@ -114,6 +120,7 @@
         name="honeypot"
         style="display:none"
       />
+
       <div>
         <label for="message">Message:</label>
         <textarea
@@ -124,6 +131,10 @@
           bind:value={message}
         ></textarea>
       </div>
+
+      <input type="hidden" name="replyTo" value="@" />
+      <input type="hidden" name="redirectTo" value={$page.url.href} />
+      <input type="hidden" name="accessKey" value={PUBLIC_FORM_ACCESS_KEY} />
 
       <button
         type="submit"

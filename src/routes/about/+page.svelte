@@ -363,7 +363,7 @@
         We thank our Financial Supporters
       </h2>
       <div
-        class="flex flex-wrap py-16 justify-evenly items-center *:w-[30vh] *:aspect-auto"
+        class="flex flex-wrap py-16 justify-evenly items-baseline *:w-[30vh] *:aspect-auto"
       >
         {#each [`${base}/UFV_SASI_logo.png`, `${base}/content/Hari Sharma logo.png`] as src}
           <img {src} alt="" />

@@ -28,7 +28,7 @@
     <section>
       <h2>Post 9/11</h2>
       <div>
-        9/11 marked a very difficult and challenging time for the Muslim
+        9/11 Marked a very difficult and challenging time for the Muslim
         communities of North America. They experienced increased surveillance,
         threat calls, and discrimination at both the state level and everyday
         social life in the aftermath of 9/11. The community members had to
