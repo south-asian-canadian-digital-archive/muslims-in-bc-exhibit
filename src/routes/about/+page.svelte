@@ -288,7 +288,7 @@
   </section>
 
   <!-- committee -->
-  <section class="lg:p-32 p-12" id="committee">
+  <section class="lg:px-32 lg:py-24 py-8 px-12" id="committee">
     <h1
       class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
     >
@@ -322,9 +322,15 @@
                 : commitment_expanded.add(idx);
             }}
           >
-            {@html commitment_expanded.has(idx)
-              ? person.desc
-              : `${person.desc.slice(0, 100)} <br> read more...`}
+            <span class="lg:hidden">
+              {@html commitment_expanded.has(idx)
+                ? person.desc
+                : `${person.desc.slice(0, 100)} <br> read more...`}
+            </span>
+
+            <span class="hidden lg:block">
+              {@html person.desc}
+            </span>
           </button>
         </div>
       {/each}
