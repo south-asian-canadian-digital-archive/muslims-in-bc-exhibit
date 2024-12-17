@@ -1,14 +1,9 @@
 <script lang="ts">
-  import { page } from "$app/stores";
-
-  //   import type { ActionData } from "./$types";
   import { PUBLIC_FORM_ACCESS_KEY } from "$env/static/public";
-  import { preventDefault } from "svelte/legacy";
-
-  //   $page.url.searchParams
 
   //   let { form }: { form: ActionData } = $props();
 
+  let email: string = $state("");
   let subject: string = $state("");
   let message: string = $state("");
   let honeypot: string | undefined = $state();
@@ -65,6 +60,7 @@
       onsubmit={(e: SubmitEvent) => {
         e.preventDefault();
         const data = {
+          email: email,
           subject: subject,
           honeypot: honeypot,
           message: message,
@@ -90,6 +86,18 @@
           });
       }}
     >
+
+      <div>
+        <label for="subject">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="your email here..."
+          bind:value={email}
+        />
+      </div>
+
       <div>
         <label for="subject">Subject:</label>
         <input

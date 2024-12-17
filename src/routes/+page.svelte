@@ -122,11 +122,15 @@
   <section class="">
     <!-- TODO: fix design for this section -->
     <div class="flex flex-col items-center">
-      <h2 class="text-h3 lg:text-h2 text-center font-bold text-secondar-teal lg:translate-y-1/3">
+      <h2
+        class="text-h3 lg:text-h2 text-center font-bold text-secondar-teal lg:translate-y-1/3"
+      >
         Historical Timeline
       </h2>
 
-      <div class="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-evenly w-full lg:translate-y-[20%] lg:pt-0 pt-10 bg-secondary-yellow lg:bg-transparent">
+      <div
+        class="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-evenly w-full lg:translate-y-[20%] lg:pt-0 pt-10 bg-secondary-yellow lg:bg-transparent"
+      >
         {#each historyPages.slice(1) as item, i}
           <button
             class="lg:aspect-square rounded-full lg:w-[20vw] flex flex-col gap-2 items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
@@ -174,14 +178,19 @@
     id="carousel"
     class="lg:m-32 my-12 flex overflow-hidden items-center relative"
   >
-    {#each Array(8) as _, idx}
-      <div class="aspect-square lg:min-w-[20vw] min-w-[50vw] p-1 cursor-grab relative shrink-0">
-        <div
-          class="bg-gray-100 border-2 border-secondar-teal rounded h-full w-full select-none"
+    {#each ["https://sacda.ca", "/history/early-migration", "/history/mid-20th-century-migration", "/history/recent-migration-to-canada", "/contact", "/about"] as link, idx}
+      <div class="aspect-square lg:w-[20vw] w-[50vw] p-1 relative shrink-0">
+        <a
+          class="bg-gray-100 border-2 border-secondar-teal rounded h-full w-full select-none object-cover overflow-hidden flex items-center justify-center"
+          href={link}
         >
           &nbsp;
-        </div>
-        <!-- TODO: insert images -->
+          <img
+            src="/content/marquee/{idx + 1}.png"
+            class="aspect-square hover:scale-105 transition-all duration-300 ease-in-out"
+            alt=""
+          />
+        </a>
       </div>
     {/each}
   </section>

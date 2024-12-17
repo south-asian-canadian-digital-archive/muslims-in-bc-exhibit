@@ -58,7 +58,7 @@
 <Header />
 
 {#key load}
-  <div in:fly={{ y: 600, duration: 800 }}>
+  <div class="bg-white" in:fly={{ y: 600, duration: 800 }}>
     {@render children?.()}
   </div>
 {/key}
