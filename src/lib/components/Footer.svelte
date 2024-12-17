@@ -51,7 +51,11 @@
       link: "https://www.flickr.com/photos/ufvcics/albums",
       element: "<i class='fa fa-flickr'></i>",
     },
-    { name: "Email", link: "mailto:sasi@ufv.ca", element: "<i class='fa fa-envelope'></i>" },
+    {
+      name: "Email",
+      link: "mailto:sasi@ufv.ca",
+      element: "<i class='fa fa-envelope'></i>",
+    },
   ];
 </script>
 
@@ -61,7 +65,6 @@
   <div
     class="flex flex-col-reverse lg:self-start gap-6 items-center lg:w-fit md:w-fit w-full"
   >
-
     <div class="rounded-xl bg-white lg:self-start relative">
       <div id="mc_embed_shell">
         <!-- <link
@@ -159,7 +162,7 @@
     <p
       class="uppercase lg:self-start md:self-start border-b border-b-secondary-yellow font-bold text-white text-p w-fit pb-1"
     >
-      SIGNUP FOR OUR NEWSLETTER
+      SIGN UP FOR OUR NEWSLETTER
     </p>
 
     <div class="flex flex-row lg:gap-4 md:gap-4 gap-3">
@@ -180,8 +183,9 @@
   <div class="flex flex-col justify-center items-center gap-2">
     <img src="/UFV_SASI_logo.png" class="lg:h-32 h-24" alt="" />
     <p class="text-xs text-white text-center lg:w-[18vw] md:w-[18vw]">
-      South Asian Studies Institute Univeristy of the Fraser Valley Building K
-      33780 King Rd, Abbotsford V2S7P2
+      South Asian Studies Institute, University of the Fraser Valley <br />
+      <b>Visiting Address:</b> Building K, 33780 King Rd, Abbotsford, BC V2S7P2
+      <br /><b>Mailing Address:</b> 33844 King Rd, Abbotsford, BC V2S7M8
     </p>
   </div>
 
