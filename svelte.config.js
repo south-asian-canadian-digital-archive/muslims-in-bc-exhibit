@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto'; // or '@sveltejs/adapter-static
+import adapter from '@sveltejs/adapter-static'; // or '@sveltejs/adapter-static
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -17,7 +17,10 @@ const config = {
 			// fallback: null,
 			// precompress: false,
 			// strict: true }
-		)
+		),
+		paths: {
+			base: '/exhibits/muslims-in-bc',
+		},
 	}
 };
 
