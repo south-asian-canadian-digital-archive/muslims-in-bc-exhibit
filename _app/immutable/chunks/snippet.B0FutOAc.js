@@ -1,0 +1,1 @@
+import{d as i,E as o,g as f,h as p,i as c,n as d,j as h}from"./runtime.wbx-rCDf.js";function _(s,e,...t){var r=s,n=d,a;i(()=>{n!==(n=e())&&(a&&(h(a),a=null),a=f(()=>n(r,...t)))},o),p&&(r=c)}export{_ as s};
