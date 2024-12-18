@@ -69,7 +69,7 @@
   <!-- intro -->
   <section class="py-32">
     <div
-      class="h-min flex lg:flex-row md:flex-row flex-col gap-5 px-0 w-screen *:lg:w-[50vw] *:md:w-[50vw]"
+      class="h-min flex lg:flex-row md:flex-row flex-col gap-5 px-0 w-[99vw] *:lg:w-[50vw] *:md:w-[50vw]"
     >
       <div class="flex flex-col gap-12 lg:pl-32 md:pl-32 pl-4">
         <h1
