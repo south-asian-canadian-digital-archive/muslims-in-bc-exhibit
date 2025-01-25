@@ -98,7 +98,7 @@
       img: `${base}/content/advisory_committee/2024-Hassan-Javid.jpg`,
     },
     {
-      name: "Shahzad Nazir PhD, MSc, MBA, P.Ag",
+      name: "Shahzad Nazir P.Ag",
       position: "Professional Agrologist and Assistant Professor, Teacher Education Program",
       desc: "Shahzad Nazir Khan is a Professional Agrologist with an M. Sc (Hons) Agriculture and an MBA. He is a well-known peace and social justice activist of the South Asian community who immigrated to Canada from Pakistan back in 2006. For the last many years, he and his group of Progressive Pakistani Canadians took many initiatives to raise awareness about peace and issues related to the South Asian diaspora. He celebrates ‘unity in diversity’.",
       img: `${base}/content/advisory_committee/Shahzad-Nazir-Khan-2.png`,
