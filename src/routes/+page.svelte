@@ -100,13 +100,13 @@
             is practiced across time and geography. It hopes to honor these diverse
             ways of being Muslim by focusing not on the textual traditions in and
             of themselves, but on what they mean to the community in BC. Taking a
-            community centered approach, our project aims to highlight how religion
-            and religious identity is lived within British Columbia. We acknowledge
+            community-centered approach, our project aims to highlight how religion
+            and religious identity are lived within British Columbia. We acknowledge
             that this project is a first step toward preserving these community histories.
-            We aim to honour these stories by presenting them as they are and being
+            We aim to honor these stories by presenting them as they are and being
             very careful to not oversimplify a religious and community experience
             that has so much difference within it. This project, therefore, will
-            form a foundation for future researchers, artists and community members
+            form a foundation for future researchers, artists, and community members
             to engage with so that we may continue to develop the history of South
             Asian Muslims in BC.
             <br />We welcome any feedback that can help us improve this project
@@ -140,7 +140,7 @@
     </div>
   </section>
 
-  <!-- historical timeilne -->
+  <!-- historical timeline -->
   <section class="">
     <!-- TODO: fix design for this section -->
     <div class="flex flex-col lg:items-center">
