@@ -25,7 +25,7 @@ export const navItems = [
 			},
 		]
 	},
-	// { name: "Resources", path: "/resources" },
+	{ name: "Oral Histories", path: "/oral-history" },
 	{ name: "Contact", path: `${base}/contact` },
 ]
 

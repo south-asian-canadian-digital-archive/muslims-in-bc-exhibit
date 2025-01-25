@@ -58,7 +58,7 @@
             }}
           >
             <span
-              class="inline-flex flex-col gap-0 hover:-translate-y-1 transition-all ease-in-out duration-300"
+              class="inline-flex flex-col gap-0 hover:-translate-y-1 transition-all ease-in-out duration-300 whitespace-nowrap break-keep"
             >
               {item.name}
               <span
@@ -72,7 +72,7 @@
           </Dropdown>
         {:else}
           <button
-            class="flex flex-col gap-0 items-center hover:-translate-y-1 transition-all ease-in-out duration-300"
+            class="flex flex-col gap-0 items-center hover:-translate-y-1 transition-all ease-in-out duration-300 whitespace-nowrap"
             class:font-extrabold={$page.url.pathname === item.path}
             onclick={() => {
               mobileNavOpen = false;
