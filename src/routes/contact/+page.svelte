@@ -19,9 +19,9 @@
   <title>Contact | South Asian Muslims in BC</title>
 </svelte:head>
 
-<main class="bg-secondary-yellow flex flex-col pt-20 gap-20 lg:my-20">
+<main class="bg-secondary-yellow flex flex-col pt-20 gap-20 md:my-20">
   <div
-    class="lg:px-32 px-6 lg:flex-row flex-col flex justify-between gap-12 *:lg:w-1/2"
+    class="md:px-32 px-6 md:flex-row flex-col flex justify-between gap-12 *:md:w-1/2"
   >
     <section class="flex flex-col gap-4">
       <h1
@@ -60,7 +60,8 @@
         </a>
       </p>
     </section>
-    <form
+
+    <!-- <form
       method="POST"
       class="flex flex-col gap-4 lg:w-[40vw] bg-primary-blue p-10 rounded-lg"
       action="https://api.staticforms.xyz/submit"
@@ -143,7 +144,15 @@
       >
         Send
       </button>
-    </form>
+    </form> -->
+
+    <iframe
+      src="https://us4.list-manage.com/contact-form?u=3c616907ab5cf63924a62f942&form_id=4627a6a210f05fa92ff0c5b25b1f44f9"
+      frameborder="0"
+      title="Contact form"
+      class="min-h-[50vh] w-full h-[90vh] rounded-lg"
+    ></iframe>
+
   </div>
 
   <div
