@@ -69,9 +69,9 @@
   <!-- intro -->
   <section class="py-32">
     <div
-      class="h-min flex lg:flex-row md:flex-row flex-col gap-5 px-0 w-[99vw] *:lg:w-[50vw] *:md:w-[50vw]"
+      class="h-min flex lg:flex-row md:flex-row flex-col gap-5 px-0 w-[99vw]"
     >
-      <div class="flex flex-col gap-12 lg:pl-32 md:pl-32 pl-4">
+      <div class="flex flex-col gap-12 md:px-32 px-4">
         <h1
           class="font-source-serif-4 font-bold text-h2 text-primary-blue leading-[115%]"
         >
@@ -79,9 +79,31 @@
         </h1>
 
         <div
-          class="border-l-[6px] border-l-secondary-yellow flex flex-col px-8 lg:pl-8 lg:pr-0 gap-6"
+          class="border-l-[6px] border-l-secondary-yellow flex flex-col pl-8 gap-6"
         >
           <p>
+            <span class="float-right relative ps-8">
+              <span
+                class="lg:flex justify-between overflow-clip hidden max-h-[80vh] w-[40vw]"
+              >
+                {#each { length: 2 } as _, i}
+                  <button
+                    class="bg-secondar-teal rounded-xl p-2 min-h-[60vh] w-[30%] transition-all ease-in-out duration-500 dome"
+                    class:w-[65%]={curHoveredDome === i}
+                    aria-label="dome"
+                    onmouseover={() => (curHoveredDome = i)}
+                    onmouseleave={() => (curHoveredDome = 0)}
+                    onfocus={() => {}}
+                  >
+                    <div
+                      class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen dome-bg will-change-auto"
+                    ></div>
+                  </button>
+                {/each}
+              </span>
+            </span>
+
+
             The historical and contemporary presence of Muslim communities in
             Canada is regionally diverse and long, replete with stories of
             successes as they have advocated for spaces to practice their
@@ -111,6 +133,7 @@
             Asian Muslims in BC.
             <br />We welcome any feedback that can help us improve this project
             by writing to us at sasi@ufv.ca or contacting us at 604-854-4547.
+
           </p>
           <button
             class="bg-primary-blue py-4 px-12 rounded-full text-white w-fit"
@@ -119,23 +142,6 @@
             }}>Explore</button
           >
         </div>
-      </div>
-
-      <div class="lg:flex gap-4 pr-32 overflow-clip hidden max-h-[80vh]">
-        {#each { length: 2 } as _, i}
-          <button
-            class="bg-secondar-teal rounded-xl p-2 min-h-[60vh] w-[30%] transition-all ease-in-out duration-500 dome"
-            class:w-[70%]={curHoveredDome === i}
-            aria-label="dome"
-            onmouseover={() => (curHoveredDome = i)}
-            onmouseleave={() => (curHoveredDome = 0)}
-            onfocus={() => {}}
-          >
-            <div
-              class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen dome-bg will-change-auto"
-            ></div>
-          </button>
-        {/each}
       </div>
     </div>
   </section>
