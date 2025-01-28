@@ -2,46 +2,15 @@
   import HistoryTimeline from "$lib/components/HistoryTimeline.svelte";
   import Arrow from "$lib/components/Arrow.svelte";
 
-  const links = [
-    {
-      title: "Husain Rahim",
-      content: [
-        {
-          subHeading: "Exhibit",
-          content: [
-            {
-              text: "Exhibit done by SACDA on the Komagata Maru, where Husain Rahim is discussed more intensively.",
-              link: "https://sacda.ca/exhibits/km/english/bio/bio99.php",
-            },
-          ],
-        },
-        {
-          subHeading: "Images",
-          content: [
-            {
-              text: "Husain Rahim mugshot",
-              link: "https://sacda.ca/Detail/objects/11178",
-            },
-            {
-              text: "Group photo of Husain Rahim and five unidentified individuals in front of the Immigrational Hall in Victoria, BC",
-              link: "https://sacda.ca/Detail/objects/11177",
-            },
-            {
-              text: "Statement given to Immigration officers by informers and their friends",
-              link: "https://sacda.ca/Detail/objects/9518",
-            },
-          ],
-        },
-      ],
-    },
-  ];
+  import { resourceLinks } from "$lib/content/resources.content";
+
 </script>
 
 <main class="p-32 w-screen flex flex-col gap-10">
   <p class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.5]">Resources</p>
 
   <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
-    {#each links as linkItem}
+    {#each resourceLinks as linkItem}
       <section>
         <h2>{linkItem.title}</h2>
         <div class="flex flex-col">
