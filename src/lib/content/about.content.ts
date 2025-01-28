@@ -69,33 +69,32 @@ const committee: {
 	img: string;
 }[] = [
 		{
-			name: "Dr. Satwinder Bains PhD",
-			position: "Director,<br> South Asian Studies Institute",
-			desc: "Satwinder Bains, PhD is Director of the South Asian Studies Institute at the University of the Fraser Valley and an Associate Professor in the School of Culture, Media and Society, College of Arts.<br /><br />Dr. Bains’ research interests include the study of the impact of language, culture, and identity on South Asian Canadian migration, settlement, and integration. She teaches anti-racist curriculum implementation; identity politics; migration and politics in the South Asian Canadian Diaspora and Punjabi Canadian cultural historiography.<br /><br />Dr. Bains is the Chair of the Knowledge Network, Director of the Abbotsford Community Foundation and has served as a Commissioner on the Agricultural Land Commission, as a Director of the Fraser Basin Council, as a Bencher on the Law Society of British Columbia and as a member of the Farm Industry Review Board for British Columbia.",
+			name: "Dr. Satwinder Bains, PhD",
+			position: "Director, South Asian Studies Institute",
+			desc: "Satwinder Bains is Director of the South Asian Studies Institute and Associate Professor in the School of Culture, Media and Society, College of Arts. <br /> Dr. Bains’ research interests include the study of the impact of language, culture, and identity on South Asian Canadian migration, settlement, and integration. She teaches anti-racist curriculum implementation; identity politics; migration and politics in the South Asian Canadian Diaspora and Punjabi Canadian cultural historiography.",
 			img: `${base}/content/advisory_committee/Satwinder-Bains-2021.jpg`,
 		},
 		{
-			name: "Dr. Awneet Sivia PhD",
-			position: "Associate Vice President Teaching and Learning",
-			desc: "Awneet Sivia is currently the Associate Vice President of Teaching and Learning, and has been an Associate Professor, Director, and Chair of programs in the School of Education at UFV. She is a passionate educator and researcher in social justice/antiracist pedagogy, science education, teacher identity, faculty development, and educational leadership.<br /><br />Awneet’s academic publications can be found in Studying Teacher Education, In Education, Canadian Journal of Scholarship of Teaching and Learning, Journal of Education, and in books published by Brill, Sense, and Lexington. Her current research interests include decolonizing methodologies, rehumanizing science education, narratives of racism/antiracism in teacher education, leadership in online education, and early career faculty experiences.<br /><br />Awneet leads numerous institutional initiatives, including the Institutional Learning Outcomes, the AI Task Force, the Learning Management System Project, Changemaker Education, Indigenizing new faculty development, and policy revisions. She has been a speaker at TEDx Abbotsford and has been honored with several provincial and national teaching awards, including the 3M National Teaching Fellowship.",
+			name: "Dr. Awneet Sivia, PhD",
+			position: "Associate Vice President, Teaching and Learning",
+			desc: "Awneet Sivia is the Associate Vice President of Teaching and Learning, and has been an Associate Professor, Director, and Chair of programs in the School of Education at UFV. She is a passionate educator and researcher in social justice/antiracist pedagogy, science education, teacher identity, faculty development, and educational leadership.<br /><br />Awneet’s academic publications can be found in Studying Teacher Education, In Education, Canadian Journal of Scholarship of Teaching and Learning, Journal of Education, and in books published by Brill, Sense, and Lexington. Her current research interests include decolonizing methodologies, rehumanizing science education, narratives of racism/antiracism in teacher education, leadership in online education, and early career faculty experiences.<br /><br />Awneet leads numerous institutional initiatives, including the Institutional Learning Outcomes, the AI Task Force, the Learning Management System Project, Changemaker Education, Indigenizing new faculty development, and policy revisions. She has been a speaker at TEDx Abbotsford and has been honored with several provincial and national teaching awards, including the 3M National Teaching Fellowship.",
 			img: `${base}/content/advisory_committee/Awneet Sivia.jpg`,
 		},
 		{
-			name: "Dr. Jas Uppal PhD",
+			name: "Dr. Jas Uppal, PhD",
 			position: "Assistant Professor, Teacher Education Program",
 			desc: "Jas Uppal’s teaching experiences are vast and span not only grades and subjects, but also countries and curriculums. Her experience mirrors the lifecycle of the teacher: K-12 teaching of science and math, mentoring pre-service teachers at the school level, teaching and mentoring re-certifying teachers and pre-service teachers in international teacher education.<br /><br />She has also trained and built teacher capacity through programs in the U.K, through a study abroad program in India and a district mentoring program for 300+ teachers, as well as themed graduate diploma programs for practicing teachers. Her master’s degree focused on educational change, including assessment for learning, and teacher identity.<br /><br />During her doctoral studies, she researched pedagogical dynamics in encounters with difference through centering inequitable power relations. Jas’ research reflects her passion and commitment to take continuous risks to learn and unlearn who she is as an educator.",
 			img: `${base}/content/advisory_committee/juhershorn.img.2140374917.jpg`,
 		},
 		{
-			name: "Hassan Javid PhD",
+			name: "Dr. Hassan Javid, PhD",
 			position: "Associate Professor, School of Culture, Media and Society",
 			desc: "Hassan Javid is an Associate Professor of Sociology in the School of Culture, Media and Society at UFV.<br /><br />Prior to joining UFV, Hassan held academic positions at the Lahore University of Management Sciences and at the London School of Economics. His work focuses on the legacies of colonialism in South Asia, focusing on processes of democratization and the mechanisms through which elite power is reproduced.",
 			img: `${base}/content/advisory_committee/2024-Hassan-Javid.jpg`,
 		},
 		{
-			name: "Shahzad Nazir P.Ag",
-			position:
-				"Professional Agrologist and Assistant Professor, Teacher Education Program",
+			name: "Shahzad Nazir, P.Ag",
+			position: "Professional Agrologist",
 			desc: "Shahzad Nazir Khan is a Professional Agrologist with an M. Sc (Hons) Agriculture and an MBA.<br /><br />He is a well-known peace and social justice activist of the South Asian community who immigrated to Canada from Pakistan back in 2006. For the last many years, he and his group of Progressive Pakistani Canadians took many initiatives to raise awareness about peace and issues related to the South Asian diaspora.<br /><br />He celebrates ‘unity in diversity’.",
 			img: `${base}/content/advisory_committee/Shahzad-Nazir-Khan-2.png`,
 		},
@@ -107,7 +106,7 @@ const partners = [
 	{ src: `${base}/Sacda-logo.svg`, link: "https://sacda.ca", alt: "SACDA Logo" },
 	{
 		src: `${base}/content/heritage logo in the middle.png`,
-		link: "#",
+		link: "https://www.southasiancanadianheritage.ca/",
 		alt: "Heritage Logo",
 	},
 	{
@@ -115,6 +114,9 @@ const partners = [
 		link: "#",
 		alt: "Abbotsford Muslim Community Center Logo",
 	},
+];
+
+const sponsors = [
 	{ src: `${base}/content/cece logo.png`, link: "https://www.ufv.ca/jobs/", alt: "CECE Logo" },
 	{
 		src: `${base}/content/reserach and grad stud logo.png`,
@@ -126,15 +128,14 @@ const partners = [
 		link: "https://www.ufv.ca/sasi/research/fellowship/",
 		alt: "South Asian Fellowship Logo",
 	},
-];
-
-const sponsors = [
 	{ src: `${base}/UFV_SASI_logo.png`, link: "#", alt: "UFV SASI Logo" },
 	{
 		src: `${base}/content/Hari Sharma logo.png`,
 		link: "https://harisharma.org/",
 		alt: "Hari Sharma Foundation Logo",
 	},
+
+
 ];
 
 
