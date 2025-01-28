@@ -7,7 +7,7 @@
 
   import { fade, fly } from "svelte/transition";
   import { onMount } from "svelte";
-  import { page, navigating } from "$app/stores";
+  import { navigating } from "$app/state";
   interface Props {
     children?: import("svelte").Snippet;
   }
@@ -16,7 +16,7 @@
 
   let scrollY = $state(0);
   let firstLoad = $state(true);
-  let load = $derived(firstLoad || !$navigating);
+  let load = $derived(firstLoad || !navigating);
 
   onMount(() => {
     firstLoad = false;

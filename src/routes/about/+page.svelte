@@ -8,7 +8,7 @@
     committee,
     partners,
     sponsors,
-    floatingSquareInfo
+    floatingSquareInfo,
   } from "$lib/content/about.content";
 
   let floatingSquareTweens: gsap.core.Tween[] = [];
@@ -228,14 +228,10 @@
                 : commitment_expanded.add(idx);
             }}
           >
-            <span class="lg:hidden">
+            <span class="*:font-normal">
               {@html commitment_expanded.has(idx)
                 ? person.desc
-                : `${person.desc.slice(0, 100)} <br> read more...`}
-            </span>
-
-            <span class="hidden lg:block">
-              {@html person.desc}
+                : `${person.desc.split(" ").slice(0, 50).join(" ")}... <br /><br /><i class="hover:underline">Click to read more</i>`}
             </span>
           </button>
         </div>
