@@ -45,8 +45,8 @@ const team = [
 		desc: "Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC and digitally archives their narratives.",
 	},
 	{
-		name: "Habiba Khan",
-		desc: "As a Research Assistant, Habiba contributes to the research, oral history interviews, and writing narratives. She works with other research assistants to create an accurate archive of the contributions of South Asian Muslims in British Columbia.",
+		name: "Sadhikpeet Singh",
+		desc: "TBA",
 	},
 	{
 		name: "Saumyaa Gelani",

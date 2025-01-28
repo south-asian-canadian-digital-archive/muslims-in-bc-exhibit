@@ -81,28 +81,28 @@
         <div
           class="border-l-[6px] border-l-secondary-yellow flex flex-col pl-8 gap-6"
         >
-          <p>
-            <span class="float-right relative ps-8">
+          <div>
+            <div class="float-right relative ps-8 pb-6">
               <span
                 class="lg:flex justify-between overflow-clip hidden max-h-[80vh] w-[40vw]"
               >
                 {#each { length: 2 } as _, i}
-                  <button
+                  <span
                     class="bg-secondar-teal rounded-xl p-2 min-h-[60vh] w-[30%] transition-all ease-in-out duration-500 dome"
                     class:w-[65%]={curHoveredDome === i}
                     aria-label="dome"
+                    role="figure"
                     onmouseover={() => (curHoveredDome = i)}
                     onmouseleave={() => (curHoveredDome = 0)}
                     onfocus={() => {}}
                   >
-                    <div
-                      class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen dome-bg will-change-auto"
-                    ></div>
-                  </button>
+                    <span
+                      class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen block dome-bg will-change-auto"
+                    ></span>
+                  </span>
                 {/each}
               </span>
-            </span>
-
+            </div>
 
             The historical and contemporary presence of Muslim communities in
             Canada is regionally diverse and long, replete with stories of
@@ -133,8 +133,7 @@
             Asian Muslims in BC.
             <br />We welcome any feedback that can help us improve this project
             by writing to us at sasi@ufv.ca or contacting us at 604-854-4547.
-
-          </p>
+          </div>
           <button
             class="bg-primary-blue py-4 px-12 rounded-full text-white w-fit"
             onclick={() => {

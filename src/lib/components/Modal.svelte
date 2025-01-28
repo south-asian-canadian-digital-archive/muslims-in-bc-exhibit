@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import { gsap } from "gsap";
   import { Flip } from "gsap/dist/Flip";
+  import * as Dialog from "$lib/components/ui/dialog";
 
   interface Props {
     personData: {
@@ -24,9 +25,9 @@
     children,
   }: Props = $props();
 
-  let modalID = `person-modal-${key}`;
   let modalOpen = $state(false);
 
+  let modalID = `person-modal-${key}`;
   let mainBox: HTMLButtonElement;
   let finalContainer: HTMLDivElement;
   let initContainer: HTMLDivElement;
@@ -59,6 +60,25 @@
     gsap.registerPlugin(Flip);
   });
 </script>
+
+<div
+  class="h-full {orientation === 'v'
+    ? 'lg:row-span-3 lg:col-span-1'
+    : 'lg:col-span-2 lg:row-span-2 lg:w-9/12'} {extraCss} hidden"
+>
+  <Dialog.Root>
+    <Dialog.Trigger></Dialog.Trigger>
+    <Dialog.Content>
+      <Dialog.Header>
+        <Dialog.Title>Are you sure absolutely sure?</Dialog.Title>
+        <Dialog.Description>
+          This action cannot be undone. This will permanently delete your
+          account and remove your data from our servers.
+        </Dialog.Description>
+      </Dialog.Header>
+    </Dialog.Content>
+  </Dialog.Root>
+</div>
 
 <div
   bind:this={finalContainer}
@@ -109,7 +129,7 @@
       <div
         class="pt-2 {modalOpen
           ? 'overflow-scroll h-[48vh] whitespace-break-spaces'
-          : orientation === "h" && "h-[10vh]"}"
+          : orientation === 'h' && 'h-[10vh]'}"
       >
         {#if modalOpen}
           {@html personData.desc}

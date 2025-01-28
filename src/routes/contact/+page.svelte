@@ -30,19 +30,14 @@
         Contact Us
       </h1>
       <p>
-        We value your feedback, questions, and comments! Please use the form
-        below to get in touch with the South Asian Studies Institute regarding
-        the Muslims in BC Exhibit.
-        <br />
-        <br />
-        Whether you have inquiries about the exhibit, suggestions for improvement,
-        or would like to share your own story or perspective, we’d love to hear from
-        you.
+        Whether you have inquiries about the exhibit, suggestions for
+        improvement, or would like to share your own story or perspective, we’d
+        love to hear from you.
         <br />
         <br />
 
-        Please fill out the form below, and our team will get back to you
-        promptly. We look forward to connecting with you!
+        Please use the contact form to the right to get in touch with us and
+        we’ll do our best to respond promptly.
         <br />
         <br />
 
@@ -152,7 +147,6 @@
       title="Contact form"
       class="min-h-[50vh] w-full h-[90vh] rounded-lg"
     ></iframe>
-
   </div>
 
   <div
@@ -162,7 +156,7 @@
   </div>
 </main>
 
-<style type="postcss">
+<!-- <style type="postcss">
   form div {
     @apply flex flex-col gap-2;
   }
@@ -175,4 +169,4 @@
   textarea {
     @apply bg-gray-50 p-2 rounded-lg outline-none placeholder:text-sm;
   }
-</style>
+</style> -->
