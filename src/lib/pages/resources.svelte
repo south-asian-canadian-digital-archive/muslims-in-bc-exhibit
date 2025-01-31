@@ -1,5 +1,5 @@
 <script>
-  import HistoryTimeline from "$lib/components/HistoryTimeline.svelte";
+  import HistoryTimeline from "$lib/components/HistoryTimelineMobile.svelte";
   import Arrow from "$lib/components/Arrow.svelte";
 
   import { resourceLinks } from "$lib/content/resources.content";
@@ -38,7 +38,7 @@
   </div>
 </main>
 
-<HistoryTimeline />
+<!-- <HistoryTimeline /> -->
 
 <style type="postcss">
   .link {
