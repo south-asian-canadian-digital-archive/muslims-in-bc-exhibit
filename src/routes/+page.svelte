@@ -61,82 +61,73 @@
   <title>South Asian Muslims in BC</title>
 </svelte:head>
 
-<main class="pb-32">
+<main class="pb-32 flex flex-col">
   <!-- intro -->
-  <section class="py-32">
-    <div
-      class="h-min flex lg:flex-row md:flex-row flex-col gap-5 px-0 w-[99vw]"
-    >
-      <div class="flex flex-col gap-12 md:px-32 px-4">
-        <h1
-          class="font-source-serif-4 font-bold text-h2 text-primary-blue leading-[115%]"
-        >
-          South Asian Muslims in British Columbia
-        </h1>
-
-        <div
-          class="border-l-[6px] border-l-secondary-yellow flex flex-col pl-8 gap-6"
-        >
-          <div>
-            <div class="float-right relative ps-8 pb-6">
-              <span
-                class="lg:flex justify-between overflow-clip hidden max-h-[80vh] w-[40vw]"
-              >
-                {#each { length: 2 } as _, i}
-                  <span
-                    class="bg-secondar-teal rounded-xl p-2 min-h-[60vh] w-[30%] transition-all ease-in-out duration-500 dome"
-                    class:w-[65%]={curHoveredDome === i}
-                    aria-label="dome"
-                    role="figure"
-                    onmouseover={() => (curHoveredDome = i)}
-                    onmouseleave={() => (curHoveredDome = 0)}
-                    onfocus={() => {}}
-                  >
-                    <span
-                      class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen block dome-bg will-change-auto"
-                    ></span>
-                  </span>
-                {/each}
-              </span>
-            </div>
-
-            The historical and contemporary presence of Muslim communities in
-            Canada is regionally diverse and long, replete with stories of
-            successes as they have advocated for spaces to practice their
-            religion and gain their rights, but it also has stories of the
-            challenges they have faced along the way. Recording and preserving
-            these stories is an important step toward building greater
-            appreciation and understanding of what constitutes the Canadian
-            Muslim experience and how they have contributed to the betterment of
-            Canadian society. Our research project aims to contribute to this
-            cause by focusing on South Asian Canadian Muslim communities of B.C.
-            We use existing academic and community research, archival records,
-            and oral interviews to highlight these, often untold, stories of
-            South Asian Muslim communities in B.C.
-            <br /><br />
-            Our project understands Islam as a mosaic both in terms of how the religion
-            is practiced across time and geography. It hopes to honor these diverse
-            ways of being Muslim by focusing not on the textual traditions in and
-            of themselves, but on what they mean to the community in BC. Taking a
-            community-centered approach, our project aims to highlight how religion
-            and religious identity are lived within British Columbia. We acknowledge
-            that this project is a first step toward preserving these community histories.
-            We aim to honor these stories by presenting them as they are and being
-            very careful to not oversimplify a religious and community experience
-            that has so much difference within it. This project, therefore, will
-            form a foundation for future researchers, artists, and community members
-            to engage with so that we may continue to develop the history of South
-            Asian Muslims in BC.
-            <br />We welcome any feedback that can help us improve this project
-            by writing to us at sasi@ufv.ca or contacting us at 604-854-4547.
-          </div>
-          <button
-            class="bg-primary-blue py-4 px-12 rounded-full text-white w-fit"
-            onclick={() => {
-              goto(`${base}/history/introduction`);
-            }}>Explore</button
+  <section class="py-32 px-8 lg:px-32 w-screen h-min flex gap-14">
+    <div class="">
+      <div
+        class="lg:flex float-right justify-between overflow-clip hidden max-h-[80vh] w-[40vw] ml-6 pb-4"
+      >
+        {#each { length: 2 } as _, i}
+          <div
+            class="bg-secondar-teal rounded-xl p-2 min-h-[70vh] w-[30%] transition-all ease-in-out duration-500 dome"
+            class:w-[65%]={curHoveredDome === i}
+            aria-label="dome"
+            role="figure"
+            onmouseover={() => (curHoveredDome = i)}
+            onmouseleave={() => (curHoveredDome = 0)}
+            onfocus={() => {}}
           >
-        </div>
+            <div
+              class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen block dome-bg will-change-auto"
+            ></div>
+          </div>
+        {/each}
+      </div>
+
+      <h1
+        class="font-source-serif-4 font-bold text-h2 text-primary-blue leading-[115%] mb-6"
+      >
+        South Asian Muslims in British Columbia
+      </h1>
+
+      <div
+        class="border-l-[6px] border-l-secondary-yellow pl-8"
+      >
+        The historical and contemporary presence of Muslim communities in Canada
+        is regionally diverse and long, replete with stories of successes as
+        they have advocated for spaces to practice their religion and gain their
+        rights, but it also has stories of the challenges they have faced along
+        the way. Recording and preserving these stories is an important step
+        toward building greater appreciation and understanding of what
+        constitutes the Canadian Muslim experience and how they have contributed
+        to the betterment of Canadian society. Our research project aims to
+        contribute to this cause by focusing on South Asian Canadian Muslim
+        communities of B.C. We use existing academic and community research,
+        archival records, and oral interviews to highlight these, often untold,
+        stories of South Asian Muslim communities in B.C.
+        <br /><br />
+        Our project understands Islam as a mosaic both in terms of how the religion
+        is practiced across time and geography. It hopes to honor these diverse ways
+        of being Muslim by focusing not on the textual traditions in and of themselves,
+        but on what they mean to the community in BC. Taking a community-centered
+        approach, our project aims to highlight how religion and religious identity
+        are lived within British Columbia. We acknowledge that this project is a
+        first step toward preserving these community histories. We aim to honor these
+        stories by presenting them as they are and being very careful to not oversimplify
+        a religious and community experience that has so much difference within it.
+        This project, therefore, will form a foundation for future researchers, artists,
+        and community members to engage with so that we may continue to develop the
+        history of South Asian Muslims in BC.
+        <br />We welcome any feedback that can help us improve this project by
+        writing to us at sasi@ufv.ca or contacting us at 604-854-4547.
+        <br><br>
+        <button
+          class="bg-primary-blue py-4 px-12 rounded-full text-white w-fit"
+          onclick={() => {
+            goto(`${base}/history/introduction`);
+          }}>Explore</button
+        >
       </div>
     </div>
   </section>
@@ -173,9 +164,11 @@
                   : i === 1}
               class:opacity-50={hoveredTag !== -1 && hoveredTag !== i}
             >
-              <h6 class="text-p font-bold text-center inline-flex flex-col items-center p-4">
+              <h6
+                class="text-p font-bold text-center inline-flex flex-col items-center p-4"
+              >
                 {item.name.split(":")[1]}
-                <sub class="text-sm font-normal">{item.years}</sub> 
+                <sub class="text-sm font-normal">{item.years}</sub>
               </h6>
             </button>
           {/if}
