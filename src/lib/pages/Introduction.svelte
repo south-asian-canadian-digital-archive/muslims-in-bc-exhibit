@@ -1,6 +1,6 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import HistoryTimeline from "$lib/components/HistoryTimeline.svelte";
+  import HistoryTimeline from "$lib/components/HistoryTimelineMobile.svelte";
   import { navItems } from "$lib/utils/nav.store.svelte";
   import { gsap } from "gsap";
   import { onMount } from "svelte";
@@ -63,7 +63,7 @@
       <h1
         class="font-source-serif-4 font-bold text-h2 leading-[1.15] text-primary-blue pb-8"
       >
-        South Asian Muslims in British Columbia: Introduction
+        Migration: an overview
       </h1>
 
       <div class="border-l-[5px] border-l-secondary-yellow pl-6">

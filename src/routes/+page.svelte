@@ -5,7 +5,7 @@
   import { onMount } from "svelte";
   import { goto } from "$app/navigation";
   import { horizontalLoop } from "$lib/utils/seemlessLoop.util";
-  import HistoryTimeline from "$lib/components/HistoryTimeline.svelte";
+  import HistoryTimeline from "$lib/components/HistoryTimelineMobile.svelte";
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
