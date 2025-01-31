@@ -159,29 +159,30 @@
         class="hidden lg:flex flex-col lg:flex-row gap-10 lg:gap-0 justify-evenly w-full lg:translate-y-[20%] lg:pt-0 pt-10 bg-secondary-yellow lg:bg-transparent"
       >
         {#each historyPages.slice(1) as item, i}
-          <button
-            class="lg:aspect-square rounded-full lg:w-[20vw] flex flex-col gap-2 items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
-            id="{prefix}-{i}"
-            aria-label="link to page talking about {item.name}"
-            onclick={(e) => {
-              e.currentTarget.style.color = "white";
-              navTweens[i].resume();
-            }}
-            onmouseenter={() => (hoveredTag = i)}
-            onmouseleave={() => (hoveredTag = -1)}
-            class:lg:translate-y-[40%]={hoveredTag !== -1 && hoveredTag !== i
-              ? true
-              : hoveredTag === i
-                ? false
-                : i === 1}
-            class:opacity-50={hoveredTag !== -1 && hoveredTag !== i}
-          >
-            <h6 class="text-p font-bold text-center">
-              {item.name} <br />
-              {item.years}
-            </h6>
-            <!-- <span class="text-center text-xs">{item.desc}</span> -->
-          </button>
+          {#if item.years}
+            <button
+              class="lg:aspect-square rounded-full lg:w-[20vw] flex flex-col gap-2 items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
+              id="{prefix}-{i}"
+              aria-label="link to page talking about {item.name}"
+              onclick={(e) => {
+                e.currentTarget.style.color = "white";
+                navTweens[i].resume();
+              }}
+              onmouseenter={() => (hoveredTag = i)}
+              onmouseleave={() => (hoveredTag = -1)}
+              class:lg:translate-y-[40%]={hoveredTag !== -1 && hoveredTag !== i
+                ? true
+                : hoveredTag === i
+                  ? false
+                  : i === 1}
+              class:opacity-50={hoveredTag !== -1 && hoveredTag !== i}
+            >
+              <h6 class="text-p font-bold text-center">
+                {item.name} <br />
+                {item.years}
+              </h6>
+            </button>
+          {/if}
         {/each}
       </div>
       <div class="lg:hidden">

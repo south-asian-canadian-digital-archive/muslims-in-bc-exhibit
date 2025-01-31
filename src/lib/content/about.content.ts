@@ -22,7 +22,7 @@ const floatingSquareInfo: { title: string; desc: string }[] = [
 const team = [
 	{
 		name: "Dr. Satwinder Bains",
-		desc: "Satwinder provides overall direction, management, and support for research.<br /><br />She leads the outreach component and community engagement with the goal of creating educational and participatory materials.",
+		desc: "Satwinder provides overall direction, management, and support for research.<br />She leads the outreach component and community engagement with the goal of creating educational and participatory materials.",
 	},
 	{
 		name: "Thamilini Jothilingam",
@@ -33,8 +33,8 @@ const team = [
 		desc: "Annet oversees the website's development and design, ensuring alignment with project goals. She collaborates with researchers and designers to maintain accuracy and accessibility, integrating feedback and media seamlessly.",
 	},
 	{
-		name: "Dr. Anushay Mallik",
-		desc: "Dr. Anushay Mallik, PhD, Senior Lecturer at SFU, is the contracted consultant who leads the research on the project. She brings a wealth of knowledge, lived experience, and research expertise as a young Muslim Canadian scholar.",
+		name: "Dr. Anushay Malik",
+		desc: "Dr. Anushay Malik, PhD, Senior Lecturer at SFU, is the contracted consultant who leads the research on the project. She brings a wealth of knowledge, lived experience, and research expertise as a young Muslim Canadian scholar.",
 	},
 	{
 		name: "Kiara Dabreo",
@@ -45,7 +45,7 @@ const team = [
 		desc: "Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC and digitally archives their narratives.",
 	},
 	{
-		name: "Sadhikpeet Singh",
+		name: "Sadhik peet Singh",
 		desc: "TBA",
 	},
 	{

@@ -25,7 +25,7 @@ export const navItems: {
 			name: "History",
 			path: `${base}/history`,
 			pages: [
-				{ name: "Migration Overview", path: `${base}/history/introduction`, desc: "" },
+				{ name: "Migration Overview", path: `${base}/history#`, desc: "" },
 				{
 					name: "Building Community in Imperial Times", path: `${base}/history/early-migration`,
 					desc: "Pioneer settler history of migration, settlement and adaptation to Canadian society",
@@ -41,12 +41,12 @@ export const navItems: {
 					desc: "Post-9/11, South Asian Muslims in B.C. faced discrimination and surveillance, with emerging voices and solidarity with Indigenous groups.",
 					years: "2000 to the present day"
 				},
+				{ name: "Further Reading", path: `${base}/history#resources` },
 			]
 		},
-		{ name: "Community Life", path: `${base}/community-life` },
-		{ name: "Further Reading", path: `${base}/resources` },
+		{ name: "Oral History", path: `${base}/oral-history` },
 		{ name: "Share your story", path: `${base}/contact` },
-	]
+]
 
 type NavItem = "Home" | "About" | "History" | "Resources" | "Contact";
 

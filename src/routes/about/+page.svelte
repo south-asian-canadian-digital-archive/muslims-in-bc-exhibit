@@ -183,7 +183,7 @@
                 <span
                   class="p-4 pt-10 absolute top-4 left-0 lg:h-[18vw] overflow-auto"
                 >
-                  {person.desc}
+                  {@html person.desc}
                 </span>
               </div>
             {/each}
