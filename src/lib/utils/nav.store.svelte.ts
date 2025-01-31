@@ -41,7 +41,7 @@ export const navItems: {
 					desc: "Post-9/11, South Asian Muslims in B.C. faced discrimination and surveillance, with emerging voices and solidarity with Indigenous groups.",
 					years: "2000 to the present day"
 				},
-				{ name: "Further Reading", path: `${base}/history#resources` },
+				{ name: "Further Reading", path: `${base}/history/further-reading` },
 			]
 		},
 		{ name: "Oral History", path: `${base}/oral-history` },

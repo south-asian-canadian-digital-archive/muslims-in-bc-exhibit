@@ -50,7 +50,6 @@
 
 <main class="pb-40 flex flex-col">
   <section class="py-20 h-min flex gap-14 px-8 lg:px-32 w-screen">
-
     <div class="">
       <div class="hidden lg:flex gap-4 px-8 pb-4 w-[35vw] float-right">
         <div
@@ -92,7 +91,6 @@
         feedback which can help us improve this project.
       </div>
     </div>
-
   </section>
 
   <!-- history timeline -->
@@ -111,32 +109,34 @@
       {/snippet}
 
       {#each historyPages.slice(1) as item, idx}
-        <div
-          class="relative lg:px-32 bg-secondary-yellow lg:h-[10vw] lg:overflow-visible flex flex-row items-center lg:gap-12 overflow-hidden"
-        >
-          {#if idx === 1}
-            {@render desc(item.desc, "right")}
-          {/if}
-          <button
-            aria-label="links to chapter {idx + 1}: {item.name}"
-            id="{prefix}-{idx}"
-            class="aspect-square rounded-full lg:min-w-[20vw] lg:h-auto h-[30vh] flex items-center justify-center border-[8px] hover:border-[16px] border-secondary-yellow bg-white transition-all duration-200 ease-in-out"
-            onclick={(e) => {
-              e.currentTarget.style.color = "white";
-              if (e.currentTarget.parentElement)
-                e.currentTarget.parentElement.style.overflow = "visible";
-              navTweens[idx].resume();
-            }}
+        {#if item.years}
+          <div
+            class="relative lg:px-32 bg-secondary-yellow lg:h-[10vw] lg:overflow-visible flex flex-row items-center lg:gap-12 overflow-hidden"
           >
-            <h6 class="text-p font-bold text-center p-4">
-              {item.name} <br />
-              {item.years}
-            </h6>
-          </button>
-          {#if idx !== 1}
-            {@render desc(item.desc)}
-          {/if}
-        </div>
+            {#if idx === 1}
+              {@render desc(item.desc, "right")}
+            {/if}
+            <button
+              aria-label="links to chapter {idx + 1}: {item.name}"
+              id="{prefix}-{idx}"
+              class="aspect-square rounded-full lg:min-w-[20vw] h-[30vh] flex items-center justify-center border-[8px] hover:border-[16px] border-secondary-yellow bg-white transition-all duration-200 ease-in-out"
+              onclick={(e) => {
+                e.currentTarget.style.color = "white";
+                if (e.currentTarget.parentElement)
+                  e.currentTarget.parentElement.style.overflow = "visible";
+                navTweens[idx].resume();
+              }}
+            >
+              <h6 class="text-p font-bold text-center p-4">
+                {item.name} <br />
+                {item.years}
+              </h6>
+            </button>
+            {#if idx !== 1}
+              {@render desc(item.desc)}
+            {/if}
+          </div>
+        {/if}
       {/each}
     </div>
     <div class="lg:hidden block">
