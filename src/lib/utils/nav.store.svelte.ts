@@ -3,11 +3,19 @@ import { base } from "$app/paths";
 
 export const navItems = [
 	{ name: "Home", path: `${base}/` },
-	{ name: "About", path: `${base}/about` },
+	{
+		name: "About", path: `${base}/about`, pages: [
+			{ name: "About SASI", path: `${base}/about` },
+			{ name: "Project history", path: `${base}/about#project-history` },
+			{ name: "Team", path: `${base}/about#team` },
+			{ name: "Advisory committee", path: `${base}/about#committee` },
+
+		]
+	},
 	{
 		name: "History",
 		pages: [
-			{ name: "Introduction", path: `${base}/history/introduction`, desc: "" },
+			{ name: "Migration Overview", path: `${base}/history/introduction`, desc: "" },
 			{
 				name: "Early Migration", path: `${base}/history/early-migration`,
 				desc: "Pioneer settler history of migration, settlement and adaptation to Canadian society",
@@ -25,8 +33,9 @@ export const navItems = [
 			},
 		]
 	},
-	{ name: "Oral Histories", path: "/oral-history" },
-	{ name: "Contact", path: `${base}/contact` },
+	{ name: "Community Life", path: "/community-life" },
+	{ name: "Further Reading", path: `${base}/resources` },
+	{ name: "Share your story", path: `${base}/contact` },
 ]
 
 type NavItem = "Home" | "About" | "History" | "Resources" | "Contact";

@@ -16,14 +16,14 @@
 </script>
 
 <nav
-  class="sticky top-0 z-[9999] lg:h-24 md:h-24 lg:px-32 p-4 flex lg:flex-row md:flex-row flex-col items-center justify-evenly text-primary-black font-bold font-martel border-b-2 border-b-[#E3E7AF] bg-white"
+  class="sticky top-0 z-[9999] lg:h-24 md:h-24 lg:px-32 p-4 flex lg:flex-row md:flex-row flex-col items-center justify-between text-primary-black text-sm font-bold font-martel border-b-2 border-b-[#E3E7AF] bg-white"
 >
-  <div class="w-full md:w-fit">
+  <div class="w-full md:w-fit md:max-w-[30vw]">
     <div
       class="lg:h-20 md:h-20 lg:w-fit md:w-fit w-[80vw] aspect-auto flex gap-4 pr-14 flex-row items-center"
     >
-      <img src="{base}/UFV_SASI_logo.png" class="h-full w-1/2" alt="" />
-      <img src="{base}/ufv-logo.png" class="h-full w-1/2" alt="" />
+      <img src="{base}/UFV_SASI_logo.png" class="h-auto w-1/2" alt="" />
+      <img src="{base}/ufv-logo.png" class="h-auto w-1/2" alt="" />
     </div>
 
     <button
@@ -42,7 +42,7 @@
   {#if mobileNavButtonWidth == 0 || mobileNavOpen}
     <div
       transition:slide
-      class="flex lg:flex-row md:flex-row flex-col gap-8 md:gap-0 justify-evenly items-center  w-full lg:pt-0 pt-6 lg:mt-0 mt-4 md:border-0 border-t-2 border-t-[#E3E7AF]"
+      class="flex lg:flex-row md:flex-row flex-col gap-8 md:gap-8 items-center lg:pt-0 pt-6 lg:mt-0 mt-4 md:border-0 border-t-2 border-t-[#E3E7AF]"
     >
       {#each navItems as item}
         {#if item.pages}

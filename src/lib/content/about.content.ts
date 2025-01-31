@@ -33,8 +33,8 @@ const team = [
 		desc: "Annet oversees the website's development and design, ensuring alignment with project goals. She collaborates with researchers and designers to maintain accuracy and accessibility, integrating feedback and media seamlessly.",
 	},
 	{
-		name: "Anushay Mallik",
-		desc: "Anushay Mallik, PhD, Senior Lecturer at SFU, is the contracted consultant who leads the research on the project. She brings a wealth of knowledge, lived experience, and research expertise as a young Muslim Canadian scholar.",
+		name: "Dr. Anushay Mallik",
+		desc: "Dr. Anushay Mallik, PhD, Senior Lecturer at SFU, is the contracted consultant who leads the research on the project. She brings a wealth of knowledge, lived experience, and research expertise as a young Muslim Canadian scholar.",
 	},
 	{
 		name: "Kiara Dabreo",

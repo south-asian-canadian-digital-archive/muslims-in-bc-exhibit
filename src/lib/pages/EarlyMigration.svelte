@@ -127,6 +127,7 @@
               </li>
             </ol>
           </Modal>
+
         </div>
       </figure>
     </section>

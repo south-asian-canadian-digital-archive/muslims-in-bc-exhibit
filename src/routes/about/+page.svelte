@@ -123,7 +123,7 @@
   </section>
 
   <!-- project history -->
-  <section class="lg:p-32 p-10 pt-36 flex lg:flex-row flex-col gap-16">
+  <section class="lg:p-32 p-10 pt-36 flex lg:flex-row flex-col gap-16" id="project-history">
     <div class="grid grid-rows-2 grid-cols-2 gap-20">
       {#each floatingSquareInfo as info, idx}
         {@render FloatingSquare(
