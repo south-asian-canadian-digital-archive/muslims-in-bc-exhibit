@@ -100,42 +100,45 @@ const committee: {
 		},
 		// { name: "", position: "", desc: "" },
 		// { name: "", position: "", desc: "" },
-];
+	];
 
 const partners = [
-	{ src: `${base}/Sacda-logo.svg`, link: "https://sacda.ca", alt: "SACDA Logo" },
 	{
 		src: `${base}/content/heritage logo in the middle.png`,
 		link: "https://www.southasiancanadianheritage.ca/",
 		alt: "Heritage Logo",
+		years: "2024-present",
 	},
+	{ src: `${base}/Sacda-logo.svg`, link: "https://sacda.ca", alt: "SACDA Logo", years: "2024-present" },
 	{
 		src: `${base}/content/abb muslim CC logo.png`,
 		link: "#",
 		alt: "Abbotsford Muslim Community Center Logo",
+		years: "2024-present",
 	},
 ];
 
 const sponsors = [
-	{ src: `${base}/content/cece logo.png`, link: "https://www.ufv.ca/jobs/", alt: "CECE Logo" },
+	{ src: `${base}/content/cece logo.png`, link: "https://www.ufv.ca/jobs/", alt: "CECE Logo", years: "2024-present", },
 	{
 		src: `${base}/content/reserach and grad stud logo.png`,
 		link: "https://www.ufv.ca/research/",
 		alt: "Research and Graduate Studies Logo",
+		years: "2024-present",
 	},
 	{
 		src: `${base}/content/south asian fellowship logo.png`,
 		link: "https://www.ufv.ca/sasi/research/fellowship/",
 		alt: "South Asian Fellowship Logo",
+		years: "2024-present",
 	},
-	{ src: `${base}/UFV_SASI_logo.png`, link: "#", alt: "UFV SASI Logo" },
+	{ src: `${base}/UFV_SASI_logo.png`, link: "#", alt: "UFV SASI Logo", years: "2024-present", },
 	{
 		src: `${base}/content/Hari Sharma logo.png`,
 		link: "https://harisharma.org/",
 		alt: "Hari Sharma Foundation Logo",
+		years: "2024-present",
 	},
-
-
 ];
 
 

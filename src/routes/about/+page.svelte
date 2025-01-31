@@ -243,6 +243,28 @@
     </div>
   </section>
 
+  {#snippet partnerImage({
+    src,
+    alt,
+    link,
+    years,
+  }: {
+    src: string;
+    alt: string;
+    link: string;
+    years: string;
+  })}
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex flex-col items-center gap-2"
+    >
+      <img {src} {alt} class="aspect-video w-full object-contain" />
+      <sub class="text-primary-black text-base">{years}</sub>
+    </a>
+  {/snippet}
+
   <!-- partners -->
   <section class="bg-secondary-yellow flex flex-col pt-24" id="partners">
     <div class="flex flex-col lg:px-32 px-12">
@@ -250,11 +272,9 @@
         Our Partners
       </h2>
       <!-- partners -->
-      <div class="flex flex-wrap py-16 justify-evenly *:w-[30vh]">
+      <div class="flex flex-wrap py-16 justify-evenly *:md:w-[25vw] *:w-[30vh]">
         {#each partners as partner}
-          <a href={partner.link} target="_blank" rel="noopener noreferrer">
-            <img src={partner.src} alt={partner.alt} />
-          </a>
+          {@render partnerImage(partner)}
         {/each}
       </div>
     </div>
@@ -270,12 +290,10 @@
         We thank our Financial Supporters
       </h2>
       <div
-        class="flex flex-wrap py-16 justify-evenly items-baseline *:w-[30vh] *:aspect-auto"
+        class="flex flex-wrap gap-y-8 py-16 justify-evenly items-baseline *:md:w-[25vw] *:w-[30vh]"
       >
         {#each sponsors as sponsor}
-          <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
-            <img src={sponsor.src} alt={sponsor.alt} />
-          </a>
+          {@render partnerImage(sponsor)}
         {/each}
       </div>
     </div>
