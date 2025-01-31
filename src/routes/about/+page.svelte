@@ -123,7 +123,10 @@
   </section>
 
   <!-- project history -->
-  <section class="lg:p-32 p-10 pt-36 flex lg:flex-row flex-col gap-16" id="project-history">
+  <section
+    class="lg:p-32 p-10 pt-36 flex lg:flex-row flex-col gap-16"
+    id="project-history"
+  >
     <div class="grid grid-rows-2 grid-cols-2 gap-20">
       {#each floatingSquareInfo as info, idx}
         {@render FloatingSquare(
@@ -196,9 +199,10 @@
   <!-- committee -->
   <section class="lg:px-32 lg:py-24 py-8 px-12" id="committee">
     <h1
-      class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
+      class="text-h3 inline-flex flex-col items-center w-full font-bold font-source-serif-4 text-primary-blue text-center pb-12 mb-12 gap-2"
     >
       Advisory Committee
+      <sub class="text-h6">2024 to present</sub>
     </h1>
 
     <div class="flex flex-col gap-6">

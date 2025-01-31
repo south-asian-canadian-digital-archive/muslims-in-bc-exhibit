@@ -17,7 +17,7 @@
           </div>
 
           <button
-            class="bg-secondary-yellow rounded-lg w-full py-2 font-bold flex flex-col z-10"
+            class="bg-secondary-yellow rounded-lg w-full p-2 font-bold flex flex-col z-10"
             onclick={() => goto(item.path)}
           >
             {item.name}

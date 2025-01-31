@@ -46,30 +46,32 @@
     >
       {#each navItems as item}
         {#if item.pages}
-          <Dropdown
-            options={item.pages.map((i) => i.name)}
-            on:change={(e) => {
-              item.pages?.forEach((element) => {
-                if (element.name === e.detail.value) {
-                  mobileNavOpen = false;
-                  goto(element.path || ".");
-                }
-              });
-            }}
-          >
-            <span
-              class="inline-flex flex-col gap-0 hover:-translate-y-1 transition-all ease-in-out duration-300 whitespace-nowrap break-keep"
+          <div class="w-full inline-flex flex-col items-center">
+            <Dropdown
+              options={item.pages.map((i) => i.name)}
+              on:change={(e) => {
+                item.pages?.forEach((element) => {
+                  if (element.name === e.detail.value) {
+                    mobileNavOpen = false;
+                    goto(element.path || ".");
+                  }
+                });
+              }}
             >
-              {item.name}
               <span
-                class="h-2 w-[150%] -mt-2 border-x-2 border-b-2 -ml-2"
-                class:border-white={!$page.url.pathname.includes("/history/")}
-                class:border-secondary-yellow={$page.url.pathname.includes(
-                  "/history/"
-                )}>&nbsp;</span
+                class="inline-flex flex-col gap-0 hover:-translate-y-1 transition-all ease-in-out duration-300 whitespace-nowrap break-keep"
               >
-            </span>
-          </Dropdown>
+                {item.name}
+              </span>
+            </Dropdown>
+            <span
+              class="h-2 w-[120%] -mt-1.5 border-x-2 border-b-2"
+              class:border-white={!$page.url.pathname.includes(item.path)}
+              class:border-secondary-yellow={$page.url.pathname.includes(
+                item.path
+              )}>&nbsp;</span
+            >
+          </div>
         {:else}
           <button
             class="flex flex-col gap-0 items-center hover:-translate-y-1 transition-all ease-in-out duration-300 whitespace-nowrap"

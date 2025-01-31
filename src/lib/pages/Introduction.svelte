@@ -104,7 +104,7 @@
     </h1>
 
     <div class="hidden lg:flex flex-col lg:gap-[10vw] gap-4">
-      {#snippet desc(text: string, align = "left")}
+      {#snippet desc(text?: string, align = "left")}
         <div class:text-right={align === "right"}>
           {@html text}
         </div>
@@ -128,7 +128,7 @@
               navTweens[idx].resume();
             }}
           >
-            <h6 class="text-p font-bold text-center">
+            <h6 class="text-p font-bold text-center p-4">
               {item.name} <br />
               {item.years}
             </h6>

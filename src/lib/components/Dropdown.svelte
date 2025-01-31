@@ -49,7 +49,7 @@
 
   {#if dropdownOpen}
     <div
-      class="absolute z-[999] bg-white w-fit rounded-lg text-sm font-medium flex flex-col shadow-lg"
+      class="absolute mt-4 z-[999] bg-white w-fit rounded text-sm font-medium flex flex-col shadow-lg"
       on:keydown
       on:click={() => {
         dropdownClicked = true;

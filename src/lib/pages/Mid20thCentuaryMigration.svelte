@@ -46,9 +46,15 @@
     <section>
       <h2>Pakistani</h2>
       <div class="">
-        <Image src={`${base}/content/pakistan_map.png`} float="left"
-          >Country Map Outline</Image
-        >
+        <Image src={`${base}/content/pakistan_map.png`} float="left">
+          <a
+            class="text-xs max-w-[30vw]"
+            href="https://www.vecteezy.com/vector-art/8717225-stylized-outline-map-of-pakistan-with-national-flag-icon-flag-color-map-of-pakistan-vector-illustration"
+            >Stylized outline map of Pakistan with national flag icon. Vectors
+            by Vecteezy
+          </a>
+          <!-- Country Map Outline -->
+        </Image>
 
         <!-- <div> -->
         The Pakistan Canada Association was one of the first South Asian muslim organizations
