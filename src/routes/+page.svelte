@@ -4,14 +4,13 @@
   import { gsap } from "gsap";
   import { onMount } from "svelte";
   import { goto } from "$app/navigation";
-  import { horizontalLoop } from "$lib/utils/seemlessLoop.util";
   import HistoryTimeline from "$lib/components/HistoryTimelineMobile.svelte";
+  // import { horizontalLoop } from "$lib/utils/seemlessLoop.util";
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
   let hoveredTag = $state(-1);
-  // const scrollImagesContent = [];
-  let loop: gsap.core.Timeline;
+  // let loop: gsap.core.Timeline;
   let navTweens: gsap.core.Tween[] = $state([]);
   let prefix = "history-page-nav";
 
@@ -25,21 +24,18 @@
     domeAnimationTimeline.add(
       gsap.to(".dome-bg", {
         backgroundPositionX: "-=10",
-        // backgroundPositionY: "+=random(-5, 5)",
-        // translateX: "+=10",
-        // translateY: "+=random(-5, 5)",
         duration: 5,
         ease: "none",
       })
     );
     domeAnimationTimeline.play();
 
-    let scrollingImageDivs = gsap.utils.toArray("#carousel > div");
-    loop = horizontalLoop(scrollingImageDivs, {
-      center: true,
-      repeat: -1,
-      speed: 0.5,
-    });
+    // let scrollingImageDivs = gsap.utils.toArray("#carousel > div");
+    // loop = horizontalLoop(scrollingImageDivs, {
+    //   center: true,
+    //   repeat: -1,
+    //   speed: 0.5,
+    // });
 
     historyPages.slice(1).forEach((e, i) => {
       navTweens.push(
@@ -65,7 +61,7 @@
   <title>South Asian Muslims in BC</title>
 </svelte:head>
 
-<main class="">
+<main class="pb-32">
   <!-- intro -->
   <section class="py-32">
     <div
@@ -150,18 +146,18 @@
     <!-- TODO: fix design for this section -->
     <div class="flex flex-col lg:items-center">
       <h2
-        class="text-h4 lg:text-h2 text-center font-bold text-secondar-teal lg:translate-y-1/3"
+        class="text-h4 lg:text-h2 text-center font-bold text-secondar-teal lg:translate-y-1/5"
       >
         Historical Timeline
       </h2>
 
       <div
-        class="hidden lg:flex flex-col lg:flex-row gap-10 lg:gap-0 justify-evenly w-full lg:translate-y-[20%] lg:pt-0 pt-10 bg-secondary-yellow lg:bg-transparent"
+        class="hidden lg:flex flex-col lg:flex-row gap-10 lg:gap-0 justify-evenly w-full lg:pt-0 pt-10 bg-secondary-yellow lg:bg-transparent"
       >
         {#each historyPages.slice(1) as item, i}
           {#if item.years}
             <button
-              class="lg:aspect-square rounded-full lg:w-[20vw] flex flex-col gap-2 items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
+              class="lg:aspect-square rounded-full lg:w-[20vw] lg:translate-y-[30%] flex flex-col gap-2 items-center justify-center border-[10px] border-secondary-yellow bg-white transition-all duration-500 ease-in-out"
               id="{prefix}-{i}"
               aria-label="link to page talking about {item.name}"
               onclick={(e) => {
@@ -170,16 +166,16 @@
               }}
               onmouseenter={() => (hoveredTag = i)}
               onmouseleave={() => (hoveredTag = -1)}
-              class:lg:translate-y-[40%]={hoveredTag !== -1 && hoveredTag !== i
+              class:lg:translate-y-[70%]={hoveredTag !== -1 && hoveredTag !== i
                 ? true
                 : hoveredTag === i
                   ? false
                   : i === 1}
               class:opacity-50={hoveredTag !== -1 && hoveredTag !== i}
             >
-              <h6 class="text-p font-bold text-center">
-                {item.name} <br />
-                {item.years}
+              <h6 class="text-p font-bold text-center inline-flex flex-col items-center p-4">
+                {item.name.split(":")[1]}
+                <sub class="text-sm font-normal">{item.years}</sub> 
               </h6>
             </button>
           {/if}
@@ -198,7 +194,7 @@
   </section>
 
   <!-- marquee -->
-  <section
+  <!-- <section
     role="marquee"
     onmouseover={() => {
       loop.pause();
@@ -224,5 +220,5 @@
         </a>
       </div>
     {/each}
-  </section>
+  </section> -->
 </main>
