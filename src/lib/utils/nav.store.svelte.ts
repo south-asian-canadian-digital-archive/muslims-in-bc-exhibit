@@ -44,7 +44,25 @@ export const navItems: {
 			]
 		},
 
-		{ name: "Community Life", path: `${base}/community-life` },
+		{
+			name: "History (new)",
+			path: `${base}/history-new`,
+			pages: [
+				{ name: "Migration Overview", path: `${base}/history-new` },
+				{
+					name: "Early 20th Century", path: `${base}/history-new/early-20th-century`,
+				},
+				{
+					name: "Mid-20th Century", path: `${base}/history-new/mid-20th-century`,
+				},
+				{
+					name: "Recent Timeline", path: `${base}/history-new/recent-timeline`,
+				},
+			]
+		},
+
+
+		// { name: "Community Life", path: `${base}/community-life` },
 		{ name: "Further Reading", path: `${base}/further-reading` },
 		{ name: "Share your story", path: `${base}/contact` },
 	]
