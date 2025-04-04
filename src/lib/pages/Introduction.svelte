@@ -144,8 +144,8 @@
         {/if}
       {/each}
     </div>
-    <div class="lg:hidden block">
+    <!-- <div class="lg:hidden block">
       <HistoryTimeline />
-    </div>
+    </div> -->
   </section>
 </main>

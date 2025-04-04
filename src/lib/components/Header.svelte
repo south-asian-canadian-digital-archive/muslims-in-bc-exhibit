@@ -121,7 +121,7 @@
         bind:this={mobileNavContainer}
         use:setupClickOutside={closeMobileNav}
         transition:slide
-        class="flex md:flex-row flex-wrap justify-center w-full md:w-auto gap-6 md:gap-8 items-center md:pt-0 py-6 md:mt-0 mt-4 md:border-0 border-t-2 border-t-[#E3E7AF] overflow-x-hidden"
+        class="flex md:flex-row flex-wrap justify-center w-full md:w-auto gap-6 md:gap-8 items-center md:py-0 py-6 md:mt-0 mt-4 md:border-0 border-t-2 border-t-[#E3E7AF] overflow-x-hidden"
       >
         {#each navItems as item}
           <div

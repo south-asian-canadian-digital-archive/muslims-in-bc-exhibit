@@ -10,7 +10,7 @@
 <main
   class="flex flex-col items-center justify-center min-h-screen bg-secondary-yellow text-center p-8"
 >
-  <h1 class="text-h2 font-bold text-primary-blue mb-4">Oral History</h1>
+  <h1 class="text-h2 font-bold text-primary-blue mb-4">Community Life</h1>
   <p class="text-lg mb-8">
     We are working hard to bring you this content. Stay tuned for more updates!
   </p>

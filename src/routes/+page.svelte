@@ -8,7 +8,7 @@
   // import { horizontalLoop } from "$lib/utils/seemlessLoop.util";
 
   let curHoveredDome = $state(0);
-  let historyPages = navItems[2].pages || [];
+  let historyPages = navItems[1].pages || [];
   let hoveredTag = $state(-1);
   // let loop: gsap.core.Timeline;
   let navTweens: gsap.core.Tween[] = $state([]);
@@ -91,37 +91,24 @@
         South Asian Muslims in British Columbia
       </h1>
 
-      <div
-        class="border-l-[6px] border-l-secondary-yellow pl-8"
-      >
-        The historical and contemporary presence of Muslim communities in Canada
-        is regionally diverse and long, replete with stories of successes as
-        they have advocated for spaces to practice their religion and gain their
-        rights, but it also has stories of the challenges they have faced along
-        the way. Recording and preserving these stories is an important step
-        toward building greater appreciation and understanding of what
-        constitutes the Canadian Muslim experience and how they have contributed
-        to the betterment of Canadian society. Our research project aims to
-        contribute to this cause by focusing on South Asian Canadian Muslim
-        communities of B.C. We use existing academic and community research,
-        archival records, and oral interviews to highlight these, often untold,
-        stories of South Asian Muslim communities in B.C.
+      <div class="border-l-[6px] border-l-secondary-yellow pl-8">
+        South Asian Muslims in Canada are a diverse group who have advocated for
+        spaces to practice their religion and faced challenges along the way.
+        This project records their stories to deepen understanding of the
+        Canadian Muslim experience, especially in British Columbia (BC).
+        <br />
+        <br />
+        The project gathers these stories through interviews, research and historical
+        records. Viewing Islam as a mosaic, it focuses on the traditions and lived
+        experiences of BC’s Muslim community. Recognizing that this project will
+        be a first step in preserving these histories, we aim to provide a foundation
+        for future researchers, artists and community members to continue documenting
+        the stories of South Asian Muslims in BC.
+        <br />
+        <br />
+        We welcome any feedback that can help us improve this project by writing
+        to us at <a href="mailto:sasi@ufv.ca">sasi@ufv.ca</a> or contacting us at <a href="tel:+6048544547">604-854-4547.</a>
         <br /><br />
-        Our project understands Islam as a mosaic both in terms of how the religion
-        is practiced across time and geography. It hopes to honor these diverse ways
-        of being Muslim by focusing not on the textual traditions in and of themselves,
-        but on what they mean to the community in BC. Taking a community-centered
-        approach, our project aims to highlight how religion and religious identity
-        are lived within British Columbia. We acknowledge that this project is a
-        first step toward preserving these community histories. We aim to honor these
-        stories by presenting them as they are and being very careful to not oversimplify
-        a religious and community experience that has so much difference within it.
-        This project, therefore, will form a foundation for future researchers, artists,
-        and community members to engage with so that we may continue to develop the
-        history of South Asian Muslims in BC.
-        <br />We welcome any feedback that can help us improve this project by
-        writing to us at sasi@ufv.ca or contacting us at 604-854-4547.
-        <br><br>
         <button
           class="bg-primary-blue py-4 px-12 rounded-full text-white w-fit"
           onclick={() => {
