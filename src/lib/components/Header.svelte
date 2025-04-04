@@ -4,6 +4,7 @@
   import { fade, scale, slide } from "svelte/transition";
   import { navItems, curTab } from "$lib/utils/nav.store.svelte";
   import { base } from "$app/paths";
+  import Button from "./ui/button/button.svelte";
   // Removing the clickOutside import as we'll implement it directly in this file
 
   let mobileNavButtonWidth: number = $state(0);
@@ -77,9 +78,10 @@
   class="sticky top-0 z-[9999] flex flex-col items-center bg-white"
 >
   <div
-    class="min-h-24 lg:px-32 md:px-8 px-4 flex lg:flex-row md:flex-row flex-col w-full items-center justify-between text-primary-black text-sm font-bold font-martel border-b-2 border-b-[#E3E7AF] overflow-x-hidden"
+    class="min-h-24 lg:px-32 px-4 flex lg:flex-row md:flex-row flex-col w-full items-center justify-between text-primary-black text-sm font-bold font-martel border-b-2 border-b-[#E3E7AF] overflow-x-hidden"
   >
-    <div class="w-full md:w-fit md:max-w-[30vw] h-full">
+
+    <div class="md:max-w-[25vw] h-full">
       <a
         href="{base}/"
         onclick={(e) => {
@@ -88,74 +90,82 @@
         }}
       >
         <div
-          class="h-20 md:w-fit w-full max-w-[calc(100vw-80px)] aspect-auto flex gap-2 pr-4 flex-row items-center"
+          class="h-20 md:w-fit w-min max-w-[calc(100vw-80px)] aspect-auto flex gap-2 pr-4 flex-row items-center"
         >
           <img
             src="{base}/UFV_SASI_logo.png"
             class="h-auto w-1/2 max-w-[40vw]"
             alt=""
           />
-          <img
+          <!-- <img
             src="{base}/ufv-logo.png"
             class="h-auto w-1/2 max-w-[40vw]"
             alt=""
-          />
+          />  -->
         </div>
       </a>
-
-      <button
-        class="lg:hidden md:hidden bg-[#F99D2A] py-8 px-6 absolute right-2 top-0 z-10"
-        bind:clientWidth={mobileNavButtonWidth}
-        onclick={() => (mobileNavOpen = !mobileNavOpen)}
-      >
-        {#if mobileNavOpen}
-          <span class="fa fa-times scale-125"></span>
-        {:else}
-          <span class="fa fa-bars scale-125"></span>
-        {/if}
-      </button>
     </div>
+
+    <button
+      class="md:hidden bg-[#F99D2A] py-8 px-6 absolute right-2 top-0 z-10"
+      bind:clientWidth={mobileNavButtonWidth}
+      onclick={() => (mobileNavOpen = !mobileNavOpen)}
+    >
+      {#if mobileNavOpen}
+        <span class="fa fa-times scale-125"></span>
+      {:else}
+        <span class="fa fa-bars scale-125"></span>
+      {/if}
+    </button>
 
     {#if mobileNavButtonWidth == 0 || mobileNavOpen}
       <div
         bind:this={mobileNavContainer}
         use:setupClickOutside={closeMobileNav}
         transition:slide
-        class="flex md:flex-row flex-wrap justify-center w-full md:w-auto gap-6 md:gap-8 items-center md:py-0 py-6 md:mt-0 mt-4 md:border-0 border-t-2 border-t-[#E3E7AF] overflow-x-hidden"
+        class="flex sm:flex-row flex-wrap justify-center w-full md:w-auto gap-6 md:gap-8 items-center md:py-0 py-6 md:mt-0 mt-4 md:border-0 border-t-2 border-t-[#E3E7AF] overflow-x-hidden"
       >
-        {#each navItems as item}
-          <div
-            class="inline-flex flex-col items-center relative border-b-2 {isItemActive(
-              item
-            )
-              ? 'border-b-secondary-yellow '
-              : 'border-b-transparent'}"
-          >
-            <button
-              class="flex flex-col gap-0 items-center whitespace-nowrap"
-              class:font-extrabold={isItemActive(item)}
+        {#each navItems as item, idxi}
+          {#if idxi === navItems.length - 1}
+            <Button
+              class="bg-secondar-teal"
               onclick={() => {
-                if (item.pages) {
-                  toggleExpand(item.name);
-                } else {
-                  // Close expanded dropdown when clicking on regular nav items
-                  closeExpanded();
-                  mobileNavOpen = false;
-                  goto(item.path || ".");
-                }
-              }}
+                goto(item.path);
+              }}>{item.name}</Button
             >
-              <span class="inline-flex items-center gap-1">
-                {item.name}
-                {#if item.pages}
-                  <span
-                    class="fa fa-angle-down ease-in-out duration-200 transform select-none"
-                    class:-rotate-180={expandedItem === item.name}
-                  ></span>
-                {/if}
-              </span>
-            </button>
-          </div>
+          {:else}
+            <div
+              class="inline-flex flex-col items-center relative border-b-2 {isItemActive(
+                item
+              )
+                ? 'border-b-secondary-yellow '
+                : 'border-b-transparent'}"
+            >
+              <button
+                class="flex flex-col gap-0 items-center whitespace-nowrap"
+                class:font-extrabold={isItemActive(item)}
+                onclick={() => {
+                  if (item.pages) {
+                    toggleExpand(item.name);
+                  } else {
+                    closeExpanded();
+                    mobileNavOpen = false;
+                    goto(item.path || ".");
+                  }
+                }}
+              >
+                <span class="inline-flex items-center gap-1">
+                  {item.name}
+                  {#if item.pages}
+                    <span
+                      class="fa fa-angle-down ease-in-out duration-200 transform select-none"
+                      class:-rotate-180={expandedItem === item.name}
+                    ></span>
+                  {/if}
+                </span>
+              </button>
+            </div>
+          {/if}
         {/each}
       </div>
     {/if}

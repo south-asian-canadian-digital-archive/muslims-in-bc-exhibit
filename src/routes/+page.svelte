@@ -120,8 +120,7 @@
   </section>
 
   <!-- historical timeline -->
-  <section class="">
-    <!-- TODO: fix design for this section -->
+  <!-- <section class="">
     <div class="flex flex-col lg:items-center">
       <h2
         class="text-h4 lg:text-h2 text-center font-bold text-secondar-teal lg:translate-y-1/5"
@@ -171,7 +170,7 @@
         &nbsp;
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- marquee -->
   <!-- <section
