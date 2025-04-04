@@ -11,7 +11,7 @@ export const navItems: {
 		years?: string;
 	}[];
 }[] = [
-		{ name: "Home", path: `${base}/` },
+		// { name: "Home", path: `${base}/` },
 		{
 			name: "About", path: `${base}/about`, pages: [
 				{ name: "About SASI", path: `${base}/about` },
@@ -41,13 +41,14 @@ export const navItems: {
 					desc: "Post-9/11, South Asian Muslims in B.C. faced discrimination and surveillance, with emerging voices and solidarity with Indigenous groups.",
 					years: "2000 to the present day"
 				},
-				{ name: "Further Reading", path: `${base}/history/further-reading` },
 				{ name: "Community life", path: `${base}/history/community-life` },
 			]
 		},
+
+		{ name: "Further Reading", path: `${base}/history/further-reading` },
 		{ name: "Oral History", path: `${base}/oral-history` },
 		{ name: "Share your story", path: `${base}/contact` },
-]
+	]
 
 type NavItem = "Home" | "About" | "History" | "Resources" | "Contact";
 

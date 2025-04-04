@@ -18,6 +18,9 @@
   // Reference to the mobile nav container
   let mobileNavContainer: HTMLElement | null = $state(null);
 
+  // Reference to the entire header
+  let headerElement: HTMLElement | null = $state(null);
+
   // Toggle sub-page expansion
   function toggleExpand(itemName: string) {
     expandedItem = expandedItem === itemName ? null : itemName;
@@ -45,8 +48,13 @@
   // Function to handle document clicks for closing the expanded menu
   function setupClickOutside(node: HTMLElement, callback = closeExpanded) {
     const handleClick = (event: MouseEvent) => {
-      // If the clicked element is outside the node, close the expanded menu
-      if (node && !node.contains(event.target as Node)) {
+      // If the clicked element is outside both the node and the header, close the menu
+      if (
+        node &&
+        !node.contains(event.target as Node) &&
+        headerElement &&
+        !headerElement.contains(event.target as Node)
+      ) {
         callback();
       }
     };
@@ -64,25 +72,36 @@
   }
 </script>
 
-<nav class="sticky top-0 z-[9999] flex flex-col items-center bg-white">
+<nav
+  bind:this={headerElement}
+  class="sticky top-0 z-[9999] flex flex-col items-center bg-white"
+>
   <div
     class="min-h-24 lg:px-32 md:px-8 px-4 flex lg:flex-row md:flex-row flex-col w-full items-center justify-between text-primary-black text-sm font-bold font-martel border-b-2 border-b-[#E3E7AF] overflow-x-hidden"
   >
     <div class="w-full md:w-fit md:max-w-[30vw] h-full">
-      <div
-        class="h-20 md:w-fit w-full max-w-[calc(100vw-80px)] aspect-auto flex gap-2 pr-4 flex-row items-center"
+      <a
+        href="{base}/"
+        onclick={(e) => {
+          e.preventDefault();
+          goto("/");
+        }}
       >
-        <img
-          src="{base}/UFV_SASI_logo.png"
-          class="h-auto w-1/2 max-w-[40vw]"
-          alt=""
-        />
-        <img
-          src="{base}/ufv-logo.png"
-          class="h-auto w-1/2 max-w-[40vw]"
-          alt=""
-        />
-      </div>
+        <div
+          class="h-20 md:w-fit w-full max-w-[calc(100vw-80px)] aspect-auto flex gap-2 pr-4 flex-row items-center"
+        >
+          <img
+            src="{base}/UFV_SASI_logo.png"
+            class="h-auto w-1/2 max-w-[40vw]"
+            alt=""
+          />
+          <img
+            src="{base}/ufv-logo.png"
+            class="h-auto w-1/2 max-w-[40vw]"
+            alt=""
+          />
+        </div>
+      </a>
 
       <button
         class="lg:hidden md:hidden bg-[#F99D2A] py-8 px-6 absolute right-2 top-0 z-10"
@@ -102,10 +121,16 @@
         bind:this={mobileNavContainer}
         use:setupClickOutside={closeMobileNav}
         transition:slide
-        class="flex md:flex-row flex-col w-full md:w-auto gap-6 md:gap-8 items-center md:pt-0 pt-6 md:mt-0 mt-4 md:border-0 border-t-2 border-t-[#E3E7AF] overflow-x-hidden"
+        class="flex md:flex-row flex-wrap justify-center w-full md:w-auto gap-6 md:gap-8 items-center md:pt-0 py-6 md:mt-0 mt-4 md:border-0 border-t-2 border-t-[#E3E7AF] overflow-x-hidden"
       >
         {#each navItems as item}
-          <div class="w-full inline-flex flex-col items-center relative">
+          <div
+            class="inline-flex flex-col items-center relative border-b-2 {isItemActive(
+              item
+            )
+              ? 'border-b-secondary-yellow '
+              : 'border-b-transparent'}"
+          >
             <button
               class="flex flex-col gap-0 items-center whitespace-nowrap"
               class:font-extrabold={isItemActive(item)}
@@ -129,12 +154,6 @@
                   ></span>
                 {/if}
               </span>
-              <span
-                transition:slide
-                class="h-2 w-[120%] -mt-2 border-x-2 border-b-2"
-                class:border-white={!isItemActive(item)}
-                class:border-secondary-yellow={isItemActive(item)}>&nbsp;</span
-              >
             </button>
           </div>
         {/each}
@@ -146,12 +165,13 @@
     <div
       bind:this={dropdownContainer}
       use:setupClickOutside
-      class="w-full bg-white border-b-2 border-b-[#E3E7AF] flex justify-center py-4 px-2 md:px-8 shadow-sm overflow-x-hidden"
+      transition:slide
+      class="w-full bg-white border-b-2 border-b-[#E3E7AF] flex justify-center py-4 px-2 md:px-8 shadow-sm overflow-x-hidden md:h-48"
     >
-      <div class="flex flex-wrap gap-4 md:gap-6 justify-center">
+      <div class="flex flex-wrap gap-4 md:gap-6 justify-center items-center">
         {#each navItems.find((item) => item.name === expandedItem)?.pages || [] as subpage, idx (`${subpage.name}-${idx}`)}
           <button
-            class="text-primary-black py-2 px-3 md:px-4 hover:bg-gray-100 rounded transition-colors whitespace-normal md:whitespace-nowrap text-xs md:text-sm flex items-center gap-1 md:gap-2"
+            class="text-primary-black py-2 px-3 md:px-4 hover:bg-gray-100 rounded transition-colors whitespace-normal md:whitespace-nowrap text-xs md:text-sm flex items-center gap-1 md:gap-2 h-fit"
             class:font-bold={$page.url.pathname === subpage.path}
             class:bg-gray-100={$page.url.pathname === subpage.path}
             onclick={() => {
