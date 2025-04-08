@@ -4,8 +4,7 @@
   import { fade, scale, slide } from "svelte/transition";
   import { navItems } from "$lib/content/nav";
   import { base } from "$app/paths";
-  
-  
+
   import Button from "./ui/button/button.svelte";
   import { Home } from "svelte-radix";
   import House from "$lib/house.svelte";
@@ -84,7 +83,6 @@
   <div
     class="min-h-24 lg:px-32 px-4 flex lg:flex-row md:flex-row flex-col w-full items-center justify-between text-primary-black text-sm font-bold font-martel border-b-2 border-b-[#E3E7AF] overflow-x-hidden"
   >
-
     <div class="md:max-w-[25vw] h-full">
       <a
         href="{base}/"
@@ -96,8 +94,7 @@
         <div
           class="h-20 md:w-fit w-min max-w-[calc(100vw-80px)] aspect-auto flex gap-2 pr-4 flex-row items-center"
         >
-
-        <House class="w-8 h-8" />
+          <House class="w-8 h-8" />
 
           <img
             src="{base}/UFV_SASI_logo.png"
@@ -137,7 +134,13 @@
             <Button
               class="bg-secondar-teal"
               onclick={() => {
-                goto(item.path);
+                if (item.pages) {
+                  toggleExpand(item.name);
+                } else {
+                  closeExpanded();
+                  mobileNavOpen = false;
+                  goto(item.path || ".");
+                }
               }}>{item.name}</Button
             >
           {:else}

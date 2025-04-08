@@ -284,7 +284,7 @@
   </section>
 
   <!-- sponsors -->
-  <section class=" flex flex-col pt-24">
+  <section class=" flex flex-col pt-24" id="sponsors">
     <div class="flex flex-col lg:px-32 px-12">
       <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
         We thank our Financial Supporters

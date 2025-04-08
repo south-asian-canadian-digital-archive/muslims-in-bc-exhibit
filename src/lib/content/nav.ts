@@ -1,4 +1,3 @@
-import { writable } from "svelte/store";
 import { base } from "$app/paths";
 
 export const navItems: {
@@ -17,7 +16,8 @@ export const navItems: {
 				{ name: "Project history", path: `${base}/about#project-history` },
 				{ name: "Team", path: `${base}/about#team` },
 				{ name: "Advisory committee", path: `${base}/about#committee` },
-
+				{ name: "Partners", path: `${base}/about#partners` },
+				{ name: "Financial supporters", path: `${base}/about#sponsors` },
 			]
 		},
 		{
@@ -25,18 +25,10 @@ export const navItems: {
 			path: `${base}/history`,
 			pages: [
 				{ name: "Migration Overview", path: `${base}/history` },
-				{
-					name: "Early 20th Century", path: `${base}/history/early-20th-century`,
-				},
-				{
-					name: "Mid-20th Century", path: `${base}/history/mid-20th-century`,
-				},
-				{
-					name: "Recent Timeline", path: `${base}/history/recent-timeline`,
-				},
-				{
-					name: "Case Studies: Hidden Histories", path: `${base}/history/case-studies`,
-				}
+				{ name: "Early 20th Century", path: `${base}/history/early-20th-century` },
+				{ name: "Mid-20th Century", path: `${base}/history/mid-20th-century` },
+				{ name: "Recent Timeline", path: `${base}/history/recent-timeline` },
+				{ name: "Case Studies: Hidden Histories", path: `${base}/history/case-studies` }
 			]
 		},
 
@@ -44,4 +36,4 @@ export const navItems: {
 		{ name: "Community Life", path: `${base}/community-life` },
 		{ name: "Further Reading", path: `${base}/further-reading` },
 		{ name: "Share your story", path: `${base}/contact` },
-	]
+]
