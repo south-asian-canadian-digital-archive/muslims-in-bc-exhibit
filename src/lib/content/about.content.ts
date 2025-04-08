@@ -46,11 +46,11 @@ const team = [
 	},
 	{
 		name: "Sadhik peet Singh",
-		desc: "TBA",
+		desc: "Sadhik contributes to the BC Muslim Social History Project as a video editor and transcriber, also conducting interviews with South Asian Muslim community members across BC to document their stories.",
 	},
 	{
 		name: "Saumyaa Gelani",
-		desc: "TBA",
+		desc: "Saumyaa contributes to the South Asian Muslims in BC Project as a Research Assistant and plays a key role in the website’s design. She ensures that the design is engaging and easy to use.",
 	},
 	{
 		name: "Rashneet",

@@ -1,10 +1,11 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import type { HTMLAttributes } from "svelte/elements";
 
   interface Props extends HTMLAttributes<HTMLSpanElement> {
     src?: string;
     alt?: string;
-    float?: "left" | "right";
+    float?: "left" | "right" | "bottom";
     children?: import("svelte").Snippet;
   }
 
@@ -22,6 +23,6 @@
   class:float-right={float === "right"}
   class:float-left={float === "left"}
 >
-  <img {src} {alt} />
+  <img src={`${base}${src}`} {alt} />
   <figcaption class="text-center mt-2">{@render children?.()}</figcaption>
 </figure>

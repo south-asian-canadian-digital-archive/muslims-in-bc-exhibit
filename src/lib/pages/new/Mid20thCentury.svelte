@@ -9,7 +9,7 @@
   >
     Mid 20th century migration (1962-2001)
   </h1>
-  <p class="desc-text"></p>
+  <!-- <p class="desc-text"></p> -->
 
   <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     <section>

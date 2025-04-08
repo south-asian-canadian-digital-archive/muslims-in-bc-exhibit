@@ -46,7 +46,7 @@
     <section>
       <h2>Pakistani</h2>
       <div class="">
-        <Image src={`${base}/content/pakistan_map.png`} float="left">
+        <Image src={`/content/pakistan_map.png`} float="left">
           <a
             class="text-xs max-w-[30vw]"
             href="https://www.vecteezy.com/vector-art/8717225-stylized-outline-map-of-pakistan-with-national-flag-icon-flag-color-map-of-pakistan-vector-illustration"
@@ -252,7 +252,7 @@
     <section>
       <h2>East Africa / Ismaili Muslims</h2>
       <div>
-        <Image src={`${base}/content/east_africa.png`} float="left"></Image>
+        <Image src="/content/east_africa.png" float="left"></Image>
 
         A majority of Ismaili community migrated from the East African countries
         of Uganda, Kenya, and Tanzania to Canada. Most of the community members

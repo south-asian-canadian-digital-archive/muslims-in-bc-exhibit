@@ -4,7 +4,11 @@
   import { fade, scale, slide } from "svelte/transition";
   import { navItems, curTab } from "$lib/utils/nav.store.svelte";
   import { base } from "$app/paths";
+  
+  
   import Button from "./ui/button/button.svelte";
+  import { Home } from "svelte-radix";
+  import House from "$lib/house.svelte";
   // Removing the clickOutside import as we'll implement it directly in this file
 
   let mobileNavButtonWidth: number = $state(0);
@@ -92,6 +96,9 @@
         <div
           class="h-20 md:w-fit w-min max-w-[calc(100vw-80px)] aspect-auto flex gap-2 pr-4 flex-row items-center"
         >
+
+        <House class="w-8 h-8" />
+
           <img
             src="{base}/UFV_SASI_logo.png"
             class="h-auto w-1/2 max-w-[40vw]"

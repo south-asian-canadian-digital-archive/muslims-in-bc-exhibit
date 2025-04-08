@@ -136,7 +136,7 @@
       <h2 class="">Ghadar Party</h2>
       <div class="">
         <Image
-          src={`${base}/content/ghadar_movement_flag.png`}
+          src={`/content/ghadar_movement_flag.png`}
           alt="Ghadar Movement Flag">Ghadar Movement Flag</Image
         >
 
@@ -178,7 +178,7 @@
       <h2 class="">Komagata Maru</h2>
       <div class="">
         <Image
-          src={`${base}/content/komagatamaru.png`}
+          src={`/content/komagatamaru.png`}
           alt="Komagata Maru incident"
           class="w-2/3 ml-12">Komagata Maru incident</Image
         >

@@ -28,8 +28,16 @@
   <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     <section>
       <h2>Recent Timeline</h2>
-      <div>
+      <div class="!border-0 !mx-0">
         <!-- TODO: make timeline -->
+        <iframe
+          title="Recent Timeline of Muslims In British Columbia"
+          src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vQq6XreVNJadGkn2skgHj7GBWJhdau9JJso43eaEQsU0DNecwrv7iJ-gYM-5Bz18OTA0KyCqLh62ktE&font=Default&lang=en&initial_zoom=2&height=650"
+          width="100%"
+          height="650"
+          allowfullscreen
+          frameborder="0"
+        ></iframe>
       </div>
     </section>
   </div>

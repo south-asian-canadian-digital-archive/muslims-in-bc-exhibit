@@ -9,6 +9,4 @@ build
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-context/Images discussed in zoom meetings plus some shortened website content sections.pptx
-context/Website Content new Feb 2025.docx
-context/Working Bibliography Associations and Potential People to Interview.docx
+/context
