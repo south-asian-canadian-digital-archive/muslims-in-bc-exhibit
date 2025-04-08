@@ -2,7 +2,7 @@
   import { base } from "$app/paths";
   import Image from "$lib/components/Image.svelte";
   import Modal from "$lib/components/Modal.svelte";
-  import { figures } from "$lib/content/early-migration.content";
+  import { caseStudies } from "$lib/content/case-studies";
 
 </script>
 
@@ -99,16 +99,16 @@
           class="absolute h-full w-full top-0 left-0 grid p-10 lg:p-32 grid-flow-row lg:grid-cols-4 lg:grid-rows-5 gap-10 *:rounded-lg overflow-auto"
         >
           {#each Array(4) as _, idx}
-            <Modal personData={figures[idx]} key={idx} />
+            <Modal personData={caseStudies[idx]} key={idx} />
           {/each}
 
           <Modal
-            personData={figures[4]}
+            personData={caseStudies[4]}
             key={4}
             orientation="h"
             extraCss="lg:ml-auto"
           />
-          <Modal personData={figures[5]} key={5} orientation="h">
+          <Modal personData={caseStudies[5]} key={5} orientation="h">
             There is not a lot of information available about Roum Shah. A
             newspaper clipping from the April 23, 1914 issue of The Sun
             indicates that Roum Shah was the co-author of a pamphlet, “The

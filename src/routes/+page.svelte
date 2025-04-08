@@ -1,6 +1,6 @@
 <script lang="ts">
   import { base } from "$app/paths";
-  import { navItems } from "$lib/utils/nav.store.svelte";
+  import { navItems } from "$lib/content/nav";
   import { gsap } from "gsap";
   import { onMount } from "svelte";
   import { goto } from "$app/navigation";

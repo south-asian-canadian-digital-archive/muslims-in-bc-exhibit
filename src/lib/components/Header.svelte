@@ -2,7 +2,7 @@
   import { goto } from "$app/navigation";
   import { page } from "$app/stores";
   import { fade, scale, slide } from "svelte/transition";
-  import { navItems, curTab } from "$lib/utils/nav.store.svelte";
+  import { navItems } from "$lib/content/nav";
   import { base } from "$app/paths";
   
   

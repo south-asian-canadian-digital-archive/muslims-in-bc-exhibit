@@ -1,8 +1,9 @@
 <script lang="ts">
-  import EarlyMigration from "$lib/pages/EarlyMigration.svelte";
-  import Mid20thCentuaryMigration from "$lib/pages/Mid20thCentuaryMigration.svelte";
-  import RecentMigration from "$lib/pages/RecentMigration.svelte";
   import { page } from "$app/state";
+  import CaseStudies from "$lib/pages/new/CaseStudies.svelte";
+  import Early20thCentury from "$lib/pages/new/Early20thCentury.svelte";
+  import Mid20thCentury from "$lib/pages/new/Mid20thCentury.svelte";
+  import RecentTimeline from "$lib/pages/new/RecentTimeline.svelte";
 </script>
 
 <svelte:head>
@@ -14,10 +15,12 @@
   >
 </svelte:head>
 
-{#if page.params.id === "early-migration"}
-  <EarlyMigration />
-{:else if page.params.id === "mid-20th-century-migration"}
-  <Mid20thCentuaryMigration />
-{:else if page.params.id === "recent-migration-to-canada"}
-  <RecentMigration />
+{#if page.params.id === "early-20th-century"}
+  <Early20thCentury />
+{:else if page.params.id === "mid-20th-century"}
+  <Mid20thCentury />
+{:else if page.params.id === "recent-timeline"}
+  <RecentTimeline />
+{:else if page.params.id === "case-studies"}
+  <CaseStudies />
 {/if}

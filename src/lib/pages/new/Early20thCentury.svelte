@@ -1,8 +1,6 @@
 <script lang="ts">
   import { base } from "$app/paths";
   import Image from "$lib/components/Image.svelte";
-  import Modal from "$lib/components/Modal.svelte";
-  import { figures } from "$lib/content/early-migration.content";
 </script>
 
 <main class="py-32 w-[99vw] flex flex-col gap-10">
@@ -85,7 +83,9 @@
         racist. However, the court was surprised to learn that Rahim was actually
         a citizen of Honoluulu and therefore, could not be arrested! Further information
         on Rahim can be found under the section on
-        <a href="."> Case Studies: Hidden Histories. </a>
+        <a href="{base}/history/case-studies#husain-rahim">
+          Case Studies: Hidden Histories.
+        </a>
       </div>
     </section>
 

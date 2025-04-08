@@ -1,7 +1,6 @@
 <script>
   import { onMount } from "svelte";
   import { gsap } from "gsap";
-  import Image from "$lib/components/Image.svelte";
 
   onMount(() => {
     let domeAnimationTimeline = gsap.timeline({
@@ -93,17 +92,6 @@
       This is also why it is harder to trace the broader history of Muslim
       migration in North America. The sources are quite limited and
       disaggregating them by region is challenging.
-
-      <Image
-        src="/content/new/muslim_migrant_graphic.png"
-        alt="Regions where muslims now live and where they came from"
-        float="right"
-        ><a
-          target="_blank"
-          href="https://www.pewresearch.org/religion/2024/08/19/muslim-migrants-around-the-world/"
-          >https://www.pewresearch.org/religion/2024/08/19/muslim-migrants-around-the-world/</a
-        ></Image
-      >
     </p>
   </section>
 
@@ -126,19 +114,6 @@
       a shift towards a more equitable system, although it took time for the number
       of South Asians immigrating to Canada to rise significantly.
       <br /><br />
-
-      <Image
-        src="/content/new/migration_timeline.png"
-        alt="Migration of muslims after 1967"
-        float="right"
-        class="w-[35vw] h-[50vh]"
-      >
-        <a
-          class="text-xs px-8"
-          href="https://books.google.ca/books?id=3MIZKq1ranYC&lpg=PP1&pg=PA10#v=onepage&q&f=false"
-          >https://books.google.ca/books?id=3MIZKq1ranYC&lpg=PP1&pg=PA10#v=onepage&q&f=false</a
-        >
-      </Image>
 
       The prolonged period of restrictions had a significant impact on the
       demographic makeup of the country. Scholars of migration have noted how

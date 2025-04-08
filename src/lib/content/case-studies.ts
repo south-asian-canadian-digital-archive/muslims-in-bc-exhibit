@@ -1,11 +1,11 @@
 import { base } from "$app/paths";
 
-  let figures: {
-    img: string;
-    name: string;
-    years: string;
-    desc: string;
-  }[] = [
+export let caseStudies: {
+  img: string;
+  name: string;
+  years: string;
+  desc: string;
+}[] = [
     {
       img: `${base}/content/2021_08_01_041.jpg`,
       name: "Husain Rahim",
@@ -123,7 +123,7 @@ import { base } from "$app/paths";
     {
       img: "",
       name: "Imanat Ali Khan",
-      years: "(1887-",
+      years: "(1887-?)",
       desc: `
         Imanat Ali Khan came to Canada at the age of 25 in 1912. He worked in Fraser
         Mills for 2 years, 1912-14, and witnessed the incident of Komagata Maru in
@@ -133,7 +133,7 @@ import { base } from "$app/paths";
         1979 before settling in Canada.
         <br><br>
         Resources: 
-        <ol><li><a href="https://digital.lib.sfu.ca/icohc-5/imanat-ali-khan" aria-label="SFU Digital Library entry on Imanat Ali Khan">https://digital.lib.sfu.ca/icohc-5/imanat-ali-khan</a></li></ol>
+        <ol><li><a href="https://lib-islandora4.lib.sfu.ca/icohc-5/imanat-ali-khan" aria-label="SFU Digital Library entry on Imanat Ali Khan">https://lib-islandora4.lib.sfu.ca/icohc-5/imanat-ali-khan</a></li></ol>
         `,
     },
     {
@@ -217,5 +217,3 @@ import { base } from "$app/paths";
      `,
     },
   ];
-
-export { figures };

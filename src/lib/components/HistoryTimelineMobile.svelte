@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { navItems } from "$lib/utils/nav.store.svelte";
+  import { navItems } from "$lib/content/nav";
   import { goto } from "$app/navigation";
 
   let historyPages = navItems[2].pages?.slice(1) || [];
