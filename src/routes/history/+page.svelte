@@ -61,8 +61,10 @@
         <br /><br />
         Lastly, we also acknowledge that South Asian Muslims in BC is a first of
         its kind project. We hope that this preliminary project will facilitate further,
-        in-depth research projects, and exhibitions in the future. We welcome any
-        feedback which can help us improve this project.
+        in-depth research projects, and exhibitions in the future.
+        <br><br>
+        We welcome any feedback that can help us improve this project by writing
+        to us at <a href="mailto:sasi@ufv.ca">sasi@ufv.ca</a> or contacting us at <a href="tel:+6048544547">604-854-4547.</a>
       </p>
     </div>
   </section>

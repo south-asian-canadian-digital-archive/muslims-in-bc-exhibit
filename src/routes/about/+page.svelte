@@ -76,7 +76,7 @@
           About SASI
         </h1>
         <p class="text-p text-primary-black">
-          The South Asian Studies Institute at the University of the Fraser
+          The <a href="https://ufv.ca/sasi">South Asian Studies Institute</a> at the University of the Fraser
           Valley brings together South Asia scholars and students from diverse
           backgrounds and disciplines to create a nexus point for programs and
           activities that support our vision. <br /> <br /> The Institute

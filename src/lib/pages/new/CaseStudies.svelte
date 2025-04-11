@@ -23,7 +23,7 @@
     pamphlet to protest the forceful deportation of a prominent Ghaddar Party
     member, Bhagwan Singh, from Vancouver/Victoria to Hong Kong.
     <br /><br />
-    When the ship of Komagata Maru landed on the shores of Vancouver in 1914, around
+    When the ship <a href="https://sacda.ca/exhibits/km/index.php">Komagata Maru</a> landed on the shores of Vancouver in 1914, around
     24 muslims were estimated to be on board. The well documented story of one of
     these muslim passengers, Barkatullah, indicates how bravely they were all fighting
     against the imperial world order of their times. The Shore committee formed to

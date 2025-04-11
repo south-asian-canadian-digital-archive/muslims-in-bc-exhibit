@@ -64,12 +64,8 @@
         about South Asian Muslims encouraged an exotic conception of the Muslim
         man who was portrayed as specifically being out to “make Christian
         America Mohammedan”.
-      </div>
-    </section>
 
-    <section>
-      <h2 class="">Komagata Maru and Anticolonial Positions</h2>
-      <div class="">
+        <br /><br />
         However, this task was made much more confusing for researchers by the
         fact that some people would take on pseudonyms when they came to Canada.
         <br /><br />
@@ -86,8 +82,16 @@
         <a href="{base}/history/case-studies#husain-rahim">
           Case Studies: Hidden Histories.
         </a>
+ 
+        
       </div>
     </section>
+
+    <!-- <section>
+      <h2 class="">Komagata Maru and Anticolonial Positions</h2>
+      <div class="">
+     </div>
+    </section> -->
 
     <!-- <section>
       <h2 class=""></h2>
