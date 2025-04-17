@@ -37,3 +37,10 @@ export const navItems: {
 		{ name: "Further Reading", path: `${base}/further-reading` },
 		{ name: "Share your story", path: `${base}/contact` },
 ]
+
+export const historyEntries = [
+		{ id: "early-20th-century" },
+		{ id: "mid-20th-century" },
+		{ id: "recent-timeline" },
+		{ id: "case-studies" }
+	]

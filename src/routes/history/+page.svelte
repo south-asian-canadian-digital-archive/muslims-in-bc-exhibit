@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import { gsap } from "gsap";
   import Image from "$lib/components/Image.svelte";
+  import HistoryNavigation from "$lib/components/HistoryNavigation.svelte";
 
   onMount(() => {
     let domeAnimationTimeline = gsap.timeline({
@@ -163,6 +164,9 @@
       turning point when Asian migrants to Canada increased substantially.
     </p>
   </section>
+
+  <HistoryNavigation currentId={null} />
+
 </main>
 
 <style type="postcss">

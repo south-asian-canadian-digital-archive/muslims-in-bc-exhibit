@@ -4,6 +4,7 @@
   import Early20thCentury from "$lib/pages/new/Early20thCentury.svelte";
   import Mid20thCentury from "$lib/pages/new/Mid20thCentury.svelte";
   import RecentTimeline from "$lib/pages/new/RecentTimeline.svelte";
+  import HistoryNavigation from "$lib/components/HistoryNavigation.svelte";
 </script>
 
 <svelte:head>
@@ -24,3 +25,5 @@
 {:else if page.params.id === "case-studies"}
   <CaseStudies />
 {/if}
+
+<HistoryNavigation bind:currentId={page.params.id} />
