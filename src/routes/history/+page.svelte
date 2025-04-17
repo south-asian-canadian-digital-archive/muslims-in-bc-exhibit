@@ -24,6 +24,7 @@
 
 <main class="pb-40 flex flex-col">
   <section class="!flex-row !gap-14">
+
     <div class="">
       <div class="hidden lg:flex gap-4 px-8 pb-4 w-[35vw] float-right">
         <div
