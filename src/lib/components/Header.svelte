@@ -1,58 +1,39 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { page } from "$app/stores";
-  import { fade, scale, slide } from "svelte/transition";
+  import { page } from "$app/state";
+  import { slide } from "svelte/transition";
   import { navItems } from "$lib/content/nav";
   import { base } from "$app/paths";
 
   import Button from "./ui/button/button.svelte";
-  import { Home } from "svelte-radix";
   import House from "$lib/house.svelte";
-  // Removing the clickOutside import as we'll implement it directly in this file
 
   let mobileNavButtonWidth: number = $state(0);
   let mobileNavOpen = $state(false);
 
-  // Track which menu item's sub-pages are currently expanded
   let expandedItem: string | null = $state(null);
-
-  // Reference to the expanded dropdown container
   let dropdownContainer: HTMLElement | null = $state(null);
-
-  // Reference to the mobile nav container
   let mobileNavContainer: HTMLElement | null = $state(null);
-
-  // Reference to the entire header
   let headerElement: HTMLElement | null = $state(null);
 
-  // Toggle sub-page expansion
   function toggleExpand(itemName: string) {
     expandedItem = expandedItem === itemName ? null : itemName;
   }
-
-  // Close the expanded dropdown
   function closeExpanded() {
     expandedItem = null;
   }
-
-  // Close the mobile navigation
   function closeMobileNav() {
     mobileNavOpen = false;
   }
-
-  // Check if an item should be considered active
   function isItemActive(item: any) {
-    const currentPath = $page.url.pathname;
+    const currentPath = page.url.pathname;
     if (currentPath === item.path) return true;
     if (item.pages && item.pages.some((page: any) => currentPath === page.path))
       return true;
     return false;
   }
-
-  // Function to handle document clicks for closing the expanded menu
   function setupClickOutside(node: HTMLElement, callback = closeExpanded) {
     const handleClick = (event: MouseEvent) => {
-      // If the clicked element is outside both the node and the header, close the menu
       if (
         node &&
         !node.contains(event.target as Node) &&
@@ -62,12 +43,7 @@
         callback();
       }
     };
-
-    // Add the event listener when the component is mounted
     document.addEventListener("mousedown", handleClick, true);
-
-    // Return an object with a destroy method that will be called
-    // when the element is removed from the DOM
     return {
       destroy() {
         document.removeEventListener("mousedown", handleClick, true);
@@ -94,7 +70,7 @@
         <div
           class="h-20 md:w-fit w-min max-w-[calc(100vw-80px)] aspect-auto flex gap-2 pr-4 flex-row items-center"
         >
-          <House class="w-8 h-8" />
+          <!-- <House class="w-8 h-8" /> -->
 
           <img
             src="{base}/UFV_SASI_logo.png"
@@ -192,8 +168,8 @@
         {#each navItems.find((item) => item.name === expandedItem)?.pages || [] as subpage, idx (`${subpage.name}-${idx}`)}
           <button
             class="text-primary-black py-2 px-3 md:px-4 hover:bg-gray-100 rounded transition-colors whitespace-normal md:whitespace-nowrap text-xs md:text-sm flex items-center gap-1 md:gap-2 h-fit"
-            class:font-bold={$page.url.pathname === subpage.path}
-            class:bg-gray-100={$page.url.pathname === subpage.path}
+            class:font-bold={page.url.pathname === subpage.path}
+            class:bg-gray-100={page.url.pathname === subpage.path}
             onclick={() => {
               mobileNavOpen = false;
               expandedItem = null;

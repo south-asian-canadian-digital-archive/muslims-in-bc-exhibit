@@ -10,6 +10,7 @@ export const navItems: {
 		years?: string;
 	}[];
 }[] = [
+		{ name: "Home", path: `${base}/` },
 		{
 			name: "About", path: `${base}/about`, pages: [
 				{ name: "About SASI", path: `${base}/about` },
@@ -31,16 +32,14 @@ export const navItems: {
 				{ name: "Case Studies: Hidden Histories", path: `${base}/history/case-studies` }
 			]
 		},
-
-
 		{ name: "Community Life", path: `${base}/community-life` },
 		{ name: "Further Reading", path: `${base}/further-reading` },
 		{ name: "Share your story", path: `${base}/contact` },
-]
+	]
 
 export const historyEntries = [
-		{ id: "early-20th-century" },
-		{ id: "mid-20th-century" },
-		{ id: "recent-timeline" },
-		{ id: "case-studies" }
-	]
+	{ id: "early-20th-century" },
+	{ id: "mid-20th-century" },
+	{ id: "recent-timeline" },
+	{ id: "case-studies" }
+]
