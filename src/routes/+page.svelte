@@ -61,9 +61,9 @@
   <title>South Asian Muslims in BC</title>
 </svelte:head>
 
-<main class="pb-32 flex flex-col">
+<main class="container px-4 pb-32 flex flex-col">
   <!-- intro -->
-  <section class="py-32 px-8 lg:px-32 w-screen h-min flex gap-14">
+  <section class="py-32 flex gap-14">
     <div class="">
       <div
         class="lg:flex float-right justify-between overflow-clip hidden max-h-[80vh] w-[40vw] ml-6 pb-4"
@@ -85,13 +85,11 @@
         {/each}
       </div>
 
-      <h1
-        class="font-source-serif-4 font-bold text-h2 text-primary-blue leading-[115%] mb-6"
-      >
+      <h1 class="responsive-heading">
         South Asian Muslims in British Columbia
       </h1>
 
-      <div class="border-l-[6px] border-l-secondary-yellow pl-8">
+      <div class="content-section">
         South Asian Muslims in Canada are a diverse group who have advocated for
         spaces to practice their religion and faced challenges along the way.
         This project records their stories to deepen understanding of the

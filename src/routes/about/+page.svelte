@@ -70,9 +70,7 @@
   <section class="bg-secondary-yellow flex flex-col lg:pt-24">
     <div class="flex lg:flex-row flex-col-reverse gap-16 lg:px-32 px-12 pb-24">
       <div class="flex flex-col gap-8">
-        <h1
-          class="text-primary-blue text-h2 font-source-serif-4 font-bold leading-[1.5]"
-        >
+        <h1 class="responsive-heading">
           About SASI
         </h1>
         <p class="text-p text-primary-black">
@@ -159,11 +157,9 @@
   </section>
 
   <!-- team -->
-  <section class=" bg-secondary-yellow flex flex-col" id="team">
+  <section class="bg-secondary-yellow flex flex-col" id="team">
     <div class="lg:p-32 p-12">
-      <h1
-        class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
-      >
+      <h1 class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12">
         Our Team
       </h1>
 

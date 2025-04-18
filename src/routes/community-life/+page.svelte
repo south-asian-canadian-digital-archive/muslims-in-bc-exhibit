@@ -12,10 +12,9 @@
   />
 </svelte:head>
 
-<main class="container mx-auto px-4 py-8 max-w-7xl">
+<main class="container mx-auto px-4 py-32 max-w-7xl">
   <section class="mb-16">
-    <h1 class="">Community Oral Histories</h1>
-    <!-- <div class="h-1 w-20 bg-primary mb-6"></div> -->
+    <h1 class="section-title">Community Oral Histories</h1>
     <p class="text-lg mb-8 max-w-3xl">
       Discover the rich tapestry of stories from South Asian Muslims across
       British Columbia. These oral histories capture personal journeys,
@@ -26,7 +25,7 @@
 
   <!-- Interview Grid -->
   <section>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="card-container">
       {#each interviews as interview}
         <a
           href="{base}/community-life/{interview.id}"
@@ -61,15 +60,5 @@
 </main>
 
 <style type="postcss">
-  section h1 {
-    @apply font-source-serif-4 font-bold text-h1 leading-[1.15] text-primary-blue pb-8;
-  }
-
-  /* section h2 {
-    @apply font-source-serif-4 font-bold text-h3 text-primary-blue;
-  } */
-
-  section > p {
-    @apply border-l-[5px] border-l-secondary-yellow pl-6;
-  }
+  /* Remove common styles that are now in app.css */
 </style>

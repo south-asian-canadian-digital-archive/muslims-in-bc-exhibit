@@ -3,7 +3,7 @@
   import Image from "$lib/components/Image.svelte";
 </script>
 
-<main class="py-32 w-[99vw] flex flex-col gap-10">
+<main class="py-32 flex flex-col gap-10 mx-auto max-w-7xl">
   <h1
     class="lg:px-32 px-4 text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]"
   >
@@ -15,27 +15,7 @@
     <section>
       <h2 class="">Snippets and Partial Stories</h2>
       <div class="">
-        <div class="flex flex-col float-right">
-          <Image
-            src="/content/new/newspaper_clipping2.png"
-            alt="newspaper clipping"
-            class="w-[30vw] h-[50vh]"
-            float="right"
-            ><a href="https://www.newspapers.com/image/1149656287/">
-              https://www.newspapers.com/image/1149656287/
-            </a></Image
-          >
-          <Image
-            src="/content/new/newspaper_clipping.png"
-            alt="newspaper clipping"
-            class="w-[30vw] h-[50vh]"
-            float="right"
-            ><a href="https://www.newspapers.com/image/490371705/"
-              >https://www.newspapers.com/image/490371705/
-            </a>
-            <br /> Vancouver Sun, Sept 24th 1922, p. 35
-          </Image>
-        </div>
+
         In the early years one of the only ways it is possible to tell whether or
         not someone who came from South Asia to BC was a Muslim was by assessing
         whether or not their name was a Muslim one. This name could be mentioned
@@ -83,7 +63,27 @@
           Case Studies: Hidden Histories.
         </a>
  
-        
+         <div class="flex flex-row">
+          <Image
+            src="/content/new/newspaper_clipping2.png"
+            alt="newspaper clipping"
+            class="w-[30vw]"
+            float="right"
+            ><a href="https://www.newspapers.com/image/1149656287/">
+              https://www.newspapers.com/image/1149656287/
+            </a></Image
+          >
+          <Image
+            src="/content/new/newspaper_clipping.png"
+            alt="newspaper clipping"
+            class="w-[30vw]"
+            float="right"
+            ><a href="https://www.newspapers.com/image/490371705/"
+              >https://www.newspapers.com/image/490371705/
+            </a>
+            <br /> Vancouver Sun, Sept 24th 1922, p. 35
+          </Image>
+        </div>       
       </div>
     </section>
 

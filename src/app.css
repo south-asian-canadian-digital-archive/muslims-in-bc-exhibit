@@ -24,7 +24,7 @@
     --destructive-foreground: 0 0% 98%;
     --ring: 0 0% 3.9%;
     --radius: 0.5rem;
-	--sidebar-background: 0 0% 98%;
+    --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
@@ -54,7 +54,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --ring: 0 0% 83.1%;
-	--sidebar-background: 240 5.9% 10%;
+    --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
@@ -69,46 +69,63 @@
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-primary-foreground text-primary-black font-martel;
   }
-}
-@layer base {
-  * {
-    @apply border-border;
+
+  .dome {
+    mask-image: url("/Vector.svg");
+    -webkit-mask-image: url("/Vector.svg");
+    mask-size: 100% 100%;
   }
-  body {
-    @apply bg-background text-primary-black font-martel;
+
+  a {
+    @apply text-primary-blue hover:underline break-all;
   }
-}
 
-.dome {
-  mask-image: url("/Vector.svg");
-  -webkit-mask-image: url("/Vector.svg");
-  mask-size: 100% 100%;
-}
+  .history>section {
+    @apply pb-16 first:pt-16 flex flex-col gap-12;
+  }
 
-a {
-  @apply text-primary-blue hover:underline break-all;
-}
+  .history>section>h2 {
+    @apply text-h4 font-bold font-source-serif-4 text-center bg-secondary-yellow leading-[1.15] py-8;
+  }
 
-.history>section {
-  @apply pb-16 first:pt-16 flex flex-col gap-12;
-}
+  .history>section>div,
+  .desc-text {
+    @apply  mx-4 px-4 lg:px-12 py-4 border-l-[4px] border-secondary-yellow;
+  }
 
-.history>section>h2 {
-  @apply text-h4 font-bold font-source-serif-4 text-center bg-secondary-yellow leading-[1.15] py-8;
-}
+  .history h1 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-h1 break-words font-source-serif-4 font-bold text-primary-blue pb-8;
+  }
 
-.history>section>div,
-.desc-text {
-  @apply lg:mx-32 mx-4 px-4 lg:px-12 py-4 border-l-[4px] border-secondary-yellow;
-}
+  .responsive-heading {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-h1 break-words text-primary-blue font-source-serif-4 font-bold leading-[1.15] pb-8;
+  }
 
-ol {
-  @apply pl-8;
-}
+  .section-title {
+    @apply font-source-serif-4 font-bold leading-[1.15] text-primary-blue pb-8 text-2xl sm:text-3xl md:text-4xl lg:text-h2;
+  }
 
-ol>li {
-  @apply list-decimal;
+  .content-section {
+    @apply border-l-[6px] border-l-secondary-yellow pl-8 mb-8;
+  }
+
+  .card-container {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+
+  .standard-section {
+    @apply mb-16;
+  }
+
+  ol {
+    @apply pl-8;
+  }
+
+  ol>li {
+    @apply list-decimal;
+  }
 }

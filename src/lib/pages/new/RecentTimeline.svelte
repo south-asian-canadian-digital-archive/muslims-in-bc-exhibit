@@ -1,4 +1,4 @@
-<main class="py-32 w-[99vw] flex flex-col gap-10">
+<main class="py-32 mx-auto max-w-7xl flex flex-col gap-10">
   <h1
     class="lg:px-32 px-4 text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]"
   >
