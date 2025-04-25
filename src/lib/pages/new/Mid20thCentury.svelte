@@ -5,7 +5,7 @@
 
 <main class="py-32 flex flex-col gap-10 mx-auto">
   <h1
-    class="lg:px-32 px-4 page-title"
+    class="px-4 lg:px-0 page-title"
   >
     Mid 20th century migration (1962-2001)
   </h1>
