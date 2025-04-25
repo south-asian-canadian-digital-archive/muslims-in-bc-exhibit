@@ -65,7 +65,7 @@
   </div>
 {/snippet}
 
-<main class="lg:py-20 flex flex-col gap-16">
+<main class="lg:py-20 flex flex-col gap-16 !max-w-full !m-0">
   <!-- heading -->
   <section class="bg-secondary-yellow flex flex-col lg:pt-24">
     <div class="flex lg:flex-row flex-col-reverse gap-16 lg:px-32 px-12 pb-24">

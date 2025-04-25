@@ -12,9 +12,9 @@
   />
 </svelte:head>
 
-<main class="container mx-auto px-4 py-32 max-w-7xl">
+<main class="container px-4 py-32">
   <section class="mb-16">
-    <h1 class="section-title">Community Oral Histories</h1>
+    <h1 class="page-title">Community Oral Histories</h1>
     <p class="text-lg mb-8 max-w-3xl">
       Discover the rich tapestry of stories from South Asian Muslims across
       British Columbia. These oral histories capture personal journeys,

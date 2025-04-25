@@ -6,7 +6,7 @@
 
 <main class="py-32 mx-auto max-w-7xl flex flex-col gap-10">
   <h1
-    class="lg:px-32 px-4 text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]"
+    class="lg:px-32 px-4 page-title"
   >
     Case Studies: Hidden Histories
   </h1>

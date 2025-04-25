@@ -85,7 +85,7 @@
         {/each}
       </div>
 
-      <h1 class="responsive-heading">
+      <h1 class="page-title">
         South Asian Muslims in British Columbia
       </h1>
 

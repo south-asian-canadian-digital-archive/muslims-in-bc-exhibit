@@ -3,9 +3,9 @@
   import Image from "$lib/components/Image.svelte";
 </script>
 
-<main class="py-32 flex flex-col gap-10 mx-auto max-w-7xl">
+<main class="py-32 flex flex-col gap-10 mx-auto">
   <h1
-    class="lg:px-32 px-4 text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15]"
+    class="lg:px-32 px-4 page-title"
   >
     Early 20<sup>th</sup> Century Migration
   </h1>

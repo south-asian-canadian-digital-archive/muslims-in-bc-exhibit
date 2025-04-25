@@ -57,7 +57,7 @@
 <Header />
 
 {#key load}
-  <div class="" in:fly={{ y: 600, duration: 800 }}>
+  <div class="*:mx-auto *:max-w-5xl" in:fly={{ y: 600, duration: 800 }}>
     {@render children?.()}
   </div>
 {/key}

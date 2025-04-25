@@ -121,6 +121,10 @@
     @apply mb-16;
   }
 
+  .page-title {
+    @apply text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15] pb-6;
+  }
+
   ol {
     @apply pl-8;
   }

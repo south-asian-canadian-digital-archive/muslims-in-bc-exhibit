@@ -24,7 +24,7 @@
 
 <HistoryNavigation currentId={null} />
 
-<main class="container mx-auto px-4 py-32 max-w-7xl">
+<main class="container mx-auto px-4 py-32 max-w-5xl">
   <section class="flex gap-14">
     <div class="">
       <div
@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <h1 class="responsive-heading">Migration Overview</h1>
+      <h1 class="page-title">Migration Overview</h1>
 
       <div class="content-section">
         The historical and contemporary presence of Muslim communities in Canada
