@@ -28,7 +28,7 @@
   <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     <section>
       <h2>Recent Timeline</h2>
-      <div class="!border-0 !mx-0">
+      <div class="!border-0 !mx-0 !p-0">
         <!-- TODO: make timeline -->
         <iframe
           title="Recent Timeline of Muslims In British Columbia"
