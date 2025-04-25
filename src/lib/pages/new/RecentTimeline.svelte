@@ -32,7 +32,7 @@
         <!-- TODO: make timeline -->
         <iframe
           title="Recent Timeline of Muslims In British Columbia"
-          src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vQq6XreVNJadGkn2skgHj7GBWJhdau9JJso43eaEQsU0DNecwrv7iJ-gYM-5Bz18OTA0KyCqLh62ktE&font=Default&lang=en&initial_zoom=2&height=650"
+          src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vQq6XreVNJadGkn2skgHj7GBWJhdau9JJso43eaEQsU0DNecwrv7iJ-gYM-5Bz18OTA0KyCqLh62ktE&font=Default&lang=en&initial_zoom=0&height=650"
           width="100%"
           height="650"
           allowfullscreen
