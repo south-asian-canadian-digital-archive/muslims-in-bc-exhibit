@@ -70,9 +70,9 @@
 <main class="lg:py-20 flex flex-col gap-16 !max-w-full !m-0">
   <!-- heading -->
   <section class="bg-secondary-yellow flex flex-col lg:pt-24">
-    <div class="flex lg:flex-row flex-col-reverse gap-16 lg:px-32 px-12 pb-24">
-      <div class="flex flex-col gap-8">
-        <h1 class="responsive-heading">About SASI</h1>
+    <div class="flex lg:flex-row flex-col-reverse lg:gap-16 gap-6 lg:min-h-[50vh] lg:px-32 px-12 pb-24">
+      <div class="flex flex-col lg:gap-8">
+        <h1 class="page-title">About SASI</h1>
         <p class="text-p text-primary-black">
           The <a href="https://ufv.ca/sasi" target="_blank" rel="noopener"
             >South Asian Studies Institute</a
@@ -127,7 +127,7 @@
           {/each}
         </div>
       </div>
-      <div class="min-w-[35vw] min-h-[50vh] mt-16 h-auto bg-gray-300 object-cover">
+      <div class="min-w-[35vw] mt-16 h-auto bg-gray-300 object-cover">
         <img src="{base}/AboutCover.JPG" alt="" class="w-full h-full object-cover rounded" />
 
       </div>
