@@ -54,12 +54,12 @@
 
 <nav
   bind:this={headerElement}
-  class="sticky top-0 z-[9999] flex flex-col items-center bg-white"
+  class="sticky top-0 z-[9999] flex flex-col items-center bg-white border-b-2 border-b-[#E3E7AF]"
 >
   <div
-    class="min-h-24 lg:px-32 px-4 flex lg:flex-row md:flex-row flex-col w-full items-center justify-between text-primary-black text-sm font-bold font-martel border-b-2 border-b-[#E3E7AF] overflow-x-hidden"
+    class="min-h-24 px-4 mx-auto max-w-6xl flex lg:flex-row flex-col w-full lg:items-center justify-between text-primary-black text-sm font-bold font-martel overflow-x-hidden"
   >
-    <div class="md:max-w-[25vw] h-full">
+    <div class="lg:max-w-[25vw] h-full">
       <a
         href="{base}/"
         onclick={(e) => {
@@ -68,13 +68,13 @@
         }}
       >
         <div
-          class="h-20 md:w-fit w-min max-w-[calc(100vw-80px)] aspect-auto flex gap-2 pr-4 flex-row items-center"
+          class="lg:h-20 h-24 w-fit aspect-auto flex gap-2 pr-4 flex-row items-center"
         >
           <!-- <House class="w-8 h-8" /> -->
 
           <img
             src="{base}/UFV_SASI_logo.png"
-            class="h-auto w-1/2 max-w-[40vw]"
+            class="h-auto w-1/2 lg:max-w-[40vw]"
             alt=""
           />
           <!-- <img
@@ -87,7 +87,7 @@
     </div>
 
     <button
-      class="md:hidden bg-[#F99D2A] py-8 px-6 absolute right-2 top-0 z-10"
+      class="lg:hidden bg-[#F99D2A] py-8 px-6 absolute right-2 top-0 z-10"
       bind:clientWidth={mobileNavButtonWidth}
       onclick={() => (mobileNavOpen = !mobileNavOpen)}
     >
@@ -103,7 +103,7 @@
         bind:this={mobileNavContainer}
         use:setupClickOutside={closeMobileNav}
         transition:slide
-        class="flex sm:flex-row flex-wrap justify-center w-full md:w-auto gap-6 md:gap-8 items-center md:py-0 py-6 md:mt-0 mt-4 md:border-0 border-t-2 border-t-[#E3E7AF] overflow-x-hidden"
+        class="flex flex-wrap justify-center w-full lg:w-auto gap-6 lg:gap-8 items-center lg:py-0 py-6 md:mt-0 mt-4 lg:border-0 border-t-2 border-t-[#E3E7AF] overflow-x-hidden"
       >
         {#each navItems as item, idxi}
           {#if idxi === navItems.length - 1}
