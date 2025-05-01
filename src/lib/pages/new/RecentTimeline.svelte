@@ -39,6 +39,7 @@
           historical narrative.
         </p>
 
+        <!-- TODO: After publishing website, change photo links to production from vercel -->
         <iframe
           title="Recent Timeline of Muslims In British Columbia"
           src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vQq6XreVNJadGkn2skgHj7GBWJhdau9JJso43eaEQsU0DNecwrv7iJ-gYM-5Bz18OTA0KyCqLh62ktE&font=Default&lang=en&initial_zoom=0&height=800"

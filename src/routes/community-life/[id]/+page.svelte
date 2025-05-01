@@ -106,8 +106,8 @@
         </Carousel.Content>
 
         {#if interview.images.length > 1}
-          <Carousel.Previous />
-          <Carousel.Next />
+          <Carousel.Previous class="left-2 top-full lg:-left-12 lg:top-1/2" />
+          <Carousel.Next class="right-2 top-full lg:-right-12 lg:top-1/2" />
 
           <!-- Carousel indicators -->
           <div class="flex justify-center gap-1 mt-4">
