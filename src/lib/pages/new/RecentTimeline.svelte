@@ -1,7 +1,5 @@
 <main class="py-32 mx-auto flex flex-col gap-10">
-  <h1
-    class="px-4 lg:px-0 page-title"
-  >
+  <h1 class="px-4 lg:px-0 page-title">
     Canada and South Asian Canadian Muslims after 9/11
   </h1>
   <div class="desc-text">
@@ -29,12 +27,23 @@
     <section>
       <h2>Recent Timeline</h2>
       <div class="!border-0 !mx-0 !p-0">
-        <!-- TODO: make timeline -->
+        <p>
+          This interactive timeline showcases key events affecting Muslims in
+          British Columbia after 9/11. Navigate through the timeline by clicking
+          the arrows on either side or by scrolling horizontally. Each slide
+          contains information about a specific event, including dates,
+          descriptions, and related media. Click on images to enlarge them. The
+          timeline is organized chronologically from left to right, with major
+          events highlighted. For the best experience, we recommend viewing one
+          slide at a time and reading each event as part of the larger
+          historical narrative.
+        </p>
+
         <iframe
           title="Recent Timeline of Muslims In British Columbia"
-          src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vQq6XreVNJadGkn2skgHj7GBWJhdau9JJso43eaEQsU0DNecwrv7iJ-gYM-5Bz18OTA0KyCqLh62ktE&font=Default&lang=en&initial_zoom=0&height=650"
+          src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vQq6XreVNJadGkn2skgHj7GBWJhdau9JJso43eaEQsU0DNecwrv7iJ-gYM-5Bz18OTA0KyCqLh62ktE&font=Default&lang=en&initial_zoom=0&height=800"
           width="100%"
-          height="650"
+          height="800"
           allowfullscreen
           frameborder="0"
         ></iframe>
