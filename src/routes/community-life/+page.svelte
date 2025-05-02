@@ -31,7 +31,7 @@
       {#each interviews as interview}
         <a
           href="{base}/community-life/{interview.id}"
-          class="group bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          class="group bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 !no-underline"
         >
           <div class="relative aspect-video">
             <img
