@@ -54,10 +54,10 @@
 
 <nav
   bind:this={headerElement}
-  class="sticky top-0 z-[9999] flex flex-col items-center bg-white border-b-2 border-b-[#E3E7AF]"
+  class="sticky top-0 z-[60] flex flex-col items-center bg-white border-b-2 border-b-[#E3E7AF]"
 >
   <div
-    class="min-h-24 px-4 mx-auto max-w-6xl flex lg:flex-row flex-col w-full lg:items-center justify-between text-primary-black text-sm font-bold font-martel overflow-x-hidden"
+    class="min-h-24 px-4 mx-auto max-w-6xl xl:max-w-7xl flex lg:flex-row flex-col w-full lg:items-center justify-between text-primary-black text-sm font-bold font-martel overflow-x-hidden"
   >
     <div class="lg:max-w-[25vw] h-full">
       <a
