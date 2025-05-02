@@ -114,7 +114,7 @@
         </div>
       </div>
       <div class="min-w-[35vw] mt-16 h-auto bg-gray-300 object-cover">
-        <img src="{base}/AboutCover.JPG" alt="" class="w-full h-full object-cover rounded" />
+        <img src="{base}/AboutCover.jpg" alt="" class="w-full h-full object-cover rounded" />
 
       </div>
     </div>
