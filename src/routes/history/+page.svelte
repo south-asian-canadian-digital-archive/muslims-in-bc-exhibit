@@ -24,7 +24,7 @@
 
 <HistoryNavigation currentId={null} />
 
-<main class="container mx-auto px-4 py-32 max-w-5xl">
+<main class="container px-4 py-32">
   <section class="flex gap-14">
     <div class="">
       <div

@@ -36,7 +36,7 @@
   />
 </svelte:head>
 
-<main class="container mx-auto px-4 py-8 max-w-7xl">
+<main class="container px-4 py-8 ">
   <button
     onclick={goBack}
     class="flex items-center mb-10 text-primary hover:text-primary-dark transition-colors"

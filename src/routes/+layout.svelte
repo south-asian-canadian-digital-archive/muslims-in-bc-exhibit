@@ -8,6 +8,8 @@
   import { fade, fly } from "svelte/transition";
   import { onMount } from "svelte";
   import { navigating } from "$app/state";
+  import * as Tooltip from "$lib/components/ui/tooltip";
+  import Lightbox from "$lib/components/Lightbox.svelte";
   interface Props {
     children?: import("svelte").Snippet;
   }
@@ -54,11 +56,16 @@
 
 <svelte:window bind:scrollY />
 
+<Lightbox />
+
 <Header />
 
 {#key load}
-  <div class="*:mx-auto *:max-w-5xl" in:fly={{ y: 600, duration: 800 }}>
-    {@render children?.()}
+  <div
+    class="*:mx-auto *:max-w-5xl *:2xl:max-w-7xl"
+    in:fly={{ y: 600, duration: 800 }}
+  >
+      {@render children?.()}
   </div>
 {/key}
 <Footer />

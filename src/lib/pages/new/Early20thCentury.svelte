@@ -3,10 +3,8 @@
   import Image from "$lib/components/Image.svelte";
 </script>
 
-<main class="py-32 flex flex-col gap-10 mx-auto">
-  <h1
-    class="px-4 lg:px-0 page-title"
-  >
+<main class="py-32 flex flex-col gap-10">
+  <h1 class="px-4 lg:px-0 page-title">
     Early 20<sup>th</sup> Century Migration
   </h1>
   <!-- <p class="desc-text"></p> -->
@@ -15,43 +13,43 @@
     <section>
       <h2 class="">Snippets and Partial Stories</h2>
       <div class="">
-          <Image
-            src="/content/new/newspaper_clipping2.png"
-            alt="newspaper clipping"
-            class="w-[30vw]"
-            float="right"
-            ><a href="https://www.newspapers.com/image/1149656287/">
-              https://www.newspapers.com/image/1149656287/
-            </a></Image
-          >
+        <Image
+          src="/content/new/newspaper_clipping2.png"
+          alt="newspaper clipping"
+          class="w-1/2"
+          float="right"
+          ><a href="https://www.newspapers.com/image/1149656287/">
+            https://www.newspapers.com/image/1149656287/
+          </a></Image
+        >
 
-
-        In the early years one of the only ways it is possible to tell whether or
-        not someone who came from South Asia to BC was a Muslim was by assessing
-        whether or not their name was a Muslim one. This name could be mentioned
-        in one of the many primary documents our researchers went through. These
-        included newspapers, meeting minutes or autobiographies. Some of these traces
-        or names found in newspapers give us just a brief glimpse into what like
-        was like for South Asian Muslims in BC at the time. For instance, this ad
-        from 1912 tells us that a man with a Muslim name had set up shop giving herbal
-        remedies for multiple ailments and was advertising his herbs as being “Indian”
-        and, therefore, “noted throughout the British Empire for being superior to
-        drugs for many diseases.” If his testimonials are anything to go by, he had
-        many happy customers around Grenville Street! A small collection of these
-        snippets can be read in greater detail in our section on Case Studies: Hidden
+        In the early years one of the only ways it is possible to tell whether
+        or not someone who came from South Asia to BC was a Muslim was by
+        assessing whether or not their name was a Muslim one. This name could be
+        mentioned in one of the many primary documents our researchers went
+        through. These included newspapers, meeting minutes or autobiographies.
+        Some of these traces or names found in newspapers give us just a brief
+        glimpse into what like was like for South Asian Muslims in BC at the
+        time. For instance, this ad from 1912 tells us that a man with a Muslim
+        name had set up shop giving herbal remedies for multiple ailments and
+        was advertising his herbs as being “Indian” and, therefore, “noted
+        throughout the British Empire for being superior to drugs for many
+        diseases.” If his testimonials are anything to go by, he had many happy
+        customers around Grenville Street! A small collection of these snippets
+        can be read in greater detail in our section on Case Studies: Hidden
         Histories
         <br /><br />
 
-          <Image
-            src="/content/new/newspaper_clipping.png"
-            alt="newspaper clipping"
-            class="w-[30vw]"
-            float="left"
-            ><a href="https://www.newspapers.com/image/490371705/"
-              >https://www.newspapers.com/image/490371705/
-            </a>
-            <br /> Vancouver Sun, Sept 24th 1922, p. 35
-          </Image>
+        <Image
+          src="/content/new/newspaper_clipping.png"
+          alt="newspaper clipping"
+          class="w-1/2"
+          float="left"
+          ><a href="https://www.newspapers.com/image/490371705/"
+            >https://www.newspapers.com/image/490371705/
+          </a>
+          <br /> Vancouver Sun, Sept 24th 1922, p. 35
+        </Image>
 
         In addition to the stories of early Muslim migrants, it is important to
         note the reception they received within Canada. In the 1920s the idea of
@@ -66,8 +64,8 @@
         America Mohammedan”.
 
         <br /><br />
-        However, this task was made much more confusing for researchers by the
-        fact that some people would take on pseudonyms when they came to Canada.
+        However, this task was made much more confusing for researchers by the fact
+        that some people would take on pseudonyms when they came to Canada.
         <br /><br />
         Such was the case of Husain Rahim, whose real name was Chagan Khairaj Varma.
         Husain Rahim was helping South Asians workers in British Columbia and was
@@ -82,10 +80,8 @@
         <a href="{base}/history/case-studies#husain-rahim">
           Case Studies: Hidden Histories.
         </a>
- 
-         <div class="flex flex-row">
 
-        </div>       
+        <div class="flex flex-row"></div>
       </div>
     </section>
 
