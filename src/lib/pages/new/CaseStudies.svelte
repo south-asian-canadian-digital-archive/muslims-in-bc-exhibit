@@ -11,11 +11,11 @@
     Case Studies: Hidden Histories
   </h1>
   <p class="desc-text">
-    Due to the lack of archives, we find only small traces of early <a href="https://en.wikipedia.org/wiki/South_Asian_Canadians" target="_blank" rel="noopener">South Asian
-    muslim</a> presence in B.C. For example, a memorandum sent by <a href="https://en.wikipedia.org/wiki/William_Charles_Hopkinson" target="_blank" rel="noopener">W.C Hopkinson</a> to
+    Due to the lack of archives, we find only small traces of early <a target="_blank" rel="noopener">South Asian
+    muslim</a> presence in B.C. For example, a memorandum sent by <a target="_blank" rel="noopener">W.C Hopkinson</a> to
     W.W Cory in 1912 indicates that the small number of muslims living in
-    <a href="https://en.wikipedia.org/wiki/Vancouver" target="_blank" rel="noopener">Vancouver</a> at that time raised 900$ and sent it to the "Grand Vizier of
-    <a href="https://en.wikipedia.org/wiki/Ottoman_Empire" target="_blank" rel="noopener">Turkey</a>" for the "brave soldiers" of the <a href="https://en.wikipedia.org/wiki/Ottoman_Empire" target="_blank" rel="noopener">Ottoman empire</a>. Similarly, a name,
+    <a target="_blank" rel="noopener">Vancouver</a> at that time raised 900$ and sent it to the "Grand Vizier of
+    <a target="_blank" rel="noopener">Turkey</a>" for the "brave soldiers" of the <a target="_blank" rel="noopener">Ottoman empire</a>. Similarly, a name,
     Roum Shah, emerged in a 1914 newspaper clipping of The Sun. There is not a
     lot of information available about Roum Shah, but the newspaper clipping
     indicates that he was a co-author of a pamphlet called "The Tyranny of the

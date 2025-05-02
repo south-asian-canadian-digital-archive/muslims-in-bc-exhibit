@@ -39,7 +39,7 @@
 <main class="container mx-auto px-4 py-8 max-w-7xl">
   <button
     onclick={goBack}
-    class="flex items-center mb-6 text-primary hover:text-primary-dark transition-colors"
+    class="flex items-center mb-10 text-primary hover:text-primary-dark transition-colors"
   >
     <ArrowLeft class="mr-1" />
     Back to all interviews
@@ -52,7 +52,7 @@
 
   <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-10">
     <div
-      class="lg:col-span-3 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden"
+      class="lg:col-span-3 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden h-min"
     >
       <div class="aspect-video w-full">
         <iframe

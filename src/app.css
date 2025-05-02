@@ -67,7 +67,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border text-justify;
   }
 
   body {
@@ -81,7 +81,7 @@
   }
 
   a {
-    @apply text-primary-blue hover:underline break-all;
+    @apply text-primary-blue hover:underline;
   }
 
   .history>section {
@@ -89,12 +89,12 @@
   }
 
   .history>section>h2 {
-    @apply text-h4 font-bold font-source-serif-4 text-center bg-secondary-yellow leading-[1.15] py-8;
+    @apply text-h4 font-bold font-source-serif-4 !text-center bg-secondary-yellow leading-[1.15] py-8 ;
   }
 
   .history>section>div,
   .desc-text {
-    @apply  mx-4 px-4 lg:px-12 py-4 border-l-[4px] border-secondary-yellow;
+    @apply  mx-4 px-4 lg:px-12 py-4 border-l-[4px] border-secondary-yellow break-words;
   }
 
   .history h1 {
@@ -110,7 +110,7 @@
   }
 
   .content-section {
-    @apply border-l-[6px] border-l-secondary-yellow pl-8 mb-8;
+    @apply border-l-[6px] border-l-secondary-yellow pl-8 mb-8 break-words;
   }
 
   .card-container {
@@ -122,7 +122,7 @@
   }
 
   .page-title {
-    @apply text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15] pb-6;
+    @apply text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.15] pb-6 !text-left;
   }
 
   ol {

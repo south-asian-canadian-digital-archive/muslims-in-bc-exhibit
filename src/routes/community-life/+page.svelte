@@ -15,13 +15,13 @@
 <main class="container px-4 py-32">
   <section class="mb-16">
     <h1 class="page-title">Community Oral Histories</h1>
-    <p class="text-lg mb-8 max-w-3xl">
-      Discover the rich tapestry of stories from <a href="https://en.wikipedia.org/wiki/South_Asian_Canadians" target="_blank" rel="noopener">South Asian Muslims</a> across
-      <a href="https://en.wikipedia.org/wiki/British_Columbia" target="_blank" rel="noopener">British Columbia</a>. These <a href="https://en.wikipedia.org/wiki/Oral_history" target="_blank" rel="noopener">oral histories</a> capture personal journeys,
-      community milestones, and cultural experiences that have shaped the <a href="https://en.wikipedia.org/wiki/Muslim_Canadians" target="_blank" rel="noopener">Muslim
-      experience in BC</a>. Through these narratives, we gain insight into how <a href="https://en.wikipedia.org/wiki/Religious_identity" target="_blank" rel="noopener">religious identity</a>, 
-      <a href="https://en.wikipedia.org/wiki/Cultural_identity" target="_blank" rel="noopener">cultural heritage</a>, and <a href="https://en.wikipedia.org/wiki/Immigration_to_Canada" target="_blank" rel="noopener">immigration experiences</a> have contributed to the vibrant 
-      <a href="https://en.wikipedia.org/wiki/Multiculturalism_in_Canada" target="_blank" rel="noopener">multicultural fabric</a> of our province.
+    <p class="text-lg mb-8">
+      Discover the rich tapestry of stories from <a target="_blank" rel="noopener">South Asian Muslims</a> across
+      <a target="_blank" rel="noopener">British Columbia</a>. These <a target="_blank" rel="noopener">oral histories</a> capture personal journeys,
+      community milestones, and cultural experiences that have shaped the <a target="_blank" rel="noopener">Muslim
+      experience in BC</a>. Through these narratives, we gain insight into how <a target="_blank" rel="noopener">religious identity</a>, 
+      <a target="_blank" rel="noopener">cultural heritage</a>, and <a target="_blank" rel="noopener">immigration experiences</a> have contributed to the vibrant 
+      <a target="_blank" rel="noopener">multicultural fabric</a> of our province.
     </p>
   </section>
 

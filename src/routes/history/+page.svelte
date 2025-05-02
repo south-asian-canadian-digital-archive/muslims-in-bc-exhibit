@@ -42,25 +42,25 @@
       <h1 class="page-title">Migration Overview</h1>
 
       <div class="content-section">
-        The historical and contemporary presence of <a href="https://en.wikipedia.org/wiki/Muslim_Canadians" target="_blank" rel="noopener">Muslim communities in Canada</a>
+        The historical and contemporary presence of <a target="_blank" rel="noopener">Muslim communities in Canada</a>
         has often remained obscured, unacknowledged, and misrepresented. Their
-        profound contributions to <a href="https://en.wikipedia.org/wiki/Canadian_society" target="_blank" rel="noopener">Canadian society</a> warrant deeper appreciation,
+        profound contributions to <a target="_blank" rel="noopener">Canadian society</a> warrant deeper appreciation,
         acknowledgement, and understanding. Our research project aims to
-        contribute to this cause by focusing on <a href="https://en.wikipedia.org/wiki/South_Asian_Canadians" target="_blank" rel="noopener">South Asian Muslim communities
+        contribute to this cause by focusing on <a target="_blank" rel="noopener">South Asian Muslim communities
         of B.C.</a> We use <a href="https://www.bac-lac.gc.ca/eng/discover/immigration/history-ethnic-cultural/Pages/south-asian.aspx" target="_blank" rel="noopener">archival records</a>, academic works, and personal interviews
         to highlight these, often untold, stories of South Asian Muslim
         communities in B.C.
         <br /><br />
-        Far from being a monolithic religion, <a href="https://en.wikipedia.org/wiki/Islam" target="_blank" rel="noopener">Islam is a mosaic</a>. Its two main sects
-        are <a href="https://en.wikipedia.org/wiki/Sunni_Islam" target="_blank" rel="noopener">Sunni</a> and <a href="https://en.wikipedia.org/wiki/Shia_Islam" target="_blank" rel="noopener">Shia</a>, which further branch out into various sub-sects. Sunni
-        sub-sects include <a href="https://en.wikipedia.org/wiki/Wahhabism" target="_blank" rel="noopener">Wahabi</a>, <a href="https://en.wikipedia.org/wiki/Salafi_movement" target="_blank" rel="noopener">Salafi</a>, <a href="https://en.wikipedia.org/wiki/Barelvi" target="_blank" rel="noopener">Barelvi</a>, and <a href="https://en.wikipedia.org/wiki/Deobandi" target="_blank" rel="noopener">Deobandi</a>. Shia subsects
-        include <a href="https://en.wikipedia.org/wiki/Twelver" target="_blank" rel="noopener">Twelver Shi'ism</a> and <a href="https://en.wikipedia.org/wiki/Ismailism" target="_blank" rel="noopener">Ismailism</a>. <a href="https://en.wikipedia.org/wiki/Sufism" target="_blank" rel="noopener">Sufism</a>, not strictly a sect but
+        Far from being a monolithic religion, <a target="_blank" rel="noopener">Islam is a mosaic</a>. Its two main sects
+        are <a target="_blank" rel="noopener">Sunni</a> and <a target="_blank" rel="noopener">Shia</a>, which further branch out into various sub-sects. Sunni
+        sub-sects include <a target="_blank" rel="noopener">Wahabi</a>, <a target="_blank" rel="noopener">Salafi</a>, <a target="_blank" rel="noopener">Barelvi</a>, and <a target="_blank" rel="noopener">Deobandi</a>. Shia subsects
+        include <a target="_blank" rel="noopener">Twelver Shi'ism</a> and <a target="_blank" rel="noopener">Ismailism</a>. <a target="_blank" rel="noopener">Sufism</a>, not strictly a sect but
         a mystical approach to Islam, is also important. Most South Asian
-        Muslims in the area are Sunni, but many follow <a href="https://en.wikipedia.org/wiki/Sufism" target="_blank" rel="noopener">Sufi practices</a>.
+        Muslims in the area are Sunni, but many follow <a target="_blank" rel="noopener">Sufi practices</a>.
         <br /><br />
         In this virtual exhibit, we seek to narrate the migration history of
-        <a href="https://en.wikipedia.org/wiki/South_Asian_Canadians" target="_blank" rel="noopener">South Asian muslims</a> of <a href="https://en.wikipedia.org/wiki/British_Columbia" target="_blank" rel="noopener">British Columbia</a> while acknowledging
-        this internal diversity of <a href="https://en.wikipedia.org/wiki/Islam" target="_blank" rel="noopener">Islam</a>. We cover three major time
+        <a target="_blank" rel="noopener">South Asian muslims</a> of <a target="_blank" rel="noopener">British Columbia</a> while acknowledging
+        this internal diversity of <a target="_blank" rel="noopener">Islam</a>. We cover three major time
         periods:
       </div>
     </div>

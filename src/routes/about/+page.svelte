@@ -60,7 +60,7 @@
     <div
       class="z-50 -top-4 -left-4 bg-secondary-yellow p-[10%] overflow-auto *:will-change-transform will-change-transform"
     >
-      <h6 class="text-h6 font-bold text-primary-black pb-[4%]">{title}</h6>
+      <h6 class="text-h6 font-bold text-primary-black pb-[4%] text-left">{title}</h6>
       <p class="text-p">{desc}</p>
     </div>
     <div class="bg-[#CED299] bg-secondary-yellowtop-0 left-0">&nbsp;</div>
@@ -74,42 +74,28 @@
       <div class="flex flex-col lg:gap-8">
         <h1 class="page-title">About SASI</h1>
         <p class="text-p text-primary-black">
-          The <a href="https://ufv.ca/sasi" target="_blank" rel="noopener"
-            >South Asian Studies Institute</a
-          >
+          The <a target="_blank" rel="noopener">South Asian Studies Institute</a>
           at the
-          <a href="https://www.ufv.ca/" target="_blank" rel="noopener"
-            >University of the Fraser Valley</a
-          >
+          <a target="_blank" rel="noopener">University of the Fraser Valley</a>
           brings together
-          <a
-            href="https://en.wikipedia.org/wiki/South_Asia"
-            target="_blank"
-            rel="noopener">South Asia</a
-          >
+          <a target="_blank" rel="noopener">South Asia</a>
           scholars and students from diverse backgrounds and disciplines to
           create a nexus point for programs and activities that support our
           vision. <br /> <br /> The Institute fosters inter-disciplinary
           scholarly research, community and public engagement on issues related
           to South Asia and the
-          <a
-            href="https://en.wikipedia.org/wiki/South_Asian_Canadians"
-            target="_blank"
-            rel="noopener">Canadian South Asian Diaspora</a
-          >. The Institute initiates, directs and implements the development,
+          <a target="_blank" rel="noopener">Canadian South Asian Diaspora</a>.
+          The Institute initiates, directs and implements the development,
           maintenance and enhancement of scholarship, research and engagement in
           collaboration with faculty, students and community. The Institute
           takes direction from UFV's strategic goals to be a leader of social,
           cultural, economic and environmentally responsible development in the
-          <a
-            href="https://en.wikipedia.org/wiki/Fraser_Valley"
-            target="_blank"
-            rel="noopener">Fraser Valley</a
-          >. <br /> <br />The Institute is a repository of the pioneering
-          history of immigrant settlers who make up the Canadian South Asian
-          Diaspora. We also undertake much needed contemporary research that
-          benefits academia, members of the community, government, organizations
-          and agencies as well as global scholars and interested persons.
+          <a target="_blank" rel="noopener">Fraser Valley</a>. <br /> <br />The
+          Institute is a repository of the pioneering history of immigrant
+          settlers who make up the Canadian South Asian Diaspora. We also
+          undertake much needed contemporary research that benefits academia,
+          members of the community, government, organizations and agencies as
+          well as global scholars and interested persons.
         </p>
         <div class="flex flex-wrap gap-4">
           {#each [["Meet Our Team", "#team"], ["Advisory Committee", "#committee"], ["Meet Our Partners", "#partners"]] as link, idx}
@@ -163,80 +149,28 @@
       <p
         class="border-r-[4px] border-r-secondary-yellow h-max pr-4 font-martel"
       >
-        The historical and contemporary presence of <a
-          href="https://en.wikipedia.org/wiki/Muslims"
-          target="_blank"
-          rel="noopener">Muslim communities</a
-        >
+        The historical and contemporary presence of <a target="_blank" rel="noopener">Muslim communities</a>
         in
-        <a
-          href="https://en.wikipedia.org/wiki/Canada"
-          target="_blank"
-          rel="noopener">Canada</a
-        >, particularly
-        <a
-          href="https://en.wikipedia.org/wiki/South_Asian_Canadians"
-          target="_blank"
-          rel="noopener">South Asian Muslims</a
-        >
+        <a target="_blank" rel="noopener">Canada</a>, particularly
+        <a target="_blank" rel="noopener">South Asian Muslims</a>
         in B.C., has often been obscured. Our research project focuses on their
         contributions and covers three major timelines: early migration to BC,
         mid-20th-century migration, and recent migration to Canada. Exploring
         the diverse sects and cultural integration of
-        <a
-          href="https://en.wikipedia.org/wiki/Islam"
-          target="_blank"
-          rel="noopener">Islam</a
-        >, including
-        <a
-          href="https://en.wikipedia.org/wiki/Sunni_Islam"
-          target="_blank"
-          rel="noopener">Sunni</a
-        >
+        <a target="_blank" rel="noopener">Islam</a>, including
+        <a target="_blank" rel="noopener">Sunni</a>
         sub-sects like
-        <a
-          href="https://en.wikipedia.org/wiki/Wahhabism"
-          target="_blank"
-          rel="noopener">Wahabi</a
-        >,
-        <a
-          href="https://en.wikipedia.org/wiki/Salafi_movement"
-          target="_blank"
-          rel="noopener">Salafi</a
-        >,
-        <a
-          href="https://en.wikipedia.org/wiki/Barelvi"
-          target="_blank"
-          rel="noopener">Barelvi</a
-        >, and
-        <a
-          href="https://en.wikipedia.org/wiki/Deobandi"
-          target="_blank"
-          rel="noopener">Deobandi</a
-        >, as well as
-        <a
-          href="https://en.wikipedia.org/wiki/Shia_Islam"
-          target="_blank"
-          rel="noopener">Shia</a
-        >
+        <a target="_blank" rel="noopener">Wahabi</a>,
+        <a target="_blank" rel="noopener">Salafi</a>,
+        <a target="_blank" rel="noopener">Barelvi</a>, and
+        <a target="_blank" rel="noopener">Deobandi</a>, as well as
+        <a target="_blank" rel="noopener">Shia</a>
         sub-sects like
-        <a
-          href="https://en.wikipedia.org/wiki/Twelver"
-          target="_blank"
-          rel="noopener">Twelver Shi'ism</a
-        >
+        <a target="_blank" rel="noopener">Twelver Shi'ism</a>
         and
-        <a
-          href="https://en.wikipedia.org/wiki/Ismailism"
-          target="_blank"
-          rel="noopener">Ismailism</a
-        >, along with
-        <a
-          href="https://en.wikipedia.org/wiki/Sufism"
-          target="_blank"
-          rel="noopener">Sufism</a
-        >, we aim to promote understanding and welcome feedback for future
-        enhancements.
+        <a target="_blank" rel="noopener">Ismailism</a>, along with
+        <a target="_blank" rel="noopener">Sufism</a>, we aim to promote
+        understanding and welcome feedback for future enhancements.
       </p>
     </div>
   </section>
@@ -260,7 +194,7 @@
                 class="lg:w-[20vw] lg:h-[20vw] rounded-lg aspect-square bg-white relative"
               >
                 <span
-                  class="top-0 left-0 p-2 bg-secondar-teal rounded-t-lg text-white font-martel absolute w-full z-20"
+                  class="top-0 left-0 p-2 bg-secondar-teal rounded-t-lg text-white font-martel absolute w-full z-20 text-center"
                   >{person.name}</span
                 >
                 <span
