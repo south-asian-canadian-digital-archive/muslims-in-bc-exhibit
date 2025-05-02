@@ -15,6 +15,16 @@
     <section>
       <h2 class="">Snippets and Partial Stories</h2>
       <div class="">
+          <Image
+            src="/content/new/newspaper_clipping2.png"
+            alt="newspaper clipping"
+            class="w-[30vw]"
+            float="right"
+            ><a href="https://www.newspapers.com/image/1149656287/">
+              https://www.newspapers.com/image/1149656287/
+            </a></Image
+          >
+
 
         In the early years one of the only ways it is possible to tell whether or
         not someone who came from South Asia to BC was a Muslim was by assessing
@@ -30,8 +40,18 @@
         many happy customers around Grenville Street! A small collection of these
         snippets can be read in greater detail in our section on Case Studies: Hidden
         Histories
-
         <br /><br />
+
+          <Image
+            src="/content/new/newspaper_clipping.png"
+            alt="newspaper clipping"
+            class="w-[30vw]"
+            float="left"
+            ><a href="https://www.newspapers.com/image/490371705/"
+              >https://www.newspapers.com/image/490371705/
+            </a>
+            <br /> Vancouver Sun, Sept 24th 1922, p. 35
+          </Image>
 
         In addition to the stories of early Muslim migrants, it is important to
         note the reception they received within Canada. In the 1920s the idea of
@@ -64,25 +84,7 @@
         </a>
  
          <div class="flex flex-row">
-          <Image
-            src="/content/new/newspaper_clipping2.png"
-            alt="newspaper clipping"
-            class="w-[30vw]"
-            float="right"
-            ><a href="https://www.newspapers.com/image/1149656287/">
-              https://www.newspapers.com/image/1149656287/
-            </a></Image
-          >
-          <Image
-            src="/content/new/newspaper_clipping.png"
-            alt="newspaper clipping"
-            class="w-[30vw]"
-            float="right"
-            ><a href="https://www.newspapers.com/image/490371705/"
-              >https://www.newspapers.com/image/490371705/
-            </a>
-            <br /> Vancouver Sun, Sept 24th 1922, p. 35
-          </Image>
+
         </div>       
       </div>
     </section>

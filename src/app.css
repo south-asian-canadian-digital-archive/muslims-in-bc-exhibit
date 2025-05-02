@@ -94,7 +94,7 @@
 
   .history>section>div,
   .desc-text {
-    @apply  mx-4 px-4 lg:px-12 py-4 border-l-[4px] border-secondary-yellow break-words;
+    @apply  mx-4 px-4 lg:px-12 py-4 border-l-[4px] border-secondary-yellow break-words leading-relaxed;
   }
 
   .history h1 {
@@ -110,7 +110,7 @@
   }
 
   .content-section {
-    @apply border-l-[6px] border-l-secondary-yellow pl-8 mb-8 break-words;
+    @apply border-l-[6px] border-l-secondary-yellow pl-8 mb-8 break-words leading-relaxed;
   }
 
   .card-container {

@@ -15,7 +15,7 @@
         under the section “Protecting the Northern Border.” Scholars have argued
         that Canada’s response to 9/11 was affected by the need to appease the
         US so as to keep people and good flowing across the border. In
-        2001However, the repercussions of these policies was an increase in
+        2001, the repercussions of these policies was an increase in
         racial profiling, particularly of Muslim men, who in some very high
         profile cases became the victims of inaccurate information sharing
         between Canada and the US resulting in the torture of these Canadian
