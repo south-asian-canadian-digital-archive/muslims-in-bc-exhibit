@@ -36,13 +36,15 @@
           {caseStudy.years}
         </h2>
         <div class="">
+          {#if caseStudy.img}
+            <Image
+              src={caseStudy.img}
+              alt="Image depicting {caseStudy.name}"
+              class="w-[30vw]"
+              float="right"
+            />
+          {/if}
           {@html caseStudy.desc}
-          <Image
-            src={caseStudy.img}
-            alt="newspaper clipping"
-            class="w-[30vw]"
-            float="right"
-          />
         </div>
       </section>
     {/each}
