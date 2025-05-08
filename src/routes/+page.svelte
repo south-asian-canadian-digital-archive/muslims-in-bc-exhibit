@@ -66,11 +66,11 @@
   <section class="py-32 flex gap-14">
     <div class="">
       <div
-        class="lg:flex float-right justify-between overflow-clip hidden max-h-[80vh] w-[40vw] ml-6 pb-4"
+        class="lg:flex float-right justify-between overflow-clip hidden h-full max-w-2xl ml-6 pb-4"
       >
         {#each { length: 2 } as _, i}
           <div
-            class="bg-secondar-teal rounded-xl p-2 min-h-[70vh] w-[30%] transition-all ease-in-out duration-500 dome"
+            class="bg-secondar-teal rounded-xl p-2 min-h-[50vh] xl:min-h-[600px] w-[30%] transition-all ease-in-out duration-500 dome"
             class:w-[65%]={curHoveredDome === i}
             aria-label="dome"
             role="figure"
