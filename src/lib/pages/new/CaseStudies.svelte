@@ -24,9 +24,9 @@
     English Militarism".
   </p>
 
-  <Callout title="Note">
+  <!-- <Callout title="Note">
     Need to double check the text and compare with document still
-  </Callout>
+  </Callout> -->
 
   <div class="flex flex-col gap-16 *:w-full history">
     {#each caseStudies as caseStudy, idxcs}
