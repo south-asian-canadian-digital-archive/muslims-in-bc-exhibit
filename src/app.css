@@ -89,7 +89,7 @@
   }
 
   .history>section>h2 {
-    @apply text-h4 font-bold font-source-serif-4 !text-center bg-secondary-yellow leading-[1.15] py-8 ;
+    @apply text-h4 font-bold font-source-serif-4 !text-center bg-secondary-yellow leading-[1.15] py-8 px-2;
   }
 
   .history>section>div,
