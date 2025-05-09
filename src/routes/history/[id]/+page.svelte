@@ -3,8 +3,9 @@
   import CaseStudies from "$lib/pages/new/CaseStudies.svelte";
   import Early20thCentury from "$lib/pages/new/Early20thCentury.svelte";
   import Mid20thCentury from "$lib/pages/new/Mid20thCentury.svelte";
-  import RecentTimeline from "$lib/pages/new/RecentTimeline.svelte";
+  import RecentExperiences from "$lib/pages/new/RecentExperiences.svelte";
   import HistoryNavigation from "$lib/components/HistoryNavigation.svelte";
+  import Timeline from "$lib/pages/new/Timeline.svelte";
 </script>
 
 <svelte:head>
@@ -20,8 +21,10 @@
   <Early20thCentury />
 {:else if page.params.id === "mid-20th-century"}
   <Mid20thCentury />
-{:else if page.params.id === "recent-timeline"}
-  <RecentTimeline />
+{:else if page.params.id === "recent-experiences"}
+  <RecentExperiences />
+{:else if page.params.id === "timeline"}
+  <Timeline />
 {:else if page.params.id === "case-studies"}
   <CaseStudies />
 {/if}

@@ -5,7 +5,9 @@
 
 <main class="py-32 flex flex-col gap-10 mx-auto">
   <h1 class="px-4 lg:px-0 page-title">
-    Mid 20th century migration (1962-2001)
+    Mid 20th century migration <span class="whitespace-nowrap"
+      >(1962-2001)</span
+    >
   </h1>
   <!-- <p class="desc-text"></p> -->
 

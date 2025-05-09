@@ -151,6 +151,7 @@ const resourceLinks = [
 		],
 	},
 	{
+		// TODO: update associations with new list
 		title: "Associations",
 		content: [
 			{
