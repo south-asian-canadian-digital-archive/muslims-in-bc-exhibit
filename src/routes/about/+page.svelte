@@ -12,11 +12,20 @@
   } from "$lib/content/about.content";
   import Image from "$lib/components/Image.svelte";
   import { base } from "$app/paths";
+  import { page } from "$app/state";
 
   let floatingSquareTweens: gsap.core.Tween[] = [];
   let commitment_expanded: SvelteSet<number> = $state(new SvelteSet());
 
   onMount(() => {
+    // if (page.url.href.includes('#')) {
+    //   const hash = page.url.href.split('#')[1];
+    //   const element = document.querySelector(`#${hash}`);
+    //   if (element) {
+    //     element.scrollIntoView({ behavior: "smooth" });
+    //   }
+    // }
+
     gsap.utils
       .toArray<any>(".floating-square > div.left-0")
       .forEach((square) => {
@@ -129,10 +138,7 @@
   </section>
 
   <!-- project history -->
-  <section
-    class="lg:p-32 p-10 pt-36 flex lg:flex-row flex-col gap-16"
-    id="project-history"
-  >
+  <section class="lg:p-32 p-10 pt-36 flex lg:flex-row flex-col gap-16">
     <div class="grid grid-rows-2 grid-cols-2 gap-20">
       {#each floatingSquareInfo as info, idx}
         {@render FloatingSquare(
@@ -144,7 +150,8 @@
       {/each}
     </div>
 
-    <div class="h-full lg:w-[30vw] flex flex-col gap-4 text-right">
+    <div class="h-full lg:w-[30vw] flex flex-col gap-4 text-right relative">
+      <span id="project-history" class="absolute -top-96 h-1">&nbsp;</span>
       <h3 class="text-h3 font-bold font-source-serif-4 text-primary-blue">
         Project History
       </h3>
@@ -165,12 +172,14 @@
   </section>
 
   <!-- team -->
-  <section class="bg-secondary-yellow flex flex-col" id="team">
+  <section class="bg-secondary-yellow flex flex-col relative">
+    <span id="team" class="absolute -top-64">&nbsp;</span>
     <div class="lg:p-32 p-12">
       <h1
-        class="text-h3 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
+        class="text-h3 flex flex-col gap-2 font-bold font-source-serif-4 text-primary-blue text-center pb-12"
       >
         Our Team
+        <sub class="text-h6 text-center">2024 to present</sub>
       </h1>
 
       <div class="flex flex-col gap-6 items-center">
@@ -203,7 +212,8 @@
   </section>
 
   <!-- committee -->
-  <section class="lg:px-32 lg:py-24 py-8 px-12" id="committee">
+  <section class="lg:px-32 lg:py-24 py-8 px-12 relative">
+    <span id="committee" class="absolute -top-64">&nbsp;</span>
     <h1
       class="text-h3 inline-flex flex-col items-center w-full font-bold font-source-serif-4 text-primary-blue text-center pb-12 mb-12 gap-2"
     >
@@ -272,7 +282,8 @@
   {/snippet}
 
   <!-- partners -->
-  <section class="bg-secondary-yellow flex flex-col pt-24" id="partners">
+  <section class="bg-secondary-yellow flex flex-col pt-24 relative">
+    <span id="partners" class="absolute -top-64">&nbsp;</span>
     <div class="flex flex-col lg:px-32 px-12">
       <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
         Our Partners
@@ -290,7 +301,8 @@
   </section>
 
   <!-- sponsors -->
-  <section class=" flex flex-col pt-24" id="sponsors">
+  <section class=" flex flex-col pt-24 relative">
+    <span id="sponsors" class="absolute -top-64">&nbsp;</span>
     <div class="flex flex-col lg:px-32 px-12">
       <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
         We thank our Financial Supporters
