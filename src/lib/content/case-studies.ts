@@ -11,7 +11,7 @@ export let caseStudies: {
       name: "Husain Rahim",
       years: "(1865-1937)",
       desc: ` 
-            Husain Rahim came from a Gujarati Hindu family and came to Canada
+            Husain Rahim came from a Gujarati Hindu family (his birth name was Chagan Khiraj Varma) and came to Canada
             as a tourist in 1910. Five months after his arrival, the immigration
             department started the procedure for deportation against him.
             However, Rahim fought the case and won it in court thereby,
@@ -132,7 +132,7 @@ export let caseStudies: {
         there. After living in Pakistan till 1976, Khan came back to California in
         1979 before settling in Canada.
         <br><br>
-        Resources: 
+        Read the full biography here: 
         <ol><li><a href="https://lib-islandora4.lib.sfu.ca/icohc-5/imanat-ali-khan" aria-label="SFU Digital Library entry on Imanat Ali Khan">https://lib-islandora4.lib.sfu.ca/icohc-5/imanat-ali-khan</a></li></ol>
         `,
     },

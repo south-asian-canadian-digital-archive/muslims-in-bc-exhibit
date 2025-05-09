@@ -19,6 +19,8 @@ const floatingSquareInfo: { title: string; desc: string }[] = [
 	},
 ];
 
+const researchHtml = `<p><a href="" > Research output </a></p>`;
+
 const team = [
 	{
 		name: "Dr. Satwinder Bains",
@@ -38,11 +40,11 @@ const team = [
 	},
 	{
 		name: "Kiara Dabreo",
-		desc: "Kiara Dabreo conducts historical and archival research on early South Asian Muslim immigrants in BC, creating an archival collection, preserving records, and cataloging key individuals, organizations, and settlement locations.",
+		desc: `Kiara Dabreo conducts historical and archival research on early South Asian Muslim immigrants in BC, creating an archival collection, preserving records, and cataloging key individuals, organizations, and settlement locations. ${researchHtml}`,
 	},
 	{
 		name: "Samarah Saddique",
-		desc: "Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC and digitally archives their narratives.",
+		desc: `Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC and digitally archives their narratives. ${researchHtml}`,
 	},
 	{
 		name: "Sadhik Preet Singh",

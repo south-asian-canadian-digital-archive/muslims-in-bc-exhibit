@@ -33,8 +33,8 @@
         throughout the British Empire for being superior to drugs for many
         diseases.” If his testimonials are anything to go by, he had many happy
         customers around Grenville Street! A small collection of these snippets
-        can be read in greater detail in our section on Case Studies: Hidden
-        Histories
+        can be read in greater detail in our section on
+        <a href="{base}/history/case-studies">Case Studies: Hidden Histories</a>
         <br /><br />
 
         <Image

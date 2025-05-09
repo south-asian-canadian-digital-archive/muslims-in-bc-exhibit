@@ -4,9 +4,7 @@
 </script>
 
 <main class="py-32 flex flex-col gap-10 mx-auto">
-  <h1
-    class="px-4 lg:px-0 page-title"
-  >
+  <h1 class="px-4 lg:px-0 page-title">
     Mid 20th century migration (1962-2001)
   </h1>
   <!-- <p class="desc-text"></p> -->
@@ -36,21 +34,24 @@
         their country of birth. Many of these links were subsequently disrupted by
         the emergence of European colonialism in the Indian Ocean. In the interviews
         conducted for this project, one of the respondents pointed toward their family
-        sharing such an identity rooted in their business and trade links. See X
+        sharing such an identity rooted in their business and trade links. See
+        <!-- TODO -->
+        <a href="#">X</a>
         <br /><br />
 
         Simultaneously, other groups of South Asian Muslims were sent with other
         South Asian workers to British colonies in East Africa like Uganda to
         work on the railways that the British Empire was building. Those who
         went to Uganda would be displaced again in 1972 when Idi Amin expelled
-        Asians from the country (see 1972 in Historical Timeline). The rise of
-        the use of Asians as indentured workers in colonies closely followed the
-        end of abolition of slavery and so these workers were, in some cases,
-        replacing African slave labour. The experiences of Fijian Muslims was
-        similar, as they arrived in the Pacific as indentured laborers under
-        British colonial rule and went on to form tightly knit religion and
-        cultural communities before a second wave of migration Canda took place
-        in the later 20th century.
+        Asians from the country (see 1972 in
+        <a href="{base}/history/recent-timeline">Historical Timeline</a>). The
+        rise of the use of Asians as indentured workers in colonies closely
+        followed the end of abolition of slavery and so these workers were, in
+        some cases, replacing African slave labour. The experiences of Fijian
+        Muslims was similar, as they arrived in the Pacific as indentured
+        laborers under British colonial rule and went on to form tightly knit
+        religion and cultural communities before a second wave of migration
+        Canda took place in the later 20th century.
         <br /><br />
 
         These “double diaspora” Muslims came to British Columbia carrying a
