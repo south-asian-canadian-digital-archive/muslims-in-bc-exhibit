@@ -1,5 +1,7 @@
 <main class="py-32 mx-auto flex flex-col gap-10">
-  <h1 class="px-4 lg:px-0 page-title">Recent Timeline</h1>
+  <h1 class="px-4 lg:px-0 page-title">
+    Recent experiences of South Asian Muslim in BC (2001 - present)
+  </h1>
 
   <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     <section>
@@ -14,16 +16,26 @@
         response to 9/11 even being specifically mentioned in the US Patriot Act
         under the section “Protecting the Northern Border.” Scholars have argued
         that Canada’s response to 9/11 was affected by the need to appease the
-        US so as to keep people and good flowing across the border. In
-        2001, the repercussions of these policies was an increase in
-        racial profiling, particularly of Muslim men, who in some very high
-        profile cases became the victims of inaccurate information sharing
-        between Canada and the US resulting in the torture of these Canadian
-        citizens. The Canadian government subsequently conducted a report and
-        apologized for these. Nonetheless, the antiterrorism laws, increased
-        border controls and deeply problematic representations of Muslims as
-        terrorists after 9/11 has continued to impact all groups of Canadian
-        Muslims.
+        US so as to keep people and good flowing across the border. In 2001, the
+        repercussions of these policies was an increase in racial profiling,
+        particularly of Muslim men, who in some very high profile cases became
+        the victims of inaccurate information sharing between Canada and the US
+        resulting in the torture of these Canadian citizens. The Canadian
+        government subsequently conducted a report and apologized for these.
+        Nonetheless, the antiterrorism laws, increased border controls and
+        deeply problematic representations of Muslims as terrorists after 9/11
+        has continued to impact all groups of Canadian Muslims.
+      </div>
+    </section>
+
+    <section>
+      <h2>Solidarity with Indigenous Communities</h2>
+      <div>
+        With an increased understanding of how the intertwined histories of
+        colonialism, migration, and racism have affected South Asian muslim
+        communities of B.C, a number of community members have also started
+        developing relationships of solidarity and allyship with Indigenous
+        communities of B.C. <a href="https://www.islamichistorymonth.ca/indigenous-muslims"><sup>[*]</sup></a>
       </div>
     </section>
 

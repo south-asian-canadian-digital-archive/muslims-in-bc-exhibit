@@ -28,7 +28,7 @@ export const navItems: {
 				{ name: "Migration Overview", path: `${base}/history` },
 				{ name: "Early 20th Century", path: `${base}/history/early-20th-century` },
 				{ name: "Mid-20th Century", path: `${base}/history/mid-20th-century` },
-				{ name: "Recent Timeline", path: `${base}/history/recent-timeline` },
+				{ name: "Recent experiences of South Asian Muslim in BC", path: `${base}/history/recent-timeline` },
 				{ name: "Case Studies: Hidden Histories", path: `${base}/history/case-studies` }
 			]
 		},
