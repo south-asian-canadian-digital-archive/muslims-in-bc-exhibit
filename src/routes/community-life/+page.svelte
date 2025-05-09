@@ -16,7 +16,7 @@
   <section class="mb-16">
     <h1 class="page-title">Community Oral Histories</h1>
     <p class="text-lg mb-8">
-      Discover the rich tapestry of stories from <a target="_blank" rel="noopener">South Asian Muslims</a> across
+      Discover the rich tapestry of stories from South Asian Muslims across
       <a target="_blank" rel="noopener">British Columbia</a>. These <a target="_blank" rel="noopener">oral histories</a> capture personal journeys,
       community milestones, and cultural experiences that have shaped the <a target="_blank" rel="noopener">Muslim
       experience in BC</a>. Through these narratives, we gain insight into how <a target="_blank" rel="noopener">religious identity</a>, 

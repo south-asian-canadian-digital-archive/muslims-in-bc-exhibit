@@ -62,7 +62,7 @@
       <div class="mt-6 border-l-4 border-primary-blue pl-4 py-2 bg-white bg-opacity-50">
         <h2 class="font-semibold mb-2">Why Share Your Story?</h2>
         <p>
-          Personal narratives are vital to understanding the rich tapestry of <a target="_blank" rel="noopener">South Asian Muslim Canadian</a> experiences. 
+          Personal narratives are vital to understanding the rich tapestry of South Asian Muslim Canadian experiences. 
           By contributing to our <a href="https://sacda.ca" target="_blank" rel="noopener">digital archive</a>, you help preserve cultural heritage and build a more inclusive historical record for future generations.
         </p>
       </div>

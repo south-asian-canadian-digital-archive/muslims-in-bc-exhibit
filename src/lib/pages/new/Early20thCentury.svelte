@@ -18,10 +18,7 @@
           alt="newspaper clipping"
           class="w-1/2"
           float="right"
-          ><a href="https://www.newspapers.com/image/1149656287/">
-            https://www.newspapers.com/image/1149656287/
-          </a></Image
-        >
+        />
 
         In the early years one of the only ways it is possible to tell whether
         or not someone who came from South Asia to BC was a Muslim was by

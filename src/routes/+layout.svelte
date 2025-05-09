@@ -60,14 +60,14 @@
 
 <Header />
 
-{#key load}
+<!-- {#key load} -->
   <div
-    class="*:mx-auto *:max-w-5xl *:xl:max-w-7xl"
-    in:fly={{ y: 600, duration: 800 }}
-  >
+    class="*:mx-auto *:max-w-5xl *:2xl::max-w-7xl"
+    >
+    <!-- in:fly={{ y: 600, duration: 800 }} -->
       {@render children?.()}
   </div>
-{/key}
+<!-- {/key} -->
 <Footer />
 
 {#if scrollY !== 0}

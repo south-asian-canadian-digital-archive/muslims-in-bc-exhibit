@@ -11,7 +11,7 @@ export let caseStudies: {
       name: "Husain Rahim",
       years: "(1865-1937)",
       desc: ` 
-            Husain Rahim came from a Gujarati Muslim family and came to Canada
+            Husain Rahim came from a Gujarati Hindu family and came to Canada
             as a tourist in 1910. Five months after his arrival, the immigration
             department started the procedure for deportation against him.
             However, Rahim fought the case and won it in court thereby,
@@ -127,7 +127,7 @@ export let caseStudies: {
       desc: `
         Imanat Ali Khan came to Canada at the age of 25 in 1912. He worked in Fraser
         Mills for 2 years, 1912-14, and witnessed the incident of Komagata Maru in
-        1914. Khan moved to California after the Mill shut down in 1914. Living in
+        1914. Khan moved to California after the mill shut down in 1914. Living in
         Canada and America from 1912 to 1932, Khan went back to India and got married
         there. After living in Pakistan till 1976, Khan came back to California in
         1979 before settling in Canada.

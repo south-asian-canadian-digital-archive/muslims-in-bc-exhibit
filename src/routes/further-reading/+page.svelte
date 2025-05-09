@@ -3,11 +3,14 @@
   import Arrow from "$lib/components/Arrow.svelte";
 
   import { resourceLinks } from "$lib/content/resources.content";
-
 </script>
 
 <main class="py-32 flex flex-col gap-10">
-  <p class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.5]">Further Reading</p>
+  <p
+    class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.5]"
+  >
+    Further Reading
+  </p>
 
   <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     {#each resourceLinks as linkItem}
@@ -23,12 +26,14 @@
                   {link.text}
                 </span>
 
-                <a
-                  href={link.link}
-                  class="hover:scale-110 transition-all ease-in-out duration-200"
-                >
-                  <Arrow size={20} />
-                </a>
+                {#if link.link && link.link !== "#"}
+                  <a
+                    href={link.link}
+                    class="hover:scale-110 transition-all ease-in-out duration-200"
+                  >
+                    <Arrow size={20} />
+                  </a>
+                {/if}
               </div>
             {/each}
           {/each}

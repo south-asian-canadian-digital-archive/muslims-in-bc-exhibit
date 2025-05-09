@@ -4,7 +4,7 @@
   import { gsap } from "gsap";
   import { onMount } from "svelte";
   import { goto } from "$app/navigation";
-  import HistoryTimeline from "$lib/components/HistoryTimelineMobile.svelte";
+  // import HistoryTimeline from "$lib/components/HistoryNavigation.svelte";
   // import { horizontalLoop } from "$lib/utils/seemlessLoop.util";
 
   let curHoveredDome = $state(0);
@@ -61,16 +61,16 @@
   <title>South Asian Muslims in BC</title>
 </svelte:head>
 
-<main class="container px-4 pb-32 flex flex-col">
+<main class="container px-4 pb-32 flex flex-col lg:!max-w-6xl">
   <!-- intro -->
   <section class="py-32 flex gap-14">
     <div class="">
       <div
-        class="lg:flex float-right justify-between overflow-clip hidden h-full max-w-2xl ml-6 pb-4"
+        class="lg:flex float-right justify-between overflow-clip hidden h-full max-w-xl ml-6 pb-4"
       >
         {#each { length: 2 } as _, i}
           <div
-            class="bg-secondar-teal rounded-xl p-2 min-h-[50vh] xl:min-h-[600px] w-[30%] transition-all ease-in-out duration-500 dome"
+            class="bg-secondar-teal rounded-xl p-2 min-h-[50vh] 2xl:min-h-[600px] w-[30%] transition-all ease-in-out duration-500 dome"
             class:w-[65%]={curHoveredDome === i}
             aria-label="dome"
             role="figure"
@@ -93,12 +93,13 @@
         South Asian Muslims in Canada are a diverse group who have advocated for
         spaces to practice their religion and faced challenges along the way.
         This project records their stories to deepen understanding of the
-        Canadian Muslim experience, especially in British Columbia (BC).
+        South Asian Canadian Muslim experience, especially in British Columbia (BC).
         <br />
         <br />
         The project gathers these stories through interviews, research and historical
         records. Viewing Islam as a mosaic, it focuses on the traditions and lived
-        experiences of BC’s Muslim community. Recognizing that this project will
+        experiences of BC’s South Asian Muslim community. The South Asian Muslim community is made up of new immigrants
+        and early settlers from the start of the 20th century. Recognizing that this project will
         be a first step in preserving these histories, we aim to provide a foundation
         for future researchers, artists and community members to continue documenting
         the stories of South Asian Muslims in BC.
@@ -116,6 +117,9 @@
       </div>
     </div>
   </section>
+
+
+  <!-- <HistoryTimeline /> -->
 
   <!-- historical timeline -->
   <!-- <section class="">
