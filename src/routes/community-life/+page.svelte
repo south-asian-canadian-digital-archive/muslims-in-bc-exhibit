@@ -17,11 +17,11 @@
     <h1 class="page-title">Community Oral Histories</h1>
     <p class="text-lg mb-8">
       Discover the rich tapestry of stories from South Asian Muslims across
-      <a target="_blank" rel="noopener">British Columbia</a>. These <a target="_blank" rel="noopener">oral histories</a> capture personal journeys,
-      community milestones, and cultural experiences that have shaped the <a target="_blank" rel="noopener">Muslim
-      experience in BC</a>. Through these narratives, we gain insight into how <a target="_blank" rel="noopener">religious identity</a>, 
-      <a target="_blank" rel="noopener">cultural heritage</a>, and <a target="_blank" rel="noopener">immigration experiences</a> have contributed to the vibrant 
-      <a target="_blank" rel="noopener">multicultural fabric</a> of our province.
+      British Columbia . These oral histories capture personal journeys,
+      community milestones, and cultural experiences that have shaped the Muslim
+      experience in BC . Through these narratives, we gain insight into how
+      religious identity , cultural heritage , and immigration experiences have
+      contributed to the vibrant multicultural fabric of our province.
     </p>
   </section>
 
