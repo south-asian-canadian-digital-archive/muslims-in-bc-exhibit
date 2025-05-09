@@ -14,7 +14,11 @@
 
   <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
     {#each resourceLinks as linkItem}
-      <section>
+      <section class="relative">
+        <span
+          id={linkItem.title.toLowerCase().split(" ").join("-")}
+          class="absolute -top-48">&nbsp;</span
+        >
         <h2>{linkItem.title}</h2>
         <div class="flex flex-col">
           {#each linkItem.content as contentItem}

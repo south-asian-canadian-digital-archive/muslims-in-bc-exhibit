@@ -151,7 +151,7 @@ const resourceLinks = [
 		],
 	},
 	{
-		title: "Associations (BC Based)",
+		title: "Associations",
 		content: [
 			{
 				subHeading: "Religious Organizations",
