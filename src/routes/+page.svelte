@@ -213,7 +213,7 @@
             {/each}
           </ul>
           <a
-            href="{base}/community"
+            href="{base}/community-life"
             class="inline-block text-secondar-teal font-medium hover:underline"
             >Explore community life →</a
           >
