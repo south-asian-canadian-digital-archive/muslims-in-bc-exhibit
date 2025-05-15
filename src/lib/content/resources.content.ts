@@ -1,3 +1,5 @@
+import { base } from "$app/paths";
+
 const resourceLinks = [
 	{
 		title: "Publications",
@@ -7,11 +9,11 @@ const resourceLinks = [
 				content: [
 					{
 						text: "Gravelle, Timothy B., \"Friends, Neighbours, Townspeople and Parties\" in Canadian Journal of Political Science/ Revue canadienne de science politique, vol. 51, no. 3, (2018): 643-664. Really good overview of the communities of Muslims who feel belonging.",
-						link: "#",
+						link: "https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique/article/friends-neighbours-townspeople-and-parties-explaining-canadian-attitudes-toward-muslims/1AE896559899C243B8A6927F4147F55B",
 					},
 					{
 						text: "Hirji, Faiza. \"But where are you really from? South Asians and Muslims in Canada\" in Dreaming in Canadian: South Asian Youth, Bollywood, and Belonging (UBC Press, 2010).",
-						link: "#",
+						link: `${base}/resources/Dreaming_in_Canadian.pdf`,
 					},
 					{
 						text: "Maclean, Derryl N., \"Religion, Ethnicity and the Double Diaspora of Asian Muslims\" in Devries, Larry, Baker, Don and Overmyer, Dan. (eds.) Asian Religions in British Columbia (UBC Press, 2010).",
@@ -19,19 +21,19 @@ const resourceLinks = [
 					},
 					{
 						text: "Mamdani, Mahmood. Good Muslim, bad Muslim: America, the Cold War and the roots of terror (Random House, 2004).",
-						link: "#",
+						link: "https://archive.org/details/goodmuslimbadmus0000mamd/page/n9/mode/2up",
 					},
 					{
 						text: "Nagra, Baljir. Securitized Citizens: Canadian Muslims' Experiences of Race Relations and Identity Formation Post-9/11 (University of Toronto Press, 2017)",
-						link: "#",
+						link: "https://www.jstor.org/stable/10.3138/j.ctv1n35brg",
 					},
 					{
 						text: "Odartey-Wellington, Felix. \"Racial Profiling and Moral Panic: Operation Thread and the Al-Qaeda Sleeper Cell that Never Was\" in Global Media Journal—Canadian Edition, 2: 2 (2009): pp. 25-40.",
-						link: "#",
+						link: "https://www.researchgate.net/publication/40765492_Racial_Profiling_and_Moral_Panic_Operation_Thread_and_the_Al-Qaeda_Sleeper_Cell_that_Never_Was",
 					},
 					{
 						text: "Roach, Kent., \"Canada Responds: Border and Human Security\" in The 9/11 Effect: Comparative Counter-Terrorism (Cambridge, 2012).",
-						link: "#",
+						link: "https://www.cambridge.org/core/books/the-911-effect/8928404A0FEC0B2A22C7E3415272BBB6",
 					},
 					{
 						text: "Said, Edward. \"There are many Islams\"",
@@ -39,7 +41,7 @@ const resourceLinks = [
 					},
 					{
 						text: "Said, Edward. Orientalism. (New York: Vintage, 1979).",
-						link: "#",
+						link: "https://monoskop.org/images/4/4e/Said_Edward_Orientalism_1979.pdf",
 					},
 				],
 			},
@@ -48,7 +50,7 @@ const resourceLinks = [
 				content: [
 					{
 						text: "Habib, Naiyer and Habib, Mahlwaqa Naushaba. History of the Early Muslims of Regina, Saskatchewan, and their organizations, Islamic Association, Canadian Council of Muslim Women, Muslims for Peace and Justice: A Cultural Integration (Trafford Publishing, 2023).",
-						link: "#",
+						link: "https://www.prweb.com/releases/video_follows_release_of_new_book_history_of_the_muslims_of_regina_saskatchewan_and_their_organizations_/prweb13107368.htm",
 					},
 				],
 			},
@@ -62,7 +64,7 @@ const resourceLinks = [
 				content: [
 					{
 						text: "Habib, Naiyer and Habib, Mahlwaqa Naushaba. Journey on Parallel Roads: Autobiography and Memoir. (Victoria: Friesen Press, 2019).",
-						link: "#",
+						link: "https://www.amazon.ca/Journey-Parallel-Roads-Autobiography-Memoir/dp/1525526715",
 					},
 				],
 			},
@@ -76,7 +78,7 @@ const resourceLinks = [
 				content: [
 					{
 						text: "Barclay, Victoria Marissa. The Right to Housing is Social Phenomenon: lessons from racialized women about community, safety & Landlords, MA diss., (UBC, 2023).",
-						link: "#",
+						link: "https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0433826",
 					},
 					{
 						text: "Kraft, Molly. \"Unbelongings: Muslim Women in Multicultural Canada\", MA diss., Geography, *UBC, 2012).",
@@ -84,7 +86,7 @@ const resourceLinks = [
 					},
 					{
 						text: "Suleman, Zoolfikar KB. \"Silent Adhan: Exploring the Muslim call to prayer in Metro Vancouver. MA, Interdisciplinary Studies (UBC, 2022).",
-						link: "#",
+						link: "https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0421418",
 					},
 				],
 			},
@@ -167,7 +169,6 @@ const resourceLinks = [
 		],
 	},
 	{
-		// TODO: update associations with new list
 		title: "Associations",
 		content: [
 			{
