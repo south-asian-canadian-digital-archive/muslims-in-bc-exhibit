@@ -14,18 +14,19 @@
 
   function truncateLink(url: string): string {
     // Remove protocol and www
-    const cleanUrl = url.replace(/^(https?:\/\/)?(www\.)?/i, '');
-    
+    const cleanUrl = url.replace(/^(https?:\/\/)?(www\.)?/i, "");
+
     // Split by slash to get parts
-    const parts = cleanUrl.split('/');
+    const parts = cleanUrl.split("/");
     const domain = parts[0];
-    
+
     // Show domain and first path segment if exists
     if (parts.length > 1 && parts[1]) {
-      const path = parts[1].length > 15 ? parts[1].substring(0, 12) + '...' : parts[1];
+      const path =
+        parts[1].length > 15 ? parts[1].substring(0, 12) + "..." : parts[1];
       return `${domain}/${path}`;
     }
-    
+
     // Just return domain if no path or path is empty
     return domain;
   }
@@ -39,7 +40,7 @@
   />
 </svelte:head>
 
-<main class="container px-4 py-8 ">
+<main class="container px-4 py-8 relative">
   <button
     onclick={goBack}
     class="flex items-center mb-10 text-primary hover:text-primary-dark transition-colors"
@@ -53,37 +54,44 @@
     {interview.title} | {interview.location}
   </p>
 
-  <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-10">
+  <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-10 relative">
     <!-- Left column (3/5 width) -->
-    <div class="lg:col-span-3 space-y-8">
-      <!-- Video -->
-      <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
-        <div class="aspect-video w-full">
-          <iframe
-            src={interview.videoUrl}
-            title={`${interview.name}'s interview`}
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="w-full h-full object-cover"
-          ></iframe>
+    <div class="lg:col-span-3">
+      <!-- Left column sticky container -->
+      <div class="lg:sticky lg:top-32 space-y-8">
+        <!-- Video -->
+        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+          <div class="aspect-video w-full">
+            <iframe
+              src={interview.videoUrl}
+              title={`${interview.name}'s interview`}
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="w-full h-full object-cover"
+            ></iframe>
+          </div>
         </div>
-      </div>
 
-      <!-- Interview Details Below Video -->
-      {#if interview.interviewDate || interview.interviewer || interview.contributors || (interview.links && interview.links.length > 0)}
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-          <h2 class="text-2xl font-semibold mb-4">Interview Details</h2>
-          
+        <!-- Interview Details Below Video -->
+        {#if interview.interviewDate || interview.interviewer || interview.contributors || (interview.links && interview.links.length > 0)}
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mt-8">
+            <h2 class="text-2xl font-semibold mb-4">Interview Details</h2>
+
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               {#if interview.interviewDate}
                 <div class="flex flex-wrap mb-3">
                   <span class="font-medium w-32">Date:</span>
-                  <span>{new Date(interview.interviewDate).toLocaleDateString()}</span>
+                  <span
+                    >{new Date(interview.interviewDate).toLocaleDateString(
+                      "en-US",
+                      { month: "long", day: "numeric", year: "numeric" }
+                    )}</span
+                  >
                 </div>
               {/if}
-              
+
               {#if interview.interviewer}
                 <div class="flex flex-wrap mb-3">
                   <span class="font-medium w-32">Interviewer:</span>
@@ -91,21 +99,25 @@
                 </div>
               {/if}
             </div>
-            
+
             <div>
               {#if interview.contributors && interview.contributors.length > 0}
                 <div class="flex flex-wrap mb-3">
                   <span class="font-medium w-32">Contributors:</span>
-                  <span>{interview.contributors.join(', ')}</span>
+                  <span>{interview.contributors.join(", ")}</span>
                 </div>
               {/if}
-              
+
               <div class="mt-3 space-y-2">
                 {#if interview.links && interview.links.length > 0}
                   <div class="space-y-1">
                     {#each interview.links as link}
                       <div>
-                        <a href={link} class="text-primary hover:underline" target="_blank">
+                        <a
+                          href={link}
+                          class="text-primary hover:underline"
+                          target="_blank"
+                        >
                           {truncateLink(link)}
                         </a>
                       </div>
@@ -117,6 +129,7 @@
           </div>
         </div>
       {/if}
+      </div>
     </div>
 
     <!-- Description (2/5 width on desktop) -->
@@ -124,15 +137,6 @@
       <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-full">
         <h2 class="text-2xl font-semibold mb-4">About {interview.name}</h2>
         <p class="mb-6">{interview.description}</p>
-
-        {#if interview.narrativePdfUrl}
-          <div class="mb-6">
-            <a href={interview.narrativePdfUrl} class="inline-flex items-center text-primary hover:underline" target="_blank">
-              <FileText class="mr-2" />
-              <span>Read Complete Narrative</span>
-            </a>
-          </div>
-        {/if}
 
         {#if interview.additionalInfo}
           {#each interview.additionalInfo as info}
@@ -142,8 +146,20 @@
             </div>
           {/each}
         {/if}
+
+        {#if interview.narrativePdfUrl}
+          <div class="mb-6">
+            <a
+              href={interview.narrativePdfUrl}
+              class="inline-flex items-center text-primary hover:underline"
+              target="_blank"
+            >
+              <FileText class="mr-2" />
+              <span>Read Complete Narrative</span>
+            </a>
+          </div>
+        {/if}
       </div>
     </div>
   </div>
-
 </main>

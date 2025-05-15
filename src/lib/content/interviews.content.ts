@@ -7,6 +7,7 @@ export interface Interview {
   location: string;
   thumbnailUrl: string;
   videoUrl: string;
+  shortDescription?: string;
   description: string;
   additionalInfo?: {
     title: string;
@@ -27,7 +28,8 @@ export const interviews: Interview[] = [
     location: "UFV",
     thumbnailUrl: `${base}/content/interviews/placeholder-interview.png`,
     videoUrl: "https://www.youtube.com/embed/placeholder",
-    description: "Dr. Afia Raja shares her experiences and insights on Muslim communities in British Columbia.",
+    shortDescription: "Dr. Afia Raja shares her experiences and insights on Muslim communities in British Columbia.",
+    description: "Afia Raja was born in 1980 in Karachi, Pakistan and was raised there. Her father was a civil engineer, so he often had large construction projects offering better opportunities in Karachi, and ended up settling there before she was born. Afia received her early education at Beaconhouse School where she stood out academically, being self-motivated from a young age. Her mother, who was a home-maker, used to organize their school uniforms, meals, and schedules. Afia comes from a family of four siblings, two brothers and two sisters. Her older brother went into mechanical engineering and later earned a master’s in technology policy from Cambridge, eventually settling in the UAE. Her younger brother completed his PhD in finance from Germany and now lives there.",
     additionalInfo: [
       {
         title: "Academic Background",
@@ -47,7 +49,8 @@ export const interviews: Interview[] = [
     location: "SFU",
     thumbnailUrl: `${base}/content/interviews/placeholder-interview.png`,
     videoUrl: "https://www.youtube.com/embed/placeholder",
-    description: "Dr. Anushay Malik discusses her research and perspectives on Muslim communities in British Columbia.",
+    shortDescription: "Dr. Anushay Malik discusses her research and perspectives on Muslim communities in British Columbia.",
+    description: "Anushay Malik is a senior lecturer and historian at Simon Fraser University, who immigrated to British Columbia from Pakistan in 2019, primarily for better educational support for her child. She was born in Lahore and raised for a decade in Kuala Lumpur, Malaysia. Her early years were shaped by living in two Muslim-majority countries, and she recalls feeling like an outsider in Malaysia due to her Pakistani identity. Returning to Lahore in 1994 with her family, she experienced life as a part of the religious and social majority in the country. She comes from a large family and grew up in a joint family system, with strong influence from both maternal and paternal grandparents. Her maternal grandfather was a doctor with an open interpretation of Islam, and her maternal grandmother was a proud Kashmiri Rajput woman, shaping her spiritual and moral outlook.",
     links: ["https://www.sfu.ca/history/faculty-and-staff/faculty-by-name/malik-anushay.html"],
     interviewDate: "2025-03-25",
     interviewer: "Samarah Siddique",
@@ -61,7 +64,8 @@ export const interviews: Interview[] = [
     location: "UFV",
     thumbnailUrl: `${base}/content/interviews/placeholder-interview.png`,
     videoUrl: "https://www.youtube.com/embed/placeholder",
-    description: "Dr. Hassan Javid shares his sociological perspective on Muslim communities in British Columbia.",
+    shortDescription: "Dr. Hassan Javid shares his sociological perspective on Muslim communities in British Columbia.",
+    description: "",
     links: ["https://www.ufv.ca/scms/faculty-staff/javid-hassan.htm"],
     interviewDate: "2025-02-24",
     interviewer: "Samarah Siddique",
@@ -86,7 +90,18 @@ export const interviews: Interview[] = [
     location: "British Columbia",
     thumbnailUrl: `${base}/content/interviews/placeholder-interview.png`,
     videoUrl: "https://www.youtube.com/embed/placeholder",
-    description: "Dr. Naiyer Habib and Mahlaqa Naushaba Habib share their experiences living as Muslims in British Columbia.",
+    shortDescription: "Dr. Naiyer Habib and Mahlaqa Naushaba Habib share their experiences living as Muslims in British Columbia.",
+    description: "",
+    additionalInfo: [
+      {
+        title: "Dr. Naiyer Habib ",
+        content: "Dr. Naiyer Habib, originally from Danapur near Patna in Bihar, India, was born into a distinguished zamindar (landowning) family. His father was both a zamindar and an Aligarh-educated man involved in politics and refugee support, while his mother, though home-educated, practiced medicine informally in the village. He was influenced by his maternal grandfather to pursue medicine, and he eventually completed his education at Aligarh Muslim University and P earning the highest medical degrees in India. He later trained further in the U.S., Canada, and England, specializing in interventional cardiology."
+      },
+      {
+        title: "Malahaqa Habib",
+        content: "Mrs. Habib was born in Nathapur, Bihar, India, into an educated and landowning family. Her grandfather, a legal aide and landowner, always strongly emphasized education, resulting in many of his children becoming doctors and professors. During the partition of India and Pakistan, her family's home was burned, and they were displaced to a refugee camp. Eventually, her grandfather, who was an army doctor, found them and brought them to safety. After months of uncertainty, her father who was also a doctor, reunited with the family and decided they must leave for Pakistan, as they had lost everything in India. They initially settled in Jessore (in what is now Bangladesh), living in basic conditions in an airport hangar. Despite the hardships faced, she recalls childhood moments full of love and warmth, as she was little and unaware at the time of the challenges her parents were facing. She grew up with four sisters, completed a Master’s in Political Science in Karachi, and later got married to Dr. Habib."
+      }
+    ],
     interviewDate: "2024-12-19",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhikpreet Singh", "Thamilini Jothilingam"],

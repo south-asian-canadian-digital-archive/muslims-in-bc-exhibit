@@ -61,6 +61,3 @@
   </section>
 </main>
 
-<style type="postcss">
-  /* Remove common styles that are now in app.css */
-</style>
