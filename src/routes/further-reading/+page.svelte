@@ -25,20 +25,31 @@
             <b class="pb-4 pt-8 first:pt-0">{contentItem.subHeading}:</b>
 
             {#each contentItem.content as link, i}
-              <div class:border-t-2={i === 0} class="link">
-                <span class="text-body">
-                  {link.text}
-                </span>
+              {#if link.link === "#"}
+                <div class:border-t-2={i === 0} class="link">
+                  <span class="text-body">
+                    {link.text}
+                  </span>
+                </div>
+              {:else}
+                <a
+                  href={link.link}
+                  class:border-t-2={i === 0}
+                  onclick={(e) => link.link === "#" && e.preventDefault()}
+                  class="link !no-underline !text-foreground"
+                  class:!cursor-default={link.link === "#"}
+                >
+                  <span class="text-body">
+                    {link.text}
+                  </span>
 
-                {#if link.link && link.link !== "#"}
-                  <a
-                    href={link.link}
+                  <span
                     class="hover:scale-110 transition-all ease-in-out duration-200"
                   >
                     <Arrow size={20} />
-                  </a>
-                {/if}
-              </div>
+                  </span>
+                </a>
+              {/if}
             {/each}
           {/each}
         </div>

@@ -15,7 +15,7 @@ const resourceLinks = [
 					},
 					{
 						text: "Maclean, Derryl N., \"Religion, Ethnicity and the Double Diaspora of Asian Muslims\" in Devries, Larry, Baker, Don and Overmyer, Dan. (eds.) Asian Religions in British Columbia (UBC Press, 2010).",
-						link: "#",
+						link: "https://www.ubcpress.ca/asian-religions-in-british-columbia",
 					},
 					{
 						text: "Mamdani, Mahmood. Good Muslim, bad Muslim: America, the Cold War and the roots of terror (Random House, 2004).",
@@ -124,6 +124,14 @@ const resourceLinks = [
 					{
 						text: "Kramer, Stephanie and Tong, Yunping. \"4. Muslim migrants around the world\", The Religious Composition of the World's Migrants Report, August 19th 2024, Pew Research Center.",
 						link: "https://www.pewresearch.org/religion/2024/08/19/muslim-migrants-around-the-world/",
+						},
+					{
+						text: "Muslims in Canada: Results from the 2021 Census - Statistics Canada",
+						link: "https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2024058-eng.htm",
+					},
+					{
+						text: "Regions, Regionalism and Regional Differences in Canada - Research Study",
+						link: "https://www.researchgate.net/publication/259433093_Regions_Regionalism_and_Regional_Differences_in_Canada",
 					},
 				],
 			},
@@ -145,6 +153,14 @@ const resourceLinks = [
 					{
 						text: "Uganda Collection at Carleton University.",
 						link: "https://carleton.ca/uganda-collection/about-us/",
+						},
+					{
+						text: "The Pioneers: Exploring the History of South Asian Muslims in Canada - Heritage Mississauga",
+						link: "https://heritagemississauga.com/the-pioneers-exploring-the-history-of-south-asian-muslims-in-canada/",
+					},
+					{
+						text: "Muslims in Canada Archives - A digital collection preserving Muslim Canadian history",
+						link: "https://www.muslimsincanadaarchives.ca/en/",
 					},
 				],
 			},
@@ -205,7 +221,7 @@ const resourceLinks = [
 				content: [
 					{
 						text: "National Council of Canadian Muslims - Has a Vancouver based lawyer and the first board chair from Western Canada.",
-						link: "#",
+						link: "https://www.nccm.ca/",
 					},
 					{
 						text: "Canada Sri Lanka Muslim Association",
