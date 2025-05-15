@@ -38,7 +38,7 @@ export const interviews: Interview[] = [
     interviewDate: "2024-12-19",
     interviewer: "Dr. Anushay Malik",
     contributors: ["Samarah Siddique", "Sadhikpreet Singh", "Thamilini Jothilingam"],
-    narrativePdfUrl: `${base}/content/narratives/Narrative_Dr_Afia_Raja.pdf`
+    narrativePdfUrl: `#`
   },
   {
     id: "anushay-malik",
@@ -52,7 +52,7 @@ export const interviews: Interview[] = [
     interviewDate: "2025-03-25",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhikpreet Singh"],
-    narrativePdfUrl: `${base}/content/narratives/Narrative_of_Dr_Anushay_Malik.pdf`
+    narrativePdfUrl: `#`
   },
   {
     id: "hassan-javid",
@@ -65,7 +65,8 @@ export const interviews: Interview[] = [
     links: ["https://www.ufv.ca/scms/faculty-staff/javid-hassan.htm"],
     interviewDate: "2025-02-24",
     interviewer: "Samarah Siddique",
-    contributors: ["Sadhik Preet Singh"]
+    contributors: ["Sadhik Preet Singh"],
+    narrativePdfUrl: `#`
   },
   {
     id: "munawar-sabir",
@@ -75,7 +76,8 @@ export const interviews: Interview[] = [
     thumbnailUrl: `${base}/content/interviews/placeholder-interview.png`,
     videoUrl: "https://www.youtube.com/embed/placeholder",
     description: "Dr. Munawar Sabir shares his experiences as a Muslim in British Columbia.",
-    interviewer: "Dr. Sarah Beaulieu"
+    interviewer: "Dr. Sarah Beaulieu",
+    narrativePdfUrl: `#`
   },
   {
     id: "habib-couple",
@@ -88,7 +90,7 @@ export const interviews: Interview[] = [
     interviewDate: "2024-12-19",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhikpreet Singh", "Thamilini Jothilingam"],
-    narrativePdfUrl: `${base}/content/narratives/Narrative_of_Mr_Mrs_Habib.pdf`
+    narrativePdfUrl: `#`
   },
   {
     id: "hana-hussainaly",
@@ -102,7 +104,7 @@ export const interviews: Interview[] = [
     interviewDate: "2025-01-03",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhikpreet Singh"],
-    narrativePdfUrl: `${base}/content/narratives/Hanas_Narrative.pdf`
+    narrativePdfUrl: `#`
   },
   {
     id: "farida-farook",
@@ -114,7 +116,8 @@ export const interviews: Interview[] = [
     description: "Farida Farook shares her experiences in the gem industry and as a Sri Lankan Muslim in British Columbia.",
     interviewDate: "2025-01-12",
     interviewer: "Thamilini Jothilingam",
-    contributors: ["Sadhik Preet Singh"]
+    contributors: ["Sadhik Preet Singh"],
+    narrativePdfUrl: `#`
   },
   {
     id: "inayath-mohamed",
@@ -127,7 +130,7 @@ export const interviews: Interview[] = [
     interviewDate: "2025-02-10",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhik preet Singh"],
-    narrativePdfUrl: `${base}/content/narratives/Inayath_Mohamed_Narrative.pdf`
+    narrativePdfUrl: `#`
   },
   {
     id: "rizwaan-abbas",
@@ -140,7 +143,7 @@ export const interviews: Interview[] = [
     interviewDate: "2025-03-24",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhik preet Singh"],
-    narrativePdfUrl: `${base}/content/narratives/Narrative_of_Rizwaan_Abbas.pdf`
+    narrativePdfUrl: `#`
   },
   {
     id: "shakeel-gaya",
@@ -153,7 +156,7 @@ export const interviews: Interview[] = [
     interviewDate: "2024-11-28",
     interviewer: "Dr. Anushay Malik",
     contributors: ["Thamilini Jothilingam", "Samarah Siddique"],
-    narrativePdfUrl: `${base}/content/narratives/Shakeel_Gaya_Narrative.pdf`
+    narrativePdfUrl: `#`
   },
   {
     id: "hifza-shahzad",
@@ -166,7 +169,7 @@ export const interviews: Interview[] = [
     interviewDate: "2025-03-23",
     interviewer: "Samarah",
     contributors: ["Sadhik"],
-    narrativePdfUrl: `${base}/content/narratives/Hifza_Shahzad_Narrative.pdf`
+    narrativePdfUrl: `#`
   },
   {
     id: "ahsan-yousuf",
@@ -179,7 +182,7 @@ export const interviews: Interview[] = [
     interviewDate: "2025-03-04",
     interviewer: "Samarah",
     contributors: ["Sadhik"],
-    narrativePdfUrl: `${base}/content/narratives/Narrative_Ahsan_Yousuf.pdf`
+    narrativePdfUrl: `#`
   }
 ];
 
