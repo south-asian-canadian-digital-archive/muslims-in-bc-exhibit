@@ -33,7 +33,7 @@ export const navItems: {
 				{ name: "Case Studies: Hidden Histories", path: `${base}/history/case-studies` }
 			]
 		},
-		{ name: "Community Life", path: `${base}/community-life` },
+		{ name: "Oral Histories", path: `${base}/oral-histories` },
 		{ name: "Further Reading", path: `${base}/further-reading` },
 		{ name: "Share your story", path: `${base}/contact` },
 	]

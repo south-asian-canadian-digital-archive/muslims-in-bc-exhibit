@@ -135,7 +135,7 @@
       <h2 class="page-title font-bold">About the Project</h2>
       <p>
         The South Asian Muslims in British Columbia (SAMBC) project is an online
-        exhibit within the <a href="https://sacda.ca"
+        exhibit (developed between 2024 and 2025 as an ongoing project) within the <a href="https://sacda.ca"
           >South Asian Canadian Digital Archive (SACDA)</a
         >. This project seeks to create a foundational understanding of the
         <a
@@ -191,12 +191,12 @@
           >
         </div>
 
-        <!-- Community Life -->
+        <!-- Oral Histories -->
         <div
           class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-secondar-teal hover:shadow-xl transition-all"
         >
           <h3 class="text-xl font-bold mb-3 text-secondar-teal">
-            Community Life
+            Oral Histories
           </h3>
           <p class="mb-4">
             Discover the rich cultural and religious practices, community
@@ -206,16 +206,16 @@
             {#each exploreInterviews as interview}
               <li>
                 <a
-                  href="{base}/community-life/{interview.id}"
+                  href="{base}/oral-histories/{interview.id}"
                   class="hover:underline">{interview.name} Interview</a
                 >
               </li>
             {/each}
           </ul>
           <a
-            href="{base}/community-life"
+            href="{base}/oral-histories"
             class="inline-block text-secondar-teal font-medium hover:underline"
-            >Explore community life →</a
+            >Explore Oral Histories →</a
           >
         </div>
 
