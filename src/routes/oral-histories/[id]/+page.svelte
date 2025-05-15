@@ -3,9 +3,7 @@
   import type { PageData } from "./$types";
   import { onMount } from "svelte";
 
-  import * as Carousel from "$lib/components/ui/carousel";
-  import type { CarouselAPI } from "$lib/components/ui/carousel/context.js";
-  import { ArrowLeft } from "svelte-radix";
+  import { ArrowLeft, FileText } from "svelte-radix";
 
   let { data }: { data: PageData } = $props();
   const { interview } = data;
@@ -14,18 +12,23 @@
     history.back();
   }
 
-  let carouselApi = $state<CarouselAPI>();
-  let current = $state(0);
-  //   const count = $derived(carouselApi ? carouselApi.scrollSnapList().length : 0);
-
-  $effect(() => {
-    if (carouselApi) {
-      current = carouselApi.selectedScrollSnap();
-      carouselApi.on("select", () => {
-        current = carouselApi!.selectedScrollSnap();
-      });
+  function truncateLink(url: string): string {
+    // Remove protocol and www
+    const cleanUrl = url.replace(/^(https?:\/\/)?(www\.)?/i, '');
+    
+    // Split by slash to get parts
+    const parts = cleanUrl.split('/');
+    const domain = parts[0];
+    
+    // Show domain and first path segment if exists
+    if (parts.length > 1 && parts[1]) {
+      const path = parts[1].length > 15 ? parts[1].substring(0, 12) + '...' : parts[1];
+      return `${domain}/${path}`;
     }
-  });
+    
+    // Just return domain if no path or path is empty
+    return domain;
+  }
 </script>
 
 <svelte:head>
@@ -68,7 +71,7 @@
       </div>
 
       <!-- Interview Details Below Video -->
-      {#if interview.interviewDate || interview.interviewType || interview.interviewer || interview.contributors || interview.transcriptAvailable || interview.email || (interview.links && interview.links.length > 0)}
+      {#if interview.interviewDate || interview.interviewer || interview.contributors || (interview.links && interview.links.length > 0)}
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
           <h2 class="text-2xl font-semibold mb-4">Interview Details</h2>
           
@@ -78,13 +81,6 @@
                 <div class="flex flex-wrap mb-3">
                   <span class="font-medium w-32">Date:</span>
                   <span>{new Date(interview.interviewDate).toLocaleDateString()}</span>
-                </div>
-              {/if}
-              
-              {#if interview.interviewType}
-                <div class="flex flex-wrap mb-3">
-                  <span class="font-medium w-32">Type:</span>
-                  <span>{interview.interviewType}</span>
                 </div>
               {/if}
               
@@ -105,28 +101,12 @@
               {/if}
               
               <div class="mt-3 space-y-2">
-                {#if interview.transcriptAvailable && interview.transcriptUrl}
-                  <div>
-                    <a href={interview.transcriptUrl} class="text-primary hover:underline" target="_blank">
-                      View Interview Transcript
-                    </a>
-                  </div>
-                {/if}
-                
-                {#if interview.email}
-                  <div>
-                    <a href={`mailto:${interview.email}`} class="text-primary hover:underline">
-                      Contact {interview.name.split(' ')[0]}
-                    </a>
-                  </div>
-                {/if}
-                
                 {#if interview.links && interview.links.length > 0}
                   <div class="space-y-1">
                     {#each interview.links as link}
                       <div>
                         <a href={link} class="text-primary hover:underline" target="_blank">
-                          {link.replace(/^(https?:\/\/)?(www\.)?/i, '').split('/')[0]}
+                          {truncateLink(link)}
                         </a>
                       </div>
                     {/each}
@@ -145,6 +125,15 @@
         <h2 class="text-2xl font-semibold mb-4">About {interview.name}</h2>
         <p class="mb-6">{interview.description}</p>
 
+        {#if interview.narrativePdfUrl}
+          <div class="mb-6">
+            <a href={interview.narrativePdfUrl} class="inline-flex items-center text-primary hover:underline" target="_blank">
+              <FileText class="mr-2" />
+              <span>Read Complete Narrative</span>
+            </a>
+          </div>
+        {/if}
+
         {#if interview.additionalInfo}
           {#each interview.additionalInfo as info}
             <div class="mb-4">
@@ -157,45 +146,4 @@
     </div>
   </div>
 
-  {#if interview.images && interview.images.length > 0}
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-6">Photo Gallery</h2>
-
-      <Carousel.Root setApi={(api: any) => (carouselApi = api)}>
-        <Carousel.Content>
-          {#each interview.images as image}
-            <Carousel.Item>
-              <div
-                class="aspect-[16/9] bg-gray-100 dark:bg-gray-800 flex items-center justify-center"
-              >
-                <img
-                  src={image.url}
-                  alt={image.alt}
-                  class="h-full w-full object-contain"
-                />
-              </div>
-            </Carousel.Item>
-          {/each}
-        </Carousel.Content>
-
-        {#if interview.images.length > 1}
-          <Carousel.Previous class="left-2 top-full lg:-left-12 lg:top-1/2" />
-          <Carousel.Next class="right-2 top-full lg:-right-12 lg:top-1/2" />
-
-          <!-- Carousel indicators -->
-          <div class="flex justify-center gap-1 mt-4">
-            {#each interview.images as _, i}
-              <button
-                class="w-2.5 h-2.5 rounded-full transition-colors {i === current
-                  ? 'bg-primary'
-                  : 'bg-gray-300 dark:bg-gray-600'}"
-                aria-label="Go to slide {i + 1}"
-                onclick={() => carouselApi?.scrollTo(i)}
-              ></button>
-            {/each}
-          </div>
-        {/if}
-      </Carousel.Root>
-    </section>
-  {/if}
 </main>

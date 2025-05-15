@@ -19,7 +19,7 @@ const floatingSquareInfo: { title: string; desc: string }[] = [
 	},
 ];
 
-const researchHtml = `<p><a href="" > Research output </a></p>`;
+const researchHtml = `<p><a href="https://blogs.ufv.ca/sasi/2025/04/09/sasi-research-assistant-presents-at-student-research-day/" > Research output </a></p>`;
 
 const team = [
 	{

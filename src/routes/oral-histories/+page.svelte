@@ -49,7 +49,7 @@
           </div>
 
           <div class="p-5">
-            <h3 class="text-xl font-semibold mb-1">{interview.name}</h3>
+            <h3 class="text-xl font-semibold mb-1 text-left">{interview.name}</h3>
             <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
               {interview.title} | {interview.location}
             </p>
