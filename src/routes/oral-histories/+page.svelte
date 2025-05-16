@@ -53,7 +53,7 @@
             <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
               {interview.title} | {interview.location}
             </p>
-            <p class="text-sm line-clamp-3">{interview.description}</p>
+            <p class="text-sm line-clamp-3">{interview.shortDescription}</p>
           </div>
         </a>
       {/each}
