@@ -82,13 +82,30 @@ export const interviews: Interview[] = [
     name: "Dr. Munawar Sabir",
     title: "Academic",
     location: "British Columbia",
-    thumbnailUrl: `${base}/content/interviews/placeholder-interview.png`,
-    mediaType: 'video',
-    videoUrl: "https://www.youtube.com/embed/placeholder",
-    description: "",
+    thumbnailUrl: `${base}/content/interviews/thumbnails/munawar-sabir.jpg`,
+    mediaType: 'photos',
+    photoUrls: [
+      "https://drive.google.com/file/d/1daDA5N0LelarrlsciI3WQtKFwQ7kNzEY/preview",
+      "https://drive.google.com/file/d/1S4gj2jZQU9yxRoMOXXRCGJGJlHLkOYQX/preview",
+      // "https://drive.google.com/file/d/1U9c9M_wW0l6kNjDB4ID-xBKQ_JZcihsB/preview",
+      "https://drive.google.com/file/d/1dSz7O0kyenumokgbIwwj8Ity96YkBDqS/preview",
+      // "https://drive.google.com/file/d/15KgpAL5iXVRfrekpGUWRHBgHC5JoFSKc/preview",
+      "https://drive.google.com/file/d/1zZgf9jTnmuXPcezvOgUfGZmQY-fASkLT/preview",
+      "https://drive.google.com/file/d/1zbJWs4daIsrxCFDrv68uN9wfquUAJeLF/preview"
+    ],
+    description: `Dr. Sarah Beaulieu is a Faculty Associate in the Community Health and Social Innovation Hub
+as well as an instructor of Anthropology and Sociology at the University of the Fraser Valley, in
+British Columbia.With a research focus on modern conflict anthropology, Dr.Beaulieu is the
+first to excavate WWI internment sites in Canada.Her research contributes new information
+toward the PoW lived experience within these Canadian camps.Artefacts from her research have
+been acquired by the Canadian Museum of History for two exhibits; the first in the Canadian
+History Hall and the second as part of the Civil Liberties Exhibit.Her research has been
+highlighted in the documentary “That Never Happened” which has received numerous
+international awards and was the "Official Selection" of the Permanent Mission of Canada to The
+United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     shortDescription: "Dr. Munawar Sabir shares his experiences as a Muslim in British Columbia.",
     interviewer: "Dr. Sarah Beaulieu",
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/15KgpAL5iXVRfrekpGUWRHBgHC5JoFSKc/view`
   },
   {
     id: "mr-mrs-habib",
@@ -120,7 +137,7 @@ export const interviews: Interview[] = [
     name: "Hana Amani",
     title: "Museum of Anthropology",
     location: "British Columbia",
-    thumbnailUrl: `${base}/content/interviews/placeholder-interview.png`,
+    thumbnailUrl: `${base}/content/interviews/thumbnails/hana-amani.jpeg`,
     mediaType: 'photos',
     photoUrls: [
       "https://drive.google.com/file/d/1tnlGzzkKNRiY5LqRNlUwjgmgPvKo_NxC/preview",

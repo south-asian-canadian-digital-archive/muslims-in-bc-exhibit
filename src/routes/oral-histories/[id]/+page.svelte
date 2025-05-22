@@ -5,6 +5,7 @@
 
   import { ArrowLeft, FileText, ChevronLeft, ChevronRight } from "svelte-radix";
   import * as Carousel from "$lib/components/ui/carousel";
+  import { goto } from "$app/navigation";
 
   let { data }: { data: PageData } = $props();
   const { interview } = data;
@@ -25,9 +26,6 @@
     }
   }
 
-  function goBack() {
-    history.back();
-  }
 
   function truncateLink(url: string): string {
     // Remove protocol and www
@@ -59,7 +57,7 @@
 
 <main class="container px-4 py-8 relative">
   <button
-    onclick={goBack}
+    onclick={() => goto(`${base}/oral-histories`)}
     class="flex items-center mb-10 text-primary hover:text-primary-dark transition-colors"
   >
     <ArrowLeft class="mr-1" />
