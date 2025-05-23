@@ -1,6 +1,7 @@
 <script lang="ts">
   import { base } from "$app/paths";
   import type { PageData } from "./$types";
+  import { PUBLIC_DOMAIN } from "$env/static/public";
   import { onMount } from "svelte";
 
   import { ArrowLeft, FileText, ChevronLeft, ChevronRight } from "svelte-radix";
@@ -47,11 +48,89 @@
 </script>
 
 <svelte:head>
-  <title>{interview.name} - Community Oral History | Muslims in BC</title>
+  <title>{interview.name} - Community Oral History | South Asian Muslims in BC</title>
   <meta
     name="description"
-    content={interview.description.substring(0, 155) + "..."}
+    content="{interview.shortDescription} - Listen to {interview.name}'s personal story about their experience as a South Asian Muslim in British Columbia, including their journey, community involvement, and cultural heritage."
   />
+  <meta name="keywords" content="{interview.name}, oral history, South Asian Muslim, {interview.location}, personal story, immigration experience, community testimony, Muslim heritage BC" />
+  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="{interview.name} - Community Oral History | South Asian Muslims in BC" />
+  <meta property="og:description" content="{interview.shortDescription} - Personal story from a South Asian Muslim community member in British Columbia." />
+  <meta property="og:image" content="{interview.thumbnailUrl}" />
+  <meta property="og:url" content="https://{PUBLIC_DOMAIN}/oral-histories/{interview.id}" />
+  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{interview.name} - Community Oral History | South Asian Muslims in BC" />
+  <meta name="twitter:description" content="{interview.shortDescription}" />
+  <meta name="twitter:image" content="{interview.thumbnailUrl}" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://{PUBLIC_DOMAIN}/oral-histories/{interview.id}" />
+  
+  <!-- Structured Data -->
+  {@html `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "${interview.name} - Community Oral History",
+      "description": "${interview.description}",
+      "url": "https://${PUBLIC_DOMAIN}/oral-histories/${interview.id}",
+      "thumbnailUrl": "${interview.thumbnailUrl}",
+      "uploadDate": "2024-01-01",
+      "duration": "PT30M",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "${interview.location}",
+        "containedInPlace": {
+          "@type": "Place",
+          "name": "British Columbia, Canada"
+        }
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "South Asian Studies Institute",
+        "url": "https://www.ufv.ca/sasi/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "South Asian Canadian Digital Archive",
+        "url": "https://sacda.ca"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "South Asian Muslim Experience",
+          "description": "Personal narratives of South Asian Muslims in British Columbia"
+        },
+        {
+          "@type": "Thing",
+          "name": "Cultural Heritage",
+          "description": "Preservation of cultural and religious traditions"
+        },
+        {
+          "@type": "Thing",
+          "name": "Immigration Stories",
+          "description": "Personal accounts of migration and settlement"
+        }
+      ],
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "name": "Community Oral Histories",
+        "url": "https://${PUBLIC_DOMAIN}/oral-histories"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "name": "${interview.name} - Community Oral History",
+        "url": "https://${PUBLIC_DOMAIN}/oral-histories/${interview.id}"
+      }
+    }
+  </script>`}
 </svelte:head>
 
 <main class="container px-4 py-8 relative">

@@ -2,6 +2,7 @@
   import { gsap } from "gsap";
   import { onMount } from "svelte";
   import { SvelteSet } from "svelte/reactivity";
+  import { PUBLIC_DOMAIN } from "$env/static/public";
 
   import {
     team,
@@ -43,7 +44,68 @@
 </script>
 
 <svelte:head>
-  <title>About | South Asian Muslims in BC</title>
+  <title>About the Project - South Asian Muslims in BC</title>
+  <meta name="description" content="Learn about the South Asian Muslims in British Columbia digital exhibit project, including the research team, community partners, methodology, and objectives behind documenting these important stories." />
+  <meta name="keywords" content="about project, South Asian Studies Institute, research team, community partners, digital archive, SACDA, UFV, methodology, academic research, community engagement" />
+  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About the Project - South Asian Muslims in BC" />
+  <meta property="og:description" content="Learn about the research team, community partners, and methodology behind the South Asian Muslims in BC digital exhibit project." />
+  <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
+  <meta property="og:url" content="https://{PUBLIC_DOMAIN}/about" />
+  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About the Project - South Asian Muslims in BC" />
+  <meta name="twitter:description" content="Learn about the research team, community partners, and methodology behind the South Asian Muslims in BC digital exhibit project." />
+  <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://{PUBLIC_DOMAIN}/about" />
+  
+  <!-- Structured Data -->
+  {@html `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About the Project - South Asian Muslims in BC",
+      "description": "Information about the South Asian Muslims in British Columbia digital exhibit project, including research methodology, team members, and community partnerships.",
+      "url": "https://${PUBLIC_DOMAIN}/about",
+      "mainEntity": {
+        "@type": "ResearchProject",
+        "name": "South Asian Muslims in British Columbia Digital Exhibit",
+        "description": "A digital exhibit documenting the history, experiences, and contributions of South Asian Muslim communities in British Columbia",
+        "url": "https://${PUBLIC_DOMAIN}",
+        "author": {
+          "@type": "Organization",
+          "name": "South Asian Studies Institute",
+          "url": "https://www.ufv.ca/sasi/",
+          "parentOrganization": {
+            "@type": "EducationalOrganization",
+            "name": "University of the Fraser Valley",
+            "url": "https://www.ufv.ca"
+          }
+        },
+        "funder": {
+          "@type": "Organization",
+          "name": "University of the Fraser Valley"
+        },
+        "isPartOf": {
+          "@type": "DigitalDocument",
+          "name": "South Asian Canadian Digital Archive",
+          "url": "https://sacda.ca"
+        }
+      },
+      "isPartOf": {
+        "@type": "DigitalDocument",
+        "name": "South Asian Muslims in BC - Digital Exhibit",
+        "url": "https://${PUBLIC_DOMAIN}"
+      }
+    }
+  </script>`}
 </svelte:head>
 
 {#snippet FloatingSquare(

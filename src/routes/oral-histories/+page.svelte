@@ -1,15 +1,76 @@
 <script lang="ts">
   import { base } from "$app/paths";
   import { interviews } from "$lib/content/interviews.content";
+  import { PUBLIC_DOMAIN } from "$env/static/public";
   import { Play } from "svelte-radix";
 </script>
 
 <svelte:head>
-  <title>Community Oral Histories - Muslims in BC</title>
+  <title>Community Oral Histories - South Asian Muslims in BC</title>
   <meta
     name="description"
-    content="Explore oral histories and interviews with South Asian Muslims in British Columbia"
+    content="Explore personal stories and oral histories from South Asian Muslims across British Columbia. Discover narratives of migration, community building, religious practice, and cultural preservation through in-depth video interviews."
   />
+  <meta name="keywords" content="oral histories, South Asian Muslims BC, Muslim community stories, immigration narratives, cultural heritage interviews, British Columbia Muslims, community voices, personal testimonies" />
+  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Community Oral Histories - South Asian Muslims in BC" />
+  <meta property="og:description" content="Explore personal stories and oral histories from South Asian Muslims across British Columbia. Discover narratives of migration, community building, and cultural preservation." />
+  <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
+  <meta property="og:url" content="https://{PUBLIC_DOMAIN}/oral-histories" />
+  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Community Oral Histories - South Asian Muslims in BC" />
+  <meta name="twitter:description" content="Explore personal stories and oral histories from South Asian Muslims across British Columbia. Discover narratives of migration, community building, and cultural preservation." />
+  <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://{PUBLIC_DOMAIN}/oral-histories" />
+  
+  <!-- Structured Data -->
+  {@html `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Community Oral Histories - South Asian Muslims in BC",
+      "description": "A collection of oral history interviews with South Asian Muslims in British Columbia, documenting their experiences, community building, and cultural heritage.",
+      "url": "https://${PUBLIC_DOMAIN}/oral-histories",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Oral History Interviews",
+        "description": "Video interviews with community members sharing their stories",
+        "numberOfItems": ${interviews.length},
+        "itemListElement": [
+          ${interviews.map((interview, index) => `{
+            "@type": "VideoObject",
+            "position": ${index + 1},
+            "name": "${interview.name} - Community Oral History",
+            "description": "${interview.shortDescription}",
+            "url": "https://${PUBLIC_DOMAIN}/oral-histories/${interview.id}",
+            "thumbnailUrl": "${interview.thumbnailUrl}",
+            "contentLocation": {
+              "@type": "Place",
+              "name": "${interview.location}"
+            }
+          }`).join(',')}
+        ]
+      },
+      "isPartOf": {
+        "@type": "DigitalDocument",
+        "name": "South Asian Muslims in BC - Digital Exhibit",
+        "url": "https://${PUBLIC_DOMAIN}"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "South Asian Studies Institute",
+        "url": "https://www.ufv.ca/sasi/"
+      }
+    }
+  </script>`}
 </svelte:head>
 
 <main class="container px-4 py-32">

@@ -1,8 +1,10 @@
 <script>
   import { onMount } from "svelte";
   import { gsap } from "gsap";
+  import { base } from "$app/paths";
   import Image from "$lib/components/Image.svelte";
   import HistoryNavigation from "$lib/components/HistoryNavigation.svelte";
+  import { PUBLIC_DOMAIN } from "$env/static/public";
 
   onMount(() => {
     let domeAnimationTimeline = gsap.timeline({
@@ -21,6 +23,73 @@
     domeAnimationTimeline.play();
   });
 </script>
+
+<svelte:head>
+  <title>Historical Journey - South Asian Muslims in BC</title>
+  <meta name="description" content="Explore the historical journey of South Asian Muslims in British Columbia from early 20th century migration to recent experiences. Discover timelines, case studies, and significant events that shaped the community." />
+  <meta name="keywords" content="South Asian Muslim history, BC immigration history, Muslim community timeline, historical migration patterns, early 20th century, mid 20th century, recent experiences, case studies" />
+  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Historical Journey - South Asian Muslims in BC" />
+  <meta property="og:description" content="Explore the historical journey of South Asian Muslims in British Columbia from early migration to recent experiences through timelines and case studies." />
+  <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
+  <meta property="og:url" content="https://{PUBLIC_DOMAIN}/history" />
+  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Historical Journey - South Asian Muslims in BC" />
+  <meta name="twitter:description" content="Explore the historical journey of South Asian Muslims in British Columbia from early migration to recent experiences through timelines and case studies." />
+  <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://{PUBLIC_DOMAIN}/history" />
+  
+  <!-- Structured Data -->
+  {@html `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Historical Journey - South Asian Muslims in BC",
+      "description": "A comprehensive overview of the historical journey of South Asian Muslims in British Columbia, covering multiple time periods and significant events.",
+      "url": "https://${PUBLIC_DOMAIN}/history",
+      "mainEntity": {
+        "@type": "HistoricalEvent",
+        "name": "South Asian Muslim Migration to British Columbia",
+        "description": "The ongoing history of South Asian Muslim communities establishing themselves in British Columbia",
+        "startDate": "1900",
+        "location": {
+          "@type": "Place",
+          "name": "British Columbia, Canada"
+        }
+      },
+      "isPartOf": {
+        "@type": "DigitalDocument",
+        "name": "South Asian Muslims in BC - Digital Exhibit",
+        "url": "https://${PUBLIC_DOMAIN}"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "South Asian Studies Institute",
+        "url": "https://www.ufv.ca/sasi/"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Immigration History",
+          "description": "Historical patterns of South Asian Muslim immigration to British Columbia"
+        },
+        {
+          "@type": "Thing",
+          "name": "Community Development",
+          "description": "The establishment and growth of South Asian Muslim communities in BC"
+        }
+      ]
+    }
+  </script>`}
+</svelte:head>
 
 <HistoryNavigation currentId={null} />
 

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { base } from "$app/paths";
+  import { PUBLIC_DOMAIN } from "$env/static/public";
   import { navItems } from "$lib/content/nav";
   import { gsap } from "gsap";
   import { onMount } from "svelte";
@@ -9,6 +10,7 @@
   import { fly } from "svelte/transition";
   import Arrow from "$lib/components/Arrow.svelte";
   import { ArrowDown } from "svelte-radix";
+  import { page } from "$app/stores";
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
@@ -75,7 +77,138 @@
 </script>
 
 <svelte:head>
-  <title>South Asian Muslims in BC</title>
+  <title>South Asian Muslims in BC - Digital Exhibit & Oral Histories</title>
+  <meta name="description" content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories that have shaped the Muslim Canadian experience in BC." />
+  <meta name="keywords" content="South Asian Muslims, British Columbia, oral histories, Muslim Canadian experience, cultural heritage, immigration history, community stories, digital archive, BC history, South Asian Studies" />
+  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="South Asian Muslims in BC - Digital Exhibit & Oral Histories" />
+  <meta property="og:description" content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories." />
+  <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
+  <meta property="og:url" content="https://{PUBLIC_DOMAIN}" />
+  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="South Asian Muslims in BC - Digital Exhibit & Oral Histories" />
+  <meta name="twitter:description" content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories." />
+  <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://{PUBLIC_DOMAIN}" />
+  
+  <!-- Structured Data -->
+  {@html `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DigitalDocument",
+      "name": "South Asian Muslims in BC - Digital Exhibit",
+      "description": "A comprehensive digital exhibit exploring the history, cultural heritage, and contributions of South Asian Muslims in British Columbia through oral histories, timelines, and community stories.",
+      "url": "https://${PUBLIC_DOMAIN}",
+      "author": {
+        "@type": "Organization",
+        "name": "South Asian Studies Institute",
+        "url": "https://www.ufv.ca/sasi/",
+        "parentOrganization": {
+          "@type": "EducationalOrganization",
+          "name": "University of the Fraser Valley",
+          "url": "https://www.ufv.ca"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "South Asian Canadian Digital Archive",
+        "url": "https://sacda.ca"
+      },
+      "inLanguage": "en-CA",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "South Asian Muslims",
+          "description": "Muslim communities of South Asian origin in British Columbia"
+        },
+        {
+          "@type": "Place",
+          "name": "British Columbia",
+          "description": "Province in western Canada"
+        },
+        {
+          "@type": "Thing",
+          "name": "Immigration History",
+          "description": "Historical patterns of South Asian Muslim immigration to British Columbia"
+        }
+      ],
+      "hasPart": [
+        {
+          "@type": "DigitalDocument",
+          "name": "Community Oral Histories",
+          "url": "https://${PUBLIC_DOMAIN}/oral-histories",
+          "description": "Personal narratives and interviews from South Asian Muslim community members in British Columbia"
+        },
+        {
+          "@type": "DigitalDocument", 
+          "name": "Historical Timeline",
+          "url": "https://${PUBLIC_DOMAIN}/history",
+          "description": "Comprehensive historical overview of South Asian Muslim experiences in BC from early 20th century to present",
+          "hasPart": [
+            {
+              "@type": "Article",
+              "name": "Early 20th Century",
+              "url": "https://${PUBLIC_DOMAIN}/history/early-20th-century",
+              "description": "Early immigration patterns and establishment of South Asian Muslim communities in British Columbia"
+            },
+            {
+              "@type": "Article", 
+              "name": "Mid-20th Century",
+              "url": "https://${PUBLIC_DOMAIN}/history/mid-20th-century",
+              "description": "Community growth, challenges, and developments during the mid-20th century period"
+            },
+            {
+              "@type": "Article",
+              "name": "Recent Experiences of South Asian Muslims in BC", 
+              "url": "https://${PUBLIC_DOMAIN}/history/recent-experiences",
+              "description": "Contemporary experiences, achievements, and ongoing community development"
+            },
+            {
+              "@type": "Article",
+              "name": "Timeline",
+              "url": "https://${PUBLIC_DOMAIN}/history/timeline", 
+              "description": "Chronological overview of key events and milestones in South Asian Muslim BC history"
+            },
+            {
+              "@type": "Article",
+              "name": "Case Studies: Hidden Histories",
+              "url": "https://${PUBLIC_DOMAIN}/history/case-studies",
+              "description": "In-depth examination of lesser-known stories and experiences from the community"
+            }
+          ]
+        }
+      ]
+    }
+  </script>`}
+  
+  {@html `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "South Asian Studies Institute",
+      "url": "https://www.ufv.ca/sasi/",
+      "logo": "https://www.ufv.ca/media/assets/sasi/UFV_SASI_logo.png",
+      "description": "The South Asian Studies Institute at the University of the Fraser Valley promotes research, education, and community engagement related to South Asian diaspora communities.",
+      "parentOrganization": {
+        "@type": "EducationalOrganization",
+        "name": "University of the Fraser Valley",
+        "url": "https://www.ufv.ca"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "sasi@ufv.ca",
+        "contactType": "customer service"
+      }
+    }
+  </script>`}
 </svelte:head>
 
 <!-- Scroll indicator -->

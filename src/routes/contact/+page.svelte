@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { page } from "$app/stores";
-  import { PUBLIC_FORM_ACCESS_KEY } from "$env/static/public";
   import { onMount } from "svelte";
+  import { PUBLIC_DOMAIN } from "$env/static/public";
 
   //   let { form }: { form: ActionData } = $props();
 
@@ -11,16 +10,69 @@
   let honeypot: string | undefined = $state();
 
   onMount(() => {
-    console.log($page.url.href);
+    // console.log($page.url.href);
   });
 </script>
 
 <svelte:head>
-  <title>Contact | South Asian Muslims in BC</title>
+  <title>Contact Us - Share Your Story | South Asian Muslims in BC</title>
   <meta 
     name="description" 
-    content="Get in touch with the South Asian Muslims in BC exhibit team. Share your stories, provide feedback, or ask questions about our digital archive collection." 
+    content="Get in touch with the South Asian Muslims in BC exhibit team. Share your stories, provide feedback, or ask questions about our digital archive collection and research project." 
   />
+  <meta name="keywords" content="contact, share your story, South Asian Studies Institute, feedback, community stories, digital archive contribution, Muslim community BC, research participation" />
+  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Us - Share Your Story | South Asian Muslims in BC" />
+  <meta property="og:description" content="Get in touch with our team to share your story, provide feedback, or learn more about contributing to the South Asian Muslims in BC digital archive." />
+  <meta property="og:image" content="/content/2021_08_01_040.jpg" />
+  <meta property="og:url" content="https://{PUBLIC_DOMAIN}/contact" />
+  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us - Share Your Story | South Asian Muslims in BC" />
+  <meta name="twitter:description" content="Get in touch with our team to share your story, provide feedback, or learn more about contributing to the digital archive." />
+  <meta name="twitter:image" content="/content/2021_08_01_040.jpg" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://{PUBLIC_DOMAIN}/contact" />
+  
+  <!-- Structured Data -->
+  {@html `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Us - South Asian Muslims in BC",
+      "description": "Contact page for the South Asian Muslims in BC digital exhibit project. Share your story or get in touch with our research team.",
+      "url": "https://${PUBLIC_DOMAIN}/contact",
+      "mainEntity": {
+        "@type": "ContactPoint",
+        "contactType": "research inquiry",
+        "email": "sasi@ufv.ca",
+        "telephone": "+1-604-854-4547",
+        "areaServed": "British Columbia",
+        "availableLanguage": "English"
+      },
+      "isPartOf": {
+        "@type": "DigitalDocument",
+        "name": "South Asian Muslims in BC - Digital Exhibit",
+        "url": "https://${PUBLIC_DOMAIN}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "South Asian Studies Institute",
+        "url": "https://www.ufv.ca/sasi/",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "sasi@ufv.ca",
+          "telephone": "+1-604-854-4547"
+        }
+      }
+    }
+  </script>`}
 </svelte:head>
 
 <main class="bg-secondary-yellow flex flex-col pt-20 gap-20 md:my-20 !max-w-full">

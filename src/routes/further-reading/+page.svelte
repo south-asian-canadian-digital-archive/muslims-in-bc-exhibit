@@ -1,9 +1,74 @@
 <script>
   import HistoryTimeline from "$lib/components/HistoryTimelineMobile.svelte";
   import Arrow from "$lib/components/Arrow.svelte";
+  import { PUBLIC_DOMAIN } from "$env/static/public";
 
   import { resourceLinks } from "$lib/content/resources.content";
+  import { base } from "$app/paths";
 </script>
+
+<svelte:head>
+  <title>Further Reading & Resources - South Asian Muslims in BC</title>
+  <meta name="description" content="Explore curated academic resources, books, articles, and research materials about South Asian Muslims in British Columbia and Canada. Access scholarly works and community resources for deeper understanding." />
+  <meta name="keywords" content="further reading, academic resources, South Asian Muslim research, scholarly articles, books, academic papers, research materials, bibliography, BC Muslim history, South Asian studies" />
+  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Further Reading & Resources - South Asian Muslims in BC" />
+  <meta property="og:description" content="Access curated academic resources, books, and research materials about South Asian Muslims in British Columbia and their experiences in Canada." />
+  <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
+  <meta property="og:url" content="https://{PUBLIC_DOMAIN}/further-reading" />
+  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Further Reading & Resources - South Asian Muslims in BC" />
+  <meta name="twitter:description" content="Access curated academic resources, books, and research materials about South Asian Muslims in British Columbia and their experiences in Canada." />
+  <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://{PUBLIC_DOMAIN}/further-reading" />
+  
+  <!-- Structured Data -->
+  {@html `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Further Reading & Resources - South Asian Muslims in BC",
+      "description": "A curated collection of academic resources, books, articles, and research materials about South Asian Muslims in British Columbia.",
+      "url": "https://${PUBLIC_DOMAIN}/further-reading",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Academic Resources and Further Reading",
+        "description": "Curated list of scholarly resources about South Asian Muslims in British Columbia",
+        "numberOfItems": ${resourceLinks.length}
+      },
+      "isPartOf": {
+        "@type": "DigitalDocument",
+        "name": "South Asian Muslims in BC - Digital Exhibit",
+        "url": "https://${PUBLIC_DOMAIN}"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "South Asian Studies Institute",
+        "url": "https://www.ufv.ca/sasi/"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "South Asian Muslim Research",
+          "description": "Academic research and scholarly materials about South Asian Muslim communities"
+        },
+        {
+          "@type": "Thing",
+          "name": "Academic Bibliography",
+          "description": "Curated bibliography of resources for further study and research"
+        }
+      ]
+    }
+  </script>`}
+</svelte:head>
 
 <main class="py-32 flex flex-col gap-10">
   <p
