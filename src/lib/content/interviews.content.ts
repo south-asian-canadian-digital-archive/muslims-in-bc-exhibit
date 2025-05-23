@@ -41,22 +41,7 @@ export const interviews: Interview[] = [
     contributors: ["Samarah Siddique", "Sadhikpreet Singh", "Thamilini Jothilingam"],
     narrativePdfUrl: `https://drive.google.com/file/d/1lAxgmjQheqntKg-roXVfi9Y_RbWty_SH/view?usp=drive_link`
   },
-  {
-    id: "anushay-malik",
-    name: "Dr. Anushay Malik",
-    title: "Visiting Faculty for History and Labour Studies",
-    location: "SFU",
-    thumbnailUrl: `${base}/content/interviews/thumbnails/anushay-malik.png`,
-    mediaType: 'video',
-    videoUrl: "https://drive.google.com/file/d/1NbYkJt_9UPYy2fL-uF62C0f_QHQjsmKd/preview",
-    shortDescription: "Dr. Anushay Malik discusses her research and perspectives on Muslim communities in British Columbia.",
-    description: "Anushay Malik is a senior lecturer and historian at Simon Fraser University, who immigrated to British Columbia from Pakistan in 2019, primarily for better educational support for her child. She was born in Lahore and raised for a decade in Kuala Lumpur, Malaysia.",
-    links: ["https://www.sfu.ca/history/faculty-and-staff/faculty-by-name/malik-anushay.html"],
-    interviewDate: "2025-03-25",
-    interviewer: "Samarah Siddique",
-    contributors: ["Sadhikpreet Singh"],
-    narrativePdfUrl: `https://drive.google.com/file/d/1mGTunDyrV_fLhkgM_Jyz0uoslLJ0uGuO/view?usp=drive_link`
-  },
+
   {
     id: "hassan-javid",
     name: "Dr. Hassan Javid",
@@ -73,6 +58,7 @@ export const interviews: Interview[] = [
     contributors: ["Sadhik Preet Singh"],
     narrativePdfUrl: `https://drive.google.com/file/d/1bcHKhoWGiiTJeoqcd8uGXhyOnXxGHzOi/view?usp=drive_link`
   },
+
   {
     id: "munawar-sabir",
     name: "Dr. Munawar Sabir",
@@ -96,6 +82,23 @@ export const interviews: Interview[] = [
     narrativePdfUrl: `https://drive.google.com/file/d/15KgpAL5iXVRfrekpGUWRHBgHC5JoFSKc/view`,
     links: ["https://sacda.ca/index.php/Detail/collections/938"]
   },
+
+  {
+    id: "ahsan-yousuf",
+    name: "Ahsan Yousuf",
+    title: "International student at UFV from Pakistan",
+    location: "UFV",
+    thumbnailUrl: `${base}/content/interviews/thumbnails/ahsan-yousuf.png`,
+    mediaType: 'video',
+    videoUrl: "https://drive.google.com/file/d/1ydrOMO6HAu23lOZlz9b15g6RAGHIObZA/preview",
+    shortDescription: "Ahsan Yousuf discusses his experiences as an international student from Pakistan at UFV, with prior experience living in UAE.",
+    description: "Ahsan Yousuf was born in Karachi, Pakistan and was raised in Dubai. His early life in Dubai shaped much of his upbringing by living in a diverse city and a close-knit family. ",
+    interviewDate: "2025-03-04",
+    interviewer: "Samarah Siddique",
+    contributors: ["Sadhik preet Singh"],
+    narrativePdfUrl: `https://drive.google.com/file/d/1kZB0h7b4RN3sULjUevHZ18dUYcP4UYIw/view?usp=drive_link`
+  },
+
   {
     id: "mr-mrs-habib",
     name: "Dr. Naiyer Habib & Mahlaqa Naushaba Habib",
@@ -121,6 +124,24 @@ export const interviews: Interview[] = [
     contributors: ["Sadhikpreet Singh", "Thamilini Jothilingam"],
     narrativePdfUrl: `https://drive.google.com/open?id=1JfRp9CxLKMBtZYZGDbhF48111FX0vVUL`
   },
+
+  {
+    id: "rizwaan-abbas",
+    name: "Rizwaan Abbas",
+    title: "Archaeologist",
+    location: "British Columbia",
+    thumbnailUrl: `${base}/content/interviews/thumbnails/rizwaan-abbas.png`,
+    mediaType: 'video',
+    videoUrl: "https://drive.google.com/file/d/1qVzae2ocefKlSrjkyetTSrUVuUoxTKpG/preview",
+    shortDescription: "Rizwaan Abbas shares his unique perspective as an Indo Fijian Muslim in British Columbia.",
+    description: "Rizwaan Abbas is a 1st generation Canadian, from an Indo-Fijian descent who was born in 1977 in a town called Michele-Middletown-Natal near Sparwood, British Columbia and he was raised in Sparwood. He grew up in a small coal mining town which his father had immigrated to in 1973, living there for a few years until he went back to Fiji where he got married to Rizwaans mother, who then migrated with him to Sparwood in around 1974. ",
+    interviewDate: "2025-03-24",
+    interviewer: "Samarah Siddique",
+    contributors: ["Sadhik preet Singh"],
+    narrativePdfUrl: `https://drive.google.com/file/d/1cdnHR76Fx6SSy3yNeE7hj3ShTt31ZqE5/view?usp=drive_link`,
+    links: ["https://linktr.ee/riz031"]
+  },
+
   {
     id: "hana-amani",
     name: "Hana Amani",
@@ -157,6 +178,7 @@ export const interviews: Interview[] = [
     contributors: ["Sadhikpreet Singh"],
     narrativePdfUrl: `https://drive.google.com/file/d/1gi9qQL2m08e_lJbHonDBhMiYfILyU-sh/view?usp=sharing`
   },
+
   {
     id: "farida-farook",
     name: "Farida Farook",
@@ -175,6 +197,7 @@ export const interviews: Interview[] = [
     contributors: ["Sadhik Preet Singh"],
     narrativePdfUrl: `https://drive.google.com/file/d/1wv9Ekh3vuKsWVIoC8LFZvucWZlyb6fXL/view?usp=drive_link`
   },
+
   {
     id: "inayath-mohamed",
     name: "Inayath Mohamed",
@@ -191,22 +214,7 @@ export const interviews: Interview[] = [
     narrativePdfUrl: `https://drive.google.com/file/d/1BHmlNYEAvS8qxd0Jp7hnnuo2fcbozEHQ/view?usp=drive_link`,
     links: ["https://whatsonmission.ca/in-the-community/life-of-a-writer-inayath-mohamed"]
   },
-  {
-    id: "rizwaan-abbas",
-    name: "Rizwaan Abbas",
-    title: "Archaeologist",
-    location: "British Columbia",
-    thumbnailUrl: `${base}/content/interviews/thumbnails/rizwaan-abbas.png`,
-    mediaType: 'video',
-    videoUrl: "https://drive.google.com/file/d/1qVzae2ocefKlSrjkyetTSrUVuUoxTKpG/preview",
-    shortDescription: "Rizwaan Abbas shares his unique perspective as an Indo Fijian Muslim in British Columbia.",
-    description: "Rizwaan Abbas is a 1st generation Canadian, from an Indo-Fijian descent who was born in 1977 in a town called Michele-Middletown-Natal near Sparwood, British Columbia and he was raised in Sparwood. He grew up in a small coal mining town which his father had immigrated to in 1973, living there for a few years until he went back to Fiji where he got married to Rizwaans mother, who then migrated with him to Sparwood in around 1974. ",
-    interviewDate: "2025-03-24",
-    interviewer: "Samarah Siddique",
-    contributors: ["Sadhik preet Singh"],
-    narrativePdfUrl: `https://drive.google.com/file/d/1cdnHR76Fx6SSy3yNeE7hj3ShTt31ZqE5/view?usp=drive_link`,
-    links: ["https://linktr.ee/riz031"]
-  },
+
   {
     id: "shakeel-gaya",
     name: "Shakeel Gaya",
@@ -222,6 +230,7 @@ export const interviews: Interview[] = [
     contributors: ["Thamilini Jothilingam", "Samarah Siddique"],
     narrativePdfUrl: `https://drive.google.com/file/d/1JTdhLAdkvlBZ9ZKr5qkNOtbOupPSxP2X/view?usp=drive_link`
   },
+
   {
     id: "hifza-shahzad",
     name: "Hifza Shahzad",
@@ -237,21 +246,24 @@ export const interviews: Interview[] = [
     contributors: ["Sadhik preet Singh"],
     narrativePdfUrl: `https://drive.google.com/file/d/1Ec8VUdCS_ROIMU2UvU-iBUu5KE46mbRS/view?usp=sharing`
   },
+
   {
-    id: "ahsan-yousuf",
-    name: "Ahsan Yousuf",
-    title: "International student at UFV from Pakistan",
-    location: "UFV",
-    thumbnailUrl: `${base}/content/interviews/thumbnails/ahsan-yousuf.png`,
+    id: "anushay-malik",
+    name: "Dr. Anushay Malik",
+    title: "Visiting Faculty for History and Labour Studies",
+    location: "SFU",
+    thumbnailUrl: `${base}/content/interviews/thumbnails/anushay-malik.png`,
     mediaType: 'video',
-    videoUrl: "https://drive.google.com/file/d/1ydrOMO6HAu23lOZlz9b15g6RAGHIObZA/preview",
-    shortDescription: "Ahsan Yousuf discusses his experiences as an international student from Pakistan at UFV, with prior experience living in UAE.",
-    description: "Ahsan Yousuf was born in Karachi, Pakistan and was raised in Dubai. His early life in Dubai shaped much of his upbringing by living in a diverse city and a close-knit family. ",
-    interviewDate: "2025-03-04",
+    videoUrl: "https://drive.google.com/file/d/1NbYkJt_9UPYy2fL-uF62C0f_QHQjsmKd/preview",
+    shortDescription: "Dr. Anushay Malik discusses her research and perspectives on Muslim communities in British Columbia.",
+    description: "Anushay Malik is a senior lecturer and historian at Simon Fraser University, who immigrated to British Columbia from Pakistan in 2019, primarily for better educational support for her child. She was born in Lahore and raised for a decade in Kuala Lumpur, Malaysia.",
+    links: ["https://www.sfu.ca/history/faculty-and-staff/faculty-by-name/malik-anushay.html"],
+    interviewDate: "2025-03-25",
     interviewer: "Samarah Siddique",
-    contributors: ["Sadhik preet Singh"],
-    narrativePdfUrl: `https://drive.google.com/file/d/1kZB0h7b4RN3sULjUevHZ18dUYcP4UYIw/view?usp=drive_link`
-  }
+    contributors: ["Sadhikpreet Singh"],
+    narrativePdfUrl: `https://drive.google.com/file/d/1mGTunDyrV_fLhkgM_Jyz0uoslLJ0uGuO/view?usp=drive_link`
+  },
+
 ];
 
 export function getInterviewById(id: string): Interview | undefined {
