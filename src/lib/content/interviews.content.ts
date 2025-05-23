@@ -66,7 +66,7 @@ export const interviews: Interview[] = [
     mediaType: 'video',
     videoUrl: "https://drive.google.com/file/d/1Ew26UPxFMpFSdm4z0rC78vr3xAezSvQY/preview",
     shortDescription: "Dr. Hassan Javid shares his sociological perspective on Muslim communities in British Columbia.",
-    description: "",
+    description: `Hassan Javid was born in 1984 in Ireland, living there until the age of two when his family decided to move to London in 1986. When Hassan was seven years old, his family had decided to move to Pakistan where his parents are originally from, and lived there until he started graduate school in 2006, when he moved to London spending 6 years there. Following this, he decided to move back to Pakistan where he lived for another 6 years, finally he migrated to British Columbia in 2019 with his wife and two children during the COVID-19 lockdown.`,
     links: ["https://www.ufv.ca/scms/faculty-staff/javid-hassan.htm"],
     interviewDate: "2025-02-24",
     interviewer: "Samarah Siddique",
@@ -89,16 +89,7 @@ export const interviews: Interview[] = [
       "https://drive.google.com/file/d/1zZgf9jTnmuXPcezvOgUfGZmQY-fASkLT/preview",
       "https://drive.google.com/file/d/1zbJWs4daIsrxCFDrv68uN9wfquUAJeLF/preview"
     ],
-    description: `Dr. Sarah Beaulieu is a Faculty Associate in the Community Health and Social Innovation Hub
-as well as an instructor of Anthropology and Sociology at the University of the Fraser Valley, in
-British Columbia.With a research focus on modern conflict anthropology, Dr.Beaulieu is the
-first to excavate WWI internment sites in Canada.Her research contributes new information
-toward the PoW lived experience within these Canadian camps.Artefacts from her research have
-been acquired by the Canadian Museum of History for two exhibits; the first in the Canadian
-History Hall and the second as part of the Civil Liberties Exhibit.Her research has been
-highlighted in the documentary “That Never Happened” which has received numerous
-international awards and was the "Official Selection" of the Permanent Mission of Canada to The
-United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
+    description: `My grandfather Ghulam Sabir began with the British railway as a clerk, and with his university education was able to move up into management, human resources, and finally, an accounting position. He was soon promoted to bursar and would travel by train, provided with his own bogie and guards to protect the coffers, visiting each station and paying the labourers lined up on payday. He went back to India around 1930 to marry my grandmother, Sardaran Khanum. They then returned to Kenya, where they would remain until my grandfather retired around 1958–59. Ghulam and Sardaran had four children, all born in Nairobi: Hamida (1931), Anwar (1932), Munawar (my father 1935), and Sureya (1939).`,
     shortDescription: "Dr. Munawar Sabir shares his experiences as a Muslim in British Columbia.",
     interviewType: "essay",
     interviewer: "Dr. Sarah Beaulieu",
@@ -178,7 +169,7 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
       `${base}/content/interviews/thumbnails/farida-farook.webp`
     ],
     shortDescription: "Farida Farook shares her experiences in the gem industry and as a Sri Lankan Muslim in British Columbia.",
-    description: "",
+    description: `Farida Yahya Farook Saleh was born in Sri Lanka, in a place once known as Ceylon. Her family has a long history in the jewelry business, with her grandfather and father serving as jewelers to the Maharajas of India, even having letters from Maharajas requesting meetings to take a look at their gemstones. Her aunt served for 40 years in the United Nations, initially with the Indian Mission and then later with the Sri Lankan Mission. Her great-grandfather, originally from Hadhramaut, Yemen, was a respected Imam and a businessman contributing significantly to Islamic culture and trade in the region. He also wrote the Quran by hand and produced sermons.`,
     interviewDate: "2025-01-12",
     interviewer: "Thamilini Jothilingam",
     contributors: ["Sadhik Preet Singh"],
@@ -192,7 +183,7 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     thumbnailUrl: `${base}/content/interviews/thumbnails/inayath-mohamed.png`,
     mediaType: 'video',
     videoUrl: "https://drive.google.com/file/d/1WybxfbHP7BlsQvI6WIUWapiie9wjw2sk/preview",
-    shortDescription: "Inayath Mohamed shares his experiences as an elementary school teacher with a global outlook, having taught at international schools in Indonesia, Oman, Singapore, Bangladesh, New Zealand and Saudi Arabia before returning to Canada.",
+    shortDescription: "Inayath Mohamed (born and raised in Sri Lanka) shares his experiences as an elementary school teacher with a global outlook, having taught at international schools in Indonesia, Oman, Singapore, Bangladesh, New Zealand and Saudi Arabia before returning to Canada.",
     description: "Inayath Mohamed was born and raised in Sri Lanka, growing up in a rural area where his father managed a rubber plantation and his mother was a homemaker. He was raised in a small nuclear family, consisting of his parents and younger brother. Life in Sri Lanka was peaceful during his childhood, and he finds that the rural environment was an ideal setting for a young boy. ",
     interviewDate: "2025-02-10",
     interviewer: "Samarah Siddique",

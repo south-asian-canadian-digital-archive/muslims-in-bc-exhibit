@@ -214,7 +214,7 @@
 
         <p class="mb-6">
           {interview.description}
-          {#if interview.narrativePdfUrl}
+          {#if interview.narrativePdfUrl && interview.description.length}
             <a
               href={interview.narrativePdfUrl}
               class="italic text-xs"

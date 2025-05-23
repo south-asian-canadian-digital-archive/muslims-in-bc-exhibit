@@ -43,6 +43,18 @@ const resourceLinks = [
 						text: "Said, Edward. Orientalism. (New York: Vintage, 1979).",
 						link: "https://monoskop.org/images/4/4e/Said_Edward_Orientalism_1979.pdf",
 					},
+					{
+						text: "The paradox of diversity: The construction of a multicultural canada and “women of color” - ScienceDirect",
+						link: "https://www.sciencedirect.com/science/article/pii/S0277539500001308"
+					},
+					{
+						text: "Unsettling the Nation: Gender, Race and Muslim Cultural Politics in Canada",
+						link: "https://www.academia.edu/31151907/Unsettling_the_Nation_Gender_Race_and_Muslim_Cultural_Politics_in_Canada"
+					},
+					// {
+					// 	text: "",
+					// 	link: ""
+					// }
 				],
 			},
 			{
@@ -82,7 +94,7 @@ const resourceLinks = [
 					},
 					{
 						text: "Kraft, Molly. \"Unbelongings: Muslim Women in Multicultural Canada\", MA diss., Geography, *UBC, 2012).",
-						link: "#",
+						link: "https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0073178",
 					},
 					{
 						text: "Suleman, Zoolfikar KB. \"Silent Adhan: Exploring the Muslim call to prayer in Metro Vancouver. MA, Interdisciplinary Studies (UBC, 2022).",
