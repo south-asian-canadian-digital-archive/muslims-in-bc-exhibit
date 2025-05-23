@@ -26,7 +26,6 @@
     }
   }
 
-
   function truncateLink(url: string): string {
     // Remove protocol and www
     const cleanUrl = url.replace(/^(https?:\/\/)?(www\.)?/i, "");
@@ -151,54 +150,32 @@
           <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mt-8">
             <h2 class="text-2xl font-semibold mb-4">Interview Details</h2>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                {#if interview.interviewDate}
-                  <div class="flex flex-wrap mb-3">
-                    <span class="font-medium w-32">Date:</span>
-                    <span
-                      >{new Date(interview.interviewDate).toLocaleDateString(
-                        "en-US",
-                        { month: "long", day: "numeric", year: "numeric" }
-                      )}</span
-                    >
-                  </div>
-                {/if}
-
-                {#if interview.interviewer}
-                  <div class="flex flex-wrap mb-3">
-                    <span class="font-medium w-32">Interviewer:</span>
-                    <span>{interview.interviewer}</span>
-                  </div>
-                {/if}
-              </div>
-
-              <div>
-                {#if interview.contributors && interview.contributors.length > 0}
-                  <div class="flex flex-wrap mb-3">
-                    <span class="font-medium w-32">Contributors:</span>
-                    <span>{interview.contributors.join(", ")}</span>
-                  </div>
-                {/if}
-
-                <div class="mt-3 space-y-2">
-                  {#if interview.links && interview.links.length > 0}
-                    <div class="space-y-1">
-                      {#each interview.links as link}
-                        <div>
-                          <a
-                            href={link}
-                            class="text-primary hover:underline"
-                            target="_blank"
-                          >
-                            {truncateLink(link)}
-                          </a>
-                        </div>
-                      {/each}
-                    </div>
-                  {/if}
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+              {#if interview.interviewDate}
+                <div class="flex flex-col">
+                  <span class="font-medium w-16">Date:</span>
+                  <span
+                    >{new Date(interview.interviewDate).toLocaleDateString(
+                      "en-US",
+                      { month: "long", day: "numeric", year: "numeric" }
+                    )}</span
+                  >
                 </div>
-              </div>
+              {/if}
+
+              {#if interview.interviewer}
+                <div class="flex flex-wrap mb-3">
+                  <span class="font-medium w-32">Interviewer:</span>
+                  <span>{interview.interviewer}</span>
+                </div>
+              {/if}
+
+              {#if interview.contributors && interview.contributors.length > 0}
+                <div class="flex flex-wrap mb-3">
+                  <span class="font-medium w-32">Contributors:</span>
+                  <span>{interview.contributors.join(", ")}</span>
+                </div>
+              {/if}
             </div>
           </div>
         {/if}
@@ -208,7 +185,27 @@
     <!-- Description (2/5 width on desktop) -->
     <div class="lg:col-span-2">
       <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-full">
-        <h2 class="text-2xl font-semibold mb-4">About {interview.name}</h2>
+        <h2 class="text-2xl font-semibold mb-3">About {interview.name}</h2>
+
+        <div class="mb-3 space-y-2">
+          <!-- <h4 class="text-lg font-semibold mb-2">Links</h4> -->
+          {#if interview.links && interview.links.length > 0}
+            <div class="space-y-1">
+              {#each interview.links as link}
+                <div>
+                  <a
+                    href={link}
+                    class="text-primary hover:underline"
+                    target="_blank"
+                  >
+                    {truncateLink(link)}
+                  </a>
+                </div>
+              {/each}
+            </div>
+          {/if}
+        </div>
+
         <p class="mb-6">{interview.description}</p>
 
         {#if interview.additionalInfo}

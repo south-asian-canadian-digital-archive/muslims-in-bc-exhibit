@@ -10,9 +10,7 @@
     sponsors,
     floatingSquareInfo,
   } from "$lib/content/about.content";
-  import Image from "$lib/components/Image.svelte";
   import { base } from "$app/paths";
-  import { page } from "$app/state";
 
   let floatingSquareTweens: gsap.core.Tween[] = [];
   let commitment_expanded: SvelteSet<number> = $state(new SvelteSet());
