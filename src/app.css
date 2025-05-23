@@ -110,7 +110,7 @@
   }
 
   .content-section {
-    @apply border-l-[6px] border-l-secondary-yellow pl-8 mb-8 break-words leading-relaxed;
+    @apply border-l-[6px] border-l-secondary-yellow pl-4 md:pl-8 mb-8 break-words leading-relaxed;
   }
 
   .card-container {

@@ -7,6 +7,8 @@
   import { resourceLinks } from "$lib/content/resources.content";
   import { interviews, type Interview } from "$lib/content/interviews.content";
   import { fly } from "svelte/transition";
+  import Arrow from "$lib/components/Arrow.svelte";
+  import { ArrowDown } from "svelte-radix";
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
@@ -69,7 +71,6 @@
     return () => {
       observer.disconnect();
     };
-
   });
 </script>
 
@@ -87,31 +88,20 @@
     }}
   >
     <div class="flex items-center gap-2 text-gray-700">
-      <span class="text-sm font-medium">Scroll down to view more</span>
+      <span class="text-sm font-medium text-left">Scroll down to view more</span
+      >
       <div class="animate-bounce">
-        <svg
-          class="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M19 14l-7 7m0 0l-7-7m7 7V3"
-          />
-        </svg>
+        <ArrowDown size="1.25rem" />
       </div>
     </div>
   </button>
 {/if}
 
 <main
-  class="container *:px-4 *:ld:px-0 px-0 pb-32 flex flex-col gap-16 !w-full !max-w-full"
+  class="container *:px-4 *:ld:px-0 px-0 pb-32 flex flex-col gap-8 md:gap-16 !w-full !max-w-full"
 >
   <!-- intro -->
-  <section class="py-32 flex gap-14 max-w-5xl lg:max-w-6xl mx-auto">
+  <section class="md:py-32 py-16 flex gap-14 max-w-5xl lg:max-w-6xl mx-auto">
     <div class="">
       <div
         class="lg:flex float-right justify-between overflow-clip hidden h-full max-w-xl ml-6 pb-4"
@@ -171,7 +161,7 @@
     bind:this={aboutSection}
   >
     <div
-      class="py-40 flex flex-col gap-5 w-full pr-96 max-w-5xl lg:max-w-6xl mx-auto"
+      class="md:!py-40 pt-20 pb-40 flex flex-col gap-5 w-full md:pr-96 max-w-5xl lg:max-w-6xl mx-auto"
     >
       <h2 class="page-title font-bold">About the Project</h2>
       <p>
@@ -195,7 +185,7 @@
     </div>
 
     <div
-      class="bg-[url('/pattern.svg')] w-[30vw] bg-repeat-y absolute right-0 top-0 h-full"
+      class="bg-[url('/pattern.svg')] w-full h-[30vw] md:w-[30vw] md:bg-repeat-y absolute bottom-0 left-0 md:right-0 md:top-0 md:bottom-auto md:left-auto md:h-full"
     >
       &nbsp;
     </div>
