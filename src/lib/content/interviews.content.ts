@@ -39,7 +39,7 @@ export const interviews: Interview[] = [
     interviewDate: "2024-12-19",
     interviewer: "Dr. Anushay Malik",
     contributors: ["Samarah Siddique", "Sadhikpreet Singh", "Thamilini Jothilingam"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/1lAxgmjQheqntKg-roXVfi9Y_RbWty_SH/view?usp=drive_link`
   },
   {
     id: "anushay-malik",
@@ -55,7 +55,7 @@ export const interviews: Interview[] = [
     interviewDate: "2025-03-25",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhikpreet Singh"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/1mGTunDyrV_fLhkgM_Jyz0uoslLJ0uGuO/view?usp=drive_link`
   },
   {
     id: "hassan-javid",
@@ -71,7 +71,7 @@ export const interviews: Interview[] = [
     interviewDate: "2025-02-24",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhik Preet Singh"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/1bcHKhoWGiiTJeoqcd8uGXhyOnXxGHzOi/view?usp=drive_link`
   },
   {
     id: "munawar-sabir",
@@ -102,7 +102,8 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     shortDescription: "Dr. Munawar Sabir shares his experiences as a Muslim in British Columbia.",
     interviewType: "essay",
     interviewer: "Dr. Sarah Beaulieu",
-    narrativePdfUrl: `https://drive.google.com/file/d/15KgpAL5iXVRfrekpGUWRHBgHC5JoFSKc/view`
+    narrativePdfUrl: `https://drive.google.com/file/d/15KgpAL5iXVRfrekpGUWRHBgHC5JoFSKc/view`,
+    links: ["https://sacda.ca/index.php/Detail/collections/938"]
   },
   {
     id: "mr-mrs-habib",
@@ -127,7 +128,7 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     interviewDate: "2024-12-19",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhikpreet Singh", "Thamilini Jothilingam"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/open?id=1JfRp9CxLKMBtZYZGDbhF48111FX0vVUL`
   },
   {
     id: "hana-amani",
@@ -163,7 +164,7 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     interviewDate: "2025-01-03",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhikpreet Singh"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/1gi9qQL2m08e_lJbHonDBhMiYfILyU-sh/view?usp=sharing`
   },
   {
     id: "farida-farook",
@@ -181,7 +182,7 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     interviewDate: "2025-01-12",
     interviewer: "Thamilini Jothilingam",
     contributors: ["Sadhik Preet Singh"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/1wv9Ekh3vuKsWVIoC8LFZvucWZlyb6fXL/view?usp=drive_link`
   },
   {
     id: "inayath-mohamed",
@@ -196,7 +197,8 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     interviewDate: "2025-02-10",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhik preet Singh"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/1BHmlNYEAvS8qxd0Jp7hnnuo2fcbozEHQ/view?usp=drive_link`,
+    links: ["https://whatsonmission.ca/in-the-community/life-of-a-writer-inayath-mohamed"]
   },
   {
     id: "rizwaan-abbas",
@@ -211,7 +213,8 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     interviewDate: "2025-03-24",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhik preet Singh"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/1cdnHR76Fx6SSy3yNeE7hj3ShTt31ZqE5/view?usp=drive_link`,
+    links: ["https://linktr.ee/riz031"]
   },
   {
     id: "shakeel-gaya",
@@ -226,7 +229,7 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     interviewDate: "2024-11-28",
     interviewer: "Dr. Anushay Malik",
     contributors: ["Thamilini Jothilingam", "Samarah Siddique"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/1JTdhLAdkvlBZ9ZKr5qkNOtbOupPSxP2X/view?usp=drive_link`
   },
   {
     id: "hifza-shahzad",
@@ -241,7 +244,7 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     interviewDate: "2025-03-23",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhik preet Singh"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/1Ec8VUdCS_ROIMU2UvU-iBUu5KE46mbRS/view?usp=sharing`
   },
   {
     id: "ahsan-yousuf",
@@ -256,7 +259,7 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     interviewDate: "2025-03-04",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhik preet Singh"],
-    narrativePdfUrl: `#`
+    narrativePdfUrl: `https://drive.google.com/file/d/1kZB0h7b4RN3sULjUevHZ18dUYcP4UYIw/view?usp=drive_link`
   }
 ];
 

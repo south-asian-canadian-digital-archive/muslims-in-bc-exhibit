@@ -167,7 +167,11 @@
 
               {#if interview.interviewer}
                 <div class="flex flex-wrap mb-3">
-                  <span class="font-medium w-32">{interview.interviewType === "essay" ? "Writer" : "Interviewer"}:</span>
+                  <span class="font-medium w-32"
+                    >{interview.interviewType === "essay"
+                      ? "Writer"
+                      : "Interviewer"}:</span
+                  >
                   <span>{interview.interviewer}</span>
                 </div>
               {/if}
@@ -208,7 +212,18 @@
           {/if}
         </div>
 
-        <p class="mb-6">{interview.description}</p>
+        <p class="mb-6">
+          {interview.description}
+          {#if interview.narrativePdfUrl}
+            <a
+              href={interview.narrativePdfUrl}
+              class="italic text-xs"
+              target="_blank"
+            >
+              ...click below to keep reading
+            </a>
+          {/if}
+        </p>
 
         {#if interview.additionalInfo}
           {#each interview.additionalInfo as info}
@@ -227,7 +242,11 @@
               target="_blank"
             >
               <FileText class="mr-2" />
-              <span>Read Complete Narrative</span>
+              <span
+                >Read Full {interview.interviewType === "essay"
+                  ? "Essay"
+                  : "Narrative"}</span
+              >
             </a>
           </div>
         {/if}
