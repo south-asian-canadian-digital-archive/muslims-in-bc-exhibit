@@ -6,23 +6,18 @@
   import { goto } from "$app/navigation";
   import { resourceLinks } from "$lib/content/resources.content";
   import { interviews, type Interview } from "$lib/content/interviews.content";
-  // import HistoryTimeline from "$lib/components/HistoryNavigation.svelte";
-  // import { horizontalLoop } from "$lib/utils/seemlessLoop.util";
+  import { fly } from "svelte/transition";
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
-  let hoveredTag = $state(-1);
-  // let loop: gsap.core.Timeline;
   let navTweens: gsap.core.Tween[] = $state([]);
   let prefix = "history-page-nav";
 
-  let exploreInterviews: Interview[] = $state([]);
+  let exploreInterviews: Interview[] = $derived(interviews.slice(-4));
+  let showScrollIndicator = $state(true);
+  let aboutSection: HTMLElement;
 
   onMount(() => {
-    exploreInterviews = interviews
-      .sort(() => Math.random() - 0.5)
-      .slice(0, Math.min(4, interviews.length));
-
     let domeAnimationTimeline = gsap.timeline({
       repeat: -1,
       onRepeat: () => {
@@ -37,13 +32,6 @@
       })
     );
     domeAnimationTimeline.play();
-
-    // let scrollingImageDivs = gsap.utils.toArray("#carousel > div");
-    // loop = horizontalLoop(scrollingImageDivs, {
-    //   center: true,
-    //   repeat: -1,
-    //   speed: 0.5,
-    // });
 
     historyPages.slice(1).forEach((e, i) => {
       navTweens.push(
@@ -62,12 +50,62 @@
         })
       );
     });
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const rect = entry.boundingClientRect;
+        showScrollIndicator = !entry.isIntersecting && rect.top > 0;
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      }
+    );
+
+    if (aboutSection) {
+      observer.observe(aboutSection);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+
   });
 </script>
 
 <svelte:head>
   <title>South Asian Muslims in BC</title>
 </svelte:head>
+
+<!-- Scroll indicator -->
+{#if showScrollIndicator}
+  <button
+    class="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-white/90 backdrop-blur-sm shadow-lg rounded-full px-6 py-3 border border-gray-200"
+    transition:fly={{ y: 20, duration: 300 }}
+    onclick={() => {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    <div class="flex items-center gap-2 text-gray-700">
+      <span class="text-sm font-medium">Scroll down to view more</span>
+      <div class="animate-bounce">
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
+        </svg>
+      </div>
+    </div>
+  </button>
+{/if}
 
 <main
   class="container *:px-4 *:ld:px-0 px-0 pb-32 flex flex-col gap-16 !w-full !max-w-full"
@@ -128,14 +166,18 @@
     </div>
   </section>
 
-  <section class="bg-secondary-yellow relative !max-w-full w-full">
+  <section
+    class="bg-secondary-yellow relative !max-w-full w-full"
+    bind:this={aboutSection}
+  >
     <div
       class="py-40 flex flex-col gap-5 w-full pr-96 max-w-5xl lg:max-w-6xl mx-auto"
     >
       <h2 class="page-title font-bold">About the Project</h2>
       <p>
         The South Asian Muslims in British Columbia (SAMBC) project is an online
-        exhibit (developed between 2024 and 2025 as an ongoing project) within the <a href="https://sacda.ca"
+        exhibit (developed between 2024 and 2025 as an ongoing project) within
+        the <a href="https://sacda.ca"
           >South Asian Canadian Digital Archive (SACDA)</a
         >. This project seeks to create a foundational understanding of the
         <a
