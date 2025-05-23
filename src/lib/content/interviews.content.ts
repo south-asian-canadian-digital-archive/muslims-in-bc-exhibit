@@ -16,7 +16,7 @@ export interface Interview {
     content: string;
   }[];
   links?: string[];
-  interviewType?: string;
+  interviewType?: "essay" | "interview";
   interviewDate?: string;
   interviewer?: string;
   contributors?: string[];
@@ -171,8 +171,11 @@ United Nations, screening in Geneva, Switzerland on September 20th, 2018.`,
     title: "Hana's mother",
     location: "British Columbia",
     thumbnailUrl: `${base}/content/interviews/thumbnails/farida-farook.webp`,
-    mediaType: 'video',
-    videoUrl: "https://drive.google.com/file/d/1DofUfBUMUGGUa458QfkpNlkMHXGvHJkQ/preview",
+    mediaType: 'photos',
+    // videoUrl: "https://drive.google.com/file/d/1DofUfBUMUGGUa458QfkpNlkMHXGvHJkQ/preview",
+    photoUrls: [
+      `${base}/content/interviews/thumbnails/farida-farook.webp`
+    ],
     shortDescription: "Farida Farook shares her experiences in the gem industry and as a Sri Lankan Muslim in British Columbia.",
     description: "",
     interviewDate: "2025-01-12",

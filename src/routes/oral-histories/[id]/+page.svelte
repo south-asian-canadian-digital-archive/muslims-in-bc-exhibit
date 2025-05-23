@@ -148,7 +148,9 @@
         <!-- Interview Details Below Video -->
         {#if interview.interviewDate || interview.interviewer || interview.contributors || (interview.links && interview.links.length > 0)}
           <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mt-8">
-            <h2 class="text-2xl font-semibold mb-4">Interview Details</h2>
+            <h2 class="text-2xl font-semibold mb-4">
+              {interview.interviewType === "essay" ? "Essay" : "Interview"} Details
+            </h2>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
               {#if interview.interviewDate}
@@ -165,7 +167,7 @@
 
               {#if interview.interviewer}
                 <div class="flex flex-wrap mb-3">
-                  <span class="font-medium w-32">Interviewer:</span>
+                  <span class="font-medium w-32">{interview.interviewType === "essay" ? "Writer" : "Interviewer"}:</span>
                   <span>{interview.interviewer}</span>
                 </div>
               {/if}
