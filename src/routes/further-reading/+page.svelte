@@ -38,6 +38,8 @@
                   onclick={(e) => link.link === "#" && e.preventDefault()}
                   class="link !no-underline !text-foreground"
                   class:!cursor-default={link.link === "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span class="text-body">
                     {link.text}
