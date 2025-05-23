@@ -71,7 +71,7 @@ const resourceLinks = [
 		],
 	},
 	{
-		title: "Unpublished Theses and Dissertations",
+		title: "Theses and Dissertations",
 		content: [
 			{
 				subHeading: "Academic Research",

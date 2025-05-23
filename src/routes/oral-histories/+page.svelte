@@ -18,10 +18,10 @@
     <p class="text-lg mb-8">
       Discover the rich tapestry of stories from South Asian Muslims across
       British Columbia . These oral histories capture personal journeys,
-      community milestones, and cultural experiences that have shaped the Muslim
+      community milestones, and cultural experiences that have shaped the Muslim Canadian
       experience in BC . Through these narratives, we gain insight into how
       religious identity , cultural heritage , and immigration experiences have
-      contributed to the vibrant multicultural fabric of our province.
+      contributed to the vibrant fabric of our province.
     </p>
   </section>
 

@@ -1,9 +1,10 @@
 import { base } from "$app/paths";
 
-const floatingSquareInfo: { title: string; desc: string }[] = [
+const floatingSquareInfo: { title: string; desc: string, link?: string }[] = [
 	{
-		title: "Consultation",
-		desc: "SASI has spent time consulting with organizations, associations, and individuals who have lived experiences as South Asian Canadian Muslims in BC and beyond.<br /><br />The goal is to record first-hand or oral histories of past and present.",
+		title: "Oral Histories",
+		desc: "SASI has spent time consulting with organizations, associations, and individuals who have lived experiences as South Asian Canadian Muslims in BC and beyond. The goal is to record first-hand or oral histories of past and present.",
+		link: `${base}/oral-histories`,
 	},
 	{
 		title: "Building Relationships",
@@ -12,19 +13,19 @@ const floatingSquareInfo: { title: string; desc: string }[] = [
 	{
 		title: "Education & Outreach",
 		desc: "Educating the public on the contributions of South Asian Muslims in B.C, through exhibits, workshops, and online resources, outreach has fostered cultural understanding that celebrates untold histories, heritage, and culture.",
+		link: `${base}/history`,
 	},
 	{
 		title: "Grants & Funding",
 		desc: "Generous grants and funding have made it possible for resources, to conduct in-depth research, create public exhibits, and develop educational programs that preserve and share this heritage.",
+		link: `${base}/about#sponsors`,
 	},
 ];
-
-const researchHtml = `<p><a href="https://blogs.ufv.ca/sasi/2025/04/09/sasi-research-assistant-presents-at-student-research-day/" > Research output </a></p>`;
 
 const team = [
 	{
 		name: "Dr. Satwinder Bains",
-		desc: "Dr. Satwinder Bains provides overall direction, management, and support for research.<br />She leads the outreach component and community engagement with the goal of creating educational and participatory materials.",
+		desc: "Dr. Satwinder Bains provides overall direction, management, and support for research. She leads the outreach component and community engagement with the goal of creating educational and participatory materials.",
 	},
 	{
 		name: "Thamilini Jothilingam",
@@ -40,11 +41,11 @@ const team = [
 	},
 	{
 		name: "Kiara Dabreo",
-		desc: `Kiara Dabreo conducts historical and archival research on early South Asian Muslim immigrants in BC, creating an archival collection, preserving records, and cataloging key individuals, organizations, and settlement locations. ${researchHtml}`,
+		desc: `Kiara Dabreo conducts historical and archival research on early South Asian Muslim immigrants in BC, creating an archival collection, preserving records, and cataloging key individuals, organizations, and settlement locations. <p><a href="" > Research output </a></p>`,
 	},
 	{
 		name: "Samarah Saddique",
-		desc: `Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC and digitally archives their narratives. ${researchHtml}`,
+		desc: `Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC and digitally archives their narratives. <p><a href="https://blogs.ufv.ca/sasi/2025/04/09/sasi-research-assistant-presents-at-student-research-day/" > Research output </a></p>`,
 	},
 	{
 		name: "Sadhik Preet Singh",
@@ -114,7 +115,7 @@ const partners = [
 	{ src: `${base}/Sacda-logo.svg`, link: "https://sacda.ca", alt: "SACDA Logo", years: "2024-present" },
 	{
 		src: `${base}/content/abb muslim CC logo.png`,
-		link: "#",
+		link: "https://org.thebcma.com/abbotsford/",
 		alt: "Abbotsford Muslim Community Center Logo",
 		years: "2024-present",
 	},

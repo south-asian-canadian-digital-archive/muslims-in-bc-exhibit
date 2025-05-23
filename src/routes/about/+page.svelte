@@ -87,23 +87,27 @@
       <div class="flex flex-col lg:gap-8">
         <h1 class="page-title">About SASI</h1>
         <p class="text-p text-primary-black">
-          The South Asian Studies Institute at the University of the Fraser
-          Valley brings together South Asian scholars and students from diverse
+          The <a href="https://ufv.ca/sasi">South Asian Studies Institute</a> at
+          the <a href="https://ufv.ca">University of the Fraser Valley</a>
+          brings together South Asian scholars and students from diverse
           backgrounds and disciplines to create a nexus point for programs and
           activities that support our vision.
           <br /> <br /> The Institute fosters inter-disciplinary scholarly
           research, community and public engagement on issues related to South
           Asia and the Canadian South Asian Diaspora. The Institute initiates,
           directs and implements the development, maintenance and enhancement of
-          scholarship, research and engagement in collaboration with faculty,
-          students and community. The Institute takes direction from UFV's
-          strategic goals to be a leader of social, cultural, economic and
-          environmentally responsible development in the Fraser Valley. <br />
+          scholarship, <a href="https://sacda.ca">research and engagement</a> in
+          collaboration with faculty, students and community. The Institute
+          takes direction from UFV's strategic goals to be a leader of social,
+          cultural, economic and environmentally responsible development in the
+          Fraser Valley. <br />
           <br />The Institute is a repository of the pioneering history of
           immigrant settlers who make up the Canadian South Asian Diaspora. We
-          also undertake much needed contemporary research that benefits
-          academia, members of the community, government, organizations and
-          agencies as well as global scholars and interested persons.
+          also undertake much needed
+          <a href="https://southasiancanadianheritage.ca"
+            >contemporary research</a
+          > that benefits academia, members of the community, government, organizations
+          and agencies as well as global scholars and interested persons.
         </p>
         <div class="flex flex-wrap gap-4">
           {#each [["Meet Our Team", "#team"], ["Advisory Committee", "#committee"], ["Meet Our Partners", "#partners"]] as link, idx}
