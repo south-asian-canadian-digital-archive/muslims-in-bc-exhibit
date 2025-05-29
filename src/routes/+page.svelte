@@ -78,27 +78,48 @@
 
 <svelte:head>
   <title>South Asian Muslims in BC - Digital Exhibit & Oral Histories</title>
-  <meta name="description" content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories that have shaped the Muslim Canadian experience in BC." />
-  <meta name="keywords" content="South Asian Muslims, British Columbia, oral histories, Muslim Canadian experience, cultural heritage, immigration history, community stories, digital archive, BC history, South Asian Studies" />
-  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
-  
+  <meta
+    name="description"
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories that have shaped the Muslim Canadian experience in BC."
+  />
+  <meta
+    name="keywords"
+    content="South Asian Muslims, British Columbia, oral histories, Muslim Canadian experience, cultural heritage, immigration history, community stories, digital archive, BC history, South Asian Studies"
+  />
+  <meta
+    name="author"
+    content="South Asian Studies Institute, University of the Fraser Valley"
+  />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="South Asian Muslims in BC - Digital Exhibit & Oral Histories" />
-  <meta property="og:description" content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories." />
+  <meta
+    property="og:title"
+    content="South Asian Muslims in BC - Digital Exhibit & Oral Histories"
+  />
+  <meta
+    property="og:description"
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories."
+  />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta property="og:url" content="https://{PUBLIC_DOMAIN}" />
   <meta property="og:site_name" content="South Asian Muslims in BC" />
-  
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="South Asian Muslims in BC - Digital Exhibit & Oral Histories" />
-  <meta name="twitter:description" content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories." />
+  <meta
+    name="twitter:title"
+    content="South Asian Muslims in BC - Digital Exhibit & Oral Histories"
+  />
+  <meta
+    name="twitter:description"
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories."
+  />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
-  
+
   <!-- Canonical URL -->
   <link rel="canonical" href="https://{PUBLIC_DOMAIN}" />
-  
+
   <!-- Structured Data -->
   {@html `<script type="application/ld+json">
     {
@@ -188,7 +209,7 @@
       ]
     }
   </script>`}
-  
+
   {@html `<script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -250,7 +271,7 @@
             onfocus={() => {}}
           >
             <div
-              class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen block dome-bg will-change-auto"
+              class="bg-pattern bg-repeat h-full w-screen block dome-bg will-change-auto"
             ></div>
           </div>
         {/each}
@@ -318,7 +339,7 @@
     </div>
 
     <div
-      class="bg-[url('/pattern.svg')] w-full h-[30vw] md:w-[30vw] md:bg-repeat-y absolute bottom-0 left-0 md:right-0 md:top-0 md:bottom-auto md:left-auto md:h-full"
+      class="bg-pattern w-full h-[30vw] md:w-[30vw] md:bg-repeat-y absolute bottom-0 left-0 md:right-0 md:top-0 md:bottom-auto md:left-auto md:h-full"
     >
       &nbsp;
     </div>

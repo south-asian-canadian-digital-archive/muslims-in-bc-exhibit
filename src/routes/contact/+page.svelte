@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { base } from "$app/paths";
   import { PUBLIC_DOMAIN } from "$env/static/public";
 
   //   let { form }: { form: ActionData } = $props();
@@ -27,7 +28,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Contact Us - Share Your Story | South Asian Muslims in BC" />
   <meta property="og:description" content="Get in touch with our team to share your story, provide feedback, or learn more about contributing to the South Asian Muslims in BC digital archive." />
-  <meta property="og:image" content="/content/2021_08_01_040.jpg" />
+  <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta property="og:url" content="https://{PUBLIC_DOMAIN}/contact" />
   <meta property="og:site_name" content="South Asian Muslims in BC" />
   
@@ -35,7 +36,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contact Us - Share Your Story | South Asian Muslims in BC" />
   <meta name="twitter:description" content="Get in touch with our team to share your story, provide feedback, or learn more about contributing to the digital archive." />
-  <meta name="twitter:image" content="/content/2021_08_01_040.jpg" />
+  <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
   
   <!-- Canonical URL -->
   <link rel="canonical" href="https://{PUBLIC_DOMAIN}/contact" />
@@ -129,7 +130,7 @@
   </div>
 
   <div
-    class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x overflow-hidden"
+    class="bg-pattern min-h-32 w-full bg-repeat-x overflow-hidden"
   >
     &nbsp;
   </div>

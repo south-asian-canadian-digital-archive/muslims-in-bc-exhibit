@@ -103,7 +103,7 @@
           class="bg-secondar-teal rounded-xl p-2 w-full transition-all ease-in-out duration-300 dome overflow-hidden"
         >
           <div
-            class="bg-[url('/pattern.svg')] bg-repeat h-full w-screen dome-bg will-change-auto overflow-clip"
+            class="bg-pattern bg-repeat h-full w-screen dome-bg will-change-auto overflow-clip"
           ></div>
         </div>
       </div>

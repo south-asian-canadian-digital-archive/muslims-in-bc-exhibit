@@ -1,5 +1,3 @@
-import { base } from "$app/paths";
-
 export let caseStudies: {
   img: string;
   name: string;
@@ -7,7 +5,7 @@ export let caseStudies: {
   desc: string;
 }[] = [
     {
-      img: `${base}/content/2021_08_01_041.jpg`,
+      img: `/content/2021_08_01_041.jpg`,
       name: "Husain Rahim",
       years: "(1865-1937)",
       desc: ` 

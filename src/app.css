@@ -75,9 +75,13 @@
   }
 
   .dome {
-    mask-image: url("/Vector.svg");
-    -webkit-mask-image: url("/Vector.svg");
+    mask-image: url("exhibits/sambc/Vector.svg");
+    -webkit-mask-image: url("/exhibits/sambc/Vector.svg");
     mask-size: 100% 100%;
+  }
+
+  .bg-pattern {
+    background-image: url("/exhibits/sambc/pattern.svg");
   }
 
   a {

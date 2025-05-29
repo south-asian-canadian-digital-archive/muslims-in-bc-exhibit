@@ -195,7 +195,7 @@
     </div>
 
     <div
-      class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x overflow-hidden"
+      class="bg-pattern min-h-32 w-full bg-repeat-x overflow-hidden"
     >
       &nbsp;
     </div>
@@ -270,7 +270,7 @@
         {/each}
       </div>
     </div>
-    <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
+    <div class="bg-pattern min-h-32 w-full bg-repeat-x">
       &nbsp;
     </div>
   </section>
@@ -359,7 +359,7 @@
         {/each}
       </div>
     </div>
-    <div class="bg-[url('/pattern.svg')] min-h-32 w-full bg-repeat-x">
+    <div class="bg-pattern min-h-32 w-full bg-repeat-x">
       &nbsp;
     </div>
   </section>
