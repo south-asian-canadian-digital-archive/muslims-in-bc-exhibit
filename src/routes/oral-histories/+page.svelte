@@ -59,11 +59,19 @@
           }`).join(',')}
         ]
       },
-      "isPartOf": {
-        "@type": "DigitalDocument",
-        "name": "South Asian Muslims in BC - Digital Exhibit",
-        "url": "https://${PUBLIC_DOMAIN}"
-      },
+      "isPartOf": [
+        {
+          "@type": "DigitalDocument",
+          "name": "Community Life",
+          "description": "Community narratives and contemporary profiles from South Asian Muslims in BC",
+          "url": "https://${PUBLIC_DOMAIN}/oral-histories"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "South Asian Muslims in BC - Digital Exhibit",
+          "url": "https://${PUBLIC_DOMAIN}"
+        }
+      ],
       "author": {
         "@type": "Organization",
         "name": "South Asian Studies Institute",

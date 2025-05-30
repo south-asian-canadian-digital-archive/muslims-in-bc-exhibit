@@ -119,11 +119,24 @@
           "description": "Personal accounts of migration and settlement"
         }
       ],
-      "isPartOf": {
-        "@type": "CollectionPage",
-        "name": "Community Oral Histories",
-        "url": "https://${PUBLIC_DOMAIN}/oral-histories"
-      },
+      "isPartOf": [
+        {
+          "@type": "CollectionPage",
+          "name": "Community Oral Histories",
+          "url": "https://${PUBLIC_DOMAIN}/oral-histories"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Community Life",
+          "description": "Community narratives and contemporary profiles from South Asian Muslims in BC",
+          "url": "https://${PUBLIC_DOMAIN}/oral-histories"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "South Asian Muslims in BC - Digital Exhibit",
+          "url": "https://${PUBLIC_DOMAIN}"
+        }
+      ],
       "mainEntityOfPage": {
         "@type": "WebPage",
         "name": "${interview.name} - Community Oral History",

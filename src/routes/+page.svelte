@@ -165,9 +165,23 @@
       "hasPart": [
         {
           "@type": "DigitalDocument",
-          "name": "Community Oral Histories",
+          "name": "Community Life",
           "url": "https://${PUBLIC_DOMAIN}/oral-histories",
-          "description": "Personal narratives and interviews from South Asian Muslim community members in British Columbia"
+          "description": "Personal narratives, interviews, and contemporary profiles from South Asian Muslim community members in British Columbia",
+          "hasPart": [
+            {
+              "@type": "DigitalDocument",
+              "name": "Oral Histories",
+              "url": "https://${PUBLIC_DOMAIN}/oral-histories",
+              "description": "Personal narratives and interviews from South Asian Muslim community members in British Columbia"
+            },
+            {
+              "@type": "DigitalDocument",
+              "name": "Contemporary Personalities",
+              "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities",
+              "description": "Profiles of influential South Asian Muslim leaders, entrepreneurs, and changemakers in BC today"
+            }
+          ]
         },
         {
           "@type": "DigitalDocument", 
@@ -354,10 +368,10 @@
     <div class="max-w-5xl lg:max-w-6xl mx-auto pb-20">
       <h2 class="page-title font-bold mb-10">Explore Our Content</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-8 ">
         <!-- History Section -->
         <div
-          class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-primary-blue hover:shadow-xl transition-all"
+          class="bg-white md:row-span-2 lg:col-span-3 rounded-xl shadow-lg p-6 border-t-4 border-primary-blue hover:shadow-xl transition-all"
         >
           <h3 class="text-xl font-bold mb-3 text-primary-blue">
             Historical Journey
@@ -382,74 +396,75 @@
           >
         </div>
 
-        <!-- Oral Histories -->
+        <!-- Community Life -->
         <div
-          class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-secondar-teal hover:shadow-xl transition-all"
+          class="bg-white md:row-span-2 lg:col-span-3 rounded-xl shadow-lg p-6 border-t-4 border-secondar-teal hover:shadow-xl transition-all md:col-span-2"
         >
           <h3 class="text-xl font-bold mb-3 text-secondar-teal">
-            Oral Histories
+            Community Life
           </h3>
           <p class="mb-4">
-            Discover the rich cultural and religious practices, community
-            organizations, and daily life experiences:
+            Explore the lived experiences of South Asian Muslims in BC through personal narratives and contemporary profiles:
           </p>
-          <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
-            {#each exploreInterviews as interview}
-              <li>
-                <a
-                  href="{base}/oral-histories/{interview.id}"
-                  class="hover:underline">{interview.name} Interview</a
-                >
-              </li>
-            {/each}
-          </ul>
-          <a
-            href="{base}/oral-histories"
-            class="inline-block text-secondar-teal font-medium hover:underline"
-            >Explore Oral Histories →</a
-          >
-        </div>
+          
+          <div class="grid grid-cols-1  gap-6">
+            <!-- Oral Histories Subsection -->
+            <div>
+              <h4 class="font-semibold text-secondar-teal mb-2">Oral Histories</h4>
+              <p class="text-sm mb-3">Personal narratives and interviews from community members</p>
+              <!-- <ul class="list-disc pl-5 mb-3 space-y-1 *:text-left text-sm">
+                {#each exploreInterviews.slice(0, 3) as interview}
+                  <li>
+                    <a
+                      href="{base}/oral-histories/{interview.id}"
+                      class="hover:underline">{interview.name} Interview</a
+                    >
+                  </li>
+                {/each}
+              </ul> -->
+              <a
+                href="{base}/oral-histories"
+                class="inline-block text-secondar-teal font-medium hover:underline text-sm"
+                >Explore all oral histories →</a
+              >
+            </div>
 
-        <!-- Contemporary Personalities -->
-        <div
-          class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-green-600 hover:shadow-xl transition-all"
-        >
-          <h3 class="text-xl font-bold mb-3 text-green-600">
-            Contemporary Personalities
-          </h3>
-          <p class="mb-4">
-            Meet influential South Asian Muslim leaders, entrepreneurs, and changemakers in BC today:
-          </p>
-          <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
-            {#each personalities.slice(0, 3) as personality}
-              <li>
-                <a
-                  href="{base}/contemporary-personalities/{personality.id}"
-                  class="hover:underline">{personality.name}</a
-                >
-              </li>
-            {/each}
-          </ul>
-          <a
-            href="{base}/contemporary-personalities"
-            class="inline-block text-green-600 font-medium hover:underline"
-            >View all personalities →</a
-          >
+            <!-- Contemporary Personalities Subsection -->
+            <div>
+              <h4 class="font-semibold text-green-600 mb-2">Contemporary Personalities</h4>
+              <p class="text-sm mb-3">Influential leaders, entrepreneurs, and changemakers today</p>
+              <!-- <ul class="list-disc pl-5 mb-3 space-y-1 *:text-left text-sm">
+                {#each personalities.slice(0, 3) as personality}
+                  <li>
+                    <a
+                      href="{base}/contemporary-personalities/{personality.id}"
+                      class="hover:underline">{personality.name}</a
+                    >
+                  </li>
+                {/each}
+              </ul> -->
+              <a
+                href="{base}/contemporary-personalities"
+                class="inline-block text-green-600 font-medium hover:underline text-sm"
+                >View all personalities →</a
+              >
+            </div>
+          </div>
         </div>
 
         <!-- Further Reading -->
         <div
-          class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-secondary-yellow hover:shadow-xl transition-all"
+          class="bg-white lg:col-span-2 rounded-xl shadow-lg p-6 border-t-4 border-secondary-yellow hover:shadow-xl transition-all"
         >
           <h3 class="text-xl font-bold mb-3 text-orange-700">
             Research Resources
           </h3>
           <p class="mb-4">
             Access academic research, articles, books and other resources about
-            South Asian Muslims:
+            South Asian Muslims.
           </p>
-          <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
-            {#each resourceLinks as linkItem}
+          <!-- <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
+            {#each resourceLinks.slice(0,2) as linkItem}
               <li>
                 <a
                   href="{base}/further-reading#{linkItem.title
@@ -460,7 +475,7 @@
                 >
               </li>
             {/each}
-          </ul>
+          </ul> -->
           <a
             href="{base}/further-reading"
             class="inline-block text-orange-700 font-medium hover:underline"
@@ -470,14 +485,14 @@
 
         <!-- Share Your Story -->
         <div
-          class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-purple-600 hover:shadow-xl transition-all h-full"
+          class="bg-white lg:col-span-2 rounded-xl shadow-lg p-6 border-t-4 border-purple-600 hover:shadow-xl transition-all h-full"
         >
           <h3 class="text-xl font-bold mb-3 text-purple-600">Participate</h3>
           <p class="mb-4">
             Contribute to this living archive by sharing your personal
-            experience or family history:
+            experience or family history.
           </p>
-          <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
+          <!-- <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
             <li>
               <a href="{base}/contact" class="hover:underline"
                 >Share Your Story</a
@@ -488,7 +503,7 @@
                 >Contribute to SACDA</a
               >
             </li>
-          </ul>
+          </ul> -->
           <a
             href="{base}/contact"
             class="inline-block text-purple-600 font-medium hover:underline"
