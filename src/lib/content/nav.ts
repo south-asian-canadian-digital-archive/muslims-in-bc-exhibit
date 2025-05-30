@@ -2,7 +2,7 @@ import { base } from "$app/paths";
 
 export const navItems: {
 	name: string;
-	path: string;
+	path?: string;
 	pages?: {
 		name: string;
 		path: string;
@@ -30,10 +30,16 @@ export const navItems: {
 				{ name: "Mid-20th Century", path: `${base}/history/mid-20th-century` },
 				{ name: "Recent experiences of South Asian Muslim in BC", path: `${base}/history/recent-experiences` },
 				{ name: "Timeline", path: `${base}/history/timeline` },
-				{ name: "Case Studies: Hidden Histories", path: `${base}/history/case-studies` }
+				{ name: "Case Studies: Hidden Histories", path: `${base}/history/case-studies` },
 			]
 		},
-		{ name: "Oral Histories", path: `${base}/oral-histories` },
+		{
+			name: "Community Life",
+			pages: [
+				{ name: "Oral Histories", path: `${base}/oral-histories` },
+				{ name: "Contemporary Personalities", path: `${base}/contemporary-personalities` },
+			]
+		},
 		{ name: "Further Reading", path: `${base}/further-reading` },
 		{ name: "Share your story", path: `${base}/contact` },
 	]

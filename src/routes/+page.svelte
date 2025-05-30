@@ -7,6 +7,7 @@
   import { goto } from "$app/navigation";
   import { resourceLinks } from "$lib/content/resources.content";
   import { interviews, type Interview } from "$lib/content/interviews.content";
+  import { personalities } from "$lib/content/personalities.content";
   import { fly } from "svelte/transition";
   import Arrow from "$lib/components/Arrow.svelte";
   import { ArrowDown } from "svelte-radix";
@@ -353,7 +354,7 @@
     <div class="max-w-5xl lg:max-w-6xl mx-auto pb-20">
       <h2 class="page-title font-bold mb-10">Explore Our Content</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         <!-- History Section -->
         <div
           class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-primary-blue hover:shadow-xl transition-all"
@@ -406,6 +407,33 @@
             href="{base}/oral-histories"
             class="inline-block text-secondar-teal font-medium hover:underline"
             >Explore Oral Histories →</a
+          >
+        </div>
+
+        <!-- Contemporary Personalities -->
+        <div
+          class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-green-600 hover:shadow-xl transition-all"
+        >
+          <h3 class="text-xl font-bold mb-3 text-green-600">
+            Contemporary Personalities
+          </h3>
+          <p class="mb-4">
+            Meet influential South Asian Muslim leaders, entrepreneurs, and changemakers in BC today:
+          </p>
+          <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
+            {#each personalities.slice(0, 3) as personality}
+              <li>
+                <a
+                  href="{base}/contemporary-personalities/{personality.id}"
+                  class="hover:underline">{personality.name}</a
+                >
+              </li>
+            {/each}
+          </ul>
+          <a
+            href="{base}/contemporary-personalities"
+            class="inline-block text-green-600 font-medium hover:underline"
+            >View all personalities →</a
           >
         </div>
 
