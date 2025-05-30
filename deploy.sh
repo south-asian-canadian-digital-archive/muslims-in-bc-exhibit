@@ -1,3 +1,5 @@
+pnpm build
+
 cd build
 
 git init
