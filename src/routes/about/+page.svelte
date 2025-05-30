@@ -45,27 +45,48 @@
 
 <svelte:head>
   <title>About the Project - South Asian Muslims in BC</title>
-  <meta name="description" content="Learn about the South Asian Muslims in British Columbia digital exhibit project, including the research team, community partners, methodology, and objectives behind documenting these important stories." />
-  <meta name="keywords" content="about project, South Asian Studies Institute, research team, community partners, digital archive, SACDA, UFV, methodology, academic research, community engagement" />
-  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
-  
+  <meta
+    name="description"
+    content="Learn about the South Asian Muslims in British Columbia digital exhibit project, including the research team, community partners, methodology, and objectives behind documenting these important stories."
+  />
+  <meta
+    name="keywords"
+    content="about project, South Asian Studies Institute, research team, community partners, digital archive, SACDA, UFV, methodology, academic research, community engagement"
+  />
+  <meta
+    name="author"
+    content="South Asian Studies Institute, University of the Fraser Valley"
+  />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="About the Project - South Asian Muslims in BC" />
-  <meta property="og:description" content="Learn about the research team, community partners, and methodology behind the South Asian Muslims in BC digital exhibit project." />
+  <meta
+    property="og:title"
+    content="About the Project - South Asian Muslims in BC"
+  />
+  <meta
+    property="og:description"
+    content="Learn about the research team, community partners, and methodology behind the South Asian Muslims in BC digital exhibit project."
+  />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta property="og:url" content="https://{PUBLIC_DOMAIN}/about" />
   <meta property="og:site_name" content="South Asian Muslims in BC" />
-  
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="About the Project - South Asian Muslims in BC" />
-  <meta name="twitter:description" content="Learn about the research team, community partners, and methodology behind the South Asian Muslims in BC digital exhibit project." />
+  <meta
+    name="twitter:title"
+    content="About the Project - South Asian Muslims in BC"
+  />
+  <meta
+    name="twitter:description"
+    content="Learn about the research team, community partners, and methodology behind the South Asian Muslims in BC digital exhibit project."
+  />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
-  
+
   <!-- Canonical URL -->
   <link rel="canonical" href="https://{PUBLIC_DOMAIN}/about" />
-  
+
   <!-- Structured Data -->
   {@html `<script type="application/ld+json">
     {
@@ -149,9 +170,9 @@
         <p class="text-p text-primary-black">
           The <a href="https://ufv.ca/sasi">South Asian Studies Institute</a> at
           the <a href="https://ufv.ca">University of the Fraser Valley</a>
-          brings together South Asian scholars and students from diverse
-          backgrounds and disciplines to create a nexus point for programs and
-          activities that support our vision.
+          brings together South Asian scholars and students from diverse backgrounds
+          and disciplines to create a nexus point for programs and activities that
+          support our vision.
           <br /> <br /> The Institute fosters inter-disciplinary scholarly
           research, community and public engagement on issues related to South
           Asia and the Canadian South Asian Diaspora. The Institute initiates,
@@ -194,9 +215,7 @@
       </div>
     </div>
 
-    <div
-      class="bg-pattern min-h-32 w-full bg-repeat-x overflow-hidden"
-    >
+    <div class="bg-pattern min-h-32 w-full bg-repeat-x overflow-hidden">
       &nbsp;
     </div>
   </section>
@@ -255,12 +274,19 @@
               <div
                 class="lg:w-[20vw] lg:h-[20vw] rounded-lg aspect-square bg-white relative"
               >
-                <span
+                <p
                   class="top-0 left-0 p-2 bg-secondar-teal rounded-t-lg text-white font-martel absolute w-full z-20 text-center"
-                  >{person.name}</span
                 >
+                  <span>
+                    {person.name}
+                  </span>
+                  <br>
+                  <span class="text-sm italic text-gray-100">
+                    {person.role} {#if person.years} ({person.years}) {/if}
+                  </span>
+                </p>
                 <span
-                  class="p-4 pt-10 absolute top-4 left-0 lg:h-[18vw] overflow-auto"
+                  class="p-4 pt-16 absolute top-4 left-0 lg:h-[18vw] overflow-auto"
                 >
                   {@html person.desc}
                 </span>
@@ -270,9 +296,7 @@
         {/each}
       </div>
     </div>
-    <div class="bg-pattern min-h-32 w-full bg-repeat-x">
-      &nbsp;
-    </div>
+    <div class="bg-pattern min-h-32 w-full bg-repeat-x">&nbsp;</div>
   </section>
 
   <!-- committee -->
@@ -359,9 +383,7 @@
         {/each}
       </div>
     </div>
-    <div class="bg-pattern min-h-32 w-full bg-repeat-x">
-      &nbsp;
-    </div>
+    <div class="bg-pattern min-h-32 w-full bg-repeat-x">&nbsp;</div>
   </section>
 
   <!-- sponsors -->

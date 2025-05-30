@@ -22,48 +22,70 @@ const floatingSquareInfo: { title: string; desc: string, link?: string }[] = [
 	},
 ];
 
-const team = [
-	{
-		name: "Dr. Satwinder Bains",
-		desc: "Dr. Satwinder Bains provides overall direction, management, and support for research. She leads the outreach component and community engagement with the goal of creating educational and participatory materials.",
-	},
-	{
-		name: "Thamilini Jothilingam",
-		desc: "Thamilini Jothilingam leads the archival recording, manages content development, and supports the oral history interviews, transcription, and narratives. She supports student researchers, community historians, and community leaders.",
-	},
-	{
-		name: "Annet Holierhoek",
-		desc: "Annet Holierhoek oversees the website's development and design, ensuring alignment with project goals. She collaborates with researchers and designers to maintain accuracy and accessibility, integrating feedback and media seamlessly.",
-	},
-	{
-		name: "Dr. Anushay Malik",
-		desc: "Dr. Anushay Malik, PhD, Senior Lecturer at SFU, is the contracted consultant who leads the research on the project. She brings a wealth of knowledge, lived experience, and research expertise as a young Muslim Canadian scholar.",
-	},
-	{
-		name: "Kiara Dabreo",
-		desc: `Kiara Dabreo conducts historical and archival research on early South Asian Muslim immigrants in BC, creating an archival collection, preserving records, and cataloging key individuals, organizations, and settlement locations. <p><a href="https://blogs.ufv.ca/sasi/2024/05/16/sasis-research-assistant-kiara-dabreo-presents-at-ufvs-student-research-day/" > Research output </a></p>`,
-	},
-	{
-		name: "Samarah Saddique",
-		desc: `Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC and digitally archives their narratives. <p><a href="https://blogs.ufv.ca/sasi/2025/04/09/sasi-research-assistant-presents-at-student-research-day/" > Research output </a></p>`,
-	},
-	{
-		name: "Sadhik Preet Singh",
-		desc: "Sadhik Preet Singh contributes to the BC Muslim Social History Project as a video editor and transcriber, also conducting interviews with South Asian Muslim community members across BC to document their stories.",
-	},
-	{
-		name: "Saumyaa Gelani",
-		desc: "Saumyaa Gelani contributes to the South Asian Muslims in BC Project as a Research Assistant and plays a key role in the website’s design. She ensures that the design is engaging and easy to use.",
-	},
-	{
-		name: "Rashneet",
-		desc: "Rashneet contributes to the South Asian Muslims in BC Project as a graphic designer and research assistant. She develops the project’s design identity and creates the foundational website design.",
-	},
-	{
-		name: "Arnav Mehta",
-		desc: "Arnav Mehta contributes to the project by developing and hosting the website. He implements animations, ensures smooth functionality, and optimizes the platform to align with the project’s goals.",
-	},
-];
+const team: {
+	name: String;
+	desc: String;
+	years?: String;
+	role: String;
+}[] = [
+		{
+			name: "Dr. Satwinder Bains",
+			desc: "Dr. Satwinder Bains provides overall direction, management, and support for research. She leads the outreach component and community engagement with the goal of creating educational and participatory materials.",
+			role: "Director",
+		},
+		{
+			name: "Thamilini Jothilingam",
+			desc: "Thamilini Jothilingam leads the archival recording, manages content development, and supports the oral history interviews, transcription, and narratives. She supports student researchers, community historians, and community leaders.",
+			role: "Digital Archivist",
+		},
+		{
+			name: "Annet Holierhoek",
+			desc: "Annet Holierhoek oversees the website's development and design, ensuring alignment with project goals. She collaborates with researchers and designers to maintain accuracy and accessibility, integrating feedback and media seamlessly.",
+			role: "Financial manager"
+		},
+		{
+			name: "Dr. Anushay Malik",
+			desc: "Dr. Anushay Malik, PhD, Senior Lecturer at SFU, is the contracted consultant who leads the research on the project. She brings a wealth of knowledge, lived experience, and research expertise as a young Muslim Canadian scholar.",
+			role: "South Asian Research Fellow",
+			years: "2024/25",
+		},
+		{
+			name: "Kiara Dabreo",
+			desc: `Kiara Dabreo conducts historical and archival research on early South Asian Muslim immigrants in BC, creating an archival collection, preserving records, and cataloging key individuals, organizations, and settlement locations. <p><a href="https://blogs.ufv.ca/sasi/2024/05/16/sasis-research-assistant-kiara-dabreo-presents-at-ufvs-student-research-day/" > Research output </a></p>`,
+			role: "Research Assistant",
+			years: "2024/25",
+		},
+		{
+			name: "Samarah Saddique",
+			desc: `Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC and digitally archives their narratives. <p><a href="https://blogs.ufv.ca/sasi/2025/04/09/sasi-research-assistant-presents-at-student-research-day/" > Research output </a></p>`,
+			role: "Research Assistant",
+			years: "2024/25",
+		},
+		{
+			name: "Sadhik Preet Singh",
+			desc: "Sadhik Preet Singh contributes to the BC Muslim Social History Project as a video editor and transcriber, also conducting interviews with South Asian Muslim community members across BC to document their stories.",
+			role: "Research Assistant",
+			years: "2024/25",
+		},
+		{
+			name: "Saumyaa Gelani",
+			desc: "Saumyaa Gelani contributes to the South Asian Muslims in BC Project as a Research Assistant and plays a key role in the website’s design. She ensures that the design is engaging and easy to use.",
+			role: "Research Assistant",
+			years: "2024/25",
+		},
+		{
+			name: "Rashneet",
+			desc: "Rashneet contributes to the South Asian Muslims in BC Project as a graphic designer and research assistant. She develops the project’s design identity and creates the foundational website design.",
+			role: "Research Assistant",
+			years: "2024/25",
+		},
+		{
+			name: "Arnav Mehta",
+			desc: "Arnav Mehta contributes to the project by developing and hosting the website. He implements animations, ensures smooth functionality, and optimizes the platform to align with the project’s goals.",
+			role: "Research Assistant",
+			years: "2024/25",
+		},
+	];
 
 const committee: {
 	name: string;
