@@ -1,0 +1,1 @@
+export const env={"PUBLIC_DOMAIN":"sacda.ca/exhibits/sambc","PUBLIC_FORM_ACCESS_KEY":"8be03c8f-3c60-40dc-a312-b7cdbf03cf20"}
