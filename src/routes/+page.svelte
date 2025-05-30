@@ -296,7 +296,7 @@
         Asian Muslims in BC.
         <br />
         <br />
-        We welcome any feedback that can help us improve this project by writing
+        We welcome any feedback that can help us enhance this project by writing
         to us at <a href="mailto:sasi@ufv.ca">sasi@ufv.ca</a> or contacting us
         at <a href="tel:+6048544547">604-854-4547.</a>
         <br /><br />
@@ -334,7 +334,11 @@
         is the history of migration and settlement, oral history narratives of contemporary
         BC South Asian Muslims, a recent timeline of significant events and and many
         reading resources for you to explore.
-        <!-- <br /> <br />To learn more, please refer to the timeline provided below. -->
+
+        <br /><br />
+
+        We thankfully acknowledge the financial support of our <a href="{base}/about#sponsors">funders</a> and the
+        support of our <a href="{base}/about#partners">partners</a>.
       </p>
     </div>
 
