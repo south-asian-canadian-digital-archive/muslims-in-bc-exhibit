@@ -269,3 +269,7 @@ export const interviews: Interview[] = [
 export function getInterviewById(id: string): Interview | undefined {
   return interviews.find(interview => interview.id === id);
 }
+
+export function getAllInterviewIds(): { id: string }[] {
+  return interviews.map(interview => ({ id: interview.id }));
+}

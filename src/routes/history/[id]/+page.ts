@@ -6,3 +6,4 @@ export const entries: EntryGenerator = () => {
 };
 
 export const prerender = true;
+export const trailingSlash = 'always';

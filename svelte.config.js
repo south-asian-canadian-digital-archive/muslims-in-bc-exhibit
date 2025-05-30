@@ -23,6 +23,7 @@ const config = {
 		paths: {
 			base: '/exhibits/sambc',
 		},
+		
 	}
 };
 
