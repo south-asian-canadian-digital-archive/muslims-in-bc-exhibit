@@ -20,9 +20,9 @@ const config = {
 			// 	strict: true
 			// }
 		),
-		paths: {
-			base: '/exhibits/sambc',
-		},
+		// paths: {
+		// 	base: '/exhibits/sambc',
+		// },
 		
 	}
 };
