@@ -2,14 +2,21 @@
   import { base } from "$app/paths";
 
   import "../app.css";
+  import 'share-this/dist/share-this.css';
   import Header from "$lib/components/Header.svelte";
   import Footer from "$lib/components/Footer.svelte";
 
   import { fade, fly } from "svelte/transition";
-  import { onMount } from "svelte";
+  import { onDestroy, onMount } from "svelte";
   import { navigating } from "$app/state";
-  import * as Tooltip from "$lib/components/ui/tooltip";
   import Lightbox from "$lib/components/Lightbox.svelte";
+
+  import shareThis, { type ShareThisInstance } from "share-this";
+  import * as twitterSharer from "share-this/dist/sharers/twitter";
+  import * as redditSharer from "share-this/dist/sharers/reddit";
+  import * as facebookSharer from "share-this/dist/sharers/facebook";
+  import * as emailSharer from "share-this/dist/sharers/email";
+
   interface Props {
     children?: import("svelte").Snippet;
   }
@@ -19,10 +26,23 @@
   let scrollY = $state(0);
   let firstLoad = $state(true);
   let load = $derived(firstLoad || !navigating);
+  let selectionShare: ShareThisInstance | undefined = $state();
 
   onMount(() => {
+    selectionShare = shareThis({
+      selector: "#main-container",
+      popoverClass: "custom-share-popover",
+      sharers: [twitterSharer, facebookSharer, redditSharer, emailSharer],
+    });
+
+    selectionShare.init();
+
     firstLoad = false;
     // load = true;
+  });
+
+  onDestroy(() => {
+    selectionShare?.destroy();
   });
 
   let mainuImageUrl = `${base}/content/2021_08_01_040.jpg`;
@@ -61,12 +81,10 @@
 <Header />
 
 <!-- {#key load} -->
-  <div
-    class="*:mx-auto *:max-w-5xl *:2xl::max-w-7xl"
-    >
-    <!-- in:fly={{ y: 600, duration: 800 }} -->
-      {@render children?.()}
-  </div>
+<div class="*:mx-auto *:max-w-5xl *:2xl::max-w-7xl" id="main-container">
+  <!-- in:fly={{ y: 600, duration: 800 }} -->
+  {@render children?.()}
+</div>
 <!-- {/key} -->
 <Footer />
 

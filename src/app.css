@@ -70,6 +70,15 @@
     @apply border-border text-justify;
   }
 
+  /* Custom text selection colors */
+  ::selection {
+    @apply bg-secondary-yellow/50 text-primary-black;
+  }
+
+  ::-moz-selection {
+    @apply bg-secondary-yellow/50 text-primary-black;
+  }
+
   body {
     @apply bg-primary-foreground text-primary-black font-martel;
   }
@@ -140,5 +149,85 @@
 
   ol>li {
     @apply list-decimal;
+  }
+
+  /* Custom share-this popover styles */
+  .custom-share-popover {
+    @apply max-w-32 pointer-events-none;
+    filter: drop-shadow(0 4px 12px rgba(5, 102, 141, 0.25));
+    animation: share-this-intro 0.3s;
+  }
+
+  .custom-share-popover::before {
+    content: "";
+    @apply absolute left-1/2;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    margin: 0.25em -0.5em;
+    border-width: 0.5em 0.5em 0;
+    border-style: solid;
+    border-color: #05668D transparent; /* primary-blue */
+  }
+
+  .custom-share-popover > ul {
+    @apply pointer-events-auto list-none p-0 whitespace-nowrap bg-primary-blue text-white rounded-lg absolute left-1/2 border-2;
+    margin: -0.75em 0 0;
+    transform: translate(-50%, -100%);
+    border-color: #028090; /* secondary-teal */
+  }
+
+  .custom-share-popover > ul > li {
+    @apply inline-block w-8 h-8 leading-8 text-center;
+  }
+
+  .custom-share-popover > ul > li > a {
+    @apply inline-block w-full h-full text-inherit box-border transition-all duration-200;
+    padding: 0.35em;
+  }
+
+  .custom-share-popover > ul > li > a:focus,
+  .custom-share-popover > ul > li > a:hover {
+    @apply text-white rounded;
+    background: #028090; /* secondary-teal */
+  }
+
+  /* Mobile styles */
+  @media (pointer: coarse) {
+    .custom-share-popover {
+      @apply text-6xl;
+    }
+    
+    .custom-share-popover::before {
+      bottom: auto;
+      top: 100%;
+      border-width: 0 0.5em 0.5em;
+      margin-top: 0;
+    }
+    
+    .custom-share-popover > ul {
+      top: 100%;
+      transform: translateX(-50%);
+      margin: 0.5em 0 0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .custom-share-popover {
+      @apply left-0 right-0 w-auto max-w-none;
+    }
+    
+    .custom-share-popover::before {
+      bottom: auto;
+      top: 100%;
+      border-width: 0 0.5em 0.5em;
+      margin-top: 0;
+    }
+    
+    .custom-share-popover > ul {
+      @apply top-full left-0 w-full rounded-none text-center;
+      transform: none;
+      margin: 0.5em 0 0;
+    }
   }
 }
