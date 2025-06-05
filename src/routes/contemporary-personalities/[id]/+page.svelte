@@ -3,9 +3,9 @@
   import { goto } from "$app/navigation";
   import { PUBLIC_DOMAIN } from "$env/static/public";
   import type { PageData } from "./$types";
-  import { ArrowLeft, ExternalLink } from "svelte-radix";
+  import { ArrowLeft, ExternalLink } from "@lucide/svelte";
   import * as Carousel from "$lib/components/ui/carousel";
-  import { ChevronLeft, ChevronRight } from "svelte-radix";
+  import { ChevronLeft, ChevronRight } from "@lucide/svelte";
 
   let { data }: { data: PageData } = $props();
   let { personality } = data;

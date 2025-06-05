@@ -2,7 +2,7 @@
   import { base } from "$app/paths";
   import { interviews } from "$lib/content/interviews.content";
   import { PUBLIC_DOMAIN } from "$env/static/public";
-  import { Play } from "svelte-radix";
+  import { Play } from "@lucide/svelte";
 </script>
 
 <svelte:head>

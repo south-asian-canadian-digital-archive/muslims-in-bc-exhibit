@@ -1,7 +1,7 @@
 <script lang="ts">
   import { base } from "$app/paths";
   import { Button } from "$lib/components/ui/button";
-  import * as Icon from "svelte-radix";
+  import * as Icon from "@lucide/svelte";
   import { historyEntries } from "$lib/content/nav";
 
   let { currentId = $bindable() }: { currentId: string | null } = $props();

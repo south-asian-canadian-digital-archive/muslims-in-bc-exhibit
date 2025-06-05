@@ -10,7 +10,7 @@
   import { personalities } from "$lib/content/personalities.content";
   import { fly } from "svelte/transition";
   import Arrow from "$lib/components/Arrow.svelte";
-  import { ArrowDown } from "svelte-radix";
+  import { ArrowDown } from "@lucide/svelte";
   import { page } from "$app/stores";
 
   let curHoveredDome = $state(0);

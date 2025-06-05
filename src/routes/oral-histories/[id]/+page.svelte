@@ -4,7 +4,7 @@
   import { PUBLIC_DOMAIN } from "$env/static/public";
   import { onMount } from "svelte";
 
-  import { ArrowLeft, FileText, ChevronLeft, ChevronRight } from "svelte-radix";
+  import { ArrowLeft, FileText, ChevronLeft, ChevronRight } from "@lucide/svelte";
   import * as Carousel from "$lib/components/ui/carousel";
   import { goto } from "$app/navigation";
 

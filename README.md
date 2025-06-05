@@ -43,7 +43,7 @@ The exhibit covers three major migration periods:
 ### UI Components & Libraries
 - **ShadCN/UI Components**: 
   - `bits-ui`: Accessible UI primitives
-  - `svelte-radix`: Icon components
+  - `@lucide/svelte`: Icon components
   - `embla-carousel-svelte`: Photo carousel functionality for interviews
 - **Lucide Icons**: Modern icon library for consistent visual elements
 
