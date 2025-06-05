@@ -3,6 +3,7 @@
   import { onMount } from "svelte";
   import { SvelteSet } from "svelte/reactivity";
   import { PUBLIC_DOMAIN } from "$env/static/public";
+  import * as Accordion from "$lib/components/ui/accordion/index.js";
 
   import {
     team,
@@ -12,6 +13,7 @@
     floatingSquareInfo,
   } from "$lib/content/about.content";
   import { base } from "$app/paths";
+  import { goto } from "$app/navigation";
 
   let floatingSquareTweens: gsap.core.Tween[] = [];
   let commitment_expanded: SvelteSet<number> = $state(new SvelteSet());
@@ -187,18 +189,25 @@
           also undertake much needed
           <a href="https://southasiancanadianheritage.ca"
             >contemporary research</a
-          > that benefits academia, members of the community, government, organizations
+          >
+          that benefits academia, members of the community, government, organizations
           and agencies as well as global scholars and interested persons.
+
+          <br /><br />
+          For inquiries, please contact us at
+          <a href="mailto:sasi@ufv.ca">sasi@ufv.ca</a> or call 604-854-4547.
         </p>
         <div class="flex flex-wrap gap-4">
-          {#each [["Meet Our Team", "#team"], ["Advisory Committee", "#committee"], ["Meet Our Partners", "#partners"]] as link, idx}
+          {#each [["Meet Our Team", "#team"], ["Advisory Committee", "#committee"], ["Meet Our Partners", "#partners"], ["Contact SASI", "/contact"]] as link, idx}
             <button
               class="bg-primary-blue rounded-lg whitespace-nowrap text-white px-6 py-3"
               aria-label="scrolls to {link[0]} section of the page"
               onclick={() => {
-                document
-                  .querySelector(link[1])
-                  ?.scrollIntoView({ behavior: "smooth" });
+                link[1].startsWith("#")
+                  ? document
+                      .querySelector(link[1])
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  : goto(link[1]);
               }}
             >
               {link[0]}
@@ -235,6 +244,7 @@
 
     <div class="h-full lg:w-[30vw] flex flex-col gap-4 text-right relative">
       <span id="project-history" class="absolute -top-96 h-1">&nbsp;</span>
+
       <h3 class="text-h3 font-bold font-source-serif-4 text-primary-blue">
         Project History
       </h3>
@@ -251,6 +261,48 @@
         Twelver Shi'ism and Ismailism, along with Sufism, we aim to promote
         understanding and welcome feedback for future enhancements.
       </p>
+
+      <Accordion.Root type="single">
+        <Accordion.Item value="item-1">
+          <Accordion.Trigger
+            class="text-h5 font-bold font-source-serif-4 text-primary-blue"
+            >Is it accessible?</Accordion.Trigger
+          >
+          <Accordion.Content
+            class="border-r-[4px] border-r-secondary-yellow h-max pr-4 font-martel"
+          >
+            The visual identity for South Asian Muslims in BC is rooted in the
+            timeless aesthetics of Islamic architecture — a tradition where
+            form, function, and meaning are deeply intertwined. At its heart are
+            jaali-inspired patterns: intricate, repeating geometric forms that
+            symbolize protection, interconnectedness, and the shared fabric of
+            communal life. These designs are more than decorative; they reflect
+            a history of perseverance, faith, tradition, resilience, migration,
+            and multi-layered transnational experiences that continue to shape
+            the South Asian Muslim presence in British Columbia.
+            <br />
+            <br />
+            The arch emerges as another defining motif, serving both as a structural
+            element and a spiritual threshold. It marks spaces of openness, passage,
+            and sanctuary — framing physical and symbolic environments where memory,
+            faith, and tradition gather. It offers a metaphor for the community’s
+            ongoing journey: bridging homelands, navigating challenges, and cultivating
+            spaces of belonging.
+            <br />
+            <br />
+            Throughout the visual language, geometric repetition and symmetry echo
+            the diversity within the South Asian Muslim community — a constellation
+            of cultures, beliefs, and personal histories. This careful interplay
+            of shape and pattern creates a visual metaphor for collective identity,
+            where individual stories intersect within a shared, enduring framework.
+            <br />
+            <br />
+            Together, these elements establish a contemporary visual identity that
+            honours the historical depth of South Asian Muslim communities in BC
+            while creating space for future narratives to be seen, heard, and remembered.
+          </Accordion.Content>
+        </Accordion.Item>
+      </Accordion.Root>
     </div>
   </section>
 
@@ -280,9 +332,12 @@
                   <span>
                     {person.name}
                   </span>
-                  <br>
+                  <br />
                   <span class="text-sm italic text-gray-100">
-                    {person.role} {#if person.years} ({person.years}) {/if}
+                    {person.role}
+                    {#if person.years}
+                      ({person.years})
+                    {/if}
                   </span>
                 </p>
                 <span

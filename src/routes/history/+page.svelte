@@ -204,7 +204,7 @@
             src="/content/new/migration_timeline.png"
             alt="Migration of muslims after 1967"
             float="right"
-            class="w-[35vw] h-[50vh]"
+            class="w-[35vw] *h-[50vh]"
           >
             <a
               class="text-xs px-8"

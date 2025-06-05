@@ -41,7 +41,7 @@
   class:float-left={float === "left"}
 >
   <figure>
-    <img src={`${base}${src}`} {alt} />
+    <img src={`${base}${src}`} {alt} class="" />
     <figcaption class="text-center mt-2 text-xs">
       {@render children?.()}
     </figcaption>

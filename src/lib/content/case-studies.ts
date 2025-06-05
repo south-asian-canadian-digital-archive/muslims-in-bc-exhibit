@@ -96,6 +96,14 @@ export let caseStudies: {
                 >
               </li>
               <li>
+              Johnston, H. (2011). The Voyage of the Komagata Maru: The Sikh Challenge to Canada's Colour Bar. Canada: UBC Press. 
+                <a
+                  href="https://www.google.ca/books/edition/The_Voyage_of_the_Komagata_Maru/IbA4vO9bFUkC?hl=en&gbpv=1&pg=PA92&printsec=frontcover"
+                  aria-label="The Voyage of the Komagata Maru book by Hugh Johnston"
+                  >https://www.google.ca/books/edition/The_Voyage_of_the_Komagata_Maru/IbA4vO9bFUkC?hl=en&gbpv=1&pg=PA92&printsec=frontcover</a
+                > (Pages 9-12)
+              </li>
+              <li>
                 Lal, Brij. “East Indians in British Columbia, 1904-1914: An
                 historical study in growth and integration.” Thesis, UBC, The
                 Faculty of Graduate Studies; Department of History. 1976.
@@ -156,9 +164,21 @@ export let caseStudies: {
         it.
         <br><br>
         Resources: 
-        <ol><li>Husain, Iqbal. “BARKATULLAH — A HALF-FORGOTTEN REVOLUTIONARY.”
+        <ol>
+        <li>Husain, Iqbal. “BARKATULLAH — A HALF-FORGOTTEN REVOLUTIONARY.”
             Proceedings of the Indian History Congress 66 (2005): 1061-72. <a href="http://www.jstor.org/stable/44145919" aria-label="JSTOR article on Barkatullah">http://www.jstor.org/stable/44145919.</a></li> <li>A portrait of Barkatullah Source:
-            <a href="https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914" aria-label="The Muslim Vibe article on Muslims challenging Canada's immigration ban in 1914">https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914</a></li></ol>
+            <a href="https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914" aria-label="The Muslim Vibe article on Muslims challenging Canada's immigration ban in 1914">https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914</a>
+        </li>
+
+        <li>
+        Wikipedia contributors. (2025, March 27). Mohamed Barakatullah Bhopali. In Wikipedia, The Free Encyclopedia. Retrieved 18:34, June 5, 2025, from <a href="https://en.wikipedia.org/w/index.php?title=Mohamed_Barakatullah_Bhopali&oldid=1282670919">https://en.wikipedia.org/w/index.php?title=Mohamed_Barakatullah_Bhopali&oldid=1282670919</a> 
+        </li>
+        <li>
+
+        The November 1927 edition of "The United States of India" (Vol. 5, No. 5) featuring an obituary for Maulvi Barkatullah and a photograph of him. <a href="https://www.saada.org/item/20111212-544" aria-label="The United States of India November 1927 issue with Barkatullah's obituary">https://www.saada.org/item/20111212-544</a>
+
+        </il> 
+        </ol>
     `,
     },
     {
@@ -182,9 +202,9 @@ export let caseStudies: {
       img: "",
       name: "Dan Ali Muhammad",
       years: "-",
-      desc: `Dan Ali Muhammad was the great grandfather of Khalad, a member of the Abbotsford Islamic Centre. Dan came to BC in 1906, even before the Komagata Maru incident. He traveled from India to Tacoma to Duncan in Vancouver Island, and then to Port Alberni and Boston Bar. He worked in the timber industry, logging, and sawmills. Being the only Muslim person living in Duncan at that time, he was involved in raising funds for a Gurdwara to be built there, as it was the only form of connection he had to the community. At the Duncan Gurdwara, his name is plastered in the main building as a contributor. An interesting point to note is that when the first Islamic Centre was to be built in Vancouver, the Sikhs living there also contributed money towards the funds for construction.
+      desc: `Dan Ali Muhammad was the great grandfather of Khalad, a member of the Abbotsford Islamic Centre. Dan came to BC in 1906, even before the Komagata Maru incident. He traveled from India to Tacoma to Duncan in Vancouver Island, and then to Port Alberni and Boston Bar. He worked in the timber industry, logging, and sawmills. Being the only Muslim person living in Duncan at that time, he was involved in raising funds for a Gurdwara to be built there, as it was the only form of connection he had to the community. At the Duncan Gurdwara, his name is commemorated in the main building as a contributor. An interesting point to note is that when the first Islamic Centre was to be built in Vancouver, the Sikhs living there also contributed money towards the funds for construction.
         <br><br>
-        As a typical form of migration, families from Boston Bar would move towards the Hope/Chilliwack/Abbotsford area, as did Dan Ali Mohammed. Khalad's grandfather came to Boston Bar sometime in the late 1940s as a young child from India while his great-grandfather was still in Port Alberni. As he grew older, he too worked in sawmills and so.
+        As a typical form of migration, families from Boston Bar would move towards the Hope/Chilliwack/Abbotsford area, as did Dan Ali Mohammed. Khalad's grandfather came to Boston Bar sometime in the late 1940s as a young child from India while his great-grandfather was still in Port Alberni. As he grew older, he too worked in sawmills.
         <br><br>
         Due to the policies set by the Canadian government, South Asian migrants had to typically travel back and forth for getting married and having children.
         <br><br>

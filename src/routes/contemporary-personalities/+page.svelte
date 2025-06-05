@@ -11,26 +11,50 @@
     name="description"
     content="Discover influential contemporary personalities from the South Asian Muslim community in British Columbia. Learn about community leaders, entrepreneurs, educators, and innovators who are shaping BC's diverse landscape."
   />
-  <meta name="keywords" content="contemporary personalities, South Asian Muslims BC, Muslim community leaders, BC Muslim professionals, community influencers, British Columbia Muslims, Muslim entrepreneurs, cultural leaders" />
-  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
-  
+  <meta
+    name="keywords"
+    content="contemporary personalities, South Asian Muslims BC, Muslim community leaders, BC Muslim professionals, community influencers, British Columbia Muslims, Muslim entrepreneurs, cultural leaders"
+  />
+  <meta
+    name="author"
+    content="South Asian Studies Institute, University of the Fraser Valley"
+  />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Contemporary Personalities - South Asian Muslims in BC" />
-  <meta property="og:description" content="Discover influential contemporary personalities from the South Asian Muslim community in British Columbia. Learn about community leaders, entrepreneurs, and innovators." />
+  <meta
+    property="og:title"
+    content="Contemporary Personalities - South Asian Muslims in BC"
+  />
+  <meta
+    property="og:description"
+    content="Discover influential contemporary personalities from the South Asian Muslim community in British Columbia. Learn about community leaders, entrepreneurs, and innovators."
+  />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
-  <meta property="og:url" content="https://{PUBLIC_DOMAIN}/contemporary-personalities" />
+  <meta
+    property="og:url"
+    content="https://{PUBLIC_DOMAIN}/contemporary-personalities"
+  />
   <meta property="og:site_name" content="South Asian Muslims in BC" />
-  
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contemporary Personalities - South Asian Muslims in BC" />
-  <meta name="twitter:description" content="Discover influential contemporary personalities from the South Asian Muslim community in British Columbia." />
+  <meta
+    name="twitter:title"
+    content="Contemporary Personalities - South Asian Muslims in BC"
+  />
+  <meta
+    name="twitter:description"
+    content="Discover influential contemporary personalities from the South Asian Muslim community in British Columbia."
+  />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
-  
+
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://{PUBLIC_DOMAIN}/contemporary-personalities" />
-  
+  <link
+    rel="canonical"
+    href="https://{PUBLIC_DOMAIN}/contemporary-personalities"
+  />
+
   <!-- Structured Data -->
   {@html `<script type="application/ld+json">
     {
@@ -45,7 +69,9 @@
         "description": "Profiles of community leaders, entrepreneurs, and innovators",
         "numberOfItems": ${personalities.length},
         "itemListElement": [
-          ${personalities.map((personality, index) => `{
+          ${personalities
+            .map(
+              (personality, index) => `{
             "@type": "Person",
             "position": ${index + 1},
             "name": "${personality.name}",
@@ -53,7 +79,9 @@
             "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities/${personality.id}",
             "image": "${personality.thumbnailUrl}",
             "jobTitle": "${personality.title}"
-          }`).join(',')}
+          }`
+            )
+            .join(",")}
         ]
       },
       "isPartOf": [
@@ -82,12 +110,17 @@
   <section class="mb-16">
     <h1 class="page-title">Contemporary Personalities</h1>
     <p class="text-lg mb-8">
-      Meet the inspiring contemporary personalities from the South Asian Muslim 
-      community who are making significant contributions across British Columbia. 
-      These leaders, entrepreneurs, educators, and innovators represent the diverse 
-      talents and achievements within our community, showcasing how cultural heritage 
-      and modern innovation combine to enrich our province's social, economic, and 
-      cultural landscape.
+      <span class="italic">
+        This is part of a continuing effor to add contemporary personalities.
+        Please contact <a href="mailto:sasi@ufv.ca">sasi@ufv.ca</a> to add more names.
+      </span> <br /> <br />
+
+      Meet the inspiring contemporary personalities from the South Asian Muslim
+      community who are making significant contributions across British
+      Columbia. These leaders, entrepreneurs, educators, and innovators
+      represent the diverse talents and achievements within our community,
+      showcasing how cultural heritage and modern innovation combine to enrich
+      our province's social, economic, and cultural landscape.
     </p>
   </section>
 
@@ -120,17 +153,26 @@
 
             <!-- Content Section -->
             <div class="lg:col-span-3 p-5 lg:p-6 flex flex-col justify-center">
-              <h2 class="text-xl lg:text-2xl font-semibold mb-3 text-left group-hover:text-primary-blue transition-colors duration-300">
+              <h2
+                class="text-xl lg:text-2xl font-semibold mb-3 text-left group-hover:text-primary-blue transition-colors duration-300"
+              >
                 {personality.name}
               </h2>
-              <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-left">
-                {personality.shortDescription || personality.description.substring(0, 180) + "..."}
+              <p
+                class="text-gray-700 dark:text-gray-300 leading-relaxed text-left"
+              >
+                {personality.shortDescription ||
+                  personality.description.substring(0, 180) + "..."}
               </p>
             </div>
 
             <!-- CTA Section -->
-            <div class="lg:col-span-1 p-5 lg:p-6 flex items-center justify-center lg:justify-end">
-              <div class="bg-primary-blue text-white px-4 py-2 rounded-full text-sm font-medium group-hover:bg-secondar-teal transition-colors duration-300">
+            <div
+              class="lg:col-span-1 p-5 lg:p-6 flex items-center justify-center lg:justify-end"
+            >
+              <div
+                class="bg-primary-blue text-white px-4 py-2 rounded-full text-sm font-medium group-hover:bg-secondar-teal transition-colors duration-300"
+              >
                 Read More
               </div>
             </div>

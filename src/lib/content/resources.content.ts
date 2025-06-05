@@ -24,7 +24,7 @@ const resourceLinks = [
 						link: "https://archive.org/details/goodmuslimbadmus0000mamd/page/n9/mode/2up",
 					},
 					{
-						text: "Nagra, Baljir. Securitized Citizens: Canadian Muslims' Experiences of Race Relations and Identity Formation Post-9/11 (University of Toronto Press, 2017)",
+						text: "Nagra, Baljit. Securitized Citizens: Canadian Muslims' Experiences of Race Relations and Identity Formation Post-9/11 (University of Toronto Press, 2017)",
 						link: "https://www.jstor.org/stable/10.3138/j.ctv1n35brg",
 					},
 					{
