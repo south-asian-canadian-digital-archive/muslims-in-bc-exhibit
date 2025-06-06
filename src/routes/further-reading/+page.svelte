@@ -72,7 +72,7 @@
 
 <main class="py-32 flex flex-col gap-10">
   <p
-    class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-[1.5]"
+    class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-normal"
   >
     Further Reading
   </p>
@@ -101,7 +101,7 @@
                   href={link.link}
                   class:border-t-2={i === 0}
                   onclick={(e) => link.link === "#" && e.preventDefault()}
-                  class="link !no-underline !text-foreground"
+                  class="link no-underline! text-foreground!"
                   class:!cursor-default={link.link === "#"}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -128,6 +128,7 @@
 <!-- <HistoryTimeline /> -->
 
 <style type="postcss">
+    @reference "../../app.css";
   .link {
     @apply flex text-left items-center justify-between gap-10 p-8 border-b-2 border-secondary-yellow hover:bg-secondary-yellow transition-all ease-in-out duration-300;
   }

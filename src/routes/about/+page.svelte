@@ -161,7 +161,7 @@
   </div>
 {/snippet}
 
-<main class="lg:py-20 flex flex-col gap-16 !max-w-full !m-0">
+<main class="lg:py-20 flex flex-col gap-16 max-w-full! m-0!">
   <!-- heading -->
   <section class="bg-secondary-yellow flex flex-col lg:pt-24">
     <div
@@ -248,9 +248,7 @@
       <h3 class="text-h3 font-bold font-source-serif-4 text-primary-blue">
         Project History
       </h3>
-      <p
-        class="border-r-[4px] border-r-secondary-yellow h-max pr-4 font-martel"
-      >
+      <p class="border-r-4 border-r-secondary-yellow h-max pr-4 font-martel">
         The historical and contemporary presence of Muslim communities in
         Canada, particularly South Asian Muslims in B.C., has often been
         obscured. Our research project focuses on their contributions and covers
@@ -265,11 +263,11 @@
       <Accordion.Root type="single">
         <Accordion.Item value="item-1">
           <Accordion.Trigger
-            class="text-h5 font-bold font-source-serif-4 text-primary-blue"
-            >Is it accessible?</Accordion.Trigger
+            class="text-h4 font-bold font-source-serif-4 text-primary-blue"
+            >Artist Statement</Accordion.Trigger
           >
           <Accordion.Content
-            class="border-r-[4px] border-r-secondary-yellow h-max pr-4 font-martel"
+            class="border-r-4 border-r-secondary-yellow h-max pr-4 font-martel"
           >
             The visual identity for South Asian Muslims in BC is rooted in the
             timeless aesthetics of Islamic architecture — a tradition where
@@ -327,7 +325,7 @@
                 class="lg:w-[20vw] lg:h-[20vw] rounded-lg aspect-square bg-white relative"
               >
                 <p
-                  class="top-0 left-0 p-2 bg-secondar-teal rounded-t-lg text-white font-martel absolute w-full z-20 text-center"
+                  class="top-0 left-0 p-2 bg-secondary-teal rounded-t-lg text-white font-martel absolute w-full z-20 text-center"
                 >
                   <span>
                     {person.name}
@@ -378,7 +376,7 @@
           >
             <img src={person.img} alt="" class="object-cover w-full" />
             <span
-              class="bottom-0 left-0 p-2 bg-secondar-teal rounded-b-lg text-white font-martel absolute w-full text-center"
+              class="bottom-0 left-0 p-2 bg-secondary-teal rounded-b-lg text-white font-martel absolute w-full text-center"
               >{person.name} <br />
               <span class="text-xs">{@html person.position}</span></span
             >
@@ -428,11 +426,11 @@
   <section class="bg-secondary-yellow flex flex-col pt-24 relative">
     <span id="partners" class="absolute -top-64">&nbsp;</span>
     <div class="flex flex-col lg:px-32 px-12">
-      <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
+      <h2 class="text-h6 font-bold border-b-2 border-secondary-teal w-fit">
         Our Partners
       </h2>
       <!-- partners -->
-      <div class="flex flex-wrap py-16 justify-evenly *:md:w-[25vw] *:w-[30vh]">
+      <div class="flex flex-wrap py-16 justify-evenly md:*:w-[25vw] *:w-[30vh]">
         {#each partners as partner}
           {@render partnerImage(partner)}
         {/each}
@@ -445,11 +443,11 @@
   <section class=" flex flex-col pt-24 relative">
     <span id="sponsors" class="absolute -top-64">&nbsp;</span>
     <div class="flex flex-col lg:px-32 px-12">
-      <h2 class="text-h6 font-bold border-b-2 border-secondar-teal w-fit">
+      <h2 class="text-h6 font-bold border-b-2 border-secondary-teal w-fit">
         We thank our Financial Supporters
       </h2>
       <div
-        class="flex flex-wrap gap-y-8 py-16 justify-evenly items-baseline *:md:w-[25vw] *:w-[30vh]"
+        class="flex flex-wrap gap-y-8 py-16 justify-evenly items-baseline md:*:w-[25vw] *:w-[30vh]"
       >
         {#each sponsors as sponsor}
           {@render partnerImage(sponsor)}

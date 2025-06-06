@@ -3,7 +3,7 @@
     Recent experiences of South Asian Muslim in BC (2001 - present)
   </h1>
 
-  <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
+  <div class="flex flex-col gap-16 history">
     <section>
       <h2>Canada and South Asian Canadian Muslims after 9/11</h2>
       <div class="">

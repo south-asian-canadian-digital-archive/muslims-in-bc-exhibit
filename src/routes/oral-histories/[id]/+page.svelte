@@ -4,7 +4,12 @@
   import { PUBLIC_DOMAIN } from "$env/static/public";
   import { onMount } from "svelte";
 
-  import { ArrowLeft, FileText, ChevronLeft, ChevronRight } from "@lucide/svelte";
+  import {
+    ArrowLeft,
+    FileText,
+    ChevronLeft,
+    ChevronRight,
+  } from "@lucide/svelte";
   import * as Carousel from "$lib/components/ui/carousel";
   import { goto } from "$app/navigation";
 
@@ -48,31 +53,54 @@
 </script>
 
 <svelte:head>
-  <title>{interview.name} - Community Oral History | South Asian Muslims in BC</title>
+  <title
+    >{interview.name} - Community Oral History | South Asian Muslims in BC</title
+  >
   <meta
     name="description"
     content="{interview.shortDescription} - Listen to {interview.name}'s personal story about their experience as a South Asian Muslim in British Columbia, including their journey, community involvement, and cultural heritage."
   />
-  <meta name="keywords" content="{interview.name}, oral history, South Asian Muslim, {interview.location}, personal story, immigration experience, community testimony, Muslim heritage BC" />
-  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
-  
+  <meta
+    name="keywords"
+    content="{interview.name}, oral history, South Asian Muslim, {interview.location}, personal story, immigration experience, community testimony, Muslim heritage BC"
+  />
+  <meta
+    name="author"
+    content="South Asian Studies Institute, University of the Fraser Valley"
+  />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="video.other" />
-  <meta property="og:title" content="{interview.name} - Community Oral History | South Asian Muslims in BC" />
-  <meta property="og:description" content="{interview.shortDescription} - Personal story from a South Asian Muslim community member in British Columbia." />
-  <meta property="og:image" content="{interview.thumbnailUrl}" />
-  <meta property="og:url" content="https://{PUBLIC_DOMAIN}/oral-histories/{interview.id}" />
+  <meta
+    property="og:title"
+    content="{interview.name} - Community Oral History | South Asian Muslims in BC"
+  />
+  <meta
+    property="og:description"
+    content="{interview.shortDescription} - Personal story from a South Asian Muslim community member in British Columbia."
+  />
+  <meta property="og:image" content={interview.thumbnailUrl} />
+  <meta
+    property="og:url"
+    content="https://{PUBLIC_DOMAIN}/oral-histories/{interview.id}"
+  />
   <meta property="og:site_name" content="South Asian Muslims in BC" />
-  
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{interview.name} - Community Oral History | South Asian Muslims in BC" />
-  <meta name="twitter:description" content="{interview.shortDescription}" />
-  <meta name="twitter:image" content="{interview.thumbnailUrl}" />
-  
+  <meta
+    name="twitter:title"
+    content="{interview.name} - Community Oral History | South Asian Muslims in BC"
+  />
+  <meta name="twitter:description" content={interview.shortDescription} />
+  <meta name="twitter:image" content={interview.thumbnailUrl} />
+
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://{PUBLIC_DOMAIN}/oral-histories/{interview.id}" />
-  
+  <link
+    rel="canonical"
+    href="https://{PUBLIC_DOMAIN}/oral-histories/{interview.id}"
+  />
+
   <!-- Structured Data -->
   {@html `<script type="application/ld+json">
     {
@@ -208,12 +236,8 @@
                     </Carousel.CarouselItem>
                   {/each}
                 </Carousel.CarouselContent>
-                <Carousel.CarouselPrevious class="carouselButtonClass left-2">
-                  <ChevronLeft class="h-5 w-5" />
-                </Carousel.CarouselPrevious>
-                <Carousel.CarouselNext class="carouselButtonClass right-2">
-                  <ChevronRight class="h-5 w-5" />
-                </Carousel.CarouselNext>
+                <Carousel.CarouselPrevious class="carouselButtonClass left-2" />
+                <Carousel.CarouselNext class="carouselButtonClass right-2" />
               </Carousel.Carousel>
 
               <!-- Dot indicators and photo count -->
@@ -348,7 +372,8 @@
 </main>
 
 <style type="postcss">
+  @reference "../../../app.css";
   .carouselButtonClass {
-    @apply absolute top-1/2 transform -translate-y-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-white dark:hover:bg-gray-700 z-10;
+    @apply absolute top-1/2 transform -translate-y-1/2  dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-white dark:hover:bg-gray-700 z-10;
   }
 </style>

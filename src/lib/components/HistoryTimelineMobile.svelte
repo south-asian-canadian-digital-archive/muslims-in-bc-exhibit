@@ -6,7 +6,7 @@
 </script>
 
 <div class="px-4 mb-10 pt-14 pb-4 h-[70vh] flex relative overflow-hidden">
-  <div class="absolute bg-secondar-teal rounded-lg w-3 h-[80%] left-4"></div>
+  <div class="absolute bg-secondary-teal rounded-lg w-3 h-[80%] left-4"></div>
 
   <div class="flex flex-col gap-4 w-full justify-around">
     {#each historyPages as item, i}
@@ -14,7 +14,7 @@
         <div>
           <div class="rounded-lg mx-8 flex flex-col justify-center text-center">
             <div
-              class="absolute w-[90vw] bg-secondar-teal left-4 h-1 rounded-lg"
+              class="absolute w-[90vw] bg-secondary-teal left-4 h-1 rounded-lg"
             >
               &nbsp;
             </div>

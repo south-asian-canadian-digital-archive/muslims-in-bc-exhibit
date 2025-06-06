@@ -5,7 +5,7 @@
 </script>
 
 <Dialog.Root bind:open={$dialogOpen}>
-  <Dialog.Content class="z-[90]">
+  <Dialog.Content class="z-90">
     <ScrollArea class="h-full w-full max-h-[80vh]">
       <img src={$dialogImageSrc?.toString()} alt="" class="w-full h-full" />
     </ScrollArea>

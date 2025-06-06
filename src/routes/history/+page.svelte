@@ -100,7 +100,7 @@
         class="lg:flex float-right justify-between overflow-clip hidden h-[60vh] w-[25vw] ml-6 pb-4"
       >
         <div
-          class="bg-secondar-teal rounded-xl p-2 w-full transition-all ease-in-out duration-300 dome overflow-hidden"
+          class="bg-secondary-teal rounded-xl p-2 w-full transition-all ease-in-out duration-300 dome overflow-hidden"
         >
           <div
             class="bg-pattern bg-repeat h-full w-screen dome-bg will-change-auto overflow-clip"

@@ -250,7 +250,7 @@
 <!-- Scroll indicator -->
 {#if showScrollIndicator}
   <button
-    class="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-white/90 backdrop-blur-sm shadow-lg rounded-full px-6 py-3 border border-gray-200"
+    class="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-white/90 backdrop-blur-xs shadow-lg rounded-full px-6 py-3 border border-gray-200"
     transition:fly={{ y: 20, duration: 300 }}
     onclick={() => {
       aboutSection.scrollIntoView({ behavior: "smooth" });
@@ -267,7 +267,7 @@
 {/if}
 
 <main
-  class="container *:px-4 *:ld:px-0 px-0 pb-32 flex flex-col gap-8 md:gap-16 !w-full !max-w-full"
+  class="container *:px-4 *:ld:px-0 px-0 pb-32 flex flex-col gap-8 md:gap-16 w-full! max-w-full!"
 >
   <!-- intro -->
   <section class="md:py-32 py-16 flex gap-14 max-w-5xl lg:max-w-6xl mx-auto">
@@ -277,7 +277,7 @@
       >
         {#each { length: 2 } as _, i}
           <div
-            class="bg-secondar-teal rounded-xl p-2 min-h-[50vh] 2xl:min-h-[600px] w-[30%] transition-all ease-in-out duration-500 dome"
+            class="bg-secondary-teal rounded-xl p-2 min-h-[50vh] 2xl:min-h-[600px] w-[30%] transition-all ease-in-out duration-500 dome"
             class:w-[65%]={curHoveredDome === i}
             aria-label="dome"
             role="figure"
@@ -326,11 +326,11 @@
   </section>
 
   <section
-    class="bg-secondary-yellow relative !max-w-full w-full"
+    class="bg-secondary-yellow relative max-w-full! w-full"
     bind:this={aboutSection}
   >
     <div
-      class="md:!py-40 pt-20 pb-40 flex flex-col gap-5 w-full md:pr-96 max-w-5xl lg:max-w-6xl mx-auto"
+      class="md:py-40! pt-20 pb-40 flex flex-col gap-5 w-full md:pr-96 max-w-5xl lg:max-w-6xl mx-auto"
     >
       <h2 class="page-title font-bold">About the Project</h2>
       <p>
@@ -383,7 +383,7 @@
           <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
             {#each historyPages.slice(1) as page}
               <li>
-                <a href={page.path} class="text-secondar-teal hover:underline"
+                <a href={page.path} class="text-secondary-teal hover:underline"
                   >{page.name}</a
                 >
               </li>
@@ -398,9 +398,9 @@
 
         <!-- Community Life -->
         <div
-          class="bg-white md:row-span-2 lg:col-span-3 rounded-xl shadow-lg p-6 border-t-4 border-secondar-teal hover:shadow-xl transition-all md:col-span-2"
+          class="bg-white md:row-span-2 lg:col-span-3 rounded-xl shadow-lg p-6 border-t-4 border-secondary-teal hover:shadow-xl transition-all md:col-span-2"
         >
-          <h3 class="text-xl font-bold mb-3 text-secondar-teal">
+          <h3 class="text-xl font-bold mb-3 text-secondary-teal">
             Community Life
           </h3>
           <p class="mb-4">
@@ -410,7 +410,7 @@
           <div class="grid grid-cols-1  gap-6">
             <!-- Oral Histories Subsection -->
             <div>
-              <h4 class="font-semibold text-secondar-teal mb-2">Oral Histories</h4>
+              <h4 class="font-semibold text-secondary-teal mb-2">Oral Histories</h4>
               <p class="text-sm mb-3">Personal narratives and interviews from community members</p>
               <!-- <ul class="list-disc pl-5 mb-3 space-y-1 *:text-left text-sm">
                 {#each exploreInterviews.slice(0, 3) as interview}
@@ -424,7 +424,7 @@
               </ul> -->
               <a
                 href="{base}/oral-histories"
-                class="inline-block text-secondar-teal font-medium hover:underline text-sm"
+                class="inline-block text-secondary-teal font-medium hover:underline text-sm"
                 >Explore all oral histories →</a
               >
             </div>

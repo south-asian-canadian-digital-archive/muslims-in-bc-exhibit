@@ -100,7 +100,7 @@
       {#each interviews as interview}
         <a
           href="{base}/oral-histories/{interview.id}"
-          class="group bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 !no-underline"
+          class="group bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 no-underline!"
         >
           <div class="relative aspect-video">
             <img
@@ -109,7 +109,7 @@
               class="w-full h-full object-cover"
             />
             <div
-              class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <div class="rounded-full bg-white p-3">
                 <Play />

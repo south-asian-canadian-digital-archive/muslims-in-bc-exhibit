@@ -76,13 +76,13 @@
   </script>`}
 </svelte:head>
 
-<main class="bg-secondary-yellow flex flex-col pt-20 gap-20 md:my-20 !max-w-full">
+<main class="bg-secondary-yellow flex flex-col pt-20 gap-20 md:my-20 max-w-full!">
   <div
-    class="md:px-32 px-6 md:flex-row flex-col flex justify-between gap-12 *:md:w-1/2"
+    class="md:px-32 px-6 md:flex-row flex-col flex justify-between gap-12 md:*:w-1/2"
   >
     <section class="flex flex-col gap-4">
       <h1
-        class="text-primary-blue text-h2 font-source-serif-4 font-bold leading-[1.5]"
+        class="text-primary-blue text-h2 font-source-serif-4 font-bold leading-normal"
       >
         Share Your Story
       </h1>

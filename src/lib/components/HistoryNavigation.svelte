@@ -30,7 +30,7 @@
   {#if prevUrl !== null}
     <a
       href={prevUrl}
-      class="pointer-events-auto fixed left-0 md:top-1/2 md:-translate-y-1/2 top-24 !no-underline"
+      class="pointer-events-auto fixed left-0 md:top-1/2 md:-translate-y-1/2 top-24 no-underline!"
       aria-label="Previous section"
     >
       <Button
@@ -50,7 +50,7 @@
   {#if nextUrl !== null}
     <a
       href={nextUrl}
-      class="pointer-events-auto fixed right-0 md:top-1/2 md:-translate-y-1/2 top-24 !no-underline"
+      class="pointer-events-auto fixed right-0 md:top-1/2 md:-translate-y-1/2 top-24 no-underline!"
       aria-label="Next section"
     >
       <Button

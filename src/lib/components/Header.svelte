@@ -54,7 +54,7 @@
 
 <nav
   bind:this={headerElement}
-  class="sticky top-0 z-[60] flex flex-col items-center bg-white border-b-2 border-b-[#E3E7AF]"
+  class="sticky top-0 z-60 flex flex-col items-center bg-white border-b-2 border-b-[#E3E7AF]"
 >
   <div
     class="min-h-24 px-4 mx-auto max-w-6xl xl:max-w-7xl flex lg:flex-row flex-col w-full lg:items-center justify-between text-primary-black text-sm font-bold font-martel overflow-x-hidden"
@@ -108,7 +108,7 @@
         {#each navItems as item, idxi}
           {#if idxi === navItems.length - 1}
             <Button
-              class="bg-secondar-teal"
+              class="bg-secondary-teal"
               onclick={() => {
                 if (item.pages) {
                   toggleExpand(item.name);
@@ -162,7 +162,7 @@
       bind:this={dropdownContainer}
       use:setupClickOutside
       transition:slide
-      class="w-full bg-white border-b-2 border-b-[#E3E7AF] flex justify-center py-4 px-2 md:px-8 shadow-sm overflow-x-hidden md:h-48"
+      class="w-full bg-white border-b-2 border-b-[#E3E7AF] flex justify-center py-4 px-2 md:px-8 shadow-xs overflow-x-hidden md:h-48"
     >
       <div class="flex flex-wrap gap-4 md:gap-6 justify-center items-center">
         {#each navItems.find((item) => item.name === expandedItem)?.pages || [] as subpage, idx (`${subpage.name}-${idx}`)}

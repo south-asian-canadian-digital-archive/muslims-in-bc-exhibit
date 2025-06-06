@@ -22,39 +22,74 @@
   function truncateLink(url: string) {
     try {
       const urlObj = new URL(url);
-      return urlObj.hostname.replace('www.', '');
+      return urlObj.hostname.replace("www.", "");
     } catch {
-      return url.length > 30 ? url.substring(0, 30) + '...' : url;
+      return url.length > 30 ? url.substring(0, 30) + "..." : url;
     }
   }
 </script>
 
 <svelte:head>
-  <title>{personality.name} - Contemporary Personality | South Asian Muslims in BC</title>
+  <title
+    >{personality.name} - Contemporary Personality | South Asian Muslims in BC</title
+  >
   <meta
     name="description"
-    content="{personality.shortDescription || personality.description.substring(0, 160)} - Profile of {personality.name}, a contemporary personality from the South Asian Muslim community in British Columbia."
+    content="{personality.shortDescription ||
+      personality.description.substring(
+        0,
+        160
+      )} - Profile of {personality.name}, a contemporary personality from the South Asian Muslim community in British Columbia."
   />
-  <meta name="keywords" content="{personality.name}, contemporary personality, South Asian Muslim, {personality.title}, community leader, Muslim heritage BC" />
-  <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
-  
+  <meta
+    name="keywords"
+    content="{personality.name}, contemporary personality, South Asian Muslim, {personality.title}, community leader, Muslim heritage BC"
+  />
+  <meta
+    name="author"
+    content="South Asian Studies Institute, University of the Fraser Valley"
+  />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="profile" />
-  <meta property="og:title" content="{personality.name} - Contemporary Personality | South Asian Muslims in BC" />
-  <meta property="og:description" content="{personality.shortDescription || personality.description.substring(0, 160)} - Profile from the South Asian Muslim community in British Columbia." />
-  <meta property="og:image" content="{personality.thumbnailUrl}" />
-  <meta property="og:url" content="https://{PUBLIC_DOMAIN}/contemporary-personalities/{personality.id}" />
+  <meta
+    property="og:title"
+    content="{personality.name} - Contemporary Personality | South Asian Muslims in BC"
+  />
+  <meta
+    property="og:description"
+    content="{personality.shortDescription ||
+      personality.description.substring(
+        0,
+        160
+      )} - Profile from the South Asian Muslim community in British Columbia."
+  />
+  <meta property="og:image" content={personality.thumbnailUrl} />
+  <meta
+    property="og:url"
+    content="https://{PUBLIC_DOMAIN}/contemporary-personalities/{personality.id}"
+  />
   <meta property="og:site_name" content="South Asian Muslims in BC" />
-  
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{personality.name} - Contemporary Personality | South Asian Muslims in BC" />
-  <meta name="twitter:description" content="{personality.shortDescription || personality.description.substring(0, 160)}" />
-  <meta name="twitter:image" content="{personality.thumbnailUrl}" />
-  
+  <meta
+    name="twitter:title"
+    content="{personality.name} - Contemporary Personality | South Asian Muslims in BC"
+  />
+  <meta
+    name="twitter:description"
+    content={personality.shortDescription ||
+      personality.description.substring(0, 160)}
+  />
+  <meta name="twitter:image" content={personality.thumbnailUrl} />
+
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://{PUBLIC_DOMAIN}/contemporary-personalities/{personality.id}" />
-  
+  <link
+    rel="canonical"
+    href="https://{PUBLIC_DOMAIN}/contemporary-personalities/{personality.id}"
+  />
+
   <!-- Structured Data -->
   {@html `<script type="application/ld+json">
     {
@@ -122,7 +157,7 @@
               class="w-full"
               opts={{
                 loop: true,
-                align: "start"
+                align: "start",
               }}
               setApi={(api: any) => {
                 carouselApi = api;
@@ -134,7 +169,9 @@
               <Carousel.CarouselContent>
                 {#each personality.photoUrls as photoUrl, i}
                   <Carousel.CarouselItem>
-                    <div class="p-1 h-full w-full flex items-center justify-center">
+                    <div
+                      class="p-1 h-full w-full flex items-center justify-center"
+                    >
                       <img
                         src={photoUrl}
                         alt={`${personality.name}'s photo ${i + 1}`}
@@ -144,12 +181,12 @@
                   </Carousel.CarouselItem>
                 {/each}
               </Carousel.CarouselContent>
-              <Carousel.CarouselPrevious class="carouselButtonClass left-2">
-                <ChevronLeft class="h-5 w-5" />
-              </Carousel.CarouselPrevious>
-              <Carousel.CarouselNext class="carouselButtonClass right-2">
-                <ChevronRight class="h-5 w-5" />
-              </Carousel.CarouselNext>
+              <Carousel.CarouselPrevious
+                class="carouselButtonClass left-2"
+              />
+              <Carousel.CarouselNext
+                class="carouselButtonClass right-2"
+              />
             </Carousel.Carousel>
           {:else}
             <!-- Single Image -->
@@ -194,7 +231,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ExternalLink class="mr-2 h-4 w-4 flex-shrink-0" />
+                    <ExternalLink class="mr-2 h-4 w-4 shrink-0" />
                     <span class="text-sm">{truncateLink(link)}</span>
                   </a>
                 </div>
@@ -208,7 +245,11 @@
           {#each personality.additionalInfo as info}
             <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <h3 class="text-lg font-medium mb-3">{info.title}</h3>
-              <p class="text-sm leading-relaxed text-gray-700 dark:text-gray-300">{info.content}</p>
+              <p
+                class="text-sm leading-relaxed text-gray-700 dark:text-gray-300"
+              >
+                {info.content}
+              </p>
             </div>
           {/each}
         {/if}
@@ -217,8 +258,3 @@
   </div>
 </main>
 
-<style type="postcss">
-  .carouselButtonClass {
-    @apply absolute top-1/2 transform -translate-y-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-white dark:hover:bg-gray-700 z-10;
-  }
-</style>

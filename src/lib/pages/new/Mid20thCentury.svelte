@@ -11,7 +11,7 @@
   </h1>
   <!-- <p class="desc-text"></p> -->
 
-  <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
+  <div class="flex flex-col gap-16 history">
     <section>
       <h2>Muslim Identity as National and Transnational</h2>
       <div>

@@ -7,7 +7,7 @@
     Columbia
   </p> -->
 
-  <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
+  <div class="flex flex-col gap-16 history">
     <section>
       <div class="">
         This interactive timeline showcases key events affecting Muslims in

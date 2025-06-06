@@ -62,7 +62,7 @@
 </script>
 
 <footer
-  class="bg-secondar-teal lg:pb-24 lg:pt-16 md:pb-24 pb-24 pt-10 px-12 flex flex-col-reverse gap-4 lg:flex-row md:flex-row justify-between items-end relative"
+  class="bg-secondary-teal lg:pb-24 lg:pt-16 md:pb-24 pb-24 pt-10 px-12 flex flex-col-reverse gap-4 lg:flex-row md:flex-row justify-between items-end relative"
 >
   <div
     class="flex flex-col-reverse lg:self-start gap-6 items-center lg:w-fit md:w-fit w-full overflow-hidden"
@@ -95,7 +95,7 @@
                 <input
                   type="email"
                   name="EMAIL"
-                  class="required email rounded-l-lg py-4 pl-4 font-martel text-xs outline-none"
+                  class="required email rounded-l-lg py-4 pl-4 font-martel text-xs outline-hidden"
                   id="mce-EMAIL"
                   required
                   value=""

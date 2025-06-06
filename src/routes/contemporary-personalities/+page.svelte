@@ -130,19 +130,19 @@
       {#each personalities as personality}
         <a
           href="{base}/contemporary-personalities/{personality.id}"
-          class="group block bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 !no-underline"
+          class="group block bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 no-underline!"
         >
           <div class="grid grid-cols-1 lg:grid-cols-5 gap-0">
             <!-- Image Section -->
             <div class="lg:col-span-1 relative">
-              <div class="aspect-square lg:aspect-[3/4] h-full">
+              <div class="aspect-square lg:aspect-3/4 h-full">
                 <img
                   src={personality.thumbnailUrl}
                   alt={`${personality.name}'s profile photo`}
                   class="w-full h-full object-cover"
                 />
                 <div
-                  class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 >
                   <div class="rounded-full bg-white p-2">
                     <User class="w-5 h-5 text-gray-700" />
@@ -171,7 +171,7 @@
               class="lg:col-span-1 p-5 lg:p-6 flex items-center justify-center lg:justify-end"
             >
               <div
-                class="bg-primary-blue text-white px-4 py-2 rounded-full text-sm font-medium group-hover:bg-secondar-teal transition-colors duration-300"
+                class="bg-primary-blue text-white px-4 py-2 rounded-full text-sm font-medium group-hover:bg-secondary-teal transition-colors duration-300"
               >
                 Read More
               </div>

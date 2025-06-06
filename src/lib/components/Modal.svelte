@@ -83,7 +83,7 @@
 <div
   bind:this={finalContainer}
   id="{modalID}-final"
-  class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[60vh] hidden z-[99999]"
+  class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[60vh] hidden z-99999"
 >
   &nbsp;
 </div>
