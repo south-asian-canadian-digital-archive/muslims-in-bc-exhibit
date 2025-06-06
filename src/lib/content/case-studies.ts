@@ -1,3 +1,5 @@
+import { base } from "$app/paths";
+
 export let caseStudies: {
   img: string;
   name: string;
@@ -168,6 +170,7 @@ export let caseStudies: {
         <li>Husain, Iqbal. “BARKATULLAH — A HALF-FORGOTTEN REVOLUTIONARY.”
             Proceedings of the Indian History Congress 66 (2005): 1061-72. <a href="http://www.jstor.org/stable/44145919" aria-label="JSTOR article on Barkatullah">http://www.jstor.org/stable/44145919.</a></li> <li>A portrait of Barkatullah Source:
             <a href="https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914" aria-label="The Muslim Vibe article on Muslims challenging Canada's immigration ban in 1914">https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914</a>
+            <br> <a href="${base}/resources/themuslimvibe.pdf" target="_blank">(archived pdf version here)</a>
         </li>
 
         <li>
