@@ -175,7 +175,7 @@
                       <img
                         src={photoUrl}
                         alt={`${personality.name}'s photo ${i + 1}`}
-                        class="w-full h-full aspect-video object-cover rounded-lg"
+                        class="w-full h-full aspect-video object-contain rounded-lg"
                       />
                     </div>
                   </Carousel.CarouselItem>
@@ -193,7 +193,7 @@
             <img
               src={personality.thumbnailUrl}
               alt={`${personality.name}'s profile photo`}
-              class="w-full h-full object-cover"
+              class="w-full h-full object-contain"
             />
           {/if}
         </div>

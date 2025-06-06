@@ -17,331 +17,430 @@ export interface Personality {
 
 export const personalities: Personality[] = [
   {
-    id: "afia-raja",
-    name: "Dr. Afia Raja",
-    title: "Department Head and Associate Professor, Planning, Geography, and Environmental Studies",
-    description: "Dr. Afia Raja was born in 1980 in Karachi, Pakistan and was raised there. Her father was a civil engineer, so he often had large construction projects offering better opportunities in Karachi, and ended up settling there before she was born. Afia received her early education at Beaconhouse School where she stood out academically, being self-motivated from a young age. She currently serves as Department Head and Associate Professor at UFV, sharing her experiences and insights on Muslim communities in British Columbia.",
-    shortDescription: "Department Head and Associate Professor at UFV, sharing insights on Muslim communities in British Columbia.",
-    thumbnailUrl: `${base}/content/interviews/thumbnails/afia-raja.webp`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-1.png`,
-      `${base}/content/interviews/placeholder-2.png`
+    "id": "aziz-khakhi",
+    "name": "Aziz Khakhi",
+    "title": "Dr., Social Justice Advocate, Community Leader",
+    "description": "Dr. Abdulaziz 'Aziz' Khaki (1929-2012) was a prominent Canadian Muslim leader, social justice advocate, and community builder. Born in Zanzibar and raised in Dar es Salaam, Tanzania, he was active in the independence movement and served as Secretary General of the Tanzania Welfare Society, establishing a Muslim secondary school system. After fleeing political repression, he immigrated to Canada in 1973. In British Columbia, he worked with the Pacific Interfaith Citizenship Association and led the Committee for Racial Justice. He was a respected public face of Islam in Vancouver and Canada, serving as an adviser to the BCMA, Vice President of the Council of Muslim Communities of Canada, and Vice President of the Canadian Muslim Federation. He co-founded the International Development & Relief Foundation (IDRF). His public service included co-chairing the Provincial Committee on Diversity and Policing and serving on advisory committees for the RCMP and Treasury Board. He received the Federal Minister of Multiculturalism Award on Excellence in Race Relations and the Governor General’s Award on the 125th Anniversary of Canada. In 2000, he was recognized as one of the 25 most influential spiritual leaders in British Columbia. He received an Honorary Doctor of Letters from St. Marks at UBC in 2009.",
+    "shortDescription": "Dr. Aziz Khakhi was a pioneering Canadian Muslim leader, social justice advocate, and community builder, known for his significant contributions to multiculturalism, human rights, and interfaith relations in British Columbia and Canada.",
+    "thumbnailUrl": "https://khojawiki.org/w/images/6/65/Aziz_Khaki.png",
+    "photoUrls": [
+      "https://khojawiki.org/w/images/6/65/Aziz_Khaki.png"
     ],
-    links: [
-      "https://www.ufv.ca/planning-geography-environmental-studies/faculty/raja-afia.htm"
-    ],
-    additionalInfo: [
-      {
-        title: "Academic Background",
-        content: "Born in Karachi, Pakistan in 1980, received early education at Beaconhouse School where she excelled academically."
-      },
-      {
-        title: "Current Role",
-        content: "Department Head and Associate Professor of Planning, Geography, and Environmental Studies at University of the Fraser Valley."
-      }
-    ]
-  },
-  {
-    id: "anushay-malik",
-    name: "Dr. Anushay Malik",
-    title: "Visiting Faculty for History and Labour Studies",
-    description: "Dr. Anushay Malik is a senior lecturer and historian at Simon Fraser University, who immigrated to British Columbia from Pakistan in 2019, primarily for better educational support for her child. She was born in Lahore and raised for a decade in Kuala Lumpur, Malaysia. Her research and perspectives focus on Muslim communities in British Columbia, bringing valuable insights from her multicultural background and academic expertise.",
-    shortDescription: "Senior lecturer and historian at SFU, researching Muslim communities in British Columbia.",
-    thumbnailUrl: `${base}/content/interviews/thumbnails/anushay-malik.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-2.png`,
-      `${base}/content/interviews/placeholder-3.png`
-    ],
-    links: [
-      "https://www.sfu.ca/history/faculty-and-staff/faculty-by-name/malik-anushay.html"
-    ],
-    additionalInfo: [
-      {
-        title: "Background",
-        content: "Born in Lahore, raised for a decade in Kuala Lumpur, Malaysia, immigrated to BC from Pakistan in 2019."
-      },
-      {
-        title: "Academic Focus",
-        content: "Visiting Faculty for History and Labour Studies at Simon Fraser University, specializing in Muslim community research."
-      }
-    ]
-  },
-  {
-    id: "hassan-javid",
-    name: "Dr. Hassan Javid",
-    title: "Associate Professor of Sociology, School of Culture and Media Studies",
-    description: "Dr. Hassan Javid is an Associate Professor of Sociology in the School of Culture and Media Studies at UFV. His academic work and research contribute significantly to understanding social dynamics and cultural studies, with particular insights into Muslim communities and their experiences in British Columbia. His expertise spans sociology, media studies, and cultural analysis.",
-    shortDescription: "Associate Professor of Sociology at UFV, contributing to cultural studies and Muslim community research.",
-    thumbnailUrl: `${base}/content/interviews/thumbnails/hassan-javid.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-3.png`,
-      `${base}/content/interviews/placeholder-1.png`
-    ],
-    links: [],
-    additionalInfo: [
-      {
-        title: "Academic Position",
-        content: "Associate Professor of Sociology in the School of Culture and Media Studies at University of the Fraser Valley."
-      },
-      {
-        title: "Research Focus",
-        content: "Specializes in sociology, media studies, and cultural analysis with insights into Muslim communities in BC."
-      }
-    ]
-  },
-  {
-    id: "rizwaan-abbas",
-    name: "Rizwaan Abbas",
-    title: "Archaeologist",
-    description: "Rizwaan Abbas is a 1st generation Canadian of Indo-Fijian descent who was born in 1977 in Michele-Middletown-Natal near Sparwood, British Columbia. He was raised in Sparwood, a small coal mining town which his father had immigrated to in 1973. His father lived there for a few years until he went back to Fiji where he got married to Rizwaan's mother, who then migrated with him to Sparwood around 1974. Rizwaan offers a unique perspective as an Indo Fijian Muslim in British Columbia, combining his archaeological expertise with his multicultural heritage.",
-    shortDescription: "First-generation Canadian archaeologist of Indo-Fijian descent, offering unique perspectives on Muslim identity in BC.",
-    thumbnailUrl: `${base}/content/interviews/thumbnails/rizwaan-abbas.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-1.png`,
-      `${base}/content/interviews/placeholder-3.png`
-    ],
-    links: [
-      "https://linktr.ee/riz031"
-    ],
-    additionalInfo: [
-      {
-        title: "Heritage",
-        content: "First-generation Canadian of Indo-Fijian descent, born in 1977 in Michele-Middletown-Natal near Sparwood, BC."
-      },
-      {
-        title: "Professional Background",
-        content: "Works as an archaeologist, bringing unique perspectives as an Indo Fijian Muslim to his research and community engagement."
-      }
-    ]
-  },
-  {
-    id: "aziz-khaki",
-    name: "Aziz Khaki",
-    title: "Community Leader and Diversity Advocate",
-    description: "Aziz Khaki was a prominent community leader and diversity advocate who made significant contributions to promoting multiculturalism and social justice in British Columbia. He served as co-chair of the Provincial Committee on Diversity and Policing, was a member of the Commanding Officer's Advisory Committee on Cultural Diversity - RCMP 'E' Division, and served on the Advisory Committee to the Federal President of the Treasury Board on Employment of Visible Minorities in the Public Service and Crown Corporation. His work focused on building bridges between communities and ensuring fair representation in public institutions.",
-    shortDescription: "Community leader and diversity advocate who championed multiculturalism and social justice in BC.",
-    thumbnailUrl: `${base}/content/interviews/placeholder-1.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-1.png`,
-      `${base}/content/interviews/placeholder-2.png`
-    ],
-    links: [
+    "links": [
       "https://khojawiki.org/Aziz_Khaki"
     ],
-    additionalInfo: [
+    "additionalInfo": [
       {
-        title: "Community Leadership",
-        content: "Co-chair of the Provincial Committee on Diversity and Policing and member of various diversity advisory committees."
+        "title": "Awards and Recognition",
+        "content": "Federal Minister of Multiculturalism Award on Excellence in Race Relations, Governor General’s Award on the 125th Anniversary of Canada, Recognized as one of the 25 most influential spiritual leaders of the past 100 years in British Columbia (2000), Honorary Doctor of Letters from St. Marks at UBC (2009)."
       },
       {
-        title: "Legacy",
-        content: "Known for his dedication to promoting multiculturalism and ensuring fair representation of visible minorities in public service."
+        "title": "Key Roles",
+        "content": "Secretary General of Tanzania Welfare Society, Leader of Committee for Racial Justice, Vice President of Council of Muslim Communities of Canada, Co-founder of IDRF, Co-chair of Provincial Committee on Diversity and Policing."
       }
     ]
   },
   {
-    id: "mobina-jaffer",
-    name: "The Honourable Mobina S.B. Jaffer, K.C.",
-    title: "Former Canadian Senator for British Columbia",
-    description: "Mobina S.B. Jaffer K.C. (born August 20, 1949) served as a Canadian Senator representing British Columbia from 2001 to 2024. She was appointed to the Senate on June 13, 2001, by Prime Minister Jean Chrétien, making history as the first Muslim to be appointed to the upper house, the first senator born in Africa, and the first of South Asian descent. Born in Kampala, Uganda, to an Indian family, Jaffer was educated in England and Canada, earning a law degree from the University of London in 1972. She served as Canada's Special Envoy for Peace and chaired the Standing Senate Committee on Human Rights, demonstrating her commitment to social justice and international diplomacy.",
-    shortDescription: "First Muslim Canadian Senator, groundbreaking advocate for human rights and peace.",
-    thumbnailUrl: `${base}/content/interviews/placeholder-2.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-2.png`,
-      `${base}/content/interviews/placeholder-3.png`
+    "id": "riasat-ali-khan",
+    "name": "Riasat Ali Khan",
+    "title": "Community Leader, Advocate for Diversity and Immigrant Integration",
+    "description": "Riasat Ali Khan (1934-2003) was a prominent Canadian Muslim leader, businessman, and tireless advocate for diversity and immigrant integration in British Columbia. He immigrated to Canada in 1959 and was a founding member of the Pakistan-Canada Association. He is credited with opening the first mosque in Western Canada in Vancouver in 1964. Khan dedicated forty years of his life to helping immigrants integrate into Canadian society and championing diversity, serving as a former President of AMSSA (Affiliation of Multicultural Societies and Service Agencies of BC). He also served as the head of the B.C. Immigrant Services Society, was a board member of the B.C. Cancer Society, and a delegate to the Committee for Racial Justice. In 1963, he was Canada's only Muslim probation officer. The Riasat Ali Khan Diversity Award was created in his honor by AMSSA to recognize innovative programming that strengthens diversity in British Columbia. He was a successful businessman and active in the Liberal Party's backroom politics, though he unsuccessfully sought a federal Liberal nomination in 1997. His death in 2003 captured national media attention.",
+    "shortDescription": "Riasat Ali Khan was a pioneering Canadian Muslim leader and advocate for diversity, known for founding the Pakistan-Canada Association, establishing the first mosque in Western Canada, and dedicating four decades to immigrant integration in British Columbia.",
+    "thumbnailUrl": "",
+    "photoUrls": [],
+    "links": [
+      "https://www.amssa.org/membership/diversity-awards/riasat-ali-khan-award/",
+      "https://sencanada.ca/en/content/sen/chamber/372/debates/036db_2003-02-13-e"
     ],
-    links: [
-      "https://lop.parl.ca/sites/ParlInfo/default/en_CA/People/Profile?personId=11967",
+    "additionalInfo": [
+      {
+        "title": "Key Contributions",
+        "content": "Founder of the Pakistan-Canada Association, credited with opening the first mosque in Western Canada (Vancouver, 1964), former President of AMSSA, head of the B.C. Immigrant Services Society, board member of the B.C. Cancer Society, delegate to the Committee for Racial Justice, Canada's only Muslim probation officer (1963)."
+      },
+      {
+        "title": "Legacy",
+        "content": "The Riasat Ali Khan Diversity Award was established in his honor by AMSSA to recognize excellence in strengthening diversity in British Columbia."
+      }
+    ]
+  },
+  {
+    "id": "mobina-jaffer",
+    "name": "Mobina S. B. Jaffer",
+    "title": "Former Canadian Senator, Lawyer, Diplomat",
+    "description": "Mobina S. B. Jaffer, KC (born August 20, 1949, Kampala, Uganda) is a distinguished Canadian lawyer and politician. She made history as the first Muslim, first African-born, and first South Asian-descended senator appointed to the Canadian upper house, serving from June 13, 2001, until her retirement on August 20, 2024. Her family sought refuge in Canada in 1972 after fleeing Idi Amin's expulsion of Asians from Uganda. Prior to her Senate appointment, Jaffer held various leadership roles within the Liberal Party of Canada, including Vice-President (1994-1998) and President of the National Women's Liberal Commission (1998-2003). From 2002 to 2006, she served as Canada's Special Envoy to the Peace Process in Sudan and chaired the Canadian Committee on Women Peace & Security. In the Senate, she contributed to committees on National Security and Defence, Finance, Official Languages, and Internal Affairs. She was recognized with a Top 25 Canadian Immigrant Award in 2014. While facing allegations of overbilling in 2008, these were later dismissed in 2010.",
+    "shortDescription": "Mobina Jaffer is a pioneering Canadian Senator and lawyer, notable as the first Muslim, African-born, and South Asian-descended senator, recognized for her work in national security, finance, and international peace processes.",
+    "thumbnailUrl": "https://www.hilltimes.com/wp-content/uploads/2024/06/6L8A8670_2.t6672facc.m2048@0.xaJU5vpOh-e1718993646637-300x150.jpg",
+    "photoUrls": [
+      "https://www.hilltimes.com/wp-content/uploads/2024/06/6L8A8670_2.t6672facc.m2048@0.xaJU5vpOh-e1718993646637.jpg"
+    ],
+    "links": [
+      "http://sen.parl.gc.ca/mjaffer/",
+      "https://sencanada.ca/en/senators/jaffer-mobina-sb/",
       "https://en.wikipedia.org/wiki/Mobina_Jaffer"
     ],
-    additionalInfo: [
+    "additionalInfo": [
       {
-        title: "Historic Appointments",
-        content: "First Muslim senator, first African-born senator, and first senator of South Asian descent in Canadian history."
+        "title": "Pioneering Achievements",
+        "content": "First Muslim, African-born, and South Asian-descended senator in Canada. First East Indian woman lawyer to practice in British Columbia."
       },
       {
-        title: "International Service",
-        content: "Served as Canada's Special Envoy for Peace and chaired the Standing Senate Committee on Human Rights."
-      },
-      {
-        title: "Background",
-        content: "Born in Kampala, Uganda, educated in England and Canada, with a law degree from the University of London (1972)."
+        "title": "Key Roles",
+        "content": "Special Envoy to the Peace Process in Sudan (2002-2006), Chair of Canadian Committee on Women Peace & Security (2002), Vice-President of Liberal Party of Canada (1994-1998), President of National Women's Liberal Commission (1998-2003)."
       }
     ]
   },
   {
-    id: "nurjehan-mawani",
-    name: "Nurjehan Mawani, C.M., LL.D. (hon)",
-    title: "Lawyer, Public Servant, and Diplomat",
-    description: "Nurjehan Mawani, C.M., LL.D. (hon) is a distinguished lawyer, public servant, diplomat, and global Canadian leader. Born and raised in Mombasa, Kenya, she attended the Inns of Court School of Law in London, England, was called to the Bar at Lincoln's Inn in 1968, and admitted as a Solicitor of the Supreme Court of England and Wales in 1973. After moving to Canada, she practiced law with a Vancouver firm and was called to the British Columbia Bar in 1985. She became Chairperson and CEO of the Immigration and Refugee Board of Canada in 1992, where she issued groundbreaking Guidelines on Gender-Related Persecution in 1993 - the first of their kind in the world, which led other nations to adopt similar policies. She later served as Commissioner of the Public Service Commission of Canada and as Senior Advisor on Diversity. She is a recipient of the Order of Canada and numerous other awards for her contributions to public service.",
-    shortDescription: "Pioneering lawyer and public servant who established groundbreaking refugee protection guidelines.",
-    thumbnailUrl: `${base}/content/interviews/placeholder-3.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-3.png`,
-      `${base}/content/interviews/placeholder-1.png`
+    "id": "nurjehan-mawani",
+    "name": "Nurjehan Mawani",
+    "title": "Lawyer, Public Servant, Diplomat",
+    "description": "Nurjehan Mawani, C.M, LL.D. (hon) is a distinguished Canadian lawyer, public servant, and diplomat. Her extensive career in the Public Service of Canada includes serving as Chairperson and CEO of the Immigration and Refugee Board of Canada, where in 1993, she issued groundbreaking Guidelines on Gender-Related Persecution, making Canada an international leader in recognizing gender-related violence. She later served as Commissioner of the Public Service Commission of Canada and Advisor on Diversity to the Clerk of the Privy Council. From 2005 to 2019, she was the Diplomatic Representative of the Aga Khan Development Network (AKDN) to the Kyrgyz Republic and Afghanistan, leading AKDN's engagement during periods of significant transition. Her contributions have been recognized with awards such as the Order of Canada, the Public Service of Canada Outstanding Achievement Award, and the UNIFEM Canada Award (2007) for her impact on refugee women and girls. She holds several honorary doctorates and is a founding member of the International Association of Refugee and Migration Judges. Currently, she is a Senior Fellow and Inaugural Chair in Global Engagement at Massey College.",
+    "shortDescription": "Nurjehan Mawani is a distinguished Canadian lawyer, public servant, and diplomat, known for her groundbreaking work on gender-related persecution in refugee law and her diplomatic roles with the Aga Khan Development Network.",
+    "thumbnailUrl": "https://idrc-crdi.ca/sites/default/files/styles/profile_image/public/2020-09/Nurjehan-Mawani.jpg?itok=0Q0Q0Q0Q",
+    "photoUrls": [
+      "https://idrc-crdi.ca/sites/default/files/styles/profile_image/public/2020-09/Nurjehan-Mawani.jpg?itok=0Q0Q0Q0Q"
     ],
-    links: [
+    "links": [
       "https://idrc-crdi.ca/en/about-idrc/board-governors/profile/nurjehan-mawani"
     ],
-    additionalInfo: [
+    "additionalInfo": [
       {
-        title: "Groundbreaking Work",
-        content: "Issued the world's first Guidelines on Gender-Related Persecution for refugee claimants in 1993, which were adopted internationally."
+        "title": "Key Achievements",
+        "content": "Issued groundbreaking Guidelines on Gender-Related Persecution (1993), Diplomatic Representative of the Aga Khan Development Network (2005-2019)."
       },
       {
-        title: "Career Highlights",
-        content: "Chairperson and CEO of Immigration and Refugee Board of Canada, Commissioner of Public Service Commission of Canada."
-      },
-      {
-        title: "Recognition",
-        content: "Recipient of the Order of Canada and Outstanding Achievement Award of the Public Service of Canada."
+        "title": "Awards and Honors",
+        "content": "Order of Canada, Public Service of Canada Outstanding Achievement Award, UNIFEM Canada Award (2007), several honorary doctorates."
       }
     ]
   },
   {
-    id: "renisa-mawani",
-    name: "Dr. Renisa Mawani",
-    title: "Professor of Sociology, University of British Columbia",
-    description: "Dr. Renisa Mawani is a Professor of Sociology at the University of British Columbia and an award-winning scholar specializing in colonial legal history, maritime law, and South Asian migration. She is the author of 'Across Oceans of Law: The Komagata Maru and Jurisdiction in the Time of Empire' (2018), which won the 2020 Association for Asian American Studies Book Award for Outstanding Achievement in History and was a finalist for the Socio-Legal Association (U.K.) Theory and History Book Prize. Her groundbreaking research examines the historical and legal dimensions of the 1914 Komagata Maru incident, offering innovative methodologies for understanding British imperial power through racial, temporal, and legal contests. Her work has significantly contributed to scholarship on South Asian Canadian experiences and colonial legal history.",
-    shortDescription: "Award-winning UBC sociology professor and scholar of colonial legal history and South Asian migration.",
-    thumbnailUrl: `${base}/content/interviews/placeholder-1.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-1.png`,
-      `${base}/content/interviews/placeholder-2.png`
+    "id": "renisa-mawani",
+    "name": "Renisa Mawani",
+    "title": "Professor, Canada Research Chair in Colonial Legal Histories",
+    "description": "Renisa Mawani is a Professor and Canada Research Chair in Colonial Legal Histories at the University of British Columbia's Department of Sociology. Her research primarily explores critical theory and legal history, focusing on colonial dispossession concerning Indigenous peoples and restrictions on 'Asiatic' migration. Her notable works include *Colonial Proximities* (2009), which examines legal encounters on Canada's west coast, and *Across Oceans of Law: The Komagata Maru and Jurisdiction in the Time of Empire* (2018), which reorients the Komagata Maru journey to a global and maritime legal history. Her current project, *Enemies of Empire*, investigates colonial control of maritime and land borders during World War I. She also researches the legalities of nature, exploring the intersection of science, law, and history. Mawani has received numerous awards, including the Killam Research Prize (2023) and the Association for Asian American Studies Book Award for *Across Oceans of Law* (2020). She is affiliated with the Asian Canadian and Asian Migration Studies Program and the Social Justice Institute.",
+    "shortDescription": "Renisa Mawani is a UBC Professor and Canada Research Chair specializing in colonial legal histories, known for her influential work on migration, Indigenous dispossession, and the legalities of nature, including her book *Across Oceans of Law*.",
+    "thumbnailUrl": "https://sociology.ubc.ca/files/2023/09/Renisa-Mawani-2023-1-scaled.jpg",
+    "photoUrls": [
+      "https://sociology.ubc.ca/files/2023/09/Renisa-Mawani-2023-1-scaled.jpg"
     ],
-    links: [
-      "https://sociology.ubc.ca/profile/renisa-mawani/"
+    "links": [
+      "https://sociology.ubc.ca/profile/renisa-mawani/",
+      "https://www.renisamawani.org/"
     ],
-    additionalInfo: [
+    "additionalInfo": [
       {
-        title: "Academic Achievement",
-        content: "Professor of Sociology at UBC, author of award-winning book on the Komagata Maru and colonial law."
+        "title": "Key Publications",
+        "content": "*Colonial Proximities: Crossracial Encounters and Juridical Truths in British Columbia, 1871-1921* (2009), *Across Oceans of Law: The Komagata Maru and Jurisdiction in the Time of Empire* (2018)."
       },
       {
-        title: "Research Focus",
-        content: "Specializes in colonial legal history, maritime law, and the historical experiences of South Asian migration to Canada."
-      },
-      {
-        title: "Recognition",
-        content: "Winner of 2020 Association for Asian American Studies Book Award for Outstanding Achievement in History."
+        "title": "Awards and Honors",
+        "content": "Canada Research Chair (Tier 1) (2022-2029), Killam Research Prize (2023), Association for Asian American Studies Book Award (2020), Finalist, Socio-Legal Association (U.K.) Theory and History Book Prize (2020)."
       }
     ]
   },
   {
-    id: "john-nuraney",
-    name: "John Nuraney (1937-2016)",
-    title: "Former MLA for Burnaby-Willingdon",
-    description: "John Nuraney (October 31, 1937 - November 21, 2016) was a groundbreaking Canadian politician who made history as the first Muslim elected as a Member of the Legislative Assembly of British Columbia. Born in Kenya, he represented the riding of Burnaby-Willingdon from 2001 to 2009 for the British Columbia Liberal Party. Nuraney's election marked a significant milestone in Canadian political representation, breaking barriers for Muslim Canadians in provincial politics. His political career was characterized by his commitment to serving his constituents and advocating for diverse communities in British Columbia. As a trailblazer, his legacy continues to inspire future generations of Muslim Canadian political leaders.",
-    shortDescription: "First Muslim elected to the BC Legislature, representing Burnaby-Willingdon from 2001-2009.",
-    thumbnailUrl: `${base}/content/interviews/placeholder-2.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-2.png`,
-      `${base}/content/interviews/placeholder-3.png`
+    "id": "afia-raja",
+    "name": "Dr. Afia Raja",
+    "title": "Department Head and Associate Professor, Planning, Geography, and Environmental Studies",
+    "description": "Dr. Afia Raja (born 1980, Karachi, Pakistan) is the Department Head and Associate Professor in Planning, Geography, and Environmental Studies at the University of the Fraser Valley (UFV). Raised in Karachi, she excelled academically from a young age. Dr. Raja shares her experiences and insights on Muslim communities in British Columbia, contributing to the understanding of how religious identity, cultural heritage, and immigration experiences shape the Muslim Canadian experience in BC. Her work focuses on planning, geography, and environmental studies, bringing an academic perspective to community issues.",
+    "shortDescription": "Dr. Afia Raja is a Department Head and Associate Professor at UFV, specializing in planning, geography, and environmental studies, known for her insights into Muslim communities in British Columbia.",
+    "thumbnailUrl": "https://www.ufv.ca/media/assets/planning-geography-and-environmental-studies/Afia-Headshot.jpg",
+    "photoUrls": [
+      "https://www.ufv.ca/media/assets/planning-geography-and-environmental-studies/Afia-Headshot.jpg"
     ],
-    links: [
-      "https://en.wikipedia.org/wiki/John_Nuraney"
+    "links": [
+      "https://sacda.ca/exhibits/sambc/oral-histories/afia-raja",
+      "https://www.ufv.ca/planning-geography-environmental-studies/faculty/raja-afia.htm"
     ],
-    additionalInfo: [
+    "additionalInfo": []
+  },
+  {
+    "id": "anushay-malik",
+    "name": "Dr. Anushay Malik",
+    "title": "Senior Lecturer, Social Historian",
+    "description": "Dr. Anushay Malik is a Senior Lecturer in the Department of International Studies and Global Asia at Simon Fraser University, and a Visiting Faculty for History and Labour Studies at SFU. Born in Lahore, Pakistan, and raised in Kuala Lumpur, Malaysia, she immigrated to British Columbia in 2019. As a social historian, her research focuses on labor, migration, and anti-colonial movements, exploring how historical contexts shape individuals' aspirations. Her current work examines Bengali migrants in Pakistan and South Asian migrants in British Columbia. She co-authored a public history book on South Asians and the labor movement in BC and is expanding this work to include female farmworkers and Muslim migrants. Dr. Malik has co-curated exhibitions like 'Kaghazi Kashtiyan (Paper Boats)' and 'Truths Not Often Told,' using counter-storytelling to highlight overlooked narratives of migration and resistance.",
+    "shortDescription": "Dr. Anushay Malik is a Senior Lecturer and social historian at SFU, specializing in labor, migration, and anti-colonial movements, known for her public history exhibitions on South Asian migration.",
+    "thumbnailUrl": "",
+    "photoUrls": [],
+    "links": [
+      "https://sfu.ca/internationalstudies/people/profiles/Malik.html",
+      "https://sacda.ca/exhibits/sambc/oral-histories/anushay-malik"
+    ],
+    "additionalInfo": [
       {
-        title: "Historic Achievement",
-        content: "First Muslim elected as a Member of the Legislative Assembly of British Columbia (2001-2009)."
+        "title": "Key Research Areas",
+        "content": "Labor, migration, anti-colonial movements, Bengali migrants in Pakistan, South Asian migrants in British Columbia, female farmworkers, Muslim migrants from South Asia."
       },
       {
-        title: "Political Career",
-        content: "Represented Burnaby-Willingdon for the BC Liberal Party, breaking barriers for Muslim Canadian representation."
-      },
-      {
-        title: "Legacy",
-        content: "Paved the way for future Muslim Canadian politicians in provincial and federal politics."
+        "title": "Public History Exhibitions",
+        "content": "'Kaghazi Kashtiyan (Paper Boats)' (Karachi, Pakistan, 2023), 'Truths Not Often Told' (Burnaby Village Museum, Canada, 2023-2025)."
       }
     ]
   },
   {
-    id: "amna-shah",
-    name: "Amna Shah",
-    title: "MLA for Surrey City Centre, Parliamentary Secretary for Mental Health and Addictions",
-    description: "Amna Shah is a Canadian politician who was elected to the Legislative Assembly of British Columbia in the 2024 provincial election, representing the electoral district of Surrey City Centre as a member of the British Columbia New Democratic Party. She narrowly defeated the Conservative candidate in her riding following an automatic recount, demonstrating the competitive nature of her electoral victory. Appointed as Parliamentary Secretary for Mental Health and Addictions in November 2024, she also serves as Deputy Government Whip. Shah is a legal professional and community leader who has served on the boards of the South Asian Bar Association and the BC Canadian Bar Association Human Rights Law Section, reflecting her commitment to legal advocacy and human rights.",
-    shortDescription: "Newly elected NDP MLA for Surrey City Centre and Parliamentary Secretary for Mental Health and Addictions.",
-    thumbnailUrl: `${base}/content/interviews/placeholder-3.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-3.png`,
-      `${base}/content/interviews/placeholder-1.png`
+    "id": "hassan-javid",
+    "name": "Dr. Hassan Javid",
+    "title": "Associate Professor of Sociology, Faculty Associate",
+    "description": "Dr. Hassan Javid is an Associate Professor of Sociology in the School of Media and Cultural Studies at the University of the Fraser Valley (UFV) and a Faculty Associate at the South Asian Studies Institute at UFV. He received his PhD in Sociology from the London School of Economics, where he was also a Fellow in Political Sociology. Prior to UFV, he was an Associate Professor at Lahore University of Management Sciences in Pakistan. His research focuses on the legacies of colonialism in South Asia, particularly elite reproduction and the relationship between class, state, and power. He has published on elections, social movements, and democratization in Pakistan, and is currently researching the links between authoritarian rule and digital governance/surveillance. Dr. Javid shares his sociological perspective on Muslim communities in British Columbia.",
+    "shortDescription": "Dr. Hassan Javid is an Associate Professor of Sociology at UFV, specializing in the legacies of colonialism in South Asia, elite reproduction, and the relationship between class, state, and power, with a focus on Muslim communities in British Columbia.",
+    "thumbnailUrl": "",
+    "photoUrls": [],
+    "links": [
+      "https://www.ufv.ca/sasi/governance/faculty-associates/javid-hassan.htm",
+      "https://sacda.ca/exhibits/sambc/oral-histories"
     ],
-    links: [
+    "additionalInfo": [
+      {
+        "title": "Academic Background",
+        "content": "PhD in Sociology from London School of Economics, former Associate Professor at Lahore University of Management Sciences."
+      },
+      {
+        "title": "Research Focus",
+        "content": "Legacies of colonialism in South Asia, elite reproduction, class, state, and power, elections, social movements, democratization in Pakistan, digital governance and surveillance."
+      }
+    ]
+  },
+  {
+    "id": "summer-pervez",
+    "name": "Summer Pervez",
+    "title": "Co-Chair, MENA Film Festival; Filmmaker, Academic",
+    "description": "Summer Pervez is the Co-Chair of the MENA Film Festival, an academic, and a working filmmaker. Born in Saudi Arabia to Pakistani parents, they received an American education while growing up internationally. Summer holds a PhD in English from the University of Ottawa and has taught World Literature and Film, with a focus on South Asia, at various universities in Canada and Pakistan since 2002, including the University of the Fraser Valley, Kwantlen Polytechnic University, and Lahore School of Economics. They have published numerous articles on literature, film, and music, and recently taught screenwriting at the Vancouver Film School. Summer is currently writing a monograph on contemporary Pakistani TV dramas and produces shorts, features, and documentaries.",
+    "shortDescription": "Summer Pervez is the Co-Chair of the MENA Film Festival, an academic with a PhD in English, and a filmmaker, specializing in World Literature and Film with a focus on South Asia.",
+    "thumbnailUrl": "",
+    "photoUrls": [],
+    "links": [
+      "https://www.menafilmfestival.com/team/co-chair-2"
+    ],
+    "additionalInfo": [
+      {
+        "title": "Academic Background",
+        "content": "PhD in English from the University of Ottawa, taught at University of the Fraser Valley, Kwantlen Polytechnic University, Lahore School of Economics, Vancouver Film School."
+      },
+      {
+        "title": "Professional Focus",
+        "content": "World Literature and Film (South Asia specialization), screenwriting, producing shorts, features, and documentaries, writing a monograph on contemporary Pakistani TV dramas."
+      }
+    ]
+  },
+  {
+    "id": "rizwaan-abbas",
+    "name": "Rizwaan Abbas",
+    "title": "Archaeologist, Cultural Resource Manager, Museum Curator",
+    "description": "Rizwaan Abbas is a first-generation Canadian of Indo-Fijian descent, born in Sparwood, British Columbia, in 1977. He holds an Associate's Degree from Douglas College, a BA in Archaeology from SFU, an MSc in Paleoanthropology and Paleolithic Archaeology from University College London (UK), and a PSc in Collections Management from UVic. With over two decades of experience in cultural resource management, he serves as an archaeologist for the Semiahmoo First Nation. Abbas is a Director of Heritage BC and the Indo-Fijian Cultural Society of Canada. He is also a member of the Historical Discrimination against People of South Asian Descent Advisory Committee and the South Asian Canadian Museum Engagement Committee in Vancouver. He was a guest editor of BC History Magazine, curated the 'Surrey's Pocket of Paradise' exhibit at the Museum of Surrey, and authored a chapter in 'The Social History of South Asians in British Columbia.' His work emphasizes accurate representation of the Indo-Fijian community, including both Hindu and Islamic faiths, and incorporates Indigenous Fijian tapa designs.",
+    "shortDescription": "Rizwaan Abbas is a Canadian archaeologist, cultural resource manager, and museum curator of Indo-Fijian descent, known for his work with Indigenous communities and his contributions to South Asian Canadian heritage in British Columbia.",
+    "thumbnailUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcQc8_HCRaYXmyo0ArSSM8q5gmeqOsjDq5SqHyHhETqvNzgJe97fYs68HnPkkGgHIZUlIFUFQU-sDOkyhOSOEkF4C8JlAtHF5luN5q1SvMZOQqTG6V81B-ZXgw8hKzVRjq84oO7DmsqWIcgmF3Ht1CGbhfR4fGlyHNnYaDC6VlSks2wEAOWF6iKTU/s4032/IMG_2716.jpg",
+    "photoUrls": [
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcQc8_HCRaYXmyo0ArSSM8q5gmeqOsjDq5SqHyHhETqvNzgJe97fYs68HnPkkGgHIZUlIFUFQU-sDOkyhOSOEkF4C8JlAtHF5luN5q1SvMZOQqTG6V81B-ZXgw8hKzVRjq84oO7DmsqWIcgmF3Ht1CGbhfR4fGlyHNnYaDC6VlSks2wEAOWF6iKTU/s4032/IMG_2716.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjosrT2cVM78Tjq-WpOxdOWqzvB6x9FKQjvEAJf4Tzkt0o8z2bmhW0LzUaTUz2UpDguOIIV66l-dI7lId-7T-H6m2hgzn1mTA0GYQkuNf6Nx21twC0dol2JRP3cX32R19ZZRydSOMmvBkhU3I4GtiHpo8iadF782vNS8v4fn327WJaFI0_ybeqxCL0/s4032/IMG_7895.jpg"
+    ],
+    "links": [
+      "https://heritagebc.ca/about/board-of-directors/",
+      "https://sacda.ca/exhibits/sambc/oral-histories/rizwaan-abbas/"
+    ],
+    "additionalInfo": [
+      {
+        "title": "Academic Background",
+        "content": "BA in Archaeology (SFU), MSc in Paleoanthropology and Paleolithic Archaeology (UCL), PSc in Collections Management (UVic)."
+      },
+      {
+        "title": "Key Roles and Contributions",
+        "content": "Archaeologist for Semiahmoo First Nation, Director of Heritage BC, Director of Indo-Fijian Cultural Society of Canada, curated 'Surrey's Pocket of Paradise' exhibit, authored chapter in 'The Social History of South Asians in British Columbia'."
+      }
+    ]
+  },
+  {
+    "id": "john-nuraney",
+    "name": "John Nuraney",
+    "title": "Former Member of the British Columbia Legislative Assembly, Businessman",
+    "description": "John Nuraney (October 31, 1937, Mombasa, Kenya – November 21, 2016, Surrey, British Columbia) was a Canadian politician and businessman. He was the first Muslim elected as a Member of the Legislative Assembly of British Columbia, representing Burnaby-Willingdon from 2001 to 2009 for the BC Liberal Party. Nuraney immigrated to Canada from Zaire in 1974 after his business assets were nationalized. In Canada, he owned five A&W Restaurant franchises. He was a respected leader in the Ismaili community, an entrepreneur, and a philanthropist. His volunteer work included serving as a director and past president of the Burnaby Rotary Club, director of the Michael J. Fox Theatre, and member of the Metrotown Community Policing Advisory Group. He instigated the 'Penny Harvest' project to feed hungry children in Burnaby. Nuraney was multilingual, speaking six languages: English, French, Swahili, Lingala, Hindi, and Gujarati.",
+    "shortDescription": "John Nuraney was a pioneering Canadian politician and businessman, the first Muslim MLA in British Columbia, known for his community leadership, philanthropy, and advocacy in Burnaby.",
+    "thumbnailUrl": "https://search.heritageburnaby.ca/media/hpo/_Data/_Archives_Images/_Unrestricted/535/535-0314.jpg?width=280",
+    "photoUrls": [
+      "https://search.heritageburnaby.ca/media/hpo/_Data/_Archives_Images/_Unrestricted/535/535-0314.jpg"
+    ],
+    "links": [
+      "https://en.wikipedia.org/wiki/John_Nuraney",
+      "https://www.leg.bc.ca/members/37th-Parliament/Nuraney-John"
+    ],
+    "additionalInfo": [
+      {
+        "title": "Pioneering Achievement",
+        "content": "First Muslim elected as a Member of the Legislative Assembly of British Columbia."
+      },
+      {
+        "title": "Key Roles",
+        "content": "MLA for Burnaby-Willingdon (2001-2009), owner of A&W Restaurants, director and past president of Burnaby Rotary Club, instigator of 'Penny Harvest' project."
+      }
+    ]
+  },
+  {
+    "id": "amna-shah",
+    "name": "Amna Shah",
+    "title": "Member of the Legislative Assembly (MLA) for Surrey City Centre",
+    "description": "Amna Shah is a Member of the Legislative Assembly (MLA) for Surrey City Centre, representing David Eby's BC NDP team. Having resided in Surrey for nearly two decades, she is deeply committed to public service and community advocacy, values instilled by her family. Her professional and volunteer work reflects these commitments, particularly in housing advocacy, where she worked with BC’s Ministry of Housing to advance affordable housing policies. She is a dedicated volunteer and Board Director at the Surrey Food Bank, working to expand food distribution services and combat food insecurity. Shah's focus areas for Surrey include expanded transit, strengthening education, building more healthcare facilities, and enhancing community safety, demonstrating her effectiveness in achieving results for her constituents.",
+    "shortDescription": "Amna Shah is the MLA for Surrey City Centre, a BC NDP team member, known for her advocacy in housing, food security, and community development in Surrey.",
+    "thumbnailUrl": "https://amnashah.bcndp.ca/sites/default/files/headshots/amna_shah_src_headshot-1000x1000px-80.jpg",
+    "photoUrls": [
+      "https://amnashah.bcndp.ca/sites/default/files/headshots/amna_shah_src_headshot-1000x1000px-80.jpg"
+    ],
+    "links": [
       "https://www.leg.bc.ca/members/43rd-Parliament/Shah-Amna",
       "https://amnashah.bcndp.ca/"
     ],
-    additionalInfo: [
+    "additionalInfo": [
       {
-        title: "Political Role",
-        content: "MLA for Surrey City Centre (2024-present), Parliamentary Secretary for Mental Health and Addictions, Deputy Government Whip."
-      },
-      {
-        title: "Legal Background",
-        content: "Accomplished legal professional serving on boards of South Asian Bar Association and BC Canadian Bar Association Human Rights Law Section."
-      },
-      {
-        title: "Community Leadership",
-        content: "Active community volunteer and director on various boards, focusing on legal advocacy and human rights."
+        "title": "Key Focus Areas",
+        "content": "Affordable housing policies, food security (Surrey Food Bank Board of Directors), expanded transit, education, healthcare facilities, community safety."
       }
     ]
   },
   {
-    id: "summer-pervez",
-    name: "Dr. Summer Pervez",
-    title: "Filmmaker, Professor, and Co-Chair of MENA Film Festival",
-    description: "Dr. Summer Pervez is a multifaceted filmmaker, screenwriter, poet, photographer, and professor who serves as Co-Chair of the Middle East and North Africa (MENA) Film Festival in Vancouver. Born in Saudi Arabia to Pakistani parents, Summer grew up in multiple countries and was educated in American schools. They hold a PhD in English from the University of Ottawa and have been teaching in various universities in Canada and Pakistan since 2002, including the University of the Fraser Valley, Kwantlen Polytechnic University, and the Lahore School of Economics. They specialize in World Literature and Film with a focus on South Asia, and have published extensively on literature, film, and music. Summer recently taught screenwriting at Vancouver Film School and is currently writing a monograph on contemporary Pakistani TV dramas. Their feature screenplay '1947' has earned recognition in international competitions, and they have written and produced several award-winning short films.",
-    shortDescription: "Filmmaker, professor, and Co-Chair of Vancouver's MENA Film Festival, specializing in South Asian cinema and literature.",
-    thumbnailUrl: `${base}/content/interviews/placeholder-1.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-1.png`,
-      `${base}/content/interviews/placeholder-2.png`
-    ],
-    links: [
-      "https://www.menafilmfestival.com/team/co-chair-2"
-    ],
-    additionalInfo: [
-      {
-        title: "Academic Career",
-        content: "PhD in English from University of Ottawa, taught at UFV, KPU, Lahore School of Economics, and Vancouver Film School."
-      },
-      {
-        title: "Film Industry",
-        content: "Co-Chair of MENA Film Festival Vancouver, filmmaker of shorts and features, screenwriter with internationally recognized work."
-      },
-      {
-        title: "Research Focus",
-        content: "Specializes in World Literature and Film with focus on South Asia, currently writing monograph on Pakistani TV dramas."
-      }
-    ]
-  },
-  {
-    id: "shahzad-nazir-khan",
-    name: "Shahzad Nazir Khan, P.Ag",
-    title: "Agronomist and Social Justice Advocate",
-    description: "Shahzad Nazir Khan, P.Ag, is an accomplished agronomist and social justice advocate who has made significant contributions to both sustainable agriculture and community peace-building in British Columbia. Born in Dera Ghazi Khan, Pakistan, he immigrated to Canada in 2006 and has since become a prominent voice in the South Asian community. He holds master's degrees in Business Administration and Agriculture (Agronomy) from the University of Agriculture, Faisalabad, Pakistan. Currently working as an Agronomist and Sales Manager at TerraLink Horticulture Inc., he has over 26 years of experience in the agricultural sector, championing sustainable farming practices and environmental preservation. As Executive of Progressive Pakistani Canadians, he has led numerous initiatives to raise awareness about peace and issues related to the South Asian diaspora, promoting unity in diversity and non-violent coexistence. He is also a member of the Dhahan Prize advisory board, reflecting his commitment to literature and cultural preservation.",
-    shortDescription: "Professional agronomist and peace advocate championing sustainable farming and South Asian community unity.",
-    thumbnailUrl: `${base}/content/interviews/placeholder-2.png`,
-    photoUrls: [
-      `${base}/content/interviews/placeholder-2.png`,
-      `${base}/content/interviews/placeholder-3.png`
-    ],
-    links: [
+    "id": "shahzad-nazir-khan",
+    "name": "Shahzad Nazir Khan",
+    "title": "Executive, Progressive Pakistani Canadians; Advisory Committee Member, Dhahan Prize",
+    "description": "Shahzad Nazir Khan, born in Dera Ghazi Khan, Punjab, Pakistan, immigrated to Canada in 2006 and is a prominent peace and social justice activist within the South Asian community. He serves as an Advisory Committee Member for The Dhahan Prize For Punjabi Literature and is an Executive with Progressive Pakistani Canadians. Through this group, he leads initiatives to raise awareness about peace and issues affecting the South Asian diaspora, advocating for a peaceful, tolerant, and non-violent society. He champions 'unity in diversity' and promotes peace to those in their native countries. Academically, he holds master's degrees in Business Administration and Agriculture (Agronomy) from the University of Agriculture, Faisalabad, Pakistan. With over fifteen years of experience in agricultural sales and marketing, his primary interests lie in poetry, literature, and music. He also hosts 'Mera Paigham Pakistan,' an Urdu talk show on Connect FM 91.5 FM, covering socio-economic and political updates and featuring interviews with community leaders.",
+    "shortDescription": "Shahzad Nazir Khan is a Canadian peace and social justice activist, an executive with Progressive Pakistani Canadians, and an advisor to the Dhahan Prize, known for promoting unity and cultural understanding within the South Asian diaspora.",
+    "thumbnailUrl": "",
+    "photoUrls": [],
+    "links": [
       "https://dhahanprize.com/advisors/shahzad-nazir-khan/",
       "https://connectfm.ca/en/shows/su/view/mera-paigham-pakistan"
     ],
-    additionalInfo: [
+    "additionalInfo": [
       {
-        title: "Professional Background",
-        content: "Agronomist and Sales Manager at TerraLink Horticulture Inc. with 26+ years in agricultural sector, specializing in sustainable farming practices."
+        "title": "Academic Background",
+        "content": "Master's degrees in Business Administration and Agriculture (Agronomy) from University of Agriculture, Faisalabad, Pakistan."
       },
       {
-        title: "Community Leadership",
-        content: "Executive of Progressive Pakistani Canadians, peace and social justice activist promoting unity in diversity among South Asian diaspora."
+        "title": "Key Roles",
+        "content": "Advisory Committee Member for The Dhahan Prize For Punjabi Literature, Executive with Progressive Pakistani Canadians, Host of 'Mera Paigham Pakistan' on Connect FM."
+      }
+    ]
+  },
+  {
+    "id": "fauzia-rafique",
+    "name": "Fauzia Rafique",
+    "title": "South Asian Canadian Author, Poet, Journalist, Activist",
+    "description": "Fauzia Rafique is a South Asian Canadian author of fiction and poetry, a journalist, screenwriter, and arts activist. Born in Pakistan, she worked as a journalist and screenwriter before coming to Canada as a Convention Refugee in 1986. She is a co-founder and coordinator of Surrey Muse Arts Society (SMAS). Rafique has published three novels/novellas: 'Keeru', 'Skeena', and 'The Adventures of Saheban: Biography of a Relentless Warrior', and an eBook of poems 'Holier Than Life'. Her chapbook of English and Punjabi poems received Canada's Best 2012 award from Writers International Network (WIN). In 2020, she received the City of Surrey's Arts & Heritage Literary Arts Award, and her novella 'Keerru' won the Ali Arshad Mir Award. Her work often centers on the empowerment of women, writers, and artists, and positions against religious oppression, class/caste prejudices, systemic racism, homophobia, and ableism, supporting the struggles and rights of POC, Indigenous Peoples, Queer communities, refugees, and migrants.",
+    "shortDescription": "Fauzia Rafique is an award-winning South Asian Canadian author, poet, and activist, known for her fiction and poetry that advocate for women's empowerment and social justice, and as a co-founder of Surrey Muse Arts Society.",
+    "thumbnailUrl": "",
+    "photoUrls": [],
+    "links": [
+      "https://www.amazon.com/stores/author/B0052XQMAM/about",
+      "https://www.himalmag.com/author/fauzia-rafique",
+      "https://gandholi.wordpress.com/"
+    ],
+    "additionalInfo": [
+      {
+        "title": "Key Publications",
+        "content": "Novels/Novellas: 'Keeru', 'Skeena', 'The Adventures of Saheban: Biography of a Relentless Warrior'; Poetry: 'Holier Than Life'."
       },
       {
-        title: "Education and Recognition",
-        content: "Master's degrees in Business Administration and Agriculture from University of Agriculture, Faisalabad; Dhahan Prize advisory board member."
+        "title": "Awards and Recognition",
+        "content": "Canada's Best 2012 award (Writers International Network), City of Surrey's Arts & Heritage Literary Arts Award (2020), Ali Arshad Mir Award (2020)."
+      },
+      {
+        "title": "Activism and Advocacy",
+        "content": "Co-founder and coordinator of Surrey Muse Arts Society (SMAS), advocates for women's empowerment, against oppression and discrimination, and for the rights of marginalized communities."
+      }
+    ]
+  },
+  {
+    "id": "anosh-irani",
+    "name": "Anosh Irani",
+    "title": "Indo-Canadian Novelist and Playwright",
+    "description": "Anosh Irani (born 1974, Mumbai, India) is an acclaimed Indo-Canadian novelist and playwright. He attended the University of British Columbia and Capilano University, and currently teaches creative writing at Simon Fraser University. Irani's bold and courageous choice of subjects challenges readers to confront uncomfortable truths, often focusing on characters for whom hope is a luxury, such as those affected by caste conflict, street children, or transgender individuals. His works include the novels *The Song of Kahunsha* (shortlisted for Canada Reads) and *The Parcel* (finalist for a Governor General's Literary Award and the Rogers Writers' Trust Fiction Prize). His play *Bombay Black* won five Dora Mavor Moore Awards, including Outstanding New Play. In 2019, he published his first short story collection, *Translated from the Gibberish*, and in 2023, he won the Writers' Trust Engel Findley Award. Irani lives in North Vancouver.",
+    "shortDescription": "Anosh Irani is an award-winning Indo-Canadian novelist and playwright, known for his powerful and compassionate storytelling that explores challenging social themes, including *The Parcel* and *Bombay Black*.",
+    "thumbnailUrl": "https://milkweed.org/sites/default/files/styles/author_profile/public/authors/profile/Anosh_IraniRGB_0.jpg?h=f8a5f9cf&itok=4W63bOGp",
+    "photoUrls": [
+      "https://milkweed.org/sites/default/files/authors/profile/Anosh_IraniRGB_0.jpg"
+    ],
+    "links": [
+      "https://www.writerstrust.com/authors/anosh-irani",
+      "https://milkweed.org/author/anosh-irani"
+    ],
+    "additionalInfo": [
+      {
+        "title": "Key Works",
+        "content": "Novels: *The Song of Kahunsha*, *The Parcel*; Play: *Bombay Black*; Short Story Collection: *Translated from the Gibberish*."
+      },
+      {
+        "title": "Awards and Honors",
+        "content": "Writers' Trust Engel Findley Award (2023), Dora Mavor Moore Awards for *Bombay Black* (including Outstanding New Play), shortlisted for Canada Reads (*The Song of Kahunsha*), finalist for Governor General's Literary Award and Rogers Writers' Trust Fiction Prize (*The Parcel*)."
+      }
+    ]
+  },
+  {
+    "id": "tariq-malik",
+    "name": "Tariq Malik",
+    "title": "Indo-Canadian Novelist, Poet, Screenwriter",
+    "description": "Tariq Malik (born 1957, Lahore, Pakistan) is an Indo-Canadian novelist, poet, and screenwriter residing in Vancouver. He immigrated to Canada in 1993, first living in Regina, Saskatchewan, before settling in Vancouver in 1996. Malik holds an MA in English literature from the University of the Punjab and has taught English at the University of Management and Technology in Lahore, Pakistan. His literary contributions include three novels: *Chants of a Minstrel: The Canzoniere* (2000), a modern retelling of a Sufi legend; *One Percent of Paradise* (2006), set against the backdrop of the 9/11 events in Vancouver; and *The Longing and the Loss* (2014), which explores themes of violence and love across generations. His work has been praised for its poetic language, compelling characters, and exploration of complex cultural and political issues. Malik is a member of The Writers' Union of Canada.",
+    "shortDescription": "Tariq Malik is an Indo-Canadian novelist, poet, and screenwriter, known for his compelling narratives that explore Sufi legends, contemporary issues like 9/11, and themes of violence and love across generations.",
+    "thumbnailUrl": "https://writersunion.ca/sites/default/files/styles/member_profile_image/public/tariq_malik_photo_by_salman_malik.jpg?itok=0Q0Q0Q0Q",
+    "photoUrls": [
+      "https://writersunion.ca/sites/default/files/styles/member_profile_image/public/tariq_malik_photo_by_salman_malik.jpg?itok=0Q0Q0Q0Q"
+    ],
+    "links": [
+      "https://writersunion.ca/member/t%C4%81riq-malik"
+    ],
+    "additionalInfo": [
+      {
+        "title": "Key Publications",
+        "content": "Novels: *Chants of a Minstrel: The Canzoniere* (2000), *One Percent of Paradise* (2006), *The Longing and the Loss* (2014)."
+      },
+      {
+        "title": "Academic Background",
+        "content": "MA in English literature from the University of the Punjab, taught English at the University of Management and Technology in Lahore, Pakistan."
+      }
+    ]
+  },
+  {
+    "id": "haroon-siddiqui",
+    "name": "Haroon Siddiqui",
+    "title": "Indo-Canadian Journalist, Columnist, Author",
+    "description": "Haroon Siddiqui, CM OOnt (born June 1, 1942, India) is a distinguished Indo-Canadian newspaper journalist, columnist, and editorial page editor emeritus of the Toronto Star. He immigrated to Canada in 1967 and has reported from over 50 countries, shaping media coverage of Canada for fifty years under ten prime ministers. During his three-decade tenure at the Toronto Star, he served as a foreign affairs analyst, columnist, national editor, and editorial page editor, retiring from journalism in 2015. Siddiqui has held leadership roles in various organizations, including the Canadian Newspaper Association and the Canadian Civil Liberties Association. He is a member of the Order of Ontario (2000, 2001) for his contributions to a broader definition of Canadian identity. He received an honorary Doctor of Letters from York University (2001) and the World Press Freedom Award (2002). In 2023, he was honored with the Lifetime Achievement Award from the Canadian Journalism Foundation for his commitment to diversity, journalistic integrity, and social justice. He is the author of the autobiography *My Name Is Not Harry: A Memoir*.",
+    "shortDescription": "Haroon Siddiqui is an acclaimed Indo-Canadian journalist, columnist, and author, known for his extensive international reporting, his long tenure at the Toronto Star, and his advocacy for diversity and social justice in Canadian media.",
+    "thumbnailUrl": "",
+    "photoUrls": [],
+    "links": [
+      "https://en.wikipedia.org/wiki/Haroon_Siddiqui",
+      "https://agakhanmuseum.org/explore-at-home/listen/this-being-human-haroon-siddiqui/"
+    ],
+    "additionalInfo": [
+      {
+        "title": "Key Roles",
+        "content": "Editorial Page Editor Emeritus of the Toronto Star, Foreign Affairs Analyst, Columnist, National Editor."
+      },
+      {
+        "title": "Awards and Honors",
+        "content": "Member of the Order of Ontario (2000, 2001), honorary Doctor of Letters from York University (2001), World Press Freedom Award (2002), Lifetime Achievement Award from the Canadian Journalism Foundation (2023)."
+      },
+      {
+        "title": "Publication",
+        "content": "Author of *My Name Is Not Harry: A Memoir*."
+      }
+    ]
+  },
+  {
+    "id": "salim-jiwa",
+    "name": "Salim Jiwa",
+    "title": "Award-winning Investigative Journalist, Author",
+    "description": "Salim Jiwa is an award-winning senior investigative journalist based in Vancouver, known for his extensive coverage of the Air India bombing. He was the only reporter continuously on the Air India story from its inception, exploring the complex underworld of the accused terrorists. Jiwa is an authority on terrorism, appearing regularly on television and radio, and serving as a consultant for ABC News in New York. He is the author of *The Death of Air India Flight 182* (1986) and co-authored *Margin of Terror: A Reporter's Twenty-Year Odyssey Covering the Tragedies of the Air India Bombing* (2006) with Donald J. Hauka. His work sheds light on the origins of Sikh militancy and the conspiracy behind the bombings, critically examining missteps by law enforcement and prosecution. Jiwa's reporting has been praised for its riveting eyewitness detail and balanced perspective.",
+    "shortDescription": "Salim Jiwa is an award-winning investigative journalist and author based in Vancouver, renowned for his in-depth coverage and expertise on the Air India bombing and terrorism.",
+    "thumbnailUrl": "",
+    "photoUrls": [],
+    "links": [
+      "https://www.amazon.ca/Margin-Terror-Reporters-Twenty-Year-Tragedies/dp/1552637727",
+      "https://abcbookworld.com/writer/jiwa-salim/"
+    ],
+    "additionalInfo": [
+      {
+        "title": "Key Publications",
+        "content": "*The Death of Air India Flight 182* (1986), *Margin of Terror: A Reporter's Twenty-Year Odyssey Covering the Tragedies of the Air India Bombing* (2006)."
+      },
+      {
+        "title": "Expertise",
+        "content": "Authority on terrorism, regular consultant for ABC News in New York."
       }
     ]
   }
