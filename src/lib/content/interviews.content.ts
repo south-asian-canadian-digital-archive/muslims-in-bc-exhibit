@@ -198,22 +198,22 @@ export const interviews: Interview[] = [
     narrativePdfUrl: `https://drive.google.com/file/d/1wv9Ekh3vuKsWVIoC8LFZvucWZlyb6fXL/view?usp=drive_link`
   },
 
-  {
-    id: "inayath-mohamed",
-    name: "Inayath Mohamed",
-    title: "Elementary School Teacher",
-    location: "Mission, BC",
-    thumbnailUrl: `${base}/content/interviews/thumbnails/inayath-mohamed.png`,
-    mediaType: 'video',
-    videoUrl: "https://drive.google.com/file/d/1WybxfbHP7BlsQvI6WIUWapiie9wjw2sk/preview",
-    shortDescription: "Inayath Mohamed (born and raised in Sri Lanka) shares his experiences as an elementary school teacher with a global outlook, having taught at international schools in Indonesia, Oman, Singapore, Bangladesh, New Zealand and Saudi Arabia before returning to Canada.",
-    description: "Inayath Mohamed was born and raised in Sri Lanka, growing up in a rural area where his father managed a rubber plantation and his mother was a homemaker. He was raised in a small nuclear family, consisting of his parents and younger brother. Life in Sri Lanka was peaceful during his childhood, and he finds that the rural environment was an ideal setting for a young boy. ",
-    interviewDate: "2025-02-10",
-    interviewer: "Samarah Siddique",
-    contributors: ["Sadhik preet Singh"],
-    narrativePdfUrl: `https://drive.google.com/file/d/1BHmlNYEAvS8qxd0Jp7hnnuo2fcbozEHQ/view?usp=drive_link`,
-    links: ["https://whatsonmission.ca/in-the-community/life-of-a-writer-inayath-mohamed"]
-  },
+  // {
+  //   id: "inayath-mohamed",
+  //   name: "Inayath Mohamed",
+  //   title: "Elementary School Teacher",
+  //   location: "Mission, BC",
+  //   thumbnailUrl: `${base}/content/interviews/thumbnails/inayath-mohamed.png`,
+  //   mediaType: 'video',
+  //   videoUrl: "https://drive.google.com/file/d/1WybxfbHP7BlsQvI6WIUWapiie9wjw2sk/preview",
+  //   shortDescription: "Inayath Mohamed (born and raised in Sri Lanka) shares his experiences as an elementary school teacher with a global outlook, having taught at international schools in Indonesia, Oman, Singapore, Bangladesh, New Zealand and Saudi Arabia before returning to Canada.",
+  //   description: "Inayath Mohamed was born and raised in Sri Lanka, growing up in a rural area where his father managed a rubber plantation and his mother was a homemaker. He was raised in a small nuclear family, consisting of his parents and younger brother. Life in Sri Lanka was peaceful during his childhood, and he finds that the rural environment was an ideal setting for a young boy. ",
+  //   interviewDate: "2025-02-10",
+  //   interviewer: "Samarah Siddique",
+  //   contributors: ["Sadhik preet Singh"],
+  //   narrativePdfUrl: `https://drive.google.com/file/d/1BHmlNYEAvS8qxd0Jp7hnnuo2fcbozEHQ/view?usp=drive_link`,
+  //   links: ["https://whatsonmission.ca/in-the-community/life-of-a-writer-inayath-mohamed"]
+  // },
 
   {
     id: "shakeel-gaya",
