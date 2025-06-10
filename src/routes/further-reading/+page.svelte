@@ -77,7 +77,7 @@
     Further Reading
   </p>
 
-  <div class="flex flex-col gap-16 *:w-full *:grid *:grid-cols-12 history">
+  <div class="flex flex-col gap-16 history">
     {#each resourceLinks as linkItem}
       <section class="relative">
         <span

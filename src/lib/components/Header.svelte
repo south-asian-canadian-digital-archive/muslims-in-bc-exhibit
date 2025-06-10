@@ -6,7 +6,6 @@
   import { base } from "$app/paths";
 
   import Button from "./ui/button/button.svelte";
-  import House from "$lib/house.svelte";
 
   let mobileNavButtonWidth: number = $state(0);
   let mobileNavOpen = $state(false);
@@ -121,14 +120,14 @@
             >
           {:else}
             <div
-              class="inline-flex flex-col items-center relative border-b-2 {isItemActive(
+              class="inline-flex flex-col items-center relative border-b-2 cursor-pointer hover:border-b-secondary-yellow transition-all ease-in-out duration-150 {isItemActive(
                 item
               )
-                ? 'border-b-secondary-yellow '
+                ? 'border-b-secondary-yellow'
                 : 'border-b-transparent'}"
             >
               <button
-                class="flex flex-col gap-0 items-center whitespace-nowrap"
+                class="flex flex-col gap-0 items-center whitespace-nowrap cursor-pointer"
                 class:font-extrabold={isItemActive(item)}
                 onclick={() => {
                   if (item.pages) {
