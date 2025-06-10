@@ -33,13 +33,14 @@ export const navItems: {
 				{ name: "Case Studies: Hidden Histories", path: `${base}/history/case-studies` },
 			]
 		},
-		{
-			name: "Community Life",
-			pages: [
-				{ name: "Oral Histories", path: `${base}/oral-histories` },
-				{ name: "Contemporary Personalities", path: `${base}/contemporary-personalities` },
-			]
-		},
+		// {
+		// 	name: "Community Life",
+		// 	pages: [
+		// 		{ name: "Oral Histories", path: `${base}/oral-histories` },
+		// 		{ name: "Contemporary Personalities", path: `${base}/contemporary-personalities` },
+		// 	]
+		// },
+		{ name: "Oral Histories", path: `${base}/oral-histories` },
 		{ name: "Further Reading", path: `${base}/further-reading` },
 		{ name: "Share your story", path: `${base}/contact` },
 	]

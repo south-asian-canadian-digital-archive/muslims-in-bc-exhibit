@@ -174,13 +174,7 @@
               "name": "Oral Histories",
               "url": "https://${PUBLIC_DOMAIN}/oral-histories",
               "description": "Personal narratives and interviews from South Asian Muslim community members in British Columbia"
-            },
-            {
-              "@type": "DigitalDocument",
-              "name": "Contemporary Personalities",
-              "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities",
-              "description": "Profiles of influential South Asian Muslim leaders, entrepreneurs, and changemakers in BC today"
-            }
+            } 
           ]
         },
         {
@@ -430,25 +424,15 @@
             </div>
 
             <!-- Contemporary Personalities Subsection -->
-            <div>
+            <!-- <div>
               <h4 class="font-semibold text-green-600 mb-2">Contemporary Personalities</h4>
               <p class="text-sm mb-3">Influential leaders, entrepreneurs, and changemakers today</p>
-              <!-- <ul class="list-disc pl-5 mb-3 space-y-1 *:text-left text-sm">
-                {#each personalities.slice(0, 3) as personality}
-                  <li>
-                    <a
-                      href="{base}/contemporary-personalities/{personality.id}"
-                      class="hover:underline">{personality.name}</a
-                    >
-                  </li>
-                {/each}
-              </ul> -->
               <a
                 href="{base}/contemporary-personalities"
                 class="inline-block text-green-600 font-medium hover:underline text-sm"
                 >View all personalities →</a
               >
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -463,19 +447,6 @@
             Access academic research, articles, books and other resources about
             South Asian Muslims.
           </p>
-          <!-- <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
-            {#each resourceLinks.slice(0,2) as linkItem}
-              <li>
-                <a
-                  href="{base}/further-reading#{linkItem.title
-                    .toLowerCase()
-                    .split(' ')
-                    .join('-')}"
-                  class="hover:underline">{linkItem.title}</a
-                >
-              </li>
-            {/each}
-          </ul> -->
           <a
             href="{base}/further-reading"
             class="inline-block text-orange-700 font-medium hover:underline"
@@ -492,18 +463,6 @@
             Contribute to this living archive by sharing your personal
             experience or family history.
           </p>
-          <!-- <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
-            <li>
-              <a href="{base}/contact" class="hover:underline"
-                >Share Your Story</a
-              >
-            </li>
-            <li>
-              <a href="https://sacda.ca" class="hover:underline"
-                >Contribute to SACDA</a
-              >
-            </li>
-          </ul> -->
           <a
             href="{base}/contact"
             class="inline-block text-purple-600 font-medium hover:underline"
