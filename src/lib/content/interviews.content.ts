@@ -122,7 +122,7 @@ export const interviews: Interview[] = [
     interviewDate: "2024-12-19",
     interviewer: "Samarah Siddique",
     contributors: ["Sadhikpreet Singh", "Thamilini Jothilingam"],
-    narrativePdfUrl: `https://drive.google.com/open?id=1JfRp9CxLKMBtZYZGDbhF48111FX0vVUL`
+    narrativePdfUrl: `https://drive.google.com/open?id=1cX5Jc97NuUdPqV4yfEivp2A8THyHMnJ6`
   },
 
   {
@@ -182,13 +182,36 @@ export const interviews: Interview[] = [
   {
     id: "farida-farook",
     name: "Farida Farook",
-    title: "Hana's mother",
+    title: "Founder and Director of Sapphire Gem Company LTD + Gemologist",
     location: "British Columbia",
     thumbnailUrl: `${base}/content/interviews/thumbnails/farida-farook.webp`,
     mediaType: 'photos',
     // videoUrl: "https://drive.google.com/file/d/1DofUfBUMUGGUa458QfkpNlkMHXGvHJkQ/preview",
     photoUrls: [
-      `${base}/content/interviews/thumbnails/farida-farook.webp`
+      // `${base}/content/interviews/thumbnails/farida-farook.webp`,
+      "https://drive.google.com/file/d/1-LPRoqGhZu5ec6vMqzErItFZzmu4Zi0g/preview",
+      "https://drive.google.com/file/d/123fDXbksITsWjiYcqU7-PsBKu2HsfGr8/preview",
+      "https://drive.google.com/file/d/13hebsthNQHQWwuc9hmmabvpc50B_RFn8/preview",
+      "https://drive.google.com/file/d/17_LU7AN-yVq6NzgVtPfXIVo5-z4Yt8LU/preview",
+      "https://drive.google.com/file/d/1Bm6kipzfhTHEsspR7wmEJT424EASy2yQ/preview",
+      "https://drive.google.com/file/d/1JN0RbubFN47RS3SkZLAr3Pa32Xb7GBPJ/preview",
+      "https://drive.google.com/file/d/1Kugqabw1lkMpP6nv4WFjOQsJL8YyGKGC/preview",
+      "https://drive.google.com/file/d/1OjsqmpTpBu50zMqceCEZBpsPU_YO5lpP/preview",
+      "https://drive.google.com/file/d/1QXRv3n7W2pGr-Ulw5liNjm8DujGLoFhK/preview",
+      "https://drive.google.com/file/d/1S4K_uHUlp56d3IT6ODP8OXO61ZwdrbRV/preview",
+      "https://drive.google.com/file/d/1TkAL00yNEvoyBsMl-vwexv5inMx8_RBC/preview",
+      "https://drive.google.com/file/d/1VUm-5TKtvpLM4IdxW0LyOnFK7kUGrTOe/preview",
+      "https://drive.google.com/file/d/1WuatEbisoAcPbm7-r8qIyl_qYyUnjiFa/preview",
+      "https://drive.google.com/file/d/1Y_38duUCH3jOy41EXjHu0PG5-XuzyVLu/preview",
+      "https://drive.google.com/file/d/1anhHv2j34Bn6urBebGMSIstw4vE_s_af/preview",
+      "https://drive.google.com/file/d/1blRb2jGUMkhzaHlGb3pMXt-MqGKCOH3c/preview",
+      "https://drive.google.com/file/d/1byfIVsJqb1KwTdkNNUWQVnNP3owyoFIr/preview",
+      "https://drive.google.com/file/d/1dU5c_pBrbtNLFeBdZlWuXZLyKm2odu-m/preview",
+      "https://drive.google.com/file/d/1fMvB-kS8lnS9pLI29ZdMJqUyytkEcJNU/preview",
+      "https://drive.google.com/file/d/1fTUvxj2DMdc7orxY9GRDl7nXoPobBNEA/preview",
+      "https://drive.google.com/file/d/1gpmtyIRZwjigtYuvA9DPhk7uCvCfUKjU/preview",
+      "https://drive.google.com/file/d/1neyWUENATp9POFvvRzURccmt64WBBLEz/preview",
+      "https://drive.google.com/file/d/1v33gscqyDlWbJk4ZbzBcBSGSFzHY71YU/preview"
     ],
     shortDescription: "Farida Farook shares her experiences in the gem industry and as a Sri Lankan Muslim in British Columbia.",
     description: `Farida Yahya Farook Saleh was born in Sri Lanka, in a place once known as Ceylon. Her family has a long history in the jewelry business, with her grandfather and father serving as jewelers to the Maharajas of India, even having letters from Maharajas requesting meetings to take a look at their gemstones. Her aunt served for 40 years in the United Nations, initially with the Indian Mission and then later with the Sri Lankan Mission. Her great-grandfather, originally from Hadhramaut, Yemen, was a respected Imam and a businessman contributing significantly to Islamic culture and trade in the region. He also wrote the Quran by hand and produced sermons.`,
