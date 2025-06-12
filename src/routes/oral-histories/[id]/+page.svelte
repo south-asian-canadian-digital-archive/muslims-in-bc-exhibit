@@ -177,7 +177,7 @@
 <main class="container px-4 py-8 relative">
   <button
     onclick={() => goto(`${base}/oral-histories`)}
-    class="flex items-center mb-10 text-primary hover:text-primary-dark transition-colors"
+    class="flex items-center mb-10 text-primary hover:text-primary-dark transition-colors cursor-pointer"
   >
     <ArrowLeft class="mr-1" />
     Back to all interviews
