@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sambc.southasiancanadianheritage.ca/sitemap.xml
+
+# Allow access to static assets
+Allow: /content/
+Allow: /resources/
+Allow: /timeline/
+Allow: /_app/
+
+# Disallow any temporary or build files
+Disallow: /.svelte-kit/
+Disallow: /node_modules/
