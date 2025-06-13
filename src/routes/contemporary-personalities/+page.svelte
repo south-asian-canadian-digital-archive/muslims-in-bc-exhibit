@@ -3,6 +3,7 @@
   import { personalities } from "$lib/content/personalities.content";
   import { PUBLIC_DOMAIN } from "$env/static/public";
   import { User } from "@lucide/svelte";
+  import { goto } from "$app/navigation";
 </script>
 
 <svelte:head>
@@ -131,8 +132,12 @@
         <a
           href="{base}/contemporary-personalities/{personality.id}"
           class="group block bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 no-underline!"
+          onclick={e => {
+            e.preventDefault();
+            goto(`${base}/contemporary-personalities/${personality.id}`)
+          }}
         >
-          <div class="grid grid-cols-1 lg:grid-cols-5 gap-0">
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-0" id={personality.id}>
             <!-- Image Section -->
             <div class="lg:col-span-1 relative">
               <div class="aspect-square lg:aspect-3/4 h-full">

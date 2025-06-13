@@ -134,8 +134,8 @@
 
 <main class="container px-4 py-8 relative">
   <button
-    onclick={() => goto(`${base}/contemporary-personalities`)}
-    class="flex items-center mb-10 text-primary hover:text-primary-dark transition-colors"
+    onclick={() => goto(`${base}/contemporary-personalities#${personality.id}`)}
+    class="flex items-center mb-10 text-primary hover:text-primary-dark transition-colors cursor-pointer"
   >
     <ArrowLeft class="mr-1" />
     Back to all personalities
@@ -181,12 +181,8 @@
                   </Carousel.CarouselItem>
                 {/each}
               </Carousel.CarouselContent>
-              <Carousel.CarouselPrevious
-                class="carouselButtonClass left-2"
-              />
-              <Carousel.CarouselNext
-                class="carouselButtonClass right-2"
-              />
+              <Carousel.CarouselPrevious class="carouselButtonClass left-2" />
+              <Carousel.CarouselNext class="carouselButtonClass right-2" />
             </Carousel.Carousel>
           {:else}
             <!-- Single Image -->
@@ -213,14 +209,131 @@
           {personality.description}
         </p>
       </div>
+
+      <!-- References Section - Only show on mobile/tablet -->
+      {#if personality.links && personality.links.length > 0}
+        <div class="prose prose-lg max-w-none border-t pt-6 lg:hidden">
+          <h3 class="text-xl font-semibold mb-4">References & Credits</h3>
+
+          {#if personality.photoCredits && personality.photoCredits.length > 0}
+            <div class="mb-4">
+              <h4 class="text-lg font-medium mb-2">Image Credits</h4>
+              <ul class="list-disc pl-6 space-y-1">
+                {#each personality.photoCredits as credit, index}
+                  <li class="text-sm text-gray-600 dark:text-gray-400">
+                    {#if personality.photoUrls && personality.photoUrls.length > 1}
+                      <span class="font-medium">Photo {index + 1}:</span>
+                    {:else}
+                      <span class="font-medium">Profile photo:</span>
+                    {/if}
+                    {#if credit.link}
+                      <a
+                        href={credit.link}
+                        class="text-primary hover:underline ml-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {credit.text}
+                      </a>
+                    {:else}
+                      <span class="ml-1">{credit.text}</span>
+                    {/if}
+                  </li>
+                {/each}
+              </ul>
+            </div>
+          {/if}
+
+          <div>
+            <h4 class="text-lg font-medium mb-2">External Sources</h4>
+            <ul class="list-disc pl-6 space-y-1">
+              {#each personality.links as link}
+                <li>
+                  <a
+                    href={link}
+                    class="text-primary hover:underline text-sm break-all"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link}
+                  </a>
+                </li>
+              {/each}
+            </ul>
+          </div>
+        </div>
+      {:else if personality.photoCredits && personality.photoCredits.length > 0}
+        <div class="prose prose-lg max-w-none border-t pt-6 lg:hidden">
+          <h3 class="text-xl font-semibold mb-4">Credits</h3>
+
+          <div>
+            <h4 class="text-lg font-medium mb-2">Image Credits</h4>
+            <ul class="list-disc pl-6 space-y-1">
+              {#each personality.photoCredits as credit, index}
+                <li class="text-sm text-gray-600 dark:text-gray-400">
+                  {#if personality.photoUrls && personality.photoUrls.length > 1}
+                    <span class="font-medium">Photo {index + 1}:</span>
+                  {:else}
+                    <span class="font-medium">Profile photo:</span>
+                  {/if}
+                  {#if credit.link}
+                    <a
+                      href={credit.link}
+                      class="text-primary hover:underline ml-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {credit.text}
+                    </a>
+                  {:else}
+                    <span class="ml-1">{credit.text}</span>
+                  {/if}
+                </li>
+              {/each}
+            </ul>
+          </div>
+        </div>
+      {/if}
     </div>
 
     <!-- Sidebar (1/4 width) -->
     <div class="lg:col-span-1">
       <div class="lg:sticky lg:top-32 space-y-6">
-        <!-- Links -->
+        <!-- Photo Credits - Only show on desktop -->
+        {#if personality.photoCredits && personality.photoCredits.length > 0}
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hidden lg:block"
+          >
+            <h4 class="text-lg font-medium mb-4">Photo Credits</h4>
+            <div class="space-y-2">
+              {#each personality.photoCredits as credit, index}
+                <p class="text-sm text-gray-600 dark:text-gray-400 text-left">
+                  {#if personality.photoUrls && personality.photoUrls.length > 1}
+                    <span class="font-medium">Photo {index + 1}:</span>
+                  {/if}
+                  {#if credit.link}
+                    <a
+                      href={credit.link}
+                      class="text-primary hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {credit.text}
+                    </a>
+                  {:else}
+                    {credit.text}
+                  {/if}
+                </p>
+              {/each}
+            </div>
+          </div>
+        {/if}
+
+        <!-- Links - Only show on desktop -->
         {#if personality.links && personality.links.length > 0}
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hidden lg:block"
+          >
             <h4 class="text-lg font-medium mb-4">Links & Resources</h4>
             <div class="space-y-3">
               {#each personality.links as link}
@@ -257,4 +370,3 @@
     </div>
   </div>
 </main>
-
