@@ -13,6 +13,4 @@ jobs:
     - uses: actions/checkout@v4
     - name: pull
       run: |
-        cd /var/www/sacda.ca/html/exhibits && ls 
-        
-# && rm -rf sambc && git clone -b build git@github.com:south-asian-canadian-digital-archive/muslims-in-bc-exhibit.git sambc
+        cd /var/www/sacda.ca/html/exhibits && rm -rf sambc && git clone -b build git@github.com:south-asian-canadian-digital-archive/muslims-in-bc-exhibit.git sambc
