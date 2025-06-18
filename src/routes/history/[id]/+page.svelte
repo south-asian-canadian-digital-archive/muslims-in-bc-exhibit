@@ -8,11 +8,12 @@
   import HistoryNavigation from "$lib/components/HistoryNavigation.svelte";
   import Timeline from "$lib/pages/new/Timeline.svelte";
   import { PUBLIC_DOMAIN } from "$env/static/public";
+  import Breadcrumb from "$lib/components/Breadcrumb.svelte";
 
-  const pageTitle = page.params.id
+  const pageTitle = $derived(page.params.id
     .split("-")
     .map((x) => `${x[0].toUpperCase()}${x.slice(1)}`)
-    .join(" ");
+    .join(" "));
 
   const getPageDescription = (id: string) => {
     switch(id) {
@@ -99,6 +100,13 @@
     }
   </script>`}
 </svelte:head>
+
+<Breadcrumb 
+  items={[
+    { name: "History", url: `${base}/history` },
+    { name: pageTitle, current: true }
+  ]}
+/>
 
 {#if page.params.id === "early-20th-century"}
   <Early20thCentury />

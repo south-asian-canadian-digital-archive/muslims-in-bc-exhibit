@@ -12,6 +12,7 @@
   } from "@lucide/svelte";
   import * as Carousel from "$lib/components/ui/carousel";
   import { goto } from "$app/navigation";
+  import Breadcrumb from "$lib/components/Breadcrumb.svelte";
 
   let { data }: { data: PageData } = $props();
   const { interview } = data;
@@ -174,14 +175,21 @@
   </script>`}
 </svelte:head>
 
-<main class="container px-4 py-8 relative">
-  <button
+  <Breadcrumb 
+    items={[
+      { name: "Oral Histories", url: `${base}/oral-histories` },
+      { name: interview.name, current: true }
+    ]}
+  />
+
+<main class="container px-4 py-28 relative">
+  <!-- <button
     onclick={() => goto(`${base}/oral-histories`)}
     class="flex items-center mb-10 text-primary hover:text-primary-dark transition-colors cursor-pointer"
   >
     <ArrowLeft class="mr-1" />
     Back to all interviews
-  </button>
+  </button> -->
 
   <h1 class="text-4xl font-bold mb-2">{interview.name}</h1>
   <p class="text-gray-600 dark:text-gray-300 mb-8">

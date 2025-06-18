@@ -3,6 +3,7 @@
   import { interviews } from "$lib/content/interviews.content";
   import { PUBLIC_DOMAIN } from "$env/static/public";
   import { Play } from "@lucide/svelte";
+  import Breadcrumb from "$lib/components/Breadcrumb.svelte";
 </script>
 
 <svelte:head>
@@ -51,7 +52,12 @@
             "name": "${interview.name} - Community Oral History",
             "description": "${interview.shortDescription}",
             "url": "https://${PUBLIC_DOMAIN}/oral-histories/${interview.id}",
-            "thumbnailUrl": "${interview.thumbnailUrl}",
+            "thumbnailUrl": {
+              "@type": "ImageObject",
+              "url": "${interview.thumbnailUrl}",
+              "caption": "${interview.name}'s interview thumbnail",
+              "description": "${interview.name} sharing their story from the South Asian Muslim community in BC"
+            },
             "contentLocation": {
               "@type": "Place",
               "name": "${interview.location}"
@@ -82,6 +88,12 @@
 </svelte:head>
 
 <main class="container px-4 py-32">
+  <Breadcrumb 
+    items={[
+      { name: "Oral Histories", current: true }
+    ]}
+  />
+
   <section class="mb-16">
     <h1 class="page-title">Community Oral Histories</h1>
     <p class="text-lg mb-8">
@@ -105,7 +117,7 @@
           <div class="relative aspect-video">
             <img
               src={interview.thumbnailUrl}
-              alt={`${interview.name}'s interview thumbnail`}
+              alt={`${interview.name}'s interview thumbnail - ${interview.title} sharing their story from the South Asian Muslim community in BC`}
               class="w-full h-full object-cover"
             />
             <div

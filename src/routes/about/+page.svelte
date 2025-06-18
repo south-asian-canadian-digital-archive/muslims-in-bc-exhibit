@@ -14,6 +14,7 @@
   } from "$lib/content/about.content";
   import { base } from "$app/paths";
   import { goto } from "$app/navigation";
+  import Breadcrumb from "$lib/components/Breadcrumb.svelte";
 
   let floatingSquareTweens: gsap.core.Tween[] = [];
   let commitment_expanded: SvelteSet<number> = $state(new SvelteSet());
@@ -162,6 +163,12 @@
 {/snippet}
 
 <main class="lg:py-20 flex flex-col gap-16 max-w-full! m-0!">
+  <Breadcrumb 
+    items={[
+      { name: "About", current: true }
+    ]}
+  />
+
   <!-- heading -->
   <section class="bg-secondary-yellow flex flex-col lg:pt-24">
     <div
@@ -218,7 +225,7 @@
       <div class="min-w-[35vw] mt-16 h-auto bg-gray-300 object-cover">
         <img
           src="{base}/AboutCover.jpg"
-          alt=""
+          alt="About the South Asian Muslims in BC project - research team and community collaboration"
           class="w-full h-full object-cover rounded"
         />
       </div>
@@ -374,7 +381,7 @@
           <div
             class="aspect-square h-[30vh] lg:h-[20vw] bg-gray-100 relative flex rounded-lg overflow-clip object-cover"
           >
-            <img src={person.img} alt="" class="object-cover w-full" />
+            <img src={person.img} alt="{person.name} - {person.position} at South Asian Studies Institute" class="object-cover w-full" />
             <span
               class="bottom-0 left-0 p-2 bg-secondary-teal rounded-b-lg text-white font-martel absolute w-full text-center"
               >{person.name} <br />

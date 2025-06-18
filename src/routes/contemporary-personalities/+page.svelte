@@ -4,6 +4,7 @@
   import { PUBLIC_DOMAIN } from "$env/static/public";
   import { User } from "@lucide/svelte";
   import { goto } from "$app/navigation";
+  import Breadcrumb from "$lib/components/Breadcrumb.svelte";
 </script>
 
 <svelte:head>
@@ -108,6 +109,12 @@
 </svelte:head>
 
 <main class="container px-4 py-32">
+  <Breadcrumb 
+    items={[
+      { name: "Contemporary Personalities", current: true }
+    ]}
+  />
+
   <section class="mb-16">
     <h1 class="page-title">Contemporary Personalities</h1>
     <p class="text-lg mb-8">
@@ -143,7 +150,7 @@
               <div class="aspect-square lg:aspect-3/4 h-full">
                 <img
                   src={personality.thumbnailUrl}
-                  alt={`${personality.name}'s profile photo`}
+                  alt={`${personality.name}'s profile photo - ${personality.title} from South Asian Muslim community in British Columbia`}
                   class="w-full h-full object-cover"
                 />
                 <div

@@ -6,6 +6,7 @@
   import { ArrowLeft, ExternalLink } from "@lucide/svelte";
   import * as Carousel from "$lib/components/ui/carousel";
   import { ChevronLeft, ChevronRight } from "@lucide/svelte";
+  import Breadcrumb from "$lib/components/Breadcrumb.svelte";
 
   let { data }: { data: PageData } = $props();
   let { personality } = data;
@@ -98,18 +99,55 @@
       "name": "${personality.name}",
       "description": "${personality.description}",
       "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities/${personality.id}",
-      "image": "${personality.thumbnailUrl}",
+      "image": {
+        "@type": "ImageObject",
+        "url": "${personality.thumbnailUrl}",
+        "caption": "Profile photo of ${personality.name}",
+        "description": "${personality.name}, ${personality.title}"
+      },
       "jobTitle": "${personality.title}",
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "${personality.title}",
+        "occupationLocation": {
+          "@type": "Place",
+          "name": "British Columbia, Canada"
+        }
+      },
+      "knowsAbout": [
+        {
+          "@type": "Thing",
+          "name": "South Asian Muslim Community",
+          "description": "Community leadership and cultural contributions"
+        },
+        {
+          "@type": "Thing", 
+          "name": "British Columbia",
+          "description": "Living and working in British Columbia"
+        }
+      ],
+      "memberOf": {
+        "@type": "Organization",
+        "name": "South Asian Muslim Community of British Columbia"
+      },
       "mainEntityOfPage": {
         "@type": "WebPage",
         "name": "${personality.name} - Contemporary Personality",
-        "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities/${personality.id}"
+        "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities/${personality.id}",
+        "description": "${personality.shortDescription || personality.description.substring(0, 160)}",
+        "inLanguage": "en-CA",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "South Asian Muslims in BC - Digital Exhibit",
+          "url": "https://${PUBLIC_DOMAIN}"
+        }
       },
       "isPartOf": [
         {
           "@type": "CollectionPage",
           "name": "Contemporary Personalities",
-          "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities"
+          "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities",
+          "@id": "https://${PUBLIC_DOMAIN}/contemporary-personalities"
         },
         {
           "@type": "DigitalDocument",
@@ -126,20 +164,38 @@
       "author": {
         "@type": "Organization",
         "name": "South Asian Studies Institute",
+        "url": "https://www.ufv.ca/sasi/",
+        "parentOrganization": {
+          "@type": "EducationalOrganization",
+          "name": "University of the Fraser Valley",
+          "url": "https://www.ufv.ca"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "South Asian Studies Institute",
         "url": "https://www.ufv.ca/sasi/"
       }
     }
   </script>`}
 </svelte:head>
 
-<main class="container px-4 py-8 relative">
-  <button
+  <Breadcrumb 
+    items={[
+      { name: "Contemporary Personalities", url: `${base}/contemporary-personalities` },
+      { name: personality.name, current: true }
+    ]}
+  />
+
+
+<main class="container px-4 py-28 relative">
+  <!-- <button
     onclick={() => goto(`${base}/contemporary-personalities#${personality.id}`)}
     class="flex items-center mb-10 text-primary hover:text-primary-dark transition-colors cursor-pointer"
   >
     <ArrowLeft class="mr-1" />
     Back to all personalities
-  </button>
+  </button> -->
 
   <h1 class="text-4xl font-bold mb-2">{personality.name}</h1>
   <p class="text-gray-600 dark:text-gray-300 mb-8 text-xl">
@@ -174,7 +230,7 @@
                     >
                       <img
                         src={photoUrl}
-                        alt={`${personality.name}'s photo ${i + 1}`}
+                        alt={`${personality.name}'s photo ${i + 1} - ${personality.title}`}
                         class="w-full h-full aspect-video object-contain rounded-lg"
                       />
                     </div>
@@ -188,7 +244,7 @@
             <!-- Single Image -->
             <img
               src={personality.thumbnailUrl}
-              alt={`${personality.name}'s profile photo`}
+              alt={`${personality.name}'s profile photo - ${personality.title} from South Asian Muslim community in BC`}
               class="w-full h-full object-contain"
             />
           {/if}

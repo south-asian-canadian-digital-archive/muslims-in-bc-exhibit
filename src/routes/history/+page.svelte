@@ -5,6 +5,7 @@
   import Image from "$lib/components/Image.svelte";
   import HistoryNavigation from "$lib/components/HistoryNavigation.svelte";
   import { PUBLIC_DOMAIN } from "$env/static/public";
+  import Breadcrumb from "$lib/components/Breadcrumb.svelte";
 
   onMount(() => {
     let domeAnimationTimeline = gsap.timeline({
@@ -90,6 +91,12 @@
     }
   </script>`}
 </svelte:head>
+
+<Breadcrumb 
+  items={[
+    { name: "History", current: true }
+  ]}
+/>
 
 <HistoryNavigation currentId={null} />
 

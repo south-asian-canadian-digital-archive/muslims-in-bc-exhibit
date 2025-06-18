@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import { base } from "$app/paths";
   import { PUBLIC_DOMAIN } from "$env/static/public";
+  import Breadcrumb from "$lib/components/Breadcrumb.svelte";
 
   //   let { form }: { form: ActionData } = $props();
 
@@ -49,14 +50,46 @@
       "name": "Contact Us - South Asian Muslims in BC",
       "description": "Contact page for the South Asian Muslims in BC digital exhibit project. Share your story or get in touch with our research team.",
       "url": "https://${PUBLIC_DOMAIN}/contact",
-      "mainEntity": {
-        "@type": "ContactPoint",
-        "contactType": "research inquiry",
-        "email": "sasi@ufv.ca",
-        "telephone": "+1-604-854-4547",
-        "areaServed": "British Columbia",
-        "availableLanguage": "English"
-      },
+      "mainEntity": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "research inquiry",
+          "email": "sasi@ufv.ca",
+          "telephone": "+1-604-854-4547",
+          "areaServed": "British Columbia",
+          "availableLanguage": "English"
+        },
+        {
+          "@type": "FAQPage",
+          "name": "Frequently Asked Questions - South Asian Muslims in BC Project",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How can I share my story with the project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can share your story by contacting us through this form, emailing sasi@ufv.ca, or calling 604-854-4547. We welcome stories from South Asian Muslims across British Columbia."
+              }
+            },
+            {
+              "@type": "Question", 
+              "name": "Who can participate in the oral history project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We welcome participation from South Asian Muslims in British Columbia who would like to share their experiences, stories, and perspectives as part of our digital archive collection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the purpose of this digital exhibit?", 
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The South Asian Muslims in BC digital exhibit documents and preserves the rich history, contributions, and experiences of South Asian Muslim communities in British Columbia through oral histories, archival research, and community partnerships."
+              }
+            }
+          ]
+        }
+      ],
       "isPartOf": {
         "@type": "DigitalDocument",
         "name": "South Asian Muslims in BC - Digital Exhibit",
@@ -77,6 +110,12 @@
 </svelte:head>
 
 <main class="bg-secondary-yellow flex flex-col pt-20 gap-20 md:my-20 max-w-full!">
+  <Breadcrumb 
+    items={[
+      { name: "Share your story", current: true }
+    ]}
+  />
+
   <div
     class="md:px-32 px-6 md:flex-row flex-col flex justify-between gap-12 md:*:w-1/2"
   >

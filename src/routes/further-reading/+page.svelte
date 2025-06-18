@@ -5,6 +5,7 @@
 
   import { resourceLinks } from "$lib/content/resources.content";
   import { base } from "$app/paths";
+  import Breadcrumb from "$lib/components/Breadcrumb.svelte";
 </script>
 
 <svelte:head>
@@ -71,6 +72,12 @@
 </svelte:head>
 
 <main class="py-32 flex flex-col gap-10">
+  <Breadcrumb 
+    items={[
+      { name: "Further Reading", current: true }
+    ]}
+  />
+
   <p
     class="text-h2 font-bold text-primary-blue font-source-serif-4 leading-normal"
   >
