@@ -1,0 +1,18 @@
+name: deployTest
+on: workflow_dispatch
+  # push:
+  #   branches:
+  #   - build
+
+jobs:
+  PullJob:
+    name: Pull the build from github repo
+    runs-on: sac-app01-x-tst
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: pull
+      run: |
+        cd /var/www/sacda.ca/html/exhibits && ls 
+        
+# && rm -rf sambc && git clone -b build git@github.com:south-asian-canadian-digital-archive/muslims-in-bc-exhibit.git sambc
