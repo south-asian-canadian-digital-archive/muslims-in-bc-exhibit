@@ -12,6 +12,9 @@
   import Arrow from "$lib/components/Arrow.svelte";
   import { ArrowDown } from "@lucide/svelte";
   import { page } from "$app/stores";
+  import * as Carousel from "$lib/components/ui/carousel/index.js";
+  import { homePageCarouselImages } from "$lib/content/carousel.content";
+  import Image from "$lib/components/Image.svelte";
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
@@ -326,7 +329,45 @@
   </section>
 
   <section>
+    <div class="max-w-5xl lg:max-w-6xl mx-auto py-20">
+      <h2 class="page-title">Historical Photographs</h2>
+      <p class="mb-10 max-w-3xl ">
+        Explore historical photographs documenting the journey, traditions, and community life of South Asian Muslims in British Columbia. Click on any image to view it in full size.
+      </p>
 
+      <Carousel.Root
+        opts={{
+          align: "start",
+          loop: true,
+          dragFree: true,
+          containScroll: "trimSnaps",
+          slidesToScroll: 1,
+          skipSnaps: false,
+          inViewThreshold: 0.7,
+        }}
+        class="w-full"
+      >
+        <Carousel.Content class="-ml-2 md:-ml-4">
+          {#each homePageCarouselImages as image, i (i)}
+            <Carousel.Item
+              class="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+            >
+              <div class="h-full flex flex-col">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  class="w-full cursor-pointer p-0! *:aspect-square *:w-full *:object-cover **:mx-auto"
+                >
+                  {image.caption}
+                </Image>
+              </div>
+            </Carousel.Item>
+          {/each}
+        </Carousel.Content>
+        <Carousel.Previous class="left-2 hover:bg-white/90" />
+        <Carousel.Next class="right-2 hover:bg-white/90" />
+      </Carousel.Root>
+    </div>
   </section>
 
   <section
@@ -356,8 +397,9 @@
 
         <br /><br />
 
-        We thankfully acknowledge the financial support of our <a href="{base}/about#sponsors">funders</a> and the
-        support of our <a href="{base}/about#partners">partners</a>.
+        We thankfully acknowledge the financial support of our
+        <a href="{base}/about#sponsors">funders</a>
+        and the support of our <a href="{base}/about#partners">partners</a>.
       </p>
     </div>
 
@@ -372,7 +414,7 @@
     <div class="max-w-5xl lg:max-w-6xl mx-auto pb-20">
       <h2 class="page-title font-bold mb-10">Explore Our Content</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-8 ">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-8">
         <!-- History Section -->
         <div
           class="bg-white md:row-span-2 lg:col-span-3 rounded-xl shadow-lg p-6 border-t-4 border-primary-blue hover:shadow-xl transition-all"
@@ -408,14 +450,19 @@
             Community Life
           </h3>
           <p class="mb-4">
-            Explore the lived experiences of South Asian Muslims in BC through personal narratives and contemporary profiles:
+            Explore the lived experiences of South Asian Muslims in BC through
+            personal narratives and contemporary profiles:
           </p>
-          
-          <div class="grid grid-cols-1  gap-6">
+
+          <div class="grid grid-cols-1 gap-6">
             <!-- Oral Histories Subsection -->
             <div>
-              <h4 class="font-semibold text-secondary-teal mb-2">Oral Histories</h4>
-              <p class="text-sm mb-3">Personal narratives and interviews from community members</p>
+              <h4 class="font-semibold text-secondary-teal mb-2">
+                Oral Histories
+              </h4>
+              <p class="text-sm mb-3">
+                Personal narratives and interviews from community members
+              </p>
               <!-- <ul class="list-disc pl-5 mb-3 space-y-1 *:text-left text-sm">
                 {#each exploreInterviews.slice(0, 3) as interview}
                   <li>
@@ -435,8 +482,12 @@
 
             <!-- Contemporary Personalities Subsection -->
             <div>
-              <h4 class="font-semibold text-green-600 mb-2">Contemporary Personalities</h4>
-              <p class="text-sm mb-3">Influential leaders, entrepreneurs, and changemakers today</p>
+              <h4 class="font-semibold text-green-600 mb-2">
+                Contemporary Personalities
+              </h4>
+              <p class="text-sm mb-3">
+                Influential leaders, entrepreneurs, and changemakers today
+              </p>
               <!-- <ul class="list-disc pl-5 mb-3 space-y-1 *:text-left text-sm">
                 {#each personalities.slice(0, 3) as personality}
                   <li>
