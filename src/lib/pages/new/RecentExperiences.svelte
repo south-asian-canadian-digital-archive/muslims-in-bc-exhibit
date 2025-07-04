@@ -1,3 +1,7 @@
+<script lang="ts">
+  import Image from "$lib/components/Image.svelte";
+</script>
+
 <main class="py-32 mx-auto flex flex-col gap-10">
   <h1 class="px-4 lg:px-0 page-title">
     Recent experiences of South Asian Muslim in BC (2001 - present)
@@ -7,6 +11,19 @@
     <section>
       <h2>Canada and South Asian Canadian Muslims after 9/11</h2>
       <div class="">
+        <Image
+          src="/content/new/South Asians vulnerable Times Colonist.jpeg"
+          class="md:w-1/2 md:py-16"
+        >
+          The hate directed at South Asian Muslims was based on racist
+          assumptions and so it left all visible South Asians vulnerable.
+          <a
+            href="https://www.newspapers.com/article/times-colonist/175388684/"
+          >
+            Times Colonist, September 2001</a
+          >.
+        </Image>
+
         The attacks on the twin towers on the 11th of September 2011, and
         America’s response to them, forever changed the way that Muslims were
         perceived globally. Scholars like Edward Said have pointed out that
@@ -25,6 +42,10 @@
         Nonetheless, the antiterrorism laws, increased border controls and
         deeply problematic representations of Muslims as terrorists after 9/11
         has continued to impact all groups of Canadian Muslims.
+
+        <!-- <div class="w-3/4 mx-auto flex"> -->
+
+        <!-- </div> -->
       </div>
     </section>
 
@@ -63,16 +84,24 @@
 
         <br /><br />
 
+        <Image src="/content/new/2017.0022.228.07-341.2.JPG" class="md:w-1/2">
+          Surrey Online Heritage Search. (2017). Muslim parade. Minisisinc.com. <a
+            href="https://surrey.minisisinc.com/scripts/mwimain.dll/144/DESCRIPTION/WEB_UNION_DETAIL?sessionsearch&exp=SISN+53300"
+            >https://surrey.minisisinc.com/scripts/mwimain.dll/144/DESCRIPTION/WEB_UNION_DETAIL?sessionsearch&exp=SISN+53300</a
+          >
+        </Image>
+
         Women have also actively participated in Muslim associations, although
         it is important to note that they have sometimes had to fight for their
         right to this space. For instance, the Surrey mosque planned by the BCMA
         in 1998 did not have much provision for activities for women and
         children. The design was altered following women’s protests and
-        petitions demanding a change.<a href=""><sup>[20]</sup></a> It is also important to note that the
-        Muslim sects that have experienced historical discrimination, such as
-        the Ahmadi Muslims have been excluded from participation in some Muslim
-        associations and spaces and therefore Ahmadi Muslim women would have
-        less spaces available to them to congregate.
+        petitions demanding a change.<a href=""><sup>[20]</sup></a> It is also
+        important to note that the Muslim sects that have experienced historical
+        discrimination, such as the Ahmadi Muslims have been excluded from
+        participation in some Muslim associations and spaces and therefore
+        Ahmadi Muslim women would have less spaces available to them to
+        congregate.
 
         <br /><br />
 
@@ -85,6 +114,20 @@
         censured by the imam of the Richmond Mosque.
 
         <br /><br />
+
+        <Image
+          src="/content/new/public-hearing.avif"
+          float="left"
+          class="md:w-1/2"
+        >
+          CBC News. (2002). Members of B.C.'s Muslim community gathered at a
+          public hearing in Vancouver to share their experiences and research,
+          and talk about what needs to be done to address Islamophobia. In
+          cbc.ca. <a
+            href="https://www.cbc.ca/news/canada/british-columbia/islamophobia-in-b-c-1.6576808"
+            >https://www.cbc.ca/news/canada/british-columbia/islamophobia-in-b-c-1.6576808</a
+          >
+        </Image>
 
         Following this, the most precariously placed groups, may not have the
         same experiences. For instance, research based on interviews with Muslim

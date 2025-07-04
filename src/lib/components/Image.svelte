@@ -34,17 +34,19 @@
     $dialogOpen = true;
     $dialogImageSrc = `${base}${src}`;
   }}
-  class="p-6 {args?.class}"
+  class="md:p-6 pb-6 {args?.class}"
   class:pr-0={float === "right"}
-  class:float-right={float === "right"}
+  class:md:float-right={float === "right"}
   class:pl-0={float === "left"}
-  class:float-left={float === "left"}
+  class:md:float-left={float === "left"}
 >
   <figure>
-    <img src={`${base}${src}`} {alt} class="" />
-    <figcaption class="text-center mt-2 text-xs">
-      {@render children?.()}
-    </figcaption>
+    <img src={`${base}${src}`} {alt} class="object-cover h-full" />
+    {#if children}
+      <figcaption class="text-center mt-2 text-xs">
+        {@render children?.()}
+      </figcaption>
+    {/if}
   </figure>
 </button>
 <!-- </Tooltip.Trigger>

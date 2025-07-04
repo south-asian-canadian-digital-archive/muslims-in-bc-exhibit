@@ -325,6 +325,10 @@
     </div>
   </section>
 
+  <section>
+
+  </section>
+
   <section
     class="bg-secondary-yellow relative max-w-full! w-full"
     bind:this={aboutSection}

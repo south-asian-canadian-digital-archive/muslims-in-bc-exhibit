@@ -44,7 +44,7 @@
   </script>`}
 </svelte:head>
 
-<nav aria-label="Breadcrumb" class="absolute top-28 left-0 w-full z-50">
+<nav aria-label="Breadcrumb" class="absolute top-28 left-0 w-full z-50 mt-8 md:mt-0">
   <ol class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300 *:list-none w-full">
     {#if showHome}
       <li class="flex items-center">

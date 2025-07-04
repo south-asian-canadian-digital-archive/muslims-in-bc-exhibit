@@ -16,7 +16,7 @@
         <Image
           src="/content/new/newspaper_clipping2.png"
           alt="newspaper clipping"
-          class="w-1/2"
+          class="md:w-1/2"
           float="right"
         />
 
@@ -40,7 +40,7 @@
         <Image
           src="/content/new/newspaper_clipping.png"
           alt="newspaper clipping"
-          class="w-1/2"
+          class="md:w-1/2"
           float="left"
           ><a href="https://www.newspapers.com/image/490371705/"
             >https://www.newspapers.com/image/490371705/

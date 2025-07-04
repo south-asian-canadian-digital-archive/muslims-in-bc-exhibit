@@ -37,7 +37,7 @@
             <Image
               src={caseStudy.img}
               alt="Image depicting {caseStudy.name}"
-              class="w-[30vw]"
+              class="md:w-[30vw]"
               float="right"
             />
           {/if}
