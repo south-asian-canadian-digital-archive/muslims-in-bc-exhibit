@@ -2,9 +2,13 @@
   import { base } from "$app/paths";
   import type { HTMLAttributes } from "svelte/elements";
   import * as Tooltip from "$lib/components/ui/tooltip";
-  import { dialogImageSrc, dialogOpen } from "$lib/utils/stores";
+  import {
+    dialogImageSrc,
+    dialogOpen,
+    dialogImageCaption,
+  } from "$lib/utils/stores";
 
-  interface Props extends HTMLAttributes<HTMLSpanElement> {
+  interface Props extends HTMLAttributes<HTMLButtonElement> {
     src?: string;
     alt?: string;
     float?: "left" | "right" | "bottom";
@@ -18,22 +22,20 @@
     children,
     ...args
   }: Props = $props();
-</script>
 
-<!-- <Tooltip.Provider> -->
-<!-- <Tooltip.Root openDelay={300}>
-    <Tooltip.Trigger
-      onclick={() => {
-        $dialogOpen = true;
-        $dialogImageSrc = `${base}${src}`;
-      }}
-    > -->
+  let figcaptionElement: HTMLElement | null = $state(null);
 
-<button
-  onclick={() => {
+  function openLightbox() {
     $dialogOpen = true;
     $dialogImageSrc = `${base}${src}`;
-  }}
+
+    const captionHtml = figcaptionElement?.innerHTML?.trim() || alt || null;
+    $dialogImageCaption = captionHtml;
+  }
+</script>
+
+<button
+  onclick={openLightbox}
   class="md:p-6 pb-6 {args?.class}"
   class:pr-0={float === "right"}
   class:md:float-right={float === "right"}
@@ -43,16 +45,12 @@
   <figure>
     <img src={`${base}${src}`} {alt} class="object-cover h-full" />
     {#if children}
-      <figcaption class="text-center mt-2 text-xs">
+      <figcaption
+        bind:this={figcaptionElement}
+        class="text-center mt-2 text-xs"
+      >
         {@render children?.()}
       </figcaption>
     {/if}
   </figure>
 </button>
-<!-- </Tooltip.Trigger>
-
-    <Tooltip.Content>
-      <span>Click to expand</span>
-    </Tooltip.Content>
-  </Tooltip.Root> -->
-<!-- </Tooltip.Provider> -->
