@@ -15,15 +15,28 @@
     <section>
       <h2>Muslim Identity as National and Transnational</h2>
       <div>
-        <div class="md:w-3/4 mx-auto flex">
-          <Image src="/content/new/1739914074108.jpg" class="">
-            Centre for Comparative Muslim Studies, SFU. (2025). Mohammed Yakub,
-            Fijian Muslim living in BC. <a
-              href="https://www.sfu.ca/ccms/community/Muslims-of-BC/Mohammed-Yakub-and-Farisha-Shah.html"
-              >https://www.sfu.ca/ccms/community/Muslims-of-BC/Mohammed-Yakub-and-Farisha-Shah.html</a
-            >
-          </Image>
-        </div>
+        <Image src="/content/new/1739914074108.jpg" class="">
+          Centre for Comparative Muslim Studies, SFU. (2025). Mohammed Yakub,
+          Fijian Muslim living in BC. <a
+            href="https://www.sfu.ca/ccms/community/Muslims-of-BC/Mohammed-Yakub-and-Farisha-Shah.html"
+            >https://www.sfu.ca/ccms/community/Muslims-of-BC/Mohammed-Yakub-and-Farisha-Shah.html</a
+          >
+        </Image>
+
+        <Image
+          src="/content/new/PRG-1373-4-97.jpeg"
+          class="md:w-1/2"
+          float="right"
+        >
+          This ship was one of many that carried Indian indentured workers to
+          the British Caribbean after slavery was “officially” abolished and
+          until 1917 when indenture became illegal. Generations later, some of
+          them would form part of “South Asian” migrants in BC.
+          <br />
+          <a href="https://collections.slsa.sa.gov.au/resource/PRG+1373/4/97"
+            >State Library of South Australia, PRG 1373/4/97</a
+          ></Image
+        >
         Muslims of South Asian descent came to British Columbia from many different
         places, mainly because their pasts were connected to Empire and Empire was
         global. In other words, South Asian Muslims were part of a layered migration
@@ -34,29 +47,6 @@
         and Africa). Some scholars use the term “double diaspora” to refer to communities
         that have experienced multiple migration stages, leading to identities that
         merge influences from different regions.
-
-        <div
-          class="flex flex-col md:flex-row gap-4 justify-center *:md:w-1/2 pt-6 md:pt-0"
-        >
-          <Image src="/content/new/PRG-1373-4-97.jpeg">
-            This ship was one of many that carried Indian indentured workers to
-            the British Caribbean after slavery was “officially” abolished and
-            until 1917 when indenture became illegal. Generations later, some of
-            them would form part of “South Asian” migrants in BC.
-            <br />
-            <a href="https://collections.slsa.sa.gov.au/resource/PRG+1373/4/97"
-              >State Library of South Australia, PRG 1373/4/97</a
-            ></Image
-          >
-          <Image
-            src="/content/new/_129937586_indentured_labour_india-nc.png.webp"
-            >BBC. (n.d.). Many Indians were sent to British colonies as
-            indentured labourers. Retrieved July 4, 2025, from
-            <a href="https://bbc.com/news/world-asia-india-65693512"
-              >https://bbc.com/news/world-asia-india-65693512</a
-            ></Image
-          >
-        </div>
 
         <br />
         Many South Asian Muslim in British Columbia trace their roots to Punjab,
@@ -101,8 +91,8 @@
           Refugees from Uganda settled all across Canada after 1972, including
           in British Columbia. This image is of Asian refugees who landed in
           Montreal and were taken to the Canadian Forces Base.
-          <br /> <br /> © Government of Canada. Source: Library and Archives
-          Canada/Department of National Defence fonds/e011052344
+          <br /> <br /> © Government of Canada. Source: Library and Archives Canada/Department
+          of National Defence fonds/e011052344
         </Image>
 
         These “double diaspora” Muslims came to British Columbia carrying a

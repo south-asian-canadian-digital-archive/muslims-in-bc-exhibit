@@ -115,7 +115,7 @@
 
         <br /><br />
 
-        <Image
+        <!-- <Image
           src="/content/new/public-hearing.avif"
           float="left"
           class="md:w-1/2"
@@ -127,7 +127,7 @@
             href="https://www.cbc.ca/news/canada/british-columbia/islamophobia-in-b-c-1.6576808"
             >https://www.cbc.ca/news/canada/british-columbia/islamophobia-in-b-c-1.6576808</a
           >
-        </Image>
+        </Image> -->
 
         Following this, the most precariously placed groups, may not have the
         same experiences. For instance, research based on interviews with Muslim
