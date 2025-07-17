@@ -23,30 +23,44 @@
           >
         </Image>
 
-        <Image
-          src="/content/new/PRG-1373-4-97.jpeg"
-          class="md:w-1/2"
-          float="right"
-        >
-          This ship was one of many that carried Indian indentured workers to
-          the British Caribbean after slavery was “officially” abolished and
-          until 1917 when indenture became illegal. Generations later, some of
-          them would form part of “South Asian” migrants in BC.
-          <br />
-          <a href="https://collections.slsa.sa.gov.au/resource/PRG+1373/4/97"
-            >State Library of South Australia, PRG 1373/4/97</a
-          ></Image
-        >
-        Muslims of South Asian descent came to British Columbia from many different
-        places, mainly because their pasts were connected to Empire and Empire was
-        global. In other words, South Asian Muslims were part of a layered migration
-        history which means that their identity is both national (connected to countries
-        like India, Pakistan, Bangladesh, Sri Lanka, Nepal and Bhutan) as well as
-        Transnational (connected to multiple waves of migration that connect them
-        to South Asia, but also connect their ancestral story to places in the Carribbean
-        and Africa). Some scholars use the term “double diaspora” to refer to communities
-        that have experienced multiple migration stages, leading to identities that
+        Muslims of South Asian descent came to British Columbia from many
+        different places, mainly because their pasts were connected to Empire
+        and Empire was global. In other words, South Asian Muslims were part of
+        a layered migration history which means that their identity is both
+        national (connected to countries like India, Pakistan, Bangladesh, Sri
+        Lanka, Nepal and Bhutan) as well as Transnational (connected to multiple
+        waves of migration that connect them to South Asia, but also connect
+        their ancestral story to places in the Carribbean and Africa). Some
+        scholars use the term “double diaspora” to refer to communities that
+        have experienced multiple migration stages, leading to identities that
         merge influences from different regions.
+
+        <div class="flex w-full items-start justify-evenly md:*:w-1/2">
+          <Image src="/content/new/PRG-1373-4-97.jpeg">
+            This ship was one of many that carried Indian indentured workers to
+            the British Caribbean after slavery was “officially” abolished and
+            until 1917 when indenture became illegal. Generations later, some of
+            them would form part of “South Asian” migrants in BC.
+            <br />
+            <a href="https://collections.slsa.sa.gov.au/resource/PRG+1373/4/97"
+              >State Library of South Australia, PRG 1373/4/97</a
+            ></Image
+          >
+
+          <Image src="/content/new/Newly_arrived_coolies_in_Trinidad.jpg">
+            Described by the British and Foreign Anti-slavery society as
+            "Slavery under a different name" the indentured system resulted in
+            the migration of 2 million workers from Asia to European colonies
+            mainly in the Caribbean, but also to places like Fiji, Uganda, Kenya
+            and Malaysia, between the 1830s and 1917. The majority of these
+            Asian migrants were from India
+            <br />
+            By Unknown author - Scan of the original photograph, Public Domain,
+            <a href="https://commons.wikimedia.org/w/index.php?curid=58459603"
+              >https://commons.wikimedia.org/w/index.php?curid=58459603</a
+            >
+          </Image>
+        </div>
 
         <br />
         Many South Asian Muslim in British Columbia trace their roots to Punjab,
