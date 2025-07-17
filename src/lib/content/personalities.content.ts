@@ -525,8 +525,25 @@ export const personalities: Personality[] = [
     "title": "Indo-Canadian Journalist, Columnist, Author",
     "description": "Haroon Siddiqui, CM OOnt (born June 1, 1942, India) is a distinguished Indo-Canadian newspaper journalist, columnist, and editorial page editor emeritus of the Toronto Star. He immigrated to Canada in 1967 and has reported from over 50 countries, shaping media coverage of Canada for fifty years under ten prime ministers. During his three-decade tenure at the Toronto Star, he served as a foreign affairs analyst, columnist, national editor, and editorial page editor, retiring from journalism in 2015. Siddiqui has held leadership roles in various organizations, including the Canadian Newspaper Association and the Canadian Civil Liberties Association. He is a member of the Order of Ontario (2000, 2001) for his contributions to a broader definition of Canadian identity. He received an honorary Doctor of Letters from York University (2001) and the World Press Freedom Award (2002). In 2023, he was honored with the Lifetime Achievement Award from the Canadian Journalism Foundation for his commitment to diversity, journalistic integrity, and social justice. He is the author of the autobiography My Name Is Not Harry: A Memoir.",
     "shortDescription": "Haroon Siddiqui is an acclaimed Indo-Canadian journalist, columnist, and author, known for his extensive international reporting, his long tenure at the Toronto Star, and his advocacy for diversity and social justice in Canadian media.",
-    "thumbnailUrl": "",
-    "photoUrls": [],
+    "thumbnailUrl": `${base}/content/personalities/haroon-siddiqui/thumbnail.jpg`,
+    "photoUrls": [
+      `${base}/content/personalities/haroon-siddiqui/thumbnail.jpg`,
+      `${base}/content/personalities/haroon-siddiqui/mynameisnotharry.jpg`,
+      `${base}/content/personalities/haroon-siddiqui/1.jpg`
+    ],
+    photoCredits: [
+      {
+        text: "Haroon Siddiqui in the field, interviewing, in India Credit: Haroon Siddiqui ",
+      },
+      {
+        text: "Manitoba Islamic Association. (2024). RSVP – Book Launch: My Name is Not Harry by Haroon Siddiqui – Winnipeg Grand Mosque (2445 Waverley St.). Miaonline.org. https://events.miaonline.org/events/mia/1226110",
+        link: "https://events.miaonline.org/events/mia/1226110"
+      },
+      {
+        text: "Famed journalist Haroon Siddiqui returns to Brandon to share memoirs. (2024, May 17). Brandon University News. https://news.brandonu.ca/2024/05/17/famed-journalist-haroon-siddiqui-returns-to-brandon-to-share-memoirs/",
+        link: "https://news.brandonu.ca/2024/05/17/famed-journalist-haroon-siddiqui-returns-to-brandon-to-share-memoirs/"
+      }
+    ],
     "links": [
       "https://en.wikipedia.org/wiki/Haroon_Siddiqui",
       "https://agakhanmuseum.org/explore-at-home/listen/this-being-human-haroon-siddiqui/"

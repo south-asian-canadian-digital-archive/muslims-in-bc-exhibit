@@ -276,7 +276,7 @@
               <h4 class="text-lg font-medium mb-2">Image Credits</h4>
               <ul class="list-disc pl-6 space-y-1">
                 {#each personality.photoCredits as credit, index}
-                  <li class="text-sm text-gray-600 dark:text-gray-400">
+                  <li class="text-sm text-gray-600 dark:text-gray-400 break-all!">
                     {#if personality.photoUrls && personality.photoUrls.length > 1}
                       <span class="font-medium">Photo {index + 1}:</span>
                     {:else}
@@ -285,7 +285,7 @@
                     {#if credit.link}
                       <a
                         href={credit.link}
-                        class="text-primary hover:underline ml-1"
+                        class="text-primary hover:underline ml-1  break-all! whitespace-normal!"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -326,7 +326,7 @@
             <h4 class="text-lg font-medium mb-2">Image Credits</h4>
             <ul class="list-disc pl-6 space-y-1">
               {#each personality.photoCredits as credit, index}
-                <li class="text-sm text-gray-600 dark:text-gray-400">
+                <li class="text-sm text-gray-600 dark:text-gray-400 *:break-all">
                   {#if personality.photoUrls && personality.photoUrls.length > 1}
                     <span class="font-medium">Photo {index + 1}:</span>
                   {:else}
@@ -335,7 +335,7 @@
                   {#if credit.link}
                     <a
                       href={credit.link}
-                      class="text-primary hover:underline ml-1"
+                      class="text-primary hover:underline ml-1 break-all"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
