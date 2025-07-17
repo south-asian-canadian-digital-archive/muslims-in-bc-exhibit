@@ -15,6 +15,7 @@
   import * as Carousel from "$lib/components/ui/carousel/index.js";
   import { homePageCarouselImages } from "$lib/content/carousel.content";
   import Image from "$lib/components/Image.svelte";
+  import Autoplay from "embla-carousel-autoplay";
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
@@ -331,8 +332,10 @@
   <section>
     <div class="max-w-5xl lg:max-w-6xl mx-auto py-20">
       <h2 class="page-title">Historical Photographs</h2>
-      <p class="mb-10 max-w-3xl ">
-        Explore historical photographs documenting the journey, traditions, and community life of South Asian Muslims in British Columbia. Click on any image to view it in full size.
+      <p class="mb-10 max-w-3xl">
+        Explore historical photographs documenting the journies, traditions, and
+        community life of South Asian Muslims in British Columbia. Click on any
+        image to view it in full size.
       </p>
 
       <Carousel.Root
@@ -345,6 +348,11 @@
           skipSnaps: false,
           inViewThreshold: 0.7,
         }}
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
         class="w-full"
       >
         <Carousel.Content class="-ml-2 md:-ml-4">

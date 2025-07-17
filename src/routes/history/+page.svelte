@@ -218,8 +218,8 @@
         years, with 136 Muslims recorded in 1931 and 1335 recorded in 1971.
 
         <div class="flex flex-col md:flex-row gap-4 justify-center pt-6 md:pt-0">
-          <Image src="/content/new/6226.jpg"></Image>
-          <Image src="/content/new/6232.jpg"></Image>
+          <Image src="/content/new/6226.jpg" alt="Historical image related to Komagata Maru"></Image>
+          <Image src="/content/new/6232.jpg" alt="Historical image related to Komagata Maru"></Image>
         </div>
 
         <p class="text-xs text-center italic w-[80%] mx-auto">

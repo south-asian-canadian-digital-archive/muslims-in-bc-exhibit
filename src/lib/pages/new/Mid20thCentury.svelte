@@ -15,7 +15,7 @@
     <section>
       <h2>Muslim Identity as National and Transnational</h2>
       <div>
-        <Image src="/content/new/1739914074108.jpg" class="">
+        <Image src="/content/new/1739914074108.jpg" class="" alt="Mohammed Yakub, Fijian Muslim living in BC">
           Centre for Comparative Muslim Studies, SFU. (2025). Mohammed Yakub,
           Fijian Muslim living in BC. <a
             href="https://www.sfu.ca/ccms/community/Muslims-of-BC/Mohammed-Yakub-and-Farisha-Shah.html"
@@ -47,7 +47,7 @@
             ></Image
           >
 
-          <Image src="/content/new/Newly_arrived_coolies_in_Trinidad.jpg">
+          <Image src="/content/new/Newly_arrived_coolies_in_Trinidad.jpg" alt="Newly arrived coolies in Trinidad">
             Described by the British and Foreign Anti-slavery society as
             "Slavery under a different name" the indentured system resulted in
             the migration of 2 million workers from Asia to European colonies
@@ -79,6 +79,7 @@
         <Image
           class="md:w-1/2 pt-6"
           src="/content/new/ExpSetSittingOnFireRailwayWorkers768x511.jpg"
+          alt="Ugandan-Asian railway workers during the construction of the Uganda Railway"
         >
           Ugandan-Asian railway workers during the construction of the Uganda
           Railway circa 1896–99. <br /> <br /> THE NATIONAL ARCHIVES (UK), PART OF
@@ -101,7 +102,7 @@
         Canda took place in the later 20th century.
         <br /><br />
 
-        <Image src="/content/new/2.20.jpg" float="left" class="md:w-1/2 pt-6">
+        <Image src="/content/new/2.20.jpg" float="left" class="md:w-1/2 pt-6" alt="Asian refugees from Uganda at Canadian Forces Base">
           Refugees from Uganda settled all across Canada after 1972, including
           in British Columbia. This image is of Asian refugees who landed in
           Montreal and were taken to the Canadian Forces Base.

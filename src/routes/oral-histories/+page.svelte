@@ -103,6 +103,11 @@
       experience in BC . Through these narratives, we gain insight into how
       religious identity , cultural heritage , and immigration experiences have
       contributed to the vibrant fabric of our province.
+
+      <span>
+        if you are also interested in sharing your history please contact us at <a href="mailto:sasi@ufv.ca">sasi@ufv.ca</a> 
+      </span>
+
     </p>
   </section>
 

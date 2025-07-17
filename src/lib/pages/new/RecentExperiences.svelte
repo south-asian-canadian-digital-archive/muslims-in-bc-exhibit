@@ -14,6 +14,7 @@
         <Image
           src="/content/new/South Asians vulnerable Times Colonist.jpeg"
           class="md:w-1/2 md:py-16"
+          alt="Times Colonist newspaper clipping about South Asians being vulnerable"
         >
           The hate directed at South Asian Muslims was based on racist
           assumptions and so it left all visible South Asians vulnerable.
@@ -84,7 +85,7 @@
 
         <br /><br />
 
-        <Image src="/content/new/2017.0022.228.07-341.2.JPG" class="md:w-1/2">
+        <Image src="/content/new/2017.0022.228.07-341.2.JPG" class="md:w-1/2" alt="Muslim parade in Surrey">
           Surrey Online Heritage Search. (2017). Muslim parade. Minisisinc.com. <a
             href="https://surrey.minisisinc.com/scripts/mwimain.dll/144/DESCRIPTION/WEB_UNION_DETAIL?sessionsearch&exp=SISN+53300"
             >https://surrey.minisisinc.com/scripts/mwimain.dll/144/DESCRIPTION/WEB_UNION_DETAIL?sessionsearch&exp=SISN+53300</a

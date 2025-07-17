@@ -14,6 +14,9 @@ importers:
       '@sveltejs/adapter-vercel':
         specifier: ^5.5.3
         version: 5.5.3(@sveltejs/kit@2.16.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.33.14)(vite@5.4.14(lightningcss@1.30.1)))(svelte@5.33.14)(vite@5.4.14(lightningcss@1.30.1)))(rollup@4.32.0)
+      embla-carousel-autoplay:
+        specifier: ^8.6.0
+        version: 8.6.0(embla-carousel@8.6.0)
       formsnap:
         specifier: ^2.0.1
         version: 2.0.1(svelte@5.33.14)(sveltekit-superforms@2.26.1(@sveltejs/kit@2.16.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.33.14)(vite@5.4.14(lightningcss@1.30.1)))(svelte@5.33.14)(vite@5.4.14(lightningcss@1.30.1)))(@types/json-schema@7.0.15)(svelte@5.33.14)(typescript@5.7.3))
@@ -1271,6 +1274,11 @@ packages:
 
   effect@3.16.3:
     resolution: {integrity: sha512-SWndb1UavNWvet1+hnkU4qp3EHtnmDKhUeP14eB+7vf/2nCFlM77/oIjdDeZctveibNjE65P9H/sBBmF0NTy/w==}
+
+  embla-carousel-autoplay@8.6.0:
+    resolution: {integrity: sha512-OBu5G3nwaSXkZCo1A6LTaFMZ8EpkYbwIaH+bPqdBnDGQ2fh4+NbzjXjs2SktoPNKCtflfVMc75njaDHOYXcrsA==}
+    peerDependencies:
+      embla-carousel: 8.6.0
 
   embla-carousel-reactive-utils@8.6.0:
     resolution: {integrity: sha512-fMVUDUEx0/uIEDM0Mz3dHznDhfX+znCCDCeIophYb1QGVM7YThSWX+wz11zlYwWFOr74b4QLGg0hrGPJeG2s4A==}
@@ -2891,6 +2899,10 @@ snapshots:
       '@standard-schema/spec': 1.0.0
       fast-check: 3.23.2
     optional: true
+
+  embla-carousel-autoplay@8.6.0(embla-carousel@8.6.0):
+    dependencies:
+      embla-carousel: 8.6.0
 
   embla-carousel-reactive-utils@8.6.0(embla-carousel@8.6.0):
     dependencies:
