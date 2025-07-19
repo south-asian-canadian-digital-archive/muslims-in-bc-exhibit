@@ -110,8 +110,10 @@
       {#if personData?.img !== ""}
         <img
           src={personData?.img || ""}
-          alt=""
+          alt="{personData?.name || 'Person'} photo"
           class="aspect-square object-cover object-right rounded-full h-full"
+          loading="lazy"
+          decoding="async"
         />
       {:else}
         <div

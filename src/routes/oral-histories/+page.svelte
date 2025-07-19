@@ -4,6 +4,12 @@
   import { PUBLIC_DOMAIN } from "$env/static/public";
   import { Play } from "@lucide/svelte";
   import Breadcrumb from "$lib/components/Breadcrumb.svelte";
+  import { generateBreadcrumbSchema } from "$lib/utils/breadcrumb-schema";
+
+  const breadcrumbs = [
+    { name: "Home", url: `https://${PUBLIC_DOMAIN}/` },
+    { name: "Community Oral Histories", url: `https://${PUBLIC_DOMAIN}/oral-histories` }
+  ];
 </script>
 
 <svelte:head>
@@ -106,6 +112,11 @@
         "url": "https://www.ufv.ca/sasi/"
       }
     }
+  </script>`}
+
+  <!-- Breadcrumb Schema -->
+  {@html `<script type="application/ld+json">
+    ${generateBreadcrumbSchema(breadcrumbs)}
   </script>`}
 </svelte:head>
 

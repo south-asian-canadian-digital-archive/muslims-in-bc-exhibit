@@ -16,6 +16,11 @@
   import { homePageCarouselImages } from "$lib/content/carousel.content";
   import Image from "$lib/components/Image.svelte";
   import Autoplay from "embla-carousel-autoplay";
+  import { generateBreadcrumbSchema } from "$lib/utils/breadcrumb-schema";
+
+  const breadcrumbs = [
+    { name: "Home", url: `https://${PUBLIC_DOMAIN}/` }
+  ];
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
@@ -27,6 +32,15 @@
   let aboutSection: HTMLElement;
 
   onMount(() => {
+    // Dynamically preload pattern image for large screens where it's visible
+    if (window.innerWidth >= 1024) { // lg breakpoint
+      const patternLink = document.createElement('link');
+      patternLink.rel = 'preload';
+      patternLink.as = 'image';
+      patternLink.href = '/pattern.svg';
+      document.head.appendChild(patternLink);
+    }
+
     let domeAnimationTimeline = gsap.timeline({
       repeat: -1,
       onRepeat: () => {
@@ -43,21 +57,27 @@
     domeAnimationTimeline.play();
 
     historyPages.slice(1).forEach((e, i) => {
-      navTweens.push(
-        gsap.to(`button#${prefix}-${i}`, {
-          zIndex: 999,
-          color: "white",
-          scale: 50,
-          duration: 0.2,
-          ease: "power4.in",
-          paused: true,
-          onComplete: () => {
-            setTimeout(() => {
-              goto(e.path);
-            }, 400);
-          },
-        })
-      );
+      // Use setTimeout to ensure DOM elements are rendered
+      setTimeout(() => {
+        const buttonElement = document.querySelector(`button#${prefix}-${i}`);
+        if (buttonElement) {
+          navTweens.push(
+            gsap.to(`button#${prefix}-${i}`, {
+              zIndex: 999,
+              color: "white",
+              scale: 50,
+              duration: 0.2,
+              ease: "power4.in",
+              paused: true,
+              onComplete: () => {
+                setTimeout(() => {
+                  goto(e.path);
+                }, 400);
+              },
+            })
+          );
+        }
+      }, 100);
     });
 
     const observer = new IntersectionObserver(
@@ -77,6 +97,8 @@
 
     return () => {
       observer.disconnect();
+      navTweens.forEach(tween => tween.kill());
+      domeAnimationTimeline.kill();
     };
   });
 </script>
@@ -249,6 +271,14 @@
       }
     }
   </script>`}
+
+  <!-- Breadcrumb Schema -->
+  {@html `<script type="application/ld+json">
+    ${generateBreadcrumbSchema(breadcrumbs)}
+  </script>`}
+  
+  <!-- Smart resource prefetching for non-critical resources -->
+  <link rel="prefetch" href="/pattern.svg" />
 </svelte:head>
 
 <!-- Scroll indicator -->

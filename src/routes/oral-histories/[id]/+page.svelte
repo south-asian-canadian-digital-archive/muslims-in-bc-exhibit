@@ -13,9 +13,16 @@
   import * as Carousel from "$lib/components/ui/carousel";
   import { goto } from "$app/navigation";
   import Breadcrumb from "$lib/components/Breadcrumb.svelte";
+  import { generateBreadcrumbSchema } from "$lib/utils/breadcrumb-schema";
 
   let { data }: { data: PageData } = $props();
   const { interview } = data;
+
+  const breadcrumbs = [
+    { name: "Home", url: `https://${PUBLIC_DOMAIN}/` },
+    { name: "Community Oral Histories", url: `https://${PUBLIC_DOMAIN}/oral-histories` },
+    { name: interview.name, url: `https://${PUBLIC_DOMAIN}/oral-histories/${interview.id}` }
+  ];
 
   // For carousel
   let currentSlide = $state(0);
@@ -172,6 +179,11 @@
         "url": "https://${PUBLIC_DOMAIN}/oral-histories/${interview.id}"
       }
     }
+  </script>`}
+
+  <!-- Breadcrumb Schema -->
+  {@html `<script type="application/ld+json">
+    ${generateBreadcrumbSchema(breadcrumbs)}
   </script>`}
 </svelte:head>
 

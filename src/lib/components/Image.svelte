@@ -43,7 +43,13 @@
   class:md:float-left={float === "left"}
 >
   <figure>
-    <img src={`${base}${src}`} {alt} class="object-cover h-full" />
+    <img 
+      src={`${base}${src}`} 
+      {alt} 
+      class="object-cover h-full w-auto max-w-full" 
+      loading="lazy"
+      decoding="async"
+    />
     {#if children}
       <figcaption
         bind:this={figcaptionElement}

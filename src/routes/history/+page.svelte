@@ -6,6 +6,12 @@
   import HistoryNavigation from "$lib/components/HistoryNavigation.svelte";
   import { PUBLIC_DOMAIN } from "$env/static/public";
   import Breadcrumb from "$lib/components/Breadcrumb.svelte";
+  import { generateBreadcrumbSchema } from "$lib/utils/breadcrumb-schema";
+
+  const breadcrumbs = [
+    { name: "Home", url: `https://${PUBLIC_DOMAIN}/` },
+    { name: "Historical Journey", url: `https://${PUBLIC_DOMAIN}/history` }
+  ];
 
   onMount(() => {
     let domeAnimationTimeline = gsap.timeline({
@@ -110,6 +116,11 @@
         }
       ]
     }
+  </script>`}
+
+  <!-- Breadcrumb Schema -->
+  {@html `<script type="application/ld+json">
+    ${generateBreadcrumbSchema(breadcrumbs)}
   </script>`}
 </svelte:head>
 

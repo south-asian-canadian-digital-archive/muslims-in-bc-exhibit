@@ -15,6 +15,12 @@
   import { base } from "$app/paths";
   import { goto } from "$app/navigation";
   import Breadcrumb from "$lib/components/Breadcrumb.svelte";
+  import { generateBreadcrumbSchema } from "$lib/utils/breadcrumb-schema";
+
+  const breadcrumbs = [
+    { name: "Home", url: `https://${PUBLIC_DOMAIN}/` },
+    { name: "About the Project", url: `https://${PUBLIC_DOMAIN}/about` }
+  ];
 
   let floatingSquareTweens: gsap.core.Tween[] = [];
   let commitment_expanded: SvelteSet<number> = $state(new SvelteSet());
@@ -129,6 +135,11 @@
         "url": "https://${PUBLIC_DOMAIN}"
       }
     }
+  </script>`}
+
+  <!-- Breadcrumb Schema -->
+  {@html `<script type="application/ld+json">
+    ${generateBreadcrumbSchema(breadcrumbs)}
   </script>`}
 </svelte:head>
 

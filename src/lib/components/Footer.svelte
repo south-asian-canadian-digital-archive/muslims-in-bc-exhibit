@@ -183,7 +183,15 @@
   </div>
 
   <div class="flex flex-col justify-center items-center gap-2">
-    <img src="{base}/UFV_SASI_logo.png" class="lg:h-32 h-24" alt="" />
+    <img 
+      src="{base}/UFV_SASI_logo.png" 
+      class="lg:h-32 h-24" 
+      alt="South Asian Studies Institute at University of the Fraser Valley logo"
+      width="240"
+      height="96"
+      loading="lazy"
+      decoding="async"
+    />
     <p class="text-xs text-white text-center lg:w-[18vw] md:w-[18vw]">
       South Asian Studies Institute,<br /> University of the Fraser Valley
       <br />

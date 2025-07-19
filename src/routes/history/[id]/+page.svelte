@@ -10,6 +10,14 @@
   import { PUBLIC_DOMAIN } from "$env/static/public";
   import Breadcrumb from "$lib/components/Breadcrumb.svelte";
 
+  // Create reactive variable for current ID
+  let currentId = $state(page.params.id);
+  
+  // Update currentId when page params change
+  $effect(() => {
+    currentId = page.params.id;
+  });
+
   const pageTitle = $derived(page.params.id
     .split("-")
     .map((x) => `${x[0].toUpperCase()}${x.slice(1)}`)
@@ -120,4 +128,4 @@
   <CaseStudies />
 {/if}
 
-<HistoryNavigation bind:currentId={page.params.id} />
+<HistoryNavigation bind:currentId />
