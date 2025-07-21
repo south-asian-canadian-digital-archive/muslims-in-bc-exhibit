@@ -182,18 +182,40 @@
     </div>
   </div>
 
-  <div class="flex flex-col justify-center items-center gap-2">
-    <img 
-      src="{base}/UFV_SASI_logo.png" 
-      class="lg:h-32 h-24" 
-      alt="South Asian Studies Institute at University of the Fraser Valley logo"
-      width="240"
-      height="96"
-      loading="lazy"
-      decoding="async"
-    />
-    <p class="text-xs text-white text-center lg:w-[18vw] md:w-[18vw]">
-      South Asian Studies Institute,<br /> University of the Fraser Valley
+  <div class="flex flex-col justify-center items-end gap-2">
+    <div class="flex items-center justify-center gap-4 mb-4 *:h-24 *:aspect-auto *:w-auto">
+      <img
+        src="{base}/UFV_SASI_logo.png"
+        class=""
+        alt="South Asian Studies Institute at University of the Fraser Valley logo"
+        width="240"
+        height="96"
+        loading="lazy"
+        decoding="async"
+      />
+
+      <img
+        src="{base}/Sacda-logo.svg"
+        class="h-12!"
+        alt="South Asian Canadian Digital Archive logo"
+        width="240"
+        height="58"
+        loading="lazy"
+        decoding="async"
+      />
+
+      <img
+        src="{base}/ufv-logo.png"
+        class="h-20!"
+        alt="University of the Fraser Valley logo"
+        width="240"
+        height="96"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <p class="text-xs text-white text-right lg:w-[18vw] md:w-[18vw]">
+      <b>South Asian Studies Institute</b>,<br /> University of the Fraser Valley
       <br />
       <b>Visiting Address:</b> Building K, 33780 King Rd, Abbotsford, BC V2S7P2
       <br /><b>Mailing Address:</b> 33844 King Rd, Abbotsford, BC V2S7M8
@@ -203,17 +225,20 @@
   <div
     class="absolute bottom-6 text-white lg:text-sm md:text-sm text-xs text-center self-center lg:self-start md:self-start w-full lg:w-fit md:w-fit"
   >
-    <!-- mobile -->
-    <!-- <div class="lg:hidden md:hidden w-full flex items-center justify-center">
-      <p
-        class="border-t border-t-secondary-yellow font-bold text-transparent text-lg w-fit pb-1"
-      >
-        GET IN TOUCH
-      </p>
-    </div> -->    <a class="text-white" target="_blank" rel="noopener" href="https://sacda.ca/policy/takedown"
+    <a
+      class="text-white"
+      target="_blank"
+      rel="noopener"
+      href="https://sacda.ca/policy/takedown"
       >Statement of Use and Takedown Policy</a
     >
-    |    <a class="text-white" target="_blank" rel="noopener" href="https://sacda.ca/About/media">
+    |
+    <a
+      class="text-white"
+      target="_blank"
+      rel="noopener"
+      href="https://sacda.ca/About/media"
+    >
       Media
     </a>| © 2024 South Asian Canadian Digital Archive
   </div>
