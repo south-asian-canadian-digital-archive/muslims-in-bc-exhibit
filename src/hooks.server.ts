@@ -16,15 +16,15 @@ export const handle: Handle = async ({ event, resolve }) => {
     [
       "default-src 'self'",
       "script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://ka-f.fontawesome.com https://s3.amazonaws.com",
-      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://kit.fontawesome.com https://ka-f.fontawesome.com https://cdn.knightlab.com",
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://kit.fontawesome.com https://ka-f.fontawesome.com https://cdn.knightlab.com https://cdn-images.mailchimp.com",
       "font-src 'self' https://fonts.gstatic.com https://ka-f.fontawesome.com",
       "img-src 'self' data: https:",
       "media-src 'self' https:",
-      "connect-src 'self' https://ka-f.fontawesome.com",
-      "frame-src 'self' https://cdn.knightlab.com",
+      "connect-src 'self' https://ka-f.fontawesome.com https://us4.list-manage.com",
+      "frame-src 'self' https://cdn.knightlab.com https://us4.list-manage.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
-      "form-action 'self'"
+      "form-action 'self' https://us4.list-manage.com"
     ].join('; ')
   );
 
