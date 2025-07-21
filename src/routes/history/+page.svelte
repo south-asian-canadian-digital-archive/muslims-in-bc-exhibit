@@ -32,10 +32,10 @@
 </script>
 
 <svelte:head>
-  <title>Historical Journey - South Asian Muslims in BC</title>
+  <title>Historical Journey - South Asian Canadian Muslims in BC</title>
   <meta
     name="description"
-    content="Explore the historical journey of South Asian Muslims in British Columbia from early 20th century migration to recent experiences. Discover timelines, case studies, and significant events that shaped the community."
+    content="Explore the historical journey of South Asian Canadian Muslims in British Columbia from early 20th century migration to recent experiences. Discover timelines, case studies, and significant events that shaped the community."
   />
   <meta
     name="keywords"
@@ -50,25 +50,25 @@
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="Historical Journey - South Asian Muslims in BC"
+    content="Historical Journey - South Asian Canadian Muslims in BC"
   />
   <meta
     property="og:description"
-    content="Explore the historical journey of South Asian Muslims in British Columbia from early migration to recent experiences through timelines and case studies."
+    content="Explore the historical journey of South Asian Canadian Muslims in British Columbia from early migration to recent experiences through timelines and case studies."
   />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta property="og:url" content="https://{PUBLIC_DOMAIN}/history" />
-  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  <meta property="og:site_name" content="South Asian Canadian Muslims in BC" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="Historical Journey - South Asian Muslims in BC"
+    content="Historical Journey - South Asian Canadian Muslims in BC"
   />
   <meta
     name="twitter:description"
-    content="Explore the historical journey of South Asian Muslims in British Columbia from early migration to recent experiences through timelines and case studies."
+    content="Explore the historical journey of South Asian Canadian Muslims in British Columbia from early migration to recent experiences through timelines and case studies."
   />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
 
@@ -80,8 +80,8 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Historical Journey - South Asian Muslims in BC",
-      "description": "A comprehensive overview of the historical journey of South Asian Muslims in British Columbia, covering multiple time periods and significant events.",
+      "name": "Historical Journey - South Asian Canadian Muslims in BC",
+      "description": "A comprehensive overview of the historical journey of South Asian Canadian Muslims in British Columbia, covering multiple time periods and significant events.",
       "url": "https://${PUBLIC_DOMAIN}/history",
       "mainEntity": {
         "@type": "HistoricalEvent",
@@ -95,7 +95,7 @@
       },
       "isPartOf": {
         "@type": "DigitalDocument",
-        "name": "South Asian Muslims in BC - Digital Exhibit",
+        "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
         "url": "https://${PUBLIC_DOMAIN}"
       },
       "author": {
@@ -154,6 +154,8 @@
         of B.C. We use <a
           href="https://www.bac-lac.gc.ca/eng/discover/immigration/history-ethnic-cultural/Pages/south-asian.aspx"
           target="_blank"
+          rel="noopener"
+          target="_blank"
           rel="noopener">archival records</a
         >, academic works, and personal interviews to highlight these, often
         untold, stories of South Asian Muslim communities in B.C.
@@ -162,7 +164,7 @@
         are Sunni and Shia, which further branch out into various sub-sects. Sunni
         sub-sects include Wahabi, Salafi, Barelvi, and Deobandi. Shia subsects include
         Twelver Shi'ism and Ismailism. Sufism, not strictly a sect but a mystical
-        approach to Islam, is also important. Most South Asian Muslims in the area
+        approach to Islam, is also important. Most South Asian Canadian Muslims in the area
         are Sunni, but many follow Sufi practices.
         <br /><br />
         In this virtual exhibit, we seek to narrate the migration history of South
@@ -209,6 +211,8 @@
             ><a
               target="_blank"
               href="https://www.pewresearch.org/religion/2024/08/19/muslim-migrants-around-the-world/"
+              target="_blank"
+              rel="noopener"
               >https://www.pewresearch.org/religion/2024/08/19/muslim-migrants-around-the-world/</a
             ></Image
           >
@@ -256,7 +260,7 @@
         >
           <a
             class="text-xs md:px-8 break-all"
-            href="https://books.google.ca/books?id=3MIZKq1ranYC&lpg=PP1&pg=PA10#v=onepage&q&f=false"
+            href="https://books.google.ca/books?id=3MIZKq1ranYC&lpg=PP1&pg=PA10#v=onepage&q&f=false" target="_blank" rel="noopener"
             >https://books.google.ca/books?id=3MIZKq1ranYC&lpg=PP1&pg=PA10#v=onepage&q&f=false</a
           >
         </Image>

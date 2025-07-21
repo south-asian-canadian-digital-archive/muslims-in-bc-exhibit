@@ -26,7 +26,7 @@
         mentioned in one of the many primary documents our researchers went
         through. These included newspapers, meeting minutes or autobiographies.
         Some of these traces or names found in newspapers give us just a brief
-        glimpse into what like was like for South Asian Muslims in BC at the
+        glimpse into what like was like for South Asian Canadian Muslims in BC at the
         time. For instance, this ad from 1912 tells us that a man with a Muslim
         name had set up shop giving herbal remedies for multiple ailments and
         was advertising his herbs as being “Indian” and, therefore, “noted
@@ -43,6 +43,8 @@
           class="md:w-1/2"
           float="left"
           ><a href="https://www.newspapers.com/image/490371705/"
+            target="_blank"
+            rel="noopener"
             >https://www.newspapers.com/image/490371705/
           </a>
           <br /> Vancouver Sun, Sept 24th 1922, p. 35
@@ -56,7 +58,7 @@
         by no means restricted to one particular area of the centres of Empire
         or what today we refer to as Western democracies. In the 1920s, Muslims
         were portrayed in Canadian newspapers as “fanatics”, the stories told
-        about South Asian Muslims encouraged an exotic conception of the Muslim
+        about South Asian Canadian Muslims encouraged an exotic conception of the Muslim
         man who was portrayed as specifically being out to “make Christian
         America Mohammedan”.
 

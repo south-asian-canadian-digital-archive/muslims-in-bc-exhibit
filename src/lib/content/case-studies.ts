@@ -53,7 +53,7 @@ export let caseStudies: {
                   Maru, where Husain Rahim is discussed more intensively:
 
                   <a
-                    href="https://sacda.ca/exhibits/km/english/bio/bio99.php"
+                    href="https://sacda.ca/exhibits/km/english/bio/bio99.php" target="_blank" rel="noopener"
                     aria-label="SACDA exhibit on Komagata Maru featuring Husain Rahim"
                     >https://sacda.ca/exhibits/km/english/bio/bio99.php</a
                   >
@@ -61,28 +61,28 @@ export let caseStudies: {
                   <ol>
                     <li>
                       <a
-                        href="https://sacda.ca/Detail/objects/11178"
+                        href="https://sacda.ca/Detail/objects/11178" target="_blank" rel="noopener"
                         aria-label="SACDA object 11178 related to Husain Rahim"
                         >https://sacda.ca/Detail/objects/11178</a
                       >
                     </li>
                     <li>
                       <a
-                        href="https://sacda.ca/Detail/objects/11177"
+                        href="https://sacda.ca/Detail/objects/11177" target="_blank" rel="noopener"
                         aria-label="SACDA object 11177 related to Husain Rahim"
                         >https://sacda.ca/Detail/objects/11177</a
                       >
                     </li>
                     <li>
                       <a
-                        href="https://sacda.ca/Detail/objects/9518"
+                        href="https://sacda.ca/Detail/objects/9518" target="_blank" rel="noopener"
                         aria-label="SACDA object 9518 related to Husain Rahim"
                         >https://sacda.ca/Detail/objects/9518</a
                       >
                     </li>
                     <li>
                       <a
-                        href="https://sacda.ca/Detail/objects/9433"
+                        href="https://sacda.ca/Detail/objects/9433" target="_blank" rel="noopener"
                         aria-label="SACDA object 9433 related to Husain Rahim"
                         >https://sacda.ca/Detail/objects/9433</a
                       >
@@ -92,7 +92,7 @@ export let caseStudies: {
               </li>
               <li>
                 <a
-                  href="https://policyalternatives.ca/sites/default/files/uploads/publications/BC%20Office/2021/02/ccpa-bc_Challenging-Racist-BC.pdf"
+                  href="https://policyalternatives.ca/sites/default/files/uploads/publications/BC%20Office/2021/02/ccpa-bc_Challenging-Racist-BC.pdf" target="_blank" rel="noopener"
                   aria-label="Challenging Racist BC PDF document"
                   >https://policyalternatives.ca/sites/default/files/uploads/publications/BC%20Office/2021/02/ccpa-bc_Challenging-Racist-BC.pdf</a
                 >
@@ -100,7 +100,7 @@ export let caseStudies: {
               <li>
               Johnston, H. (2011). The Voyage of the Komagata Maru: The Sikh Challenge to Canada's Colour Bar. Canada: UBC Press. 
                 <a
-                  href="https://www.google.ca/books/edition/The_Voyage_of_the_Komagata_Maru/IbA4vO9bFUkC?hl=en&gbpv=1&pg=PA92&printsec=frontcover"
+                  href="https://www.google.ca/books/edition/The_Voyage_of_the_Komagata_Maru/IbA4vO9bFUkC?hl=en&gbpv=1&pg=PA92&printsec=frontcover" target="_blank" rel="noopener"
                   aria-label="The Voyage of the Komagata Maru book by Hugh Johnston"
                   >https://www.google.ca/books/edition/The_Voyage_of_the_Komagata_Maru/IbA4vO9bFUkC?hl=en&gbpv=1&pg=PA92&printsec=frontcover</a
                 > (Pages 9-12)
@@ -110,7 +110,7 @@ export let caseStudies: {
                 historical study in growth and integration.” Thesis, UBC, The
                 Faculty of Graduate Studies; Department of History. 1976.
                 <a
-                  href="https://open.library.ubc.ca/media/stream/pdf/831/1.0093725/1"
+                  href="https://open.library.ubc.ca/media/stream/pdf/831/1.0093725/1" target="_blank" rel="noopener"
                   aria-label="UBC Thesis PDF on East Indians in British Columbia"
                   >https://open.library.ubc.ca/media/stream/pdf/831/1.0093725/1</a
                 > (Page 64-83 about Husain Rahim)
@@ -119,7 +119,7 @@ export let caseStudies: {
                 Mayo, Joan. “Paldi Remembered: 50 Years in the Life of a
                 Vancouver Island Logging Town.”Duncan: Priority Printing, 1997
                 <a
-                  href="https://archive.org/details/paldiremembered50000mayo"
+                  href="https://archive.org/details/paldiremembered50000mayo" target="_blank" rel="noopener"
                   aria-label="Paldi Remembered PDF document"
                   >https://archive.org/details/paldiremembered50000mayo</a
                 > - Husain Rahim little info Chapter 2, page 4
@@ -141,7 +141,7 @@ export let caseStudies: {
         1979 before settling in Canada.
         <br><br>
         Read the full biography here: 
-        <ol><li><a href="https://lib-islandora4.lib.sfu.ca/icohc-5/imanat-ali-khan" aria-label="SFU Digital Library entry on Imanat Ali Khan">https://lib-islandora4.lib.sfu.ca/icohc-5/imanat-ali-khan</a></li></ol>
+        <ol><li><a href="https://lib-islandora4.lib.sfu.ca/icohc-5/imanat-ali-khan" target="_blank" rel="noopener" aria-label="SFU Digital Library entry on Imanat Ali Khan">https://lib-islandora4.lib.sfu.ca/icohc-5/imanat-ali-khan</a></li></ol>
         `,
     },
     {
@@ -169,16 +169,16 @@ export let caseStudies: {
         <ol>
         <li>Husain, Iqbal. “BARKATULLAH — A HALF-FORGOTTEN REVOLUTIONARY.”
             Proceedings of the Indian History Congress 66 (2005): 1061-72. <a href="http://www.jstor.org/stable/44145919" aria-label="JSTOR article on Barkatullah">http://www.jstor.org/stable/44145919.</a></li> <li>A portrait of Barkatullah Source:
-            <a href="https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914" aria-label="The Muslim Vibe article on Muslims challenging Canada's immigration ban in 1914">https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914</a>
+            <a href="https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914" target="_blank" rel="noopener" aria-label="The Muslim Vibe article on Muslims challenging Canada's immigration ban in 1914">https://themuslimvibe.com/muslim-current-affairs-news/americas/these-muslims-challenged-canadas-immigration-ban-in-1914</a>
             <br> <a href="${base}/resources/themuslimvibe.pdf" target="_blank">(archived pdf version here)</a>
         </li>
 
         <li>
-        Wikipedia contributors. (2025, March 27). Mohamed Barakatullah Bhopali. In Wikipedia, The Free Encyclopedia. Retrieved 18:34, June 5, 2025, from <a href="https://en.wikipedia.org/w/index.php?title=Mohamed_Barakatullah_Bhopali&oldid=1282670919">https://en.wikipedia.org/w/index.php?title=Mohamed_Barakatullah_Bhopali&oldid=1282670919</a> 
+        Wikipedia contributors. (2025, March 27). Mohamed Barakatullah Bhopali. In Wikipedia, The Free Encyclopedia. Retrieved 18:34, June 5, 2025, from <a href="https://en.wikipedia.org/w/index.php?title=Mohamed_Barakatullah_Bhopali&oldid=1282670919" target="_blank" rel="noopener">https://en.wikipedia.org/w/index.php?title=Mohamed_Barakatullah_Bhopali&oldid=1282670919</a> 
         </li>
         <li>
 
-        The November 1927 edition of "The United States of India" (Vol. 5, No. 5) featuring an obituary for Maulvi Barkatullah and a photograph of him. <a href="https://www.saada.org/item/20111212-544" aria-label="The United States of India November 1927 issue with Barkatullah's obituary">https://www.saada.org/item/20111212-544</a>
+        The November 1927 edition of "The United States of India" (Vol. 5, No. 5) featuring an obituary for Maulvi Barkatullah and a photograph of him. <a href="https://www.saada.org/item/20111212-544" target="_blank" rel="noopener" aria-label="The United States of India November 1927 issue with Barkatullah's obituary">https://www.saada.org/item/20111212-544</a>
 
         </il> 
         </ol>
@@ -198,7 +198,7 @@ export let caseStudies: {
         
         <br><br>
         Resources:
-        <ol><li><a href="https://sacda.ca/Detail/objects/606" aria-label="SACDA object 606 related to Muhammad Akbar">https://sacda.ca/Detail/objects/606</a></li></ol>
+        <ol><li><a href="https://sacda.ca/Detail/objects/606" target="_blank" rel="noopener" aria-label="SACDA object 606 related to Muhammad Akbar">https://sacda.ca/Detail/objects/606</a></li></ol>
       `,
     },
     {
@@ -230,6 +230,8 @@ export let caseStudies: {
               <li>
                 <a
                   href="https://www.proquest.com/historical-newspapers/april-23-1914-page-9-12/docview/2239629663/se-2?accountid=5705"
+                  target="_blank"
+                  rel="noopener"
                   aria-label="ProQuest newspaper clipping from April 23, 1914 about Roum Shah"
                   >https://www.proquest.com/historical-newspapers/april-23-1914-page-9-12/docview/2239629663/se-2?accountid=5705</a
                 >

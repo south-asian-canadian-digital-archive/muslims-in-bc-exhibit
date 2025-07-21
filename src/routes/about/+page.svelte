@@ -53,10 +53,10 @@
 </script>
 
 <svelte:head>
-  <title>About the Project - South Asian Muslims in BC</title>
+  <title>About the Project - South Asian Canadian Muslims in BC</title>
   <meta
     name="description"
-    content="Learn about the South Asian Muslims in British Columbia digital exhibit project, including the research team, community partners, methodology, and objectives behind documenting these important stories."
+    content="Learn about the South Asian Canadian Muslims in British Columbia digital exhibit project, including the research team, community partners, methodology, and objectives behind documenting these important stories."
   />
   <meta
     name="keywords"
@@ -71,25 +71,25 @@
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="About the Project - South Asian Muslims in BC"
+    content="About the Project - South Asian Canadian Muslims in BC"
   />
   <meta
     property="og:description"
-    content="Learn about the research team, community partners, and methodology behind the South Asian Muslims in BC digital exhibit project."
+    content="Learn about the research team, community partners, and methodology behind the South Asian Canadian Muslims in BC digital exhibit project."
   />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta property="og:url" content="https://{PUBLIC_DOMAIN}/about" />
-  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  <meta property="og:site_name" content="South Asian Canadian Muslims in BC" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="About the Project - South Asian Muslims in BC"
+    content="About the Project - South Asian Canadian Muslims in BC"
   />
   <meta
     name="twitter:description"
-    content="Learn about the research team, community partners, and methodology behind the South Asian Muslims in BC digital exhibit project."
+    content="Learn about the research team, community partners, and methodology behind the South Asian Canadian Muslims in BC digital exhibit project."
   />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
 
@@ -101,12 +101,12 @@
     {
       "@context": "https://schema.org",
       "@type": "AboutPage",
-      "name": "About the Project - South Asian Muslims in BC",
-      "description": "Information about the South Asian Muslims in British Columbia digital exhibit project, including research methodology, team members, and community partnerships.",
+      "name": "About the Project - South Asian Canadian Muslims in BC",
+      "description": "Information about the South Asian Canadian Muslims in British Columbia digital exhibit project, including research methodology, team members, and community partnerships.",
       "url": "https://${PUBLIC_DOMAIN}/about",
       "mainEntity": {
         "@type": "ResearchProject",
-        "name": "South Asian Muslims in British Columbia Digital Exhibit",
+        "name": "South Asian Canadian Muslims in British Columbia Digital Exhibit",
         "description": "A digital exhibit documenting the history, experiences, and contributions of South Asian Muslim communities in British Columbia",
         "url": "https://${PUBLIC_DOMAIN}",
         "author": {
@@ -131,7 +131,7 @@
       },
       "isPartOf": {
         "@type": "DigitalDocument",
-        "name": "South Asian Muslims in BC - Digital Exhibit",
+        "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
         "url": "https://${PUBLIC_DOMAIN}"
       }
     }
@@ -188,8 +188,8 @@
       <div class="flex flex-col lg:gap-8">
         <h1 class="page-title">About SASI</h1>
         <p class="text-p text-primary-black">
-          The <a href="https://ufv.ca/sasi">South Asian Studies Institute</a> at
-          the <a href="https://ufv.ca">University of the Fraser Valley</a>
+          The <a href="https://ufv.ca/sasi" target="_blank" rel="noopener">South Asian Studies Institute</a> at
+          the <a href="https://ufv.ca" target="_blank" rel="noopener">University of the Fraser Valley</a>
           brings together South Asian scholars and students from diverse backgrounds
           and disciplines to create a nexus point for programs and activities that
           support our vision.
@@ -197,7 +197,7 @@
           research, community and public engagement on issues related to South
           Asia and the Canadian South Asian Diaspora. The Institute initiates,
           directs and implements the development, maintenance and enhancement of
-          scholarship, <a href="https://sacda.ca">research and engagement</a> in
+          scholarship, <a href="https://sacda.ca" target="_blank" rel="noopener">research and engagement</a> in
           collaboration with faculty, students and community. The Institute
           takes direction from UFV's strategic goals to be a leader of social,
           cultural, economic and environmentally responsible development in the
@@ -205,7 +205,7 @@
           <br />The Institute is a repository of the pioneering history of
           immigrant settlers who make up the Canadian South Asian Diaspora. We
           also undertake much needed
-          <a href="https://southasiancanadianheritage.ca"
+          <a href="https://southasiancanadianheritage.ca" target="_blank" rel="noopener"
             >contemporary research</a
           >
           that benefits academia, members of the community, government, organizations
@@ -236,7 +236,7 @@
       <div class="min-w-[35vw] mt-16 h-auto bg-gray-300 object-cover">
         <img
           src="{base}/AboutCover.jpg"
-          alt="About the South Asian Muslims in BC project - research team and community collaboration"
+          alt="About the South Asian Canadian Muslims in BC project - research team and community collaboration"
           class="w-full h-full object-cover rounded"
         />
       </div>
@@ -268,7 +268,7 @@
       </h3>
       <p class="border-r-4 border-r-secondary-yellow h-max pr-4 font-martel">
         The historical and contemporary presence of Muslim communities in
-        Canada, particularly South Asian Muslims in B.C., has often been
+        Canada, particularly South Asian Canadian Muslims in B.C., has often been
         obscured. Our research project focuses on their contributions and covers
         three major timelines: early migration to BC, mid-20th-century
         migration, and recent migration to Canada. Exploring the diverse sects
@@ -287,7 +287,7 @@
           <Accordion.Content
             class="border-r-4 border-r-secondary-yellow h-max pr-4 font-martel"
           >
-            The visual identity for South Asian Muslims in BC is rooted in the
+            The visual identity for South Asian Canadian Muslims in BC is rooted in the
             timeless aesthetics of Islamic architecture — a tradition where
             form, function, and meaning are deeply intertwined. At its heart are
             jaali-inspired patterns: intricate, repeating geometric forms that

@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-  <title>Page Not Found - South Asian Muslims in BC</title>
-  <meta name="description" content="The page you're looking for could not be found. Return to the South Asian Muslims in BC exhibit homepage." />
+  <title>Page Not Found - South Asian Canadian Muslims in BC</title>
+  <meta name="description" content="The page you're looking for could not be found. Return to the South Asian Canadian Muslims in BC exhibit homepage." />
   <meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 

@@ -8,14 +8,14 @@
 </script>
 
 <svelte:head>
-  <title>Contemporary Personalities - South Asian Muslims in BC</title>
+  <title>Contemporary Personalities - South Asian Canadian Muslims in BC</title>
   <meta
     name="description"
     content="Discover influential contemporary personalities from the South Asian Muslim community in British Columbia. Learn about community leaders, entrepreneurs, educators, and innovators who are shaping BC's diverse landscape."
   />
   <meta
     name="keywords"
-    content="contemporary personalities, South Asian Muslims BC, Muslim community leaders, BC Muslim professionals, community influencers, British Columbia Muslims, Muslim entrepreneurs, cultural leaders"
+    content="contemporary personalities, South Asian Canadian Muslims BC, Muslim community leaders, BC Muslim professionals, community influencers, British Columbia Muslims, Muslim entrepreneurs, cultural leaders"
   />
   <meta
     name="author"
@@ -26,7 +26,7 @@
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="Contemporary Personalities - South Asian Muslims in BC"
+    content="Contemporary Personalities - South Asian Canadian Muslims in BC"
   />
   <meta
     property="og:description"
@@ -37,13 +37,13 @@
     property="og:url"
     content="https://{PUBLIC_DOMAIN}/contemporary-personalities"
   />
-  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  <meta property="og:site_name" content="South Asian Canadian Muslims in BC" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="Contemporary Personalities - South Asian Muslims in BC"
+    content="Contemporary Personalities - South Asian Canadian Muslims in BC"
   />
   <meta
     name="twitter:description"
@@ -62,7 +62,7 @@
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "Contemporary Personalities - South Asian Muslims in BC",
+      "name": "Contemporary Personalities - South Asian Canadian Muslims in BC",
       "description": "A collection of profiles featuring influential contemporary personalities from the South Asian Muslim community in British Columbia.",
       "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities",
       "mainEntity": {
@@ -90,12 +90,12 @@
         {
           "@type": "DigitalDocument",
           "name": "Community Life",
-          "description": "Community narratives and contemporary profiles from South Asian Muslims in BC",
+          "description": "Community narratives and contemporary profiles from South Asian Canadian Muslims in BC",
           "url": "https://${PUBLIC_DOMAIN}/oral-histories"
         },
         {
           "@type": "DigitalDocument",
-          "name": "South Asian Muslims in BC - Digital Exhibit",
+          "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
           "url": "https://${PUBLIC_DOMAIN}"
         }
       ],

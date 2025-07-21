@@ -13,14 +13,14 @@
 </script>
 
 <svelte:head>
-  <title>Community Oral Histories - South Asian Muslims in BC</title>
+  <title>Community Oral Histories - South Asian Canadian Muslims in BC</title>
   <meta
     name="description"
-    content="Explore personal stories and oral histories from South Asian Muslims across British Columbia. Discover narratives of migration, community building, religious practice, and cultural preservation through in-depth video interviews."
+    content="Explore personal stories and oral histories from South Asian Canadian Muslims across British Columbia. Discover narratives of migration, community building, religious practice, and cultural preservation through in-depth video interviews."
   />
   <meta
     name="keywords"
-    content="oral histories, South Asian Muslims BC, Muslim community stories, immigration narratives, cultural heritage interviews, British Columbia Muslims, community voices, personal testimonies"
+    content="oral histories, South Asian Canadian Muslims BC, Muslim community stories, immigration narratives, cultural heritage interviews, British Columbia Muslims, community voices, personal testimonies"
   />
   <meta
     name="author"
@@ -31,25 +31,25 @@
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="Community Oral Histories - South Asian Muslims in BC"
+    content="Community Oral Histories - South Asian Canadian Muslims in BC"
   />
   <meta
     property="og:description"
-    content="Explore personal stories and oral histories from South Asian Muslims across British Columbia. Discover narratives of migration, community building, and cultural preservation."
+    content="Explore personal stories and oral histories from South Asian Canadian Muslims across British Columbia. Discover narratives of migration, community building, and cultural preservation."
   />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta property="og:url" content="https://{PUBLIC_DOMAIN}/oral-histories" />
-  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  <meta property="og:site_name" content="South Asian Canadian Muslims in BC" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="Community Oral Histories - South Asian Muslims in BC"
+    content="Community Oral Histories - South Asian Canadian Muslims in BC"
   />
   <meta
     name="twitter:description"
-    content="Explore personal stories and oral histories from South Asian Muslims across British Columbia. Discover narratives of migration, community building, and cultural preservation."
+    content="Explore personal stories and oral histories from South Asian Canadian Muslims across British Columbia. Discover narratives of migration, community building, and cultural preservation."
   />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
 
@@ -61,8 +61,8 @@
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "Community Oral Histories - South Asian Muslims in BC",
-      "description": "A collection of oral history interviews with South Asian Muslims in British Columbia, documenting their experiences, community building, and cultural heritage.",
+      "name": "Community Oral Histories - South Asian Canadian Muslims in BC",
+      "description": "A collection of oral history interviews with South Asian Canadian Muslims in British Columbia, documenting their experiences, community building, and cultural heritage.",
       "url": "https://${PUBLIC_DOMAIN}/oral-histories",
       "mainEntity": {
         "@type": "ItemList",
@@ -97,12 +97,12 @@
         {
           "@type": "DigitalDocument",
           "name": "Community Life",
-          "description": "Community narratives and contemporary profiles from South Asian Muslims in BC",
+          "description": "Community narratives and contemporary profiles from South Asian Canadian Muslims in BC",
           "url": "https://${PUBLIC_DOMAIN}/oral-histories"
         },
         {
           "@type": "DigitalDocument",
-          "name": "South Asian Muslims in BC - Digital Exhibit",
+          "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
           "url": "https://${PUBLIC_DOMAIN}"
         }
       ],
@@ -126,7 +126,7 @@
   <section class="mb-16">
     <h1 class="page-title">Community Oral Histories</h1>
     <p class="text-lg mb-8">
-      Discover the rich tapestry of stories from South Asian Muslims across
+      Discover the rich tapestry of stories from South Asian Canadian Muslims across
       British Columbia . These oral histories capture personal journeys,
       community milestones, and cultural experiences that have shaped the Muslim
       Canadian experience in BC . Through these narratives, we gain insight into

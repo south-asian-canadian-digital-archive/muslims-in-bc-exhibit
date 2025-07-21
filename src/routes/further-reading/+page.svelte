@@ -9,23 +9,23 @@
 </script>
 
 <svelte:head>
-  <title>Further Reading & Resources - South Asian Muslims in BC</title>
-  <meta name="description" content="Explore curated academic resources, books, articles, and research materials about South Asian Muslims in British Columbia and Canada. Access scholarly works and community resources for deeper understanding." />
+  <title>Further Reading & Resources - South Asian Canadian Muslims in BC</title>
+  <meta name="description" content="Explore curated academic resources, books, articles, and research materials about South Asian Canadian Muslims in British Columbia and Canada. Access scholarly works and community resources for deeper understanding." />
   <meta name="keywords" content="further reading, academic resources, South Asian Muslim research, scholarly articles, books, academic papers, research materials, bibliography, BC Muslim history, South Asian studies" />
   <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Further Reading & Resources - South Asian Muslims in BC" />
-  <meta property="og:description" content="Access curated academic resources, books, and research materials about South Asian Muslims in British Columbia and their experiences in Canada." />
+  <meta property="og:title" content="Further Reading & Resources - South Asian Canadian Muslims in BC" />
+  <meta property="og:description" content="Access curated academic resources, books, and research materials about South Asian Canadian Muslims in British Columbia and their experiences in Canada." />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta property="og:url" content="https://{PUBLIC_DOMAIN}/further-reading" />
-  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  <meta property="og:site_name" content="South Asian Canadian Muslims in BC" />
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Further Reading & Resources - South Asian Muslims in BC" />
-  <meta name="twitter:description" content="Access curated academic resources, books, and research materials about South Asian Muslims in British Columbia and their experiences in Canada." />
+  <meta name="twitter:title" content="Further Reading & Resources - South Asian Canadian Muslims in BC" />
+  <meta name="twitter:description" content="Access curated academic resources, books, and research materials about South Asian Canadian Muslims in British Columbia and their experiences in Canada." />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
   
   <!-- Canonical URL -->
@@ -36,18 +36,18 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Further Reading & Resources - South Asian Muslims in BC",
-      "description": "A curated collection of academic resources, books, articles, and research materials about South Asian Muslims in British Columbia.",
+      "name": "Further Reading & Resources - South Asian Canadian Muslims in BC",
+      "description": "A curated collection of academic resources, books, articles, and research materials about South Asian Canadian Muslims in British Columbia.",
       "url": "https://${PUBLIC_DOMAIN}/further-reading",
       "mainEntity": {
         "@type": "ItemList",
         "name": "Academic Resources and Further Reading",
-        "description": "Curated list of scholarly resources about South Asian Muslims in British Columbia",
+        "description": "Curated list of scholarly resources about South Asian Canadian Muslims in British Columbia",
         "numberOfItems": ${resourceLinks.length}
       },
       "isPartOf": {
         "@type": "DigitalDocument",
-        "name": "South Asian Muslims in BC - Digital Exhibit",
+        "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
         "url": "https://${PUBLIC_DOMAIN}"
       },
       "author": {

@@ -19,13 +19,15 @@
           Centre for Comparative Muslim Studies, SFU. (2025). Mohammed Yakub,
           Fijian Muslim living in BC. <a
             href="https://www.sfu.ca/ccms/community/Muslims-of-BC/Mohammed-Yakub-and-Farisha-Shah.html"
+            target="_blank"
+            rel="noopener"
             >https://www.sfu.ca/ccms/community/Muslims-of-BC/Mohammed-Yakub-and-Farisha-Shah.html</a
           >
         </Image>
 
         Muslims of South Asian descent came to British Columbia from many
         different places, mainly because their pasts were connected to Empire
-        and Empire was global. In other words, South Asian Muslims were part of
+        and Empire was global. In other words, South Asian Canadian Muslims were part of
         a layered migration history which means that their identity is both
         national (connected to countries like India, Pakistan, Bangladesh, Sri
         Lanka, Nepal and Bhutan) as well as Transnational (connected to multiple
@@ -43,6 +45,8 @@
             them would form part of “South Asian” migrants in BC.
             <br />
             <a href="https://collections.slsa.sa.gov.au/resource/PRG+1373/4/97"
+              target="_blank"
+              rel="noopener"
               >State Library of South Australia, PRG 1373/4/97</a
             ></Image
           >
@@ -57,6 +61,8 @@
             <br />
             By Unknown author - Scan of the original photograph, Public Domain,
             <a href="https://commons.wikimedia.org/w/index.php?curid=58459603"
+              target="_blank"
+              rel="noopener"
               >https://commons.wikimedia.org/w/index.php?curid=58459603</a
             >
           </Image>
@@ -87,7 +93,7 @@
         </Image>
 
         <br /><br />
-        Simultaneously, other groups of South Asian Muslims were sent with other
+        Simultaneously, other groups of South Asian Canadian Muslims were sent with other
         South Asian workers to British colonies in East Africa like Uganda to work
         on the railways that the British Empire was building. Those who went to Uganda
         would be displaced again in 1972 when Idi Amin expelled Asians from the country

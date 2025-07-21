@@ -82,7 +82,7 @@ export const homePageCarouselImages: CarouselImage[] = [
   {
     src: "/content/new/South Asians vulnerable Times Colonist.jpeg",
     alt: "Times Colonist newspaper clipping about South Asians being vulnerable",
-    caption: "The hate directed at South Asian Muslims was based on racist assumptions and so it left all visible South Asians vulnerable. Times Colonist, September 2001.",
+    caption: "The hate directed at South Asian Canadian Muslims was based on racist assumptions and so it left all visible South Asians vulnerable. Times Colonist, September 2001.",
   },
   {
     src: "/content/new/2017.0022.228.07-341.2.JPG",

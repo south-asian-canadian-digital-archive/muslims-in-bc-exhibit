@@ -16,10 +16,12 @@
           class="md:w-1/2 md:py-16"
           alt="Times Colonist newspaper clipping about South Asians being vulnerable"
         >
-          The hate directed at South Asian Muslims was based on racist
+          The hate directed at South Asian Canadian Muslims was based on racist
           assumptions and so it left all visible South Asians vulnerable.
           <a
             href="https://www.newspapers.com/article/times-colonist/175388684/"
+            target="_blank"
+            rel="noopener"
           >
             Times Colonist, September 2001</a
           >.
@@ -59,6 +61,8 @@
         developing relationships of solidarity and allyship with Indigenous
         communities of B.C. <a
           href="https://www.islamichistorymonth.ca/indigenous-muslims"
+          target="_blank"
+          rel="noopener"
           ><sup>[*]</sup></a
         >
       </div>
@@ -88,6 +92,8 @@
         <Image src="/content/new/2017.0022.228.07-341.2.JPG" class="md:w-1/2" alt="Muslim parade in Surrey">
           Surrey Online Heritage Search. (2017). Muslim parade. Minisisinc.com. <a
             href="https://surrey.minisisinc.com/scripts/mwimain.dll/144/DESCRIPTION/WEB_UNION_DETAIL?sessionsearch&exp=SISN+53300"
+            target="_blank"
+            rel="noopener"
             >https://surrey.minisisinc.com/scripts/mwimain.dll/144/DESCRIPTION/WEB_UNION_DETAIL?sessionsearch&exp=SISN+53300</a
           >
         </Image>
@@ -126,6 +132,8 @@
           and talk about what needs to be done to address Islamophobia. In
           cbc.ca. <a
             href="https://www.cbc.ca/news/canada/british-columbia/islamophobia-in-b-c-1.6576808"
+            target="_blank"
+            rel="noopener"
             >https://www.cbc.ca/news/canada/british-columbia/islamophobia-in-b-c-1.6576808</a
           >
         </Image> -->

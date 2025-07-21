@@ -26,38 +26,38 @@
   const getPageDescription = (id: string) => {
     switch(id) {
       case "early-20th-century":
-        return "Explore the early migration patterns and settlement experiences of South Asian Muslims in British Columbia during the early 20th century, including challenges faced and communities established.";
+        return "Explore the early migration patterns and settlement experiences of South Asian Canadian Muslims in British Columbia during the early 20th century, including challenges faced and communities established.";
       case "mid-20th-century":
         return "Discover the mid-20th century experiences of South Asian Muslim communities in BC, including policy changes, community growth, and cultural preservation efforts.";
       case "recent-experiences":
-        return "Learn about contemporary experiences of South Asian Muslims in British Columbia, including modern community development, religious practices, and cultural integration.";
+        return "Learn about contemporary experiences of South Asian Canadian Muslims in British Columbia, including modern community development, religious practices, and cultural integration.";
       case "timeline":
         return "Browse an interactive timeline of significant events in South Asian Muslim history in British Columbia, from early settlement to present day milestones.";
       case "case-studies":
         return "Examine detailed case studies highlighting specific experiences, challenges, and achievements of South Asian Muslim individuals and families in BC.";
       default:
-        return "Explore the historical journey of South Asian Muslims in British Columbia through detailed period studies and community stories.";
+        return "Explore the historical journey of South Asian Canadian Muslims in British Columbia through detailed period studies and community stories.";
     }
   };
 </script>
 
 <svelte:head>
-  <title>{pageTitle} | Historical Journey - South Asian Muslims in BC</title>
+  <title>{pageTitle} | Historical Journey - South Asian Canadian Muslims in BC</title>
   <meta name="description" content={getPageDescription(page.params.id)} />
   <meta name="keywords" content="South Asian Muslim history, {pageTitle}, BC immigration, Muslim community {page.params.id}, historical timeline, community development, British Columbia Muslims" />
   <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="{pageTitle} | Historical Journey - South Asian Muslims in BC" />
+  <meta property="og:title" content="{pageTitle} | Historical Journey - South Asian Canadian Muslims in BC" />
   <meta property="og:description" content={getPageDescription(page.params.id)} />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta property="og:url" content="https://{PUBLIC_DOMAIN}/history/{page.params.id}" />
-  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  <meta property="og:site_name" content="South Asian Canadian Muslims in BC" />
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{pageTitle} | Historical Journey - South Asian Muslims in BC" />
+  <meta name="twitter:title" content="{pageTitle} | Historical Journey - South Asian Canadian Muslims in BC" />
   <meta name="twitter:description" content={getPageDescription(page.params.id)} />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
   
@@ -69,7 +69,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "${pageTitle} - South Asian Muslims in BC",
+      "headline": "${pageTitle} - South Asian Canadian Muslims in BC",
       "description": "${getPageDescription(page.params.id)}",
       "url": "https://${PUBLIC_DOMAIN}/history/${page.params.id}",
       "datePublished": "2024-01-01",
@@ -90,7 +90,7 @@
       },
       "isPartOf": {
         "@type": "WebPage",
-        "name": "Historical Journey - South Asian Muslims in BC",
+        "name": "Historical Journey - South Asian Canadian Muslims in BC",
         "url": "https://${PUBLIC_DOMAIN}/history"
       },
       "about": [

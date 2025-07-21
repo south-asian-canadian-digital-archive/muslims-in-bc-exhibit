@@ -23,7 +23,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "name": "Timeline - South Asian Muslims in BC",
+        "name": "Timeline - South Asian Canadian Muslims in BC",
         "url": "https://${PUBLIC_DOMAIN}/history/timeline"
       },
       "about": [
@@ -63,10 +63,10 @@
       ],
       "isPartOf": {
         "@type": "DigitalDocument",
-        "name": "South Asian Muslims in BC - Digital Exhibit",
+        "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
         "url": "https://${PUBLIC_DOMAIN}"
       },
-      "keywords": ["Timeline", "Muslims in BC", "British Columbia history", "South Asian Muslims", "Historical events", "Community history", "Islamophobia", "Post-9/11"],
+      "keywords": ["Timeline", "Muslims in BC", "British Columbia history", "South Asian Canadian Muslims", "Historical events", "Community history", "Islamophobia", "Post-9/11"],
       "inLanguage": "en-CA"
     }
   </script>`}

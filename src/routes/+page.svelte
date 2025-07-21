@@ -104,14 +104,14 @@
 </script>
 
 <svelte:head>
-  <title>South Asian Muslims in BC - Digital Exhibit & Oral Histories</title>
+  <title>South Asian Canadian Muslims in BC - Digital Exhibit & Oral Histories</title>
   <meta
     name="description"
-    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories that have shaped the Muslim Canadian experience in BC."
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Canadian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories that have shaped the Muslim Canadian experience in BC."
   />
   <meta
     name="keywords"
-    content="South Asian Muslims, British Columbia, oral histories, Muslim Canadian experience, cultural heritage, immigration history, community stories, digital archive, BC history, South Asian Studies"
+    content="South Asian Canadian Muslims, British Columbia, oral histories, Muslim Canadian experience, cultural heritage, immigration history, community stories, digital archive, BC history, South Asian Studies"
   />
   <meta
     name="author"
@@ -122,25 +122,25 @@
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="South Asian Muslims in BC - Digital Exhibit & Oral Histories"
+    content="South Asian Canadian Muslims in BC - Digital Exhibit & Oral Histories"
   />
   <meta
     property="og:description"
-    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories."
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Canadian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories."
   />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta property="og:url" content="https://{PUBLIC_DOMAIN}" />
-  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  <meta property="og:site_name" content="South Asian Canadian Muslims in BC" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="South Asian Muslims in BC - Digital Exhibit & Oral Histories"
+    content="South Asian Canadian Muslims in BC - Digital Exhibit & Oral Histories"
   />
   <meta
     name="twitter:description"
-    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories."
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Canadian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories."
   />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
 
@@ -152,8 +152,8 @@
     {
       "@context": "https://schema.org",
       "@type": "DigitalDocument",
-      "name": "South Asian Muslims in BC - Digital Exhibit",
-      "description": "A comprehensive digital exhibit exploring the history, cultural heritage, and contributions of South Asian Muslims in British Columbia through oral histories, timelines, and community stories.",
+      "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
+      "description": "A comprehensive digital exhibit exploring the history, cultural heritage, and contributions of South Asian Canadian Muslims in British Columbia through oral histories, timelines, and community stories.",
       "url": "https://${PUBLIC_DOMAIN}",
       "author": {
         "@type": "Organization",
@@ -174,7 +174,7 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "South Asian Muslims",
+          "name": "South Asian Canadian Muslims",
           "description": "Muslim communities of South Asian origin in British Columbia"
         },
         {
@@ -229,7 +229,7 @@
             },
             {
               "@type": "Article",
-              "name": "Recent Experiences of South Asian Muslims in BC", 
+              "name": "Recent Experiences of South Asian Canadian Muslims in BC", 
               "url": "https://${PUBLIC_DOMAIN}/history/recent-experiences",
               "description": "Contemporary experiences, achievements, and ongoing community development"
             },
@@ -326,10 +326,10 @@
         {/each}
       </div>
 
-      <h1 class="page-title">South Asian Muslims in British Columbia</h1>
+      <h1 class="page-title">South Asian Canadian Muslims in British Columbia</h1>
 
       <div class="content-section">
-        South Asian Muslims in Canada are a diverse group who have advocated for
+        South Asian Canadian Muslims in Canada are a diverse group who have advocated for
         spaces to practice their religion and faced challenges along the way.
         This project records their stories to deepen understanding of the South
         Asian Canadian Muslim experience, especially in British Columbia (BC).
@@ -364,7 +364,7 @@
       <h2 class="page-title">Historical Photographs</h2>
       <p class="mb-10 max-w-3xl">
         Explore historical photographs documenting the journies, traditions, and
-        community life of South Asian Muslims in British Columbia. Click on any
+        community life of South Asian Canadian Muslims in British Columbia. Click on any
         image to view it in full size.
       </p>
 
@@ -417,20 +417,20 @@
     >
       <h2 class="page-title font-bold">About the Project</h2>
       <p>
-        The South Asian Muslims in British Columbia (SAMBC) project is an online
+        The South Asian Canadian Muslims in British Columbia (SACMBC) project is an online
         exhibit (developed between 2024 and 2025 as an ongoing project) within
-        the <a href="https://sacda.ca"
+        the <a href="https://sacda.ca" target="_blank" rel="noopener"
           >South Asian Canadian Digital Archive (SACDA)</a
         >. This project seeks to create a foundational understanding of the
         <a
-          href="https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2024058-eng.htm"
+          href="https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2024058-eng.htm" target="_blank" rel="noopener"
         >
           South Asian Muslim communities</a
         >
         in BC as a starting point to build a more robust engagement with the diverse
         communities and their experiences across Canada. What you will find here
         is the history of migration and settlement, oral history narratives of contemporary
-        BC South Asian Muslims, a recent timeline of significant events and and many
+        BC South Asian Canadian Muslims, a recent timeline of significant events and and many
         reading resources for you to explore.
 
         <br /><br />
@@ -461,7 +461,7 @@
             Historical Journey
           </h3>
           <p class="mb-4">
-            Explore the migration and settlement of South Asian Muslims in
+            Explore the migration and settlement of South Asian Canadian Muslims in
             British Columbia across different time periods:
           </p>
           <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
@@ -488,7 +488,7 @@
             Community Life
           </h3>
           <p class="mb-4">
-            Explore the lived experiences of South Asian Muslims in BC through
+            Explore the lived experiences of South Asian Canadian Muslims in BC through
             personal narratives and contemporary profiles:
           </p>
 
@@ -554,7 +554,7 @@
           </h3>
           <p class="mb-4">
             Access academic research, articles, books and other resources about
-            South Asian Muslims.
+            South Asian Canadian Muslims.
           </p>
           <!-- <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
             {#each resourceLinks.slice(0,2) as linkItem}
@@ -592,7 +592,7 @@
               >
             </li>
             <li>
-              <a href="https://sacda.ca" class="hover:underline"
+              <a href="https://sacda.ca" class="hover:underline" target="_blank" rel="noopener"
                 >Contribute to SACDA</a
               >
             </li>

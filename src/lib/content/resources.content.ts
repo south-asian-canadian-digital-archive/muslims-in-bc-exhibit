@@ -169,7 +169,7 @@ const resourceLinks = [
 						link: "https://carleton.ca/uganda-collection/about-us/",
 						},
 					{
-						text: "The Pioneers: Exploring the History of South Asian Muslims in Canada - Heritage Mississauga",
+						text: "The Pioneers: Exploring the History of South Asian Canadian Muslims in Canada - Heritage Mississauga",
 						link: "https://heritagemississauga.com/the-pioneers-exploring-the-history-of-south-asian-muslims-in-canada/",
 					},
 					{

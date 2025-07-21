@@ -12,7 +12,7 @@ const floatingSquareInfo: { title: string; desc: string, link?: string }[] = [
 	},
 	{
 		title: "Education & Outreach",
-		desc: "Educating the public on the contributions of South Asian Muslims in B.C, through exhibits, workshops, and online resources, outreach has fostered cultural understanding that celebrates untold histories, heritage, and culture.",
+		desc: "Educating the public on the contributions of South Asian Canadian Muslims in B.C, through exhibits, workshops, and online resources, outreach has fostered cultural understanding that celebrates untold histories, heritage, and culture.",
 		link: `${base}/history`,
 	},
 	{
@@ -51,13 +51,13 @@ const team: {
 		},
 		{
 			name: "Kiara Dabreo",
-			desc: `Kiara Dabreo conducts historical and archival research on early South Asian Muslim immigrants in BC, creating an archival collection, preserving records, and cataloging key individuals, organizations, and settlement locations. <p><a href="https://blogs.ufv.ca/sasi/2024/05/16/sasis-research-assistant-kiara-dabreo-presents-at-ufvs-student-research-day/" > Research output </a></p>`,
+			desc: `Kiara Dabreo conducts historical and archival research on early South Asian Muslim immigrants in BC, creating an archival collection, preserving records, and cataloging key individuals, organizations, and settlement locations. <p><a href="https://blogs.ufv.ca/sasi/2024/05/16/sasis-research-assistant-kiara-dabreo-presents-at-ufvs-student-research-day/" target="_blank" rel="noopener"> Research output </a></p>`,
 			role: "Research Assistant",
 			years: "2024/25",
 		},
 		{
 			name: "Samarah Saddique",
-			desc: `Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC and digitally archives their narratives. <p><a href="https://blogs.ufv.ca/sasi/2025/04/09/sasi-research-assistant-presents-at-student-research-day/" > Research output </a></p>`,
+			desc: `Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Muslim community members across BC and digitally archives their narratives. <p><a href="https://blogs.ufv.ca/sasi/2025/04/09/sasi-research-assistant-presents-at-student-research-day/" target="_blank" rel="noopener"> Research output </a></p>`,
 			role: "Research Assistant",
 			years: "2024/25",
 		},
@@ -69,13 +69,13 @@ const team: {
 		},
 		{
 			name: "Saumyaa Gelani",
-			desc: "Saumyaa Gelani contributes to the South Asian Muslims in BC Project as a Research Assistant and plays a key role in the website’s design. She ensures that the design is engaging and easy to use.",
+			desc: "Saumyaa Gelani contributes to the South Asian Canadian Muslims in BC Project as a Research Assistant and plays a key role in the website’s design. She ensures that the design is engaging and easy to use.",
 			role: "Research Assistant",
 			years: "2024/25",
 		},
 		{
 			name: "Rashneet",
-			desc: "Rashneet contributes to the South Asian Muslims in BC Project as a graphic designer and research assistant. She develops the project’s design identity and creates the foundational website design.",
+			desc: "Rashneet contributes to the South Asian Canadian Muslims in BC Project as a graphic designer and research assistant. She develops the project’s design identity and creates the foundational website design.",
 			role: "Research Assistant",
 			years: "2024/25",
 		},

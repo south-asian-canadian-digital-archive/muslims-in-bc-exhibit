@@ -210,13 +210,10 @@
       >
         GET IN TOUCH
       </p>
-    </div> -->
-
-    <a class="text-white" rel="_blank" href="https://sacda.ca/policy/takedown"
+    </div> -->    <a class="text-white" target="_blank" rel="noopener" href="https://sacda.ca/policy/takedown"
       >Statement of Use and Takedown Policy</a
     >
-    |
-    <a class="text-white" rel="_blank" href="https://sacda.ca/About/media">
+    |    <a class="text-white" target="_blank" rel="noopener" href="https://sacda.ca/About/media">
       Media
     </a>| © 2024 South Asian Canadian Digital Archive
   </div>

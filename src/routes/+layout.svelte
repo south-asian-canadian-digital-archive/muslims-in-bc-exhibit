@@ -51,25 +51,25 @@
 <svelte:head>
   <!-- <meta
     name="description"
-    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Canadian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."
   />
   <meta
     name="keywords"
-    content="South Asian Muslims, British Columbia, History, Cultural Heritage, Contributions, Exhibit, Journey, Challenges, Achievements"
+    content="South Asian Canadian Muslims, British Columbia, History, Cultural Heritage, Contributions, Exhibit, Journey, Challenges, Achievements"
   /> -->
   <meta name="author" content="South Asian Studies Institute" />
-  <!-- <meta property="og:title" content="South Asian Muslims in BC" />
+  <!-- <meta property="og:title" content="South Asian Canadian Muslims in BC" />
   <meta
     property="og:description"
-    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Canadian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."
   /> -->
   <meta property="og:image" content={mainuImageUrl} />
   <!-- <meta property="og:url" content="{base}" /> -->
   <meta name="twitter:card" content="summary_large_image" />
-  <!-- <meta name="twitter:title" content="South Asian Muslims in BC" />
+  <!-- <meta name="twitter:title" content="South Asian Canadian Muslims in BC" />
   <meta
     name="twitter:description"
-    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."
+    content="Discover the rich history, cultural heritage, and significant contributions of South Asian Canadian Muslims in British Columbia. Learn about their journey, challenges, and achievements in this comprehensive exhibit."
   /> -->
   <meta name="twitter:image" content={mainuImageUrl} />
 </svelte:head>

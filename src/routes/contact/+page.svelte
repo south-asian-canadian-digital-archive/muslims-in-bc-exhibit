@@ -17,25 +17,25 @@
 </script>
 
 <svelte:head>
-  <title>Contact Us - Share Your Story | South Asian Muslims in BC</title>
+  <title>Contact Us - Share Your Story | South Asian Canadian Muslims in BC</title>
   <meta 
     name="description" 
-    content="Get in touch with the South Asian Muslims in BC exhibit team. Share your stories, provide feedback, or ask questions about our digital archive collection and research project." 
+    content="Get in touch with the South Asian Canadian Muslims in BC exhibit team. Share your stories, provide feedback, or ask questions about our digital archive collection and research project." 
   />
   <meta name="keywords" content="contact, share your story, South Asian Studies Institute, feedback, community stories, digital archive contribution, Muslim community BC, research participation" />
   <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Contact Us - Share Your Story | South Asian Muslims in BC" />
-  <meta property="og:description" content="Get in touch with our team to share your story, provide feedback, or learn more about contributing to the South Asian Muslims in BC digital archive." />
+  <meta property="og:title" content="Contact Us - Share Your Story | South Asian Canadian Muslims in BC" />
+  <meta property="og:description" content="Get in touch with our team to share your story, provide feedback, or learn more about contributing to the South Asian Canadian Muslims in BC digital archive." />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta property="og:url" content="https://{PUBLIC_DOMAIN}/contact" />
-  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  <meta property="og:site_name" content="South Asian Canadian Muslims in BC" />
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact Us - Share Your Story | South Asian Muslims in BC" />
+  <meta name="twitter:title" content="Contact Us - Share Your Story | South Asian Canadian Muslims in BC" />
   <meta name="twitter:description" content="Get in touch with our team to share your story, provide feedback, or learn more about contributing to the digital archive." />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
   
@@ -47,8 +47,8 @@
     {
       "@context": "https://schema.org",
       "@type": "ContactPage",
-      "name": "Contact Us - South Asian Muslims in BC",
-      "description": "Contact page for the South Asian Muslims in BC digital exhibit project. Share your story or get in touch with our research team.",
+      "name": "Contact Us - South Asian Canadian Muslims in BC",
+      "description": "Contact page for the South Asian Canadian Muslims in BC digital exhibit project. Share your story or get in touch with our research team.",
       "url": "https://${PUBLIC_DOMAIN}/contact",
       "mainEntity": [
         {
@@ -61,14 +61,14 @@
         },
         {
           "@type": "FAQPage",
-          "name": "Frequently Asked Questions - South Asian Muslims in BC Project",
+          "name": "Frequently Asked Questions - South Asian Canadian Muslims in BC Project",
           "mainEntity": [
             {
               "@type": "Question",
               "name": "How can I share my story with the project?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "You can share your story by contacting us through this form, emailing sasi@ufv.ca, or calling 604-854-4547. We welcome stories from South Asian Muslims across British Columbia."
+                "text": "You can share your story by contacting us through this form, emailing sasi@ufv.ca, or calling 604-854-4547. We welcome stories from South Asian Canadian Muslims across British Columbia."
               }
             },
             {
@@ -76,7 +76,7 @@
               "name": "Who can participate in the oral history project?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We welcome participation from South Asian Muslims in British Columbia who would like to share their experiences, stories, and perspectives as part of our digital archive collection."
+                "text": "We welcome participation from South Asian Canadian Muslims in British Columbia who would like to share their experiences, stories, and perspectives as part of our digital archive collection."
               }
             },
             {
@@ -84,7 +84,7 @@
               "name": "What is the purpose of this digital exhibit?", 
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The South Asian Muslims in BC digital exhibit documents and preserves the rich history, contributions, and experiences of South Asian Muslim communities in British Columbia through oral histories, archival research, and community partnerships."
+                "text": "The South Asian Canadian Muslims in BC digital exhibit documents and preserves the rich history, contributions, and experiences of South Asian Muslim communities in British Columbia through oral histories, archival research, and community partnerships."
               }
             }
           ]
@@ -92,7 +92,7 @@
       ],
       "isPartOf": {
         "@type": "DigitalDocument",
-        "name": "South Asian Muslims in BC - Digital Exhibit",
+        "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
         "url": "https://${PUBLIC_DOMAIN}"
       },
       "publisher": {

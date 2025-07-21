@@ -32,7 +32,7 @@
 
 <svelte:head>
   <title
-    >{personality.name} - Contemporary Personality | South Asian Muslims in BC</title
+    >{personality.name} - Contemporary Personality | South Asian Canadian Muslims in BC</title
   >
   <meta
     name="description"
@@ -55,7 +55,7 @@
   <meta property="og:type" content="profile" />
   <meta
     property="og:title"
-    content="{personality.name} - Contemporary Personality | South Asian Muslims in BC"
+    content="{personality.name} - Contemporary Personality | South Asian Canadian Muslims in BC"
   />
   <meta
     property="og:description"
@@ -70,13 +70,13 @@
     property="og:url"
     content="https://{PUBLIC_DOMAIN}/contemporary-personalities/{personality.id}"
   />
-  <meta property="og:site_name" content="South Asian Muslims in BC" />
+  <meta property="og:site_name" content="South Asian Canadian Muslims in BC" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="{personality.name} - Contemporary Personality | South Asian Muslims in BC"
+    content="{personality.name} - Contemporary Personality | South Asian Canadian Muslims in BC"
   />
   <meta
     name="twitter:description"
@@ -138,7 +138,7 @@
         "inLanguage": "en-CA",
         "isPartOf": {
           "@type": "WebSite",
-          "name": "South Asian Muslims in BC - Digital Exhibit",
+          "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
           "url": "https://${PUBLIC_DOMAIN}"
         }
       },
@@ -152,12 +152,12 @@
         {
           "@type": "DigitalDocument",
           "name": "Community Life",
-          "description": "Community narratives and contemporary profiles from South Asian Muslims in BC",
+          "description": "Community narratives and contemporary profiles from South Asian Canadian Muslims in BC",
           "url": "https://${PUBLIC_DOMAIN}/oral-histories"
         },
         {
           "@type": "DigitalDocument",
-          "name": "South Asian Muslims in BC - Digital Exhibit",
+          "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
           "url": "https://${PUBLIC_DOMAIN}"
         }
       ],
