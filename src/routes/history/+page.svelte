@@ -155,9 +155,7 @@
           href="https://www.bac-lac.gc.ca/eng/discover/immigration/history-ethnic-cultural/Pages/south-asian.aspx"
           target="_blank"
           rel="noopener"
-          target="_blank"
-          rel="noopener">archival records</a
-        >, academic works, and personal interviews to highlight these, often
+        >archival records </a>, academic works, and personal interviews to highlight these, often
         untold, stories of South Asian Muslim communities in B.C.
         <br /><br />
         Far from being a monolithic religion, Islam is a mosaic. Its two main sects
@@ -211,7 +209,6 @@
             ><a
               target="_blank"
               href="https://www.pewresearch.org/religion/2024/08/19/muslim-migrants-around-the-world/"
-              target="_blank"
               rel="noopener"
               >https://www.pewresearch.org/religion/2024/08/19/muslim-migrants-around-the-world/</a
             ></Image
