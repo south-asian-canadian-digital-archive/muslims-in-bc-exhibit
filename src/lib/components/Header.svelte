@@ -68,10 +68,9 @@
       >
         <div
           class="lg:h-20 h-24 w-fit aspect-auto flex gap-2 pr-4 flex-row items-center"
-        >
-          <!-- <House class="w-8 h-8" /> -->          <img
+        >          <!-- <House class="w-8 h-8" /> -->          <img
             src="{base}/UFV_SASI_logo.png"
-            class="h-auto w-1/2 lg:max-w-[40vw]"
+            class="h-16 w-auto lg:h-20"
             alt="South Asian Studies Institute at University of the Fraser Valley logo"
             width="240"
             height="60"

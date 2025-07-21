@@ -417,20 +417,12 @@
     >
       <h2 class="page-title font-bold">About the Project</h2>
       <p>
-        The South Asian Canadian Muslims in British Columbia (SACMBC) project is an online
-        exhibit (developed between 2024 and 2025 as an ongoing project) within
-        the <a href="https://sacda.ca" target="_blank" rel="noopener"
+        The South Asian Canadian Muslims in British Columbia (SACMBC) project is an online exhibit developed and thoughtfully curated by the South Asian Studies Institute at the University of the Fraser Valley between 2024 and 2025. The online exhibit is housed within the <a href="https://sacda.ca" target="_blank" rel="noopener"
           >South Asian Canadian Digital Archive (SACDA)</a
-        >. This project seeks to create a foundational understanding of the
-        <a
-          href="https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2024058-eng.htm" target="_blank" rel="noopener"
-        >
-          South Asian Muslim communities</a
-        >
-        in BC as a starting point to build a more robust engagement with the diverse
+        >. The project seeks to create a foundational understanding of the South Asian Canadian Muslim communities in BC. This is a starting point to build a more robust engagement with the diverse
         communities and their experiences across Canada. What you will find here
         is the history of migration and settlement, oral history narratives of contemporary
-        BC South Asian Canadian Muslims, a recent timeline of significant events and and many
+        South Asian Canadian Muslims in BC, a recent timeline of significant events and many
         reading resources for you to explore.
 
         <br /><br />

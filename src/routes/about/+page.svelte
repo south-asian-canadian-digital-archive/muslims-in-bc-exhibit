@@ -107,7 +107,7 @@
       "mainEntity": {
         "@type": "ResearchProject",
         "name": "South Asian Canadian Muslims in British Columbia Digital Exhibit",
-        "description": "A digital exhibit documenting the history, experiences, and contributions of South Asian Muslim communities in British Columbia",
+        "description": "A digital exhibit documenting the history, experiences, and contributions of South Asian Canadian Muslims in British Columbia communities in British Columbia",
         "url": "https://${PUBLIC_DOMAIN}",
         "author": {
           "@type": "Organization",
@@ -210,11 +210,7 @@
             target="_blank"
             rel="noopener">contemporary research</a
           >
-          which includes the first of its kind
-          <a href="https://sacda.ca" target="_blank" rel="noopener"
-            >South Asian Digital Archive</a
-          >
-          in Canada that benefits academia, members of the community,
+          which includes the <a href="https://sacda.ca" target="_blank" rel="noopener">first of its kind South Asian Canadian Digital Archive in Canada</a> that benefits academia, members of the community,
           government, organizations and agencies as well as global scholars and
           interested persons.
 
@@ -302,7 +298,7 @@
             fabric of communal life. These designs are more than decorative;
             they reflect a history of perseverance, faith, tradition,
             resilience, migration, and multi-layered transnational experiences
-            that continue to shape the South Asian Muslim presence in British
+            that continue to shape the South Asian Canadian Muslim presence in British
             Columbia.
             <br />
             <br />
@@ -315,14 +311,14 @@
             <br />
             <br />
             Throughout the visual language, geometric repetition and symmetry echo
-            the diversity within the South Asian Muslim community — a constellation
+            the diversity within the South Asian Canadian Muslims in British Columbia community — a constellation
             of cultures, beliefs, and personal histories. This careful interplay
             of shape and pattern creates a visual metaphor for collective identity,
             where individual stories intersect within a shared, enduring framework.
             <br />
             <br />
             Together, these elements establish a contemporary visual identity that
-            honours the historical depth of South Asian Muslim communities in BC
+            honours the historical depth of South Asian Canadian Muslim communities in BC
             while creating space for future narratives to be seen, heard, and remembered.
           </Accordion.Content>
         </Accordion.Item>

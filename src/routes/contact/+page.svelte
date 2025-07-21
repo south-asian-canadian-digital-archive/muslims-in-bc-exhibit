@@ -84,7 +84,7 @@
               "name": "What is the purpose of this digital exhibit?", 
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The South Asian Canadian Muslims in BC digital exhibit documents and preserves the rich history, contributions, and experiences of South Asian Muslim communities in British Columbia through oral histories, archival research, and community partnerships."
+                "text": "The South Asian Canadian Muslims in British Columbia digital exhibit documents and preserves the rich history, contributions, and experiences of South Asian Canadian Muslim communities in British Columbia through oral histories, archival research, and community partnerships."
               }
             }
           ]
