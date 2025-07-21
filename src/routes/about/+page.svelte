@@ -19,7 +19,7 @@
 
   const breadcrumbs = [
     { name: "Home", url: `https://${PUBLIC_DOMAIN}/` },
-    { name: "About the Project", url: `https://${PUBLIC_DOMAIN}/about` }
+    { name: "About the Project", url: `https://${PUBLIC_DOMAIN}/about` },
   ];
 
   let floatingSquareTweens: gsap.core.Tween[] = [];
@@ -174,11 +174,7 @@
 {/snippet}
 
 <main class="lg:py-20 flex flex-col gap-16 max-w-full! m-0!">
-  <Breadcrumb 
-    items={[
-      { name: "About", current: true }
-    ]}
-  />
+  <Breadcrumb items={[{ name: "About", current: true }]} />
 
   <!-- heading -->
   <section class="bg-secondary-yellow flex flex-col lg:pt-24">
@@ -188,8 +184,13 @@
       <div class="flex flex-col lg:gap-8">
         <h1 class="page-title">About SASI</h1>
         <p class="text-p text-primary-black">
-          The <a href="https://ufv.ca/sasi" target="_blank" rel="noopener">South Asian Studies Institute</a> at
-          the <a href="https://ufv.ca" target="_blank" rel="noopener">University of the Fraser Valley</a>
+          The <a href="https://ufv.ca/sasi" target="_blank" rel="noopener"
+            >South Asian Studies Institute</a
+          >
+          at the
+          <a href="https://ufv.ca" target="_blank" rel="noopener"
+            >University of the Fraser Valley</a
+          >
           brings together South Asian scholars and students from diverse backgrounds
           and disciplines to create a nexus point for programs and activities that
           support our vision.
@@ -197,19 +198,25 @@
           research, community and public engagement on issues related to South
           Asia and the Canadian South Asian Diaspora. The Institute initiates,
           directs and implements the development, maintenance and enhancement of
-          scholarship, <a href="https://sacda.ca" target="_blank" rel="noopener">research and engagement</a> in
-          collaboration with faculty, students and community. The Institute
-          takes direction from UFV's strategic goals to be a leader of social,
-          cultural, economic and environmentally responsible development in the
-          Fraser Valley. <br />
+          scholarship, research and engagement in collaboration with faculty,
+          students and community. The Institute takes direction from UFV's
+          strategic goals to be a leader of social, cultural, economic and
+          environmentally responsible development in the Fraser Valley. <br />
           <br />The Institute is a repository of the pioneering history of
           immigrant settlers who make up the Canadian South Asian Diaspora. We
           also undertake much needed
-          <a href="https://southasiancanadianheritage.ca" target="_blank" rel="noopener"
-            >contemporary research</a
+          <a
+            href="https://southasiancanadianheritage.ca"
+            target="_blank"
+            rel="noopener">contemporary research</a
           >
-          that benefits academia, members of the community, government, organizations
-          and agencies as well as global scholars and interested persons.
+          which includes the first of its kind
+          <a href="https://sacda.ca" target="_blank" rel="noopener"
+            >South Asian Digital Archive</a
+          >
+          in Canada that benefits academia, members of the community,
+          government, organizations and agencies as well as global scholars and
+          interested persons.
 
           <br /><br />
           For inquiries, please contact us at
@@ -268,9 +275,9 @@
       </h3>
       <p class="border-r-4 border-r-secondary-yellow h-max pr-4 font-martel">
         The historical and contemporary presence of Muslim communities in
-        Canada, particularly South Asian Canadian Muslims in B.C., has often been
-        obscured. Our research project focuses on their contributions and covers
-        three major timelines: early migration to BC, mid-20th-century
+        Canada, particularly South Asian Canadian Muslims in B.C., has often
+        been obscured. Our research project focuses on their contributions and
+        covers three major timelines: early migration to BC, mid-20th-century
         migration, and recent migration to Canada. Exploring the diverse sects
         and cultural integration of Islam, including Sunni sub-sects like
         Wahabi, Salafi, Barelvi, and Deobandi, as well as Shia sub-sects like
@@ -287,15 +294,16 @@
           <Accordion.Content
             class="border-r-4 border-r-secondary-yellow h-max pr-4 font-martel"
           >
-            The visual identity for South Asian Canadian Muslims in BC is rooted in the
-            timeless aesthetics of Islamic architecture — a tradition where
-            form, function, and meaning are deeply intertwined. At its heart are
-            jaali-inspired patterns: intricate, repeating geometric forms that
-            symbolize protection, interconnectedness, and the shared fabric of
-            communal life. These designs are more than decorative; they reflect
-            a history of perseverance, faith, tradition, resilience, migration,
-            and multi-layered transnational experiences that continue to shape
-            the South Asian Muslim presence in British Columbia.
+            The visual identity for South Asian Canadian Muslims in BC is rooted
+            in the timeless aesthetics of Islamic architecture — a tradition
+            where form, function, and meaning are deeply intertwined. At its
+            heart are jaali-inspired patterns: intricate, repeating geometric
+            forms that symbolize protection, interconnectedness, and the shared
+            fabric of communal life. These designs are more than decorative;
+            they reflect a history of perseverance, faith, tradition,
+            resilience, migration, and multi-layered transnational experiences
+            that continue to shape the South Asian Muslim presence in British
+            Columbia.
             <br />
             <br />
             The arch emerges as another defining motif, serving both as a structural
@@ -392,7 +400,11 @@
           <div
             class="aspect-square h-[30vh] lg:h-[20vw] bg-gray-100 relative flex rounded-lg overflow-clip object-cover"
           >
-            <img src={person.img} alt="{person.name} - {person.position} at South Asian Studies Institute" class="object-cover w-full" />
+            <img
+              src={person.img}
+              alt="{person.name} - {person.position} at South Asian Studies Institute"
+              class="object-cover w-full"
+            />
             <span
               class="bottom-0 left-0 p-2 bg-secondary-teal rounded-b-lg text-white font-martel absolute w-full text-center"
               >{person.name} <br />
