@@ -126,7 +126,7 @@
         Share Your Story
       </h1>
       <p>
-        Whether you have inquiries about the <a href="https://sacda.ca/exhibits" target="_blank" rel="noopener">exhibit</a>, suggestions for
+        Whether you have inquiries about the <a href="https://sacda.ca/exhibits/index" target="_blank" rel="noopener">exhibit</a>, suggestions for
         improvement, or would like to share your own story as part of the <a href="https://sacda.ca" target="_blank" rel="noopener">South Asian Canadian Digital Archive</a>, we'd
         love to hear from you.
         <br />
