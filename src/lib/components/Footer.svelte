@@ -183,7 +183,7 @@
   </div>
 
   <div class="flex flex-col justify-center items-end gap-2">
-    <div class="flex items-center justify-center gap-4 mb-4 *:h-24 *:aspect-auto *:w-auto">
+    <div class="flex items-center justify-center gap-4 mb-4 *:md:h-24 *:aspect-auto *:md:w-auto *:w-1/3">
       <img
         src="{base}/UFV_SASI_logo.png"
         class=""
@@ -196,7 +196,7 @@
 
       <img
         src="{base}/Sacda-logo.svg"
-        class="h-12!"
+        class="md:h-12! h-auto"
         alt="South Asian Canadian Digital Archive logo"
         width="240"
         height="58"
@@ -206,7 +206,7 @@
 
       <img
         src="{base}/ufv-logo.png"
-        class="h-20!"
+        class="md:h-20! h-auto"
         alt="University of the Fraser Valley logo"
         width="240"
         height="96"
@@ -214,7 +214,7 @@
         decoding="async"
       />
     </div>
-    <p class="text-xs text-white text-right lg:w-[18vw] md:w-[18vw]">
+    <p class="text-xs text-white text-center md:text-right lg:w-[18vw] md:w-[18vw]">
       <b>South Asian Studies Institute</b>,<br /> University of the Fraser Valley
       <br />
       <b>Visiting Address:</b> Building K, 33780 King Rd, Abbotsford, BC V2S7P2
