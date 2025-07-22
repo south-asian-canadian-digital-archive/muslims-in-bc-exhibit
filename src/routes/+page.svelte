@@ -185,7 +185,7 @@
         {
           "@type": "Thing",
           "name": "Immigration History",
-          "description": "Historical patterns of South Asian Muslim immigration to British Columbia"
+          "description": "Historical patterns of South Asian Canadian Muslim immigration to British Columbia"
         }
       ],
       "hasPart": [
@@ -193,19 +193,19 @@
           "@type": "DigitalDocument",
           "name": "Community Life",
           "url": "https://${PUBLIC_DOMAIN}/oral-histories",
-          "description": "Personal narratives, interviews, and contemporary profiles from South Asian Muslim community members in British Columbia",
+          "description": "Personal narratives, interviews, and contemporary profiles from South Asian Canadian Muslim community members in British Columbia",
           "hasPart": [
             {
               "@type": "DigitalDocument",
               "name": "Oral Histories",
               "url": "https://${PUBLIC_DOMAIN}/oral-histories",
-              "description": "Personal narratives and interviews from South Asian Muslim community members in British Columbia"
+              "description": "Personal narratives and interviews from South Asian Canadian Muslim community members in British Columbia"
             },
             {
               "@type": "DigitalDocument",
               "name": "Contemporary Personalities",
               "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities",
-              "description": "Profiles of influential South Asian Muslim leaders, entrepreneurs, and changemakers in BC today"
+              "description": "Profiles of influential South Asian Canadian Muslim leaders, entrepreneurs, and changemakers in BC today"
             }
           ]
         },
@@ -213,13 +213,13 @@
           "@type": "DigitalDocument", 
           "name": "Historical Timeline",
           "url": "https://${PUBLIC_DOMAIN}/history",
-          "description": "Comprehensive historical overview of South Asian Muslim experiences in BC from early 20th century to present",
+          "description": "Comprehensive historical overview of South Asian Canadian Muslim experiences in BC from early 20th century to present",
           "hasPart": [
             {
               "@type": "Article",
               "name": "Early 20th Century",
               "url": "https://${PUBLIC_DOMAIN}/history/early-20th-century",
-              "description": "Early immigration patterns and establishment of South Asian Muslim communities in British Columbia"
+              "description": "Early immigration patterns and establishment of South Asian Canadian Muslim communities in British Columbia"
             },
             {
               "@type": "Article", 
@@ -237,7 +237,7 @@
               "@type": "Article",
               "name": "Timeline",
               "url": "https://${PUBLIC_DOMAIN}/history/timeline", 
-              "description": "Chronological overview of key events and milestones in South Asian Muslim BC history"
+              "description": "Chronological overview of key events and milestones in South Asian Canadian Muslim BC history"
             },
             {
               "@type": "Article",
@@ -337,7 +337,7 @@
         <br />
         The project gathers these stories through interviews, research and historical
         records. Viewing Islam as a mosaic, it focuses on the traditions and lived
-        experiences of BC’s South Asian Muslim community. The South Asian Muslim
+        experiences of BC’s South Asian Canadian Muslim community. The South Asian Canadian Muslim
         community is made up of new immigrants and early settlers from the start
         of the 20th century. Recognizing that this project will be a first step in
         preserving these histories, we aim to provide a foundation for future researchers,

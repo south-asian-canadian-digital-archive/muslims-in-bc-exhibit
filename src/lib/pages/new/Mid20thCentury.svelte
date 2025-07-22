@@ -69,7 +69,7 @@
         </div>
 
         <br />
-        Many South Asian Muslim in British Columbia trace their roots to Punjab,
+        Many South Asian Canadian Muslim in British Columbia trace their roots to Punjab,
         Gujarat, Fiji or other parts of South Asia, but their migration to Canada
         did not happen in a linear fashion. For instance, Gujarati Muslims who had
         a long history of being involved in trading networks were a global community.
@@ -149,7 +149,7 @@
         blend South Asian, African and Canadian traditions.
         <br /><br />
 
-        As a result, the South Asian Muslim experience in British Columbia is
+        As a result, the South Asian Canadian Muslim experience in British Columbia is
         both national and transnational. Rather than a monolithic “Canadian
         Islam”, what emerges is a pluralistic Muslim identity that negotiates
         between regional traditions, religious doctrines, and what it means to

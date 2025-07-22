@@ -66,11 +66,11 @@
   >
   <meta
     name="description"
-    content="{interview.shortDescription} - Listen to {interview.name}'s personal story about their experience as a South Asian Muslim in British Columbia, including their journey, community involvement, and cultural heritage."
+    content="{interview.shortDescription} - Listen to {interview.name}'s personal story about their experience as a South Asian Canadian Muslim in British Columbia, including their journey, community involvement, and cultural heritage."
   />
   <meta
     name="keywords"
-    content="{interview.name}, oral history, South Asian Muslim, {interview.location}, personal story, immigration experience, community testimony, Muslim heritage BC"
+    content="{interview.name}, oral history, South Asian Canadian Muslim, {interview.location}, personal story, immigration experience, community testimony, Muslim heritage BC"
   />
   <meta
     name="author"
@@ -85,7 +85,7 @@
   />
   <meta
     property="og:description"
-    content="{interview.shortDescription} - Personal story from a South Asian Muslim community member in British Columbia."
+    content="{interview.shortDescription} - Personal story from a South Asian Canadian Muslim community member in British Columbia."
   />
   <meta property="og:image" content={interview.thumbnailUrl} />
   <meta
@@ -141,7 +141,7 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "South Asian Muslim Experience",
+          "name": "South Asian Canadian Muslim Experience",
           "description": "Personal narratives of South Asian Canadian Muslims in British Columbia"
         },
         {

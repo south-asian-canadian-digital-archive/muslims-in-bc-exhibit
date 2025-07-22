@@ -28,13 +28,13 @@
       case "early-20th-century":
         return "Explore the early migration patterns and settlement experiences of South Asian Canadian Muslims in British Columbia during the early 20th century, including challenges faced and communities established.";
       case "mid-20th-century":
-        return "Discover the mid-20th century experiences of South Asian Muslim communities in BC, including policy changes, community growth, and cultural preservation efforts.";
+        return "Discover the mid-20th century experiences of South Asian Canadian Muslim communities in BC, including policy changes, community growth, and cultural preservation efforts.";
       case "recent-experiences":
         return "Learn about contemporary experiences of South Asian Canadian Muslims in British Columbia, including modern community development, religious practices, and cultural integration.";
       case "timeline":
-        return "Browse an interactive timeline of significant events in South Asian Muslim history in British Columbia, from early settlement to present day milestones.";
+        return "Browse an interactive timeline of significant events in South Asian Canadian Muslim history in British Columbia, from early settlement to present day milestones.";
       case "case-studies":
-        return "Examine detailed case studies highlighting specific experiences, challenges, and achievements of South Asian Muslim individuals and families in BC.";
+        return "Examine detailed case studies highlighting specific experiences, challenges, and achievements of South Asian Canadian Muslim individuals and families in BC.";
       default:
         return "Explore the historical journey of South Asian Canadian Muslims in British Columbia through detailed period studies and community stories.";
     }
@@ -44,7 +44,7 @@
 <svelte:head>
   <title>{pageTitle} | Historical Journey - South Asian Canadian Muslims in BC</title>
   <meta name="description" content={getPageDescription(page.params.id)} />
-  <meta name="keywords" content="South Asian Muslim history, {pageTitle}, BC immigration, Muslim community {page.params.id}, historical timeline, community development, British Columbia Muslims" />
+  <meta name="keywords" content="South Asian Canadian Muslim history, {pageTitle}, BC immigration, Muslim community {page.params.id}, historical timeline, community development, British Columbia Muslims" />
   <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
   
   <!-- Open Graph / Facebook -->
@@ -96,8 +96,8 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "South Asian Muslim History",
-          "description": "Historical experiences of South Asian Muslim communities in British Columbia"
+          "name": "South Asian Canadian Muslim History",
+          "description": "Historical experiences of South Asian Canadian Muslim communities in British Columbia"
         },
         {
           "@type": "Place",

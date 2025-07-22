@@ -1,14 +1,14 @@
 # South Asian Canadian Muslims in British Columbia Exhibit
 
-A comprehensive digital exhibit documenting the rich history, cultural heritage, and significant contributions of South Asian Muslim communities in British Columbia from the early 1900s to the present day.
+A comprehensive digital exhibit documenting the rich history, cultural heritage, and significant contributions of South Asian Canadian Muslim communities in British Columbia from the early 1900s to the present day.
 
 ## About the Project
 
-The **South Asian Canadian Muslims in British Columbia (SAMBC)** project is an online exhibit developed between 2024 and 2025 as part of the [South Asian Canadian Digital Archive (SACDA)](https://sacda.ca). This foundational project aims to create a comprehensive understanding of South Asian Muslim communities in BC while serving as a starting point for broader engagement with diverse Muslim experiences across Canada.
+The **South Asian Canadian Muslims in British Columbia (SAMBC)** project is an online exhibit developed between 2024 and 2025 as part of the [South Asian Canadian Digital Archive (SACDA)](https://sacda.ca). This foundational project aims to create a comprehensive understanding of South Asian Canadian Muslim communities in BC while serving as a starting point for broader engagement with diverse Muslim experiences across Canada.
 
 ### Project Goals
 
-- **Document untold histories**: Preserve and share the often obscured stories of South Asian Muslim communities in BC
+- **Document untold histories**: Preserve and share the often obscured stories of South Asian Canadian Muslim communities in BC
 - **Oral history collection**: Record first-hand experiences and narratives from community members across generations
 - **Educational outreach**: Foster cultural understanding and celebrate the diverse heritage and contributions of South Asian Canadian Muslims
 - **Community engagement**: Build strong partnerships with organizations and individuals to ensure inclusive and representative research
@@ -17,7 +17,7 @@ The **South Asian Canadian Muslims in British Columbia (SAMBC)** project is an o
 
 The exhibit covers three major migration periods:
 
-1. **Early Migration (1900s-1962)**: The earliest South Asian Muslim presence in BC, including figures from the Komagata Maru incident
+1. **Early Migration (1900s-1962)**: The earliest South Asian Canadian Muslim presence in BC, including figures from the Komagata Maru incident
 2. **Mid-20th Century Migration (1962-2001)**: Post-Immigration Act communities from Pakistan, Bangladesh, East Africa, Fiji, and the Caribbean
 3. **Recent Experiences (2001-Present)**: Contemporary Muslim experiences, including post-9/11 challenges and community resilience
 

@@ -39,7 +39,7 @@
   />
   <meta
     name="keywords"
-    content="South Asian Muslim history, BC immigration history, Muslim community timeline, historical migration patterns, early 20th century, mid 20th century, recent experiences, case studies"
+    content="South Asian Canadian Muslim history, BC immigration history, Muslim community timeline, historical migration patterns, early 20th century, mid 20th century, recent experiences, case studies"
   />
   <meta
     name="author"
@@ -85,8 +85,8 @@
       "url": "https://${PUBLIC_DOMAIN}/history",
       "mainEntity": {
         "@type": "HistoricalEvent",
-        "name": "South Asian Muslim Migration to British Columbia",
-        "description": "The ongoing history of South Asian Muslim communities establishing themselves in British Columbia",
+        "name": "South Asian Canadian Muslim Migration to British Columbia",
+        "description": "The ongoing history of South Asian Canadian Muslim communities establishing themselves in British Columbia",
         "startDate": "1900",
         "location": {
           "@type": "Place",
@@ -107,12 +107,12 @@
         {
           "@type": "Thing",
           "name": "Immigration History",
-          "description": "Historical patterns of South Asian Muslim immigration to British Columbia"
+          "description": "Historical patterns of South Asian Canadian Muslim immigration to British Columbia"
         },
         {
           "@type": "Thing",
           "name": "Community Development",
-          "description": "The establishment and growth of South Asian Muslim communities in BC"
+          "description": "The establishment and growth of South Asian Canadian Muslim communities in BC"
         }
       ]
     }
@@ -150,13 +150,13 @@
         has often remained obscured, unacknowledged, and misrepresented. Their
         profound contributions to Canadian society warrant deeper appreciation,
         acknowledgement, and understanding. Our research project aims to
-        contribute to this cause by focusing on South Asian Muslim communities
+        contribute to this cause by focusing on South Asian Canadian Muslim communities
         of B.C. We use <a
           href="https://www.bac-lac.gc.ca/eng/discover/immigration/history-ethnic-cultural/Pages/south-asian.aspx"
           target="_blank"
           rel="noopener"
         >archival records </a>, academic works, and personal interviews to highlight these, often
-        untold, stories of South Asian Muslim communities in B.C.
+        untold, stories of South Asian Canadian Muslim communities in B.C.
         <br /><br />
         Far from being a monolithic religion, Islam is a mosaic. Its two main sects
         are Sunni and Shia, which further branch out into various sub-sects. Sunni
@@ -221,7 +221,7 @@
       <h2 class="">Migration to British Columbia</h2>
       <div class="">
         <!-- <p> -->
-        In the first half of the 20th century, the narrative of South Asian Muslim
+        In the first half of the 20th century, the narrative of South Asian Canadian Muslim
         migration to British Columbia closely reflected the broader movement of people
         from the region. However, due to their smaller numbers and the lack of detailed
         data on South Asian Canadians, we can only piece together the presence of

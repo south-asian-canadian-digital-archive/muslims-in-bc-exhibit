@@ -4,7 +4,7 @@
 
 <main class="py-32 mx-auto flex flex-col gap-10">
   <h1 class="px-4 lg:px-0 page-title">
-    Recent experiences of South Asian Muslim in BC (2001 - present)
+    Recent experiences of South Asian Canadian Muslim in BC (2001 - present)
   </h1>
 
   <div class="flex flex-col gap-16 history">
@@ -56,7 +56,7 @@
       <h2>Solidarity with Indigenous Communities</h2>
       <div>
         With an increased understanding of how the intertwined histories of
-        colonialism, migration, and racism have affected South Asian muslim
+        colonialism, migration, and racism have affected South Asian Canadian Muslim
         communities of B.C, a number of community members have also started
         developing relationships of solidarity and allyship with Indigenous
         communities of B.C. <a

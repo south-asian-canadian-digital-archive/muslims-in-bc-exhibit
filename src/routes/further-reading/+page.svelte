@@ -11,7 +11,7 @@
 <svelte:head>
   <title>Further Reading & Resources - South Asian Canadian Muslims in BC</title>
   <meta name="description" content="Explore curated academic resources, books, articles, and research materials about South Asian Canadian Muslims in British Columbia and Canada. Access scholarly works and community resources for deeper understanding." />
-  <meta name="keywords" content="further reading, academic resources, South Asian Muslim research, scholarly articles, books, academic papers, research materials, bibliography, BC Muslim history, South Asian studies" />
+  <meta name="keywords" content="further reading, academic resources, South Asian Canadian Muslim research, scholarly articles, books, academic papers, research materials, bibliography, BC Muslim history, South Asian studies" />
   <meta name="author" content="South Asian Studies Institute, University of the Fraser Valley" />
   
   <!-- Open Graph / Facebook -->
@@ -58,8 +58,8 @@
       "about": [
         {
           "@type": "Thing",
-          "name": "South Asian Muslim Research",
-          "description": "Academic research and scholarly materials about South Asian Muslim communities"
+          "name": "South Asian Canadian Muslim Research",
+          "description": "Academic research and scholarly materials about South Asian Canadian Muslim communities"
         },
         {
           "@type": "Thing",

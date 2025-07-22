@@ -82,7 +82,7 @@
               "@type": "ImageObject",
               "url": "${interview.thumbnailUrl}",
               "caption": "${interview.name}'s interview thumbnail",
-              "description": "${interview.name} sharing their story from the South Asian Muslim community in BC"
+              "description": "${interview.name} sharing their story from the South Asian Canadian Muslim community in BC"
             },
             "contentLocation": {
               "@type": "Place",
@@ -154,7 +154,7 @@
           <div class="relative aspect-video">
             <img
               src={interview.thumbnailUrl}
-              alt={`${interview.name}'s interview thumbnail - ${interview.title} sharing their story from the South Asian Muslim community in BC`}
+              alt={`${interview.name}'s interview thumbnail - ${interview.title} sharing their story from the South Asian Canadian Muslim community in BC`}
               class="w-full h-full object-cover"
             />
             <div

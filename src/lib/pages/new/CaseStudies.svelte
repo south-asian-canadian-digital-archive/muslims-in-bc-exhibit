@@ -7,7 +7,7 @@
 <main class="py-32 flex flex-col gap-10">
   <h1 class="px-4 lg:px-0 page-title">Case Studies: Hidden Histories</h1>
   <p class="desc-text">
-    Due to the lack of archives, we find only small traces of early South Asian muslim
+    Due to the lack of archives, we find only small traces of early South Asian Canadian Muslim
     presence in B.C. For example, a memorandum sent by
     W.C Hopkinson
     to W.W Cory in 1912 indicates that the small number of muslims living in

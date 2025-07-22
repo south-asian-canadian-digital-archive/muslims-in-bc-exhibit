@@ -11,7 +11,7 @@
   <title>Contemporary Personalities - South Asian Canadian Muslims in BC</title>
   <meta
     name="description"
-    content="Discover influential contemporary personalities from the South Asian Muslim community in British Columbia. Learn about community leaders, entrepreneurs, educators, and innovators who are shaping BC's diverse landscape."
+    content="Discover influential contemporary personalities from the South Asian Canadian Muslim community in British Columbia. Learn about community leaders, entrepreneurs, educators, and innovators who are shaping BC's diverse landscape."
   />
   <meta
     name="keywords"
@@ -30,7 +30,7 @@
   />
   <meta
     property="og:description"
-    content="Discover influential contemporary personalities from the South Asian Muslim community in British Columbia. Learn about community leaders, entrepreneurs, and innovators."
+    content="Discover influential contemporary personalities from the South Asian Canadian Muslim community in British Columbia. Learn about community leaders, entrepreneurs, and innovators."
   />
   <meta property="og:image" content="{base}/content/2021_08_01_040.jpg" />
   <meta
@@ -47,7 +47,7 @@
   />
   <meta
     name="twitter:description"
-    content="Discover influential contemporary personalities from the South Asian Muslim community in British Columbia."
+    content="Discover influential contemporary personalities from the South Asian Canadian Muslim community in British Columbia."
   />
   <meta name="twitter:image" content="{base}/content/2021_08_01_040.jpg" />
 
@@ -63,7 +63,7 @@
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       "name": "Contemporary Personalities - South Asian Canadian Muslims in BC",
-      "description": "A collection of profiles featuring influential contemporary personalities from the South Asian Muslim community in British Columbia.",
+      "description": "A collection of profiles featuring influential contemporary personalities from the South Asian Canadian Muslim community in British Columbia.",
       "url": "https://${PUBLIC_DOMAIN}/contemporary-personalities",
       "mainEntity": {
         "@type": "ItemList",
@@ -123,7 +123,7 @@
         Please contact <a href="mailto:sasi@ufv.ca">sasi@ufv.ca</a> to add more names.
       </span> <br /> <br />
 
-      Meet the inspiring contemporary personalities from the South Asian Muslim
+      Meet the inspiring contemporary personalities from the South Asian Canadian Muslim
       community who are making significant contributions across British
       Columbia. These leaders, entrepreneurs, educators, and innovators
       represent the diverse talents and achievements within our community,
@@ -150,7 +150,7 @@
               <div class="aspect-square lg:aspect-3/4 h-full">
                 <img
                   src={personality.thumbnailUrl}
-                  alt={`${personality.name}'s profile photo - ${personality.title} from South Asian Muslim community in British Columbia`}
+                  alt={`${personality.name}'s profile photo - ${personality.title} from South Asian Canadian Muslim community in British Columbia`}
                   class="w-full h-full object-cover"
                 />
                 <div

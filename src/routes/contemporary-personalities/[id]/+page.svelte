@@ -40,11 +40,11 @@
       personality.description.substring(
         0,
         160
-      )} - Profile of {personality.name}, a contemporary personality from the South Asian Muslim community in British Columbia."
+      )} - Profile of {personality.name}, a contemporary personality from the South Asian Canadian Muslim community in British Columbia."
   />
   <meta
     name="keywords"
-    content="{personality.name}, contemporary personality, South Asian Muslim, {personality.title}, community leader, Muslim heritage BC"
+    content="{personality.name}, contemporary personality, South Asian Canadian Muslim, {personality.title}, community leader, Muslim heritage BC"
   />
   <meta
     name="author"
@@ -63,7 +63,7 @@
       personality.description.substring(
         0,
         160
-      )} - Profile from the South Asian Muslim community in British Columbia."
+      )} - Profile from the South Asian Canadian Muslim community in British Columbia."
   />
   <meta property="og:image" content={personality.thumbnailUrl} />
   <meta
@@ -117,7 +117,7 @@
       "knowsAbout": [
         {
           "@type": "Thing",
-          "name": "South Asian Muslim Community",
+          "name": "South Asian Canadian Muslim Community",
           "description": "Community leadership and cultural contributions"
         },
         {
@@ -128,7 +128,7 @@
       ],
       "memberOf": {
         "@type": "Organization",
-        "name": "South Asian Muslim Community of British Columbia"
+        "name": "South Asian Canadian Muslim Community of British Columbia"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -244,7 +244,7 @@
             <!-- Single Image -->
             <img
               src={personality.thumbnailUrl}
-              alt={`${personality.name}'s profile photo - ${personality.title} from South Asian Muslim community in BC`}
+              alt={`${personality.name}'s profile photo - ${personality.title} from South Asian Canadian Muslim community in BC`}
               class="w-full h-full object-contain"
             />
           {/if}
