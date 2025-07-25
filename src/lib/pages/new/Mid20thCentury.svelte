@@ -37,7 +37,7 @@
         have experienced multiple migration stages, leading to identities that
         merge influences from different regions.
 
-        <div class="flex w-full items-start justify-evenly md:*:w-1/2">
+        <div class="flex w-full flex-col md:flex-row items-start justify-evenly md:*:w-1/2">
           <Image src="/content/new/PRG-1373-4-97.jpeg">
             This ship was one of many that carried Indian indentured workers to
             the British Caribbean after slavery was “officially” abolished and

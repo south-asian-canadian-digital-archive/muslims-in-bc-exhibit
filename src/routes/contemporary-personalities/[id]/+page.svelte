@@ -262,7 +262,7 @@
       <div class="prose prose-lg max-w-none">
         <h2 class="text-2xl font-semibold mb-4">About {personality.name}</h2>
         <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-          {personality.description}
+          {@html personality.description}
         </p>
       </div>
 

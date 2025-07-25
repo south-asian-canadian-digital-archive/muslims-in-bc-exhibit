@@ -53,7 +53,7 @@
     {#if children}
       <figcaption
         bind:this={figcaptionElement}
-        class="text-center mt-2 text-xs"
+        class="text-center mt-2 text-xs break-words! whitespace-normal!"
       >
         {@render children?.()}
       </figcaption>

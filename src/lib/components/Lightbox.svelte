@@ -12,7 +12,7 @@
       {#if $dialogImageCaption}
         <div class="absolute bottom-4 right-4 max-w-sm">
           <div class="backdrop-blur-md bg-black/30 text-white p-3 rounded-lg shadow-lg">
-            <div class="text-sm leading-relaxed [&_a]:text-blue-300 [&_a]:underline [&_a:hover]:text-blue-200">
+            <div class="text-sm leading-relaxed [&_a]:text-blue-300 [&_a]:underline [&_a:hover]:text-blue-200 break-words! whitespace-normal!">
               {@html $dialogImageCaption}
             </div>
           </div>
