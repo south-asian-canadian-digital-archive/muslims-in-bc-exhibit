@@ -18,9 +18,7 @@
   import Autoplay from "embla-carousel-autoplay";
   import { generateBreadcrumbSchema } from "$lib/utils/breadcrumb-schema";
 
-  const breadcrumbs = [
-    { name: "Home", url: `https://${PUBLIC_DOMAIN}/` }
-  ];
+  const breadcrumbs = [{ name: "Home", url: `https://${PUBLIC_DOMAIN}/` }];
 
   let curHoveredDome = $state(0);
   let historyPages = navItems[2].pages || [];
@@ -33,11 +31,12 @@
 
   onMount(() => {
     // Dynamically preload pattern image for large screens where it's visible
-    if (window.innerWidth >= 1024) { // lg breakpoint
-      const patternLink = document.createElement('link');
-      patternLink.rel = 'preload';
-      patternLink.as = 'image';
-      patternLink.href = '/pattern.svg';
+    if (window.innerWidth >= 1024) {
+      // lg breakpoint
+      const patternLink = document.createElement("link");
+      patternLink.rel = "preload";
+      patternLink.as = "image";
+      patternLink.href = "/pattern.svg";
       document.head.appendChild(patternLink);
     }
 
@@ -97,14 +96,16 @@
 
     return () => {
       observer.disconnect();
-      navTweens.forEach(tween => tween.kill());
+      navTweens.forEach((tween) => tween.kill());
       domeAnimationTimeline.kill();
     };
   });
 </script>
 
 <svelte:head>
-  <title>South Asian Canadian Muslims in BC - Digital Exhibit & Oral Histories</title>
+  <title
+    >South Asian Canadian Muslims in BC - Digital Exhibit & Oral Histories</title
+  >
   <meta
     name="description"
     content="Discover the rich history, cultural heritage, and significant contributions of South Asian Canadian Muslims in British Columbia. Explore oral histories, historical timelines, and community stories that have shaped the Muslim Canadian experience in BC."
@@ -276,7 +277,7 @@
   {@html `<script type="application/ld+json">
     ${generateBreadcrumbSchema(breadcrumbs)}
   </script>`}
-  
+
   <!-- Smart resource prefetching for non-critical resources -->
   <link rel="prefetch" href="/pattern.svg" />
 </svelte:head>
@@ -326,23 +327,26 @@
         {/each}
       </div>
 
-      <h1 class="page-title">South Asian Canadian Muslims in British Columbia</h1>
+      <h1 class="page-title">
+        South Asian Canadian Muslims in British Columbia
+      </h1>
 
       <div class="content-section">
-        South Asian Canadian Muslims in Canada are a diverse group who have advocated for
-        spaces to practice their religion and faced challenges along the way.
-        This project records their stories to deepen understanding of the South
-        Asian Canadian Muslim experience, especially in British Columbia (BC).
+        South Asian Canadian Muslims in Canada are a diverse group who have
+        advocated for spaces to practice their religion and faced challenges
+        along the way. This project records their stories to deepen
+        understanding of the South Asian Canadian Muslim experience, especially
+        in British Columbia (BC).
         <br />
         <br />
         The project gathers these stories through interviews, research and historical
         records. Viewing Islam as a mosaic, it focuses on the traditions and lived
-        experiences of BC’s South Asian Canadian Muslim community. The South Asian Canadian Muslim
-        community is made up of new immigrants and early settlers from the start
-        of the 20th century. Recognizing that this project will be a first step in
-        preserving these histories, we aim to provide a foundation for future researchers,
-        artists and community members to continue documenting the stories of South
-        Asian Muslims in BC.
+        experiences of BC’s South Asian Canadian Muslim community. The South Asian
+        Canadian Muslim community is made up of new immigrants and early settlers
+        from the start of the 20th century. Recognizing that this project will be
+        a first step in preserving these histories, we aim to provide a foundation
+        for future researchers, artists and community members to continue documenting
+        the stories of South Asian Muslims in BC.
         <br />
         <br />
         We welcome any feedback that can help us enhance this project by writing
@@ -364,8 +368,8 @@
       <h2 class="page-title">Historical Photographs</h2>
       <p class="mb-10 max-w-3xl">
         Explore historical photographs documenting the journies, traditions, and
-        community life of South Asian Canadian Muslims in British Columbia. Click on any
-        image to view it in full size.
+        community life of South Asian Canadian Muslims in British Columbia.
+        Click on any image to view it in full size.
       </p>
 
       <Carousel.Root
@@ -417,19 +421,35 @@
     >
       <h2 class="page-title font-bold">About the Project</h2>
       <p>
-        The South Asian Canadian Muslims in British Columbia (SACMBC) project is an online exhibit developed and thoughtfully curated by the South Asian Studies Institute at the University of the Fraser Valley between 2024 and 2025. The online exhibit is housed within the <a href="https://sacda.ca" target="_blank" rel="noopener"
-          >South Asian Canadian Digital Archive (SACDA)</a
-        >. The project seeks to create a foundational understanding of the South Asian Canadian Muslim communities in BC. This is a starting point to build a more robust engagement with the diverse
-        communities and their experiences across Canada. What you will find here
-        is the history of migration and settlement, oral history narratives of contemporary
-        South Asian Canadian Muslims in BC, a recent timeline of significant events and many
-        reading resources for you to explore.
+        The South Asian Canadian Muslims in British Columbia (SACMBC) project is
+        an online exhibit developed and thoughtfully curated by the South Asian
+        Studies Institute at the University of the Fraser Valley between 2024
+        and 2025. The online exhibit is housed within the <a
+          href="https://sacda.ca"
+          target="_blank"
+          rel="noopener">South Asian Canadian Digital Archive (SACDA)</a
+        >. The project seeks to create a foundational understanding of the South
+        Asian Canadian Muslim communities in BC. This is a starting point to
+        build a more robust engagement with the diverse communities and their
+        experiences across Canada. What you will find here is the history of
+        migration and settlement, oral history narratives of contemporary South
+        Asian Canadian Muslims in BC, a recent timeline of significant events
+        and many reading resources for you to explore.
 
         <br /><br />
 
         We thankfully acknowledge the financial support of our
         <a href="{base}/about#sponsors">funders</a>
         and the support of our <a href="{base}/about#partners">partners</a>.
+
+        <br /><br />
+
+        <span class="text-xs leading-2"
+          >Thumbnail photo credits: <br /> Community members at Bear Creek Community
+          Hall on the last day of Ramadan (1995). [Photograph : b&w]. Surrey Leader
+          Photograph Fonds (F62-0-5-0-0-10-0-248). Surrey Archives, City of Surrey,
+          Surrey, Canada.</span
+        >
       </p>
     </div>
 
@@ -453,8 +473,8 @@
             Historical Journey
           </h3>
           <p class="mb-4">
-            Explore the migration and settlement of South Asian Canadian Muslims in
-            British Columbia across different time periods:
+            Explore the migration and settlement of South Asian Canadian Muslims
+            in British Columbia across different time periods:
           </p>
           <ul class="list-disc pl-5 mb-4 space-y-1 *:text-left">
             {#each historyPages.slice(1) as page}
@@ -480,8 +500,8 @@
             Community Life
           </h3>
           <p class="mb-4">
-            Explore the lived experiences of South Asian Canadian Muslims in BC through
-            personal narratives and contemporary profiles:
+            Explore the lived experiences of South Asian Canadian Muslims in BC
+            through personal narratives and contemporary profiles:
           </p>
 
           <div class="grid grid-cols-1 gap-6">
