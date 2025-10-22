@@ -53,7 +53,7 @@ const team: {
 			name: "Kiara Dabreo",
 			desc: `Kiara Dabreo conducts historical and archival research on early South Asian Canadian Muslims in British Columbia immigrants in BC, creating an archival collection, preserving records, and cataloging key individuals, organizations, and settlement locations. <p><a href="https://blogs.ufv.ca/sasi/2024/05/16/sasis-research-assistant-kiara-dabreo-presents-at-ufvs-student-research-day/" target="_blank" rel="noopener"> Research output </a></p>`,
 			role: "Research Assistant",
-			years: "2024/25",
+			years: "2023/25",
 		},
 		{
 			name: "Samarah Saddique",
