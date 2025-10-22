@@ -56,14 +56,13 @@
       <h2>Solidarity with Indigenous Communities</h2>
       <div>
         With an increased understanding of how the intertwined histories of
-        colonialism, migration, and racism have affected South Asian Canadian Muslim
-        communities of B.C, a number of community members have also started
-        developing relationships of solidarity and allyship with Indigenous
-        communities of B.C. <a
+        colonialism, migration, and racism have affected South Asian Canadian
+        Muslim communities of B.C, a number of community members have also
+        started developing relationships of solidarity and allyship with
+        Indigenous communities of B.C. <a
           href="https://www.islamichistorymonth.ca/indigenous-muslims"
           target="_blank"
-          rel="noopener"
-          ><sup>[*]</sup></a
+          rel="noopener"><sup>[*]</sup></a
         >
       </div>
     </section>
@@ -89,7 +88,11 @@
 
         <br /><br />
 
-        <Image src="/content/new/2017.0022.228.07-341.2.JPG" class="md:w-1/2" alt="Muslim parade in Surrey">
+        <Image
+          src="/content/new/2017.0022.228.07-341.2.JPG"
+          class="md:w-1/2"
+          alt="Muslim parade in Surrey"
+        >
           Surrey Online Heritage Search. (2017). Muslim parade. Minisisinc.com. <a
             href="https://surrey.minisisinc.com/scripts/mwimain.dll/144/DESCRIPTION/WEB_UNION_DETAIL?sessionsearch&exp=SISN+53300"
             target="_blank"

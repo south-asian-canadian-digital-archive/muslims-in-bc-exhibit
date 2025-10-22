@@ -279,7 +279,7 @@
   </script>`}
 
   <!-- Smart resource prefetching for non-critical resources -->
-  <link rel="prefetch" href="/pattern.svg" />
+  <link rel="prefetch" href="{base}/pattern.svg" />
 </svelte:head>
 
 <!-- Scroll indicator -->
