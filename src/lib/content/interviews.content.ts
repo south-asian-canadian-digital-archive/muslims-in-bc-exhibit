@@ -218,7 +218,7 @@ export const interviews: Interview[] = [
     interviewDate: "2025-01-12",
     interviewer: "Thamilini Jothilingam",
     contributors: ["Sadhik Preet Singh"],
-    narrativePdfUrl: 'https://drive.google.com/file/d/1geo0CvXq9bB4urPFdtbUZt0cFaqyic9s/view?usp=sharing',
+    narrativePdfUrl: 'https://drive.google.com/file/d/1geo0CvXq9bB4urPFdtbUZt0cFaqyic9s/view?usp=drive_link',
   },
 
   // {
