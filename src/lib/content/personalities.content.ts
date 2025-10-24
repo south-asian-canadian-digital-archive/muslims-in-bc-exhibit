@@ -205,7 +205,7 @@ export const personalities: Personality[] = [
       "https://www.ufv.ca/media/assets/planning-geography-and-environmental-studies/Afia-Headshot.jpg"
     ],
     "links": [
-      "https://sacda.ca/exhibits/sambc/oral-histories/afia-raja",
+      "https://sacda.ca/exhibits/sacmbc/oral-histories/afia-raja",
       "https://www.ufv.ca/planning-geography-environmental-studies/faculty/raja-afia.htm",
     ],
     "additionalInfo": []
@@ -220,7 +220,7 @@ export const personalities: Personality[] = [
     "photoUrls": [],
     "links": [
       "https://sfu.ca/internationalstudies/people/profiles/Malik.html",
-      "https://sacda.ca/exhibits/sambc/oral-histories/anushay-malik"
+      "https://sacda.ca/exhibits/sacmbc/oral-histories/anushay-malik"
     ],
     "additionalInfo": [
       {
@@ -243,7 +243,7 @@ export const personalities: Personality[] = [
     "photoUrls": [],
     "links": [
       "https://www.ufv.ca/sasi/governance/faculty-associates/javid-hassan.htm",
-      "https://sacda.ca/exhibits/sambc/oral-histories"
+      "https://sacda.ca/exhibits/sacmbc/oral-histories"
     ],
     "additionalInfo": [
       {
@@ -309,12 +309,12 @@ export const personalities: Personality[] = [
       },
       {
         "text": "Personal collection",
-        "link": "https://sacda.ca/exhibits/sambc/oral-histories/rizwaan-abbas/"
+        "link": "https://sacda.ca/exhibits/sacmbc/oral-histories/rizwaan-abbas/"
       },
     ],
     "links": [
       "https://heritagebc.ca/about/board-of-directors/",
-      "https://sacda.ca/exhibits/sambc/oral-histories/rizwaan-abbas/"
+      "https://sacda.ca/exhibits/sacmbc/oral-histories/rizwaan-abbas/"
     ],
     "additionalInfo": [
       {

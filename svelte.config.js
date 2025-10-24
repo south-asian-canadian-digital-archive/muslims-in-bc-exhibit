@@ -21,7 +21,7 @@ const config = {
 			// }
 		),
 		paths: {
-			base: '/exhibits/sambc',
+			base: '/exhibits/sacmbc',
 		},
 		
 	}

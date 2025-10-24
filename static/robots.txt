@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://sambc.southasiancanadianheritage.ca/sitemap.xml
+Sitemap: https://sacmbc.southasiancanadianheritage.ca/sitemap.xml
 
 # Allow access to static assets
 Allow: /content/

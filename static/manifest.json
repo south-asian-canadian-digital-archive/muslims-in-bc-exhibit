@@ -1,6 +1,6 @@
 {
   "name": "South Asian Canadian Muslims in BC - Digital Exhibit",
-  "short_name": "SAMBC",
+  "short_name": "SACMBC",
   "description": "Discover the rich history, cultural heritage, and significant contributions of South Asian Canadian Muslims in British Columbia through oral histories, historical timelines, and community stories.",
   "start_url": "/",
   "display": "standalone",
@@ -9,7 +9,10 @@
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en-CA",
-  "categories": ["education", "social"],
+  "categories": [
+    "education",
+    "social"
+  ],
   "icons": [
     {
       "src": "/UFV_SASI_logo.png",

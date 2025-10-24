@@ -4,7 +4,7 @@ A comprehensive digital exhibit documenting the rich history, cultural heritage,
 
 ## About the Project
 
-The **South Asian Canadian Muslims in British Columbia (SAMBC)** project is an online exhibit developed between 2024 and 2025 as part of the [South Asian Canadian Digital Archive (SACDA)](https://sacda.ca). This foundational project aims to create a comprehensive understanding of South Asian Canadian Muslim communities in BC while serving as a starting point for broader engagement with diverse Muslim experiences across Canada.
+The **South Asian Canadian Muslims in British Columbia (SACMBC)** project is an online exhibit developed between 2024 and 2025 as part of the [South Asian Canadian Digital Archive (SACDA)](https://sacda.ca). This foundational project aims to create a comprehensive understanding of South Asian Canadian Muslim communities in BC while serving as a starting point for broader engagement with diverse Muslim experiences across Canada.
 
 ### Project Goals
 
