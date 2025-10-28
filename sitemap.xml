@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/</loc>
+    <lastmod>2025-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/about</loc>
+    <lastmod>2025-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- History Pages -->
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/history</loc>
+    <lastmod>2025-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/history/early-20th-century</loc>
+    <lastmod>2025-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/history/mid-20th-century</loc>
+    <lastmod>2025-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/history/recent-experiences</loc>
+    <lastmod>2025-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/history/timeline</loc>
+    <lastmod>2025-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/history/case-studies</loc>
+    <lastmod>2025-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Oral Histories Pages -->
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories</loc>
+    <lastmod>2025-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Individual Interview Pages -->
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/afia-raja</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/hassan-javid</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/munawar-sabir</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/ahsan-yousuf</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/mr-mrs-habib</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/rizwaan-abbas</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/hana-amani</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/farida-farook</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/shakeel-gaya</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/hifza-shahzad</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/oral-histories/anushay-malik</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <!-- Contemporary Personalities Pages -->
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/contemporary-personalities</loc>
+    <lastmod>2025-01-10</lastmod>
+  </url>
+
+  <!-- Further Reading Page -->
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/further-reading</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://sacda.ca/exhibits/sacmbc/contact</loc>
+    <lastmod>2025-05-30</lastmod>
+  </url>
+</urlset>

@@ -1,0 +1,1 @@
+function i(e){const m={"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:e.map((t,n)=>({"@type":"ListItem",position:n+1,name:t.name,item:t.url}))};return JSON.stringify(m)}export{i as g};
