@@ -31,7 +31,8 @@ const team: {
 		{
 			name: "Dr. Satwinder Bains",
 			desc: "Dr. Satwinder Bains provides overall direction, management, and support for research. She leads the outreach component and community engagement with the goal of creating educational and participatory materials.",
-			role: "Director 2006-2025",
+			role: "Director",
+			years: "2006-2025"
 		},
 		{
 			name: "Thamilini Jothilingam",
