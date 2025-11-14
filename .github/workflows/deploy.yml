@@ -47,7 +47,7 @@ jobs:
         run: |
           DEST_DIR_NAME="${{ vars.DESTINATION_DIR_NAME }}"
           
-          # This is the path your web server serves (the "live" symlink)
+          # This is the path your web server serves (the live symlink)
           LIVE_DIR="/var/www/sacda.ca/html/exhibits/$DEST_DIR_NAME"
           RELEASES_BASE_DIR="/opt/actions-runner/releases"
           PROJECT_RELEASE_DIR="$RELEASES_BASE_DIR/$DEST_DIR_NAME"

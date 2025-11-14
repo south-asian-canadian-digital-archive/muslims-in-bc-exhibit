@@ -210,9 +210,13 @@
             target="_blank"
             rel="noopener">contemporary research</a
           >
-          which includes the <a href="https://sacda.ca" target="_blank" rel="noopener">first of its kind South Asian Canadian Digital Archive in Canada</a> that benefits academia, members of the community,
-          government, organizations and agencies as well as global scholars and
-          interested persons.
+          which includes the
+          <a href="https://sacda.ca" target="_blank" rel="noopener"
+            >first of its kind South Asian Canadian Digital Archive in Canada</a
+          >
+          that benefits academia, members of the community, government,
+          organizations and agencies as well as global scholars and interested
+          persons.
 
           <br /><br />
           For inquiries, please contact us at
@@ -298,8 +302,8 @@
             fabric of communal life. These designs are more than decorative;
             they reflect a history of perseverance, faith, tradition,
             resilience, migration, and multi-layered transnational experiences
-            that continue to shape the South Asian Canadian Muslim presence in British
-            Columbia.
+            that continue to shape the South Asian Canadian Muslim presence in
+            British Columbia.
             <br />
             <br />
             The arch emerges as another defining motif, serving both as a structural
@@ -311,15 +315,17 @@
             <br />
             <br />
             Throughout the visual language, geometric repetition and symmetry echo
-            the diversity within the South Asian Canadian Muslims in British Columbia community — a constellation
-            of cultures, beliefs, and personal histories. This careful interplay
-            of shape and pattern creates a visual metaphor for collective identity,
-            where individual stories intersect within a shared, enduring framework.
+            the diversity within the South Asian Canadian Muslims in British Columbia
+            community — a constellation of cultures, beliefs, and personal histories.
+            This careful interplay of shape and pattern creates a visual metaphor
+            for collective identity, where individual stories intersect within a
+            shared, enduring framework.
             <br />
             <br />
             Together, these elements establish a contemporary visual identity that
-            honours the historical depth of South Asian Canadian Muslim communities in BC
-            while creating space for future narratives to be seen, heard, and remembered.
+            honours the historical depth of South Asian Canadian Muslim communities
+            in BC while creating space for future narratives to be seen, heard, and
+            remembered.
           </Accordion.Content>
         </Accordion.Item>
       </Accordion.Root>
@@ -344,10 +350,10 @@
           >
             {#each col as person, idx}
               <div
-                class="lg:w-[20vw] lg:h-[20vw] rounded-lg aspect-square bg-white relative"
+                class="w-full lg:w-[20vw] h-auto lg:h-[20vw] rounded-lg aspect-square bg-white relative overflow-hidden"
               >
                 <p
-                  class="top-0 left-0 p-2 bg-secondary-teal rounded-t-lg text-white font-martel absolute w-full z-20 text-center"
+                  class="top-0 left-0 p-2 bg-secondary-teal rounded-t-lg text-white font-martel absolute w-full z-20 text-center break-words"
                 >
                   <span>
                     {person.name}
@@ -360,11 +366,11 @@
                     {/if}
                   </span>
                 </p>
-                <span
-                  class="p-4 pt-16 absolute top-4 left-0 lg:h-[18vw] overflow-auto"
+                <div
+                  class="p-4 pt-16 absolute inset-0 overflow-auto break-words"
                 >
                   {@html person.desc}
-                </span>
+                </div>
               </div>
             {/each}
           </div>

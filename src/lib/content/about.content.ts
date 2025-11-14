@@ -57,7 +57,7 @@ const team: {
 			years: "2023/25",
 		},
 		{
-			name: "Samarah Saddique",
+			name: "Samarah Siddique",
 			desc: `Samarah Siddique contributes to the BC Muslim Social History Project as a Research and Cataloguing Assistant. She conducts interviews with South Asian Canadian Muslims in British Columbia community members across BC and digitally archives their narratives. <p><a href="https://blogs.ufv.ca/sasi/2025/04/09/sasi-research-assistant-presents-at-student-research-day/" target="_blank" rel="noopener"> Research output </a></p>`,
 			role: "Research Assistant",
 			years: "2024/25",
