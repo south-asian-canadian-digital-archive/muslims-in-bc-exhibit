@@ -36,6 +36,7 @@ jobs:
         run: pnpm build 
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLIC_DOMAIN: sacda.ca/exhibits/${{ vars.DESTINATION_DIR_NAME }}
 
       - name: Deploy to /var/www/sacda.ca/html/exhibits/...
         run: |
